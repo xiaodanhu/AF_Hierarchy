@@ -1,6 +1,6 @@
 import os
 os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"   
-os.environ["CUDA_VISIBLE_DEVICES"]='1'
+os.environ["CUDA_VISIBLE_DEVICES"]='0'
 # python imports
 import argparse
 import os
@@ -134,6 +134,7 @@ def main(args):
         'early_stop_epochs',
         cfg['opt']['epochs'] + cfg['opt']['warmup_epochs']
     )
+    best_mAP = 0.0
     for epoch in range(args.start_epoch, max_epochs):
         # train for one epoch
         train_one_epoch(
@@ -170,29 +171,31 @@ def main(args):
             )
 
             # set up evaluator
-            train_db_vars = train_dataset.get_attributes()
-            train_eval = ANETdetection(
-                train_dataset.json_file,
-                train_dataset.split[0],
-                tiou_thresholds = train_db_vars['tiou_thresholds']
-            )
+            # train_db_vars = train_dataset.get_attributes()
+            # train_eval = ANETdetection(
+            #     train_dataset.json_file,
+            #     train_dataset.split[0],
+            #     tiou_thresholds = train_db_vars['tiou_thresholds']
+            # )
 
-            mAP = valid_one_epoch(
-                train_loader_for_test,
-                model,
-                epoch,
-                evaluator=train_eval,
-                print_freq=args.print_freq,
-                if_save_data=False
-            )
-            print("Epoch: ", epoch, ", Train mAP: ", mAP)
-            logger.log(f"[Train] Epoch {epoch}: Trainset mAP = {mAP:.4f}")
+            # mAP = valid_one_epoch(
+            #     train_loader_for_test,
+            #     model,
+            #     epoch,
+            #     evaluator=train_eval,
+            #     print_freq=args.print_freq,
+            #     if_save_data=False
+            # )
+            # print("Epoch: ", epoch, ", Train mAP: ", mAP)
+            # logger.log(f"[Train] Epoch {epoch}: Trainset mAP = {mAP:.4f}")
 
             val_db_vars = val_dataset.get_attributes()
             det_eval = ANETdetection(
-                val_dataset.json_file,
-                val_dataset.split[0],
-                tiou_thresholds = val_db_vars['tiou_thresholds']
+                ant_file=None,
+                split=None,
+                tiou_thresholds = val_db_vars['tiou_thresholds'],
+                ground_truth_df=val_dataset.get_ground_truth_df(),
+                dataset_name='finegym_val'
             )
 
             mAP = valid_one_epoch(
@@ -202,10 +205,31 @@ def main(args):
                 evaluator=det_eval,
                 output_file = str(ts),
                 print_freq=args.print_freq,
-                if_save_data=True
+                if_save_data=True,
+                best_mAP=best_mAP
             )
             print("Epoch: ", epoch, ", Test mAP: ", mAP)
             logger.log(f"[Test] Epoch {epoch}: Testset mAP = {mAP:.4f}")
+
+            # Save the best model
+            if mAP > best_mAP:
+                best_mAP = mAP
+                save_states = {
+                    'epoch': epoch + 1,
+                    'state_dict': model.state_dict(),
+                    'scheduler': scheduler.state_dict(),
+                    'optimizer': optimizer.state_dict(),
+                    'state_dict_ema': model_ema.module.state_dict(),
+                    'best_mAP': best_mAP
+                }
+                save_checkpoint(
+                    save_states,
+                    True,
+                    file_folder=ckpt_folder,
+                    file_name='model_best.pth.tar'
+                )
+                print(f"New best model saved with mAP: {best_mAP:.4f}")
+                logger.log(f"[Best] Epoch {epoch}, New best mAP: {best_mAP:.4f}")
 
     # wrap up
     tb_writer.close()

@@ -394,7 +394,8 @@ def valid_one_epoch(
     output_file = None,
     tb_writer = None,
     print_freq = 20,
-    if_save_data = False
+    if_save_data = False,
+    best_mAP = 0.0
 ):
     """Test the model on the validation set"""
     # either evaluate the results or save the results
@@ -464,7 +465,12 @@ def valid_one_epoch(
             pickle.dump(results, f)
         mAP = 0.0
 
-    if if_save_data:
+    # Only save data files when mAP > best_mAP and if_save_data = True
+    if if_save_data and mAP > best_mAP:
+        # Save AP scores
+        if evaluator is not None:
+            np.save(f'/data3/xiaodan8/actionformer6/output/best_pred_{output_file}_ap.npy', np.mean(ap, axis=0))
+        # Save prediction as JSON
         from collections import defaultdict
         import json
         new_res = defaultdict(list)

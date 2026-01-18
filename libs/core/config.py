@@ -15,14 +15,10 @@ DEFAULTS = {
         "feat_stride": 16,
         # number of frames for each feat
         "num_frames": 32,
-        # default fps, may vary across datasets; Set to none for read from json file
-        "default_fps": None,
         # input feat dim
         "input_dim": 2048,
         # number of classes
         "num_classes": 99,
-        # downsampling rate of features, 1 to use original resolution
-        "downsample_rate": 1,
         # max sequence length during training
         "max_seq_len": 2304,
         # threshold for truncating an action

@@ -1,5 +1,6 @@
 # Modified from official EPIC-Kitchens action detection evaluation code
 # see https://github.com/epic-kitchens/C2-Action-Detection/blob/master/EvaluationCode/evaluate_detection_json_ek100.py
+from ast import Not
 import os
 import json
 import pandas as pd
@@ -122,6 +123,7 @@ class ANETdetection(object):
         label_offset=0,
         num_workers=8,
         dataset_name=None,
+        ground_truth_df=None,
     ):
 
         self.tiou_thresholds = tiou_thresholds
@@ -130,13 +132,20 @@ class ANETdetection(object):
         self.num_workers = num_workers
         if dataset_name is not None:
             self.dataset_name = dataset_name
-        else:
+        elif ant_file is not None:
             self.dataset_name = os.path.basename(ant_file).replace('.json', '')
+        else:
+            self.dataset_name = 'unknown'
 
         # Import ground truth and predictions
         self.split = split
-        self.ground_truth = load_gt_seg_from_json(
-            ant_file, split=self.split, label=label, label_offset=label_offset)
+        if ground_truth_df is not None:
+            # Use provided DataFrame directly
+            self.ground_truth = ground_truth_df
+        else:
+            # Load from JSON file
+            self.ground_truth = load_gt_seg_from_json(
+                ant_file, split=self.split, label=label, label_offset=label_offset)
 
         # remove labels that does not exists in gt
         self.activity_index = {j: i for i, j in enumerate(sorted(self.ground_truth['label'].unique()))}
