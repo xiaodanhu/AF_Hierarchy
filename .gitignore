@@ -1,0 +1,8 @@
+ckpt/
+__pycache__/
+
+backup/
+output/
+wandb/
+log.txt
+export_sliding_windows.py

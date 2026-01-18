@@ -1,0 +1,51 @@
+dataset_name: finegym_raw  # Raw file local run
+train_split: ['train']
+val_split: ['test']
+round: 1000
+active_learning_method: uniform # dummy name
+dataset: {
+  # Pre-computed sliding windows JSON file
+  feat_folder: /data3/xiaodan8/FineGym/I3D_features_1,
+  json_file: /data3/xiaodan8/FineGym/finegym_merged_win32_int16.json,
+  num_classes: 99,
+  num_frames: 16,
+  # serve as data augmentation
+  trunc_thresh: 0.5,
+  crop_ratio: [0.9, 1.0],
+  max_seq_len: 144,  # Original 50% mAP setting
+  # Frame sampling stride (fixed at 16 for this dataset)
+  feat_stride: 16,
+}
+model: {
+  fpn_type: identity,
+  max_buffer_len_factor: 6.0,
+  n_mha_win_size: 19,
+}
+opt: {
+  learning_rate: 0.0001, # 0.000375 CLIP: 0.0001 VIT: 0.001 vivit: 0.0001
+  epochs: 50,
+  weight_decay: 0.05,
+}
+loader: {
+  batch_size: 4,
+  num_workers: 8,
+}
+train_cfg: {
+  init_loss_norm: 100,
+  clip_grad_l2norm: 1.0,
+  cls_prior_prob: 0.01,
+  center_sample: radius,
+  center_sample_radius: 1.5,
+}
+test_cfg: {
+  voting_thresh: 0.7,
+  pre_nms_topk: 2000,
+  max_seg_num: 200,
+  min_score: 0.001,
+  # when using external scores, our model is generating "proposals"
+  # multiclass_nms: False,
+  # ext_score_file: ./data/thumos/annotations/thumos14_cls_scores.pkl,
+  # comment out L47-48 and uncomment L50 to disable score fusion
+  multiclass_nms: True,
+}
+output_folder: ./ckpt/
