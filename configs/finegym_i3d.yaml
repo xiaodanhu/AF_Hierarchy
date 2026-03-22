@@ -5,8 +5,8 @@ round: 1000
 active_learning_method: uniform # dummy name
 dataset: {
   # Separate json files for train and val
-  train_json_file: /home/jupyter/xhu3/video/dataset/finegym/annotation/Dec14/gym99_train_label.txt,
-  val_json_file: /home/jupyter/xhu3/video/dataset/finegym/annotation/Dec14/gym99_test_label.txt,
+  train_json_file: /data3/xiaodan8/FineGym/annotation/Dec14/gym99_train_label.txt,
+  val_json_file: /data3/xiaodan8/FineGym/annotation/Dec14/gym99_test_label.txt,
   num_classes: 99,
   num_frames: 16,
   # serve as data augmentation
@@ -17,6 +17,11 @@ dataset: {
   window_length: 32,   # 32 sampled frames per window
   window_stride: 16,   # Stride between windows (50% overlap)
   sample_stride: 16,   # Sample every 16 original frames (stride=16)
+  # Video source: True = raw videos (video_raw/), False = cropped clips (videos_Dec14/)
+  use_raw_video: True,
+  # JPG frame caching: True = cache/load frames as JPG for faster loading (only for use_raw_video=True)
+  # Frames are stored in RGB/{youtube_id}/{frame_number}.jpg
+  load_jpg: True,
 }
 model: {
   fpn_type: identity,
@@ -24,7 +29,7 @@ model: {
   n_mha_win_size: 19,
 }
 opt: {
-  learning_rate: 0.0001, # 0.000375 CLIP: 0.0001 VIT: 0.001 vivit: 0.0001
+  learning_rate: 0.00005190723388143434, # 0.000375 CLIP: 0.0001 VIT: 0.001 vivit: 0.0001
   epochs: 50,
   weight_decay: 0.05,
 }

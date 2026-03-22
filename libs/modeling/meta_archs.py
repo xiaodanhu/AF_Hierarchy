@@ -536,7 +536,8 @@ class PtTransformer(nn.Module):
         if num_gts == 0:
             cls_targets = gt_segment.new_full((num_pts, self.num_classes), 0)
             reg_targets = gt_segment.new_zeros((num_pts, 2))
-            return cls_targets, reg_targets
+            cls_targets_label = gt_segment.new_full((num_pts,), -1, dtype=torch.long)
+            return cls_targets, reg_targets, cls_targets_label
 
         # compute the lengths of all segments -> F T x N
         lens = gt_segment[:, 1] - gt_segment[:, 0]

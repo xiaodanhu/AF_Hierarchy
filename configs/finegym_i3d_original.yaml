@@ -4,9 +4,8 @@ val_split: ['test']
 round: 1000
 active_learning_method: uniform # dummy name
 dataset: {
-  # Pre-computed sliding windows JSON file
-  feat_folder: /data3/xiaodan8/FineGym/I3D_features_1,
-  json_file: /data3/xiaodan8/FineGym/finegym_merged_win32_int16.json,
+  # Separate json files for train and val
+  json_file: /data3/xiaodan8/FineGym/original_data/finegym_merged_win32_int16.json,
   num_classes: 99,
   num_frames: 16,
   # serve as data augmentation

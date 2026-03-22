@@ -350,8 +350,8 @@ def train_one_epoch(
                 losses_tracker[key].update(value.item())
 
             # print to terminal
-            block1 = 'Epoch: [{:03d}][{:05d}/{:05d}]'.format(
-                curr_epoch, iter_idx, num_iters
+            block1 = '[{}] Epoch: [{:03d}][{:05d}/{:05d}]'.format(
+                get_pacific_time(), curr_epoch, iter_idx, num_iters
             )
             block2 = 'Time {:.2f} ({:.2f})'.format(
                 batch_time.val, batch_time.avg
@@ -578,7 +578,7 @@ def valid_one_epoch_distributed(
     if world_size > 1:
         # Serialize results for gathering
         results_bytes = pickle.dumps(results)
-        results_tensor = torch.ByteTensor(list(results_bytes)).cud()
+        results_tensor = torch.ByteTensor(list(results_bytes)).cuda()
 
         # Gather sizes first (resultsmay have different sizes on each GPU)
         local_size = torch.tensor([results_tensor.numel()], dtype=torch.long, device='cuda')
@@ -592,47 +592,47 @@ def valid_one_epoch_distributed(
             padding = torch.zeros(max_size - results_tensor.numel(), dtype=torch.uint8, device='cuda')
             results_tensor = torch.cat((results_tensor, padding))
 
-        # Gather all tensors
+        # Gather all tensors to rank 0
         if local_rank == 0:
             gather_list = [torch.empty((max_size,), dtype=torch.uint8, device='cuda') for _ in range(world_size)]
         else:
             gather_list = None
 
-        dist.all_gather(gather_list, results_tensor, dst=0)
+        dist.gather(results_tensor, gather_list, dst=0)
 
         # Only rank 0 processes gathered results
         if local_rank == 0:
             all_results = {
-            'video-id': [],
-            't-start' : [],
-            't-end': [],
-            'label': [],
-            'score': []
-        }
-        
-        for i, tensor in enumerate(gather_list):
-            # Deserialize
-            result_bytes = bytes(tensor[:size_list[i]].cpu().numpy().tolist())
-            result_part = pickle.loads(result_bytes)
+                'video-id': [],
+                't-start' : [],
+                't-end': [],
+                'label': [],
+                'score': []
+            }
+            
+            for i, tensor in enumerate(gather_list):
+                # Deserialize
+                result_bytes = bytes(tensor[:size_list[i]].cpu().numpy().tolist())
+                result_part = pickle.loads(result_bytes)
 
-            all_results['video-id'].extend(result_part['video-id'])
-            if len(result_part['t-start']) > 0:
-                all_results['t-start'].append(result_part['t-start'])
-                all_results['t-end'].append(result_part['t-end'])
-                all_results['label'].append(result_part['label'])
-                all_results['score'].append(result_part['score'])
+                all_results['video-id'].extend(result_part['video-id'])
+                if len(result_part['t-start']) > 0:
+                    all_results['t-start'].append(result_part['t-start'])
+                    all_results['t-end'].append(result_part['t-end'])
+                    all_results['label'].append(result_part['label'])
+                    all_results['score'].append(result_part['score'])
 
-        # Concatenate all results
-        if len(all_results['t-start']) > 0:
-            all_results['t-start'] = torch.cat(all_results['t-start']).numpy()
-            all_results['t-end'] = torch.cat(all_results['t-end']).numpy()
-            all_results['label'] = torch.cat(all_results['label']).numpy()
-            all_results['score'] = torch.cat(all_results['score']).numpy()
-        else:
-            print("[{}] No results found!".format(get_pacific_time()))
-            return 0.0
+            # Concatenate all results
+            if len(all_results['t-start']) > 0:
+                all_results['t-start'] = np.concatenate(all_results['t-start'])
+                all_results['t-end'] = np.concatenate(all_results['t-end'])
+                all_results['label'] = np.concatenate(all_results['label'])
+                all_results['score'] = np.concatenate(all_results['score'])
+            else:
+                print("[{}] No results found!".format(get_pacific_time()))
+                return 0.0
 
-        results = all_results
+            results = all_results
 
     # Only rank 0 evaluates
     mAP = 0.0
@@ -902,3 +902,349 @@ def valid_one_epoch_video_level(
             new_res = {key:sorted(values, key=lambda x:float(x['t-start'])) for key,values in new_res.items()}
             with open(f'/data3/xiaodan8/actionformer4_1/output/pred_{output_file}_video_level.json', 'w') as json_file:
                 json.dump(new_res, json_file)
+
+    return mAP
+
+
+def valid_one_epoch_slide_dual_eval(
+    val_loader,
+    model,
+    val_dataset,
+    evaluator_class,
+    tiou_thresholds,
+    curr_epoch,
+    output_file,
+    print_freq=20,
+    if_save_data=True,
+    best_map=0.0,
+    local_rank=0,
+    iou_threshold=0.5,
+    min_score=0.001,
+    max_seg_num=200
+):
+    """
+    Validation for FineGym sliding window with BOTH window-level and video-level evaluation.
+
+    This function:
+    1. Runs inference on all windows
+    2. Evaluates at window level (each window as independent instance)
+    3. Converts window-relative predictions to video-relative coordinates
+    4. Aggregates predictions by video and applies NMS
+    5. Evaluates at video level
+
+    Args:
+        val_loader: DataLoader for validation
+        model: Model to evaluate
+        val_dataset: FineGymSlideDataset instance (needed for ground truth)
+        evaluator_class: ANETdetection class
+        tiou_thresholds: tIoU thresholds for evaluation
+        curr_epoch: Current epoch number
+        output_file: Output file prefix
+        print_freq: Print frequency
+        if_save_data: Whether to save results
+        best_map: Best mAP so far (for comparison)
+        local_rank: GPU rank for distributed training
+        iou_threshold: IoU threshold for NMS
+        min_score: Minimum score threshold
+        max_seg_num: Maximum number of segments per video
+
+    Returns:
+        dict with 'window_mAP' and 'video_mAP'
+    """
+    from .nms import batched_nms
+
+    batch_time = AverageMeter()
+    model.eval()
+
+    # Collect predictions with window offset info
+    results = {
+        'video-id': [],           # Window ID (e.g., "video_w0")
+        'video-name': [],         # Original video name (e.g., "video")
+        'window-start-time': [],  # Window start time in video
+        't-start': [],            # Prediction start (window-relative)
+        't-end': [],              # Prediction end (window-relative)
+        'label': [],
+        'score': []
+    }
+
+    start = time.time()
+    for iter_idx, video_list in enumerate(val_loader, 0):
+        with torch.no_grad():
+            output = model(video_list)
+
+            num_vids = len(output)
+            for vid_idx in range(num_vids):
+                if output[vid_idx]['segments'].shape[0] > 0:
+                    n_preds = output[vid_idx]['segments'].shape[0]
+
+                    # Window ID
+                    results['video-id'].extend([output[vid_idx]['video_id']] * n_preds)
+
+                    # Original video name (for aggregation)
+                    video_name = video_list[vid_idx].get('video_name', output[vid_idx]['video_id'].rsplit('_w', 1)[0])
+                    results['video-name'].extend([video_name] * n_preds)
+
+                    # Window start time
+                    window_start = video_list[vid_idx].get('window_start_time', 0.0)
+                    results['window-start-time'].extend([window_start] * n_preds)
+
+                    # Prediction (window-relative)
+                    results['t-start'].append(output[vid_idx]['segments'][:, 0])
+                    results['t-end'].append(output[vid_idx]['segments'][:, 1])
+                    results['label'].append(output[vid_idx]['labels'])
+                    results['score'].append(output[vid_idx]['scores'])
+
+        if (iter_idx != 0) and iter_idx % (print_freq) == 0 and local_rank == 0:
+            torch.cuda.synchronize()
+            batch_time.update((time.time() - start) / print_freq)
+            start = time.time()
+            print('[{0}] Test: [{1:05d}/{2:05d}]\t'
+                  'Time {batch_time.val:.2f} ({batch_time.avg:.2f})'.format(
+                  get_pacific_time(), iter_idx, len(val_loader), batch_time=batch_time))
+
+    # Convert to numpy
+    if len(results['video-id']) > 0:
+        results['t-start'] = torch.cat(results['t-start']).cpu().numpy()
+        results['t-end'] = torch.cat(results['t-end']).cpu().numpy()
+        results['label'] = torch.cat(results['label']).cpu().numpy()
+        results['score'] = torch.cat(results['score']).cpu().numpy()
+        results['window-start-time'] = np.array(results['window-start-time'])
+    else:
+        results['t-start'] = np.array([])
+        results['t-end'] = np.array([])
+        results['label'] = np.array([])
+        results['score'] = np.array([])
+        results['window-start-time'] = np.array([])
+
+    # Gather results from all GPUs
+    world_size = dist.get_world_size() if dist.is_initialized() else 1
+
+    if world_size > 1:
+        results_bytes = pickle.dumps(results)
+        results_tensor = torch.ByteTensor(list(results_bytes)).cuda()
+
+        local_size = torch.tensor([results_tensor.numel()], dtype=torch.long, device='cuda')
+        size_list = [torch.tensor([0], dtype=torch.long, device='cuda') for _ in range(world_size)]
+        dist.all_gather(size_list, local_size)
+        size_list = [int(size.item()) for size in size_list]
+        max_size = max(size_list)
+
+        if results_tensor.numel() < max_size:
+            padding = torch.zeros(max_size - results_tensor.numel(), dtype=torch.uint8, device='cuda')
+            results_tensor = torch.cat((results_tensor, padding))
+
+        if local_rank == 0:
+            gather_list = [torch.empty((max_size,), dtype=torch.uint8, device='cuda') for _ in range(world_size)]
+        else:
+            gather_list = None
+        dist.gather(results_tensor, gather_list, dst=0)
+
+        # Only rank 0 processes gathered results
+        if local_rank == 0:
+            all_results = {
+                'video-id': [],
+                'video-name': [],
+                'window-start-time': [],
+                't-start': [],
+                't-end': [],
+                'label': [],
+                'score': []
+            }
+
+            for i, tensor in enumerate(gather_list):
+                result_bytes = bytes(tensor[:size_list[i]].cpu().numpy().tolist())
+                result_part = pickle.loads(result_bytes)
+
+                all_results['video-id'].extend(result_part['video-id'])
+                all_results['video-name'].extend(result_part['video-name'])
+
+                if len(result_part['t-start']) > 0:
+                    all_results['window-start-time'].append(result_part['window-start-time'])
+                    all_results['t-start'].append(result_part['t-start'])
+                    all_results['t-end'].append(result_part['t-end'])
+                    all_results['label'].append(result_part['label'])
+                    all_results['score'].append(result_part['score'])
+
+            if len(all_results['t-start']) > 0:
+                all_results['window-start-time'] = np.concatenate(all_results['window-start-time'])
+                all_results['t-start'] = np.concatenate(all_results['t-start'])
+                all_results['t-end'] = np.concatenate(all_results['t-end'])
+                all_results['label'] = np.concatenate(all_results['label'])
+                all_results['score'] = np.concatenate(all_results['score'])
+            else:
+                print("[{}] No results found!".format(get_pacific_time()))
+                return {'window_mAP': 0.0, 'video_mAP': 0.0}
+
+            results = all_results
+
+    # Only rank 0 does evaluation
+    eval_results = {'window_mAP': 0.0, 'video_mAP': 0.0}
+
+    if local_rank == 0:
+        if len(results['video-id']) == 0:
+            print("No results found!")
+            return eval_results
+
+        # ===================== WINDOW-LEVEL EVALUATION ====================
+        print("\n" + "=" * 60)
+        print("WINDOW-LEVEL EVALUATION")
+        print("(Each sliding window treated as independent instance)")
+        print("=" * 60)
+
+        window_gt_df = val_dataset.get_ground_truth_df()
+        window_evaluator = evaluator_class(
+            ant_file=None,
+            split=None,
+            tiou_thresholds=tiou_thresholds,
+            ground_truth_df=window_gt_df,
+            dataset_name='finegym_slide_window'
+        )
+
+        # Window results (already in window-relative coordinates)
+        window_eval_results = {
+            'video-id': results['video-id'],
+            't-start': results['t-start'],
+            't-end': results['t-end'],
+            'label': results['label'],
+            'score': results['score']
+        }
+
+        _, window_mAP, _, window_ap = window_evaluator.evaluate(window_eval_results, verbose=True)
+        eval_results['window_mAP'] = window_mAP
+
+        # ==================== VIDEO-LEVEL EVALUATION ====================
+        print("\n" + "=" * 60)
+        print("VIDEO-LEVEL EVALUATION")
+        print("(Predictions aggregated across overlapping windows)")
+        print("=" * 60)
+
+        video_gt_df = val_dataset.get_video_level_ground_truth_df()
+        video_evaluator = evaluator_class(
+            ant_file=None,
+            split=None,
+            tiou_thresholds=tiou_thresholds,
+            ground_truth_df=video_gt_df,
+            dataset_name='finegym_slide_video'
+        )
+
+        # Convert window-relative to video-relative and aggregate
+        video_results = {
+            'video-id': [],
+            't-start': [],
+            't-end': [],
+            'label': [],
+            'score': []
+        }
+
+        video_predictions = defaultdict(lambda: {'segs': [], 'scores': [], 'labels': []})
+
+        for i in range(len(results['video-id'])):
+            video_name = results['video-name'][i]
+            window_start = results['window-start-time'][i]
+
+            # Convert to video-relative coordinates
+            t_start_video = results['t-start'][i] + window_start
+            t_end_video = results['t-end'][i] + window_start
+
+            video_predictions[video_name]['segs'].append([t_start_video, t_end_video])
+            video_predictions[video_name]['scores'].append(results['score'][i])
+            video_predictions[video_name]['labels'].append(results['label'][i])
+
+        print(f"[{get_pacific_time()}] Aggregating predictions from {len(video_predictions)} videos...")
+
+        # Apply NMS per video
+        for vid, preds in video_predictions.items():
+            if len(preds['segs']) == 0:
+                continue
+
+            segs = torch.tensor(preds['segs'], dtype=torch.float32)
+            scores = torch.tensor(preds['scores'], dtype=torch.float32)
+            labels = torch.tensor(preds['labels'], dtype=torch.int64)
+
+            nms_segs, nms_scores, nms_labels = batched_nms(
+                segs, scores, labels,
+                iou_threshold=iou_threshold,
+                min_score=min_score,
+                max_seg_num=max_seg_num,
+                use_soft_nms=True,
+                multiclass=True
+            )
+
+            for j in range(len(nms_segs)):
+                video_results['video-id'].append(vid)
+                video_results['t-start'].append(nms_segs[j, 0].item())
+                video_results['t-end'].append(nms_segs[j, 1].item())
+                video_results['label'].append(nms_labels[j].item())
+                video_results['score'].append(nms_scores[j].item())
+
+        video_results['t-start'] = np.array(video_results['t-start'])
+        video_results['t-end'] = np.array(video_results['t-end'])
+        video_results['label'] = np.array(video_results['label'])
+        video_results['score'] = np.array(video_results['score'])
+
+        print(f"[{get_pacific_time()}] After NMS: {len(video_results['video-id'])} predictions")
+
+        # ==================== REMOVE EXACT DUPLICATES ====================
+        # Remove duplicate predictions with same (video-id, t-start, t-end, label),
+        # keeping only the highest-scoring one
+        if len(video_results['video-id']) > 0:
+            # Create unique key for each prediction
+            unique_preds = {}  # key: (vid, t_start, t_end, label) -> index of highest score
+            for i in range(len(video_results['video-id'])):
+                key = (
+                    video_results['video-id'][i],
+                    round(video_results['t-start'][i], 6),  # Round to avoid floating point issues
+                    round(video_results['t-end'][i], 6),
+                    int(video_results['label'][i])
+                )
+                if key not in unique_preds:
+                    unique_preds[key] = i
+                elif video_results['score'][i] > video_results['score'][unique_preds[key]]:
+                    unique_preds[key] = i  # Keep the higher scoring one
+
+            # Get indices to keep
+            keep_indices = sorted(unique_preds.values())
+            num_duplicates = len(video_results['video-id']) - len(keep_indices)
+
+            # Filter results
+            video_results['video-id'] = [video_results['video-id'][i] for i in keep_indices]
+            video_results['t-start'] = video_results['t-start'][keep_indices]
+            video_results['t-end'] = video_results['t-end'][keep_indices]
+            video_results['label'] = video_results['label'][keep_indices]
+            video_results['score'] = video_results['score'][keep_indices]
+            
+            print(f"[{get_pacific_time()}] Removed {num_duplicates} exact duplicates, {len(video_results['video-id'])} predictions remaining")
+
+        _, video_mAP, _, video_ap = video_evaluator.evaluate(video_results, verbose=True)
+        eval_results['video_mAP'] = video_mAP
+
+        # ==================== SUMMARY ====================
+        print("\n" + "=" * 60)
+        print("EVALUATION SUMMARY")
+        print("=" * 60)
+        print(f"Window-level mAP: {window_mAP:.4f}")
+        print(f"Video-level mAP:  {video_mAP:.4f}")
+        print("=" * 60 + "\n")
+
+        # Save results if better
+        if if_save_data and video_mAP > best_map:
+            dataset_name = 'finegym'
+            output_dir = f'/data3/xiaodan8/actionformer4_1/output/{dataset_name}'
+            os.makedirs(output_dir, exist_ok=True)
+            np.save(f'{output_dir}/pred_{output_file}_window_ap.npy', np.mean(window_ap, axis=0))
+            np.save(f'{output_dir}/pred_{output_file}_video_ap.npy', np.mean(video_ap, axis=0))
+
+            # Save video-level predictions
+            new_res = defaultdict(list)
+            for k in range(len(video_results['video-id'])):
+                new_res[video_results['video-id'][k]].append({
+                    't-start': str(video_results['t-start'][k]),
+                    't-end': str(video_results['t-end'][k]),
+                    'label': str(video_results['label'][k]),
+                    'score': str(video_results['score'][k])
+                })
+            new_res = {key: sorted(values, key=lambda x: float(x['t-start'])) for key, values in new_res.items()}
+            with open(f'{output_dir}/pred_{output_file}_video_level.json', 'w') as json_file:
+                json.dump(new_res, json_file)
+
+    return eval_results

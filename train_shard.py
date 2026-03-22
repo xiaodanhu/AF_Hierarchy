@@ -32,6 +32,7 @@ from libs.core import load_config
 from libs.datasets import make_dataset, make_data_loader, make_data_loader_distributed
 from libs.modeling import make_meta_arch
 from libs.utils import (train_one_epoch, valid_one_epoch, valid_one_epoch_distributed,
+                        valid_one_epoch_slide_dual_eval,
                         ANETdetection, save_checkpoint, make_optimizer, make_scheduler,
                         fix_random_seed, ModelEma, TrainingLogger)
 import warnings
@@ -62,7 +63,7 @@ def main(args):
     if not os.path.exists(cfg['output_folder']) and args.local_rank == 0:
         os.mkdir(cfg['output_folder'])
     cfg_filename = os.path.basename(args.config).replace('.yaml', '')
-    ts = datetime.fromtimestamp(int(time.time()))
+    ts = datetime.fromtimestamp(int(time.time())).strftime("%Y-%m-%d_%H-%M-%S")
     if len(args.output) == 0:
         ckpt_folder = os.path.join(
             cfg['output_folder'], cfg_filename + '_' + str(ts))
@@ -96,7 +97,7 @@ def main(args):
     val_dataset = make_dataset(
         cfg['dataset_name'], False, cfg['val_split'], cfg['model']['backbone_type'], cfg['round'], **cfg['dataset']
     )
-    # Distributed validation: split test data acorss GPUs for faster inference
+    # Distributed validation: split test data across GPUs for faster inference
     val_sampler = DistributedSampler(val_dataset, shuffle=False)
     val_loader = make_data_loader_distributed(val_dataset, val_sampler, False, None, 1, cfg['loader']['num_workers'] // 2)
 
@@ -215,26 +216,45 @@ def main(args):
             ##############################
 
             val_db_vars = val_dataset.get_attributes()
-            det_eval = ANETdetection(
-                ant_file=None,
-                split=None,
-                tiou_thresholds = val_db_vars['tiou_thresholds'],
-                ground_truth_df=val_dataset.get_ground_truth_df(),
-                dataset_name='finegym_val'
-            )
 
-            # All GPUs run inference on their portion and gather results
-            mAP = valid_one_epoch_distributed(
-                val_loader,
-                model_engine,
-                epoch,
-                evaluator=det_eval,
-                output_file = str(ts),
-                print_freq=args.print_freq,
-                if_save_data=True,
-                best_mAP=best_mAP,
-                local_rank=args.local_rank
-            )
+            # Use dual evaluation (window + video level) for finegym_slide
+            if cfg['dataset_name'] == 'finegym_slide':
+                eval_results = valid_one_epoch_slide_dual_eval(
+                    val_loader,
+                    model_engine,
+                    val_dataset,
+                    ANETdetection,
+                    val_db_vars['tiou_thresholds'],
+                    epoch,
+                    output_file=str(ts),
+                    print_freq=args.print_freq,
+                    if_save_data=True,
+                    best_map=best_mAP,
+                    local_rank=args.local_rank
+                )
+                # Use video-level mAP for model selection (clip-level aggregation)
+                mAP = eval_results.get('video_mAP', 0.0) if isinstance(eval_results, dict) else eval_results
+            else:
+                # Standard evaluation for other datasets
+                det_eval = ANETdetection(
+                    ant_file=None,
+                    split=None,
+                    tiou_thresholds=val_db_vars['tiou_thresholds'],
+                    ground_truth_df=val_dataset.get_ground_truth_df(),
+                    dataset_name='finegym_val'
+                )
+                mAP = valid_one_epoch_distributed(
+                    val_loader,
+                    model_engine,
+                    epoch,
+                    evaluator=det_eval,
+                    output_file=str(ts),
+                    print_freq=args.print_freq,
+                    if_save_data=True,
+                    best_map=best_mAP,
+                    local_rank=args.local_rank
+                )
+                del det_eval
 
             # Only rank 0 has the final mAP, determine if best
             is_best = False
@@ -248,7 +268,6 @@ def main(args):
                     is_best = True
 
             # Memory cleanup after testing
-            del det_eval
             gc.collect()
             torch.cuda.empty_cache()
 
@@ -286,9 +305,9 @@ if __name__ == '__main__':
     # the arg parser
     parser = argparse.ArgumentParser(
       description='Train a point-based transformer for action localization')
-    parser.add_argument('--config', metavar='DIR', default='./configs/finegym_i3d_raw.yaml', help='path to a config file')
+    parser.add_argument('--config', metavar='DIR', default='./configs/finegym_i3d_original.yaml', help='path to a config file')
     parser.add_argument('-p', '--print-freq', default=10, type=int, help='print frequency (default: 10 iterations)')
-    parser.add_argument('-c', '--ckpt-freq', default=1, type=int, help='checkpoint frequency (default: every 5 epochs)')
+    parser.add_argument('-c', '--ckpt-freq', default=5, type=int, help='checkpoint frequency (default: every 5 epochs)')
     parser.add_argument('--output', default='deepspeed', type=str, help='name of exp folder (default: none)')
     parser.add_argument('--resume', default='', type=str, metavar='PATH', help='path to a checkpoint (default: none)')
     parser.add_argument("--local_rank", default=-1, type=int, help="local_rank for distributed training on gpus")

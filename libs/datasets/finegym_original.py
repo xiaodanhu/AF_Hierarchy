@@ -221,7 +221,6 @@ class FineGymOriginalDataset(Dataset):
         split,          # split, a tuple/list allowing concat of subsets
         backbone_type,
         round,
-        use_full,       # use full dataset for training
         json_file,      # Path to finegym_merged_win32_int16.json
         max_seq_len,    # maximum sequence length during training
         trunc_thresh,
@@ -259,7 +258,7 @@ class FineGymOriginalDataset(Dataset):
         self.round = round
 
         # Video root for raw videos
-        self.video_root = '/home/jupyter/xhu3/video/dataset/finegym/video_raw'
+        self.video_root = '/data3/xiaodan8/FineGym/video_raw'
 
         # Fixed parameters for this dataset (matching original 50% mAP experiment)
         self.window_length = 32            # 32 sampled frames per window (fixed)

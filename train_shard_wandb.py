@@ -34,7 +34,8 @@ import subprocess
 from libs.core import load_config
 from libs.datasets import make_dataset, make_data_loader, make_data_loader_distributed
 from libs.modeling import make_meta_arch
-from libs.utils import (train_one_epoch, valid_one_epoch, valid_one_epoch_distributed, 
+from libs.utils import (train_one_epoch, valid_one_epoch, valid_one_epoch_distributed,
+                        valid_one_epoch_slide_dual_eval,
                         ANETdetection, save_checkpoint, make_optimizer, make_scheduler,
                         fix_random_seed, ModelEma, TrainingLogger)
 import warnings
@@ -64,9 +65,6 @@ def main(args, cfg):
                    )
         run_config = wandb.config
         # Apply sweep parameters (sliding window parameters for finegym_slide dataset)
-        cfg["dataset"]["window_length"] = run_config["window_length"]
-        cfg["dataset"]["window_stride"] = run_config["window_stride"]
-        cfg["dataset"]["sample_stride"] = run_config["sample_stride"]
         cfg["dataset"]["max_seq_len"] = run_config["max_seq_len"]
         cfg["opt"]["learning_rate"] = run_config["learning_rate"]
         cfg["loader"]["batch_size"] = run_config["batch_size"]
@@ -76,9 +74,6 @@ def main(args, cfg):
     if dist.is_initialized():
         # Create tensors to broadcast
         params_tensor = torch.tensor([
-            cfg["dataset"].get("window_length", 32),
-            cfg["dataset"].get("window_stride", 16),
-            cfg["dataset"].get("sample_stride", 16),
             cfg["dataset"].get("max_seq_len", 144),
             cfg["opt"].get("learning_rate", 0.0001),
             cfg["loader"].get("batch_size", 4),
@@ -87,21 +82,18 @@ def main(args, cfg):
 
         dist.broadcast(params_tensor, src=0)
 
-        # Apply braodcasted parameters on non-rank-0 processes
+        # Apply broadcasted parameters on non-rank-0 processes
         if args.local_rank != 0:
-            cfg["dataset"]["window_length"] = int(params_tensor[0].item())
-            cfg["dataset"]["window_stride"] = int(params_tensor[1].item())
-            cfg["dataset"]["sample_stride"] = int(params_tensor[2].item())
-            cfg["dataset"]["max_seq_len"] = int(params_tensor[3].item())
-            cfg["opt"]["learning_rate"] = params_tensor[4].item()
-            cfg["loader"]["batch_size"] = int(params_tensor[5].item())
-            ds_config["gradient_accumulation_steps"] = int(params_tensor[6].item())
+            cfg["dataset"]["max_seq_len"] = int(params_tensor[0].item())
+            cfg["opt"]["learning_rate"] = params_tensor[1].item()
+            cfg["loader"]["batch_size"] = int(params_tensor[2].item())
+            ds_config["gradient_accumulation_steps"] = int(params_tensor[3].item())
 
     # prep for output folder (based on time stamp)
     if not os.path.exists(cfg['output_folder']) and args.local_rank == 0:
         os.mkdir(cfg['output_folder'])
     cfg_filename = os.path.basename(args.config).replace('.yaml', '')
-    ts = datetime.fromtimestamp(int(time.time()))
+    ts = datetime.fromtimestamp(int(time.time())).strftime("%Y-%m-%d_%H-%M-%S")
     if len(args.output) == 0:
         ckpt_folder = os.path.join(
             cfg['output_folder'], cfg_filename + '_' + str(ts))
@@ -121,7 +113,7 @@ def main(args, cfg):
     try:
         """2. create dataset / dataloader"""
         train_dataset = make_dataset(
-            cfg['dataset_name'], True, cfg['train_split'], cfg['model']['backbone_type'], cfg['round'], use_full=True, **cfg['dataset']
+            cfg['dataset_name'], True, cfg['train_split'], cfg['model']['backbone_type'], cfg['round'], **cfg['dataset']
         )
         # update cfg based on dataset attributes (fix to epic-kitchens)
         train_db_vars = train_dataset.get_attributes()
@@ -134,7 +126,7 @@ def main(args, cfg):
         train_loader_for_test = make_data_loader_distributed(train_dataset, train_sampler_for_test, False, None, 1, cfg['loader']['num_workers'])
 
         val_dataset = make_dataset(
-            cfg['dataset_name'], False, cfg['val_split'], cfg['model']['backbone_type'], cfg['round'], use_full=True, **cfg['dataset']
+            cfg['dataset_name'], False, cfg['val_split'], cfg['model']['backbone_type'], cfg['round'], **cfg['dataset']
         )
         # Distributed validation: split test data across GPUs for faster inference
         val_sampler = DistributedSampler(val_dataset, shuffle=False)
@@ -202,9 +194,6 @@ def main(args, cfg):
             logger.log(pprint.pformat(cfg))
 
             logger.log("***************** Sweep Config (selected parameters) *****************")
-            logger.log("window_length: {}".format(cfg["dataset"].get("window_length", 32)))
-            logger.log("window_stride: {}".format(cfg["dataset"].get("window_stride", 16)))
-            logger.log("sample_stride: {}".format(cfg["dataset"].get("sample_stride", 16)))
             logger.log("max_seq_len: {}".format(cfg["dataset"]["max_seq_len"]))
             logger.log("learning_rate: {}".format(cfg["opt"]["learning_rate"]))
             logger.log("batch_size: {}".format(cfg["loader"]["batch_size"]))
@@ -215,13 +204,10 @@ def main(args, cfg):
             print("\n" + "=" * 60)
             print("SWEEP CONFIG (selected parameters):")
             print("=" * 60)
-            print(f"  window_length:               {cfg["dataset"].get("window_length", 32)}")
-            print(f"  window_stride:               {cfg["dataset"].get("window_stride", 16)}")
-            print(f"  sample_stride:               {cfg["dataset"].get("sample_stride", 16)}")
-            print(f"  max_seq_len:                {cfg["dataset"]["max_seq_len"]}")
-            print(f"  learning_rate:              {cfg["opt"]["learning_rate"]}")
-            print(f"  batch_size:                {cfg["loader"]["batch_size"]}")
-            print(f"  gradient_accumulation_steps: {ds_config["gradient_accumulation_steps"]}")
+            print(f"  max_seq_len:                {cfg['dataset']['max_seq_len']}")
+            print(f"  learning_rate:              {cfg['opt']['learning_rate']}")
+            print(f"  batch_size:                {cfg['loader']['batch_size']}")
+            print(f"  gradient_accumulation_steps: {ds_config['gradient_accumulation_steps']}")
             print("*" * 60 + "\n")
 
         """4. training / validation loop"""
@@ -267,26 +253,48 @@ def main(args, cfg):
                 ##############################
                 # Distributed validation: all GPUs process their portion, gather results on rank 0
                 val_db_vars = val_dataset.get_attributes()
-                det_eval = ANETdetection(
-                    ant_file=None,
-                    split=None,
-                    tiou_thresholds = val_db_vars['tiou_thresholds'],
-                    ground_truth_df=val_dataset.get_ground_truth_df(),
-                    dataset_name='finegym_val'
-                )
 
-                # All GPUs run inference on their portion and gather results
-                mAP = valid_one_epoch_distributed(
-                    val_loader,
-                    model_engine,
-                    epoch,
-                    evaluator=det_eval,
-                    output_file = str(ts),
-                    print_freq=args.print_freq,
-                    if_save_data=True,
-                    best_mAP=best_mAP,
-                    local_rank=args.local_rank
-                )
+                # Use dual evaluation (window + video level) for finegym_slide
+                if cfg['dataset_name'] == 'finegym_slide':
+                    eval_results = valid_one_epoch_slide_dual_eval(
+                        val_loader,
+                        model_engine,
+                        val_dataset,
+                        ANETdetection,
+                        val_db_vars['tiou_thresholds'],
+                        epoch,
+                        output_file=str(ts),
+                        print_freq=args.print_freq,
+                        if_save_data=True,
+                        best_map=best_mAP,
+                        local_rank=args.local_rank
+                    )
+                    # Use video-level mAP for model selection (clip-level aggregation)
+                    mAP = eval_results.get('video_mAP', 0.0) if isinstance(eval_results, dict) else eval_results
+                    window_mAP = eval_results.get('window_mAP', 0.0) if isinstance(eval_results, dict) else 0.0
+                else:
+                    # Standard evaluation for other datasets
+                    det_eval = ANETdetection(
+                        ant_file=None,
+                        split=None,
+                        tiou_thresholds=val_db_vars['tiou_thresholds'],
+                        ground_truth_df=val_dataset.get_ground_truth_df(),
+                        dataset_name='finegym_val'
+                    )
+
+                    mAP = valid_one_epoch_distributed(
+                        val_loader,
+                        model_engine,
+                        epoch,
+                        evaluator=det_eval,
+                        output_file=str(ts),
+                        print_freq=args.print_freq,
+                        if_save_data=True,
+                        best_map=best_mAP,
+                        local_rank=args.local_rank
+                    )
+                    del det_eval
+                    window_mAP = None
 
                 # Only rank 0 has the final mAP, determine if best
                 is_best = False
@@ -294,6 +302,8 @@ def main(args, cfg):
                     print("Epoch: ", epoch, ", Test mAP: ", mAP)
                     logger.log(f"[Test] Epoch {epoch}: Testset mAP = {mAP:.4f}")
                     wandb.log({"val/mAP": mAP})
+                    if window_mAP is not None:
+                        wandb.log({"val/window_mAP": window_mAP})
 
                     if mAP > best_mAP:
                         best_mAP = mAP
@@ -301,7 +311,6 @@ def main(args, cfg):
                         is_best = True
 
                 # Memory cleanup after testing
-                del det_eval
                 gc.collect()
                 torch.cuda.empty_cache()
 
@@ -377,12 +386,9 @@ def run_sweep(args, cfg):
         'metric': {'name': 'val/mAP', 'goal': 'maximize'},
         'parameters': {
             # Sliding window parameters (relevant for finegym_slide dataset)
-            'window_length': {'values': [16, 32, 64]},    # Number of sampled frames per window
-            'window_stride': {'values': [8, 16, 24]},     # Stride between windows (in sampled frames)
-            'sample_stride': {'values': [8, 16, 32]},     # Sample every N original frames
-            'max_seq_len': {'values': [144, 288]},
-            'learning_rate': {'distribution': 'log_uniform_values', 'min': 1e-5, 'max': 1e-3},
-            'batch_size': {'values': [1, 2, 4, 8]},
+            'max_seq_len': {'values': [144, 288, 576]},
+            'learning_rate': {'distribution': 'log_uniform_values', 'min': 1e-7, 'max': 1e-3},
+            'batch_size': {'values': [1, 2, 4, 8, 16]},
             'gradient_accumulation_steps': {'values': [2, 4, 6]},
         }
     }
@@ -418,7 +424,7 @@ if __name__ == '__main__':
     parser.add_argument('--config', metavar='DIR', default='./configs/finegym_i3d.yaml', help='path to a config file')
     parser.add_argument('-p', '--print-freq', default=10, type=int, help='print frequency (default: 10 iterations)')
     parser.add_argument('-c', '--ckpt-freq', default=1, type=int, help='checkpoint frequency (default: every 5 epochs)')
-    parser.add_argument('--output', default='deepspeed', type=str, help='name of exp folder (default: none)')
+    parser.add_argument('--output', default='deepspeed_raw_video', type=str, help='name of exp folder (default: none)')
     parser.add_argument('--resume', default='', type=str, metavar='PATH', help='path to a checkpoint (default: none)')
     parser.add_argument("--local_rank", default=-1, type=int, help="local_rank for distributed training on gpus")
     parser.add_argument("--sweep", action='store_true', help="Run a W&B hyperparameter sweep")
@@ -437,4 +443,4 @@ if __name__ == '__main__':
         run_sweep(args, cfg)
     else:
         # Run training directly (this is called by deepspeed from subprocess)
-        train_worker(args, cfg)
+        main(args, cfg)
