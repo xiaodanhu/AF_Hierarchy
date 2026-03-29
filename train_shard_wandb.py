@@ -255,7 +255,7 @@ def main(args, cfg):
                 val_db_vars = val_dataset.get_attributes()
 
                 # Use dual evaluation (window + video level) for finegym_slide
-                if cfg['dataset_name'] in ('finegym_slide', 'finediving_slide'):
+                if cfg['dataset_name'] in ('finegym_slide', 'finediving_slide', 'thumos14_slide'):
                     eval_results = valid_one_epoch_slide_dual_eval(
                         val_loader,
                         model_engine,

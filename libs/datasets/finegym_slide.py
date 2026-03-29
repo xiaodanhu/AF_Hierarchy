@@ -319,21 +319,13 @@ def load_sliding_window(video_path, window_start_frame, window_length, stride, m
                 last_error = e
                 gc.collect()
 
-    # Check if it's a pixel format error (-22 EINVAL) – PyAV can handle these
-    # Note: We tested that PyAV successfully decodes videos with broken pixel format metadata
-    # (e.g., pix_fmt=-1 in container but valid yuv420p H.264 stream)
-    error_str = str(last_error) if last_error else ""
-    is_pixel_format_error = "Cannot create buffer source" in error_str or "filter_graph" in error_str
-
-    if is_pixel_format_error:
-        # Fall back to PyAV for pixel format issues (it's more lenient with metadata)
-        # PyAV handles these well – tested on IP9GHTdCvWs_E_003942_004037.mp4
-        try:
-            frames, fps = load_sliding_window_av(video_path, window_start_frame, window_length, stride)
-            gc.collect()
-            return frames, fps
-        except Exception as e:
-            print(f"Warning: PyAV fallback also failed for {video_path}: {e}")
+    # Fall back to PyAV (handles pixel format issues and works when decord is unavailable)
+    try:
+        frames, fps = load_sliding_window_av(video_path, window_start_frame, window_length, stride)
+        gc.collect()
+        return frames, fps
+    except Exception as e:
+        print(f"Warning: PyAV fallback also failed for {video_path}: {e}")
 
     # If all else fails, return dummy frames
     print(f"Warning: Failed to load video {video_path} (frame {window_start_frame}): {last_error}")

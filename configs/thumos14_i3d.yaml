@@ -1,0 +1,52 @@
+dataset_name: thumos14_slide
+train_split: ['train']
+val_split: ['test']
+round: 1000
+active_learning_method: uniform # dummy name
+dataset: {
+  train_json_file: /data3/xiaodan8/thumos/annotations/thumos14_train_label.txt,
+  val_json_file: /data3/xiaodan8/thumos/annotations/thumos14_test_label.txt,
+  num_classes: 20,
+  num_frames: 4,
+  trunc_thresh: 0.5,
+  crop_ratio: [0.9, 1.0],
+  # THUMOS14 videos are long (mean ~213s) and densely annotated at 30fps.
+  # With sample_stride=4 at 30fps, each sampled frame = 0.133s.
+  # window_length=64 covers 64*4/30 = 8.53s per window.
+  # max_seq_len=192 allows up to 192*4/30 = 25.6s (for truncation).
+  max_seq_len: 288,
+  window_length: 64,
+  window_stride: 32,
+  sample_stride: 4,
+  use_raw_video: True,
+  load_jpg: True,
+}
+model: {
+  fpn_type: identity,
+  max_buffer_len_factor: 6.0,
+  n_mha_win_size: 19,
+}
+opt: {
+  learning_rate: 0.0001,
+  epochs: 50,
+  weight_decay: 0.05,
+}
+loader: {
+  batch_size: 4,
+  num_workers: 8,
+}
+train_cfg: {
+  init_loss_norm: 100,
+  clip_grad_l2norm: 1.0,
+  cls_prior_prob: 0.01,
+  center_sample: radius,
+  center_sample_radius: 1.5,
+}
+test_cfg: {
+  voting_thresh: 0.7,
+  pre_nms_topk: 2000,
+  max_seg_num: 200,
+  min_score: 0.001,
+  multiclass_nms: True,
+}
+output_folder: ./ckpt/
