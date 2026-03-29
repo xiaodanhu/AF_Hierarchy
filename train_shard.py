@@ -218,7 +218,7 @@ def main(args):
             val_db_vars = val_dataset.get_attributes()
 
             # Use dual evaluation (window + video level) for finegym_slide
-            if cfg['dataset_name'] == 'finegym_slide':
+            if cfg['dataset_name'] in ('finegym_slide', 'finediving_slide'):
                 eval_results = valid_one_epoch_slide_dual_eval(
                     val_loader,
                     model_engine,
@@ -241,7 +241,7 @@ def main(args):
                     split=None,
                     tiou_thresholds=val_db_vars['tiou_thresholds'],
                     ground_truth_df=val_dataset.get_ground_truth_df(),
-                    dataset_name='finegym_val'
+                    dataset_name=cfg['dataset_name'] + '_val'
                 )
                 mAP = valid_one_epoch_distributed(
                     val_loader,
@@ -305,8 +305,8 @@ if __name__ == '__main__':
     # the arg parser
     parser = argparse.ArgumentParser(
       description='Train a point-based transformer for action localization')
-    parser.add_argument('--config', metavar='DIR', default='./configs/finegym_i3d_original.yaml', help='path to a config file')
-    parser.add_argument('-p', '--print-freq', default=10, type=int, help='print frequency (default: 10 iterations)')
+    parser.add_argument('--config', metavar='DIR', default='./configs/finediving_i3d.yaml', help='path to a config file')
+    parser.add_argument('-p', '--print-freq', default=5, type=int, help='print frequency (default: 10 iterations)')
     parser.add_argument('-c', '--ckpt-freq', default=5, type=int, help='checkpoint frequency (default: every 5 epochs)')
     parser.add_argument('--output', default='deepspeed', type=str, help='name of exp folder (default: none)')
     parser.add_argument('--resume', default='', type=str, metavar='PATH', help='path to a checkpoint (default: none)')

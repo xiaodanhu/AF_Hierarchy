@@ -1,4 +1,4 @@
-dataset_name: finegym  # Use sliding windows dataset for 50% mAP replication
+dataset_name: finegym_slide  # Use sliding windows dataset for 50% mAP replication
 train_split: ['train']
 val_split: ['test']
 round: 1000
@@ -12,7 +12,7 @@ dataset: {
   # serve as data augmentation
   trunc_thresh: 0.5,
   crop_ratio: [0.9, 1.0],
-  max_seq_len: 144,  # Original 50% mAP setting
+  max_seq_len: 288,  # Original 50% mAP setting
   # Sliding window parameters (matching original experiment)
   window_length: 32,   # 32 sampled frames per window
   window_stride: 16,   # Stride between windows (50% overlap)

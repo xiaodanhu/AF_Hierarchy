@@ -6,7 +6,7 @@ Converts gym99_train_label.txt and gym99_val_label.txt to instruction format.
 
 import json
 import re
-from typing import Dict, List, Tuple
+from typing import Dict, List
 
 
 def load_phrase_categories(filepath: str) -> Dict[int, str]:
@@ -26,7 +26,7 @@ def load_phrase_categories(filepath: str) -> Dict[int, str]:
     return phrase_map
 
 
-def load_action_categories(filepath: str) -> Dict[int, Tuple]:
+def load_action_categories(filepath: str) -> Dict[int, tuple]:
     """Load action categories from gym99_categories.txt with phrase mapping."""
     action_map = {}
     with open(filepath, 'r') as f:
@@ -34,7 +34,7 @@ def load_action_categories(filepath: str) -> Dict[int, Tuple]:
             line = line.strip()
             if not line:
                 continue
-            # Format: "Clabel: 0; set: 1; ... (VT) round-off, flic-flac, ..."
+            # Format: "Clabel:   0; set:  1; ... (VT) round-off, flic-flac, ..."
             match = re.match(r'Clabel:\s*(\d+);\s*set:\s*(\d+);\s*.*?\(([A-Z]+)\)\s*(.+)', line)
             if match:
                 action_id = int(match.group(1))
@@ -56,24 +56,22 @@ def build_activity_descriptions() -> Dict[int, str]:
 
 
 def map_set_to_phrase(action_to_phrase: Dict[int, int]) -> Dict[int, int]:
-    """
-    Map set IDs to phrase IDs based on action-to-phrase mappings.
-    From the data, we can deduce:
-    - set 1 (VT actions 0-5) -> phrase 0
-    - set 21 (FX leap/jump actions 6-16) -> phrase 1
-    - set 22 (FX turns actions 17-23) -> phrase 2
-    - set 24 (FX front salto actions 24-30) -> phrase 3
-    - set 25 (FX back salto actions 31-49) -> phrase 4
-    - set 31 (BB leap/jump actions 41-52) -> phrase 5
-    - set 32 (BB turns actions 53-56) -> phrase 6
-    - set 33 (BB flight salto actions 57-64) -> phrase 7
-    - set 34 (BB flight handspring actions 65-68) -> phrase 8
-    - set 35 (BB dismounts actions 69-73) -> phrase 9
-    - set 41 (UB circles actions 74-88) -> phrase 10
-    - set 42 (UB flight same bar actions 89-93) -> phrase 11
-    - set 43 (UB transition flight actions 94-95) -> phrase 12
-    - set 44 (UB dismounts actions 96-98) -> phrase 13
-    """
+    """Map set IDs to phrase IDs based on action-to-phrase mappings."""
+    # From the data, we can deduce:
+    # - set 1 (VT actions 0-5) -> phrase 0
+    # - set 21 (FX leap/jump actions 6-16) -> phrase 1
+    # - set 22 (FX turns actions 17-23) -> phrase 2
+    # - set 24 (FX front salto actions 24-30) -> phrase 3
+    # - set 25 (FX back salto actions 31-49) -> phrase 4
+    # - set 31 (BB leap/jump actions 41-52) -> phrase 5
+    # - set 32 (BB turns actions 53-56) -> phrase 6
+    # - set 33 (BB flight salto actions 57-64) -> phrase 7
+    # - set 34 (BB flight handspring actions 65-68) -> phrase 8
+    # - set 35 (BB dismounts actions 69-73) -> phrase 9
+    # - set 41 (UB circles actions 74-88) -> phrase 10
+    # - set 42 (UB flight same bar actions 89-93) -> phrase 11
+    # - set 43 (UB transition flight actions 94-95) -> phrase 12
+    # - set 44 (UB dismounts actions 96-98) -> phrase 13
     return {
         1: 0, 21: 1, 22: 2, 24: 3, 25: 4,
         31: 5, 32: 6, 33: 7, 34: 8, 35: 9,
@@ -95,10 +93,10 @@ def get_activity_from_phrase(phrase_id: int) -> int:
 
 
 def build_hierarchical_prompt(
-        activity_map: Dict[int, str],
-        phrase_map: Dict[int, str],
-        action_map: Dict[int, Tuple],
-        set_to_phrase: Dict[int, int]
+    activity_map: Dict[int, str],
+    phrase_map: Dict[int, str],
+    action_map: Dict[int, tuple],
+    set_to_phrase: Dict[int, int]
 ) -> str:
     """Build hierarchical human prompt organized by activity and phrase."""
     
@@ -127,6 +125,7 @@ def build_hierarchical_prompt(
         "Task: Analyze the gymnastics routine. Locate the hierarchical activities and actions.",
         "",
         "### Definitions & Hierarchy",
+        ""
     ]
 
     # Generate for each activity
@@ -137,12 +136,12 @@ def build_hierarchical_prompt(
         # Generate for each phrase within this activity
         for phrase_id in sorted(hierarchy[activity_id].keys()):
             phrase_name = phrase_map.get(phrase_id, "Unknown")
-            prompt_lines.append(f"  [Phrase: <p{phrase_id:02d}> ({phrase_name})]")
-            prompt_lines.append("  Actions:")
+            prompt_lines.append(f"[Phrase: <p{phrase_id:02d}> ({phrase_name})]")
+            prompt_lines.append("Actions:")
 
             # List all actions in this phrase
             for action_id, action_name in hierarchy[activity_id][phrase_id]:
-                prompt_lines.append(f"    - <c{action_id:02d}>: {action_name}")
+                prompt_lines.append(f"- <c{action_id:02d}>: {action_name}")
 
             prompt_lines.append("")  # Empty line after each phrase
 
@@ -153,7 +152,7 @@ def build_hierarchical_prompt(
         "2. Identify the Activity ID (e.g., <a0>) and its total time span.",
         "3. List all atomic Actions chronologically.",
         "4. For each action, predict [Phrase_ID, Action_ID] (e.g., [<p00>, <c02>]) and the time span.",
-        "5. Time Format: Use \"<s.s seconds>\" inside a list [start, end]."
+        '5. Time Format: Use "<s.s seconds>" inside a list [start, end].'
     ])
 
     return "\n".join(prompt_lines)
@@ -168,7 +167,7 @@ def convert_annotation_to_instruction(annotation: Dict, human_prompt: str) -> Di
     # Get new_value (relative timestamps)
     new_values = annotation['new_value']
 
-    # Build GPT response — handle multiple activities
+    # Build GPT response - handle multiple activities
     gpt_responses = []
     for activity in new_values:
         activity_id = activity['activity_id']
@@ -190,7 +189,7 @@ def convert_annotation_to_instruction(annotation: Dict, human_prompt: str) -> Di
 
         # Use token format: <a0>
         activity_response = {
-            'activity_id': f'{activity_id}',
+            'activity_id': f'<{activity_id}>',
             'span': span,
             'actions': actions_list
         }
@@ -258,8 +257,8 @@ def main():
     print("Loading category mappings...")
 
     # Load categories
-    phrase_map = load_phrase_categories('set_categories.txt')
-    action_map = load_action_categories('gym99_categories.txt')
+    phrase_map = load_phrase_categories('/data3/xiaodan8/FineGym/annotation/set_categories.txt')
+    action_map = load_action_categories('/data3/xiaodan8/FineGym/annotation/gym99_categories.txt')
 
     print(f"Loaded {len(phrase_map)} phrase categories")
     print(f"Loaded {len(action_map)} action categories")
@@ -277,23 +276,23 @@ def main():
     # Process train set
     print("\n=== Processing Train Set ===")
     process_label_file(
-        'Dec16/gym99_train_label.txt',
-        'Dec16/gym99_train_instruct.txt',
+        '/data3/xiaodan8/FineGym/annotation/Dec16/gym99_train_label.txt',
+        '/data3/xiaodan8/FineGym/annotation/Dec16/gym99_train_instruct.txt',
         human_prompt
     )
 
     # Process val set
     print("\n=== Processing Val Set ===")
     process_label_file(
-        'Dec16/gym99_val_label.txt',
-        'Dec16/gym99_val_instruct.txt',
+        '/data3/xiaodan8/FineGym/annotation/Dec16/gym99_val_label.txt',
+        '/data3/xiaodan8/FineGym/annotation/Dec16/gym99_val_instruct.txt',
         human_prompt
     )
 
     print("\n=== Done! ===")
     print("Generated files:")
-    print(" - Dec16/gym99_train_instruct.txt")
-    print(" - Dec16/gym99_val_instruct.txt")
+    print("  - Dec16/gym99_train_instruct.txt")
+    print("  - Dec16/gym99_val_instruct.txt")
 
 
 if __name__ == '__main__':

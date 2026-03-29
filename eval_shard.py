@@ -171,7 +171,7 @@ def main(args):
     output_file = f"{args.filename}_{eval_split}"
 
     # Use dual evaluation (window + video level) for finegym_slide
-    if val_dataset_name == 'finegym_slide' and not args.saveonly:
+    if val_dataset_name in ('finegym_slide', 'finediving_slide') and not args.saveonly:
         eval_results = valid_one_epoch_slide_dual_eval(
             val_loader,
             model_engine,
@@ -195,7 +195,7 @@ def main(args):
                 split=None,
                 tiou_thresholds=val_db_vars['tiou_thresholds'],
                 ground_truth_df=val_dataset.get_ground_truth_df(),
-                dataset_name=f'finegym_{eval_split}'
+                dataset_name=f'{val_dataset_name}_{eval_split}'
             )
         else:
             det_eval = None
@@ -234,9 +234,7 @@ if __name__ == '__main__':
     parser.add_argument('--saveonly', action='store_true', help='Only save the ouputs without evaluation (e.g., for test set)')
     parser.add_argument('-p', '--print-freq', default=10, type=int, help='print frequency (default: 10 iterations)')
     parser.add_argument("--local_rank", default=-1, type=int, help='local_rank for distributed training on gpus')
-    parser.add_argument('--val_dataset', type=str, default=None, choices=['finegym_original', 'finegym_slide'],
-                        help='Override validation dataset. Options: finegym_original, finegym_slide. '
-                             'If not specified, uses the dataset from config file.')
+    parser.add_argument('--val_dataset', type=str, default=None, choices=['finegym_original', 'finegym_slide', 'finediving_slide'])
     parser.add_argument('--eval_train', action='store_true',
                         help='Evaluate on training set instead of validation set. '
                              'Uses test-time behavior (overlapped sliding windows, no skipping).')

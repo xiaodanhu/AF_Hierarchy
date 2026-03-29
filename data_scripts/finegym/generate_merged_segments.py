@@ -190,11 +190,11 @@ def write_merged_segments(
 def main():
     # Load original segments
     print("Loading train segments...")
-    train_segments = load_segments('raw/gym99_train_element_new.txt')
+    train_segments = load_segments('/data3/xiaodan8/FineGym/annotation/raw/gym99_train_element_new.txt')
     print(f"Loaded {len(train_segments)} videos from train set")
 
     print("Loading val segments...")
-    val_segments = load_segments('raw/gym99_val_element_new.txt')
+    val_segments = load_segments('/data3/xiaodan8/FineGym/annotation/raw/gym99_val_element_new.txt')
     print(f"Loaded {len(val_segments)} videos from val set")
 
     # Merge segments
@@ -203,10 +203,10 @@ def main():
 
     # Write output
     print("\nWriting merged train segments...")
-    write_merged_segments(merged_train, 'Dec16/gym99_train_element.txt')
+    write_merged_segments(merged_train, '/data3/xiaodan8/FineGym/annotation/Dec16/gym99_train_element.txt')
 
     print("Writing merged val segments...")
-    write_merged_segments(merged_val, 'Dec16/gym99_val_element.txt')
+    write_merged_segments(merged_val, '/data3/xiaodan8/FineGym/annotation/Dec16/gym99_val_element.txt')
 
     # Print statistics
     total_train_merged = sum(len(segs) for segs in merged_train.values())

@@ -23,9 +23,9 @@ import random
 import ast
 from collections import defaultdict
 
-ANNO_DIR = "raw/FineDiving/Released_FineDiving_Dataset/Annotations"
-SPLIT_DIR = "raw/FineDiving/Released_FineDiving_Dataset/train_test_split"
-METADATA_FILE = "video_metadata_cache_all.json"
+ANNO_DIR = "/data3/xiaodan8/FineDiving/annotation/raw/Annotations"
+SPLIT_DIR = "/data3/xiaodan8/FineDiving/annotation/raw/train_test_split"
+METADATA_FILE = "/data3/xiaodan8/FineDiving/annotation/raw/video_metadata_cache_all.json"
 SUB_ACTION_TABLE = f"{ANNO_DIR}/Sub_action_Types_Table_filtered.csv"
 
 
@@ -252,7 +252,7 @@ def main():
 
     # Generate annotations
     for split_name, split_keys in [("train", train_keys), ("test", test_keys)]:
-        output_file = f"finediving_{split_name}_label.txt"
+        output_file = f"/data3/xiaodan8/FineDiving/annotation/finediving_{split_name}_label.txt"
         annotations = []
         skipped = 0
         no_metadata = 0

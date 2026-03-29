@@ -255,7 +255,7 @@ def main(args, cfg):
                 val_db_vars = val_dataset.get_attributes()
 
                 # Use dual evaluation (window + video level) for finegym_slide
-                if cfg['dataset_name'] == 'finegym_slide':
+                if cfg['dataset_name'] in ('finegym_slide', 'finediving_slide'):
                     eval_results = valid_one_epoch_slide_dual_eval(
                         val_loader,
                         model_engine,
@@ -279,7 +279,7 @@ def main(args, cfg):
                         split=None,
                         tiou_thresholds=val_db_vars['tiou_thresholds'],
                         ground_truth_df=val_dataset.get_ground_truth_df(),
-                        dataset_name='finegym_val'
+                        dataset_name=cfg['dataset_name'] + '_val'
                     )
 
                     mAP = valid_one_epoch_distributed(

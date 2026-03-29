@@ -1124,7 +1124,7 @@ def valid_one_epoch_slide_dual_eval(
             split=None,
             tiou_thresholds=tiou_thresholds,
             ground_truth_df=video_gt_df,
-            dataset_name='finegym_slide_video'
+            dataset_name=val_dataset.db_attributes['dataset_name'] + '_video'
         )
 
         # Convert window-relative to video-relative and aggregate

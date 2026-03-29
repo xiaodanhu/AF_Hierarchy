@@ -52,7 +52,7 @@ def load_action_labels(train_file: str, val_file: str) -> Dict[str, int]:
 def parse_merged_segment(segment_name: str) -> Tuple[str, int, int]:
     """
     Parse merged segment name.
-    Example: rrrgsw--AE8_E_000510_000856
+    Example: rrrgsWs--AE8_E_000510_000856
     Returns: (video_name, start_frame, end_frame)
     """
     pattern = r'^(.+)_E_(\d+)_(\d+)$'
@@ -63,9 +63,9 @@ def parse_merged_segment(segment_name: str) -> Tuple[str, int, int]:
 
 
 def get_video_boundary(start_frame: int, end_frame: int,
-                      all_segments: List[Tuple[int, int]],
-                      min_padding: float = 2.0,
-                      max_padding: float = 5.0) -> Tuple[float, float]:
+                       all_segments: List[Tuple[int, int]],
+                       min_padding: float = 2.0,
+                       max_padding: float = 5.0) -> Tuple[float, float]:
     """
     Get video boundary with random padding before start and after end.
     Ensure it doesn't overlap with other segments.
@@ -319,15 +319,15 @@ def main():
     print("Loading data files...")
 
     # Load fine-to-coarse mappings
-    action_to_phrase = load_fine_to_coarse_mappings('raw/fine_to_coarse_mappings.json')
+    action_to_phrase = load_fine_to_coarse_mappings('/data3/xiaodan8/FineGym/annotation/raw/fine_to_coarse_mappings.json')
 
     # Load FineGym annotation
-    finegym_data = load_finegym_annotation('raw/finegym_annotation_info_v1.1.json')
+    finegym_data = load_finegym_annotation('/data3/xiaodan8/FineGym/annotation/raw/finegym_annotation_info_v1.1.json')
 
     # Load action labels
     action_labels = load_action_labels(
-        'raw/gym99_train_element_new.txt',
-        'raw/gym99_val_element_new.txt'
+        '/data3/xiaodan8/FineGym/annotation/raw/gym99_train_element_new.txt',
+        '/data3/xiaodan8/FineGym/annotation/raw/gym99_val_element_new.txt'
     )
 
     print(f"Loaded {len(action_to_phrase)} action-to-phrase mappings")
@@ -337,8 +337,8 @@ def main():
     # Process train set
     print("\n=== Processing Train Set ===")
     process_merged_segments(
-        'Dec16/gym99_train_element.txt',
-        'Dec16/gym99_train_label.txt',
+        '/data3/xiaodan8/FineGym/annotation/Dec16/gym99_train_element.txt',
+        '/data3/xiaodan8/FineGym/annotation/Dec16/gym99_train_label.txt',
         finegym_data,
         action_labels,
         action_to_phrase
@@ -347,8 +347,8 @@ def main():
     # Process val set
     print("\n=== Processing Val Set ===")
     process_merged_segments(
-        'Dec16/gym99_val_element.txt',
-        'Dec16/gym99_val_label.txt',
+        '/data3/xiaodan8/FineGym/annotation/Dec16/gym99_val_element.txt',
+        '/data3/xiaodan8/FineGym/annotation/Dec16/gym99_val_label.txt',
         finegym_data,
         action_labels,
         action_to_phrase

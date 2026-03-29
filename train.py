@@ -195,7 +195,7 @@ def main(args):
                 split=None,
                 tiou_thresholds = val_db_vars['tiou_thresholds'],
                 ground_truth_df=val_dataset.get_ground_truth_df(),
-                dataset_name='finegym_val'
+                dataset_name=cfg['dataset_name'] + '_val'
             )
 
             mAP = valid_one_epoch(
