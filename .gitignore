@@ -5,4 +5,5 @@ backup/
 output/
 wandb/
 log.txt
-export_sliding_windows.py
+**/taxonomy/
+unzip_videos.py
