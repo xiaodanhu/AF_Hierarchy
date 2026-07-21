@@ -1,20 +1,21 @@
-dataset_name: thumos14_slide
+dataset_name: activitynet_slide
 train_split: ['train']
 val_split: ['test']
 round: 1000
 active_learning_method: uniform # dummy name
 dataset: {
-  train_json_file: /data3/xiaodan8/thumos/annotations/thumos14_train_label.txt,
-  val_json_file: /data3/xiaodan8/thumos/annotations/thumos14_test_label.txt,
-  num_classes: 20,
-  num_frames: 4,
+  train_json_file: /data3/xiaodan8/Activitynet/annotation/activitynet_train_label.txt,
+  val_json_file: /data3/xiaodan8/Activitynet/annotation/activitynet_test_label.txt,
+  num_classes: 200,
+  num_frames: 16,
   trunc_thresh: 0.5,
   crop_ratio: [0.9, 1.0],
-  # THUMOS14 videos are long (mean ~213s) and densely annotated at 30fps.
-  # With sample_stride=16 at 30fps, each sampled frame = 0.533s.
+  # ActivityNet videos are varied in length (mean ~2min).
+  # With sample_stride=16 at ~30fps, each sampled frame = 0.533s.
   # window_length=64 covers 64*16/30 = 34.13s per window.
   # max_seq_len=576 allows up to 576*16/30 = 307.2s (for truncation).
-  max_seq_len: 256,
+  # Must be divisible by fpn_stride * (n_mha_win_size // 2) * 2 = s * 18.
+  max_seq_len: 576,
   window_length: 64,
   window_stride: 32,
   sample_stride: 16,
@@ -24,15 +25,15 @@ dataset: {
 model: {
   fpn_type: identity,
   max_buffer_len_factor: 6.0,
-  n_mha_win_size: 9,
+  n_mha_win_size: 19,
 }
 opt: {
-  learning_rate: 0.00006088745,
-  epochs: 55,
+  learning_rate: 5.0e-05,
+  epochs: 0,
   weight_decay: 0.05,
 }
 loader: {
-  batch_size: 8,
+  batch_size: 4,
   num_workers: 8,
 }
 train_cfg: {

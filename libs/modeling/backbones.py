@@ -37,14 +37,26 @@ class CLIPEncoder(nn.Module):
         else:
             self.projection = nn.Identity()
 
+    def _encode_frames(self, pixel_values):
+        """Encode a batch of frames through CLIP. Separated for gradient checkpointing."""
+        last_hidden_state = self.clip_image_encoder(pixel_values=pixel_values).last_hidden_state
+        return last_hidden_state.mean(dim=1)
+
     def forward(self, x):
         # Input shape: (batch_size, num_frames, channels, height, width)
         b, t, c, h, w = x.size()
 
-        # Pass through CLIP
-        x = x.contiguous().view(-1, c, h, w)  # Merge batch and temporal dimensions
-        last_hidden_state = self.clip_image_encoder(pixel_values=x).last_hidden_state  # Extract frame embeddings
-        last_hidden_state = last_hidden_state.mean(dim=1) # x = x[:, 0]
+        # Pass through CLIP in chunks to avoid OOM
+        # Process frames in chunks, using gradient checkpointing for each chunk
+        x = x.contiguous().view(-1, c, h, w)  # (b*t, c, h, w)
+        chunk_size = 64  # Process 64 frames at a time
+        all_features = []
+        with torch.no_grad():
+            for i in range(0, x.shape[0], chunk_size):
+                chunk = x[i:i+chunk_size]
+                feat = self._encode_frames(chunk)
+                all_features.append(feat)
+        last_hidden_state = torch.cat(all_features, dim=0)
 
         # Extract features for each frame
         last_hidden_state = last_hidden_state.view(b, t, -1)  # Shape: (batch_size, num_frames, embd_dim)
@@ -128,12 +140,14 @@ class ConvTransformerBackbone(nn.Module):
         path_pdrop = 0.0,      # droput rate for drop path
         use_abs_pe = False,    # use absolute position embedding
         use_rel_pe = False,    # use relative position embedding
+        use_gradient_checkpoint = False,  # use gradient checkpointing to save memory
     ):
         super().__init__()
         assert len(arch) == 3
         assert len(mha_win_size) == (1 + arch[2])
         self.n_in = n_in
         self.arch = arch
+        self.use_gradient_checkpoint = use_gradient_checkpoint
         self.mha_win_size = mha_win_size
         self.max_len = max_len
         self.relu = nn.ReLU(inplace=True)
@@ -249,7 +263,12 @@ class ConvTransformerBackbone(nn.Module):
 
         # stem transformer
         for idx in range(len(self.stem)):
-            x, mask = self.stem[idx](x, mask)
+            if self.training and self.use_gradient_checkpoint:
+                x, mask = torch.utils.checkpoint.checkpoint(
+                    self.stem[idx], x, mask, use_reentrant=False
+                )
+            else:
+                x, mask = self.stem[idx](x, mask)
 
         # prep for outputs
         out_feats = (x, )
@@ -257,7 +276,12 @@ class ConvTransformerBackbone(nn.Module):
 
         # main branch with downsampling
         for idx in range(len(self.branch)):
-            x, mask = self.branch[idx](x, mask)
+            if self.training and self.use_gradient_checkpoint:
+                x, mask = torch.utils.checkpoint.checkpoint(
+                    self.branch[idx], x, mask, use_reentrant=False
+                )
+            else:
+                x, mask = self.branch[idx](x, mask)
             out_feats += (x, )
             out_masks += (mask, )
 

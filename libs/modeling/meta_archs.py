@@ -250,6 +250,7 @@ class PtTransformer(nn.Module):
         # backbone network: conv + transformer
         self.backbone_type = backbone_type
         # assert self.backbone_type in ['convTransformer', 'conv', 'ActionFormerWithViViT', 'ActionFormerWithViT']
+        use_gradient_checkpoint = train_cfg.get('use_gradient_checkpoint', False)
         if backbone_type == 'convTransformer':
             self.backbone = make_backbone(
                 'convTransformer',
@@ -267,7 +268,8 @@ class PtTransformer(nn.Module):
                     'proj_pdrop' : self.train_dropout,
                     'path_pdrop' : self.train_droppath,
                     'use_abs_pe' : use_abs_pe,
-                    'use_rel_pe' : use_rel_pe
+                    'use_rel_pe' : use_rel_pe,
+                    'use_gradient_checkpoint' : use_gradient_checkpoint,
                 }
             )
         elif backbone_type == 'ActionFormerWithCLIP':

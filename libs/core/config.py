@@ -40,11 +40,11 @@ DEFAULTS = {
         "backbone_type": 'ActionFormerWithCLIP',
         # type of FPN (fpn | identity)
         "fpn_type": "identity",
-        "backbone_arch": (2, 2, 3), # (2, 2, 5) (#convs projection, #transformers, #transformer levels)
+        "backbone_arch": (2, 2, 5), # (2, 2, 5) (#convs projection, #transformers, #transformer levels)
         # scale factor between pyramid levels
         "scale_factor": 2,
         # regression range for pyramid levels
-        "regression_range": [(0, 4), (4, 8), (8, 16), (16, 32)], # , (32, 64), (64, 10000)
+        "regression_range": [(0, 4), (4, 8), (8, 16), (16, 32), (32, 64), (64, 10000)], # , (32, 64), (64, 10000)
         # number of heads in self-attention
         "n_head": 4,
         # window size for self attention; <=1 to use full seq (ie global attention)

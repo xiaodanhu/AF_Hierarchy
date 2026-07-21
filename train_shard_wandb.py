@@ -64,20 +64,42 @@ def main(args, cfg):
                    reinit=True
                    )
         run_config = wandb.config
-        # Apply sweep parameters (sliding window parameters for finegym_slide dataset)
-        cfg["dataset"]["max_seq_len"] = run_config["max_seq_len"]
-        cfg["opt"]["learning_rate"] = run_config["learning_rate"]
-        cfg["loader"]["batch_size"] = run_config["batch_size"]
-        ds_config["gradient_accumulation_steps"] = run_config["gradient_accumulation_steps"]
+        # Apply sweep parameters if present (only set during sweep runs)
+        if "learning_rate" in run_config:
+            cfg["opt"]["learning_rate"] = run_config["learning_rate"]
+        if "batch_size" in run_config:
+            cfg["loader"]["batch_size"] = run_config["batch_size"]
+        if "gradient_accumulation_steps" in run_config:
+            ds_config["gradient_accumulation_steps"] = run_config["gradient_accumulation_steps"]
+        if "window_length" in run_config:
+            cfg["dataset"]["window_length"] = run_config["window_length"]
+        if "sample_stride" in run_config:
+            cfg["dataset"]["sample_stride"] = run_config["sample_stride"]
+        # Parse paired preset: "n_mha_win_size_max_seq_len" e.g. "19_288"
+        if "mha_seq_preset" in run_config:
+            parts = run_config["mha_seq_preset"].split('_')
+            cfg["model"]["n_mha_win_size"] = int(parts[0])
+            cfg["dataset"]["max_seq_len"] = int(parts[1])
+        elif "max_seq_len" in run_config:
+            cfg["dataset"]["max_seq_len"] = run_config["max_seq_len"]
+        # Keep these tied deterministically for sweep stability.
+        wl = int(cfg["dataset"].get("window_length", 64))
+        ss = int(cfg["dataset"].get("sample_stride", 4))
+        cfg["dataset"]["window_stride"] = max(1, wl // 2)
+        cfg["dataset"]["num_frames"] = ss
 
     # Broadcast sweep parameters from rank 0 to all ranks
     if dist.is_initialized():
         # Create tensors to broadcast
         params_tensor = torch.tensor([
-            cfg["dataset"].get("max_seq_len", 144),
+            cfg["dataset"].get("max_seq_len", 288),
             cfg["opt"].get("learning_rate", 0.0001),
             cfg["loader"].get("batch_size", 4),
-            ds_config.get("gradient_accumulation_steps", 6)
+            ds_config.get("gradient_accumulation_steps", 6),
+            cfg["dataset"].get("window_length", 64),
+            cfg["dataset"].get("window_stride", 32),
+            cfg["dataset"].get("sample_stride", 4),
+            cfg["model"].get("n_mha_win_size", 19),
         ], dtype=torch.float32, device='cuda')
 
         dist.broadcast(params_tensor, src=0)
@@ -88,6 +110,50 @@ def main(args, cfg):
             cfg["opt"]["learning_rate"] = params_tensor[1].item()
             cfg["loader"]["batch_size"] = int(params_tensor[2].item())
             ds_config["gradient_accumulation_steps"] = int(params_tensor[3].item())
+            cfg["dataset"]["window_length"] = int(params_tensor[4].item())
+            cfg["dataset"]["window_stride"] = int(params_tensor[5].item())
+            cfg["dataset"]["sample_stride"] = int(params_tensor[6].item())
+            cfg["model"]["n_mha_win_size"] = int(params_tensor[7].item())
+
+    # Enforce coupled dataset parameters on all ranks.
+    wl = int(cfg["dataset"].get("window_length", 64))
+    ss = int(cfg["dataset"].get("sample_stride", 4))
+    msl = int(cfg["dataset"].get("max_seq_len", 288))
+    cfg["dataset"]["window_stride"] = max(1, wl // 2)
+    cfg["dataset"]["num_frames"] = ss
+    # Sync dataset → model (load_config did this once, but sweep overrides came after)
+    cfg["model"]["max_seq_len"] = msl
+
+    # Skip invalid parameter combinations instead of training with bad configs.
+    temporal_frames = wl * ss  # total raw frames per window
+    n_mha = int(cfg["model"].get("n_mha_win_size", -1))
+    # Compute the max divisor from FPN strides × attention window (mirrors meta_archs.py L218-222)
+    ba = cfg["model"].get("backbone_arch", (2, 2, 5))
+    sf = cfg["model"].get("scale_factor", 2)
+    fsl = cfg["model"].get("fpn_start_level", 0)
+    fpn_strides = [sf**i for i in range(fsl, ba[-1] + 1)]
+    if n_mha > 1:
+        max_div = max(s * (n_mha // 2) * 2 for s in fpn_strides)
+    else:
+        max_div = max(fpn_strides)
+    skip_reason = None
+    if wl > msl:
+        skip_reason = f"window_length({wl}) > max_seq_len({msl})"
+    elif msl % max_div != 0:
+        skip_reason = f"max_seq_len({msl}) not divisible by max_div_factor({max_div}) for n_mha={n_mha}"
+    elif temporal_frames < 120:
+        # < ~4s at 30fps — too short for most THUMOS14 actions
+        skip_reason = f"temporal coverage too short: {wl}*{ss}={temporal_frames} frames (~{temporal_frames/30:.1f}s)"
+    elif temporal_frames > 2048:
+        # > ~68s at 30fps — excessively long windows
+        skip_reason = f"temporal coverage too long: {wl}*{ss}={temporal_frames} frames (~{temporal_frames/30:.1f}s)"
+
+    if skip_reason:
+        if args.local_rank == 0:
+            print(f"[SKIP] Invalid config: {skip_reason}")
+            wandb.log({"val/mAP": 0.0, "skipped": True})
+            wandb.finish()
+        return
 
     # prep for output folder (based on time stamp)
     if not os.path.exists(cfg['output_folder']) and args.local_rank == 0:
@@ -198,6 +264,10 @@ def main(args, cfg):
             logger.log("learning_rate: {}".format(cfg["opt"]["learning_rate"]))
             logger.log("batch_size: {}".format(cfg["loader"]["batch_size"]))
             logger.log("gradient_accumulation_steps: {}".format(ds_config["gradient_accumulation_steps"]))
+            logger.log("window_length: {}".format(cfg["dataset"]["window_length"]))
+            logger.log("window_stride: {}".format(cfg["dataset"]["window_stride"]))
+            logger.log("sample_stride: {}".format(cfg["dataset"]["sample_stride"]))
+            logger.log("n_mha_win_size: {}".format(cfg["model"]["n_mha_win_size"]))
             logger.log("***********************************************************************")
 
             # Also print to console for visibility
@@ -208,6 +278,10 @@ def main(args, cfg):
             print(f"  learning_rate:              {cfg['opt']['learning_rate']}")
             print(f"  batch_size:                {cfg['loader']['batch_size']}")
             print(f"  gradient_accumulation_steps: {ds_config['gradient_accumulation_steps']}")
+            print(f"  window_length:              {cfg['dataset']['window_length']}")
+            print(f"  window_stride:              {cfg['dataset']['window_stride']}")
+            print(f"  sample_stride:              {cfg['dataset']['sample_stride']}")
+            print(f"  n_mha_win_size:             {cfg['model']['n_mha_win_size']}")
             print("*" * 60 + "\n")
 
         """4. training / validation loop"""
@@ -385,11 +459,24 @@ def run_sweep(args, cfg):
         'method': 'random',
         'metric': {'name': 'val/mAP', 'goal': 'maximize'},
         'parameters': {
-            # Sliding window parameters (relevant for finegym_slide dataset)
-            'max_seq_len': {'values': [144, 288, 576]},
-            'learning_rate': {'distribution': 'log_uniform_values', 'min': 1e-7, 'max': 1e-3},
-            'batch_size': {'values': [1, 2, 4, 8, 16]},
-            'gradient_accumulation_steps': {'values': [2, 4, 6]},
+            'learning_rate': {'distribution': 'log_uniform_values', 'min': 1e-5, 'max': 1e-3},
+            'batch_size': {'values': [4, 8, 16, 32]},
+            'gradient_accumulation_steps': {'values': [1, 2, 4, 6]},
+            # Sliding window parameters
+            'window_length': {'values': [32, 64, 128, 256]},
+            'sample_stride': {'values': [2, 4, 8, 16]},
+            # n_mha_win_size and max_seq_len must satisfy:
+            #   max_seq_len % (max_fpn_stride * (n_mha_win_size // 2) * 2) == 0
+            #   With backbone_arch=(2,2,5), scale=2, start=0 → max_fpn_stride=32
+            #   n_mha=9  → divisor=256, n_mha=13 → 384, n_mha=19 → 576
+            # Sweep as paired presets to guarantee validity.
+            'mha_seq_preset': {'values': [
+                '9_256',   # n_mha_win_size=9,  max_seq_len=256  (256/256=1)
+                '9_512',   # n_mha_win_size=9,  max_seq_len=512  (512/256=2)
+                '13_384',  # n_mha_win_size=13, max_seq_len=384  (384/384=1)
+                # '13_768',  # n_mha_win_size=13, max_seq_len=768  (768/384=2)
+                '19_576',  # n_mha_win_size=19, max_seq_len=576  (576/576=1)
+            ]},
         }
     }
     sweep_id = wandb.sweep(sweep_config, project='finegym_sweep')
@@ -421,15 +508,15 @@ if __name__ == '__main__':
     # the arg parser
     parser = argparse.ArgumentParser(
       description='Train a point-based transformer for action localization')
-    parser.add_argument('--config', metavar='DIR', default='./configs/finegym_i3d.yaml', help='path to a config file')
-    parser.add_argument('-p', '--print-freq', default=10, type=int, help='print frequency (default: 10 iterations)')
-    parser.add_argument('-c', '--ckpt-freq', default=1, type=int, help='checkpoint frequency (default: every 5 epochs)')
-    parser.add_argument('--output', default='deepspeed_raw_video', type=str, help='name of exp folder (default: none)')
+    parser.add_argument('--config', metavar='DIR', default='./configs/thumos14_i3d.yaml', help='path to a config file')
+    parser.add_argument('-p', '--print-freq', default=5, type=int, help='print frequency (default: 10 iterations)')
+    parser.add_argument('-c', '--ckpt-freq', default=5, type=int, help='checkpoint frequency (default: every 5 epochs)')
+    parser.add_argument('--output', default='deepspeed', type=str, help='name of exp folder (default: none)')
     parser.add_argument('--resume', default='', type=str, metavar='PATH', help='path to a checkpoint (default: none)')
     parser.add_argument("--local_rank", default=-1, type=int, help="local_rank for distributed training on gpus")
     parser.add_argument("--sweep", action='store_true', help="Run a W&B hyperparameter sweep")
     parser.add_argument("--sweep_count", default=50, type=int, help="number of sweep trials to run")
-    parser.add_argument("--gpus", default="0,1", type=str, help='GPUs indices for sweep (e.g., "0,1" or "2,3")')
+    parser.add_argument("--gpus", default="0,1,2,3", type=str, help='GPUs indices for sweep (e.g., "0,1" or "2,3")')
     args = parser.parse_args()
     print(args.local_rank)
 
