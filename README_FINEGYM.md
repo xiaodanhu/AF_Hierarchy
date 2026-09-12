@@ -1,5 +1,7 @@
 # FineGym zero-shot detection: Ti-FAD re-implementation and the 4-level hierarchy champion
 
+> **This branch:** the 4-level hierarchy champion — run `bash scripts/run_finegym_t3.sh champ`.
+
 This branch contains everything needed to train and evaluate the FineGym
 three-system comparison (Table 3): all three systems share the
 `ActionFormerWithCLIP` backbone (CLIP ViT-B/32 image encoder trained
