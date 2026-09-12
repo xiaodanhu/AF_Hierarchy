@@ -3,16 +3,17 @@
 > **This branch:** the 4-level hierarchy champion — run `bash scripts/run_finegym_t3.sh champ` (stage 1), then `bash scripts/run_finegym_t3.sh champ2` (stage 2, phase-level attention).
 
 This branch contains everything needed to train and evaluate the FineGym
-three-system comparison (Table 3): all three systems share the
-`ActionFormerWithCLIP` backbone (CLIP ViT-B/32 image encoder trained
-end-to-end on raw frames + convolutional-transformer detector) and a frozen
-CLIP text encoder with one learned projection; they differ only in how text
-enters the model.
+comparison (Table 3) between the Ti-FAD baseline and our 4-level hierarchy
+champion. Both systems share the `ActionFormerWithCLIP` backbone (CLIP
+ViT-B/32 image encoder trained end-to-end on raw frames +
+convolutional-transformer detector) and a frozen CLIP text encoder with one
+learned projection; they differ only in how text enters the model. (A
+name-embedding-only config, `finegym_t3_base.yaml`, is kept for reference
+but is not part of the comparison.)
 
 | system | config | what it adds |
 |---|---|---|
-| name embedding (baseline) | `configs/finegym_t3_base.yaml` | one prompt per element name |
-| Ti-FAD re-implementation | `configs/finegym_t3_tifad.yaml` | + per-level text–video cross-attention + foreground head |
+| Ti-FAD (baseline) | `configs/finegym_t3_tifad.yaml` | one prompt per element name + per-level text–video cross-attention + foreground head; none of our components |
 | ours, 4-level champion | `configs/finegym_t3_champ.yaml` (stage 1) + `configs/finegym_t3_champ_stage2.yaml` (stage 2) | + 11-sentence hierarchical prompt ensemble, action–phase attention (action-level attention in stage 1, phase-level neighbour attention in stage 2), auxiliary losses at the apparatus and element-set levels (3-way learned uncertainty weighting), duration prior |
 
 Hierarchy used by the champion: apparatus (4) > element set (14) > element (99,
@@ -66,12 +67,11 @@ CLIP text embeddings are cached under `./cache_text_emb/` on first use.
 
 ## Training
 
-Schedule (identical for all systems): 20 epochs = 5 warm-up + 15 cosine,
+Schedule (identical for both systems): 20 epochs = 5 warm-up + 15 cosine,
 AdamW, lr 1e-4, weight decay 0.05, 16 windows per GPU on 3 GPUs (48 per
 step), bf16, gradient checkpointing on the CLIP encoder. About 11 GB per GPU.
 
 ```bash
-bash scripts/run_finegym_t3.sh base           # name-embedding baseline
 bash scripts/run_finegym_t3.sh tifad          # Ti-FAD re-implementation
 bash scripts/run_finegym_t3.sh champ          # champion, stage 1
 bash scripts/run_finegym_t3.sh champ2         # champion, stage 2 (needs stage-1 checkpoint)
@@ -97,7 +97,7 @@ Logs go to `logs/fg3_<system>.log`; checkpoints to
 `ckpt/finegym_t3_<system>_fg3_<system>/`. The best epoch is selected by the
 held-out mAP printed each epoch.
 
-`python scripts/verify_t3_systems.py` runs a CPU-only check of the three
+`python scripts/verify_t3_systems.py` runs a CPU-only check of the
 systems (asset resolution, one train/eval forward each, and the init-equality
 test that the champion equals the baseline at initialization);
 `python scripts/verify_t3_stage2.py` checks the second stage.
