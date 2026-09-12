@@ -1,6 +1,6 @@
 # FineGym zero-shot detection: Ti-FAD re-implementation and the 4-level hierarchy champion
 
-> **This branch:** the 4-level hierarchy champion — run `bash scripts/run_finegym_t3.sh champ`.
+> **This branch:** the 4-level hierarchy champion — run `bash scripts/run_finegym_t3.sh champ` (stage 1), then `bash scripts/run_finegym_t3.sh champ2` (stage 2, phase-level attention).
 
 This branch contains everything needed to train and evaluate the FineGym
 three-system comparison (Table 3): all three systems share the
@@ -13,7 +13,7 @@ enters the model.
 |---|---|---|
 | name embedding (baseline) | `configs/finegym_t3_base.yaml` | one prompt per element name |
 | Ti-FAD re-implementation | `configs/finegym_t3_tifad.yaml` | + per-level text–video cross-attention + foreground head |
-| ours, 4-level champion | `configs/finegym_t3_champ.yaml` | + 11-sentence hierarchical prompt ensemble, action–phase attention, auxiliary losses at the apparatus and element-set levels (3-way learned uncertainty weighting), duration prior |
+| ours, 4-level champion | `configs/finegym_t3_champ.yaml` (stage 1) + `configs/finegym_t3_champ_stage2.yaml` (stage 2) | + 11-sentence hierarchical prompt ensemble, action–phase attention (action-level attention in stage 1, phase-level neighbour attention in stage 2), auxiliary losses at the apparatus and element-set levels (3-way learned uncertainty weighting), duration prior |
 
 Hierarchy used by the champion: apparatus (4) > element set (14) > element (99,
 the actions the detector predicts) > phases (10 per element, generated).
@@ -71,10 +71,27 @@ AdamW, lr 1e-4, weight decay 0.05, 16 windows per GPU on 3 GPUs (48 per
 step), bf16, gradient checkpointing on the CLIP encoder. About 11 GB per GPU.
 
 ```bash
-bash scripts/run_finegym_t3.sh tifad          # Ti-FAD re-implementation
-bash scripts/run_finegym_t3.sh champ          # 4-level champion
 bash scripts/run_finegym_t3.sh base           # name-embedding baseline
+bash scripts/run_finegym_t3.sh tifad          # Ti-FAD re-implementation
+bash scripts/run_finegym_t3.sh champ          # champion, stage 1
+bash scripts/run_finegym_t3.sh champ2         # champion, stage 2 (needs stage-1 checkpoint)
 ```
+
+### Champion two-stage training (action-phase attention)
+
+Action-phase attention has two attention layers. Stage 1 trains the detector,
+the CLIP image encoder, the text projection, and the *action-level* attention
+(the action description attends over its 11 sentences; zero-initialised
+output projection). Stage 2 then adds the *phase-level* attention — each of
+the 10 phase sentences attends to itself and its immediate temporal
+neighbours through a banded mask — and trains **only** that layer
+(`--freeze_except text_pathway.phase_attn`), initialised from the best
+stage-1 checkpoint (`--init_from ckpt/finegym_t3_champ_fg3_champ/vit_best_model`).
+Its output projection is zero-initialised, so stage 2 starts exactly at the
+stage-1 model (`scripts/verify_t3_stage2.py` checks this on CPU, together
+with the freeze and the mask). Stage 2 runs 8 epochs (2 warm-up + 6) at the
+same learning rate; because the image encoder is frozen, no backward pass
+runs through it.
 
 Logs go to `logs/fg3_<system>.log`; checkpoints to
 `ckpt/finegym_t3_<system>_fg3_<system>/`. The best epoch is selected by the
@@ -82,4 +99,5 @@ held-out mAP printed each epoch.
 
 `python scripts/verify_t3_systems.py` runs a CPU-only check of the three
 systems (asset resolution, one train/eval forward each, and the init-equality
-test that the champion equals the baseline at initialization).
+test that the champion equals the baseline at initialization);
+`python scripts/verify_t3_stage2.py` checks the second stage.

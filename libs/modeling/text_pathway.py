@@ -182,6 +182,7 @@ class TextClsPathway(nn.Module):
 
     def __init__(self, verbalizer_path, head_dim, prior_prob=0.01,
                  ensemble_path='', phase_attention=False,
+                 phase_neighbor_attention=False,
                  sentence_dropout=0.0, stem_degrade=0.0,
                  prompt_template='a video of action {}',
                  cache_dir='./cache_text_emb'):
@@ -191,6 +192,7 @@ class TextClsPathway(nn.Module):
         self.sentence_dropout = float(sentence_dropout)
         self.stem_degrade = float(stem_degrade)
         self.phase_attention = bool(phase_attention)
+        self.phase_neighbor_attention = bool(phase_neighbor_attention)
         # action -> phrase index (also used by the AS loss in meta_archs)
         self.register_buffer(
             'action_to_phrase',
@@ -243,6 +245,26 @@ class TextClsPathway(nn.Module):
             nn.init.zeros_(self.attr_attn.out_proj.weight)
             nn.init.zeros_(self.attr_attn.out_proj.bias)
             print("[t3-text] PA: zero-init class->phase attention active")
+        # Phase-level attention (paper Eq. 3): the K-1 phase sentences attend
+        # to themselves and their immediate temporal neighbours only (banded
+        # additive mask, 0 on |i-j|<=1, -inf elsewhere); zero-init out_proj so
+        # the class embeddings are unchanged at step 0. Trained in a SECOND
+        # stage (train_shard.py --init_from <stage-1 ckpt> --freeze_except
+        # text_pathway.phase_attn), exactly as on THUMOS14/ActivityNet.
+        self.phase_attn = None
+        if self.phase_neighbor_attention:
+            assert self.attr_attn is not None, \
+                "phase_neighbor_attention requires phase_attention (needs an ensemble)"
+            K = self.text_feats.shape[1]
+            self.phase_attn = nn.MultiheadAttention(head_dim, 4, batch_first=True)
+            nn.init.zeros_(self.phase_attn.out_proj.weight)
+            nn.init.zeros_(self.phase_attn.out_proj.bias)
+            idx = torch.arange(K - 1)
+            band = torch.zeros(K - 1, K - 1)
+            band[(idx[:, None] - idx[None, :]).abs() > 1] = float('-inf')
+            self.register_buffer('phase_band_mask', band, persistent=False)
+            print(f"[t3-text] APA phase-level attention active: {K - 1} phases, "
+                  "|i-j|<=1 band, zero-init out_proj")
         # scaled-cosine parameters (no RNG). Names chosen so make_optimizer's
         # no-decay pass catches them ('logit_scale' explicit, '*_bias').
         self.logit_scale = nn.Parameter(torch.tensor(math.log(20.0)))
@@ -259,6 +281,12 @@ class TextClsPathway(nn.Module):
             stems = self.stem_feats.to(feats.dtype).unsqueeze(1).expand(-1, K, -1)
             feats = torch.where(deg.view(C, 1, 1), stems, feats)
         per = self.proj(feats)                             # (C, K, D)
+        if self.phase_attn is not None:
+            ph = per[:, 1:]                                # (C, K-1, D) phases only
+            upd, _ = self.phase_attn(ph, ph, ph,
+                                     attn_mask=self.phase_band_mask.to(ph.dtype),
+                                     need_weights=False)
+            per = torch.cat([per[:, :1], ph + upd], dim=1)
         if self.attr_attn is not None:
             q = per[:, :1]                                 # (C, 1, D) sentence 0
             kpm = None

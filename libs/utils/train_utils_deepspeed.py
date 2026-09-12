@@ -173,9 +173,11 @@ def make_optimizer(model, optimizer_config):
         % (str(remaining), )
 
     # create the pytorch optimizer object (excludes HRM params)
+    # frozen parameters (second-stage training, --freeze_except) are not
+    # handed to the optimizer at all
     optim_groups = [
-        {"params": [param_dict[pn] for pn in sorted(list(decay))], "weight_decay": optimizer_config['weight_decay']},
-        {"params": [param_dict[pn] for pn in sorted(list(no_decay))], "weight_decay": 0.0},
+        {"params": [param_dict[pn] for pn in sorted(list(decay)) if param_dict[pn].requires_grad], "weight_decay": optimizer_config['weight_decay']},
+        {"params": [param_dict[pn] for pn in sorted(list(no_decay)) if param_dict[pn].requires_grad], "weight_decay": 0.0},
     ]
 
     if optimizer_config["type"] == "SGD":

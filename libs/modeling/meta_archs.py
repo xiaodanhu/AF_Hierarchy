@@ -401,6 +401,7 @@ class PtTransformer(nn.Module):
         text_prompt_template='a video of action {}',   # system 1 prompt
         text_ensemble_path='',        # champion HP: 11-sentence ensemble json
         text_phase_attention=False,   # champion PA: zero-init class->phase attn
+        text_phase_neighbor_attention=False,  # APA phase-level (stage-2) attention
         text_sentence_dropout=0.0,    # champion HP: h14 dropout (train only)
         text_stem_degrade=0.0,        # champion HP: h18 parent-stem degrade
         text_cache_dir='./cache_text_emb',
@@ -647,6 +648,7 @@ class PtTransformer(nn.Module):
                 prior_prob=self.train_cls_prior_prob,
                 ensemble_path=text_ensemble_path,
                 phase_attention=text_phase_attention,
+                phase_neighbor_attention=text_phase_neighbor_attention,
                 sentence_dropout=text_sentence_dropout,
                 stem_degrade=text_stem_degrade,
                 prompt_template=text_prompt_template,

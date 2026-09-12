@@ -124,6 +124,33 @@ def main(args):
     cfg['model']['active_learning_method'] = cfg['active_learning_method']
     model = make_meta_arch(cfg['model_name'], **cfg['model'])
 
+    # ---- second-stage training (APA phase-level attention) ----
+    # --init_from: a DeepSpeed checkpoint dir (e.g. .../vit_best_model) or a
+    # .pt file; its module weights initialise this model (strict=False so
+    # newly added modules such as text_pathway.phase_attn stay at their
+    # zero-init). --freeze_except: comma-separated substrings; only parameters
+    # whose name contains one of them are trained. Together they reproduce
+    # the THUMOS/ActivityNet recipe: train the detector + action-level
+    # attention first, then learn only the phase-level attention on top.
+    if args.init_from:
+        src = args.init_from
+        if os.path.isdir(src):
+            src = os.path.join(src, 'mp_rank_00_model_states.pt')
+        sd = torch.load(src, map_location='cpu')
+        sd = sd.get('module', sd)
+        missing, unexpected = model.load_state_dict(sd, strict=False)
+        print(f"[init_from] loaded {src}: {len(sd)} tensors; "
+              f"missing={sorted(missing)}; unexpected={sorted(unexpected)}")
+    if args.freeze_except:
+        keep = [k.strip() for k in args.freeze_except.split(',') if k.strip()]
+        n_train = 0
+        for n, p in model.named_parameters():
+            p.requires_grad = any(k in n for k in keep)
+            n_train += int(p.requires_grad)
+        trainable = [n for n, p in model.named_parameters() if p.requires_grad]
+        assert n_train > 0, f"--freeze_except {keep} matched no parameters"
+        print(f"[freeze_except] {n_train} trainable tensors: {trainable}")
+
     # not ideal for multi GPU training, ok for now
     # model = nn.DataParallel(model, device_ids=cfg['devices'])
     parameters = filter(lambda p: p.requires_grad, model.parameters())
@@ -336,6 +363,10 @@ if __name__ == '__main__':
     parser.add_argument('-c', '--ckpt-freq', default=5, type=int, help='checkpoint frequency (default: every 5 epochs)')
     parser.add_argument('--output', default='deepspeed', type=str, help='name of exp folder (default: none)')
     parser.add_argument('--resume', default='', type=str, metavar='PATH', help='path to a DeepSpeed checkpoint tag (default: none)')
+    parser.add_argument('--init_from', default='', type=str, metavar='PATH',
+                        help='initialise weights from a DeepSpeed checkpoint dir or .pt (strict=False); for second-stage training')
+    parser.add_argument('--freeze_except', default='', type=str,
+                        help='comma-separated substrings; only parameters whose names contain one are trained')
     parser.add_argument("--local_rank", default=-1, type=int, help="local_rank for distributed training on gpus")
     args = parser.parse_args()
     print(args.local_rank)
