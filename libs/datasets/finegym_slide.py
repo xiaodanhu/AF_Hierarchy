@@ -348,11 +348,37 @@ def get_frame_path(rgb_root, youtube_id, frame_idx, total_frames):
     """
     # Determine number of digits for zero-padding based on total frames
     num_digits = len(str(total_frames))
-    num_digits = max(num_digits, 6)  # Minimum 6 digits
+    # Minimum 7 digits: the ENTIRE existing RGB store on this machine
+    # (/data3/xiaodan8/FineGym/RGB, verified over all 180 video dirs) uses
+    # 7-digit names ('0011264.jpg') written by an earlier code version;
+    # with the old minimum of 6 every lookup would miss and fall back to
+    # the (absent) raw videos, silently yielding dummy black frames.
+    num_digits = max(num_digits, 7)
 
     frame_dir = os.path.join(rgb_root, youtube_id)
     frame_filename = f"{frame_idx:0{num_digits}d}.jpg"
     return os.path.join(frame_dir, frame_filename)
+
+
+_CACHED_FRAME_INDICES = {}
+
+
+def _get_cached_frame_indices(rgb_root, youtube_id):
+    """Sorted list of cached JPG frame indices for a video (memoized).
+
+    Used by the nearest-frame snapping in load_sliding_window_jpg. One
+    os.listdir per video per worker process (~0.1 s, then cached).
+    """
+    key = (rgb_root, youtube_id)
+    if key not in _CACHED_FRAME_INDICES:
+        frame_dir = os.path.join(rgb_root, youtube_id)
+        try:
+            idxs = sorted(int(f[:-4]) for f in os.listdir(frame_dir)
+                          if f.endswith('.jpg'))
+        except OSError:
+            idxs = []
+        _CACHED_FRAME_INDICES[key] = idxs
+    return _CACHED_FRAME_INDICES[key]
 
 
 def load_sliding_window_jpg(rgb_root, youtube_id, video_path, window_start_frame,
@@ -386,6 +412,34 @@ def load_sliding_window_jpg(rgb_root, youtube_id, video_path, window_start_frame
     frame_paths = [get_frame_path(rgb_root, youtube_id, idx, total_frames) for idx in frame_indices]
     missing_indices = [i for i, path in enumerate(frame_paths) if not os.path.exists(path)]
 
+    # NEAREST-FRAME SNAPPING (this machine has the JPG store but NOT the raw
+    # videos): the store was cached by earlier runs with different window
+    # alignments, so ~47% of exact indices miss by parity — measured 98.9%
+    # of misses have a cached neighbor within 1 raw frame (99.6% within 2).
+    # Snap a missing index to the nearest cached frame within stride//2
+    # (max 33-266 ms error, negligible vs the 16-frame sampling stride);
+    # only truly uncovered frames (~0.2%) fall through to the video path.
+    if missing_indices:
+        cached = _get_cached_frame_indices(rgb_root, youtube_id)
+        if cached:
+            import bisect
+            tol = max(2, stride // 2)
+            still_missing = []
+            for i in missing_indices:
+                fi = frame_indices[i]
+                j = bisect.bisect_left(cached, fi)
+                best = None
+                for k in (j - 1, j):
+                    if 0 <= k < len(cached):
+                        if best is None or abs(cached[k] - fi) < abs(best - fi):
+                            best = cached[k]
+                if best is not None and abs(best - fi) <= tol:
+                    frame_paths[i] = get_frame_path(
+                        rgb_root, youtube_id, best, total_frames)
+                else:
+                    still_missing.append(i)
+            missing_indices = still_missing
+
     frames = [None] * window_length
 
     if len(missing_indices) == 0:
@@ -398,6 +452,15 @@ def load_sliding_window_jpg(rgb_root, youtube_id, video_path, window_start_frame
                 missing_indices.append(i)
 
     if len(missing_indices) > 0:
+        # Load whatever JPGs DO exist first (the original all-or-nothing
+        # logic left every frame as dummy when the video is absent)
+        _missing_set = set(missing_indices)
+        for i, path in enumerate(frame_paths):
+            if i not in _missing_set and os.path.exists(path):
+                try:
+                    frames[i] = Image.open(path).convert('RGB')
+                except Exception:
+                    pass
         # Some frames are missing – load from video
         try:
             video_frames, _ = load_sliding_window(video_path, window_start_frame, window_length, stride)
@@ -495,6 +558,13 @@ class FineGymSlideDataset(Dataset):
         test_overlap=True,    # Use overlap for test (for better aggregation)
         use_raw_video=False,  # If True, use raw videos from video_raw/ with raw_value annotations
         load_jpg=False,       # If True (with use_raw_video=True), cache/load frames as JPG for speed
+        complete_only=True,   # If True, training windows only keep fully-contained actions; if False, partial-overlap actions are clipped to window
+        data_fraction=1.0,                # float in (0,1]; deterministic subsample of training videos
+        data_fraction_seed=42,            # seed for the subsample
+        label_noise_type='none',          # 'none' | 'sibling' | 'cross_phrase'
+        label_noise_rate=0.0,             # probability of corrupting any given action's label
+        label_noise_seed=42,              # seed for the noise injection
+        held_out_class_ids=None,          # Phase 2D ZSL: list of int c-action ids removed from training
         **kwargs              # ignore extra kwargs for compatibility
     ):
         # file path
@@ -552,14 +622,67 @@ class FineGymSlideDataset(Dataset):
         self.test_overlap = test_overlap        # Use 50% overlap for test
         # feat_stride = sample_stride (16 original frames per sampled frame)
         self.feat_stride = float(sample_stride)
+        self.complete_only = complete_only
+        if not complete_only:
+            print(f"[FineGymSlide] complete_only=False — partial-overlap actions clipped to window will also be kept")
+        self.data_fraction = float(data_fraction)
+        self.data_fraction_seed = int(data_fraction_seed)
+        self.label_noise_type = str(label_noise_type)
+        self.label_noise_rate = float(label_noise_rate)
+        self.label_noise_seed = int(label_noise_seed)
 
         # Window duration: window_length * sample_stride / fps
         # For 30fps: 32 * 16 / 30 = 17.07 seconds
 
+        # Load verbalizer for hierarchy labels
+        verbalizer_path = kwargs.get('verbalizer_path', '')
+        self.verbalizer_path = verbalizer_path if verbalizer_path else ''
+        if self.verbalizer_path:
+            from libs.modeling.hierarchy_utils import (
+                load_verbalizer, get_action_to_phrase_map, get_action_to_activity_map
+            )
+            self.verbalizer = load_verbalizer(self.verbalizer_path)
+            self.action_to_phrase = get_action_to_phrase_map(self.verbalizer)
+            self.action_to_activity = get_action_to_activity_map(self.verbalizer)
+        else:
+            self.verbalizer = None
+            self.action_to_phrase = None
+            self.action_to_activity = None
+
         # load database and select the subset
         dict_db, label_dict = self._load_json_db(self.json_file)
+        # Optional deterministic data-fraction subsampling for low-data experiments.
+        # Only subsamples training; val/test pass data_fraction=1.0 by default and
+        # are never reduced. The seed must be deterministic for reproducibility.
+        if self.is_training and 0.0 < self.data_fraction < 1.0:
+            import random as _r
+            import builtins as _b
+            rng = _r.Random(self.data_fraction_seed)
+            n_total = len(dict_db)
+            keep_n = max(1, int(_b.round(n_total * self.data_fraction)))
+            dict_db_list = list(dict_db)
+            dict_db = tuple(rng.sample(dict_db_list, keep_n))
+            print(f"[FineGymSlide] data_fraction={self.data_fraction} → kept {keep_n}/{n_total} videos (seed={self.data_fraction_seed})")
+        # Optional deterministic label-noise injection (no-op when self.label_noise_rate == 0).
+        dict_db = self._maybe_corrupt_labels(dict_db)
         assert len(label_dict) == num_classes, f"Expected {num_classes} classes, got {len(label_dict)}"
         self.label_dict = label_dict
+
+        # Phase 2D v4 ZSL: KEEP held-out segments in the database. They contribute
+        # to phrase/activity head training (parent labels are valid) and reg head
+        # training. The action cls head's loss masks them out — see meta_archs.py.
+        self.held_out_class_ids = set(int(x) for x in (held_out_class_ids or []))
+        if self.is_training and self.held_out_class_ids:
+            n_total = 0
+            n_held = 0
+            for v in dict_db:
+                if v.get('labels') is None:
+                    continue
+                lbls = v['labels']
+                n_total += len(lbls)
+                n_held += sum(1 for l in lbls if int(l) in self.held_out_class_ids)
+            print(f"[FineGymSlide] held_out: KEEPING {n_held}/{n_total} held-out action "
+                  f"segments in training (action cls loss masks them, phrase/reg trains on all)")
 
         # Cache file for video metadata (speeds up subsequent runs)
         # Different cache for raw vs cropped videos
@@ -830,13 +953,27 @@ class FineGymSlideDataset(Dataset):
             window_end_time = min(window_start_time + window_span_frames / video_fps, duration)
 
             segments, labels = self._get_window_segments_complete_only(
-                video_item, window_start_time, window_end_time, video_fps
+                video_item, window_start_time, window_end_time, video_fps,
+                complete_only=self.complete_only,
             )
 
             # Training: only keep windows with at least one complete action
             # Testing: keep ALL windows (for aggregation coverage)
             if self.is_training:
                 if segments is not None and len(segments) > 0:
+                    # Collect unique activity IDs from actions in this window
+                    window_activity_set = set()
+                    if self.action_to_activity is not None:
+                        for label in labels:
+                            window_activity_set.add(self.action_to_activity[int(label)])
+                    phrase_segs_win, phrase_lbls_win = self._filter_segments_to_window(
+                        video_item.get('phrase_segments'), video_item.get('phrase_labels'),
+                        window_start_time, window_end_time,
+                    )
+                    activity_segs_win, activity_lbls_win = self._filter_segments_to_window(
+                        video_item.get('activity_segments'), video_item.get('activity_labels'),
+                        window_start_time, window_end_time,
+                    )
                     windows.append({
                         'id': video_item['id'],
                         'video': video_item['video'],
@@ -846,12 +983,30 @@ class FineGymSlideDataset(Dataset):
                         'window_end_time': window_end_time,
                         'segments': segments,
                         'labels': labels,
+                        'phrase_segments': phrase_segs_win,
+                        'phrase_labels': phrase_lbls_win,
+                        'activity_segments': activity_segs_win,
+                        'activity_labels': activity_lbls_win,
+                        'activity_id_set': sorted(window_activity_set),
                         'fps': video_fps,
                         'duration': window_duration,
                         'total_frames': total_frames,
                         'youtube_id': youtube_id,
                     })
             else:
+                # Collect unique activity IDs from actions in this window
+                window_activity_set = set()
+                if self.action_to_activity is not None and labels is not None:
+                    for label in labels:
+                        window_activity_set.add(self.action_to_activity[int(label)])
+                phrase_segs_win, phrase_lbls_win = self._filter_segments_to_window(
+                    video_item.get('phrase_segments'), video_item.get('phrase_labels'),
+                    window_start_time, window_end_time,
+                )
+                activity_segs_win, activity_lbls_win = self._filter_segments_to_window(
+                    video_item.get('activity_segments'), video_item.get('activity_labels'),
+                    window_start_time, window_end_time,
+                )
                 # Test: include all windows for complete coverage during aggregation
                 windows.append({
                     'id': f"{video_item['id']}_w0",
@@ -862,6 +1017,11 @@ class FineGymSlideDataset(Dataset):
                     'window_end_time': window_end_time,
                     'segments': segments if segments is not None else np.array([], dtype=np.float32).reshape(0, 2),
                     'labels': labels if labels is not None else np.array([], dtype=np.int64),
+                    'phrase_segments': phrase_segs_win,
+                    'phrase_labels': phrase_lbls_win,
+                    'activity_segments': activity_segs_win,
+                    'activity_labels': activity_lbls_win,
+                    'activity_id_set': sorted(window_activity_set),
                     'fps': video_fps,
                     'duration': window_duration,
                     'total_frames': total_frames,
@@ -880,13 +1040,27 @@ class FineGymSlideDataset(Dataset):
                 window_end_time = window_end_frame_for_filter / video_fps
 
                 segments, labels = self._get_window_segments_complete_only(
-                    video_item, window_start_time, window_end_time, video_fps
+                    video_item, window_start_time, window_end_time, video_fps,
+                    complete_only=self.complete_only,
                 )
 
                 # Training: only include windows with at least one COMPLETE action
                 # Testing: include ALL windows for complete coverage during aggregation
                 if self.is_training:
                     if segments is not None and len(segments) > 0:
+                        # Collect unique activity IDs from actions in this window
+                        window_activity_set = set()
+                        if self.action_to_activity is not None:
+                            for label in labels:
+                                window_activity_set.add(self.action_to_activity[int(label)])
+                        phrase_segs_win, phrase_lbls_win = self._filter_segments_to_window(
+                            video_item.get('phrase_segments'), video_item.get('phrase_labels'),
+                            window_start_time, window_end_time,
+                        )
+                        activity_segs_win, activity_lbls_win = self._filter_segments_to_window(
+                            video_item.get('activity_segments'), video_item.get('activity_labels'),
+                            window_start_time, window_end_time,
+                        )
                         windows.append({
                             'id': f"{video_item['id']}_w{window_idx}",
                             'video': video_item['video'],
@@ -896,12 +1070,30 @@ class FineGymSlideDataset(Dataset):
                             'window_end_time': window_end_time,
                             'segments': segments,
                             'labels': labels,
+                            'phrase_segments': phrase_segs_win,
+                            'phrase_labels': phrase_lbls_win,
+                            'activity_segments': activity_segs_win,
+                            'activity_labels': activity_lbls_win,
+                            'activity_id_set': sorted(window_activity_set),
                             'fps': video_fps,
                             'duration': window_duration,
                             'total_frames': total_frames,
                             'youtube_id': youtube_id,
                         })
                 else:
+                    # Collect unique activity IDs from actions in this window
+                    window_activity_set = set()
+                    if self.action_to_activity is not None and labels is not None:
+                        for label in labels:
+                            window_activity_set.add(self.action_to_activity[int(label)])
+                    phrase_segs_win, phrase_lbls_win = self._filter_segments_to_window(
+                        video_item.get('phrase_segments'), video_item.get('phrase_labels'),
+                        window_start_time, window_end_time,
+                    )
+                    activity_segs_win, activity_lbls_win = self._filter_segments_to_window(
+                        video_item.get('activity_segments'), video_item.get('activity_labels'),
+                        window_start_time, window_end_time,
+                    )
                     # Test: include all windows for complete coverage
                     windows.append({
                         'id': f"{video_item['id']}_w{window_idx}",
@@ -912,6 +1104,11 @@ class FineGymSlideDataset(Dataset):
                         'window_end_time': window_end_time,
                         'segments': segments if segments is not None else np.array([], dtype=np.float32).reshape(0, 2),
                         'labels': labels if labels is not None else np.array([], dtype=np.int64),
+                        'phrase_segments': phrase_segs_win,
+                        'phrase_labels': phrase_lbls_win,
+                        'activity_segments': activity_segs_win,
+                        'activity_labels': activity_lbls_win,
+                        'activity_id_set': sorted(window_activity_set),
                         'fps': video_fps,
                         'duration': window_duration,
                         'total_frames': total_frames,
@@ -927,13 +1124,45 @@ class FineGymSlideDataset(Dataset):
 
         return windows
 
-    def _get_window_segments_complete_only(self, video_item, window_start_time, window_end_time, video_fps):
-        """
-        Get ONLY segments that are FULLY CONTAINED within the window.
-        This matches finegym_original's approach for clean training.
+    def _filter_segments_to_window(self, segments, labels, window_start_time, window_end_time):
+        """Return per-window segments + labels in seconds (window-relative).
 
-        Unlike the old _get_window_segments, this does NOT truncate actions.
-        Actions that extend beyond window boundaries are EXCLUDED entirely.
+        A segment is kept if it has any temporal overlap with the window. The
+        kept segment is clipped to the window edge and made window-relative.
+        Used for phrase + activity GT — both can be longer than a window and
+        partial overlaps still produce useful supervision.
+        """
+        if segments is None or len(segments) == 0:
+            return (
+                np.zeros((0, 2), dtype=np.float32),
+                np.zeros((0,), dtype=np.int64),
+            )
+        kept_segs, kept_lbls = [], []
+        for (s, e), lbl in zip(segments, labels):
+            if e <= window_start_time or s >= window_end_time:
+                continue
+            cs = max(s, window_start_time)
+            ce = min(e, window_end_time)
+            kept_segs.append([cs - window_start_time, ce - window_start_time])
+            kept_lbls.append(int(lbl))
+        if not kept_segs:
+            return (
+                np.zeros((0, 2), dtype=np.float32),
+                np.zeros((0,), dtype=np.int64),
+            )
+        return (
+            np.asarray(kept_segs, dtype=np.float32),
+            np.asarray(kept_lbls, dtype=np.int64),
+        )
+
+    def _get_window_segments_complete_only(self, video_item, window_start_time, window_end_time, video_fps, complete_only=True):
+        """
+        Get segments inside a window.
+
+        complete_only=True (default): only keep actions FULLY CONTAINED within
+        the window — matches finegym_original's clean training behavior.
+        complete_only=False: also keep actions that partially overlap the
+        window, clipped to [window_start, window_end].
 
         Returns:
             segments: np.array of shape (N, 2) with times relative to window start (in seconds)
@@ -948,15 +1177,22 @@ class FineGymSlideDataset(Dataset):
         for i, (seg, label) in enumerate(zip(video_item['segments'], video_item['labels'])):
             seg_start, seg_end = seg[0], seg[1]
 
-            # KEY CHANGE: Only include actions that are FULLY CONTAINED
-            # Action must start at or after window start AND end at or before window end
-            if seg_start >= window_start_time and seg_end <= window_end_time:
-                # Make segment relative to window start
-                rel_start = seg_start - window_start_time
-                rel_end = seg_end - window_start_time
-
-                segments.append([rel_start, rel_end])
-                labels.append(label)
+            if complete_only:
+                # Action must be fully inside the window.
+                if seg_start >= window_start_time and seg_end <= window_end_time:
+                    rel_start = seg_start - window_start_time
+                    rel_end = seg_end - window_start_time
+                    segments.append([rel_start, rel_end])
+                    labels.append(label)
+            else:
+                # Any non-empty overlap is kept, clipped to the window.
+                ov_start = max(seg_start, window_start_time)
+                ov_end = min(seg_end, window_end_time)
+                if ov_start < ov_end:
+                    rel_start = ov_start - window_start_time
+                    rel_end = ov_end - window_start_time
+                    segments.append([rel_start, rel_end])
+                    labels.append(label)
 
         if len(segments) > 0:
             return np.array(segments, dtype=np.float32), np.array(labels, dtype=np.int64)
@@ -1028,6 +1264,113 @@ class FineGymSlideDataset(Dataset):
         """Parse span string like "<4.0 seconds>" to float value."""
         return float(span_str.strip('<>').replace(' seconds', ''))
 
+    def _derive_hierarchy_gt(self, value, annotation_key, label_dict):
+        """Derive phrase + activity GT segments from one annotation entry.
+
+        Returns:
+            phrase_segments: np.float32 (Pp, 2)  — merged-span phrase segments
+            phrase_labels:    np.int64   (Pp,)
+            activity_segments: np.float32 (Aa, 2)  — directly from activity 'span'
+            activity_labels:   np.int64   (Aa,)
+            consistency_skipped: bool — True if any phrase overlap was detected
+                                        (in that case, phrase GT is empty for that activity)
+
+        FineGym hierarchy semantics:
+        — Each activity has a 'span' field that is the activity's temporal extent.
+        — A phrase corresponds to a contiguous time region within an activity that
+          spans all child actions sharing a phrase_id. We compute the merged span
+          per (activity_instance, phrase_id) pair.
+        """
+        from libs.modeling.hierarchy_utils import (
+            load_verbalizer, get_action_to_phrase_map, get_action_to_activity_map,
+        )
+        # Cache verbalizer maps once per dataset instance.
+        if not hasattr(self, '_a2p'):
+            verb_path = 'configs/finegym_zsl_verbalizer.json'
+            verb = load_verbalizer(verb_path)
+            self._a2p = get_action_to_phrase_map(verb)
+            self._a2a = get_action_to_activity_map(verb)
+
+        phrase_segs, phrase_lbls = [], []
+        activity_segs, activity_lbls = [], []
+        consistency_skipped = False
+
+        for activity in value.get(annotation_key, []):
+            # Activity segment from 'span'.
+            if 'span' in activity and activity['span']:
+                a_start = self._parse_span_time(activity['span'][0])
+                a_end = self._parse_span_time(activity['span'][1])
+                activity_id_str = activity.get('activity_id', None)
+                if activity_id_str is None:
+                    continue
+                # 'a0' → 0, 'a1' → 1, etc.
+                activity_label = int(activity_id_str[1:])
+                activity_segs.append([a_start, a_end])
+                activity_lbls.append(activity_label)
+
+            # Phrase segments: merged span per CONTIGUOUS RUN of same-phrase actions.
+            # FineGym actions of different phrases interleave within an activity, so a
+            # naive "merge all same-phrase actions" produces overlapping phrase intervals.
+            # Walking actions in temporal order and starting a new phrase instance when
+            # the phrase_id changes yields temporally-disjoint phrase instances by
+            # construction; the same phrase class may appear multiple times.
+            actions_in_order = []
+            for action in activity.get('actions', []):
+                aid_str = action['action_id']
+                aid = int(aid_str[1:])
+                pid = self._a2p.get(aid, None)
+                if pid is None:
+                    continue
+                s = self._parse_span_time(action['span'][0])
+                e = self._parse_span_time(action['span'][1])
+                actions_in_order.append((s, e, pid))
+            actions_in_order.sort(key=lambda x: x[0])
+
+            this_activity_phrases = []  # list of [start, end, phrase_id]
+            cur = None
+            for (s, e, pid) in actions_in_order:
+                if cur is not None and cur[2] == pid:
+                    cur[1] = max(cur[1], e)
+                else:
+                    if cur is not None:
+                        this_activity_phrases.append(cur)
+                    cur = [s, e, pid]
+            if cur is not None:
+                this_activity_phrases.append(cur)
+
+            # Sanity check: phrase instances should now be temporally disjoint by
+            # construction. This is just a guard — if it ever fires there's an annotation
+            # pathology (e.g., overlapping action timestamps within one activity).
+            this_activity_skipped = False
+            for i in range(len(this_activity_phrases) - 1):
+                if this_activity_phrases[i][1] > this_activity_phrases[i + 1][0] + 1e-6:
+                    consistency_skipped = True
+                    this_activity_skipped = True
+                    break
+
+            if this_activity_skipped:
+                continue
+
+            for s, e, pid in this_activity_phrases:
+                phrase_segs.append([s, e])
+                phrase_lbls.append(int(pid))
+
+        if phrase_segs:
+            phrase_segs = np.asarray(phrase_segs, dtype=np.float32)
+            phrase_lbls = np.asarray(phrase_lbls, dtype=np.int64)
+        else:
+            phrase_segs = np.zeros((0, 2), dtype=np.float32)
+            phrase_lbls = np.zeros((0,), dtype=np.int64)
+
+        if activity_segs:
+            activity_segs = np.asarray(activity_segs, dtype=np.float32)
+            activity_lbls = np.asarray(activity_lbls, dtype=np.int64)
+        else:
+            activity_segs = np.zeros((0, 2), dtype=np.float32)
+            activity_lbls = np.zeros((0,), dtype=np.int64)
+
+        return phrase_segs, phrase_lbls, activity_segs, activity_lbls, consistency_skipped
+
     def _load_json_db(self, json_file):
         """Load database from JSON Lines format.
 
@@ -1093,6 +1436,12 @@ class FineGymSlideDataset(Dataset):
                 segments = None
                 labels = None
 
+            phrase_segs, phrase_lbls, activity_segs, activity_lbls, consistency_skipped = (
+                self._derive_hierarchy_gt(value, annotation_key, label_dict)
+            )
+            if consistency_skipped:
+                self._consistency_skipped_count = getattr(self, '_consistency_skipped_count', 0) + 1
+
             dict_db += ({
                 'id': key,
                 'video': video_path,
@@ -1101,9 +1450,78 @@ class FineGymSlideDataset(Dataset):
                 # Store instance span for sliding window range
                 'instance_span_start': instance_span_start,
                 'instance_span_end': instance_span_end,
+                'phrase_segments': phrase_segs,
+                'phrase_labels': phrase_lbls,
+                'activity_segments': activity_segs,
+                'activity_labels': activity_lbls,
             }, )
 
+        if hasattr(self, '_consistency_skipped_count') and self._consistency_skipped_count > 0:
+            print(f"[FineGymSlide] phrase-overlap consistency check skipped {self._consistency_skipped_count} activity instances")
+
         return dict_db, label_dict
+
+    def _maybe_corrupt_labels(self, dict_db):
+        """If label noise is configured, swap action_ids per the chosen scheme.
+
+        sibling: pick a random action within the same phrase (different action id).
+        cross_phrase: pick a random action with the same activity but a different phrase.
+                      Falls back to a sibling if the cross-phrase pool is empty.
+        Validation/test data is never corrupted (gated by self.is_training).
+        Deterministic given self.label_noise_seed.
+        """
+        if not self.is_training:
+            return dict_db
+        if self.label_noise_type == 'none' or self.label_noise_rate <= 0.0:
+            return dict_db
+        assert self.label_noise_type in ('sibling', 'cross_phrase'), \
+            f"unknown label_noise_type={self.label_noise_type}"
+
+        import random as _r
+        from libs.modeling.hierarchy_utils import (
+            load_verbalizer, get_action_to_phrase_map, get_action_to_activity_map,
+        )
+        verb_path = 'configs/finegym_zsl_verbalizer.json'
+        verb = load_verbalizer(verb_path)
+        a2p = get_action_to_phrase_map(verb)
+        a2a = get_action_to_activity_map(verb)
+
+        # Build candidate pools per source action.
+        sibling_pool = {a: [b for b, p in a2p.items() if p == a2p[a] and b != a] for a in a2p}
+        cross_phrase_pool = {
+            a: [b for b in a2p
+                if a2a.get(b) == a2a.get(a) and a2p.get(b) != a2p.get(a)]
+            for a in a2p
+        }
+
+        rng = _r.Random(self.label_noise_seed)
+        new_db = []
+        n_corrupted = 0
+        n_total = 0
+        for item in dict_db:
+            if item.get('labels') is None or len(item['labels']) == 0:
+                new_db.append(item); continue
+            new_labels = item['labels'].copy()
+            for i in range(len(new_labels)):
+                n_total += 1
+                if rng.random() < self.label_noise_rate:
+                    src = int(new_labels[i])
+                    if self.label_noise_type == 'sibling':
+                        pool = sibling_pool.get(src, [])
+                    else:  # cross_phrase
+                        pool = cross_phrase_pool.get(src, [])
+                        if not pool:
+                            pool = sibling_pool.get(src, [])
+                    if pool:
+                        new_labels[i] = rng.choice(pool)
+                        n_corrupted += 1
+            new_item = dict(item)
+            new_item['labels'] = new_labels
+            new_db.append(new_item)
+        if isinstance(dict_db, tuple):
+            new_db = tuple(new_db)
+        print(f"[FineGymSlide] label_noise_type={self.label_noise_type} rate={self.label_noise_rate} → corrupted {n_corrupted}/{n_total} action labels (seed={self.label_noise_seed})")
+        return new_db
 
     def __len__(self):
         return len(self.windows)
@@ -1163,14 +1581,14 @@ class FineGymSlideDataset(Dataset):
         # feat_offset for center alignment
         feat_offset = 0.5 * self.num_frames / feat_stride
 
+        # IMPORTANT: Use window['fps'] (from metadata during window creation)
+        # NOT video_fps (from decoder) to ensure consistency
+        # frame_idx = time_seconds * fps / feat_stride
+        window_fps = window['fps']  # Use the fps from window creation
         # Convert segments (in seconds, relative to window) to frame indices
         if window['segments'] is not None and len(window['segments']) > 0:
             # segments are in seconds relative to window start
             # Convert to sampled frame indices
-            # IMPORTANT: Use window['fps'] (from metadata during window creation)
-            # NOT video_fps (from decoder) to ensure consistency
-            # frame_idx = time_seconds * fps / feat_stride
-            window_fps = window['fps']  # Use the fps from window creation
             segments = torch.from_numpy(
                 window['segments'] * window_fps / feat_stride - feat_offset
             )
@@ -1179,6 +1597,41 @@ class FineGymSlideDataset(Dataset):
             segments = torch.zeros((0, 2), dtype=torch.float32)
             labels = torch.zeros((0,), dtype=torch.int64)
 
+        # Phrase + activity GT in feature-grid coordinates (analogous to action segments).
+        if window.get('phrase_segments') is not None and len(window['phrase_segments']) > 0:
+            phrase_segments = torch.from_numpy(
+                window['phrase_segments'] * window_fps / feat_stride - feat_offset
+            )
+            phrase_labels_t = torch.from_numpy(window['phrase_labels'])
+        else:
+            phrase_segments = torch.zeros((0, 2), dtype=torch.float32)
+            phrase_labels_t = torch.zeros((0,), dtype=torch.int64)
+
+        if window.get('activity_segments') is not None and len(window['activity_segments']) > 0:
+            activity_segments = torch.from_numpy(
+                window['activity_segments'] * window_fps / feat_stride - feat_offset
+            )
+            activity_labels_t = torch.from_numpy(window['activity_labels'])
+        else:
+            activity_segments = torch.zeros((0, 2), dtype=torch.float32)
+            activity_labels_t = torch.zeros((0,), dtype=torch.int64)
+
+        # Derive phrase labels from action labels
+        if self.action_to_phrase is not None and len(labels) > 0:
+            phrase_labels = torch.tensor(
+                [self.action_to_phrase[l.item()] for l in labels],
+                dtype=torch.long
+            )
+        else:
+            phrase_labels = torch.zeros_like(labels)
+
+        # Window-level activity: multi-hot vector (4 classes)
+        num_activities = 4
+        activity_label = torch.zeros(num_activities, dtype=torch.float32)
+        if self.action_to_activity is not None:
+            for act_idx in window.get('activity_id_set', []):
+                activity_label[act_idx] = 1.0
+
         # Return data dict
         # Use window['fps'] for consistency (same fps used for segment conversion and duration)
         data_dict = {
@@ -1186,6 +1639,11 @@ class FineGymSlideDataset(Dataset):
             'feats': feats,                # C x T x H x W (T = window_length = 32)
             'segments': segments,          # N x 2 (in sampled frame indices)
             'labels': labels,              # N
+            'phrase_segments': phrase_segments,
+            'phrase_labels': phrase_labels_t,
+            'activity_segments': activity_segments,
+            'activity_labels': activity_labels_t,
+            'activity_label': activity_label, # (4,) multi-hot window-level activity
             'fps': window['fps'],          # Use stored fps for consistency
             'duration': window['duration'],
             'feat_stride': feat_stride,
@@ -1193,6 +1651,13 @@ class FineGymSlideDataset(Dataset):
             # Additional info for test-time aggregation
             'window_start_time': window['window_start_time'],
             'video_name': window['video'],  # Original video ID for aggregation
+            # HGDD: raw video info for dense re-loading
+            'video_path': window.get('video_path'),
+            'window_start_frame': window.get('window_start_frame'),
+            'total_frames': window.get('total_frames'),
+            'youtube_id': window.get('youtube_id'),
+            'use_jpg': self.load_jpg and window.get('youtube_id') is not None,
+            'rgb_root': getattr(self, 'rgb_root', None),
         }
 
         # For training, truncate/augment if needed

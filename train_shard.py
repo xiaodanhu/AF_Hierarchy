@@ -47,17 +47,20 @@ def main(args):
     torch.cuda.set_device(args.local_rank)
     device = torch.device("cuda", args.local_rank)
     deepspeed.init_distributed()
-    
-    with open("configs/deepspeed_config.json", 'r') as f:
-        ds_config = json.load(f)
 
     """1. setup parameters / folders"""
     # parse args
     args.start_epoch = 0
     if os.path.isfile(args.config):
-        cfg = load_config(args.config)
+        cfg_for_dscfg = load_config(args.config)
     else:
         raise ValueError("Config file does not exist.")
+    ds_config_path = cfg_for_dscfg.get('deepspeed_config_path', 'configs/deepspeed_config.json')
+    with open(ds_config_path, 'r') as f:
+        ds_config = json.load(f)
+    print(f"[deepspeed] using config: {ds_config_path}")
+
+    cfg = cfg_for_dscfg
 
     # prep for output folder (based on time stamp)
     if not os.path.exists(cfg['output_folder']) and args.local_rank == 0:
@@ -81,6 +84,21 @@ def main(args):
     cfg['loader']['num_workers'] *= len(cfg['devices'])
 
     """2. create dataset / dataloader"""
+    # Phase 2D ZSL: load held-out class ids from the attribute table when the model
+    # uses the auxiliary attribute head. The training dataset filters them out;
+    # validation keeps all classes (we'll report seen vs held-out mAP separately).
+    # Load held-out class ids whenever the attribute table is provided (used by
+    # any Phase 2D ZSL variant: aux-attribute, CLIP-text, or parent-conditional v4).
+    if cfg['model'].get('aux_attribute_table_path'):
+        import json as _json
+        _attr_path = cfg['model'].get('aux_attribute_table_path', '')
+        if _attr_path:
+            with open(_attr_path) as _f:
+                _ad = _json.load(_f)
+            _held = [int(aid[1:]) for aid in _ad.get('held_out_classes', [])]
+            cfg['dataset']['held_out_class_ids'] = _held
+            print(f"[ZSL] held-out class ids ({len(_held)}): {_held}")
+
     train_dataset = make_dataset(
         cfg['dataset_name'], True, cfg['train_split'], cfg['model']['backbone_type'], cfg['round'], **cfg['dataset']
     )
@@ -105,6 +123,7 @@ def main(args):
     # model
     cfg['model']['active_learning_method'] = cfg['active_learning_method']
     model = make_meta_arch(cfg['model_name'], **cfg['model'])
+
     # not ideal for multi GPU training, ok for now
     # model = nn.DataParallel(model, device_ids=cfg['devices'])
     parameters = filter(lambda p: p.requires_grad, model.parameters())
@@ -120,7 +139,7 @@ def main(args):
         model_parameters=parameters,
         optimizer=optimizer,
         lr_scheduler=scheduler,
-        config="configs/deepspeed_config.json"
+        config=ds_config_path
     )
 
     # enable model EMA
@@ -188,6 +207,13 @@ def main(args):
             ((args.ckpt_freq > 0) and ((epoch + 1) % args.ckpt_freq == 0))
         ):
             print("Saving model at epoch: ", epoch + 1)
+            # Release PyTorch's cached-but-unused GPU memory so the NCCL barrier
+            # inside save_checkpoint (which gathers sharded ZeRO-2 optimizer
+            # state across ranks) has room for its working buffers. Without
+            # this, training peak (27+ GB on 40 GB GPUs) leaves too little free
+            # for the gather → CUDA OOM in NCCL.
+            gc.collect()
+            torch.cuda.empty_cache()
             client_sd = {}
             client_sd['epoch'] = epoch
             model_engine.save_checkpoint(ckpt_folder, tag='epoch_{:03d}'.format(epoch + 1), client_state=client_sd)
@@ -218,7 +244,7 @@ def main(args):
             val_db_vars = val_dataset.get_attributes()
 
             # Use dual evaluation (window + video level) for finegym_slide
-            if cfg['dataset_name'] in ('finegym_slide', 'finediving_slide', 'thumos14_slide'):
+            if cfg['dataset_name'] in ('finegym_slide', 'finediving_slide', 'thumos14_slide', 'thumos14_raw', 'activitynet_raw'):
                 eval_results = valid_one_epoch_slide_dual_eval(
                     val_loader,
                     model_engine,
@@ -305,11 +331,11 @@ if __name__ == '__main__':
     # the arg parser
     parser = argparse.ArgumentParser(
       description='Train a point-based transformer for action localization')
-    parser.add_argument('--config', metavar='DIR', default='./configs/thumos14_i3d.yaml', help='path to a config file')
+    parser.add_argument('--config', metavar='DIR', default='./configs/finediving_i3d.yaml', help='path to a config file')
     parser.add_argument('-p', '--print-freq', default=5, type=int, help='print frequency (default: 10 iterations)')
     parser.add_argument('-c', '--ckpt-freq', default=5, type=int, help='checkpoint frequency (default: every 5 epochs)')
     parser.add_argument('--output', default='deepspeed', type=str, help='name of exp folder (default: none)')
-    parser.add_argument('--resume', default='', type=str, metavar='PATH', help='path to a checkpoint (default: none)')
+    parser.add_argument('--resume', default='', type=str, metavar='PATH', help='path to a DeepSpeed checkpoint tag (default: none)')
     parser.add_argument("--local_rank", default=-1, type=int, help="local_rank for distributed training on gpus")
     args = parser.parse_args()
     print(args.local_rank)

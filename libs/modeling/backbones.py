@@ -12,8 +12,10 @@ import numpy as np
 
 
 class CLIPEncoder(nn.Module):
-    def __init__(self, pretrained=True, num_frames=16, out_dim=768, image_size=224):
+    def __init__(self, pretrained=True, num_frames=16, out_dim=768, image_size=224,
+                 use_grad_checkpoint=False, clip_forward_chunk=0):
         super(CLIPEncoder, self).__init__()
+        self.clip_forward_chunk = int(clip_forward_chunk or 0)
 
         self.config = CLIPVisionConfig(image_size = image_size)
         # self.clip_image_encoder = CLIPModel.from_pretrained("openai/clip-vit-base-patch32",
@@ -31,38 +33,79 @@ class CLIPEncoder(nn.Module):
             # else:
                 # param.requires_grad = False
 
+        # Enable gradient checkpointing on the CLIP transformer (HF API).
+        # Trades ~30-40% recompute for large activation-memory savings, which
+        # is essential when CLIP processes many frames (batch * window_length).
+        self.use_grad_checkpoint = use_grad_checkpoint
+        if use_grad_checkpoint:
+            # HF requires use_cache=False with checkpointing
+            try:
+                self.clip_image_encoder.gradient_checkpointing_enable(
+                    gradient_checkpointing_kwargs={"use_reentrant": False}
+                )
+            except TypeError:
+                # transformers < 4.35 has no gradient_checkpointing_kwargs and
+                # its old API checkpoints with REENTRANT torch checkpointing.
+                # Reentrant + clip_forward_chunk > 0 runs the SAME CLIP layers
+                # in multiple checkpoint segments per step; each segment's
+                # nested backward fires the per-param grad hook, so DeepSpeed
+                # ZeRO-2 reduces the same param twice and asserts ("The
+                # parameter N has already been reduced"). Force the
+                # non-reentrant implementation as the default: safe globally
+                # because every other checkpoint call in this repo passes
+                # use_reentrant explicitly (which still wins over the default).
+                import functools
+                import torch.utils.checkpoint as _ckpt_mod
+                if not getattr(_ckpt_mod.checkpoint,
+                               '_fg_nonreentrant_default', False):
+                    _orig_ckpt = _ckpt_mod.checkpoint
+
+                    @functools.wraps(_orig_ckpt)
+                    def _ckpt_nonreentrant(function, *args,
+                                           use_reentrant=False, **kwargs):
+                        return _orig_ckpt(function, *args,
+                                          use_reentrant=use_reentrant,
+                                          **kwargs)
+
+                    _ckpt_nonreentrant._fg_nonreentrant_default = True
+                    _ckpt_mod.checkpoint = _ckpt_nonreentrant
+                self.clip_image_encoder.gradient_checkpointing_enable()
+            if hasattr(self.clip_image_encoder.config, "use_cache"):
+                self.clip_image_encoder.config.use_cache = False
+
         # Linear projection (if needed)
         if self.clip_image_encoder.config.hidden_size != out_dim:
             self.projection = nn.Linear(self.clip_image_encoder.config.hidden_size, out_dim)
         else:
             self.projection = nn.Identity()
 
-    def _encode_frames(self, pixel_values):
-        """Encode a batch of frames through CLIP. Separated for gradient checkpointing."""
-        last_hidden_state = self.clip_image_encoder(pixel_values=pixel_values).last_hidden_state
-        return last_hidden_state.mean(dim=1)
-
     def forward(self, x):
         # Input shape: (batch_size, num_frames, channels, height, width)
         b, t, c, h, w = x.size()
 
-        # Pass through CLIP in chunks to avoid OOM
-        # Process frames in chunks, using gradient checkpointing for each chunk
-        x = x.contiguous().view(-1, c, h, w)  # (b*t, c, h, w)
-        chunk_size = 64  # Process 64 frames at a time
-        all_features = []
-        with torch.no_grad():
-            for i in range(0, x.shape[0], chunk_size):
-                chunk = x[i:i+chunk_size]
-                feat = self._encode_frames(chunk)
-                all_features.append(feat)
-        last_hidden_state = torch.cat(all_features, dim=0)
+        # Merge batch and temporal dimensions -> (b*t, c, h, w)
+        x = x.contiguous().view(-1, c, h, w)
+        n = x.shape[0]
 
-        # Extract features for each frame
-        last_hidden_state = last_hidden_state.view(b, t, -1)  # Shape: (batch_size, num_frames, embd_dim)
+        # Optionally chunk the per-frame CLIP forward to cap peak activation memory.
+        # Each HF-CLIP layer allocates working buffers proportional to n_frames * n_patches * mlp_dim,
+        # so processing (e.g.) 768 frames at once can be ~12x more expensive than 64 at a time.
+        # Gradient checkpointing only saves stored-between-layers activations, not within-layer working memory,
+        # hence chunking is still needed on top of it for large effective batches.
+        chunk = self.clip_forward_chunk if self.clip_forward_chunk > 0 else n
+        if chunk < n:
+            outs = []
+            for i in range(0, n, chunk):
+                hs = self.clip_image_encoder(pixel_values=x[i:i + chunk]).last_hidden_state.mean(dim=1)
+                outs.append(hs)
+            last_hidden_state = torch.cat(outs, dim=0)
+        else:
+            last_hidden_state = self.clip_image_encoder(pixel_values=x).last_hidden_state.mean(dim=1)
 
-        frame_features = self.projection(last_hidden_state) # Project features to match decoder input dimension
-        return frame_features.permute(0,2,1)
+        # Reshape back to (batch, num_frames, hidden), project, and return as (batch, hidden, T).
+        last_hidden_state = last_hidden_state.view(b, t, -1)
+        frame_features = self.projection(last_hidden_state)
+        return frame_features.permute(0, 2, 1)
 
 @register_backbone("ActionFormerWithCLIP")
 class ActionFormerWithCLIP(nn.Module):
@@ -82,12 +125,18 @@ class ActionFormerWithCLIP(nn.Module):
         path_pdrop = 0.0,          # droput rate for drop path
         use_abs_pe = False,        # use absolute position embedding
         use_rel_pe = False,        # use relative position embedding
-        pretrained=True
+        pretrained=True,
+        use_grad_checkpoint=False, # enable gradient checkpointing on CLIP
+        clip_forward_chunk=0,      # if >0, run CLIP on chunks of this many frames
     ):
         super(ActionFormerWithCLIP, self).__init__()
 
         # CLIP Encoder
-        self.encoder = CLIPEncoder(pretrained=pretrained, num_frames=max_seq_len, out_dim=input_dim, image_size=224)
+        self.encoder = CLIPEncoder(
+            pretrained=pretrained, num_frames=max_seq_len, out_dim=input_dim,
+            image_size=224, use_grad_checkpoint=use_grad_checkpoint,
+            clip_forward_chunk=clip_forward_chunk,
+        )
 
         # Decoder Initialization using make_backbone
         self.backbone = make_backbone(
@@ -254,8 +303,11 @@ class ConvTransformerBackbone(nn.Module):
         # inference: re-interpolate position embeddings for over-length sequences
         if self.use_abs_pe and (not self.training):
             if T >= self.max_len:
+                # interpolate lacks a BFloat16 CUDA kernel in torch < 2.1; compute in
+                # float32 then cast back to the working dtype
                 pe = F.interpolate(
-                    self.pos_embd, T, mode='linear', align_corners=False)
+                    self.pos_embd.to(torch.float32), T, mode='linear', align_corners=False
+                ).to(x.dtype)
             else:
                 pe = self.pos_embd
             # add pe to x

@@ -102,6 +102,12 @@ def make_optimizer(model, optimizer_config):
     # see https://github.com/karpathy/minGPT/blob/master/mingpt/model.py#L134
     decay = set()
     no_decay = set()
+
+    # Skip HRM params - they have their own FP32 optimizer
+    hrm_skip = set()
+    for pn, p in model.named_parameters():
+        if 'temporal_transformer' in pn or 'vertical_mp' in pn:
+            hrm_skip.add(pn)
     whitelist_weight_modules = (torch.nn.Linear, torch.nn.Conv1d, MaskedConv1D)
     blacklist_weight_modules = (LayerNorm, torch.nn.GroupNorm)
 
@@ -127,16 +133,46 @@ def make_optimizer(model, optimizer_config):
             elif 'encoder' in pn:
                 decay.add(fpn)
 
+    # Second pass: catch any remaining uncategorized params (e.g., HRM modules)
+    param_dict = {pn: p for pn, p in model.named_parameters()}
+    categorized = decay | no_decay
+    for fpn in param_dict.keys():
+        if fpn in categorized:
+            continue
+        # HRM learnable residual scales (alpha, beta_1..5)
+        pn_last = fpn.split('.')[-1]
+        if pn_last in ('alpha',) or pn_last.startswith('beta'):
+            no_decay.add(fpn)
+        # t3 text-pathway scalars: cosine logit scale and the Kendall
+        # uncertainty log-variances must not be weight-decayed
+        elif pn_last in ('logit_scale', 'as_uw_logvar'):
+            no_decay.add(fpn)
+        elif fpn.endswith('bias'):
+            no_decay.add(fpn)
+        elif fpn.endswith('weight'):
+            # Determine module type from name
+            if 'norm' in fpn or 'LayerNorm' in fpn or 'layernorm' in fpn:
+                no_decay.add(fpn)
+            else:
+                decay.add(fpn)
+        else:
+            # Default: decay
+            decay.add(fpn)
+
     # validate that we considered every parameter
     param_dict = {pn: p for pn, p in model.named_parameters()}
+    # Remove HRM params from DeepSpeed optimizer (they have separate FP32 optimizer)
+    decay -= hrm_skip
+    no_decay -= hrm_skip
     inter_params = decay & no_decay
     union_params = decay | no_decay
+    remaining = param_dict.keys() - union_params - hrm_skip
     assert len(inter_params) == 0, "parameters %s made it into both decay/no_decay sets!" % (str(inter_params), )
-    assert len(param_dict.keys() - union_params) == 0, \
+    assert len(remaining) == 0, \
         "parameters %s were not separated into either decay/no_decay set!" \
-        % (str(param_dict.keys() - union_params), )
+        % (str(remaining), )
 
-    # create the pytorch optimizer object
+    # create the pytorch optimizer object (excludes HRM params)
     optim_groups = [
         {"params": [param_dict[pn] for pn in sorted(list(decay))], "weight_decay": optimizer_config['weight_decay']},
         {"params": [param_dict[pn] for pn in sorted(list(no_decay))], "weight_decay": 0.0},
@@ -301,7 +337,8 @@ def train_one_epoch(
     model_ema = None,
     clip_grad_l2norm = -1,
     print_freq = 20,
-    save_log = True
+    save_log = True,
+    hrm_optimizer = None
 ):
     """Training the model for one epoch"""
     # set up meters
@@ -311,6 +348,12 @@ def train_one_epoch(
     num_iters = len(train_loader)
     # switch to train mode
     model.train()
+
+    # Expose current epoch to the model so cascaded hierarchy's
+    # consistency-loss warmup factor can be computed (Task 9).
+    inner = getattr(model, 'module', model)
+    if hasattr(inner, 'use_cascaded_hierarchy') and inner.use_cascaded_hierarchy:
+        inner._current_epoch = int(curr_epoch)
 
     # main training loop
     if save_log:
@@ -330,6 +373,11 @@ def train_one_epoch(
             )
         # step optimizer / scheduler
         model.step()
+
+        # Step HRM optimizer (separate FP32 training, gradients already computed in forward)
+        if hrm_optimizer is not None:
+            hrm_optimizer.step()
+            hrm_optimizer.zero_grad()
 
         if model_ema is not None:
             model_ema.update(model)
@@ -401,7 +449,7 @@ def save_logits(
         
     # finish up and print
     dataset_name = train_loader.dataset.db_attributes['dataset_name'].split('-')[0]
-    save_path = f'/data3/xiaodan8/actionformer4_1/output/{dataset_name}/logits_{al_method}_{round}.pt'
+    save_path = f'output/{dataset_name}/logits_{al_method}_{round}.pt'
     torch.save(video_logits_dict, save_path)
     print(f'[Train] Saved per-frame logits to {save_path}')
     return
@@ -485,10 +533,10 @@ def valid_one_epoch(
             if_save_data = True
         if if_save_data:
             dataset_name = evaluator.dataset_name.split('_')[0]
-            np.save(f'/data3/xiaodan8/actionformer4_1/output/{dataset_name}/pred_vit_{output_file}_ap.npy', np.mean(ap, axis=0))
+            np.save(f'output/{dataset_name}/pred_vit_{output_file}_ap.npy', np.mean(ap, axis=0))
     else:
         # dump to a pickle file that can be directly used for evaluation
-        with open(f'/data3/xiaodan8/actionformer4_1/output/{output_file}', "wb") as f:
+        with open(f'output/{output_file}', "wb") as f:
             pickle.dump(results, f)
         mAP = 0.0
 
@@ -500,7 +548,7 @@ def valid_one_epoch(
             new_res[results['video-id'][k]].append({'t-start': str(results['t-start'][k]), 't-end': str(results['t-end'][k]), 'label': str(results['label'][k]), 'score': str(results['score'][k])})
         new_res = {key:sorted(values, key=lambda x:float(x['t-start'])) for key,values in new_res.items()}
         dataset_name = evaluator.dataset_name.split('_')[0]
-        with open(f'/data3/xiaodan8/actionformer4_1/output/pred_vit_{output_file}.json', 'w') as json_file:
+        with open(f'output/pred_vit_{output_file}.json', 'w') as json_file:
             json.dump(new_res, json_file)
 
     return mAP
@@ -643,10 +691,26 @@ def valid_one_epoch_distributed(
 
         _, mAP, _, ap = evaluator.evaluate(results, verbose=True)
 
+        # Phase 2D ZSL: report seen-only and held-out-only mAPs separately when the
+        # model has held-out class ids configured. Reuses the per-class AP matrix
+        # already computed by the evaluator (shape: (num_tIoU, num_classes)).
+        try:
+            inner = model.module if hasattr(model, 'module') else model
+            held_ids = list(getattr(inner, 'aux_attr_held_out_ids', []) or [])
+        except Exception:
+            held_ids = []
+        if held_ids and ap is not None:
+            held_set = sorted(set(int(x) for x in held_ids))
+            seen_set = sorted(set(range(ap.shape[1])) - set(held_set))
+            seen_mAP = float(ap[:, seen_set].mean()) if seen_set else 0.0
+            held_mAP = float(ap[:, held_set].mean()) if held_set else 0.0
+            print(f"[ZSL] seen-class mAP:     {seen_mAP:.4f} ({len(seen_set)} classes)")
+            print(f"[ZSL] held-out-class mAP: {held_mAP:.4f} ({len(held_set)} classes)")
+
         # Save results if better than best and if_save_data is True
         if if_save_data and mAP > best_map:
             dataset_name = evaluator.dataset_name.split('_')[0]
-            np.save(f'/data3/xiaodan8/actionformer4_1/output/pred_vit_{output_file}_ap.npy', np.mean(ap, axis=0))
+            np.save(f'output/pred_vit_{output_file}_ap.npy', np.mean(ap, axis=0))
             
             new_res = defaultdict(list)
             for k in range(len(results['video-id'])):
@@ -657,7 +721,7 @@ def valid_one_epoch_distributed(
                     'score': str(results['score'][k])
                     })
             new_res = {key:sorted(values, key=lambda x:float(x['t-start'])) for key,values in new_res.items()}
-            with open(f'/data3/xiaodan8/actionformer4_1/output/pred_vit_{output_file}.json', 'w') as json_file:
+            with open(f'output/pred_vit_{output_file}.json', 'w') as json_file:
                 json.dump(new_res, json_file)
     
     return mAP
@@ -685,7 +749,7 @@ def valid_one_epoch_video_level(
     3. Aggregates predictions by video and applies NMS
     4. Evaluate s at video level
 
-    Use this with finegym_slide when test_overlap=True.
+    Use this with finegym_slide or finediving_slide when test_overlap=True.
     """
     from ..datasets.finegym_slide import aggregate_window_predictions
     from .nms import batched_nms
@@ -889,7 +953,7 @@ def valid_one_epoch_video_level(
         # Save results if better
         if if_save_data and mAP > best_map:
             dataset_name = evaluator.dataset_name.split('_')[0]
-            np.save(f'/data3/xiaodan8/actionformer4_1/output/pred_{output_file}_video_level_ap.npy', np.mean(ap, axis=0))
+            np.save(f'output/pred_{output_file}_video_level_ap.npy', np.mean(ap, axis=0))
             
             new_res = defaultdict(list)
             for k in range(len(video_results['video-id'])):
@@ -900,7 +964,7 @@ def valid_one_epoch_video_level(
                     'score': str(video_results['score'][k])
                 })
             new_res = {key:sorted(values, key=lambda x:float(x['t-start'])) for key,values in new_res.items()}
-            with open(f'/data3/xiaodan8/actionformer4_1/output/pred_{output_file}_video_level.json', 'w') as json_file:
+            with open(f'output/pred_{output_file}_video_level.json', 'w') as json_file:
                 json.dump(new_res, json_file)
 
     return mAP
@@ -994,6 +1058,22 @@ def valid_one_epoch_slide_dual_eval(
                     results['label'].append(output[vid_idx]['labels'])
                     results['score'].append(output[vid_idx]['scores'])
 
+                    # Hierarchy: phrase labels per proposal
+                    if 'phrase_labels' in output[vid_idx]:
+                        if 'phrase-label' not in results:
+                            results['phrase-label'] = []
+                        results['phrase-label'].append(output[vid_idx]['phrase_labels'])
+
+                # Activity: window-level (even if no action proposals)
+                if 'activity_probs' in output[vid_idx]:
+                    if 'activity-pred' not in results:
+                        results['activity-pred'] = []
+                        results['activity-gt'] = []
+                    results['activity-pred'].append(output[vid_idx]['activity_probs'].numpy() if isinstance(output[vid_idx]['activity_probs'], torch.Tensor) else output[vid_idx]['activity_probs'])
+                    gt_act = video_list[vid_idx].get('activity_label', None)
+                    if gt_act is not None:
+                        results['activity-gt'].append(gt_act.numpy() if isinstance(gt_act, torch.Tensor) else gt_act)
+
         if (iter_idx != 0) and iter_idx % (print_freq) == 0 and local_rank == 0:
             torch.cuda.synchronize()
             batch_time.update((time.time() - start) / print_freq)
@@ -1009,6 +1089,12 @@ def valid_one_epoch_slide_dual_eval(
         results['label'] = torch.cat(results['label']).cpu().numpy()
         results['score'] = torch.cat(results['score']).cpu().numpy()
         results['window-start-time'] = np.array(results['window-start-time'])
+        # Hierarchy labels
+        if 'phrase-label' in results and len(results['phrase-label']) > 0:
+            results['phrase-label'] = torch.cat(results['phrase-label']).cpu().numpy()
+        if 'activity-pred' in results and len(results['activity-pred']) > 0:
+            results['activity-pred'] = np.stack(results['activity-pred'])
+            results['activity-gt'] = np.stack(results['activity-gt'])
     else:
         results['t-start'] = np.array([])
         results['t-end'] = np.array([])
@@ -1097,7 +1183,7 @@ def valid_one_epoch_slide_dual_eval(
             split=None,
             tiou_thresholds=tiou_thresholds,
             ground_truth_df=window_gt_df,
-            dataset_name='finegym_slide_window'
+            dataset_name=val_dataset.db_attributes['dataset_name'] + '_window'
         )
 
         # Window results (already in window-relative coordinates)
@@ -1111,6 +1197,27 @@ def valid_one_epoch_slide_dual_eval(
 
         _, window_mAP, _, window_ap = window_evaluator.evaluate(window_eval_results, verbose=True)
         eval_results['window_mAP'] = window_mAP
+
+        # Phase 2D ZSL: report window-level seen-only and held-out-only mAPs.
+        try:
+            inner = model.module if hasattr(model, 'module') else model
+            held_ids = list(getattr(inner, 'aux_attr_held_out_ids', []) or [])
+        except Exception:
+            held_ids = []
+        if held_ids and window_ap is not None:
+            # AP columns follow SORTED PRESENT GT labels (classes absent from the
+            # test GT have no column). Map class ids -> columns explicitly; skip
+            # held-out classes with no test instances (unevaluable).
+            _present = sorted(window_evaluator.ground_truth['label'].unique())
+            _col_of = {int(lab): i for i, lab in enumerate(_present)}
+            held_set = sorted(_col_of[int(x)] for x in set(held_ids) if int(x) in _col_of)
+            seen_set = sorted(set(range(window_ap.shape[1])) - set(held_set))
+            w_seen = float(window_ap[:, seen_set].mean()) if seen_set else 0.0
+            w_held = float(window_ap[:, held_set].mean()) if held_set else 0.0
+            eval_results['window_seen_mAP'] = w_seen
+            eval_results['window_held_mAP'] = w_held
+            print(f"[ZSL window] seen-class mAP:     {w_seen:.4f} ({len(seen_set)} classes)")
+            print(f"[ZSL window] held-out-class mAP: {w_held:.4f} ({len(held_set)} classes)")
 
         # ==================== VIDEO-LEVEL EVALUATION ====================
         print("\n" + "=" * 60)
@@ -1218,18 +1325,96 @@ def valid_one_epoch_slide_dual_eval(
         _, video_mAP, _, video_ap = video_evaluator.evaluate(video_results, verbose=True)
         eval_results['video_mAP'] = video_mAP
 
+        # Phase 2D ZSL: report video-level seen-only and held-out-only mAPs.
+        if held_ids and video_ap is not None:
+            # Same label->column mapping as the window block (see comment there).
+            _present_v = sorted(video_evaluator.ground_truth['label'].unique())
+            _col_of_v = {int(lab): i for i, lab in enumerate(_present_v)}
+            held_set = sorted(_col_of_v[int(x)] for x in set(held_ids) if int(x) in _col_of_v)
+            seen_set = sorted(set(range(video_ap.shape[1])) - set(held_set))
+            v_seen = float(video_ap[:, seen_set].mean()) if seen_set else 0.0
+            v_held = float(video_ap[:, held_set].mean()) if held_set else 0.0
+            eval_results['video_seen_mAP'] = v_seen
+            eval_results['video_held_mAP'] = v_held
+            print(f"[ZSL video]  seen-class mAP:     {v_seen:.4f} ({len(seen_set)} classes)")
+            print(f"[ZSL video]  held-out-class mAP: {v_held:.4f} ({len(held_set)} classes)")
+
+        # ==================== PHRASE-LEVEL EVALUATION ====================
+        phrase_mAP_val = 0.0
+        if 'phrase-label' in results and len(results.get('phrase-label', [])) > 0:
+            print("\n" + "=" * 60)
+            print("PHRASE-LEVEL EVALUATION (window-level, same proposals as action)")
+            print("=" * 60)
+            try:
+                # Build phrase GT: same windows/segments as action GT, but with phrase labels
+                phrase_gt_df = window_gt_df.copy()
+                # Map action labels to phrase labels via verbalizer
+                from libs.modeling.hierarchy_utils import load_verbalizer, get_action_to_phrase_map
+                verb_path = getattr(val_dataset, 'verbalizer_path', '')
+                if verb_path:
+                    verb = load_verbalizer(verb_path)
+                    a2p = get_action_to_phrase_map(verb)
+                    phrase_gt_df['label'] = phrase_gt_df['label'].map(lambda x: a2p.get(int(x), 0))
+
+                phrase_evaluator = evaluator_class(
+                    ant_file=None, split=None,
+                    tiou_thresholds=tiou_thresholds,
+                    ground_truth_df=phrase_gt_df,
+                    dataset_name='phrase_window'
+                )
+                phrase_eval_results = {
+                    'video-id': results['video-id'],
+                    't-start': results['t-start'],
+                    't-end': results['t-end'],
+                    'label': results['phrase-label'],
+                    'score': results['score']
+                }
+                _, phrase_mAP_val, _, phrase_ap = phrase_evaluator.evaluate(phrase_eval_results, verbose=True)
+                eval_results['phrase_mAP'] = phrase_mAP_val
+            except Exception as e:
+                print(f"Phrase evaluation failed: {e}")
+
+        # ==================== ACTIVITY-LEVEL EVALUATION ====================
+        activity_acc = 0.0
+        if 'activity-pred' in results and len(results.get('activity-pred', [])) > 0:
+            print("\n" + "=" * 60)
+            print("ACTIVITY-LEVEL EVALUATION (window-level classification accuracy)")
+            print("=" * 60)
+            try:
+                act_pred = results['activity-pred']  # (N_windows, 4)
+                act_gt = results['activity-gt']      # (N_windows, 4)
+                # Accuracy: predicted argmax matches any GT activity
+                pred_classes = (act_pred > 0).astype(int)
+                gt_classes = (act_gt > 0).astype(int)
+                # Per-window: correct if predicted activity set matches GT activity set
+                correct = (pred_classes == gt_classes).all(axis=1).mean()
+                # Simpler metric: top-1 accuracy
+                pred_top1 = act_pred.argmax(axis=1)
+                gt_top1 = act_gt.argmax(axis=1)
+                top1_acc = (pred_top1 == gt_top1).mean()
+                activity_acc = top1_acc
+                eval_results['activity_acc'] = activity_acc
+                print(f"Activity top-1 accuracy: {top1_acc:.4f}")
+                print(f"Activity exact-match accuracy: {correct:.4f}")
+            except Exception as e:
+                print(f"Activity evaluation failed: {e}")
+
         # ==================== SUMMARY ====================
         print("\n" + "=" * 60)
         print("EVALUATION SUMMARY")
         print("=" * 60)
-        print(f"Window-level mAP: {window_mAP:.4f}")
-        print(f"Video-level mAP:  {video_mAP:.4f}")
+        print(f"Window-level action mAP: {window_mAP:.4f}")
+        print(f"Video-level action mAP:  {video_mAP:.4f}")
+        if phrase_mAP_val > 0:
+            print(f"Phrase mAP:              {phrase_mAP_val:.4f}")
+        if activity_acc > 0:
+            print(f"Activity accuracy:       {activity_acc:.4f}")
         print("=" * 60 + "\n")
 
         # Save results if better
         if if_save_data and video_mAP > best_map:
-            dataset_name = 'finegym'
-            output_dir = f'/data3/xiaodan8/actionformer4_1/output/{dataset_name}'
+            dataset_name = val_dataset.db_attributes['dataset_name'].replace('_slide', '')
+            output_dir = f'output/{dataset_name}'
             os.makedirs(output_dir, exist_ok=True)
             np.save(f'{output_dir}/pred_{output_file}_window_ap.npy', np.mean(window_ap, axis=0))
             np.save(f'{output_dir}/pred_{output_file}_video_ap.npy', np.mean(video_ap, axis=0))

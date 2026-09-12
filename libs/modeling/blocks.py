@@ -47,9 +47,11 @@ class MaskedConv1D(nn.Module):
         # compute the mask
         if self.stride > 1:
             # downsample the mask using nearest neighbor
+            # (interpolate lacks a BFloat16 CUDA kernel in torch < 2.1; the mask is
+            #  0/1 so float32 nearest is identical — cast back to keep x.dtype)
             out_mask = F.interpolate(
-                mask.to(x.dtype), size=out_conv.size(-1), mode='nearest'
-            )
+                mask.to(torch.float32), size=out_conv.size(-1), mode='nearest'
+            ).to(x.dtype)
         else:
             # masking out the features
             out_mask = mask.to(x.dtype)
@@ -426,7 +428,11 @@ class LocalMaskedMHCA(nn.Module):
 
     @staticmethod
     def _mask_invalid_locations(input_tensor, affected_seq_len):
-        beginning_mask_2d = input_tensor.new_ones(affected_seq_len, affected_seq_len + 1).tril().flip(dims=[0])
+        # tril/triu are not implemented for BFloat16 on CUDA (torch < 2.1); build the
+        # mask pattern in float32 (device preserved) — it is only used via `== 1`.
+        beginning_mask_2d = input_tensor.new_ones(
+            affected_seq_len, affected_seq_len + 1, dtype=torch.float32
+        ).tril().flip(dims=[0])
         beginning_mask = beginning_mask_2d[None, :, None, :]
         ending_mask = beginning_mask.flip(dims=(1, 3))
         beginning_input = input_tensor[:, :affected_seq_len, :, : affected_seq_len + 1]

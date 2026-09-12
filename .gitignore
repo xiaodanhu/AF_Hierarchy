@@ -4,6 +4,10 @@ __pycache__/
 backup/
 output/
 wandb/
+autoresearch/
+ref/
+logs/
 log.txt
 **/taxonomy/
 unzip_videos.py
+6a926d6658f7c7e782846353**/
