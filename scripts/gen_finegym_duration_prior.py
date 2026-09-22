@@ -16,6 +16,15 @@ Usage (from the repo root):
         --labels /data3/xiaodan8/FineGym/annotation/Dec16/gym99_train_label.txt \
         --attr-table configs/finegym_attribute_table_v2.json \
         --out configs/finegym_t3_duration_prior.json
+
+Phrase level (l_d=2 of apparatus > phrase > action > phase; 14 classes):
+instances = contiguous runs of same-phrase actions inside each activity
+(same rule as FineGymSlideDataset._derive_hierarchy_gt), attributes from
+the phrase attribute table (OR over member actions):
+    python scripts/gen_finegym_duration_prior.py --level phrase \
+        --labels /data3/xiaodan8/FineGym/annotation/Dec16/gym99_train_label.txt \
+        --attr-table configs/finegym_phrase_attribute_table.json \
+        --out configs/finegym_t2_duration_prior.json
 """
 import argparse
 import json
@@ -23,6 +32,12 @@ import math
 from collections import defaultdict
 
 SIGMA_FLOOR = 0.10   # log-space std floor (numerical safety)
+
+
+def _span(a):
+    s = float(a['span'][0].strip('<>').split()[0])
+    e = float(a['span'][1].strip('<>').split()[0])
+    return s, e
 
 
 def parse_spans(labels_path):
@@ -43,11 +58,56 @@ def parse_spans(labels_path):
     return durs
 
 
+def parse_phrase_spans(labels_path, verbalizer_path):
+    """Phrase-instance durations: within each activity, sort the actions by
+    start and merge contiguous runs of the same phrase (verbalizer map) into
+    one instance [run_start, max run_end] — the _derive_hierarchy_gt rule."""
+    with open(verbalizer_path) as f:
+        verb = json.load(f)
+    a2p = {aid: int(info['phrase'][1:]) for aid, info in verb['actions'].items()}
+    durs = defaultdict(list)
+    with open(labels_path) as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            rec = json.loads(line)
+            for act in rec.get('new_value', []):
+                actions = []
+                for a in act.get('actions', []):
+                    pid = a2p.get(a['action_id'])
+                    if pid is None:
+                        continue
+                    s, e = _span(a)
+                    actions.append((s, e, pid))
+                actions.sort(key=lambda x: x[0])
+                runs = []
+                cur = None
+                for s, e, pid in actions:
+                    if cur is not None and cur[2] == pid:
+                        cur[1] = max(cur[1], e)
+                    else:
+                        if cur is not None:
+                            runs.append(cur)
+                        cur = [s, e, pid]
+                if cur is not None:
+                    runs.append(cur)
+                for s, e, pid in runs:
+                    if e > s:
+                        durs[pid].append(e - s)
+    return durs
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--labels', required=True)
     ap.add_argument('--attr-table', required=True)
     ap.add_argument('--out', required=True)
+    ap.add_argument('--level', choices=['action', 'phrase'], default='action',
+                    help="'action' (default, 99 gym99 classes) or 'phrase' "
+                         "(14 phrase classes; needs the phrase attribute table)")
+    ap.add_argument('--verbalizer', default='configs/finegym_zsl_verbalizer.json',
+                    help='action->phrase map (phrase level only)')
     args = ap.parse_args()
 
     with open(args.attr_table) as f:
@@ -58,7 +118,10 @@ def main():
     num_classes = len(attrs)
     seen = [c for c in range(num_classes) if c not in held]
 
-    durs = parse_spans(args.labels)
+    if args.level == 'phrase':
+        durs = parse_phrase_spans(args.labels, args.verbalizer)
+    else:
+        durs = parse_spans(args.labels)
 
     # ---- seen classes: fit log-normal ----
     stats = {}
@@ -112,6 +175,13 @@ def main():
         },
         'classes': {str(c): stats[c] for c in range(num_classes)},
     }
+    # Level tag only for the phrase prior so the action-level (t3) output
+    # stays byte-identical to the previously generated file.
+    if args.level == 'phrase':
+        out['meta']['level'] = 'phrase'
+        out['meta']['verbalizer'] = args.verbalizer
+        out['meta']['instance_rule'] = ('contiguous runs of same-phrase actions inside '
+                                        'an activity (FineGymSlideDataset._derive_hierarchy_gt)')
     with open(args.out, 'w') as f:
         json.dump(out, f, indent=1)
     mus = [stats[c]['mu'] for c in range(num_classes)]

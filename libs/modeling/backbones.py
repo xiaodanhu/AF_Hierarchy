@@ -160,8 +160,23 @@ class ActionFormerWithCLIP(nn.Module):
         )
 
     def forward(self, x, mask):
-        # Extract features using CLIP encoder
-        features = self.encoder(x)  # Shape: (batch_size, num_frames, embd_dim)
+        if x.dim() == 3:
+            # Pre-computed (cached) encoder output: (B, input_dim, T) with
+            # the padded timesteps to be filled by `cached_pad_feat`, the
+            # encoder's output for an all-zero (padding) frame, so the
+            # first embedding conv sees exactly what it sees on frames
+            # (frame path pads with zero images, not zero features).
+            # Set by the feature-cache loader (train_shard.py); the frame
+            # path below is untouched.
+            features = x
+            pad = getattr(self, 'cached_pad_feat', None)
+            if pad is not None:
+                m = mask.to(torch.bool)
+                features = torch.where(
+                    m, features, pad.to(features.dtype).view(1, -1, 1))
+        else:
+            # Extract features using CLIP encoder
+            features = self.encoder(x)  # Shape: (batch_size, num_frames, embd_dim)
 
         # Pass features to the decoder (backbone)
         output = self.backbone(features, mask)

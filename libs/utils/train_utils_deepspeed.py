@@ -364,6 +364,10 @@ def train_one_epoch(
     start = time.time()
     init_time = copy.copy(start)
     for iter_idx, video_list in enumerate(train_loader, 0):
+        # FG_SMOKE_ITERS=<n> (smoke tests only, unset in real runs): stop the
+        # epoch after n batches so a config can be exercised end to end.
+        if os.environ.get('FG_SMOKE_ITERS') and iter_idx >= int(os.environ['FG_SMOKE_ITERS']):
+            break
         # forward / backward the model
         losses = model(video_list)
         model.backward(losses['final_loss'])
@@ -1035,6 +1039,10 @@ def valid_one_epoch_slide_dual_eval(
 
     start = time.time()
     for iter_idx, video_list in enumerate(val_loader, 0):
+        # FG_SMOKE_ITERS=<n> (smoke tests only): evaluate the first n batches
+        # so the whole eval path (aggregation, evaluator, ZSL split) runs.
+        if os.environ.get('FG_SMOKE_ITERS') and iter_idx >= int(os.environ['FG_SMOKE_ITERS']):
+            break
         with torch.no_grad():
             output = model(video_list)
 

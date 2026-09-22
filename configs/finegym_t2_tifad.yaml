@@ -1,0 +1,105 @@
+# Ti-FAD RE-IMPLEMENTATION at l_d=2. Prompt names are apparatus-qualified
+# (finegym_phrase_verbalizer_named.json: 'balance beam dismount'): FineGym
+# phrase names collide across apparatus, plain 'dismount' would give BB and UB
+# the identical prompt.
+# Ti-FAD RE-IMPLEMENTATION at l_d=2 (mirror of finegym_t3_tifad.yaml on the
+# phrase-level dataset; same held-out phrases, same held_out_mode background).
+# FineGym l_d=2 (PHRASE-level detection, 4-level hierarchy apparatus > phrase >
+# action > phase), SYSTEM 3 "champion", STAGE 1. 2026-09-22, reviewer item 1
+# ("video is not recursively split"): two levels of sub-actions in BOTH branches.
+#  detection classes : the 14 phrases (element sets); instances = contiguous runs
+#                      of same-phrase elements inside a routine (finegym_slide
+#                      detection_level: phrase). Held out (user, other-machine
+#                      split): FX_turns p02, FX_front_salto p03, BB_dismounts p09,
+#                      UB_flight_same_bar p11 -> 4 unseen / 10 seen.
+#  held_out_mode background : held-out segments are removed from the TRAINING
+#                      annotation (background for cls / reg / ancestor loss),
+#                      the THUMOS/ActivityNet convention (reviewer items 3/4);
+#                      windows and videos are kept.
+#  text (nested)     : phrase node sentence + members = its element classes, each
+#                      composed from its own node + 10 phase sentences (level-3
+#                      block attr_attn/phase_attn), then the phrase composed from
+#                      the refined members (level-2 block attr_attn2/phase_attn2);
+#                      separate parameters per level (user decision).
+#  AS                : apparatus level only (the phrase's single ancestor).
+#  DP                : phrase-level log-normal prior (configs/finegym_t2_duration_prior.json).
+#  stage 1 trains everything with the node cross-attentions (zero-init);
+#  stage 2 = neighbour attentions (finegym_t2_champ_stage2.yaml);
+#  stage 3 = video branch (finegym_t2_champ_stage3_{nested,flat}.yaml).
+# Launch: 4 GPUs x micro-batch 12 = effective 48 (= 3 x 16 of the l_d=3 runs;
+# the lr is NOT scaled by GPU count under deepspeed, cfg devices stays 1).
+dataset_name: finegym_slide
+train_split: ['train']
+val_split: ['test']
+round: 1000
+active_learning_method: uniform
+dataset: {
+  train_json_file: /data3/xiaodan8/FineGym/annotation/Dec16/gym99_train_label.txt,
+  val_json_file: /data3/xiaodan8/FineGym/annotation/Dec16/gym99_val_label.txt,
+  num_classes: 14,
+  num_phrases: 14,
+  num_activities: 4,
+  num_frames: 16,
+  trunc_thresh: 0.5,
+  crop_ratio: [0.9, 1.0],
+  max_seq_len: 288,
+  window_length: 32,
+  window_stride: 16,
+  sample_stride: 16,
+  use_raw_video: True,
+  load_jpg: True,
+  held_out_class_ids: [],
+  detection_level: phrase,
+  held_out_mode: background,
+}
+model: {
+  fpn_type: identity,
+  backbone_arch: [2, 2, 3],
+  regression_range: [[0, 4], [4, 8], [8, 16], [16, 32]],
+  max_buffer_len_factor: 6.0,
+  n_mha_win_size: 19,
+  # ZSL holdout bookkeeping (held-out id injection + seen/held-out eval split)
+  aux_attribute_table_path: configs/finegym_phrase_attribute_table.json,
+  verbalizer_path_for_embedding: configs/finegym_phrase_verbalizer_named.json,
+  use_cascaded_hierarchy: False,
+  use_aux_attribute_head: False,
+  use_clip_text_head: False,
+  use_contrastive_attrs: False,
+  use_rotation_regression_head: False,
+  strict_zsl: True,
+  # ---- t3 shared text pathway ----
+  use_text_cls_head: True,
+  text_prompt_template: 'a video of action {}',
+  # ---- system 2 (Ti-FAD re-implementation): name-only prompt, TiCA, fg head ----
+  use_text_video_cross_attn: True,
+  use_fg_head: True,
+  # 16 GB memory knobs (CLIP runs 4 x 32 = 128 frames per step)
+  use_grad_checkpoint: True,
+  clip_forward_chunk: 64,
+}
+opt: {
+  learning_rate: 0.0001,
+  epochs: 15,
+  weight_decay: 0.05,
+}
+loader: {
+  batch_size: 16,   # 3 GPUs x 16 = effective 48 (identical to the l_d=3 Ti-FAD run)
+  num_workers: 8,
+}
+train_cfg: {
+  init_loss_norm: 100,
+  clip_grad_l2norm: 1.0,
+  cls_prior_prob: 0.01,
+  center_sample: radius,
+  center_sample_radius: 1.5,
+  revert_num_pos_v4_style: True,
+}
+test_cfg: {
+  voting_thresh: 0.7,
+  pre_nms_topk: 2000,
+  max_seg_num: 200,
+  min_score: 0.001,
+  multiclass_nms: True,
+}
+output_folder: ./ckpt/
+deepspeed_config_path: configs/deepspeed_config_bf16_mb16.json

@@ -405,6 +405,13 @@ class PtTransformer(nn.Module):
         text_sentence_dropout=0.0,    # champion HP: h14 dropout (train only)
         text_stem_degrade=0.0,        # champion HP: h18 parent-stem degrade
         text_cache_dir='./cache_text_emb',
+        # nested two-level text composition for PHRASE-level classes (the
+        # verbalizer is then configs/finegym_phrase_verbalizer.json and the
+        # ensemble configs/finegym_phrase_ensemble.json; members come from
+        # the 99-action verbalizer/ensemble). Byte-inert when False.
+        text_nested=False,
+        text_member_verbalizer_path='',   # configs/finegym_zsl_verbalizer.json
+        text_member_ensemble_path='',     # configs/finegym_qwen_ensemble.json
         # system 2 (Ti-FAD re-implementation)
         use_text_video_cross_attn=False,   # TiCA per FPN level
         use_fg_head=False,                 # foreground weighting of cls scores
@@ -417,6 +424,24 @@ class PtTransformer(nn.Module):
         use_duration_prior=False,
         duration_prior_path='',
         duration_prior_gamma=0.3,
+        # champion stage 3: VIDEO BRANCH of the action--sub-action attention
+        # (libs/modeling/vsa.py, Ti-FAD fork VideoSubtreeAttn v1). Per
+        # location, the detached regression span is pooled into K ordered
+        # chunks, banded neighbour attention among them, then the location
+        # feature queries [f_n; chunks]; the result REPLACES the cls-trunk
+        # feature the cosine classifier reads. Zero-init out_proj's => the
+        # stage starts exactly at the stage-2 model. Byte-inert when False
+        # (module never built; forward path untouched).
+        use_video_subtree_attn=False,
+        video_subtree_K=10,
+        video_subtree_heads=4,
+        # nested (two-level) variant, vsa.py VideoSubtreeAttnNested: each of
+        # the K action chunks is further split into Kp ordered sub-action
+        # leaves; leaves -> action (banded + clip attn), then actions ->
+        # location as above. Same attribute / forward call; byte-inert
+        # when False (the flat module is built as before).
+        video_subtree_nested=False,
+        video_subtree_Kp=10,
         # ———— Strict-ZSL ablation: if True, exclude held-out class segments from
         # specialist losses (attribute targets + rotation + contrastive). Demonstrates
         # methodology rigor by ensuring held-out class videos never contribute to
@@ -653,6 +678,9 @@ class PtTransformer(nn.Module):
                 stem_degrade=text_stem_degrade,
                 prompt_template=text_prompt_template,
                 cache_dir=text_cache_dir,
+                nested=text_nested,
+                member_verbalizer_path=text_member_verbalizer_path,
+                member_ensemble_path=text_member_ensemble_path,
             )
             assert self.text_pathway.num_classes == num_classes
             if use_text_video_cross_attn:
@@ -1072,6 +1100,37 @@ class PtTransformer(nn.Module):
                           f"avg {_mask.sum(dim=-1).mean().item():.2f} sibling targets per class")
 
 
+        # ———— champion stage 3: video-side subtree attention ————
+        # Built LAST so every shared module above consumes the same RNG
+        # draws as in stages 1-2; requires the text pathway (it rewrites the
+        # cls-trunk features the cosine classifier reads). Attribute name
+        # `video_subtree_attn` => --freeze_except video_subtree_attn selects
+        # exactly its 4 MHA tensors x 2.
+        self.video_subtree_attn = None
+        if use_video_subtree_attn:
+            assert self.text_pathway is not None, \
+                "use_video_subtree_attn requires use_text_cls_head"
+            if video_subtree_nested:
+                # two-level variant: K action chunks x Kp sub-action leaves;
+                # same attribute so freeze_except / the forward call are
+                # unchanged (4 MHA's x 2 tensors each)
+                from .vsa import VideoSubtreeAttnNested
+                self.video_subtree_attn = VideoSubtreeAttnNested(
+                    head_dim, K=int(video_subtree_K), Kp=int(video_subtree_Kp),
+                    heads=int(video_subtree_heads))
+                print(f"[t3-VSA] NESTED video-side subtree attention active: "
+                      f"K={int(video_subtree_K)} action chunks x "
+                      f"Kp={int(video_subtree_Kp)} sub-action leaves, "
+                      f"heads={int(video_subtree_heads)}, zero-init residuals "
+                      f"(4 MHA's), replaces the cls-trunk feature")
+            else:
+                from .vsa import VideoSubtreeAttn
+                self.video_subtree_attn = VideoSubtreeAttn(
+                    head_dim, K=int(video_subtree_K), heads=int(video_subtree_heads))
+                print(f"[t3-VSA] video-side subtree attention active: "
+                      f"K={int(video_subtree_K)} chunks, heads={int(video_subtree_heads)}, "
+                      f"zero-init residuals, replaces the cls-trunk feature")
+
         # maintain an EMA of #foreground to stabilize the loss normalizer
         # useful for small mini-batch training
         self.loss_normalizer = train_cfg['init_loss_norm']
@@ -1108,6 +1167,11 @@ class PtTransformer(nn.Module):
         # (shared across all samples in the mini-batch)
         points = self.point_generator(fpn_feats)
 
+        # out_offset: List[B, 2, T_i]  (computed before the classifier: the
+        # stage-3 video branch reads the DETACHED offsets; the reg head has
+        # no RNG, so the reordering is byte-inert)
+        out_offsets = self.reg_head(fpn_feats, fpn_masks)
+
         # out_cls: List[B, #cls + 1, T_i]
         self._fg_logits = None
         if self.text_pathway is not None:
@@ -1115,6 +1179,17 @@ class PtTransformer(nn.Module):
             # text embeddings (train-time HP dropout / stem degrade + PA
             # live inside class_embeddings()).
             _, cls_feats = self.cls_head(fpn_feats, fpn_masks, return_feats=True)
+            if self.video_subtree_attn is not None:
+                # stage 3 (video branch, vsa.py): per location, pool the
+                # candidate span [n - d_s, n + d_e] (detached offsets, level
+                # grid) into K ordered chunks, neighbour attention among
+                # them, then f_n attends over [f_n; chunks]. REPLACES the
+                # cls-trunk features for the cosine classifier below (train
+                # and eval, every level); reg head keeps the raw features.
+                cls_feats = self.video_subtree_attn(
+                    cls_feats,
+                    [o.detach().permute(0, 2, 1) for o in out_offsets],
+                    fpn_masks)
             cls_emb = self.text_pathway.class_embeddings()          # (C, D)
             out_cls_logits = tuple()
             for lvl, (f, m) in enumerate(zip(cls_feats, fpn_masks)):
@@ -1133,8 +1208,6 @@ class PtTransformer(nn.Module):
                 self._fg_logits = [x.permute(0, 2, 1) for x in out_fg]
         else:
             out_cls_logits = self.cls_head(fpn_feats, fpn_masks)
-        # out_offset: List[B, 2, T_i]
-        out_offsets = self.reg_head(fpn_feats, fpn_masks)
 
 
         # ———— Cascaded phrase + activity heads (forward) ————

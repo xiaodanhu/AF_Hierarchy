@@ -178,6 +178,26 @@ class TextClsPathway(nn.Module):
       attr_attn   zero-init MultiheadAttention (PA; champion only)
       logit_scale log-parameterized cosine scale (init log 20)
       logit_bias  scalar bias, init to the focal prior -log((1-p)/p)
+
+    Nested (two-level) mode, `nested=True` — PHRASE-level detection classes:
+      the classes are the P=14 phrases of `verbalizer_path`
+      (configs/finegym_phrase_verbalizer.json, whose 'actions' entries carry
+      a 'members' list of 99-class action ids); each phrase is composed from
+      its own node sentence plus its member actions, and each member action
+      is itself composed from ITS node sentence + 10 phase sentences:
+        level 3 (per member, parameters attr_attn / phase_attn):
+            phase_attn banded |i-j|<=1 among the 10 phases, then the member
+            node queries [node; phases]  ->  e_m  (as the flat champion)
+        level 2 (per phrase, SEPARATE parameters attr_attn2 / phase_attn2):
+            phase_attn2 banded |i-j|<=1 among the ordered members (padding
+            never attended), then the phrase node queries [phrase; e_1..e_M]
+      Extra buffers: member_feats (P, Mmax, K, 512) zero-padded,
+      member_mask (P, Mmax) bool. Stem (h18 degrade) = the apparatus word
+      ('balance beam' ...), the phrase's immediate ancestor. All out_proj's
+      are zero-init so at step 0 every class embedding equals
+      proj(phrase sentence 0). In nested mode the sentence buffers are
+      NON-persistent (rebuilt from disk) so `--init_from` a 99-class
+      checkpoint does not hit a (99 vs 14) shape mismatch.
     """
 
     def __init__(self, verbalizer_path, head_dim, prior_prob=0.01,
@@ -185,7 +205,9 @@ class TextClsPathway(nn.Module):
                  phase_neighbor_attention=False,
                  sentence_dropout=0.0, stem_degrade=0.0,
                  prompt_template='a video of action {}',
-                 cache_dir='./cache_text_emb'):
+                 cache_dir='./cache_text_emb',
+                 nested=False, member_verbalizer_path='',
+                 member_ensemble_path=''):
         super().__init__()
         actions = load_verbalizer_actions(verbalizer_path)
         self.num_classes = len(actions)
@@ -193,6 +215,16 @@ class TextClsPathway(nn.Module):
         self.stem_degrade = float(stem_degrade)
         self.phase_attention = bool(phase_attention)
         self.phase_neighbor_attention = bool(phase_neighbor_attention)
+        self.nested = bool(nested)
+        buf_persistent = not self.nested
+        if self.nested:
+            assert self.phase_attention and ensemble_path, \
+                "nested text composition needs phase_attention + an ensemble"
+            assert member_verbalizer_path and member_ensemble_path, \
+                "nested text composition needs member_verbalizer/ensemble paths"
+            # phrase classes point at themselves: cid == phrase index
+            assert all(a['phrase_idx'] == a['id'] for a in actions), \
+                "[t3-text] nested: phrase verbalizer must map cXX -> pXX"
         # action -> phrase index (also used by the AS loss in meta_archs)
         self.register_buffer(
             'action_to_phrase',
@@ -228,12 +260,23 @@ class TextClsPathway(nn.Module):
             text_feats = _embed_sentences(prompts, cache_dir).unsqueeze(1)
             print(f"[t3-text] name-only pathway: {self.num_classes} prompts "
                   f"'{prompt_template}'")
-        self.register_buffer('text_feats', text_feats)   # (C, K, 512)
+        self.register_buffer('text_feats', text_feats,    # (C, K, 512)
+                             persistent=buf_persistent)
 
         # parent stems (h18): raw stem string, mirroring tifad's
         # `sents = [stems[c]] * K` (no template around the stem).
-        stems = [humanize_phrase(a['phrase_name']) for a in actions]
-        self.register_buffer('stem_feats', _embed_sentences(stems, cache_dir))
+        if self.nested:
+            # a phrase's immediate ancestor is the apparatus
+            stems = [_APPARATUS[a['activity']] for a in actions]
+        else:
+            stems = [humanize_phrase(a['phrase_name']) for a in actions]
+        self.register_buffer('stem_feats', _embed_sentences(stems, cache_dir),
+                             persistent=buf_persistent)
+
+        if self.nested:
+            self._build_member_buffers(verbalizer_path, actions,
+                                       member_verbalizer_path,
+                                       member_ensemble_path, cache_dir)
 
         # ---- trainable modules; ORDER MATTERS (init-equality RNG) ----
         self.proj = nn.Linear(CLIP_TEXT_DIM, head_dim)
@@ -265,14 +308,120 @@ class TextClsPathway(nn.Module):
             self.register_buffer('phase_band_mask', band, persistent=False)
             print(f"[t3-text] APA phase-level attention active: {K - 1} phases, "
                   "|i-j|<=1 band, zero-init out_proj")
+        # Level-2 (phrase over members) blocks of the nested composition.
+        # SEPARATE parameters from the level-3 blocks above; names end in
+        # '2' so the substrings 'text_pathway.attr_attn' /
+        # 'text_pathway.phase_attn' (--freeze_except) select both levels.
+        self.attr_attn2 = None
+        self.phase_attn2 = None
+        if self.nested:
+            self.attr_attn2 = nn.MultiheadAttention(head_dim, 4, batch_first=True)
+            nn.init.zeros_(self.attr_attn2.out_proj.weight)
+            nn.init.zeros_(self.attr_attn2.out_proj.bias)
+            if self.phase_neighbor_attention:
+                self.phase_attn2 = nn.MultiheadAttention(head_dim, 4,
+                                                         batch_first=True)
+                nn.init.zeros_(self.phase_attn2.out_proj.weight)
+                nn.init.zeros_(self.phase_attn2.out_proj.bias)
+            P, Mmax = self.member_mask.shape
+            print(f"[t3-text] nested composition: {P} phrase classes, up to "
+                  f"{Mmax} members each; level-2 attr_attn2"
+                  + (" + phase_attn2 (|i-j|<=1 over members)"
+                     if self.phase_attn2 is not None else "")
+                  + ", zero-init out_proj")
         # scaled-cosine parameters (no RNG). Names chosen so make_optimizer's
         # no-decay pass catches them ('logit_scale' explicit, '*_bias').
         self.logit_scale = nn.Parameter(torch.tensor(math.log(20.0)))
         bias_init = -math.log((1.0 - prior_prob) / prior_prob)
         self.cls_logit_bias = nn.Parameter(torch.tensor(bias_init))
 
+    def _build_member_buffers(self, verbalizer_path, actions,
+                              member_verbalizer_path, member_ensemble_path,
+                              cache_dir):
+        """Nested mode: member_feats (P, Mmax, K, 512), member_mask (P, Mmax),
+        member_band_mask (P, Mmax, Mmax) float additive mask."""
+        with open(verbalizer_path) as f:
+            verb = json.load(f)
+        members_of = []
+        for a in actions:
+            ids = verb['actions'][f"c{a['id']:02d}"]['members']
+            members_of.append(sorted(int(c[1:]) for c in ids))
+        mem_actions = load_verbalizer_actions(member_verbalizer_path)
+        with open(member_ensemble_path) as f:
+            mem_ens = json.load(f)
+        key_of = resolve_ensemble_keys(mem_actions, mem_ens)
+        Km = len(next(iter(mem_ens.values())))
+        K = self.text_feats.shape[1]
+        assert Km == K, f"[t3-text] nested: member ensemble K={Km} != {K}"
+        # embed in member-verbalizer order (same sentence list as the flat
+        # 99-class pathway -> shares its disk cache), then gather per phrase
+        sents = []
+        for m in mem_actions:
+            cls_sents = mem_ens[key_of[m['id']]]
+            assert len(cls_sents) == K
+            sents.extend(cls_sents)
+        mem_flat = _embed_sentences(sents, cache_dir).view(len(mem_actions), K,
+                                                          CLIP_TEXT_DIM)
+        P = len(actions)
+        Mmax = max(len(m) for m in members_of)
+        member_feats = torch.zeros(P, Mmax, K, CLIP_TEXT_DIM)
+        member_mask = torch.zeros(P, Mmax, dtype=torch.bool)
+        seen = set()
+        for p, (a, ids) in enumerate(zip(actions, members_of)):
+            assert len(ids) > 0
+            for j, cid in enumerate(ids):
+                m = mem_actions[cid]
+                assert m['id'] == cid and m['activity'] == a['activity'], \
+                    f"[t3-text] nested: member c{cid} apparatus mismatch"
+                assert m['phrase_idx'] == a['id'], \
+                    f"[t3-text] nested: member c{cid} not in phrase {a['id']}"
+                member_feats[p, j] = mem_flat[cid]
+                member_mask[p, j] = True
+                seen.add(cid)
+        assert len(seen) == len(mem_actions), \
+            "[t3-text] nested: members do not cover the member verbalizer"
+        self.register_buffer('member_feats', member_feats, persistent=False)
+        self.register_buffer('member_mask', member_mask, persistent=False)
+        # level-2 banded additive mask over the ordered members, with the
+        # padded members removed as KEYS. The diagonal is always kept open
+        # so that a padded QUERY row never has all its keys masked (which
+        # would give NaN and poison the valid rows through 0*NaN); padded
+        # rows are then masked out as keys of attr_attn2, so their (finite)
+        # values never reach a class embedding.
+        idx = torch.arange(Mmax)
+        band = torch.zeros(P, Mmax, Mmax)
+        band[:, (idx[:, None] - idx[None, :]).abs() > 1] = float('-inf')
+        band = band.masked_fill(~member_mask[:, None, :], float('-inf'))
+        band[:, idx, idx] = 0.0
+        self.register_buffer('member_band_mask', band, persistent=False)
+        print(f"[t3-text] nested members: {len(mem_actions)} actions from "
+              f"{member_ensemble_path} -> ({P}, {Mmax}, {K}, {CLIP_TEXT_DIM})")
+
+    def _compose_node(self, per):
+        """Level-3 block on projected sentences per (N, K, D): banded phase
+        attention (if built), then sentence 0 queries [node; phases] with
+        train-time phase-sentence dropout. Returns (N, D)."""
+        N, K, _ = per.shape
+        if self.phase_attn is not None:
+            ph = per[:, 1:]                                # (N, K-1, D) phases only
+            upd, _ = self.phase_attn(ph, ph, ph,
+                                     attn_mask=self.phase_band_mask.to(ph.dtype),
+                                     need_weights=False)
+            per = torch.cat([per[:, :1], ph + upd], dim=1)
+        q = per[:, :1]                                     # (N, 1, D) sentence 0
+        kpm = None
+        if self.training and self.sentence_dropout > 0:
+            # h14: KV dropout on phase sentences, never the class prompt
+            kpm = torch.rand(N, K, device=per.device) < self.sentence_dropout
+            kpm[:, 0] = False
+        upd, _ = self.attr_attn(q, per, per, key_padding_mask=kpm,
+                                need_weights=False)
+        return (q + upd).squeeze(1)                        # (N, D)
+
     def class_embeddings(self):
         """Return (C, head_dim) class embeddings (train-time stochastic)."""
+        if self.nested:
+            return self._nested_class_embeddings()
         feats = self.text_feats                            # (C, K, 512)
         C, K, _ = feats.shape
         if self.training and self.stem_degrade > 0:
@@ -281,26 +430,51 @@ class TextClsPathway(nn.Module):
             stems = self.stem_feats.to(feats.dtype).unsqueeze(1).expand(-1, K, -1)
             feats = torch.where(deg.view(C, 1, 1), stems, feats)
         per = self.proj(feats)                             # (C, K, D)
-        if self.phase_attn is not None:
-            ph = per[:, 1:]                                # (C, K-1, D) phases only
-            upd, _ = self.phase_attn(ph, ph, ph,
-                                     attn_mask=self.phase_band_mask.to(ph.dtype),
-                                     need_weights=False)
-            per = torch.cat([per[:, :1], ph + upd], dim=1)
         if self.attr_attn is not None:
-            q = per[:, :1]                                 # (C, 1, D) sentence 0
-            kpm = None
-            if self.training and self.sentence_dropout > 0:
-                # h14: KV dropout on phase sentences, never the class prompt
-                kpm = torch.rand(C, K, device=per.device) < self.sentence_dropout
-                kpm[:, 0] = False
-            upd, _ = self.attr_attn(q, per, per, key_padding_mask=kpm,
-                                    need_weights=False)
-            emb = (q + upd).squeeze(1)                     # (C, D)
+            # (phase_attn implies attr_attn, see the ctor assert)
+            emb = self._compose_node(per)                  # (C, D)
         elif K == 1:
             emb = per[:, 0]
         else:
             emb = per.mean(1)                              # H4a mean (unused by t3)
+        return emb
+
+    def _nested_class_embeddings(self):
+        """Two-level composition for phrase classes -> (P, D)."""
+        feats = self.text_feats                            # (P, K, 512)
+        P, K, _ = feats.shape
+        mf = self.member_feats                             # (P, Mmax, K, 512)
+        Mmax = mf.shape[1]
+        deg = None
+        if self.training and self.stem_degrade > 0:
+            # h18 at the PHRASE level: the whole class (node + members) is
+            # replaced by the apparatus stem => final embedding proj(stem)
+            deg = (torch.rand(P, device=feats.device) < self.stem_degrade)
+        # ---- level 3: every member composed from its own sentences ----
+        per_m = self.proj(mf.reshape(P * Mmax, K, -1))     # (P*Mmax, K, D)
+        e = self._compose_node(per_m).view(P, Mmax, -1)    # (P, Mmax, D)
+        # ---- level 2: banded neighbour attention among ordered members ----
+        if self.phase_attn2 is not None:
+            n_head = self.phase_attn2.num_heads
+            am = self.member_band_mask.to(e.dtype).repeat_interleave(n_head, dim=0)
+            upd, _ = self.phase_attn2(e, e, e, attn_mask=am, need_weights=False)
+            e = e + upd
+        # ---- level 2: phrase node queries [phrase; refined members] ----
+        q2 = self.proj(feats[:, :1])                       # (P, 1, D)
+        kv = torch.cat([q2, e], dim=1)                     # (P, 1+Mmax, D)
+        kpm = ~self.member_mask                            # (P, Mmax) padded
+        if self.training and self.sentence_dropout > 0:
+            drop = torch.rand(P, Mmax, device=e.device) < self.sentence_dropout
+            kpm = kpm | drop
+        # the phrase node itself is always a valid key -> no fully-masked row
+        kpm = torch.cat([torch.zeros(P, 1, dtype=torch.bool, device=e.device),
+                         kpm], dim=1)
+        upd, _ = self.attr_attn2(q2, kv, kv, key_padding_mask=kpm,
+                                 need_weights=False)
+        emb = (q2 + upd).squeeze(1)                        # (P, D)
+        if deg is not None:
+            stem_emb = self.proj(self.stem_feats.to(feats.dtype))   # (P, D)
+            emb = torch.where(deg.view(P, 1), stem_emb, emb)
         return emb
 
     def cosine_logits(self, feat, cls_emb):

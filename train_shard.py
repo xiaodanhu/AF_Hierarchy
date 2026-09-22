@@ -19,6 +19,16 @@ import math
 
 # torch imports
 import torch
+# FG3_RESERVE_GB=<n>: claim n GB through the CUDA caching allocator as early
+# as possible (freed to the cache, not to the driver) so a co-scheduled GPU
+# dispatcher cannot fill the card between our launch and the first real
+# allocation (single-GPU frozen stages that share GPUs with other jobs).
+if float(os.environ.get('FG3_RESERVE_GB', '0') or 0) > 0:
+    torch.cuda.set_device(int(os.environ.get('LOCAL_RANK', '0') or 0))
+    _blk = torch.empty(int(float(os.environ['FG3_RESERVE_GB']) * (1 << 30)),
+                       dtype=torch.uint8, device='cuda')
+    del _blk
+    print(f"[reserve] {os.environ['FG3_RESERVE_GB']} GB held in the CUDA caching allocator", flush=True)
 import torch.nn as nn
 import torch.utils.data
 # for visualization
@@ -115,6 +125,13 @@ def main(args):
     val_dataset = make_dataset(
         cfg['dataset_name'], False, cfg['val_split'], cfg['model']['backbone_type'], cfg['round'], **cfg['dataset']
     )
+    # ---- frozen-encoder stages: cached CLIP-encoder features per window ----
+    # (scripts/cache_fg3_clip_feats.py). Both datasets serve (D, T) features
+    # instead of frames; the backbone skips its encoder (backbones.py) and
+    # fills the padded timesteps with the cached padding-frame output.
+    if args.feature_cache:
+        train_dataset.set_feature_cache(args.feature_cache)
+        val_dataset.set_feature_cache(args.feature_cache)
     # Distributed validation: split test data across GPUs for faster inference
     val_sampler = DistributedSampler(val_dataset, shuffle=False)
     val_loader = make_data_loader_distributed(val_dataset, val_sampler, False, None, 1, cfg['loader']['num_workers'] // 2)
@@ -123,6 +140,10 @@ def main(args):
     # model
     cfg['model']['active_learning_method'] = cfg['active_learning_method']
     model = make_meta_arch(cfg['model_name'], **cfg['model'])
+    if args.feature_cache:
+        _pad = torch.load(os.path.join(args.feature_cache, 'pad_feat.pt'), map_location='cpu')
+        model.backbone.register_buffer('cached_pad_feat', _pad, persistent=False)
+        print(f"[feature_cache] padding-frame feature registered: {tuple(_pad.shape)} {_pad.dtype}")
 
     # ---- second-stage training (APA phase-level attention) ----
     # --init_from: a DeepSpeed checkpoint dir (e.g. .../vit_best_model) or a
@@ -212,6 +233,19 @@ def main(args):
     )
     best_mAP = 0.0
     best_epoch = 0
+    # ---- --eval_only: one evaluation of the initialised model, no training
+    # (byte-inert / init-equality checks of frozen stages) ----
+    if args.eval_only:
+        val_db_vars = val_dataset.get_attributes()
+        eval_results = valid_one_epoch_slide_dual_eval(
+            val_loader, model_engine, val_dataset, ANETdetection,
+            val_db_vars['tiou_thresholds'], -1, output_file=str(ts),
+            print_freq=args.print_freq, if_save_data=False, best_map=1e9,
+            local_rank=args.local_rank)
+        if args.local_rank == 0:
+            print(f"[eval_only] {eval_results}")
+            logger.log(f"[eval_only] {eval_results}")
+        return
     for epoch in range(args.start_epoch, max_epochs):
         # train for one epoch
         train_one_epoch(
@@ -285,8 +319,18 @@ def main(args):
                     best_map=best_mAP,
                     local_rank=args.local_rank
                 )
-                # Use video-level mAP for model selection (clip-level aggregation)
-                mAP = eval_results.get('video_mAP', 0.0) if isinstance(eval_results, dict) else eval_results
+                # Use video-level mAP for model selection (clip-level aggregation);
+                # --select_metric video_held_mAP selects by the held-out-class
+                # (unseen) video-level mAP instead (paper protocol)
+                if isinstance(eval_results, dict):
+                    mAP = eval_results.get(args.select_metric, 0.0)
+                    if args.local_rank == 0:
+                        print(f"[select] epoch {epoch}: {args.select_metric}={mAP:.4f} "
+                              f"(video_mAP={eval_results.get('video_mAP', 0.0):.4f}, "
+                              f"seen={eval_results.get('video_seen_mAP', 0.0):.4f}, "
+                              f"held={eval_results.get('video_held_mAP', 0.0):.4f})")
+                else:
+                    mAP = eval_results
             else:
                 # Standard evaluation for other datasets
                 det_eval = ANETdetection(
@@ -367,6 +411,12 @@ if __name__ == '__main__':
                         help='initialise weights from a DeepSpeed checkpoint dir or .pt (strict=False); for second-stage training')
     parser.add_argument('--freeze_except', default='', type=str,
                         help='comma-separated substrings; only parameters whose names contain one are trained')
+    parser.add_argument('--feature_cache', default='', type=str, metavar='DIR',
+                        help='directory of cached CLIP-encoder features per window (frozen-encoder stages)')
+    parser.add_argument('--select_metric', default='video_mAP', type=str,
+                        help='eval_results key used for best-model selection (e.g. video_held_mAP)')
+    parser.add_argument('--eval_only', action='store_true',
+                        help='evaluate the (init_from-)initialised model once and exit')
     parser.add_argument("--local_rank", default=-1, type=int, help="local_rank for distributed training on gpus")
     args = parser.parse_args()
     print(args.local_rank)
