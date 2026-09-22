@@ -1574,12 +1574,36 @@ class PtTransformer(nn.Module):
             gt_cls_labels, gt_offsets, gt_cls_raw_labels = self.label_points(
                 points, gt_segments, gt_labels)
 
+            # held_out_mode=exclude (train_cfg, propagated from the dataset
+            # block by train_shard.py): every token whose centre lies inside
+            # a held-out (unseen-class) segment is EXCLUDED from all losses
+            # (classification, boundary regression, ancestor) -- neither
+            # positive nor background. Only the extent of those segments is
+            # used, to know what to skip; their labels enter no target.
+            heldout_span_mask = None
+            if str(self.train_cfg.get('held_out_mode', 'keep')) == 'exclude' \
+                    and self.aux_attr_held_out_ids:
+                _t = torch.cat(points, dim=0)[:, 0]                  # (FT,)
+                _held = set(int(h) for h in self.aux_attr_held_out_ids)
+                _rows = []
+                for _seg, _lab in zip(gt_segments, gt_labels):
+                    _m = torch.zeros_like(_t, dtype=torch.bool)
+                    _sel = torch.tensor([int(l) in _held for l in _lab.tolist()],
+                                        dtype=torch.bool, device=_seg.device)
+                    if _sel.any():
+                        _hs = _seg[_sel]                              # (H, 2)
+                        _m = ((_t[:, None] >= _hs[None, :, 0]) &
+                              (_t[:, None] <= _hs[None, :, 1])).any(dim=1)
+                    _rows.append(_m)
+                heldout_span_mask = torch.stack(_rows)               # (B, FT)
+
             # compute the loss and return
             losses = self.losses(
                 fpn_masks,
                 out_cls_logits, out_offsets,
                 gt_cls_labels, gt_offsets, gt_cls_raw_labels, gt_labels,
                 gt_segments=gt_segments,
+                heldout_span_mask=heldout_span_mask,
             )
 
 
@@ -1878,11 +1902,23 @@ class PtTransformer(nn.Module):
         out_cls_logits, out_offsets,
         gt_cls_labels, gt_offsets, gt_cls_raw_labels, gt_labels,
         gt_segments=None,
+        heldout_span_mask=None,
     ):
         # fpn_masks, out_*: F (List) [B, T_i, C]
         # gt_* : B (list) [F T, C]
         # fpn_masks -> (B, FT)
         valid_mask = torch.cat(fpn_masks, dim=1)
+        # held_out_mode=exclude: tokens inside held-out segments leave EVERY
+        # loss (see forward); as_valid_mask is the ancestor-loss token set.
+        as_valid_mask = valid_mask
+        if heldout_span_mask is not None:
+            if not getattr(self, '_exclude_logged', False):
+                self._exclude_logged = True
+                print(f"[held_out exclude] first batch: {int((heldout_span_mask & valid_mask).sum())}"
+                      f"/{int(valid_mask.sum())} valid tokens lie inside held-out segments "
+                      "and are excluded from the cls / reg / ancestor losses")
+            valid_mask = valid_mask & (~heldout_span_mask)
+            as_valid_mask = valid_mask
 
         # 1. classification loss
         # stack the list -> (B, FT) -> (# Valid, )
@@ -1905,6 +1941,10 @@ class PtTransformer(nn.Module):
             seen_pos_mask = pos_mask & (~heldout_pos_mask)
         revert_num_pos_v4 = bool(self.train_cfg.get('revert_num_pos_v4_style', False))
         reg_pos_mask = pos_mask if revert_num_pos_v4 else seen_pos_mask
+        if heldout_span_mask is not None:
+            # exclude mode: held-out positives never reach the boundary loss
+            # or the normalizer, whatever the v4-revert flag says
+            reg_pos_mask = seen_pos_mask
 
         # cat the predicted offsets -> (B, FT, 2 (xC)) -> # (#Pos, 2 (xC))
         pred_offsets = torch.cat(out_offsets, dim=1)[reg_pos_mask]
@@ -2197,8 +2237,8 @@ class PtTransformer(nn.Module):
         # uncertainty weighting exp(-s0)*main + s0/2 + exp(-s1)*as + s1/2
         # (s init 0 => plain sum at step 0).
         if self.use_activity_align_loss and self.as_uw_logvar is not None:
-            _lg = torch.cat(out_cls_logits, dim=1)[valid_mask]     # (N, C)
-            _tg = gt_cls[valid_mask]                               # (N, C) pre-smoothing
+            _lg = torch.cat(out_cls_logits, dim=1)[as_valid_mask]  # (N, C)
+            _tg = gt_cls[as_valid_mask]                            # (N, C) pre-smoothing
             lambda_as = float(self.train_cfg.get('lambda_activity_align', 0.3))
             _s = self.as_uw_logvar
             total = torch.exp(-_s[0]) * final_loss + 0.5 * _s[0]

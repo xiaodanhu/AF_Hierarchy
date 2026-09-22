@@ -115,6 +115,9 @@ def main(args):
     # update cfg based on dataset attributes (fix to epic-kitchens)
     train_db_vars = train_dataset.get_attributes()
     cfg['model']['train_cfg']['head_empty_cls'] = train_db_vars['empty_label_ids']
+    # held_out_mode (keep | background | exclude) is a dataset key; the model
+    # needs it too (exclude masks held-out spans out of every loss, meta_archs)
+    cfg['model']['train_cfg']['held_out_mode'] = str(cfg['dataset'].get('held_out_mode', 'keep'))
 
     # data loaders
     train_sampler = DistributedSampler(train_dataset, shuffle=True)

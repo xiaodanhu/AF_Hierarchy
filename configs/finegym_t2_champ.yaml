@@ -6,10 +6,10 @@
 #                      detection_level: phrase). Held out (user, other-machine
 #                      split): FX_turns p02, FX_front_salto p03, BB_dismounts p09,
 #                      UB_flight_same_bar p11 -> 4 unseen / 10 seen.
-#  held_out_mode background : held-out segments are removed from the TRAINING
-#                      annotation (background for cls / reg / ancestor loss),
-#                      the THUMOS/ActivityNet convention (reviewer items 3/4);
-#                      windows and videos are kept.
+#  held_out_mode exclude : every token inside a held-out (unseen) segment is
+#                      EXCLUDED from all losses (cls, boundary, ancestor); the
+#                      unseen labels enter no target and the model is not taught
+#                      that unseen video is background (user, 2026-09-22); windows and videos kept.
 #  text (nested)     : phrase node sentence + members = its element classes, each
 #                      composed from its own node + 10 phase sentences (level-3
 #                      block attr_attn/phase_attn), then the phrase composed from
@@ -44,7 +44,7 @@ dataset: {
   load_jpg: True,
   held_out_class_ids: [],
   detection_level: phrase,
-  held_out_mode: background,
+  held_out_mode: exclude,
 }
 model: {
   fpn_type: identity,

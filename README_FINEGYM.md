@@ -49,12 +49,13 @@ supervised through the ancestor loss.
   a stage starts byte-identical to the previous one.
 * `libs/modeling/meta_archs.py` — wiring, the ancestor loss (`activity_align_levels`:
   log-sum-exp over member columns, one Kendall uncertainty weight per level),
-  the held-out masking of the classification loss, the duration prior at
+  the held-out handling (`held_out_mode`: masking of the classification loss,
+  or exclusion of held-out spans from every loss), the duration prior at
   inference.
 * `libs/datasets/finegym_slide.py` — sliding-window dataset. `detection_level:
   action | phrase` selects the detection level (phrase instances = contiguous
   runs of same-set elements inside a routine). `held_out_mode: keep |
-  background` (see Protocol).
+  background | exclude` (see Protocol).
 
 ## Protocol
 
@@ -63,17 +64,25 @@ supervised through the ancestor loss.
   sets — FX turns, FX salto forward, BB dismounts, UB flight on the same bar
   (`configs/finegym_phrase_attribute_table.json`). `train_shard.py` injects
   the ids into the dataset.
-* Held-out segments in training videos:
-  * `held_out_mode: background` (the `l_d=2` configs; the THUMOS14/ActivityNet
-    convention): held-out segments are **removed from the training
-    annotation** — they are background for the classification, boundary and
-    ancestor losses; videos and windows are kept. Ancestor labels therefore
-    cover seen video only.
-  * `held_out_mode: keep` (the original `l_d=3` configs): held-out segments
-    keep their ancestor labels (ancestor-level supervision) and the
-    class-agnostic boundary supervision, and contribute no element-level
-    classification loss. Set `held_out_mode: background` in the `t3` configs
-    to run `l_d=3` under the stricter protocol.
+* Held-out segments in training videos (`held_out_mode`, a dataset key that
+  `train_shard.py` also hands to the model). FineGym routines interleave seen
+  and unseen elements, so unseen segments sit inside training windows (22% of
+  the `l_d=2` and 27% of the `l_d=3` training windows contain both):
+  * `exclude` (the `l_d=2` configs; recommended): every token whose centre lies
+    inside a held-out segment is **excluded from all losses** — classification,
+    boundary regression and ancestor. Unseen labels enter no target and the
+    model is not taught that unseen video is background; only the extent of
+    those segments is used, to know what to skip. Videos and windows are kept
+    (dropping every window with a held-out instance would discard 24-31% of
+    the seen instances).
+  * `background`: held-out segments are removed from the training annotation
+    (the THUMOS14/ActivityNet convention in this code base); they become
+    background for every loss, including the ancestor loss.
+  * `keep` (the original `l_d=3` configs): held-out segments keep their
+    ancestor labels (ancestor-level supervision) and the class-agnostic
+    boundary supervision, and contribute no element-level classification loss.
+    Set `held_out_mode: exclude` in the `t3` configs to run `l_d=3` under the
+    stricter protocol.
 * Metric: mAP on the unseen classes at tIoU 0.3–0.7 (`[ZSL video]
   held-out-class mAP` in the log); seen-class mAP is printed alongside.
 

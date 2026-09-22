@@ -664,8 +664,12 @@ class FineGymSlideDataset(Dataset):
         assert self.detection_level in ('action', 'phrase'), \
             f"unknown detection_level={self.detection_level}"
         self.held_out_mode = str(kwargs.get('held_out_mode', 'keep'))
-        assert self.held_out_mode in ('keep', 'background'), \
+        assert self.held_out_mode in ('keep', 'background', 'exclude'), \
             f"unknown held_out_mode={self.held_out_mode}"
+        # 'exclude': windows keep their held-out entries exactly as in 'keep'
+        # (window set and segments identical); the MODEL masks every token
+        # inside a held-out segment out of all losses (meta_archs, via
+        # train_cfg['held_out_mode'] set by train_shard.py).
         if self.detection_level == 'phrase':
             print(f"[FineGymSlide] detection_level=phrase — detection GT = 14 phrase instances")
             assert self.label_noise_type == 'none' or self.label_noise_rate <= 0.0, \
