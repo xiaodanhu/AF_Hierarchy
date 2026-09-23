@@ -1981,9 +1981,14 @@ class PtTransformer(nn.Module):
             seen_pos_mask = pos_mask & (~heldout_pos_mask)
         revert_num_pos_v4 = bool(self.train_cfg.get('revert_num_pos_v4_style', False))
         reg_pos_mask = pos_mask if revert_num_pos_v4 else seen_pos_mask
-        if heldout_span_mask is not None:
+        if heldout_span_mask is not None or \
+                str(self.train_cfg.get('held_out_mode', 'keep')) == 'ancestor':
             # exclude mode: held-out positives never reach the boundary loss
-            # or the normalizer, whatever the v4-revert flag says
+            # or the normalizer, whatever the v4-revert flag says.
+            # ancestor mode (paper's FineGym "coarse supervision", 2026-09-23):
+            # like keep for the ancestor loss (all member columns, all
+            # tokens), but unseen instances get NO boundary supervision either
+            # -- only their coarse (ancestor) labels are used.
             reg_pos_mask = seen_pos_mask
 
         # cat the predicted offsets -> (B, FT, 2 (xC)) -> # (#Pos, 2 (xC))

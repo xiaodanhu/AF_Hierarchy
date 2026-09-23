@@ -664,8 +664,10 @@ class FineGymSlideDataset(Dataset):
         assert self.detection_level in ('action', 'phrase'), \
             f"unknown detection_level={self.detection_level}"
         self.held_out_mode = str(kwargs.get('held_out_mode', 'keep'))
-        assert self.held_out_mode in ('keep', 'background', 'exclude'), \
+        assert self.held_out_mode in ('keep', 'background', 'exclude', 'ancestor'), \
             f"unknown held_out_mode={self.held_out_mode}"
+        # 'ancestor': as 'keep' in the dataset; the model drops held-out
+        # positives from the boundary loss (coarse supervision only).
         # 'exclude': windows keep their held-out entries exactly as in 'keep'
         # (window set and segments identical); the MODEL masks every token
         # inside a held-out segment out of all losses (meta_archs, via
