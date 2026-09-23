@@ -3,6 +3,7 @@ import math
 
 import torch
 from torch import nn
+import os
 from torch.nn import functional as F
 
 from .models import register_meta_arch, make_backbone, make_neck, make_generator
@@ -1628,6 +1629,45 @@ class PtTransformer(nn.Module):
             return losses
 
         else:
+            # ---- ancestor-consistent scoring (eval only, FG_ANC_GATE=1) ----
+            # Diagnostic of 2026-09-23 (FineGym l_d=2, exclude protocol): an
+            # unseen element set fires on the SEEN set with the same movement
+            # on another apparatus (FX turns -> BB turns, BB dismount -> UB
+            # dismount) because their descriptions differ only by the
+            # apparatus word. The hierarchy says an action can only occur
+            # where its ancestor occurs, so every class logit is gated by its
+            # immediate ancestor's score read from the same logits (Eq. 4:
+            # logsumexp over the ancestor's SEEN members). Log-space:
+            # logit_c += logsigmoid(z_{a(c)}), i.e. p_c *= p_{a(c)} for small
+            # probabilities. Uses no unseen annotation; applies to all classes.
+            if os.environ.get('FG_ANC_GATE', '') == '1' and self.text_pathway is not None:
+                if getattr(self, '_as_levels', None):
+                    lvl_name, _members = self._as_levels[0]  # immediate ancestor level
+                else:
+                    # no ancestor loss in this model (e.g. the Ti-FAD baseline):
+                    # gate by the apparatus groups of the text pathway's tree
+                    lvl_name = 'apparatus'
+                    _a2a = self.text_pathway.action_to_activity
+                    _members = [torch.nonzero(_a2a == a, as_tuple=True)[0]
+                                for a in range(int(_a2a.max().item()) + 1)]
+                _held = set(int(h) for h in self.aux_attr_held_out_ids)
+                _a2x = {'phrase': self.text_pathway.action_to_phrase,
+                        'apparatus': self.text_pathway.action_to_activity}[lvl_name]
+                gated = []
+                for lg in out_cls_logits:                    # (B, T, C)
+                    z = lg.new_full((lg.shape[0], lg.shape[1], len(_members)), -1e4)
+                    for a, m in enumerate(_members):
+                        m_seen = torch.tensor([int(c) for c in m.tolist() if int(c) not in _held],
+                                              device=lg.device, dtype=torch.long)
+                        if m_seen.numel():
+                            z[..., a] = torch.logsumexp(lg[..., m_seen], dim=-1)
+                    gate = F.logsigmoid(z)[..., _a2x.to(lg.device)]   # (B, T, C)
+                    gated.append(lg + gate)
+                out_cls_logits = gated
+                if not getattr(self, '_anc_gate_logged', False):
+                    self._anc_gate_logged = True
+                    print(f"[anc-gate] eval-time ancestor-consistent scoring on: level={lvl_name}, "
+                          f"{len(_members)} ancestors, seen members only")
             # decode the actions (sigmoid / stride, etc)
             results = self.inference(
                 video_list, points, fpn_masks,
@@ -2243,8 +2283,24 @@ class PtTransformer(nn.Module):
             _s = self.as_uw_logvar
             total = torch.exp(-_s[0]) * final_loss + 0.5 * _s[0]
             losses_out['as_uw_s_main'] = _s[0].detach()
+            # exclude / background protocols: the ancestor logit and target are
+            # formed over the SEEN member columns only. With held-out columns
+            # inside the log-sum-exp, an unseen class receives positive
+            # gradient at every span of its seen siblings (its softmax share
+            # of the ancestor loss) and is pushed down elsewhere, i.e. it is
+            # trained into a sibling detector (FineGym l_d=2 diagnostic,
+            # 2026-09-23: FX turns fired on every FX element). 'keep' is left
+            # as it was (the paper's l_d=3 runs).
+            _hom = str(self.train_cfg.get('held_out_mode', 'keep'))
+            _held_cols = set(int(h) for h in self.aux_attr_held_out_ids) \
+                if _hom in ('exclude', 'background') else set()
             for li, (lvl, members) in enumerate(self._as_levels, start=1):
                 _members = [m.to(_lg.device) for m in members]
+                if _held_cols:
+                    _members = [m[torch.tensor([int(c) not in _held_cols for c in m.tolist()],
+                                               device=m.device, dtype=torch.bool)]
+                                for m in _members]
+                    _members = [m for m in _members if m.numel() > 0]
                 as_logits = torch.stack(
                     [torch.logsumexp(_lg[:, m], dim=-1) for m in _members], dim=-1)
                 as_targets = torch.stack(
