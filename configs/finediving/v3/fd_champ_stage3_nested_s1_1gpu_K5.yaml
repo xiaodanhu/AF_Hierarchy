@@ -1,0 +1,96 @@
+# FineDiving two-level hierarchy, split s1 (13/52 dive codes held out). Detection level = DIVE (52 codes).
+# Text: nested composition dive <- ORDERED sub-actions (fd_sub_verbalizer) <- 10 Qwen phases each.
+# Parent (coarse supervision, keep protocol) = dive group (6), via the activity-align (AS) loss.
+# One dive per training window (window_length 40 tokens x stride 4 = 160 frames = 6.4 s @25 fps >= 95% of dives).
+dataset_name: finediving_dive_slide
+train_split: ['train']
+val_split: ['test']
+round: 1000
+active_learning_method: uniform
+dataset: {
+  train_json_file: /data3/xiaodan8/FineDiving/OpenDataLab___FineDiving/finediving_train_label.txt,
+  val_json_file: /data3/xiaodan8/FineDiving/OpenDataLab___FineDiving/finediving_test_label.txt,
+  num_classes: 52,
+  num_phrases: 52,
+  num_activities: 6,
+  num_frames: 4,
+  trunc_thresh: 0.5,
+  crop_ratio: [0.9, 1.0],
+  max_seq_len: 64,
+  window_length: 64,   # 64 tokens x stride 4 = 256 frames = 10.2 s @25 fps (covers all dives but one); ONE window per dive
+  window_stride: 64,
+  sample_stride: 4,
+  test_overlap: True,
+  use_raw_video: True,
+  load_jpg: True,
+  complete_only: False,
+  held_out_class_ids: [],
+  detection_level: action,
+  held_out_mode: keep,
+}
+model: {
+  fpn_type: identity,
+  backbone_arch: [2, 2, 3],
+  regression_range: [[0, 4], [4, 8], [8, 16], [16, 64]],
+  max_buffer_len_factor: 6.0,
+  n_mha_win_size: 9,   # local attention 9 tokens (1.4 s); 64 % (8*8) == 0
+  aux_attribute_table_path: configs/finediving/fd_dive_attribute_table_s1.json,
+  verbalizer_path_for_embedding: configs/finediving/fd_dive_verbalizer.json,
+  use_cascaded_hierarchy: False,
+  use_aux_attribute_head: False,
+  use_clip_text_head: False,
+  use_contrastive_attrs: False,
+  use_rotation_regression_head: False,
+  strict_zsl: True,
+  use_text_cls_head: True,
+  text_prompt_template: 'a video of action {}',
+  text_ensemble_path: configs/finediving/fd_dive_ensemble.json,
+  text_nested: True,
+  text_member_verbalizer_path: configs/finediving/fd_sub_verbalizer.json,
+  text_member_ensemble_path: configs/finediving/fd_sub_ensemble.json,
+  text_member_learnable: True,   # v3: learnable shared sub-action deltas (compositional ZSL)
+  text_member_direct: True,      # v3: class embedding += mean member embedding (members act from step 0)
+  text_phase_attention: True,
+  text_sentence_dropout: 0.0,   # v2: FineDiving siblings differ by ONE sub-action -> no member/sentence dropout
+  text_stem_degrade: 0.0,   # v2: parent stem would merge all dives of a group
+  use_activity_align_loss: True,
+  activity_align_levels: [apparatus],
+  use_duration_prior: True,
+  duration_prior_path: configs/finediving/fd_dive_duration_prior_s1.json,
+  duration_prior_gamma: 0.3,
+  use_video_subtree_attn: True,          # stage 3: recursive video ASA (libs/modeling/vsa.py)
+  video_subtree_nested: True,            # dive span -> K sub-action chunks -> Kp phase chunks each
+  video_subtree_K: 5,   # one chunk per sub-action slot (twisting dives have 4-5)
+  video_subtree_Kp: 5,
+  video_subtree_heads: 4,
+  use_grad_checkpoint: False,
+  clip_forward_chunk: 0,
+}
+opt: {
+  warmup_epochs: 2,
+  learning_rate: 0.00008,   # effective batch 32
+  epochs: 13,   # stage 3: 2 warm-up + 13 (only video_subtree_attn trains)
+  weight_decay: 0.05,
+}
+loader: {
+  batch_size: 8,   # 8 x 1 GPU x 4 accum = 32 (single-GPU dispatcher variant)
+  num_workers: 12,
+}
+train_cfg: {
+  init_loss_norm: 100,
+  clip_grad_l2norm: 1.0,
+  cls_prior_prob: 0.01,
+  center_sample: radius,
+  center_sample_radius: 1.5,
+  revert_num_pos_v4_style: True,
+  lambda_activity_align: 0.3,
+}
+test_cfg: {
+  voting_thresh: 0.7,
+  pre_nms_topk: 2000,
+  max_seg_num: 200,
+  min_score: 0.001,
+  multiclass_nms: True,
+}
+output_folder: ./ckpt/
+deepspeed_config_path: configs/deepspeed_config_bf16_mb8_acc4.json

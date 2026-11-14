@@ -1,0 +1,44 @@
+{
+ "(VT) vault": {
+  "parent": "a video of a gymnastics element on the vaulting table"
+ },
+ "(FX) leap, jump or hop": {
+  "parent": "a video of a gymnastics element on the floor exercise"
+ },
+ "(FX) turn": {
+  "parent": "a video of a gymnastics element on the floor exercise"
+ },
+ "(FX) salto forward": {
+  "parent": "a video of a gymnastics element on the floor exercise"
+ },
+ "(FX) salto backward": {
+  "parent": "a video of a gymnastics element on the floor exercise"
+ },
+ "(BB) leap, jump or hop": {
+  "parent": "a video of a gymnastics element on the balance beam"
+ },
+ "(BB) turn": {
+  "parent": "a video of a gymnastics element on the balance beam"
+ },
+ "(BB) flight salto": {
+  "parent": "a video of a gymnastics element on the balance beam"
+ },
+ "(BB) flight handspring": {
+  "parent": "a video of a gymnastics element on the balance beam"
+ },
+ "(BB) dismount": {
+  "parent": "a video of a gymnastics element on the balance beam"
+ },
+ "(UB) circle": {
+  "parent": "a video of a gymnastics element on the uneven bars"
+ },
+ "(UB) flight on the same bar": {
+  "parent": "a video of a gymnastics element on the uneven bars"
+ },
+ "(UB) transition flight": {
+  "parent": "a video of a gymnastics element on the uneven bars"
+ },
+ "(UB) dismount": {
+  "parent": "a video of a gymnastics element on the uneven bars"
+ }
+}

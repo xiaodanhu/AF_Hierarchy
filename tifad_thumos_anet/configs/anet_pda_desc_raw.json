@@ -1,0 +1,802 @@
+{
+  "Applying sunscreen": {
+    "phases": "In the start phase, the person would select and open the sunscreen bottle. In the middle phase, the person would apply the sunscreen evenly across their skin. In the end phase, the person would ensure all exposed skin is covered and wait for it to absorb before going outdoors.",
+    "glob": "The person would apply sunscreen by first selecting an appropriate SPF level based on their skin type and activity level. Next, they would generously coat all exposed skin areas with the sunscreen, ensuring to cover any areas that will be exposed to the sun, including the face, neck, arms, and legs. It's important to reapply sunscreen every two hours or immediately after swimming or sweating, as it can become less effective over time."
+  },
+  "Archery": {
+    "phases": "In the start phase, the person would draw the bowstring back. In the middle phase, the person would aim at the target. In the end phase, the person would release the arrow.",
+    "glob": "The person would hold the bow with both hands, draw the arrow back, aim at the target, and release the arrow."
+  },
+  "Arm wrestling": {
+    "phases": "In the start phase, the person would position themselves and grip their opponent's arm. In the middle phase, the person would exert force to try and overpower their opponent's grip. In the end phase, the person would either win or lose based on who can maintain control over the other's arm.",
+    "glob": "The person would grip their opponent's hand firmly and attempt to push or pull against them using their arm strength, while keeping their body stable and their elbow on the table for leverage."
+  },
+  "Assembling bicycle": {
+    "phases": "In the start phase, the person would gather all necessary parts and tools for assembling the bicycle. In the middle phase, the person would begin attaching the major components such as the frame, wheels, and pedals. In the end phase, the person would perform final adjustments and testing to ensure everything is properly assembled and functioning correctly.",
+    "glob": "The person would start by removing the packaging and checking for any missing parts or damage. Next, they would assemble the frame, attaching the wheels, handlebars, and pedals. After ensuring all components are securely fastened, they would install the brakes and gears, making sure everything is properly adjusted. Finally, they would perform a test ride to ensure the bicycle functions correctly before using it."
+  },
+  "BMX": {
+    "phases": "In the start phase, the person would position themselves at the top of the ramp or jump, preparing for takeoff. In the middle phase, the person would perform the trick, which could involve various maneuvers such as spins, flips, or grinds, depending on the specific trick being executed. In the end phase, the person would land smoothly back onto the ground, completing the trick and preparing for any subsequent actions or tricks.",
+    "glob": "The person would ride a BMX bike, performing tricks and maneuvers on a dirt track or flat surface, often wearing protective gear such as a helmet, knee pads, and elbow pads for safety."
+  },
+  "Baking cookies": {
+    "phases": "In the start phase, the person would gather ingredients and tools needed for baking cookies. In the middle phase, the person would mix the ingredients together and shape them into cookies. In the end phase, the person would bake the cookies until they are golden brown and remove them from the oven.",
+    "glob": "The person would start by gathering all necessary ingredients and tools, such as flour, sugar, butter, eggs, vanilla extract, baking soda, salt, and cookie cutters or baking sheets. Next, they would mix the dry ingredients (flour, sugar, baking soda, and salt) in one bowl and the wet ingredients (butter, eggs, and vanilla extract) in another. Then, they would combine the two mixtures until a dough forms. After that, the dough would be shaped into balls or rolled out and cut into shapes using cookie cutters. The shaped cookies would be placed on a baking sheet lined with parchment paper and baked in an oven at a specific temperature for a certain amount of time until golden brown. Finally, once cooled, the cookies could be decorated with frosting, sprinkles, or other toppings if desired."
+  },
+  "Ballet": {
+    "phases": "In the start phase, the person would begin with the initial positioning and preparation, focusing on the correct posture and alignment. In the middle phase, the person would execute the choreographed movements, demonstrating fluidity and grace through a series of steps and gestures. In the end phase, the person would conclude with a graceful pose or a final movement, often emphasizing the culmination of the performance.",
+    "glob": "The person would gracefully move their body in a series of precise and fluid motions, using controlled leg movements and arm gestures to express emotions and tell stories through dance."
+  },
+  "Bathing dog": {
+    "phases": "In the start phase, the person would **fill a bathtub or a basin with water**. In the middle phase, the person would **gently lower the dog into the water and begin to wash it**. In the end phase, the person would **dry the dog thoroughly with a towel and brush any fur mats if necessary**.",
+    "glob": "The person would gently pour water over the dog's body, using a shower or hose if available, and carefully wash the dog's fur and skin to remove dirt and parasites. Afterward, they would dry the dog thoroughly with a towel to prevent any discomfort or potential skin irritation from dampness."
+  },
+  "Baton twirling": {
+    "phases": "In the start phase, the person would hold the baton steady and poised above their head or at their side, preparing for the twirl. In the middle phase, the person would initiate the twirl, rotating the baton around their body with controlled arm movements. In the end phase, the person would complete the twirl, bringing the baton back to its initial position or holding it in a different pose, depending on the routine.",
+    "glob": "The person would hold a baton in one hand and use their wrist and arm to twirl it in various patterns and movements."
+  },
+  "Beach soccer": {
+    "phases": "In the start phase, the person would begin by positioning themselves and getting ready for the game, which includes choosing a team, selecting a field, and ensuring all necessary equipment is available. In the middle phase, the person would actively participate in the game, engaging in various activities such as passing the ball, defending, attacking, and attempting to score goals. In the end phase, the person would conclude the game by either celebrating a victory or acknowledging defeat, possibly discussing strategies with teammates, and reflecting on the performance.",
+    "glob": "The person would kick a ball on a sandy field using their feet, aiming to score goals against an opposing team, all while adhering to the rules of beach soccer which include no substitutions and a smaller playing area compared to traditional soccer."
+  },
+  "Beer pong": {
+    "phases": "In the start phase, the person would set up the table and arrange the cups. In the middle phase, the person would take turns throwing the ball towards the opponent's cups. In the end phase, the person would pick up the balls and reset the cups for the next round.",
+    "glob": "The person would set up a table with two teams, each with a set of cups arranged in a triangular formation, and take turns throwing ping pong balls at the opposing team's cups in an attempt to land them in their cups without spilling any."
+  },
+  "Belly dance": {
+    "phases": "In the start phase, the person would begin with a warm-up, involving gentle movements and stretching to prepare the body for the dance. In the middle phase, the person would engage in the core dance movements, incorporating fluid arm gestures, hip rotations, and intricate footwork to create a captivating performance. In the end phase, the person would conclude with a graceful finale, possibly including a pose or a series of movements that highlight the dancer's skill and expressiveness before coming to a smooth stop.",
+    "glob": "The person would gracefully move their hips and torso in a fluid, rhythmic motion, often accompanied by hand gestures and facial expressions that convey emotion and tell a story through dance."
+  },
+  "Blow-drying hair": {
+    "phases": "In the start phase, the person would position their hair and choose the appropriate attachment for the blow dryer. In the middle phase, the person would begin to blow dry the hair, moving the dryer back and forth across the hair to ensure even drying and styling. In the end phase, the person would finish by using a cool setting to set the style and remove any remaining heat from the hair.",
+    "glob": "The person would start by sectioning their hair into manageable parts using clips or a comb. Next, they would choose an appropriate blow-dryer and ensure it is set to the correct temperature for their hair type. Then, they would begin drying each section by holding the blow-dryer about 6-8 inches away from the hair and moving it in a circular motion to avoid heat damage. After each section is dry, they can style it as desired, such as adding volume, smoothing, or curling. Finally, they would finish by using a styling product like hairspray to set the style and prevent frizz."
+  },
+  "Blowing leaves": {
+    "phases": "In the start phase, the person would gather the leaves. In the middle phase, the person would blow the leaves. In the end phase, the person would collect the blown leaves.",
+    "glob": "The person would blow on the leaves using their mouth to dislodge them from the ground or trees."
+  },
+  "Braiding hair": {
+    "phases": "In the start phase, the person would gather and separate strands of hair. In the middle phase, the person would intertwine the separated strands. In the end phase, the person would secure the braided hair with a hair tie or pin.",
+    "glob": "The person would start by parting the hair into three equal sections, then cross the left section over the middle and under the right section, repeating this process until the desired length is achieved."
+  },
+  "Breakdancing": {
+    "phases": "In the start phase, the person would begin by positioning themselves and preparing for movement, which might involve standing in a neutral stance or getting into a ready position. In the middle phase, the person would execute various breakdancing techniques such as spins, freezes, and footwork, showcasing their skills and creativity. In the end phase, the person would conclude their performance by transitioning smoothly back to a neutral stance or ending pose, often with a dramatic flair or a signature move that leaves an impression on the audience.",
+    "glob": "The person would start by standing on one foot while keeping the other foot off the ground, then they would shift their weight to the other foot and bring the first foot up to meet it, creating a split stance. Next, they would use their arms for balance and to add flair to their movements, often incorporating spins, handstands, and freezes into their routine. Finally, they would end with a dramatic pose or a series of freezes to showcase their skills."
+  },
+  "Brushing hair": {
+    "phases": "In the start phase, the person would hold the brush and position it at the roots of their hair. In the middle phase, the person would move the brush through the hair, applying gentle pressure to detangle and smooth the strands. In the end phase, the person would finish by brushing the ends of the hair to ensure all tangles are removed and the hair is evenly styled.",
+    "glob": "The person would gently run their fingers through their hair, starting from the roots and moving towards the ends, to detangle and smooth it out."
+  },
+  "Brushing teeth": {
+    "phases": "In the start phase, the person would pick up the toothbrush and toothpaste. In the middle phase, the person would brush their teeth thoroughly. In the end phase, the person would rinse their mouth and put away the toothbrush.",
+    "glob": "The person would use a toothbrush and toothpaste to clean their teeth, focusing on all surfaces including the front, back, and chewing surfaces of the teeth, as well as the tongue and gums, for at least two minutes, ensuring thorough cleaning and removing plaque and food particles."
+  },
+  "Building sandcastles": {
+    "phases": "In the start phase, the person would gather materials and select a location. In the middle phase, the person would construct the sandcastle, adding details and shaping it. In the end phase, the person would finalize the structure, perhaps adding finishing touches or decorations.",
+    "glob": "The person would start by selecting a suitable location near the water where the sand is fine and dry enough to build with. They would then dig out a trench to create a moat around the castle, ensuring it's deep enough to keep the water from flooding the structure. Next, they would begin constructing the base of the castle using large, flat stones or bricks if available, or simply by piling up sand to form a sturdy foundation. After the base is established, they would start building the walls, layering sand on top of each other to create thick, solid walls. The person would continue to add layers until the desired height is reached, making sure to smooth out the surface between each layer for a more polished look. Finally, they would add decorative elements such as towers, turrets, and flags to complete their sandcastle masterpiece."
+  },
+  "Bullfighting": {
+    "phases": "In the start phase, the person would prepare and position themselves for the bullfight. In the middle phase, the person would engage in the combat with the bull, demonstrating skill and bravery. In the end phase, the person would either successfully complete the task or face the consequences of the encounter.",
+    "glob": "The person would enter the arena, donning traditional attire and holding a sword or other weapon, and engage in a series of choreographed movements and challenges with the bull, demonstrating skill, bravery, and control while maintaining a safe distance from the animal's powerful charges and stabs."
+  },
+  "Bungee jumping": {
+    "phases": "In the start phase, the person would jump off the platform or structure. In the middle phase, the person would fall freely under gravity until the bungee cord begins to stretch. In the end phase, the person would be pulled back up by the bungee cord, reaching a peak before descending again.",
+    "glob": "The person would stand on a platform or be hoisted up to a high point, then jump off, attached to a long elastic cord (bungee cord) that stretches and absorbs the impact of the fall, allowing them to bounce back up after reaching the lowest point of their descent."
+  },
+  "Calf roping": {
+    "phases": "In the start phase, the person would approach the calf and position themselves for the throw. In the middle phase, the person would throw the rope over the calf's head and around its body. In the end phase, the person would secure the rope tightly around the calf's legs to immobilize it.",
+    "glob": "The person would approach the calf from behind, lasso it around its neck, throw the calf to the ground, and then tie its legs together."
+  },
+  "Camel ride": {
+    "phases": "In the start phase, the person would mount the camel. In the middle phase, the person would ride the camel across the desert. In the end phase, the person would dismount and reach their destination.",
+    "glob": "The person would mount a camel and ride it across the desert, following a guide or map if necessary."
+  },
+  "Canoeing": {
+    "phases": "In the start phase, the person would paddle to propel themselves forward. In the middle phase, the person would maintain their speed and direction. In the end phase, the person would paddle to slow down or stop.",
+    "glob": "The person would paddle through calm waters, steering the canoe with a single or double-bladed paddle while balancing on the water's surface."
+  },
+  "Capoeira": {
+    "phases": "In the start phase, the person would initiate the movement with a preparatory stance and a focus on balance and readiness. In the middle phase, the person would execute a series of fluid movements including kicks, spins, and acrobatic maneuvers, demonstrating agility and skill. In the end phase, the person would conclude the sequence with a controlled landing or transition back to a neutral position, showcasing precision and control.",
+    "glob": "The person would perform a series of acrobatic movements, dance-like steps, and martial arts techniques while engaging in a rhythmic musical accompaniment, often in a circle known as a roda."
+  },
+  "Carving jack-o-lanterns": {
+    "phases": "In the start phase, the person would gather materials and tools needed for carving the jack-o-lantern. In the middle phase, the person would begin carving the pumpkin, carefully removing the flesh and seeds to create the desired design. In the end phase, the person would finalize the carving by adding details and lighting the jack-o-lantern.",
+    "glob": "The person would first select a ripe pumpkin, clean it out, and then use a carving tool or a knife to carefully cut out the eyes, nose, and mouth to create a face. After that, they might add details like a carved stem and any additional decorations such as a carved hat or a carved mouth with teeth. Finally, they would light a candle inside the pumpkin to illuminate the carved face for a spooky effect."
+  },
+  "Changing car wheel": {
+    "phases": "In the start phase, the person would loosen the lug nuts using a lug wrench. In the middle phase, the person would remove the old wheel and install the new one. In the end phase, the person would tighten the lug nuts securely.",
+    "glob": "The person would first loosen the lug nuts on the car wheel using a lug wrench, then jack up the car to lift it off the ground, remove the old wheel, and replace it with a new one, followed by tightening the lug nuts back down securely."
+  },
+  "Cheerleading": {
+    "phases": "In the start phase, the person would gather and prepare for the routine, including stretching and warming up. In the middle phase, the person would execute the choreographed moves and formations as part of the routine. In the end phase, the person would conclude the performance with a final pose or cheer, often accompanied by a celebratory gesture or expression.",
+    "glob": "The person would perform a series of synchronized acrobatic and dance routines, often involving jumps, flips, and stunts, while wearing colorful uniforms and following the lead of a coach or team captain."
+  },
+  "Chopping wood": {
+    "phases": "In the start phase, the person would position the log and secure it. In the middle phase, the person would swing the axe to make an initial cut. In the end phase, the person would complete the cut and remove the chopped piece.",
+    "glob": "The person would use an axe to chop wood into smaller pieces."
+  },
+  "Clean and jerk": {
+    "phases": "In the start phase, the person would lift the barbell from the floor to their shoulders. In the middle phase, the person would press the barbell overhead while standing up. In the end phase, the person would lower the barbell back to the starting position.",
+    "glob": "The person would begin by lifting the barbell from the floor using an overhand grip, bending their knees and hips to lower their body while keeping their back straight. They would then drive through their heels to stand up, keeping the barbell close to their body. Next, they would extend their arms fully overhead, locking out their elbows, while maintaining a stable position. Finally, they would lower the barbell back to the starting position on the floor."
+  },
+  "Cleaning shoes": {
+    "phases": "In the start phase, the person would gather all necessary cleaning supplies such as a brush, soap, and water. In the middle phase, the person would scrub the shoes thoroughly using the brush and soap, paying attention to any stains or dirt. In the end phase, the person would rinse the shoes under running water until they are clean, then dry them off completely before putting them away.",
+    "glob": "The person would first remove any dirt or debris from the shoes using a brush or cloth. Next, they would apply a cleaning solution directly onto the shoes and gently scrub them to loosen any stains or grime. Afterward, they would rinse the shoes thoroughly with water to remove all soap residue. Finally, the person would allow the shoes to air dry completely before putting them away."
+  },
+  "Cleaning sink": {
+    "phases": "In the start phase, the person would gather cleaning supplies such as soap, water, and a sponge. In the middle phase, the person would scrub the sink thoroughly to remove any dirt or grime. In the end phase, the person would rinse the sink and dry it off to ensure it is clean and free of water spots.",
+    "glob": "The person would first gather cleaning supplies such as a sponge, dish soap, and a bucket of warm water. Next, they would fill the sink with warm soapy water and scrub the inside surfaces of the sink using the sponge. Afterward, they would rinse the sink thoroughly with clean water from the faucet. Finally, they would dry the sink with a clean towel to ensure it is completely dry before putting away the cleaning supplies."
+  },
+  "Cleaning windows": {
+    "phases": "In the start phase, the person would gather cleaning supplies such as sponges, soap, water, and a squeegee. In the middle phase, the person would clean the windows using the gathered supplies, starting from the top and moving downwards to avoid streaks. In the end phase, the person would dry the windows thoroughly with a clean cloth or squeegee to remove any remaining moisture and ensure a streak-free finish.",
+    "glob": "The person would first gather cleaning supplies such as a squeegee, microfiber cloths, and a bucket of soapy water. Next, they would clean the outside of the windows using the squeegee to remove dirt and grime. Afterward, they would use the microfiber cloths to wipe down the windows, ensuring no streaks remain. Finally, they would rinse the windows with clean water from the bucket to remove any soap residue, leaving them sparkling clean."
+  },
+  "Clipping cat claws": {
+    "phases": "In the start phase, the person would gather the necessary tools such as clippers and a towel for the cat. In the middle phase, the person would gently hold the cat's paw and carefully clip the nails, ensuring not to cut too close to the quick. In the end phase, the person would check the cat's reaction, apply some soothing lotion if needed, and praise the cat for its cooperation.",
+    "glob": "The person would gently hold the cat's paw and trim the nails using a specialized tool designed for pet care, ensuring not to cut too close to the quick to avoid causing pain or bleeding."
+  },
+  "Cricket": {
+    "phases": "In the start phase, the person would hold the cricket bat and position themselves at the crease. In the middle phase, the person would swing the bat to hit the ball. In the end phase, the person would follow through with the swing and prepare for the next delivery.",
+    "glob": "The person would hold a cricket bat and ball, stand in a batting stance, and hit the ball with the bat towards the wicket-keeper and fielders."
+  },
+  "Croquet": {
+    "phases": "In the start phase, the person would position themselves and the croquet ball at the starting point. In the middle phase, the person would swing the mallet to strike the ball. In the end phase, the person would observe the trajectory of the ball and prepare for the next shot if necessary.",
+    "glob": "The person would stand at the starting point of the croquet course, holding their mallet and ball, and aim for the first wicket. They would then swing the mallet to strike the ball, aiming to pass through the wicket without hitting any other balls or stakes. If successful, they would move on to the next wicket, repeating the process until all wickets have been passed through."
+  },
+  "Cumbia": {
+    "phases": "In the start phase, the person would begin by setting up the musical instruments and tuning them to create the right sound environment. In the middle phase, the person would start playing the instruments in a rhythmic pattern, gradually building up the tempo and intensity of the music. In the end phase, the person would reach a climax where the music is at its most energetic and the performance reaches its peak before potentially slowing down or ending.",
+    "glob": "The person would dance with a lively and rhythmic motion, often swaying their hips and moving their arms in sync with the beat of the music, typically wearing casual, comfortable clothing suitable for dancing."
+  },
+  "Curling": {
+    "phases": "In the start phase, the person would hold the curling stone and sweep the ice. In the middle phase, the person would release the stone towards the target. In the end phase, the person would sweep vigorously to guide the stone's path.",
+    "glob": "The person would slide a heavy stone across the ice towards a target while being guided by a team member who uses brooms to sweep the ice in front of the stone, aiming to make it travel further and straighter."
+  },
+  "Cutting the grass": {
+    "phases": "In the start phase, the person would identify and mark the area where they need to cut the grass. In the middle phase, the person would use the cutting tool to trim the grass along the marked lines. In the end phase, the person would collect and dispose of the cut grass clippings.",
+    "glob": "The person would use a lawn mower or a scythe to cut the grass."
+  },
+  "Decorating the Christmas tree": {
+    "phases": "In the start phase, the person would gather all necessary decorations and tools. In the middle phase, the person would begin to hang ornaments and lights on the tree. In the end phase, the person would finalize the decoration by adding the star to the top of the tree.",
+    "glob": "The person would start by selecting a theme for the Christmas tree, choosing ornaments and lights that align with this theme. Next, they would begin by securing the tree stand and ensuring it is stable. Then, they would carefully place the tree into the stand, making sure it is centered and upright. Afterward, they would start from the bottom of the tree, working their way up, attaching the lights first to create a base glow. Following the lights, they would hang the ornaments, starting with larger ones at the top and smaller ones towards the bottom, to maintain a balanced look. Finally, they might add a topper to complete the decoration, ensuring everything is securely fastened and the tree looks festive and inviting."
+  },
+  "Disc dog": {
+    "phases": "In the start phase, the person would throw a disc for the dog to catch. In the middle phase, the person would perform various tricks or commands with the dog while it catches and returns the disc. In the end phase, the person would reward the dog with treats or praise after completing the trick or command sequence.",
+    "glob": "The person would throw a disc for the dog to catch, demonstrating agility and coordination between the handler and the dog."
+  },
+  "Discus throw": {
+    "phases": "In the start phase, the person would hold the discus and rotate their body to build momentum. In the middle phase, the person would swing the discus back and then forward, releasing it at the peak of the throw. In the end phase, the person would follow through with their motion, allowing the discus to travel as far as possible.",
+    "glob": "The person would stand with feet shoulder-width apart, hold the discus with both hands, and rotate their body to build momentum before releasing the discus with a powerful throw."
+  },
+  "Dodgeball": {
+    "phases": "In the start phase, the person would throw the ball towards their opponent. In the middle phase, the person would dodge the incoming ball. In the end phase, the person would catch the ball if they successfully dodged it.",
+    "glob": "The person would throw a ball at an opponent and dodge incoming balls while trying to hit their opponents."
+  },
+  "Doing a powerbomb": {
+    "phases": "In the start phase, the person would grab the opponent's legs and lift them off the ground. In the middle phase, the person would throw the opponent over their shoulder. In the end phase, the person would land on top of the opponent, pinning them down.",
+    "glob": "The person would grab their opponent's legs and lift them over their head before slamming them onto the mat."
+  },
+  "Doing crunches": {
+    "phases": "In the start phase, the person would lie on their back with knees bent and feet flat on the ground. In the middle phase, the person would contract their abdominal muscles and lift their upper body towards their knees. In the end phase, the person would lower their upper body back down to the starting position.",
+    "glob": "The person would lie on their back with knees bent and feet flat on the ground, then lift their shoulders off the ground while keeping their elbows close to their body and their head aligned with their spine."
+  },
+  "Doing fencing": {
+    "phases": "In the start phase, the person would position themselves and prepare their equipment. In the middle phase, the person would engage in the actual fencing, moving and striking with their sword. In the end phase, the person would conclude the bout, possibly by disengaging or acknowledging the opponent's victory.",
+    "glob": "The person would hold a sword and practice parrying and striking techniques against an opponent or a target, wearing protective gear such as a helmet, gloves, and a jacket to ensure safety during the activity."
+  },
+  "Doing karate": {
+    "phases": "In the start phase, the person would assume the ready stance and focus their attention. In the middle phase, the person would execute a series of techniques such as punches or kicks. In the end phase, the person would conclude the sequence with a bow or a final pose.",
+    "glob": "The person would perform a series of precise and controlled movements, including stances, blocks, strikes, and kicks, demonstrating discipline, focus, and physical fitness."
+  },
+  "Doing kickboxing": {
+    "phases": "In the start phase, the person would initiate the movement by lifting their legs off the ground and positioning themselves in a ready stance. In the middle phase, the person would execute the kick, focusing on the target area with proper form and power. In the end phase, the person would land the kick safely, maintaining balance and returning to the starting position.",
+    "glob": "The person would start by warming up their muscles and joints through light cardio exercises like jogging or jumping jacks. Next, they would practice basic kicks such as front kicks, roundhouse kicks, and side kicks on a kicking pad or a partner for safety. As they progress, they would incorporate more complex techniques like spinning kicks and high kicks into their routine. Finally, they would engage in sparring sessions to apply their skills in a controlled environment, gradually increasing the intensity and complexity of the sparring matches."
+  },
+  "Doing motocross": {
+    "phases": "In the start phase, the person would mount the motorcycle and prepare for takeoff. In the middle phase, the person would navigate through the course, performing jumps and maneuvers. In the end phase, the person would land safely and dismount from the motorcycle.",
+    "glob": "The person would ride a motocross bike on a dirt track, wearing protective gear such as a helmet, gloves, and boots, and performing various maneuvers like jumps, turns, and stunts while maintaining control of the bike."
+  },
+  "Doing nails": {
+    "phases": "In the start phase, the person would clean and prepare the nails. In the middle phase, the person would apply the nail polish. In the end phase, the person would seal and finish the nails.",
+    "glob": "The person would file, shape, and polish their nails using various tools and products to achieve a desired look."
+  },
+  "Doing step aerobics": {
+    "phases": "In the start phase, the person would begin by warming up their muscles and joints through light stretching and gentle movements to prepare for the aerobics routine. In the middle phase, the person would engage in the main aerobic exercises, following a structured sequence of steps that include various types of movements such as jumping jacks, lunges, and arm swings, which are designed to increase heart rate and improve cardiovascular fitness. In the end phase, the person would cool down by performing a series of slow stretches and gentle movements to help reduce muscle tension and prevent soreness after the workout.",
+    "glob": "Answer: The person would start by warming up with light movements and stretches to prepare their body for the aerobics routine. Then, they would begin performing various aerobic exercises such as jogging in place, jumping jacks, and high knees, which involve rhythmic and continuous movement to increase heart rate and improve cardiovascular fitness. Throughout the session, the person would maintain a steady pace and follow the instructor's cues, ensuring proper form and technique to maximize the benefits of the workout while minimizing the risk of injury. Finally, the person would cool down with a series of gentle stretches to help reduce muscle tension and aid in recovery."
+  },
+  "Drinking beer": {
+    "phases": "In the start phase, the person would hold the beer can or bottle and bring it to their mouth. In the middle phase, the person would take a sip from the beer container. In the end phase, the person would swallow the beer and possibly set the container down.",
+    "glob": "The person would typically hold a glass or can of beer, take a sip, and enjoy the beverage."
+  },
+  "Drinking coffee": {
+    "phases": "In the start phase, the person would hold the coffee cup and bring it close to their mouth. In the middle phase, the person would sip the coffee, possibly swirling it around their tongue. In the end phase, the person would swallow the coffee and possibly set the cup down or continue drinking more.",
+    "glob": "The person would typically pour hot water into a coffee filter or grounds in a coffee maker, wait for the brewing process to complete, and then pour the brewed coffee into a cup."
+  },
+  "Drum corps": {
+    "phases": "In the start phase, the person would begin the formation and positioning of the drum corps members. In the middle phase, the person would coordinate the performance of the drum corps, ensuring all members are synchronized and executing their parts accurately. In the end phase, the person would conclude the performance, possibly leading the corps in a final flourish or a retreat from the field.",
+    "glob": "The person would perform as part of a drum corps, which is a type of marching band that emphasizes percussion instruments and often includes visual effects such as pyrotechnics or acrobatics. They would typically practice and perform in formation, moving in unison while playing their instruments."
+  },
+  "Elliptical trainer": {
+    "phases": "In the start phase, the person would begin by sitting on the elliptical trainer and adjusting the settings if necessary. In the middle phase, the person would engage in pedaling, moving their legs back and forth in a smooth, continuous motion, which mimics walking or running. In the end phase, the person would gradually slow down the speed, stop pedaling, and dismount from the elliptical trainer, taking a moment to cool down and stretch.",
+    "glob": "The person would stand on the platform of the elliptical machine and use their feet to pedal in a circular motion, mimicking the movement of walking or running but in an elliptical path, which provides a full-body workout."
+  },
+  "Fixing bicycle": {
+    "phases": "In the start phase, the person would assess the issue and gather necessary tools and parts. In the middle phase, the person would diagnose the problem and make repairs or adjustments. In the end phase, the person would test the bicycle to ensure it is functioning correctly.",
+    "glob": "The person would first inspect the bicycle for any obvious issues such as loose parts or damaged components. Next, they would tighten any loose bolts and nuts using appropriate tools like wrenches or screwdrivers. They might also check the tire pressure and adjust it if necessary. After ensuring all parts are secure, the person would test the brakes to make sure they are functioning properly. Finally, they would perform a quick gear check to ensure smooth shifting between gears. If everything checks out, the bicycle is ready to be ridden."
+  },
+  "Fixing the roof": {
+    "phases": "In the start phase, the person would assess the damage and gather necessary tools and materials. In the middle phase, the person would remove damaged sections of the roof and replace them with new ones. In the end phase, the person would secure the new sections, clean up the area, and inspect the work for any missed spots or loose parts.",
+    "glob": "The person would first inspect the roof for any visible damage or wear, then gather necessary tools and materials such as nails, screws, shingles, and a ladder. Next, they would secure themselves on the ladder and begin repairing the damaged areas by removing old shingles and replacing them with new ones, ensuring proper alignment and securing of each new shingle. Finally, they would clean up the area and inspect their work to ensure it is properly done before descending from the ladder."
+  },
+  "Fun sliding down": {
+    "phases": "In the start phase, the person would position themselves at the top of the slide. In the middle phase, the person would begin their descent down the slide. In the end phase, the person would reach the bottom of the slide and come to a stop.",
+    "glob": "The person would slide down a slope or a smooth surface, often using their body or a sled, and enjoy the sensation of rapid descent."
+  },
+  "Futsal": {
+    "phases": "In the start phase, the person would initiate the game by either kicking the ball or receiving it from a teammate. In the middle phase, the person would maneuver around opponents, passing the ball to teammates and attempting to score. In the end phase, the person would attempt to score a goal by kicking the ball past the goalkeeper into the net.",
+    "glob": "The person would kick a ball around a small indoor court, using their feet to control and pass the ball to teammates while trying to score goals against the opposing team."
+  },
+  "Gargling mouthwash": {
+    "phases": "In the start phase, the person would open their mouth and tilt their head back slightly to allow the mouthwash to flow in. In the middle phase, the person would swish the mouthwash around their mouth, ensuring it reaches all areas including the tongue, teeth, and gums. In the end phase, the person would spit out the mouthwash into a sink or designated container, rinse their mouth thoroughly, and then proceed to gargle again if necessary.",
+    "glob": "The person would take a small amount of gargling mouthwash and swish it around their mouth for about 30 seconds before swallowing or spitting it out."
+  },
+  "Getting a haircut": {
+    "phases": "In the start phase, the person would sit down and have their hair washed. In the middle phase, the person would have their hair cut and styled. In the end phase, the person would receive their finished haircut and possibly have their hair dried or styled further.",
+    "glob": "The person would sit in a chair, have their hair washed and styled, and then have it cut by a professional stylist using scissors or clippers."
+  },
+  "Getting a piercing": {
+    "phases": "In the start phase, the person would choose and select the piercing location. In the middle phase, the person would undergo the actual piercing procedure. In the end phase, the person would apply aftercare products and ensure proper healing.",
+    "glob": "The person would first select a location on their body for the piercing, then clean the area thoroughly to prevent infection. Next, they would consult with a professional piercer who would sterilize their tools and ensure the environment is clean. The piercer would then mark the spot, numb the area if necessary, and use a sterile needle or other appropriate tool to create the hole. After the piercing is made, the person would insert the chosen jewelry into the new hole. Finally, they would apply aftercare products as recommended by the piercer to maintain the piercing and promote healing."
+  },
+  "Getting a tattoo": {
+    "phases": "In the start phase, the person would choose and design the tattoo. In the middle phase, the person would get the tattoo applied. In the end phase, the person would receive the tattoo and possibly clean it for the first time.",
+    "glob": "The person would first choose a design and location on their body, then visit a tattoo parlor where a professional artist would clean the area, apply a numbing cream if desired, and use a tattoo machine to inject ink into the skin, creating the design. Afterward, they would need to care for the new tattoo by keeping it clean and applying ointment as directed by the artist to prevent infection and promote healing."
+  },
+  "Grooming dog": {
+    "phases": "In the start phase, the person would assess the dog's coat and skin for any visible issues or areas needing attention. In the middle phase, the person would begin grooming the dog, starting from the head and moving down to the tail, ensuring thorough cleaning and care. In the end phase, the person would review the dog's appearance, making sure all areas have been attended to and that the dog looks well-groomed and healthy.",
+    "glob": "The person would brush and comb the dog's fur, trim its nails, bathe it, and clip its teeth if necessary."
+  },
+  "Grooming horse": {
+    "phases": "In the start phase, the person would **begin by brushing the horse's coat**. In the middle phase, the person would **move on to cleaning the hooves and applying any necessary treatments**. In the end phase, the person would **finish up by grooming the mane and tail, ensuring all areas are attended to**.",
+    "glob": "The person would brush and clean the horse's coat, trim its mane and tail, and check for any injuries or parasites."
+  },
+  "Hammer throw": {
+    "phases": "In the start phase, the person would hold the hammer and rotate their body to build momentum. In the middle phase, the person would swing the hammer back over their head, using the momentum from the rotation to gain speed. In the end phase, the person would release the hammer as far as possible, following through with their swing.",
+    "glob": "The person would begin by holding the hammer in one hand and rotating their body to build momentum. They would then swing the hammer back over their head, using their entire body to generate force. As they reach the top of the arc, they would release the hammer, allowing it to fly through the air. Finally, they would follow through with their motion, landing gracefully after the throw."
+  },
+  "Hand car wash": {
+    "phases": "Answer: In the start phase, the person would begin by applying soap solution to the vehicle using a sponge or a cloth. In the middle phase, the person would scrub the vehicle thoroughly to remove dirt and grime from all surfaces. In the end phase, the person would rinse the vehicle with water to remove all soap residue and leave it clean and shiny.",
+    "glob": "The person would start by gathering all necessary supplies such as soap, water, a sponge or cloth, and a bucket. Next, they would wet the car thoroughly with water from the hose. Then, they would apply soap to the car's surface using the sponge or cloth, making sure to cover every part of the vehicle. After that, they would rinse off the soap with a hose, paying attention to remove any soap residue. Finally, they would dry the car with a clean towel to ensure it looks shiny and spotless."
+  },
+  "Hand washing clothes": {
+    "phases": "In the start phase, the person would gather and sort the laundry. In the middle phase, the person would wash the clothes using detergent and water. In the end phase, the person would dry the clothes and fold them neatly.",
+    "glob": "The person would use soap and water to scrub clothes against a surface or in a machine, ensuring all areas are cleaned thoroughly before rinsing and drying them."
+  },
+  "Hanging wallpaper": {
+    "phases": "In the start phase, the person would measure and mark the wall to ensure proper alignment and coverage. In the middle phase, the person would apply adhesive to the wall and hang the wallpaper, smoothing it out as they go to remove any air bubbles or wrinkles. In the end phase, the person would trim the excess wallpaper along the edges and cut around any fixtures, ensuring a clean and professional finish.",
+    "glob": "The person would first measure and mark the wall where the wallpaper will be hung, then apply adhesive evenly across the wall, smooth out the wallpaper as it's being placed to remove any air bubbles or wrinkles, and finally trim the edges with a utility knife after the wallpaper has dried completely."
+  },
+  "Having an ice cream": {
+    "phases": "In the start phase, the person would select their ice cream flavor and size. In the middle phase, the person would enjoy the ice cream. In the end phase, the person would finish the ice cream and possibly clean up any mess.",
+    "glob": "The person would scoop ice cream from the container and place it into a cone or bowl."
+  },
+  "High jump": {
+    "phases": "In the start phase, the person would begin by running up to the bar, gaining momentum. In the middle phase, the person would leap over the bar, clearing it with their body fully extended. In the end phase, the person would land safely on the mat, completing the jump.",
+    "glob": "The person would run up to the bar, leap over it, and land on the mat."
+  },
+  "Hitting a pinata": {
+    "phases": "In the start phase, the person would approach the pinata and position themselves for hitting it. In the middle phase, the person would swing their arm back and forth, aiming to strike the pinata. In the end phase, the person would release their swing, hoping to hit the pinata successfully.",
+    "glob": "The person would swing a stick or bat at a colorful, often shaped object filled with candy and toys, which is suspended from a string or pole, aiming to break it open and release its contents."
+  },
+  "Hopscotch": {
+    "phases": "In the start phase, the person would stand at the beginning of the hopscotch grid, facing it. In the middle phase, the person would jump through the numbered squares in sequence, hopping on one foot and then two feet as directed by the grid's markings. In the end phase, the person would complete the sequence by jumping back out of the grid, typically hopping on one foot before landing on both feet to exit.",
+    "glob": "The person would jump on the numbered squares in sequence without stepping on any lines or skipping numbers, typically starting from square one and moving forward until reaching the end of the hopscotch grid."
+  },
+  "Horseback riding": {
+    "phases": "In the start phase, the person would mount the horse. In the middle phase, the person would ride the horse at a steady pace. In the end phase, the person would dismount the horse.",
+    "glob": "Answer: The person would mount the horse, guide it with reins and stirrups, and control its movements by adjusting their body weight and using leg aids while maintaining balance and coordination to navigate the terrain safely and skillfully."
+  },
+  "Hula hoop": {
+    "phases": "In the start phase, the person would hold the hula hoop and position it around their waist. In the middle phase, the person would begin to spin the hula hoop around their waist, maintaining its momentum. In the end phase, the person would continue spinning the hula hoop smoothly without losing control or stopping.",
+    "glob": "The person would wrap the hoop around their waist and spin it by moving their hips in a circular motion."
+  },
+  "Hurling": {
+    "phases": "In the start phase, the person would hold the hurley and position themselves to receive the sliotar. In the middle phase, the person would swing the hurley to strike the sliotar. In the end phase, the person would follow through with the swing and release the hurley.",
+    "glob": "The person would swing a hurley stick to hit a small ball called a sliotar into a goal or between two posts."
+  },
+  "Ice fishing": {
+    "phases": "In the start phase, the person would select and prepare their fishing spot on the ice. In the middle phase, the person would drill a hole in the ice and set up their fishing equipment. In the end phase, the person would patiently wait for a fish to bite and then catch it.",
+    "glob": "The person would drill a hole in the ice, lower a fishing line through the hole, and wait for a fish to bite."
+  },
+  "Installing carpet": {
+    "phases": "In the start phase, the person would measure and prepare the room for the carpet installation. In the middle phase, the person would lay down the carpet and secure it in place. In the end phase, the person would clean up any debris and ensure the carpet is properly installed.",
+    "glob": "The person would start by measuring and cutting the carpet to fit the room's dimensions, then lay down a protective layer on the floor if necessary, secure the carpet edges with tacks or staples, and finally, use a carpet beater to remove any loose fibers and ensure the carpet is properly installed."
+  },
+  "Ironing clothes": {
+    "phases": "In the start phase, the person would gather the clothes and lay them out on an ironing board. In the middle phase, the person would iron each piece of clothing, moving from one item to the next. In the end phase, the person would fold the ironed clothes neatly and put them away.",
+    "glob": "The person would place the garment on an ironing board, apply a small amount of water to the fabric if needed, and use a hot iron to smooth out wrinkles, moving the iron back and forth across the fabric."
+  },
+  "Javelin throw": {
+    "phases": "In the start phase, the person would hold the javelin and prepare for the throw. In the middle phase, the person would run up to gain momentum and swing the javelin back. In the end phase, the person would release the javelin and follow through with their motion.",
+    "glob": "The person would begin by running up to the throwing area, then they would plant their right foot and swing their left arm back over their head, building momentum. Next, they would release the javelin from their left hand, following through with their arm as it extends forward, while their body continues to rotate. Finally, they would land on their right foot and complete the throw."
+  },
+  "Kayaking": {
+    "phases": "In the start phase, the person would paddle to propel themselves forward. In the middle phase, the person would maintain their momentum and adjust their position for balance. In the end phase, the person would slow down or come to a stop as they reach their destination.",
+    "glob": "The person would paddle through calm waters using a kayak, steering and balancing skillfully while navigating the course."
+  },
+  "Kite flying": {
+    "phases": "In the start phase, the person would launch the kite into the air. In the middle phase, the person would control and maneuver the kite using the string. In the end phase, the person would either land the kite or bring it down safely.",
+    "glob": "The person would hold onto the kite string and run while keeping the kite aloft using the wind."
+  },
+  "Kneeling": {
+    "phases": "In the start phase, the person would lower their body towards the ground, placing their hands flat on the surface and bending their knees slightly. In the middle phase, the person would continue to lower themselves further until their buttocks are resting on their heels, forming a 90-degree angle at the knees. In the end phase, the person would maintain this position, keeping their back straight and their head up, completing the kneeling posture.",
+    "glob": "The person would position their knees on the ground and their body weight supported by them, with their hands placed either flat on the ground or resting on their thighs for balance."
+  },
+  "Knitting": {
+    "phases": "In the start phase, the person would begin by selecting and preparing the yarn and needles. In the middle phase, the person would loop the yarn over the needle and pull it through to create stitches. In the end phase, the person would continue this process until the desired length or pattern is achieved, then secure the ends of the yarn.",
+    "glob": "The person would hold two knitting needles and yarn, wrap the yarn around one needle, then pass it over the other needle, repeating this process to create loops of yarn which are then pulled through each other to form stitches, gradually building up rows of fabric until the desired item is complete."
+  },
+  "Laying tile": {
+    "phases": "In the start phase, the person would measure and mark the floor area where tiles will be laid. In the middle phase, the person would apply adhesive to the floor and place the tiles in position. In the end phase, the person would fill any gaps with grout and allow it to dry before cleaning the tiles.",
+    "glob": "The person would start by measuring and marking the floor or wall where the tiles will be laid, then they would mix the adhesive according to the manufacturer's instructions, apply it evenly using a notched trowel, place the tiles onto the adhesive, pressing them firmly into position, and finally, they would use a rubber float to smooth out any excess adhesive and ensure the tiles are level. After the tiles have been laid, they would allow them to cure for the recommended time before grouting the spaces between the tiles."
+  },
+  "Layup drill in basketball": {
+    "phases": "In the start phase, the person would approach the basket. In the middle phase, the person would jump towards the basket. In the end phase, the person would shoot the ball into the hoop.",
+    "glob": "Answer: The person would approach the basket, dribble the ball a few times near the free-throw line, and then jump up to shoot the ball into the hoop."
+  },
+  "Long jump": {
+    "phases": "In the start phase, the person would begin by running up to the takeoff board. In the middle phase, the person would leap off the board and into the air. In the end phase, the person would land on the sand pit.",
+    "glob": "The person would run up to the take-off point, leap into the air, and land on their feet beyond the sandpit."
+  },
+  "Longboarding": {
+    "phases": "In the start phase, the person would position themselves on the longboard, balancing and gaining momentum. In the middle phase, the person would maintain balance while navigating turns or slopes, adjusting speed and direction as needed. In the end phase, the person would come to a controlled stop, ensuring safety and stability.",
+    "glob": "The person would stand on a longboard, balance themselves, and use their feet to steer and control the board as they glide down a slope or road."
+  },
+  "Making a cake": {
+    "phases": "In the start phase, the person would gather ingredients and tools needed for making a cake. In the middle phase, the person would mix the ingredients together and bake the cake. In the end phase, the person would cool the cake, frost it if desired, and serve it.",
+    "glob": "The person would start by gathering all necessary ingredients and tools, such as flour, sugar, eggs, butter, milk, vanilla extract, baking powder, and a mixing bowl. They would then measure out the dry ingredients into the mixing bowl, followed by the wet ingredients, and mix them together until well combined. Next, they would pour the batter into a greased and floured cake pan, smooth the surface, and bake it in a preheated oven at the specified temperature for the recommended time. After baking, the cake would be allowed to cool completely before being frosted or decorated according to personal preference."
+  },
+  "Making a lemonade": {
+    "phases": "In the start phase, the person would gather ingredients such as lemons, sugar, water, and a pitcher. In the middle phase, the person would squeeze the lemons to extract juice, dissolve the sugar in the water, and mix all the ingredients together. In the end phase, the person would pour the lemonade into cups or glasses and serve it.",
+    "glob": "The person would first gather lemons, sugar, water, and a pitcher. Next, they would squeeze the lemons to extract the juice into the pitcher. Then, they would add the sugar to the lemon juice and stir until it dissolves. After that, they would fill the pitcher with water up to the desired level of sweetness. Finally, they would mix everything together thoroughly before serving the freshly made lemonade."
+  },
+  "Making a sandwich": {
+    "phases": "In the start phase, the person would gather ingredients and tools needed for making a sandwich. In the middle phase, the person would assemble the sandwich by placing the ingredients between slices of bread. In the end phase, the person would complete the sandwich by adding any necessary condiments or toppings and then serve it.",
+    "glob": "The person would start by selecting ingredients such as bread, cheese, and meat, then spread a layer of mayonnaise or mustard on one slice of bread, place the chosen ingredients on top, cover with another slice of bread, and finally cut the sandwich into halves using a knife."
+  },
+  "Making an omelette": {
+    "phases": "In the start phase, the person would gather and prepare all necessary ingredients and cooking tools. In the middle phase, the person would beat eggs, add seasonings, and cook the omelette on a pan. In the end phase, the person would fold the omelette, remove it from the pan, and serve it.",
+    "glob": "The person would crack eggs into a bowl, whisk them until frothy, heat a pan over medium heat, add butter or oil, pour the egg mixture into the pan, let it cook until the edges start to set, use a spatula to gently lift and fold one side of the egg over the other, continue cooking until the egg is fully cooked, and then slide the omelette onto a plate."
+  },
+  "Mixing drinks": {
+    "phases": "In the start phase, the person would gather all necessary ingredients and tools for mixing drinks. In the middle phase, the person would measure and combine the ingredients according to the recipe or personal preference. In the end phase, the person would stir or shake the mixture thoroughly to ensure all components are well combined and serve the drink.",
+    "glob": "The person would start by selecting the ingredients for their drink, which could include alcohol, mixers, and any additional flavorings or garnishes. Next, they would measure out the required amounts of each ingredient using appropriate tools like jiggers or measuring cups. After measuring, the person would combine these ingredients in a shaker or mixing glass, typically adding ice to chill the mixture and dilute it. Once mixed, the drink is strained into a glass, often over a bar spoon to catch any ice chips or unwanted particles. Finally, the drink is garnished with a slice of fruit, a sprig of mint, or another decorative element before being served."
+  },
+  "Mooping floor": {
+    "phases": "Answer: In the start phase, the person would moop the floor by first sweeping the debris and dirt into one area. In the middle phase, the person would mop the floor by using a mop to clean the wet floor, ensuring it is free of any remaining dirt or grime. In the end phase, the person would dry the floor by using a clean towel or a squeegee to remove excess water and leave the floor clean and dry.",
+    "glob": "The person would sweep the floor first, then mop it using a damp cloth or a mop, ensuring to go over the entire surface multiple times to remove dirt and grime effectively."
+  },
+  "Mowing the lawn": {
+    "phases": "In the start phase, the person would gather the necessary tools and equipment for mowing the lawn. In the middle phase, the person would begin mowing the lawn, ensuring even coverage and attention to detail. In the end phase, the person would finish mowing, check for missed spots, and tidy up any remaining debris or tools.",
+    "glob": "The person would use a lawn mower to cut the grass on their property."
+  },
+  "Paintball": {
+    "phases": "In the start phase, the person would gather and equip themselves with paintball gear, including a paintball gun, protective clothing, and a mask. In the middle phase, the person would navigate through the paintball field, aiming and shooting at opponents while trying to avoid getting hit. In the end phase, the person would conclude the game by either surrendering or being eliminated from the game, then debriefing with other players and possibly cleaning up their equipment.",
+    "glob": "The person would put on protective gear, including a mask and helmet, load their paintball gun with paintballs, and then navigate through an obstacle course or field, aiming and shooting at opponents while trying to avoid being hit themselves."
+  },
+  "Painting": {
+    "phases": "In the start phase, the person would gather materials and prepare the workspace. In the middle phase, the person would apply paint to the canvas or surface. In the end phase, the person would review and finalize the artwork.",
+    "glob": "The person would use various tools such as brushes and paints to create visual art on surfaces like canvas or paper."
+  },
+  "Painting fence": {
+    "phases": "In the start phase, the person would gather materials and tools needed for painting the fence. In the middle phase, the person would apply the paint evenly across the fence. In the end phase, the person would clean up the tools and materials used.",
+    "glob": "The person would first prepare the fence by cleaning it thoroughly and ensuring it is dry. Next, they would measure and mark the fence sections for painting. After that, they would apply a primer coat to the fence to improve paint adhesion. Once the primer is dry, they would proceed to apply the main paint color, using a roller or brush depending on the fence's surface texture. Finally, they would allow the paint to dry completely before applying any additional coats if necessary."
+  },
+  "Painting furniture": {
+    "phases": "In the start phase, the person would gather all necessary materials and tools for painting the furniture, including paint, brushes, a drop cloth, and protective gear like gloves and an apron. In the middle phase, the person would apply the primer or base coat to the furniture, ensuring even coverage and allowing it to dry completely before proceeding. In the end phase, the person would apply the final coat of paint, inspecting the work for any imperfections and touching up as needed, and then allow the paint to dry thoroughly before moving the furniture back into its intended space.",
+    "glob": "The person would first prepare the surface of the furniture by sanding it down to remove any old paint or imperfections, then clean the surface thoroughly. Next, they would apply a primer if necessary, followed by multiple coats of paint, allowing each coat to dry completely before applying the next. Finally, they would finish the process by applying a clear protective varnish to seal and protect the painted surface."
+  },
+  "Peeling potatoes": {
+    "phases": "In the start phase, the person would hold the potato and select the peeler. In the middle phase, the person would begin to peel the potato, removing the skin in a continuous motion. In the end phase, the person would finish peeling the potato, inspecting it for any remaining skin and discarding the peelings.",
+    "glob": "The person would use a peeler to remove the skin from the potatoes."
+  },
+  "Ping-pong": {
+    "phases": "In the start phase, the person would hold the paddle and ball, preparing for the serve or return. In the middle phase, the person would swing the paddle to hit the ball, aiming for precision and power. In the end phase, the person would follow through with the swing, then reset their stance to prepare for the next shot.",
+    "glob": "Answer: The person would hold a paddle and a ball, then hit the ball back and forth over a net, aiming to keep it within the boundaries of their opponent's side while trying to return it in a way that makes it difficult for their opponent to return."
+  },
+  "Plastering": {
+    "phases": "In the start phase, the person would prepare the surface by cleaning and smoothing it out. In the middle phase, the person would apply the plaster mixture evenly across the surface. In the end phase, the person would allow the plaster to dry and then sand or finish the surface as needed.",
+    "glob": "The person would apply plaster to a wall using a trowel and a float, ensuring an even layer and smoothing it out for a finished look."
+  },
+  "Plataform diving": {
+    "phases": "In the start phase, the person would jump from a platform or a high point. In the middle phase, the person would perform a series of flips and twists in the air. In the end phase, the person would enter the water with a splash.",
+    "glob": "The person would stand on a platform and jump into the water from a height of at least 3 meters, performing a series of dives and flips before landing in the water."
+  },
+  "Playing accordion": {
+    "phases": "In the start phase, the person would position themselves and hold the accordion. In the middle phase, the person would begin to play the instrument by pressing keys and strumming the strings. In the end phase, the person would finish playing, releasing the instrument and possibly adjusting their posture or preparing for the next piece.",
+    "glob": "The person would hold the accordion with both hands, pressing the buttons and keys to produce music."
+  },
+  "Playing badminton": {
+    "phases": "In the start phase, the person would hold the racket and position themselves at the baseline. In the middle phase, the person would swing the racket to hit the shuttlecock. In the end phase, the person would follow through with the swing and prepare for the next shot.",
+    "glob": "The person would hold a racket in one hand and a shuttlecock in the other, then swing the racket to hit the shuttlecock over the net towards their opponent's side of the court."
+  },
+  "Playing bagpipes": {
+    "phases": "In the start phase, the person would position themselves and prepare the bagpipes. In the middle phase, the person would blow into the bagpipes to inflate them and produce sound. In the end phase, the person would play the melody or tune on the bagpipes.",
+    "glob": "The person would hold the bagpipes, inflate the bag, and then play the melody by pressing the chanter reeds with their fingers while moving the bagpipes back and forth."
+  },
+  "Playing beach volleyball": {
+    "phases": "In the start phase, the person would position themselves and prepare for the serve. In the middle phase, the person would hit the ball over the net. In the end phase, the person would receive the ball and set up for the next play.",
+    "glob": "The person would serve the ball over the net, then hit it back and forth with their team while trying to keep it within bounds and prevent the opposing team from hitting it back into play."
+  },
+  "Playing blackjack": {
+    "phases": "In the start phase, the person would place their bets. In the middle phase, the person would receive their cards and make decisions about whether to hit or stand. In the end phase, the person would reveal their hand and compare it to the dealer's hand to determine the outcome of the game.",
+    "glob": "The person would sit at a table with other players and a dealer, receive two cards each, aim to get as close to 21 as possible without going over, and make decisions on whether to hit (take another card), stand (keep their current hand), or double down (double their bet and take one more card)."
+  },
+  "Playing congas": {
+    "phases": "In the start phase, the person would pick up the congas and position themselves comfortably. In the middle phase, the person would begin to play the congas rhythmically, focusing on the beats and patterns. In the end phase, the person would continue playing until they decide to stop or transition to another activity.",
+    "glob": "The person would rhythmically strike the conga drums using their hands and feet to create a lively beat, often incorporating various techniques such as slapping, tapping, and rolling to produce different sounds and rhythms."
+  },
+  "Playing drums": {
+    "phases": "In the start phase, the person would pick up the drumsticks and position themselves over the drum set. In the middle phase, the person would begin to strike the drums and cymbals rhythmically, maintaining a steady tempo and engaging different parts of the drum set. In the end phase, the person would gradually reduce the intensity of their playing, preparing to stop or transitioning to another activity.",
+    "glob": "The person would hold drumsticks and strike different parts of the drum set rhythmically to produce music."
+  },
+  "Playing field hockey": {
+    "phases": "In the start phase, the person would position themselves and prepare for the play, focusing on their stance and readiness to receive or intercept the ball. In the middle phase, the person would execute the action, which involves running towards the ball, making contact with it using the stick, and directing it towards the goal. In the end phase, the person would follow through with the shot, aiming to score a goal by hitting the ball into the opposing team's net.",
+    "glob": "The person would use a field hockey stick to hit a small, hard ball towards the goal of the opposing team, aiming to score points by getting the ball into the net while avoiding the goalkeeper's attempts to block it."
+  },
+  "Playing flauta": {
+    "phases": "In the start phase, the person would pick up the flute and position it correctly. In the middle phase, the person would begin to blow air into the flute, producing sound. In the end phase, the person would release the flute and stop playing.",
+    "glob": "The person would hold the flute vertically and blow into it while pressing the keys or holes with their fingers to produce different notes."
+  },
+  "Playing guitarra": {
+    "phases": "In the start phase, the person would pick up the guitar and position themselves comfortably. In the middle phase, the person would strum or pluck the strings rhythmically, forming chords and melodies. In the end phase, the person would finish playing, possibly by stopping the strumming or plucking and putting the guitar down.",
+    "glob": "The person would hold the guitar with their left hand on the neck and use their right hand to strum or pick the strings."
+  },
+  "Playing harmonica": {
+    "phases": "In the start phase, the person would position their hands and fingers over the harmonica's holes and reeds. In the middle phase, the person would blow or suck air through the harmonica to produce sound. In the end phase, the person would release the harmonica and possibly adjust their grip or prepare for the next note.",
+    "glob": "The person would hold the harmonica between their fingers and lips, blow or suck air through it to produce sound, and use their tongue to change the pitch of the notes."
+  },
+  "Playing ice hockey": {
+    "phases": "In the start phase, the person would gather and position themselves at the starting point of the ice rink, preparing for the game. In the middle phase, the person would actively engage in the game, skating, passing the puck, and attempting to score goals. In the end phase, the person would conclude the game by either scoring a goal, defending their own goal, or participating in the post-game activities such as shaking hands with opponents.",
+    "glob": "The person would skate on the ice, use a stick to hit a puck, and attempt to score goals by passing or shooting it into the opposing team's net."
+  },
+  "Playing kickball": {
+    "phases": "In the start phase, the person would hold the ball and position themselves for the pitch. In the middle phase, the person would run towards the base after hitting the ball. In the end phase, the person would reach the base safely or be tagged out by the opposing team's player.",
+    "glob": "The person would stand in a designated area, hold a bat, and wait for the ball to be thrown towards them. Once the ball is caught, they would run to first base and continue around the bases until they return to home plate."
+  },
+  "Playing lacrosse": {
+    "phases": "In the start phase, the person would hold the lacrosse stick and position themselves for the play. In the middle phase, the person would run towards the ball, pass it to a teammate, or shoot at the goal. In the end phase, the person would either score a point, defend against an opponent's shot, or reset their position for the next play.",
+    "glob": "The person would throw a ball with a stick and run around a field trying to score goals while defending against the opposing team's attempts to score."
+  },
+  "Playing piano": {
+    "phases": "In the start phase, the person would position their hands and fingers over the keys of the piano. In the middle phase, the person would press down on the keys to produce music. In the end phase, the person would release their fingers from the keys, preparing for the next sequence or stopping the performance.",
+    "glob": "The person would sit at the piano, place their hands on the keys, and press them to produce music."
+  },
+  "Playing polo": {
+    "phases": "In the start phase, the person would position themselves and prepare their mallet and ball. In the middle phase, the person would hit the ball towards the goal. In the end phase, the person would follow through with the swing and then recover their stance.",
+    "glob": "The person would ride a horse and use a mallet to hit a ball into a goal."
+  },
+  "Playing pool": {
+    "phases": "In the start phase, the person would position themselves at the pool table and take a stance. In the middle phase, the person would aim for the cue ball and take their shot. In the end phase, the person would observe the result of the shot and prepare for the next turn.",
+    "glob": "The person would position themselves at the edge of the pool table, aiming for the cue ball with their cue stick, and then strike the cue ball towards the target ball, attempting to sink it into one of the pockets."
+  },
+  "Playing racquetball": {
+    "phases": "In the start phase, the person would hold the racquet and position themselves at the ready stance. In the middle phase, the person would swing the racquet to hit the ball. In the end phase, the person would follow through with the swing and return to their initial stance.",
+    "glob": "The person would grip the racquet firmly, stand in a ready position, and use their body to move laterally as they hit the ball back and forth across the court."
+  },
+  "Playing rubik cube": {
+    "phases": "In the start phase, the person would hold the Rubik's Cube and examine it to understand its current state. In the middle phase, the person would begin manipulating the cube, applying algorithms to solve specific sections or layers. In the end phase, the person would complete the cube, achieving a solved state where all sides have uniform colors.",
+    "glob": "The person would solve the Rubik's Cube by manipulating its six faces, aiming to align all the colored squares on each face into a single color."
+  },
+  "Playing saxophone": {
+    "phases": "In the start phase, the person would position themselves and hold the saxophone. In the middle phase, the person would begin to play the saxophone, producing sound. In the end phase, the person would stop playing and release the saxophone.",
+    "glob": "The person would hold the saxophone with their left hand and use their fingers to press the keys while blowing into the mouthpiece with their right hand."
+  },
+  "Playing squash": {
+    "phases": "In the start phase, the person would hold the racket and position themselves at the ready stance. In the middle phase, the person would swing the racket to hit the ball. In the end phase, the person would follow through with the swing and return to their initial stance.",
+    "glob": "The person would grip the squash racket firmly with both hands, stand in a ready position with feet shoulder-width apart and knees slightly bent, focus on the ball, and then swing the racket to hit the ball back towards their opponent."
+  },
+  "Playing ten pins": {
+    "phases": "In the start phase, the person would position themselves and hold the bowling ball. In the middle phase, the person would swing the ball forward and release it towards the pins. In the end phase, the person would follow through with their arm and observe the outcome of the throw.",
+    "glob": "The person would stand at the foul line, hold the bowling ball with both hands, swing it back and forth for balance, then release it towards the ten pins, aiming for a strike or a high score."
+  },
+  "Playing violin": {
+    "phases": "In the start phase, the person would position themselves and adjust their posture. In the middle phase, the person would begin playing the violin, moving their fingers along the strings and bowing the instrument. In the end phase, the person would stop playing, release the violin, and possibly adjust their posture again.",
+    "glob": "The person would hold the violin under their chin with their left hand, positioning the neck of the instrument between their shoulder and neck. They would use their right hand to pluck or bow the strings, creating music."
+  },
+  "Playing water polo": {
+    "phases": "In the start phase, the person would gather and position themselves near the pool's edge, preparing for the game. In the middle phase, the person would actively engage in the game, swimming, passing the ball, and attempting to score goals. In the end phase, the person would conclude the game, possibly by retrieving the ball, signaling the end of the match, or engaging in post-game activities such as debriefing or celebrating.",
+    "glob": "The person would swim towards the ball, paddle with their hands to propel themselves forward, and use their arms to throw the ball into the goal of the opposing team."
+  },
+  "Pole vault": {
+    "phases": "In the start phase, the person would begin by running up to the pole, gaining momentum. In the middle phase, the person would plant the pole and use it to propel themselves upward, lifting their body over the bar. In the end phase, the person would clear the bar and land safely on the mat.",
+    "glob": "The person would run up to the pole, plant their feet firmly on the ground, and use the pole to propel themselves upwards, clearing the bar with their body extended horizontally above it."
+  },
+  "Polishing forniture": {
+    "phases": "In the start phase, the person would gather all necessary polishing tools and materials. In the middle phase, the person would apply the polish to the furniture surface, ensuring even coverage and attention to detail. In the end phase, the person would inspect the polished furniture for any missed spots or imperfections, and if necessary, reapply polish as needed.",
+    "glob": "The person would use a polishing cloth and a gentle, circular motion to buff the surface of the furniture, applying a small amount of furniture polish to enhance its shine and protect it from scratches or wear."
+  },
+  "Polishing shoes": {
+    "phases": "In the start phase, the person would gather all necessary materials such as shoe polish, a clean cloth, and a soft brush. In the middle phase, the person would apply the shoe polish evenly across the surface of the shoes using the brush and then buff it in circular motions with the cloth to ensure a smooth application. In the end phase, the person would inspect the shoes for any missed spots or uneven areas, and if necessary, reapply the polish until the desired shine is achieved.",
+    "glob": "The person would first gather all necessary materials such as a soft cloth, shoe polish, and a clean, dry cloth. Next, they would apply a small amount of shoe polish to the cloth and gently rub it onto the shoe's surface, focusing on any scuffs or marks. After applying the polish, they would buff the shoe with a clean, dry cloth to remove any excess polish and create a shiny finish. Finally, they would inspect the shoe for any remaining imperfections and repeat the process until the desired shine is achieved."
+  },
+  "Powerbocking": {
+    "phases": "In the start phase, the person would initiate the movement by lifting their body off the ground using the power of their legs and arms. In the middle phase, the person would maintain balance and momentum, possibly performing a series of dynamic movements such as jumps or spins. In the end phase, the person would land safely back on the ground, completing the action with a controlled and graceful finish.",
+    "glob": "The person would perform a series of dynamic exercises that combine elements of gymnastics, weightlifting, and dance, focusing on strength, flexibility, and balance."
+  },
+  "Preparing pasta": {
+    "phases": "In the start phase, the person would select and measure the ingredients needed for the pasta dish. In the middle phase, the person would cook the pasta according to the package instructions, typically boiling water, adding salt, and cooking the pasta until it reaches the desired doneness. In the end phase, the person would prepare the sauce or toppings, mix them with the cooked pasta, and serve the meal.",
+    "glob": "The person would start by boiling water in a pot, then add salt and the appropriate amount of pasta to the boiling water. After the pasta has cooked for the recommended time, they would drain it and rinse it under cold water to stop the cooking process. Finally, they would mix the pasta with any desired sauces or toppings."
+  },
+  "Preparing salad": {
+    "phases": "In the start phase, the person would gather all necessary ingredients and tools for making the salad. In the middle phase, the person would chop vegetables, mix dressings, and combine all ingredients together. In the end phase, the person would taste the salad, adjust seasoning if needed, and serve it.",
+    "glob": "The person would start by washing and trimming fresh vegetables such as lettuce, tomatoes, cucumbers, and bell peppers. Next, they would chop these vegetables into appropriate sizes for the salad. Then, they would mix the chopped vegetables together in a large bowl. After that, they would add any desired dressings or seasonings, such as olive oil, lemon juice, salt, pepper, and herbs like basil or parsley. Finally, they would toss the salad gently to ensure all ingredients are well combined before serving."
+  },
+  "Putting in contact lenses": {
+    "phases": "In the start phase, the person would clean and prepare their hands and the contact lens case. In the middle phase, the person would pick up the contact lens from the case and place it on the tip of their index finger. In the end phase, the person would gently open their eye, slide the contact lens onto the cornea, and blink to secure it in place.",
+    "glob": "The person would first wash their hands thoroughly to ensure cleanliness and prevent contamination of the contact lens. Next, they would open the contact lens case and take out one lens, holding it between their fingers. They would then look upwards and use their other hand to gently pull down on the lower eyelid, creating a pocket under the eye. Carefully placing the lens into this pocket, they would close their eyes for a few seconds to allow the lens to settle properly. Afterward, they would blink several times to distribute the lens evenly across the cornea. If both lenses need to be inserted, they would repeat the process for the second lens, ensuring both lenses are correctly placed before leaving the house or engaging in any activities that require clear vision."
+  },
+  "Putting on makeup": {
+    "phases": "In the start phase, the person would select and gather their makeup products. In the middle phase, the person would apply the makeup products to their face. In the end phase, the person would finalize their look by setting the makeup with powder or spray.",
+    "glob": "The person would start by cleansing their face with a gentle cleanser and water, then apply a moisturizer to hydrate the skin. Next, they would use a primer to create a smooth base for the makeup. Following this, they would apply foundation or concealer to cover any imperfections and even out the skin tone. After that, they would set the foundation with a powder to prevent it from melting throughout the day. They might then apply blush to add color to the cheeks and highlighter to brighten the face. Finally, they would put on lipstick or lip gloss to complete their look."
+  },
+  "Putting on shoes": {
+    "phases": "In the start phase, the person would pick up the shoe. In the middle phase, the person would slide their foot into the shoe. In the end phase, the person would fasten the shoe strap or tie the laces.",
+    "glob": "The person would first pick up the shoe and place it on their foot, then adjust the laces or fasten the closure to ensure a snug fit."
+  },
+  "Rafting": {
+    "phases": "In the start phase, the person would gather their gear and prepare for the rafting trip. In the middle phase, the person would navigate through the river, maneuvering around obstacles and following the flow of the water. In the end phase, the person would reach the destination, disembark from the raft, and celebrate or debrief about the experience.",
+    "glob": "The person would paddle through turbulent waters, navigating rapids and obstacles while wearing safety gear such as a helmet and life jacket."
+  },
+  "Raking leaves": {
+    "phases": "In the start phase, the person would gather the scattered leaves together. In the middle phase, the person would rake the leaves into neat piles. In the end phase, the person would dispose of the collected leaves.",
+    "glob": "The person would gather leaves into piles using a rake and then transfer them to a designated area for disposal or composting."
+  },
+  "Removing curlers": {
+    "phases": "In the start phase, the person would gather and organize all necessary curlers and tools. In the middle phase, the person would carefully remove each curler from the hair, ensuring not to damage the hair or the curlers. In the end phase, the person would finish by detangling the hair, smoothing it out, and styling it as desired.",
+    "glob": "The person would first gather all necessary tools and supplies, such as a comb, a towel, and a hairdryer. Next, they would section their hair into manageable parts using a comb or fingers. Then, they would carefully place the curlers at the roots of each section, ensuring they are positioned correctly for the desired curl pattern. After securing the curlers, they might wrap a towel around their head to help retain heat and moisture, which is essential for achieving the best curls. Finally, once the desired time has passed, they would remove the curlers gently, using a comb to detangle and shape the curls, and then style them further as needed."
+  },
+  "Removing ice from car": {
+    "phases": "In the start phase, the person would identify the ice on the car's surface. In the middle phase, the person would begin to scrape or chip away at the ice using a scraper or similar tool. In the end phase, the person would thoroughly clean the car's surface to remove any remaining ice and debris.",
+    "glob": "The person would use a scraper or a specialized ice removal tool to gently scrape off the ice from the windshield and other glass surfaces of the car, being careful not to scratch the paint or damage the glass."
+  },
+  "Riding bumper cars": {
+    "phases": "In the start phase, the person would get into the bumper car and fasten their seatbelt. In the middle phase, the person would steer the bumper car around the track, trying to collide with others while avoiding collisions. In the end phase, the person would come to a stop at the exit point of the ride.",
+    "glob": "The person would sit in a small car attached to a rotating platform and drive it around the bumper car area, attempting to collide with other cars while avoiding collisions with walls or other obstacles."
+  },
+  "River tubing": {
+    "phases": "In the start phase, the person would gather equipment and prepare for the activity. In the middle phase, the person would navigate through the river, following the course of the water. In the end phase, the person would disembark from the tube and conclude the activity.",
+    "glob": "The person would float down a river in an inflatable tube, holding onto a rope attached to the tube for safety while navigating through the water."
+  },
+  "Rock climbing": {
+    "phases": "In the start phase, the person would secure their equipment and assess the climb. In the middle phase, the person would ascend the rock face, making strategic moves and securing each hold. In the end phase, the person would reach the top, secure themselves, and prepare for descent or dismount.",
+    "glob": "The person would grip the rock face with their hands and feet, using specialized climbing gear like harnesses and carabiners for safety, while ascending the rock face by finding and placing holds with precision and strength."
+  },
+  "Rock-paper-scissors": {
+    "phases": "In the start phase, the person would choose one of the three options: rock, paper, or scissors. In the middle phase, the person would simultaneously reveal their choice. In the end phase, the person would interpret the outcome based on the rules of the game.",
+    "glob": "The person would simultaneously choose one of three options: rock, paper, or scissors, and then reveal their choice to determine the winner based on the traditional rules of the game."
+  },
+  "Rollerblading": {
+    "phases": "In the start phase, the person would position themselves and begin to glide forward. In the middle phase, the person would maintain their balance and rhythm, smoothly transitioning between movements. In the end phase, the person would come to a controlled stop, ensuring safety and stability.",
+    "glob": "Answer: The person would stand on rollerblades, place their feet into the boot straps, and then push off with one foot while keeping the other foot in place to maintain balance and propel forward."
+  },
+  "Roof shingle removal": {
+    "phases": "In the start phase, the person would gather necessary tools and safety equipment. In the middle phase, the person would remove individual roof shingles starting from one section of the roof. In the end phase, the person would dispose of the removed shingles and clean up the work area.",
+    "glob": "The person would first secure the area below the roof to prevent debris from falling and causing injury or damage. Next, they would use a roof rake to remove leaves, twigs, and other debris from the roof surface. Then, they would use a tool called a roof jackscrew to loosen the nails holding the shingles in place. After that, they would carefully pry up the shingles using a roof bar or a similar tool, being careful not to damage the underlying structure of the roof. Finally, they would dispose of the removed shingles properly and ensure the area is clean before leaving the site."
+  },
+  "Rope skipping": {
+    "phases": "In the start phase, the person would hold the rope and position themselves under it. In the middle phase, the person would jump over the rope, ensuring their body is clear of the rope's path. In the end phase, the person would land safely after completing the jump and prepare for the next sequence or rest.",
+    "glob": "The person would jump rope, swinging it under their feet and over their head in a rhythmic motion, typically using both hands to control the rope's movement."
+  },
+  "Running a marathon": {
+    "phases": "In the start phase, the person would begin running at a steady pace, focusing on getting into the rhythm and setting a comfortable speed. In the middle phase, the person would maintain their pace, possibly adjusting it slightly as needed to manage energy levels and avoid fatigue. In the end phase, the person would push towards finishing strong, increasing their pace if possible, and aiming for a personal best or completing the race with a sense of accomplishment.",
+    "glob": "The person would start by gradually increasing their training mileage over several months, focusing on building endurance and stamina. They would then participate in shorter races to test their progress and build confidence. On the day of the marathon, they would arrive at the starting line early, warm up properly, and take a moment to mentally prepare themselves for the challenge ahead. As the race begins, they would maintain a steady pace, staying hydrated and managing their energy levels carefully. Throughout the marathon, they would likely switch between running and walking to conserve energy, especially during the later stages of the race. Finally, as they approach the finish line, they would push themselves to finish strong, celebrating their achievement once they cross the finish line."
+  },
+  "Sailing": {
+    "phases": "In the start phase, the person would hoist the sails and prepare the boat for movement. In the middle phase, the person would navigate the boat through the water, adjusting the sails as needed to maintain speed and direction. In the end phase, the person would lower the sails and secure the boat, preparing it for docking or resting.",
+    "glob": "The person would navigate a boat across water using sails to catch wind and propel the vessel forward."
+  },
+  "Scuba diving": {
+    "phases": "In the start phase, the person would equip themselves with scuba gear and prepare for entry into the water. In the middle phase, the person would descend into the water, explore the underwater environment, and interact with marine life. In the end phase, the person would ascend back to the surface, decompress, and return to land.",
+    "glob": "The person would put on scuba gear, including a wetsuit, mask, snorkel, and fins, and then descend into the water using a scuba tank for breathing air. They would explore underwater environments, observing marine life and the ocean floor, while maintaining control of their buoyancy and depth through the use of a buoyancy compensator and adjusting the weight of their equipment. After the dive, they would ascend slowly to avoid decompression sickness and return to the surface."
+  },
+  "Sharpening knives": {
+    "phases": "In the start phase, the person would select the appropriate sharpening tool and position it correctly on the knife. In the middle phase, the person would apply consistent pressure while moving the sharpening tool along the edge of the knife, ensuring an even grind across the entire length. In the end phase, the person would inspect the knife for any burrs or imperfections, and if necessary, repeat the sharpening process until the desired sharpness is achieved.",
+    "glob": "The person would use a sharpening stone or a honing steel to sharpen the knife, moving it back and forth across the blade's edge to remove burrs and restore the sharpness."
+  },
+  "Shaving": {
+    "phases": "In the start phase, the person would apply shaving cream or gel to the area they wish to shave. In the middle phase, the person would use a razor to remove the hair from the skin. In the end phase, the person would rinse off any remaining shaving cream and dry the skin.",
+    "glob": "The person would apply shaving cream or gel to their face, then use a razor to carefully remove the hair, ensuring not to cut too close to the skin and being mindful of sensitive areas."
+  },
+  "Shaving legs": {
+    "phases": "In the start phase, the person would apply shaving cream or gel to their legs. In the middle phase, the person would use a razor to shave the legs, moving from top to bottom. In the end phase, the person would rinse off any remaining cream and dry their legs thoroughly.",
+    "glob": "The person would start by applying shaving cream or gel to their leg, then use a razor to carefully shave the hair off, moving in the direction of hair growth to reduce irritation, and finally rinse the leg thoroughly to remove any remaining cream or hair."
+  },
+  "Shot put": {
+    "phases": "In the start phase, the person would hold the shot put firmly and position themselves in a ready stance. In the middle phase, the person would swing their arm back and rotate their body to build momentum. In the end phase, the person would release the shot put with a powerful throw, following through with their motion.",
+    "glob": "The person would hold the shot put in their dominant hand, take a few steps back, swing the arm back and then forward, releasing the shot put at the peak of the swing."
+  },
+  "Shoveling snow": {
+    "phases": "In the start phase, the person would pick up the shovel and position themselves at the edge of the snowbank. In the middle phase, the person would dig into the snow, lifting it onto the shovel. In the end phase, the person would transfer the snow from the shovel to a designated area away from the snowbank.",
+    "glob": "The person would pick up a shovel and begin to remove snow from the ground, moving it into a pile or onto a designated area for disposal."
+  },
+  "Shuffleboard": {
+    "phases": "In the start phase, the person would position themselves at the edge of the shuffleboard table, holding the puck with their hand. In the middle phase, the person would glide the puck across the surface of the shuffleboard using a sweeping motion with their arm and wrist. In the end phase, the person would release the puck towards the target area, aiming for precision and distance.",
+    "glob": "The person would stand at one end of the shuffleboard table, push the puck across the table using their hand, and then retrieve it from the other end of the table after it has stopped rolling."
+  },
+  "Skateboarding": {
+    "phases": "In the start phase, the person would position themselves on the skateboard and gain momentum. In the middle phase, the person would maintain balance and control while performing tricks or maneuvers. In the end phase, the person would come to a stop, dismount the skateboard, and possibly prepare for another run.",
+    "glob": "The person would stand on a skateboard, balance on it, and use their feet to push off the ground to move forward."
+  },
+  "Skiing": {
+    "phases": "In the start phase, the person would position themselves at the top of the slope, preparing for the descent. In the middle phase, the person would glide down the slope, maintaining balance and control over their skis. In the end phase, the person would come to a controlled stop at the bottom of the slope.",
+    "glob": "The person would stand on skis and use poles for balance while gliding down a snowy slope."
+  },
+  "Slacklining": {
+    "phases": "In the start phase, the person would balance themselves on the slackline, finding their center of gravity and adjusting their weight distribution. In the middle phase, the person would maintain their balance while walking or moving along the slackline, using small steps and keeping their body centered over the line. In the end phase, the person would dismount from the slackline, carefully lowering themselves to the ground without losing balance, and then walk away from the slackline.",
+    "glob": "The person would balance on a narrow board stretched between two points, using their body weight and foot placement to maintain equilibrium while walking or standing on it."
+  },
+  "Smoking a cigarette": {
+    "phases": "In the start phase, the person would light the cigarette. In the middle phase, the person would inhale the smoke. In the end phase, the person would exhale the smoke.",
+    "glob": "The person would light the cigarette and then inhale the smoke into their lungs."
+  },
+  "Smoking hookah": {
+    "phases": "In the start phase, the person would take a hookah and place it on their mouth. In the middle phase, the person would inhale the smoke through the mouthpiece. In the end phase, the person would exhale the smoke out of their mouth.",
+    "glob": "The person would first select a flavored tobacco and place it in the hookah bowl. Next, they would light the charcoal and wait for it to become white-hot. Once the charcoal is ready, they would use a tool to break off small pieces of the hot charcoal and place them on top of the tobacco. After that, they would inhale through the mouthpiece, drawing the smoke into their lungs. Finally, they would exhale the smoke through their mouth, creating a cloud of vapor."
+  },
+  "Snatch": {
+    "phases": "In the start phase, the person would grip the object firmly. In the middle phase, the person would lift the object off the ground. In the end phase, the person would hold the object steady above their head.",
+    "glob": "The person would start by standing with feet shoulder-width apart and knees slightly bent, holding a barbell on the floor with an overhand grip. They would then lift the barbell up to their chest using a\u7206\u53d1\u529b (explosive force) movement, keeping their back straight and core engaged. After reaching the chest, they would quickly pull the barbell overhead, extending their arms fully while keeping their body rigid. Finally, they would lower the barbell back to the starting position under control."
+  },
+  "Snow tubing": {
+    "phases": "In the start phase, the person would select and prepare their snow tube. In the middle phase, the person would ride down the slope on the snow tube. In the end phase, the person would come to a stop at the bottom of the slope.",
+    "glob": "The person would lie on a tube and slide down a snowy slope at high speed."
+  },
+  "Snowboarding": {
+    "phases": "In the start phase, the person would position themselves at the top of the slope, gaining momentum by standing still or walking backward. In the middle phase, the person would initiate the snowboarding motion, carving through the snow with controlled turns and maintaining balance. In the end phase, the person would come to a stop, either by gradually slowing down or using specific techniques like a controlled slide or a controlled fall.",
+    "glob": "The person would stand on a snowboard, hold onto a rope attached to a tow rope system, and use their body weight and the board's edges to navigate down a snowy slope."
+  },
+  "Spinning": {
+    "phases": "In the start phase, the person would hold the object or body part intended for spinning. In the middle phase, the person would initiate the rotation, typically by pulling the object or body part away from their body. In the end phase, the person would allow the object or body part to come to a stop naturally, completing the spinning motion.",
+    "glob": "The person would stand on a stationary bike and pedal at a steady pace, using their legs to turn the flywheel, which creates resistance for the rider to spin against."
+  },
+  "Spread mulch": {
+    "phases": "In the start phase, the person would gather the necessary tools and materials for spreading mulch. In the middle phase, the person would evenly distribute the mulch over the desired area. In the end phase, the person would compact the mulch to ensure it is firmly in place.",
+    "glob": "The person would spread mulch by first gathering the necessary materials such as wood chips or shredded leaves. They would then use a rake or shovel to evenly distribute the mulch over the soil surface of the desired area, ensuring it covers the ground uniformly without piling too high around plants. This process helps retain moisture, suppress weeds, and improve soil quality."
+  },
+  "Springboard diving": {
+    "phases": "In the start phase, the person would jump from the springboard. In the middle phase, the person would perform a series of flips and twists in the air. In the end phase, the person would enter the water with a splash.",
+    "glob": "Answer: The person would jump from a springboard, tuck their body into a compact position, and then extend their body as they enter the water."
+  },
+  "Starting a campfire": {
+    "phases": "In the start phase, the person would gather materials such as kindling, firewood, and a fire starter. In the middle phase, the person would ignite the kindling using the fire starter and gradually add larger pieces of wood to build up the fire. In the end phase, the person would ensure the fire is well established and adjust the wood as needed to maintain the fire.",
+    "glob": "The person would gather dry kindling and small twigs, then light them with a match or lighter to start the fire."
+  },
+  "Sumo": {
+    "phases": "In the start phase, the person would stand in a crouched position, facing their opponent, with their feet shoulder-width apart and knees bent. In the middle phase, the person would charge forward, pushing off the ground with their feet while simultaneously raising their arms for balance and protection. In the end phase, the person would make contact with their opponent, using their hips and shoulders to drive them down to the mat.",
+    "glob": "The person would stand in a circle called the dohyo, wearing traditional sumo attire known as mawashi, and adopt a specific stance with their feet apart and knees bent. They would then engage in a series of maneuvers aimed at pushing or throwing their opponent out of the ring or over the edge. The goal is to win by either forcing the opponent's shoulders off the ground or making them touch the ground with any part of their body other than their feet."
+  },
+  "Surfing": {
+    "phases": "In the start phase, the person would paddle out towards the waves. In the middle phase, the person would catch and ride the wave. In the end phase, the person would either paddle back or perform a maneuver before paddling back.",
+    "glob": "The person would paddle out into the ocean, catch a wave, and ride it towards the shore while maintaining balance on their surfboard."
+  },
+  "Swimming": {
+    "phases": "In the start phase, the person would begin by extending their arms forward and pushing off from the starting point, propelling themselves into the water. In the middle phase, the person would maintain a rhythmic stroke, alternating arm movements while keeping their body streamlined for efficient movement through the water. In the end phase, the person would approach the surface, prepare for the next breath, and begin the process anew as they continue swimming.",
+    "glob": "The person would submerge themselves in water and use their arms and legs to propel themselves forward through the water, creating a rhythmic motion that propels them through the liquid medium."
+  },
+  "Swinging at the playground": {
+    "phases": "In the start phase, the person would hold onto the swing's chains or handles. In the middle phase, the person would swing back and forth, gaining momentum. In the end phase, the person would slow down and eventually come to a stop.",
+    "glob": "The person would swing back and forth on a swing set, using their arms to propel themselves forward while sitting or standing on the swing."
+  },
+  "Table soccer": {
+    "phases": "In the start phase, the person would position the table soccer figures and set up the game. In the middle phase, the person would actively manipulate the figures, aiming to score goals against the opponent. In the end phase, the person would assess the final score and possibly celebrate or acknowledge the outcome of the game.",
+    "glob": "The person would play table soccer by using miniature figures to control small balls on a tabletop-sized soccer field, mimicking the actions of a full-sized soccer game."
+  },
+  "Tai chi": {
+    "phases": "In the start phase, the person would begin with a relaxed and calm posture, focusing on breathing deeply and mentally preparing for the movement. In the middle phase, the person would execute the Tai Chi movements fluidly and gracefully, maintaining balance and coordination while transitioning smoothly between different postures and actions. In the end phase, the person would conclude the practice with a gentle relaxation, allowing the body and mind to return to a state of rest and stillness.",
+    "glob": "The person would perform slow, deliberate movements that flow seamlessly from one position to another, focusing on balance, coordination, and deep breathing."
+  },
+  "Tango": {
+    "phases": "In the start phase, the person would initiate the dance by taking a step forward with one foot while keeping the other foot firmly planted and facing the partner. In the middle phase, the person would maintain a smooth flow of movement, incorporating turns, steps, and arm movements to create a continuous and engaging rhythm. In the end phase, the person would conclude the dance with a graceful move, often involving a turn or a final pose that highlights the elegance and skill of the performance.",
+    "glob": "The person would gracefully move their feet in a series of intricate steps, swaying their hips and arms in sync with their partner's movements, often incorporating dramatic poses and spins, all while maintaining close physical contact and deep emotional connection."
+  },
+  "Tennis serve with ball bouncing": {
+    "phases": "In the start phase, the person would hold the tennis racket and position themselves over the baseline. In the middle phase, the person would toss the ball up and swing the racket to hit it. In the end phase, the person would follow through with the swing, releasing the racket after making contact with the ball.",
+    "glob": "The person would toss the tennis ball into the air and then swing the racket to hit it, aiming for the opponent's service box while ensuring the ball bounces within the designated area of the court."
+  },
+  "Throwing darts": {
+    "phases": "In the start phase, the person would hold the dart and aim at the target. In the middle phase, the person would release the dart. In the end phase, the person would watch where the dart lands.",
+    "glob": "The person would stand with their feet shoulder-width apart, hold the dart in their dominant hand, and aim at the target while rotating their body slightly to throw the dart with a flick of the wrist."
+  },
+  "Trimming branches or hedges": {
+    "phases": "In the start phase, the person would assess the condition and shape of the branches or hedges. In the middle phase, the person would trim the branches or hedges according to the assessed condition and desired shape. In the end phase, the person would inspect the trimmed branches or hedges for any missed spots or uneven cuts, making necessary adjustments.",
+    "glob": "The person would use shears or a hedge trimmer to carefully cut and shape the branches or hedges, ensuring an even and aesthetically pleasing appearance."
+  },
+  "Triple jump": {
+    "phases": "In the start phase, the person would begin by running up to the takeoff board. In the middle phase, the person would leap off the board and into the air. In the end phase, the person would land on the sand pit.",
+    "glob": "The person would begin by running at full speed towards the takeoff board, then plant their right foot and use it as a pivot point to launch themselves into the air. After clearing the takeoff board, they would extend their body horizontally while jumping over a bar, landing on the mat behind them."
+  },
+  "Tug of war": {
+    "phases": "In the start phase, the person would grab the rope and position themselves at the center. In the middle phase, the person would pull the rope towards their side with increasing effort. In the end phase, the person would either win or lose the game, depending on who pulls the rope further.",
+    "glob": "The person would pull on a rope with their team against another team, trying to pull the rope towards themselves while keeping it taut and preventing the other team from pulling them over a marked line."
+  },
+  "Tumbling": {
+    "phases": "In the start phase, the person would initiate the movement by lifting their arms and bending their knees. In the middle phase, the person would rotate their body through a series of flips, using momentum to propel themselves forward. In the end phase, the person would land gracefully, absorbing the impact with their legs and arms to ensure a safe and controlled landing.",
+    "glob": "The person would start by assuming a standing position, then proceed to perform a series of flips and twists through the air, landing back on their feet or another surface after completing the sequence."
+  },
+  "Using parallel bars": {
+    "phases": "In the start phase, the person would position themselves at the parallel bars, gripping them securely and preparing for the movement. In the middle phase, the person would perform the swing motion, using the momentum to propel their body forward and upward. In the end phase, the person would land safely back onto the ground or a designated landing area, ensuring a controlled and smooth descent.",
+    "glob": "The person would use parallel bars for physical therapy or exercise, typically by placing their hands on the bars and moving their body back and forth between them, which helps improve balance, strength, and coordination."
+  },
+  "Using the balance beam": {
+    "phases": "In the start phase, the person would position themselves at the edge of the balance beam, ensuring their feet are firmly planted and weight is evenly distributed. In the middle phase, the person would perform the desired movement or exercise, maintaining balance and control throughout the activity. In the end phase, the person would safely dismount from the balance beam, ensuring they land securely on the ground without losing balance.",
+    "glob": "The person would stand on the balance beam, maintaining their center of gravity and using their arms for balance as they walk across it."
+  },
+  "Using the monkey bar": {
+    "phases": "In the start phase, the person would grip the monkey bars with both hands and swing their legs forward to gain momentum. In the middle phase, the person would pull themselves up using their arms while keeping their legs extended forward. In the end phase, the person would lower themselves back down to the ground by bending their knees and swinging their legs back.",
+    "glob": "The person would swing from one bar to another using their arms and legs to propel themselves forward."
+  },
+  "Using the pommel horse": {
+    "phases": "In the start phase, the person would mount the pommel horse. In the middle phase, the person would perform various maneuvers such as spinning and balancing. In the end phase, the person would dismount from the pommel horse.",
+    "glob": "The person would mount the pommel horse, grip the handles, and perform a series of spins and maneuvers around the horse's handles, demonstrating strength, control, and balance."
+  },
+  "Using the rowing machine": {
+    "phases": "In the start phase, the person would position themselves on the rowing machine and adjust the seat to their height. In the middle phase, the person would begin the rowing motion, pulling the handle towards their chest and then pushing it back outwards. In the end phase, the person would release the handle and allow the machine to return to its starting position, completing one full stroke.",
+    "glob": "The person would sit on the rowing machine, place their feet into the footrests, grasp the handlebar with both hands, lean forward, and pull the handle towards their chest while pushing off with their legs, then return to the starting position."
+  },
+  "Using uneven bars": {
+    "phases": "In the start phase, the person would approach and mount the uneven bars. In the middle phase, the person would perform a series of swings, flips, and maneuvers between the bars. In the end phase, the person would dismount from the bars and land safely on the mat.",
+    "glob": "The person would swing from one bar to another, performing various acrobatic moves and rotations while maintaining balance and control."
+  },
+  "Vacuuming floor": {
+    "phases": "Answer: In the start phase, the person would turn on the vacuum cleaner and adjust the settings if needed. In the middle phase, the person would methodically move the vacuum over different areas of the floor, ensuring no part is missed. In the end phase, the person would clean up any remaining dirt or debris from the floor and dispose of it properly before turning off the vacuum cleaner.",
+    "glob": "The person would use a vacuum cleaner to remove dirt and debris from the floor, moving it back and forth across the surface to ensure thorough cleaning."
+  },
+  "Volleyball": {
+    "phases": "In the start phase, the person would prepare and position themselves for the serve or receive. In the middle phase, the person would execute the serve or hit the ball with precision. In the end phase, the person would follow through with the movement and prepare for the next play.",
+    "glob": "The person would serve the ball over the net, then use their hands to hit it back and forth with opponents while trying to keep it within the boundaries of the court."
+  },
+  "Wakeboarding": {
+    "phases": "In the start phase, the person would approach the water and position themselves on the wakeboard. In the middle phase, the person would ride along the wake created by a boat, maintaining balance and control over the board. In the end phase, the person would decelerate and come to a stop, dismounting from the wakeboard safely.",
+    "glob": "The person would stand on a board and use a rope attached to a boat to pull themselves across the water's surface while holding onto the rope handle."
+  },
+  "Walking the dog": {
+    "phases": "Answer: In the start phase, the person would pick up the leash and collar of the dog. In the middle phase, the person would walk the dog along the designated path or street. In the end phase, the person would return home with the dog and ensure it is safely contained or leashed until the next walk.",
+    "glob": "The person would take the dog for a walk on a leash, ensuring the dog is on a secure and comfortable harness, and walking at a steady pace while keeping an eye on the surroundings to ensure the dog's safety. They might also carry a bag to clean up after the dog."
+  },
+  "Washing dishes": {
+    "phases": "In the start phase, the person would gather all the dirty dishes and utensils from the table and sink. In the middle phase, the person would wash each item thoroughly under running water, using soap if necessary. In the end phase, the person would dry the washed items and put them away in their respective places.",
+    "glob": "The person would first gather all necessary items such as soap, water, and a dishcloth or sponge. Next, they would fill a sink or a large bowl with warm soapy water. Then, they would begin washing each dish by scrubbing them thoroughly to remove food particles and grease. After cleaning each item, they would rinse it under running water to ensure all soap is removed. Finally, they would dry the dishes using a clean towel or dish rack to prevent streaks and spots from forming."
+  },
+  "Washing face": {
+    "phases": "In the start phase, the person would wet their face with water. In the middle phase, the person would apply soap and gently rub it onto their face. In the end phase, the person would rinse off the soap and water from their face.",
+    "glob": "The person would wet their face with water, apply soap, gently rub it in circular motions, rinse thoroughly, and pat dry with a towel."
+  },
+  "Washing hands": {
+    "phases": "In the start phase, the person would wet their hands under running water. In the middle phase, the person would apply soap and scrub all surfaces of their hands thoroughly. In the end phase, the person would rinse their hands under clean running water until they are completely clean.",
+    "glob": "The person would wet their hands under running water, apply soap, scrub all surfaces of their hands including between fingers and under nails for at least 20 seconds, rinse thoroughly under clean running water, and dry their hands using a clean towel or air dryer."
+  },
+  "Waterskiing": {
+    "phases": "In the start phase, the person would position themselves on the water and secure the tow rope to their harness. In the middle phase, the person would maintain balance and control while gliding across the surface of the water. In the end phase, the person would slow down or come to a stop, releasing the tow rope and coming out of the water.",
+    "glob": "The person would stand on a pair of skis attached to a rope connected to a boat, gliding across the water's surface while being pulled by the boat's speed and power."
+  },
+  "Waxing skis": {
+    "phases": "In the start phase, the person would gather the necessary materials and tools for waxing the skis. In the middle phase, the person would apply the wax evenly across the ski's surface using a specific technique. In the end phase, the person would smooth out the wax with a tool to ensure an even application and optimal glide.",
+    "glob": "The person would apply wax to their skis using a specific type of wax designed for the current snow conditions and temperature, then use a waxing iron to melt the wax onto the ski base, ensuring an even distribution across the entire surface. After applying the wax, they would use a scraper or a brush to remove any excess wax, leaving a smooth layer that helps reduce friction between the ski and the snow, improving glide and performance."
+  },
+  "Welding": {
+    "phases": "In the start phase, the person would position the materials and prepare the welding equipment. In the middle phase, the person would apply heat and pressure to join the materials together. In the end phase, the person would inspect the weld for quality and make any necessary adjustments or repairs.",
+    "glob": "The person would use a welding torch or electrode to join metal pieces together by melting and fusing them at high temperatures."
+  },
+  "Windsurfing": {
+    "phases": "In the start phase, the person would position themselves on the windsurf board and adjust their harness to secure themselves to the sail. In the middle phase, the person would navigate the board using the sail to catch the wind, steering and balancing to maintain control over the direction and speed. In the end phase, the person would slow down or come to a stop, possibly by reducing the sail's angle to the wind or by using the board's fins for braking, and then disengage from the harness and disembark from the board.",
+    "glob": "The person would stand on a board and use a sail to catch the wind, propelling themselves across the water while steering with a boom and harness."
+  },
+  "Wrapping presents": {
+    "phases": "In the start phase, the person would select and prepare the gift. In the middle phase, the person would wrap the gift with paper and tape. In the end phase, the person would decorate the wrapped gift if desired.",
+    "glob": "The person would carefully select a gift and choose an appropriate wrapping paper. Next, they would measure the gift against the paper to ensure it fits well. Then, they would fold the edges of the paper neatly around the gift, securing them with tape or a ribbon. Finally, they would add any decorative elements like bows or stickers to complete the presentation."
+  },
+  "Zumba": {
+    "phases": "In the start phase, the person would warm up and prepare for the Zumba session. In the middle phase, the person would engage in the main Zumba routine, following the instructor's lead and performing various dance moves. In the end phase, the person would cool down and stretch to conclude the Zumba session.",
+    "glob": "The person would perform a series of energetic dance moves to music, often involving steps like the cha-cha, the samba, and the tango, all choreographed to create a fun and engaging workout experience."
+  }
+}

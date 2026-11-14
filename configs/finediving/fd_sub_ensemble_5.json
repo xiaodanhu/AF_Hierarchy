@@ -1,0 +1,226 @@
+{
+ "(TKO) forward takeoff": [
+  "a video of the diving sub-action forward takeoff, a takeoff phase",
+  "The diver stands firmly on the springboard with arms extended forward, preparing for the takeoff.",
+  "The diver begins to swing their arms back, initiating the momentum for the forward takeoff.",
+  "The diver's body starts to rise off the springboard as they continue to swing their arms backward.",
+  "The diver's feet lift off the springboard, with the body now fully airborne and beginning its forward rotation.",
+  "The diver's body continues its forward rotation, with arms extended forward and legs slightly bent, preparing for entry into the water."
+ ],
+ "(TKO) back takeoff": [
+  "a video of the diving sub-action back takeoff, a takeoff phase",
+  "The diver stands firmly on the springboard with arms extended forward, preparing for the takeoff.",
+  "The diver begins to swing their arms back, initiating the momentum for the takeoff.",
+  "The diver's body starts to rise off the springboard as they continue to swing their arms backward.",
+  "The diver's feet lift off the springboard, and the body begins to rotate forward, aligning with the dive's trajectory.",
+  "The diver's body is fully airborne, having left the springboard, with arms extended and legs straight, ready for the dive's execution."
+ ],
+ "(TKO) reverse takeoff": [
+  "a video of the diving sub-action reverse takeoff, a takeoff phase",
+  "The diver stands firmly on the springboard with arms extended forward, preparing for the takeoff.",
+  "The diver begins to swing their arms back, initiating the momentum for the takeoff.",
+  "The diver's body starts to rise off the springboard as they continue to swing their arms backward.",
+  "The diver's feet lift off the springboard, and the body begins to rotate, aligning with the dive's intended trajectory.",
+  "The diver's body is fully airborne, having left the springboard, with arms extended and legs positioned for the upcoming dive."
+ ],
+ "(TKO) inward takeoff": [
+  "a video of the diving sub-action inward takeoff, a takeoff phase",
+  "The diver stands firmly on the springboard with arms extended forward, preparing for the takeoff.",
+  "The diver begins to swing their arms back, initiating the upward motion.",
+  "The diver's body starts to lift off the springboard as the arms continue their backward swing.",
+  "The diver's legs begin to extend upwards, aligning with the body's rotation.",
+  "The diver's feet (or hands, if performing an armstand) leave the springboard, completing the takeoff phase."
+ ],
+ "(TKO) armstand forward takeoff": [
+  "a video of the diving sub-action armstand forward takeoff, a takeoff phase",
+  "The diver stands firmly on the springboard with arms extended forward, preparing for the takeoff.",
+  "The diver begins to swing their arms back, initiating the press phase.",
+  "The diver's body starts to rise off the springboard as the arms continue their backward swing.",
+  "The diver's feet lift off the springboard, signaling the start of the dive.",
+  "The diver's body is fully airborne, with arms extended forward and legs straight, heading towards the water."
+ ],
+ "(TKO) armstand back takeoff": [
+  "a video of the diving sub-action armstand back takeoff, a takeoff phase",
+  "The diver stands firmly on the springboard with arms extended overhead, preparing for the takeoff.",
+  "The diver begins to swing their arms forward, initiating the press movement.",
+  "The diver's body starts to rise off the springboard as the arms continue their forward motion.",
+  "The diver's feet lift off the springboard, signaling the start of the dive.",
+  "The diver's body is fully airborne, with arms extended forward and legs straight, heading towards the water."
+ ],
+ "(TKO) armstand reverse takeoff": [
+  "a video of the diving sub-action armstand reverse takeoff, a takeoff phase",
+  "The diver stands firmly on the springboard with arms extended overhead, preparing for the takeoff.",
+  "The diver begins to swing their arms forward and down, initiating the press.",
+  "The diver's body starts to rise off the springboard as the arms continue their downward motion.",
+  "The diver's feet lift off the springboard, with the body now fully elevated above it.",
+  "The diver's body is now fully airborne, having left the springboard behind, with arms positioned to assist in the dive's execution."
+ ],
+ "(SOMP) 1 somersault pike": [
+  "a video of the diving sub-action 1 somersault pike, a somersault pike phase",
+  "The diver's body is fully extended, arms outstretched, and legs straight as they approach the pike position.",
+  "The diver begins to tuck their head towards their knees, initiating the somersault.",
+  "The diver's body is compacted into a tight pike, with arms and legs close together, continuing the rotation.",
+  "The diver's body begins to extend again, preparing for the opening out of the pike.",
+  "The diver's body is fully extended once more, arms outstretched, and legs straight, completing the somersault."
+ ],
+ "(SOMP) 1.5 somersaults pike": [
+  "a video of the diving sub-action 1.5 somersaults pike, a somersault pike phase",
+  "The diver's body is fully extended in a pike position, with legs straight and bent at the hips, preparing for the somersault.",
+  "The diver begins to rotate in the air, maintaining the pike position as they start the somersault.",
+  "The diver's body continues to rotate, with the arms extended forward and slightly bent at the elbows, aiding in the rotation.",
+  "The diver's body is halfway through the somersault, with the legs still straight and the body maintaining its pike position.",
+  "The diver completes the somersault, opening out of the pike position as they approach the entry point into the water."
+ ],
+ "(SOMP) 2 somersaults pike": [
+  "a video of the diving sub-action 2 somersaults pike, a somersault pike phase",
+  "The diver's body is in a tucked position, arms extended overhead, preparing for the somersault.",
+  "The diver begins to rotate, with legs straight and body folded at the hips, maintaining a pike position.",
+  "The diver completes half of the somersault, with the body still in a pike position but starting to open up.",
+  "The diver continues to rotate, with the body beginning to straighten as the pike position transitions into an entry position.",
+  "The diver finishes the somersault, with the body fully extended and arms positioned for entry into the water."
+ ],
+ "(SOMP) 2.5 somersaults pike": [
+  "a video of the diving sub-action 2.5 somersaults pike, a somersault pike phase",
+  "The diver's body is in a tucked position, arms extended overhead, preparing for the transition into the pike.",
+  "The diver begins to extend their legs while maintaining a tight pike, initiating the somersault.",
+  "The diver's body is fully extended in a pike position, with arms still overhead, continuing the rotation.",
+  "The diver's body starts to open up as they approach the end of the somersault, with legs beginning to separate.",
+  "The diver's body is almost fully extended, with legs separated and arms still overhead, completing the somersault in preparation for entry into the water."
+ ],
+ "(SOMP) 3 somersaults pike": [
+  "a video of the diving sub-action 3 somersaults pike, a somersault pike phase",
+  "The diver's body is in a tucked position, arms extended overhead, preparing for the somersault.",
+  "The diver begins the somersault, with legs straight and body folded at the hips, moving away from the springboard.",
+  "The diver completes half of the somersault, with the body still in a pike position, arms still extended.",
+  "The diver continues the somersault, nearing completion, with the body still in a pike position, arms extended.",
+  "The diver finishes the somersault, opening out of the pike position, arms still extended, and preparing to enter the water."
+ ],
+ "(SOMP) 3.5 somersaults pike": [
+  "a video of the diving sub-action 3.5 somersaults pike, a somersault pike phase",
+  "The diver's body is in a tucked position, arms extended overhead, preparing for the transition into the pike.",
+  "The diver begins to extend their legs while maintaining a tight pike, initiating the somersault.",
+  "The diver's body is fully extended in a pike position, with arms still overhead, continuing the rotation.",
+  "The diver's body starts to open up as they approach the end of the somersault, with legs beginning to separate.",
+  "The diver's body is almost fully extended, with legs separated and arms still overhead, completing the somersault in preparation for entry into the water."
+ ],
+ "(SOMP) 4.5 somersaults pike": [
+  "a video of the diving sub-action 4.5 somersaults pike, a somersault pike phase",
+  "The diver's body is in a tucked position, arms extended overhead, preparing for the transition into the pike.",
+  "The diver begins to extend their legs while maintaining a tight pike, initiating the somersault.",
+  "The diver's body is fully extended in a pike position, with arms still overhead, continuing the rotation.",
+  "The diver's body starts to open up as they approach the end of the somersault, with legs beginning to separate.",
+  "The diver's body is almost fully extended, with legs separated and arms still overhead, completing the somersault in preparation for entry into the water."
+ ],
+ "(SOMT) 1.5 somersaults tuck": [
+  "a video of the diving sub-action 1.5 somersaults tuck, a somersault tuck phase",
+  "The diver's body is fully tucked, knees drawn close to the chest, arms wrapped around the legs, and the head is tucked down towards the knees.",
+  "The diver begins to rotate in the air, with the body maintaining its tucked position, and the arms still wrapped around the legs.",
+  "The diver continues to rotate, with the body still in a tucked position, and the arms maintaining their position around the legs.",
+  "The diver's body starts to untuck slightly as the rotation progresses, with the arms beginning to separate from the legs.",
+  "The diver's body is mostly untucked, with the arms now extended forward, preparing for the entry into the water."
+ ],
+ "(SOMT) 2.5 somersaults tuck": [
+  "a video of the diving sub-action 2.5 somersaults tuck, a somersault tuck phase",
+  "The diver's body is fully tucked, knees drawn close to the chest, arms wrapped around the legs, and the head is tucked down towards the knees.",
+  "The diver begins to rotate in the air, with the body maintaining its tucked position, and the arms still wrapped around the legs.",
+  "The diver continues to rotate, with the body still in a tucked position, and the arms maintaining their position around the legs.",
+  "The diver starts to untuck, with the knees beginning to separate from the chest, and the arms starting to move away from the legs.",
+  "The diver completes the untuck, with the body fully extended, arms by the sides, and the head up, preparing for entry into the water."
+ ],
+ "(SOMT) 3 somersaults tuck": [
+  "a video of the diving sub-action 3 somersaults tuck, a somersault tuck phase",
+  "The diver's body is fully tucked, knees drawn close to the chest, arms wrapped around the legs, and the head tucked in towards the knees, preparing for the somersault.",
+  "The diver begins to rotate in the air, maintaining the tucked position with arms and legs still close together, creating a compact form.",
+  "The diver continues rotating, the body starting to straighten slightly as the arms begin to extend forward, preparing for the entry.",
+  "The diver's body is mostly straight but still in a tucked position, with arms extended forward and legs beginning to separate, indicating the transition from the tuck to an entry position.",
+  "The diver's body is now mostly straight, with arms and legs fully extended, completing the somersault and preparing to enter the water."
+ ],
+ "(SOMT) 3.5 somersaults tuck": [
+  "a video of the diving sub-action 3.5 somersaults tuck, a somersault tuck phase",
+  "The diver's body is fully tucked, knees drawn close to the chest, arms wrapped around the legs, and the head tucked in towards the knees, preparing for the somersault.",
+  "The diver begins to rotate in the air, maintaining the tucked position with minimal movement of the arms or legs, focusing on the rotation.",
+  "The diver continues to rotate, the body still tightly tucked, with the arms and legs remaining in place as the rotation progresses.",
+  "The diver nears the end of the somersault, the body starting to untuck slightly as the rotation slows down, preparing for the final extension.",
+  "The diver completes the somersault, the body fully extended with arms and legs straight, ready to enter the water."
+ ],
+ "(SOMT) 4.5 somersaults tuck": [
+  "a video of the diving sub-action 4.5 somersaults tuck, a somersault tuck phase",
+  "The diver's body is fully tucked, knees drawn close to the chest, arms wrapped around the legs, and the head tucked in towards the knees, preparing for the somersault.",
+  "The diver begins to rotate in the air, maintaining the tucked position with minimal movement of the arms or legs, focusing on the rotation.",
+  "The diver continues to rotate, the body still tightly tucked, with the arms and legs remaining in place as the rotation progresses.",
+  "The diver nears the end of the somersault, the body starting to untuck slightly as the rotation slows down, preparing for the final extension.",
+  "The diver completes the somersault, the body fully extended with arms and legs straight, ready to enter the water."
+ ],
+ "(TWST) 0.5 twist": [
+  "a video of the diving sub-action 0.5 twist, a twist phase",
+  "The diver's arms are wrapped around their body, initiating the twist with a tight, compact posture.",
+  "The diver's body begins to rotate, with the arms still wrapped, creating a noticeable torque.",
+  "The twist continues as the diver's body rotates further, with the arms starting to separate slightly.",
+  "The twist reaches its peak as the diver's body is fully twisted, with the arms almost completely unwrapped.",
+  "The twist concludes as the diver's arms open wide, completing the rotation and preparing for the entry into the water."
+ ],
+ "(TWST) 1 twist": [
+  "a video of the diving sub-action 1 twist, a twist phase",
+  "The diver's body is in a tucked position with arms wrapped around the legs, initiating the twist.",
+  "The diver's body begins to rotate, with the arms still wrapped around the legs, increasing the twist.",
+  "The diver's body continues to rotate, with the arms starting to separate slightly as the twist progresses.",
+  "The diver's body is fully twisted, with the arms almost completely separated, completing the twist phase.",
+  "The diver's body begins to straighten out, with the arms opening up, signaling the end of the twist phase."
+ ],
+ "(TWST) 1.5 twists": [
+  "a video of the diving sub-action 1.5 twists, a twist phase",
+  "The diver's arms are wrapped around their body, initiating the twist with a tight, compact posture.",
+  "The diver's body begins to rotate, with the arms still wrapped, creating a noticeable torque.",
+  "The twist continues as the diver's body rotates further, with the arms starting to separate slightly.",
+  "The twist reaches its peak as the diver's body is fully rotated, with the arms almost completely unwrapped.",
+  "The twist concludes with the diver's arms fully extended and the body returning to an upright position, ready for entry into the water."
+ ],
+ "(TWST) 2 twists": [
+  "a video of the diving sub-action 2 twists, a twist phase",
+  "The diver's body is in a tucked position with arms wrapped around the legs, initiating the twist.",
+  "The diver's body begins to rotate, with the arms still wrapped around the legs, increasing the twist.",
+  "The diver's body continues to rotate, with the arms starting to separate slightly as the twist progresses.",
+  "The diver's body is fully twisted, with the arms almost completely separated, maintaining the twist.",
+  "The diver's body completes the twist, with the arms fully extended and the diver preparing for the entry into the water."
+ ],
+ "(TWST) 2.5 twists": [
+  "a video of the diving sub-action 2.5 twists, a twist phase",
+  "The diver's body is in an initial arm-wrapped position, initiating the twist with arms close to the body and legs extended straight out.",
+  "The diver's body begins to rotate, with the arms starting to open slightly as the twist progresses.",
+  "The diver's body continues to twist, with the arms now more spread apart, showing increased rotation.",
+  "The diver's body is fully twisted, with arms almost completely opened and legs still extended, indicating maximum rotation.",
+  "The diver's body is in the final stages of the twist, with arms beginning to close again as the rotation slows down, preparing for the next phase of the dive."
+ ],
+ "(TWST) 3 twists": [
+  "a video of the diving sub-action 3 twists, a twist phase",
+  "The diver's body is in a tucked position with arms wrapped around the legs, initiating the twist.",
+  "The diver's body begins to rotate, with the arms still wrapped around the legs, increasing the twist.",
+  "The diver's body continues to rotate, with the arms starting to separate slightly as the twist progresses.",
+  "The diver's body is fully twisted, with the arms almost completely separated, completing the twist phase.",
+  "The diver's body begins to straighten out, with the arms opening up, signaling the end of the twist phase."
+ ],
+ "(TWST) 3.5 twists": [
+  "a video of the diving sub-action 3.5 twists, a twist phase",
+  "The diver's body is in a tucked position with arms wrapped around the legs, initiating the twist.",
+  "The diver's body begins to rotate, with the arms still wrapped around the legs, increasing the twist.",
+  "The diver's body continues to rotate, with the arms starting to separate slightly as the twist progresses.",
+  "The diver's body is fully twisted, with the arms almost completely separated, maintaining the twist.",
+  "The diver's body completes the twist, with the arms fully extended and the diver preparing for the entry into the water."
+ ],
+ "(ENT) entry into the water": [
+  "a video of the diving sub-action entry into the water, a entry phase",
+  "The diver begins to open out of the last somersault or twist, transitioning from a compact form to an extended position.",
+  "The diver stretches into a straight vertical line, arms extended forward, preparing for impact with the water.",
+  "The diver's body aligns perfectly with the vertical line, arms still extended, as they approach the water's surface.",
+  "The diver's hands make contact with the water, initiating the splash as the body begins to submerge.",
+  "The diver's body disappears beneath the surface, completing the entry phase with a smooth transition into the water."
+ ],
+ "(ENT) 0.5 somersault pike": [
+  "a video of the diving sub-action 0.5 somersault pike, a entry phase",
+  "The diver's body is in a pike position, arms extended forward, and legs tucked close to the chest as they approach the end of their somersault.",
+  "The diver begins to straighten their body, extending their legs and arms further towards the water, maintaining a vertical alignment.",
+  "The diver's body continues to stretch, reaching a full vertical position with arms fully extended and legs straight, preparing for impact.",
+  "The diver's body maintains its vertical alignment as they approach the water, with arms and legs positioned for a hands-first entry.",
+  "The diver's body enters the water, hands making contact first, followed by the rest of the body, creating a splash as they submerge completely."
+ ]
+}

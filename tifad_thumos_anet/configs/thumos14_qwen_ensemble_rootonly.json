@@ -1,0 +1,62 @@
+{
+ "BaseballPitch": [
+  "a video of a sports action: baseball pitch, a kind of ball throw, with a rotational wind-up"
+ ],
+ "BasketballDunk": [
+  "a video of a sports action: basketball dunk, a kind of court jump strike, with the body airborne and with an aerial phase"
+ ],
+ "Billiards": [
+  "a video of a sports action: billiards, a kind of implement strike, in a bent posture"
+ ],
+ "CleanAndJerk": [
+  "a video of a sports action: clean and jerk, using rigid athletic equipment and with a vertical motion"
+ ],
+ "CliffDiving": [
+  "a video of a sports action: cliff diving, a kind of aquatic dive, in natural water"
+ ],
+ "CricketBowling": [
+  "a video of a sports action: cricket bowling, a kind of ball throw"
+ ],
+ "CricketShot": [
+  "a video of a sports action: cricket shot, a kind of implement strike, on a grass pitch and with both hands"
+ ],
+ "Diving": [
+  "a video of a sports action: diving, a kind of aquatic dive, at a swimming pool"
+ ],
+ "FrisbeeCatch": [
+  "a video of a sports action: frisbee catch, with the body airborne and using a small projectile"
+ ],
+ "GolfSwing": [
+  "a video of a sports action: golf swing, a kind of implement strike, on a grass pitch and with a rotational wind-up"
+ ],
+ "HammerThrow": [
+  "a video of a sports action: hammer throw, a kind of field throw, with a horizontal motion and with both hands"
+ ],
+ "HighJump": [
+  "a video of a sports action: high jump, a kind of jump field, with no equipment and with a vertical motion"
+ ],
+ "JavelinThrow": [
+  "a video of a sports action: javelin throw, a kind of field throw, with an overhead motion"
+ ],
+ "LongJump": [
+  "a video of a sports action: long jump, a kind of jump field, with no equipment and with a horizontal motion"
+ ],
+ "PoleVault": [
+  "a video of a sports action: pole vault, a kind of jump field, using rigid athletic equipment and with a vertical motion"
+ ],
+ "Shotput": [
+  "a video of a sports action: shotput, a kind of field throw, with an overhead motion and in a bent posture"
+ ],
+ "SoccerPenalty": [
+  "a video of a sports action: soccer penalty, swinging to strike and using a small projectile"
+ ],
+ "TennisSwing": [
+  "a video of a sports action: tennis swing, a kind of implement strike, on a court"
+ ],
+ "ThrowDiscus": [
+  "a video of a sports action: throw discus, a kind of field throw, with a horizontal motion"
+ ],
+ "VolleyballSpiking": [
+  "a video of a sports action: volleyball spiking, a kind of court jump strike, swinging to strike"
+ ]
+}

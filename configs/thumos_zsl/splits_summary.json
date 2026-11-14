@@ -1,0 +1,192 @@
+{
+ "split0_75": [
+  "BaseballPitch",
+  "CleanAndJerk",
+  "Diving",
+  "FrisbeeCatch",
+  "SoccerPenalty"
+ ],
+ "split1_75": [
+  "Billiards",
+  "CleanAndJerk",
+  "CliffDiving",
+  "LongJump",
+  "TennisSwing"
+ ],
+ "split2_75": [
+  "BaseballPitch",
+  "BasketballDunk",
+  "Billiards",
+  "CricketShot",
+  "Diving"
+ ],
+ "split3_75": [
+  "BaseballPitch",
+  "CricketShot",
+  "LongJump",
+  "SoccerPenalty",
+  "TennisSwing"
+ ],
+ "split4_75": [
+  "BaseballPitch",
+  "CricketBowling",
+  "Diving",
+  "FrisbeeCatch",
+  "PoleVault"
+ ],
+ "split5_75": [
+  "CliffDiving",
+  "CricketShot",
+  "FrisbeeCatch",
+  "HammerThrow",
+  "LongJump"
+ ],
+ "split6_75": [
+  "Billiards",
+  "CleanAndJerk",
+  "HammerThrow",
+  "JavelinThrow",
+  "ThrowDiscus"
+ ],
+ "split7_75": [
+  "BasketballDunk",
+  "FrisbeeCatch",
+  "HighJump",
+  "PoleVault",
+  "VolleyballSpiking"
+ ],
+ "split8_75": [
+  "Billiards",
+  "CleanAndJerk",
+  "GolfSwing",
+  "JavelinThrow",
+  "TennisSwing"
+ ],
+ "split9_75": [
+  "BasketballDunk",
+  "Billiards",
+  "CricketShot",
+  "HighJump",
+  "VolleyballSpiking"
+ ],
+ "split0_50": [
+  "Billiards",
+  "CleanAndJerk",
+  "CliffDiving",
+  "CricketBowling",
+  "CricketShot",
+  "Diving",
+  "GolfSwing",
+  "HammerThrow",
+  "SoccerPenalty",
+  "VolleyballSpiking"
+ ],
+ "split1_50": [
+  "BasketballDunk",
+  "CricketBowling",
+  "CricketShot",
+  "FrisbeeCatch",
+  "GolfSwing",
+  "HammerThrow",
+  "HighJump",
+  "LongJump",
+  "TennisSwing",
+  "ThrowDiscus"
+ ],
+ "split2_50": [
+  "CliffDiving",
+  "CricketBowling",
+  "CricketShot",
+  "Diving",
+  "FrisbeeCatch",
+  "HammerThrow",
+  "HighJump",
+  "PoleVault",
+  "TennisSwing",
+  "VolleyballSpiking"
+ ],
+ "split3_50": [
+  "BasketballDunk",
+  "CliffDiving",
+  "CricketBowling",
+  "CricketShot",
+  "Diving",
+  "HammerThrow",
+  "JavelinThrow",
+  "Shotput",
+  "TennisSwing",
+  "VolleyballSpiking"
+ ],
+ "split4_50": [
+  "Billiards",
+  "CliffDiving",
+  "CricketShot",
+  "Diving",
+  "HammerThrow",
+  "Shotput",
+  "SoccerPenalty",
+  "TennisSwing",
+  "ThrowDiscus",
+  "VolleyballSpiking"
+ ],
+ "split5_50": [
+  "CleanAndJerk",
+  "CliffDiving",
+  "CricketBowling",
+  "CricketShot",
+  "Diving",
+  "FrisbeeCatch",
+  "GolfSwing",
+  "LongJump",
+  "PoleVault",
+  "TennisSwing"
+ ],
+ "split6_50": [
+  "BasketballDunk",
+  "Billiards",
+  "CliffDiving",
+  "HammerThrow",
+  "JavelinThrow",
+  "LongJump",
+  "Shotput",
+  "SoccerPenalty",
+  "TennisSwing",
+  "ThrowDiscus"
+ ],
+ "split7_50": [
+  "BaseballPitch",
+  "Billiards",
+  "CliffDiving",
+  "FrisbeeCatch",
+  "HammerThrow",
+  "JavelinThrow",
+  "LongJump",
+  "PoleVault",
+  "Shotput",
+  "TennisSwing"
+ ],
+ "split8_50": [
+  "BaseballPitch",
+  "Billiards",
+  "CleanAndJerk",
+  "CliffDiving",
+  "CricketShot",
+  "Diving",
+  "FrisbeeCatch",
+  "HammerThrow",
+  "TennisSwing",
+  "VolleyballSpiking"
+ ],
+ "split9_50": [
+  "CleanAndJerk",
+  "CliffDiving",
+  "CricketBowling",
+  "FrisbeeCatch",
+  "HammerThrow",
+  "LongJump",
+  "PoleVault",
+  "SoccerPenalty",
+  "ThrowDiscus",
+  "VolleyballSpiking"
+ ]
+}

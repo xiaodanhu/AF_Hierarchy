@@ -1,0 +1,161 @@
+# Phase 2D v17a — STRICT-ZSL ablation of v17. Held-out class video segments are
+# excluded from ALL specialist supervision (attribute, rotation, contrastive).
+# Demonstrates that v17's results don't depend on held-out clips contributing to
+# attribute training. Important for top-conference rigor. Expected drop: < 2 pp.
+# Original predecessor description:
+# Phase 2D v17 — v11 + raw log-prob (inference) + attribute-axis contrastive (training).
+# Diagnosis: oracle test showed specialists at v11 are ~24% video held-out with raw
+# v17 sharpens specialists via per-attribute margin loss on within-phrase sibling
+# targets. Inference uses unbounded raw log-prob (instead of sibling-softmax bound).
+# Predecessor description:
+# Phase 2D v11 — Multi-specialist v10 extended with:
+#  (1) motion_category specialist (8-way) — unlocks FX_leap_jump_hop discrimination.
+#  (1b) leg_configuration specialist (3-way, LMA limb relationship) — bonus.
+#  (2) SPLIT rotation head: aerial_twist + floor_turn (two separate scalar heads).
+#      The single v9/v10 rotation head had to learn aerial twists (saltos: 0.5-3.0
+#      revolutions around vertical body axis) AND floor turns (leaps/jumps: 0.5-2.0
+#      turns around vertical axis on the floor) from one scalar — different visual
+#      signatures. v11 splits by per-class motion category: salto/walkover/dismount
+#       → aerial head; turn/leap/jump → floor head; others → no rotation contribution.
+#  (3) Specialists: 2 transformer layers + win=33 (vs v10's 1 layer + win=17).
+#  (4) Phrase head: +2 layers (head_num_layers 3 → 5) — lifts unique-phrase ceiling.
+#  (5) Sibling-SOFTMAX (replaces sibling-centering): proper log-prob per sibling
+#       group; unique-phrase still 0; tied groups get calibrated distribution.
+dataset_name: finegym_slide
+train_split: ['train']
+val_split: ['test']
+round: 1000
+active_learning_method: uniform
+dataset: {
+  train_json_file: /data3/xiaodan8/FineGym/annotation/Dec16/gym99_train_label.txt,
+  val_json_file: /data3/xiaodan8/FineGym/annotation/Dec16/gym99_val_label.txt,
+  num_classes: 99,
+  num_phrases: 14,
+  num_activities: 4,
+  num_frames: 16,
+  trunc_thresh: 0.5,
+  crop_ratio: [0.9, 1.0],
+  max_seq_len: 288,
+  window_length: 32,
+  window_stride: 16,
+  sample_stride: 16,
+  use_raw_video: True,
+  load_jpg: True,
+  held_out_class_ids: [],
+}
+model: {
+  fpn_type: identity,
+  # Pin the architecture this recipe was tuned with: main's defaults changed
+  # to backbone_arch (2,2,5) + 6 regression ranges (ANet support); the FineGym
+  # ZSL runs used 4 FPN levels (and cascade_phrase_levels [0,1,2,3] assumes 4).
+  backbone_arch: [2, 2, 3],
+  regression_range: [[0, 4], [4, 8], [8, 16], [16, 32]],
+  max_buffer_len_factor: 6.0,
+  n_mha_win_size: 19,
+  use_cascaded_hierarchy: True,
+  cascade_phrase_levels: [0, 1, 2, 3],
+  cascade_activity_levels: [3],
+  cascade_gradient_stop: False,
+  verbalizer_path_for_embedding: configs/finegym_zsl_verbalizer.json,
+  use_aux_attribute_head: False,
+  aux_attribute_table_path: configs/finegym_attribute_table_v2.json,
+  use_clip_text_head: False,
+  use_contrastive_attrs: False,
+  # v11: split rotation
+  use_rotation_regression_head: True,
+  split_rotation_head: True,
+  rotation_head_n_head: 8,
+  rotation_head_mha_win_size: 17,
+  rotation_head_num_layers: 2,
+  # v10 specialists with v11 capacity boost
+  use_body_shape_head: True,
+  use_direction_head: True,
+  use_multiplicity_head: True,
+  use_named_element_head: True,
+  # v11 new specialists
+  use_motion_category_head: True,
+  use_leg_configuration_head: True,
+  use_inverted_phase_head: True,
+  use_hands_on_apparatus_head: True,
+  specialist_head_n_head: 8,
+  specialist_head_mha_win_size: 33,
+  specialist_head_num_layers: 2,
+  # v11: sibling-softmax instead of sibling-centering for inference contribution
+  use_sibling_softmax: True,
+  # v11: phrase head +2 layers
+  phrase_head_num_layers_override: 5,
+  # ---- v17 changes from v11 ----
+  # Inference: use raw log-prob (unbounded discrimination) instead of sibling-softmax bound.
+  use_raw_log_prob: True,
+  # Training: add per-specialist attribute-axis contrastive (margin) loss.
+  # At each positive token of class c, the specialist must rank c's target above
+  # within-phrase sibling targets by `attr_axis_contrast_margin`. Sharpens specialists
+  # on within-phrase discriminative axes (the gap from v11's 24% raw-LP to oracle 37%).
+  use_attr_axis_contrast: True,
+  attr_axis_contrast_margin: 1.0,
+  # v17a STRICT-ZSL: exclude held-out segments from specialist supervision entirely.
+  strict_zsl: True,
+}
+opt: {
+  learning_rate: 0.00005190723388143434,
+  epochs: 30,
+  weight_decay: 0.05,
+}
+loader: {
+  batch_size: 4,
+  num_workers: 8,
+}
+train_cfg: {
+  init_loss_norm: 100,
+  clip_grad_l2norm: 1.0,
+  cls_prior_prob: 0.01,
+  center_sample: radius,
+  center_sample_radius: 1.5,
+  lambda_phrase_cls: 0.5,
+  lambda_phrase_reg: 0.5,
+  lambda_activity_cls: 0.25,
+  lambda_activity_reg: 0.25,
+  lambda_structural_consistency: 0.25,
+  consistency_warmup_epochs: 2,
+  consistency_ramp_epochs: 1,
+  lambda_aux_attr: 0.0,
+  lambda_clip: 0.0,
+  lambda_contr: 0.0,
+  # v11 split rotation: keep each half at the v9 lambda for fair comparison.
+  lambda_rotation: 1.0,
+  lambda_aerial_twist: 1.0,
+  lambda_floor_turn: 1.0,
+  held_out_rotation_alpha: 0.1,
+  held_out_aerial_twist_alpha: 0.1,
+  held_out_floor_turn_alpha: 0.1,
+  # v10/v11 specialist losses
+  lambda_body_shape: 0.5,
+  lambda_direction: 0.5,
+  lambda_multiplicity: 0.5,
+  lambda_named_element: 0.5,
+  lambda_motion_category: 0.5,
+  lambda_leg_configuration: 0.5,
+  lambda_inverted_phase: 0.5,
+  lambda_hands_on_apparatus: 0.5,
+  # v17 attribute-axis contrastive loss weight
+  lambda_attr_axis_contrast: 0.5,
+  # Inference contribution alphas (kept at 0.1 — sweep confirmed v10 sweet spot)
+  held_out_body_shape_alpha: 0.1,
+  held_out_direction_alpha: 0.1,
+  held_out_multiplicity_alpha: 0.1,
+  held_out_named_element_alpha: 0.1,
+  held_out_motion_category_alpha: 0.1,
+  held_out_leg_configuration_alpha: 0.1,
+  held_out_inverted_phase_alpha: 0.1,
+  held_out_hands_on_apparatus_alpha: 0.1,
+  revert_num_pos_v4_style: True,
+}
+test_cfg: {
+  voting_thresh: 0.7,
+  pre_nms_topk: 2000,
+  max_seg_num: 200,
+  min_score: 0.001,
+  multiclass_nms: True,
+}
+output_folder: ./ckpt/
+deepspeed_config_path: configs/deepspeed_config_bf16.json

@@ -149,6 +149,9 @@ class ANETdetection(object):
 
         # remove labels that does not exists in gt
         self.activity_index = {j: i for i, j in enumerate(sorted(self.ground_truth['label'].unique()))}
+        # [local] keep the ORIGINAL label -> ap-column map (activity_index is overwritten with an identity map over
+        # the dense labels inside wrapper_compute_average_precision; the seen/held-out split needs the raw ids)
+        self.label_to_col = {int(j): int(i) for j, i in self.activity_index.items()}
         self.ground_truth['label']=self.ground_truth['label'].replace(self.activity_index)
 
     def _get_predictions_with_label(self, prediction_by_label, label_name, cidx):
@@ -235,6 +238,13 @@ class ANETdetection(object):
         self.ap = None
 
         # make the label ids consistent
+        # [local] predictions of classes ABSENT from the test GT have no column: drop them instead of letting their
+        # raw ids collide with the dense ids of present classes (FineDiving test covers 44 of 52 dive codes)
+        if getattr(self, 'label_to_col', None):
+            _keep = preds['label'].isin(list(self.label_to_col.keys()))
+            if (~_keep).any():
+                print(f"[eval] dropping {int((~_keep).sum())} predictions of {preds.loc[~_keep, 'label'].nunique()} classes absent from the GT")
+                preds = preds[_keep].reset_index(drop=True)
         preds['label'] = preds['label'].replace(self.activity_index)
 
         # compute mAP

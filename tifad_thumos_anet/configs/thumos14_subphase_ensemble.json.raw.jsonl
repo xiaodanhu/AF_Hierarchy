@@ -1,0 +1,200 @@
+{"class": "BaseballPitch", "k": 1, "try": 0, "raw": "1. Pitcher holds ball with both hands.\n2. Pitcher bends knees slightly.\n3. Pitcher coils body for motion."}
+{"class": "BaseballPitch", "k": 2, "try": 0, "raw": "1. Pitcher swings arm back, extending other arm forward.\n2. Pitcher's hips start rotating, transferring energy.\n3. Pitcher's front leg begins to drive forward."}
+{"class": "BaseballPitch", "k": 3, "try": 0, "raw": "1. Pitcher's hips rotate forward.\n2. Torso leans into the pitch.\n3. Throwing arm continues backswing."}
+{"class": "BaseballPitch", "k": 4, "try": 0, "raw": "1. The front leg drives forward, extending.\n2. The back leg extends, supporting.\n3. The torso leans into the pitch, following."}
+{"class": "BaseballPitch", "k": 5, "try": 0, "raw": "1. The pitcher\u2019s arm extends forward, ball leaving hand.\n2. Body follows through, arm fully extended.\n3. Ball visible mid-air, approaching home plate."}
+{"class": "BaseballPitch", "k": 6, "try": 0, "raw": "1. Arm fully extends, ball leaves hand.\n2. Body leans over mound, torso follows through.\n3. Legs slightly off-balance, eyes track ball."}
+{"class": "BaseballPitch", "k": 7, "try": 0, "raw": "1. The pitcher\u2019s arm fully extends, ball in mid-air.\n2. Ball\u2019s trajectory becomes visible, arc forming.\n3. Ball approaches the strike zone, motion fading."}
+{"class": "BaseballPitch", "k": 8, "try": 0, "raw": "1. The pitcher's torso leans further down.\n2. The pitcher's arms lower slightly.\n3. The pitcher's legs straighten out."}
+{"class": "BaseballPitch", "k": 9, "try": 0, "raw": "1. The pitcher\u2019s hand holds the ball steady.\n2. The arm remains extended, following the ball\u2019s path.\n3. The ball fades, approaching the strike zone."}
+{"class": "BaseballPitch", "k": 10, "try": 0, "raw": "1. The pitcher\u2019s arm lowers, hand relaxing.\n2. Body settles into a relaxed stance.\n3. Eyes track the ball\u2019s landing."}
+{"class": "BasketballDunk", "k": 1, "try": 0, "raw": "1. Player raises arms above head.\n2. Player leaps off ground.\n3. Player extends arms toward hoop."}
+{"class": "BasketballDunk", "k": 2, "try": 0, "raw": "1. Player's legs bend, knees tucked.\n2. Ball held high near the rim.\n3. Player's body rotates slightly."}
+{"class": "BasketballDunk", "k": 3, "try": 0, "raw": "1. Player's arms extend downward.\n2. Ball arcs toward the rim.\n3. Body rotates slightly."}
+{"class": "BasketballDunk", "k": 4, "try": 0, "raw": "1. Player's arm extends, reaching for ball.\n2. Hand grabs ball, fingers wrap around.\n3. Ball begins descent toward hoop."}
+{"class": "BasketballDunk", "k": 5, "try": 0, "raw": "1. Player's legs straighten, aligning with descent.\n2. Ball nears rim, player's body follows trajectory.\n3. Legs continue extending, stabilizing descent."}
+{"class": "BasketballDunk", "k": 6, "try": 0, "raw": "1. Player's hand reaches out, fingers spread wide.\n2. Ball is caught between fingers, firm grip established.\n3. Ball nears rim, hand maintains control, fingers spread."}
+{"class": "BasketballDunk", "k": 7, "try": 0, "raw": "1. Player's body swings downward, arms extended.\n2. Feet trail behind, ball nears rim.\n3. Hand grips ball firmly, fingers spread."}
+{"class": "BasketballDunk", "k": 8, "try": 0, "raw": "1. The player\u2019s hand and ball enter the hoop.\n2. The ball hangs in the net.\n3. The player\u2019s body descends."}
+{"class": "BasketballDunk", "k": 9, "try": 0, "raw": "1. The player's body remains suspended above the court.\n2. Legs extend downward, nearing the ground.\n3. Ball hangs in the net, securely through the hoop."}
+{"class": "BasketballDunk", "k": 10, "try": 0, "raw": "1. Player's body descends, arms extended.\n2. Ball hangs in the net.\n3. Player's body continues falling."}
+{"class": "Billiards", "k": 1, "try": 0, "raw": "1. Player leans forward, focusing on the white ball.\n2. Right hand holds the cue stick steady.\n3. Eyes aim at the target ball on the table."}
+{"class": "Billiards", "k": 2, "try": 0, "raw": "1. Player's left hand grasps cue stick firmly.\n2. Fingers curl around cue stick's butt.\n3. Eyes lock onto target ball."}
+{"class": "Billiards", "k": 3, "try": 0, "raw": "1. The cue stick tip aligns with the white ball.\n2. The cue stick is angled slightly upward.\n3. The cue stick is poised for impact."}
+{"class": "Billiards", "k": 4, "try": 0, "raw": "1. Player's shoulders align with cue stick.\n2. Cue tip touches the white ball.\n3. Player's body shifts subtly."}
+{"class": "Billiards", "k": 5, "try": 0, "raw": "1. The cue stick's tip contacts the ball.\n2. The cue stick arcs forward smoothly.\n3. The ball rolls across the table surface."}
+{"class": "Billiards", "k": 6, "try": 0, "raw": "1. The ball rolls straight across the table.\n2. A faint trail of motion blur appears.\n3. The ball approaches the next target."}
+{"class": "Billiards", "k": 7, "try": 0, "raw": "1. Player\u2019s eyes follow ball\u2019s movement.\n2. Body remains bent, cue stick steady.\n3. Gaze fixed on ball\u2019s approach."}
+{"class": "Billiards", "k": 8, "try": 0, "raw": "1. Ball enters pocket with a bounce.\n2. Cue stick remains in player's hands.\n3. Player's body straightens slightly."}
+{"class": "Billiards", "k": 9, "try": 0, "raw": "1. Player\u2019s body straightens slightly.\n2. Cue stick lowers to table.\n3. Gaze fixed on next ball."}
+{"class": "Billiards", "k": 10, "try": 0, "raw": "1. Player\u2019s hands lower, cue stick rests.\n2. Body straightens, gaze shifts.\n3. Hands relax, cue stick stays."}
+{"class": "CleanAndJerk", "k": 1, "try": 0, "raw": "1. Athlete stands upright, feet shoulder-width apart.\n2. Barbell rests on shoulders, arms extended.\n3. Body remains still, no movement detected."}
+{"class": "CleanAndJerk", "k": 2, "try": 0, "raw": "1. Athlete bends at hips, lowering barbell slightly.\n2. Knees dip, maintaining straight back.\n3. Body weight shifts, keeping back straight."}
+{"class": "CleanAndJerk", "k": 3, "try": 0, "raw": "1. Athlete extends hips, lifting barbell.\n2. Knees extend, supporting lift.\n3. Arms remain straight, stabilizing lift."}
+{"class": "CleanAndJerk", "k": 4, "try": 0, "raw": "1. Athlete extends hips and knees, lifting barbell.\n2. Elbows pull barbell upward, body leans forward.\n3. Barbell moves vertically toward chest, controlled motion."}
+{"class": "CleanAndJerk", "k": 5, "try": 0, "raw": "1. Athlete bends elbows, lifting barbell upward.\n2. Barbell moves upward, reaching chest level.\n3. Athlete maintains controlled motion throughout."}
+{"class": "CleanAndJerk", "k": 6, "try": 0, "raw": "1. Athlete extends arms fully, barbell held at chest.\n2. Body remains upright, shoulders slightly hunched.\n3. Feet remain planted, barbell suspended vertically."}
+{"class": "CleanAndJerk", "k": 7, "try": 0, "raw": "1. Athlete extends arms fully, lifting barbell overhead.\n2. Body remains straight throughout the lift.\n3. Shoulders and hips align perfectly in final position."}
+{"class": "CleanAndJerk", "k": 8, "try": 0, "raw": "1. Barbell moves downward, arms bent, body leans back.\n2. Body leans further back, barbell continues descent.\n3. Arms extend slightly, barbell near chest level."}
+{"class": "CleanAndJerk", "k": 9, "try": 0, "raw": "1. Athlete extends arms fully, barbell held overhead.\n2. Body upright, shoulders and hips aligned.\n3. Feet planted, barbell suspended vertically."}
+{"class": "CleanAndJerk", "k": 10, "try": 0, "raw": "1. Barbell held overhead, arms fully extended.\n2. Body stable, feet planted firmly.\n3. Barbell suspended vertically."}
+{"class": "CliffDiving", "k": 1, "try": 0, "raw": "1. Diver stands on cliff edge, arms outstretched.\n2. Diver faces churning water below.\n3. Diver prepares for leap, body poised."}
+{"class": "CliffDiving", "k": 2, "try": 0, "raw": "1. The diver leaps forward, body arching backward.\n2. Arms trail behind as they descend.\n3. The diver begins to fall."}
+{"class": "CliffDiving", "k": 3, "try": 0, "raw": "1. The diver tucks their knees to their chest.\n2. Their body rotates slightly mid-air.\n3. The diver continues falling."}
+{"class": "CliffDiving", "k": 4, "try": 0, "raw": "1. The diver extends their legs straight.\n2. Arms reach upward.\n3. Forming a streamlined silhouette."}
+{"class": "CliffDiving", "k": 5, "try": 0, "raw": "1. The diver's body compresses, head first.\n2. The diver's legs extend, pushing against the water.\n3. The diver's arms reach up, breaking the surface."}
+{"class": "CliffDiving", "k": 6, "try": 0, "raw": "1. The diver's body sinks deeper, limbs tightly curled.\n2. Water swirls around the diver's limbs, creating a vortex.\n3. The diver's head and shoulders emerge, breaking the surface tension."}
+{"class": "CliffDiving", "k": 7, "try": 0, "raw": "1. Head emerges above water first.\n2. Shoulders follow, breaking the surface.\n3. Torso rises next, completing resurfacing."}
+{"class": "CliffDiving", "k": 8, "try": 0, "raw": "1. Diver's arms flail briefly for balance adjustment.\n2. Diver's arms straighten into a horizontal position.\n3. Diver's body stabilizes, floating calmly."}
+{"class": "CliffDiving", "k": 9, "try": 0, "raw": "1. The diver\u2019s head breaks the surface first.\n2. Shoulders rise, followed by the torso.\n3. The diver floats calmly, arms slightly bent."}
+{"class": "CliffDiving", "k": 10, "try": 0, "raw": "1. The diver glides, legs trailing behind.\n2. Ripples spread outward as the diver moves.\n3. The diver approaches the shore calmly."}
+{"class": "CricketBowling", "k": 1, "try": 0, "raw": "1. Bowler stands with feet shoulder-width apart.\n2. Knees slightly bent, ball held in front.\n3. Body maintains ready position."}
+{"class": "CricketBowling", "k": 2, "try": 0, "raw": "1. The bowler shifts weight forward, lifting the ball.\n2. The non-throwing hand supports the ball at shoulder height.\n3. The bowler\u2019s arm extends upward, holding the ball."}
+{"class": "CricketBowling", "k": 3, "try": 0, "raw": "1. The bowler\u2019s arm starts to bend at the elbow.\n2. The ball is drawn back behind the body.\n3. The arm rotates backward, aligning with the body."}
+{"class": "CricketBowling", "k": 4, "try": 0, "raw": "1. The bowler's front leg extends, knee straightening.\n2. The back leg pushes off the ground.\n3. Momentum is generated for the throw."}
+{"class": "CricketBowling", "k": 5, "try": 0, "raw": "1. The bowler\u2019s arm extends forward, elbow high.\n2. The ball is released from the hand.\n3. The bowler\u2019s body leans into the follow-through."}
+{"class": "CricketBowling", "k": 6, "try": 0, "raw": "1. The bowler's torso leans forward.\n2. The bowler's arm extends fully forward.\n3. The bowler's trailing arm swings across the body."}
+{"class": "CricketBowling", "k": 7, "try": 0, "raw": "1. The bowler\u2019s head tilts slightly.\n2. Eyes focus on the ball.\n3. The bowler\u2019s gaze follows the ball\u2019s path."}
+{"class": "CricketBowling", "k": 8, "try": 0, "raw": "1. Ball arcs toward batsman, visible mid-air.\n2. Bowler's body follows through, arm extended.\n3. Head turns slightly, eyes track ball's path."}
+{"class": "CricketBowling", "k": 9, "try": 0, "raw": "1. The bowler\u2019s arm extends fully upward.\n2. The hand points directly at the batsman.\n3. The bowler\u2019s body remains in motion."}
+{"class": "CricketBowling", "k": 10, "try": 0, "raw": "1. The bowler\u2019s body relaxes, settling into balance.\n2. Feet remain planted firmly on the ground.\n3. Arms return to a relaxed position."}
+{"class": "CricketShot", "k": 1, "try": 0, "raw": "1. Bat positioned horizontally on grass.\n2. Hands gripping bat firmly.\n3. Wicket standing upright nearby."}
+{"class": "CricketShot", "k": 2, "try": 0, "raw": "1. The batsman's feet remain stationary, firmly planted.\n2. Knees bend slightly, preparing for the swing.\n3. Body leans forward, focusing on the approaching ball."}
+{"class": "CricketShot", "k": 3, "try": 0, "raw": "1. The ball approaches, bowler's hand releases.\n2. Batsman's hands grip bat firmly.\n3. Bat swings back in wide arc."}
+{"class": "CricketShot", "k": 4, "try": 0, "raw": "1. The bat swings back, arms extended, bat angled upward.\n2. The bat reaches maximum backswing position, bat angled upward.\n3. The bat is poised to strike, bat angled upward."}
+{"class": "CricketShot", "k": 5, "try": 0, "raw": "1. The ball collides with the bat's surface.\n2. The bat's face blurs due to impact speed.\n3. The bat lifts slightly upon contact."}
+{"class": "CricketShot", "k": 6, "try": 0, "raw": "1. Bat's edge moves through the air, bat angled downward.\n2. Batsman's body rotates slightly, following through.\n3. Bat rests near ground after impact."}
+{"class": "CricketShot", "k": 7, "try": 0, "raw": "1. Bat\u2019s edge continues upward motion.\n2. Arms remain fully extended.\n3. Bat\u2019s motion slows down."}
+{"class": "CricketShot", "k": 8, "try": 0, "raw": "1. The bat\u2019s edge moves through the air.\n2. The batsman\u2019s arms are fully extended.\n3. The bat points toward the ground."}
+{"class": "CricketShot", "k": 9, "try": 0, "raw": "1. The batsman's body rotates fully.\n2. Arms trail behind.\n3. Bat rests near the ground."}
+{"class": "CricketShot", "k": 10, "try": 0, "raw": "1. The bat rests on the grass.\n2. Hands remain extended, fingers curled.\n3. Ball flies off into the distance."}
+{"class": "Diving", "k": 1, "try": 0, "raw": "1. Diver stands on diving board, arms outstretched.\n2. Body remains upright, poised for jump.\n3. Eyes focus on target, ready for leap."}
+{"class": "Diving", "k": 2, "try": 0, "raw": "1. Diver leaps forward, extending legs.\n2. Arms swing back, preparing descent.\n3. Body begins to descend, tucking in."}
+{"class": "Diving", "k": 3, "try": 0, "raw": "1. The diver bends their knees, tucking them inward.\n2. Arms draw close to the torso, forming a compact shape.\n3. The body rotates slightly, aligning for optimal entry."}
+{"class": "Diving", "k": 4, "try": 0, "raw": "1. The diver's head tucks beneath their shoulders.\n2. The body rotates slightly.\n3. The diver descends toward the water."}
+{"class": "Diving", "k": 5, "try": 0, "raw": "1. The diver\u2019s legs straighten and extend downward.\n2. Arms trail behind the body in a controlled arc.\n3. Body maintains streamlined position."}
+{"class": "Diving", "k": 6, "try": 0, "raw": "1. The diver\u2019s body extends horizontally.\n2. Arms slightly extend forward.\n3. Head aligns with the spine."}
+{"class": "Diving", "k": 7, "try": 0, "raw": "1. The diver's feet approach the water surface.\n2. The diver's body remains straight and horizontal.\n3. The diver prepares for water entry."}
+{"class": "Diving", "k": 8, "try": 0, "raw": "1. The diver\u2019s feet touch the water surface.\n2. Arms flare outward slightly.\n3. Body sinks vertically into the water."}
+{"class": "Diving", "k": 9, "try": 0, "raw": "1. Diver's arms flare outward slightly.\n2. Body continues to sink vertically.\n3. Diver's body submerges completely."}
+{"class": "Diving", "k": 10, "try": 0, "raw": "1. The diver\u2019s body sinks vertically into the water.\n2. Arms and legs align in a streamlined form.\n3. The diver\u2019s body disappears beneath the surface."}
+{"class": "FrisbeeCatch", "k": 1, "try": 0, "raw": "1. The frisbee soars through the air, illuminated by sunlight.\n2. The frisbee descends, its curve visible against the sky.\n3. The frisbee approaches, its flight path curving slightly."}
+{"class": "FrisbeeCatch", "k": 2, "try": 0, "raw": "1. Catcher raises arms, fingers spread wide.\n2. Fingers align, ready to catch frisbee.\n3. Body leans forward, anticipating disc's arrival."}
+{"class": "FrisbeeCatch", "k": 3, "try": 0, "raw": "1. The frisbee descends, its path curving slightly.\n2. The catcher\u2019s body tilts forward, aligning with the disc.\n3. The frisbee approaches closer, nearing the catcher\u2019s fingertips."}
+{"class": "FrisbeeCatch", "k": 4, "try": 0, "raw": "1. The catcher's torso twists, aligning shoulders and hips.\n2. The torso continues rotating, focusing on the frisbee.\n3. The body completes the rotation, ready to catch the frisbee."}
+{"class": "FrisbeeCatch", "k": 5, "try": 0, "raw": "1. The frisbee\u2019s edge catches light as it approaches.\n2. The catcher\u2019s fingertips extend outward.\n3. The catcher\u2019s fingers curl inward to grip the frisbee."}
+{"class": "FrisbeeCatch", "k": 6, "try": 0, "raw": "1. Catcher\u2019s fingers extend, reaching for frisbee.\n2. Fingers curl inward, gripping disc\u2019s edge.\n3. Disc contacts fingertips, fingers lock around rim."}
+{"class": "FrisbeeCatch", "k": 7, "try": 0, "raw": "1. Fingers close tightly around frisbee's edge.\n2. Catcher's body starts to descend.\n3. Grip remains firm as descent continues."}
+{"class": "FrisbeeCatch", "k": 8, "try": 0, "raw": "1. Catcher's arms pull inward.\n2. Shoulders hug the torso.\n3. Body rotates to stabilize."}
+{"class": "FrisbeeCatch", "k": 9, "try": 0, "raw": "1. The catcher's knees begin to bend.\n2. The body starts to lower.\n3. The legs continue to flex downward."}
+{"class": "FrisbeeCatch", "k": 10, "try": 0, "raw": "1. The disc is gripped firmly by the catcher's fingers.\n2. The catcher's body begins to descend softly.\n3. The catcher's legs bend slightly, stabilizing the landing."}
+{"class": "GolfSwing", "k": 1, "try": 0, "raw": "1. Golfer positions feet shoulder-width apart.\n2. Golfer holds club with both hands.\n3. Golfer faces target on green grass pitch."}
+{"class": "GolfSwing", "k": 2, "try": 0, "raw": "1. The golfer rotates the torso, lifting the club.\n2. The club moves over the left shoulder.\n3. The golfer's arms extend backward."}
+{"class": "GolfSwing", "k": 3, "try": 0, "raw": "1. The golfer raises the club over the left shoulder.\n2. The arms extend backward, forming an arc.\n3. The club head reaches its highest point."}
+{"class": "GolfSwing", "k": 4, "try": 0, "raw": "1. The golfer twists the body slightly.\n2. The right arm extends backward.\n3. The club shaft aligns with the shoulder line."}
+{"class": "GolfSwing", "k": 5, "try": 0, "raw": "1. The golfer\u2019s left arm bends inward.\n2. The club head nears the hip.\n3. The golfer prepares for the downswing."}
+{"class": "GolfSwing", "k": 6, "try": 0, "raw": "1. The golfer's right arm starts swinging forward.\n2. The club head descends toward the ball.\n3. The golfer's body rotates forward."}
+{"class": "GolfSwing", "k": 7, "try": 0, "raw": "1. Club head descends toward the ball.\n2. Golfer's arms and torso rotate forward.\n3. Eyes track the ball's flight."}
+{"class": "GolfSwing", "k": 8, "try": 0, "raw": "1. Club head descends past the golfer's body.\n2. Golfer's torso rotates forward.\n3. Eyes track the ball's trajectory."}
+{"class": "GolfSwing", "k": 9, "try": 0, "raw": "1. The golfer\u2019s left arm extends forward.\n2. The club head trails behind.\n3. The golfer\u2019s body rotates fully."}
+{"class": "GolfSwing", "k": 10, "try": 0, "raw": "1. The golfer\u2019s arms and body remain extended.\n2. The club head rests on the ground.\n3. Feet stay slightly apart."}
+{"class": "HammerThrow", "k": 1, "try": 0, "raw": "1. Athlete holds hammer horizontally, both hands gripping.\n2. Feet positioned shoulder-width apart.\n3. Body coiled slightly forward."}
+{"class": "HammerThrow", "k": 2, "try": 0, "raw": "1. Athlete extends arms, swinging hammer in wide arc.\n2. Hammer moves in circular path above the head.\n3. Arms maintain extended position throughout swing."}
+{"class": "HammerThrow", "k": 3, "try": 0, "raw": "1. Hammer descends, arms sweeping back.\n2. Body rotates, hips and shoulders twist.\n3. Arms continue sweeping, maintaining control."}
+{"class": "HammerThrow", "k": 4, "try": 0, "raw": "1. Athlete's torso twists sharply.\n2. Arms extend fully, holding hammer.\n3. Body leans forward, momentum builds."}
+{"class": "HammerThrow", "k": 5, "try": 0, "raw": "1. Hammer descends, nearing ground level.\n2. Body leans forward, shifting weight.\n3. Feet pivot slightly, supporting motion."}
+{"class": "HammerThrow", "k": 6, "try": 0, "raw": "1. Athlete's right leg extends forward.\n2. Left leg pivots, transferring weight.\n3. Hammer swings horizontally, body twists."}
+{"class": "HammerThrow", "k": 7, "try": 0, "raw": "1. Hammer swings upward, reaching peak height.\n2. Body twists, arms fully extended.\n3. Athlete releases hammer, hands snap."}
+{"class": "HammerThrow", "k": 8, "try": 0, "raw": "1. Athlete snaps right hand, releasing hammer.\n2. Left hand lets go, hammer propelled.\n3. Hammer flies forward, straight trajectory."}
+{"class": "HammerThrow", "k": 9, "try": 0, "raw": "1. Hammer flies forward, blurring.\n2. Athlete's body stays still.\n3. Eyes follow the hammer's flight."}
+{"class": "HammerThrow", "k": 10, "try": 0, "raw": "1. Hammer lands on the ground, spinning.\n2. Athlete watches the impact point.\n3. Body remains stationary, arms lowered."}
+{"class": "HighJump", "k": 1, "try": 0, "raw": "1. The athlete sprints down the track.\n2. The athlete approaches the high jump bar.\n3. The athlete focuses on the bar ahead."}
+{"class": "HighJump", "k": 2, "try": 0, "raw": "1. The athlete extends arms forward.\n2. The body arches over the bar.\n3. The legs begin to rise."}
+{"class": "HighJump", "k": 3, "try": 0, "raw": "1. The athlete's knees bend, absorbing initial impact.\n2. The athlete's torso twists, aligning with the bar.\n3. The athlete's body rises, clearing the bar."}
+{"class": "HighJump", "k": 4, "try": 0, "raw": "1. Feet lift above the bar.\n2. Knees bend upward.\n3. Body arches backward."}
+{"class": "HighJump", "k": 5, "try": 0, "raw": "1. The athlete's knees lift higher.\n2. The athlete's hips rise, aligning with knees.\n3. The athlete's body extends fully upward."}
+{"class": "HighJump", "k": 6, "try": 0, "raw": "1. The athlete's torso tucks slightly.\n2. Arms pull back as they pass the bar.\n3. Body continues to rotate mid-air."}
+{"class": "HighJump", "k": 7, "try": 0, "raw": "1. The athlete's torso twists, aligning with the bar.\n2. Head and shoulders lift, clearing the bar.\n3. Arms pull back, aiding the rotation."}
+{"class": "HighJump", "k": 8, "try": 0, "raw": "1. The athlete's legs swing downward, knees bending.\n2. The athlete's feet lower closer to the mat.\n3. The athlete's body begins to straighten as it lands."}
+{"class": "HighJump", "k": 9, "try": 0, "raw": "1. The athlete's torso tucks inward, reducing height.\n2. The athlete's legs swing downward, nearing the mat.\n3. The athlete's body lands softly on the mat."}
+{"class": "HighJump", "k": 10, "try": 0, "raw": "1. The athlete's body lowers into a tucked position.\n2. Arms spread wide upon landing.\n3. Legs bend, absorbing impact."}
+{"class": "JavelinThrow", "k": 1, "try": 0, "raw": "1. Athlete holds javelin with both hands.\n2. Feet remain shoulder-width apart.\n3. Body faces throwing direction."}
+{"class": "JavelinThrow", "k": 2, "try": 0, "raw": "1. Athlete pivots on the spot, turning head.\n2. Body rotates, lifting left leg slightly.\n3. Javelin is raised, held by both hands."}
+{"class": "JavelinThrow", "k": 3, "try": 0, "raw": "1. Athlete extends throwing arm backward.\n2. Javelin held high above head.\n3. Body leans into the motion."}
+{"class": "JavelinThrow", "k": 4, "try": 0, "raw": "1. Athlete extends throwing arm backward.\n2. Javelin held high above head.\n3. Arm swings forward in powerful arc."}
+{"class": "JavelinThrow", "k": 5, "try": 0, "raw": "1. Athlete's hips rotate, driving the javelin upward.\n2. Shoulders twist, adding power to the throw.\n3. Javelin accelerates, leaving the hand."}
+{"class": "JavelinThrow", "k": 6, "try": 0, "raw": "1. Hand releases javelin with sharp snap.\n2. Wrist snaps, following through.\n3. Javelin soars through the air."}
+{"class": "JavelinThrow", "k": 7, "try": 0, "raw": "1. Javelin ascends, leaving a trail of blur.\n2. Athlete's arm continues its follow-through.\n3. Body remains coiled, eyes focused on javelin."}
+{"class": "JavelinThrow", "k": 8, "try": 0, "raw": "1. Athlete\u2019s arm remains extended, hand relaxed.\n2. Body slightly bends at waist.\n3. Eyes track javelin\u2019s flight path."}
+{"class": "JavelinThrow", "k": 9, "try": 0, "raw": "1. Athlete's torso starts to slow, body coiling.\n2. Feet remain planted firmly on ground.\n3. Body momentum continues to unwind."}
+{"class": "JavelinThrow", "k": 10, "try": 0, "raw": "1. Javelin lands on the field, creating a small impact point.\n2. Athlete's body remains still, eyes tracking the javelin's flight.\n3. Legs and torso begin to decelerate, feet planted firmly."}
+{"class": "LongJump", "k": 1, "try": 0, "raw": "1. Athlete positions feet shoulder-width apart.\n2. Arms are slightly bent, hands near hips.\n3. Athlete faces forward, eyes focused ahead."}
+{"class": "LongJump", "k": 2, "try": 0, "raw": "1. Athlete starts running, legs moving forward.\n2. Arms pump rhythmically, aiding momentum.\n3. Speed increases as athlete approaches takeoff."}
+{"class": "LongJump", "k": 3, "try": 0, "raw": "1. Athlete runs faster, legs driving forward.\n2. Body leans forward, arms swing rhythmically.\n3. Knees bend, maintaining balance and speed."}
+{"class": "LongJump", "k": 4, "try": 0, "raw": "1. Athlete plants foot firmly on takeoff board.\n2. Legs push off with maximum force.\n3. Body rises into the air, gaining momentum."}
+{"class": "LongJump", "k": 5, "try": 0, "raw": "1. Athlete's legs extend forward, pushing off the ground.\n2. Arms reach back, maintaining balance during ascent.\n3. Head remains upright, guiding the athlete's trajectory."}
+{"class": "LongJump", "k": 6, "try": 0, "raw": "1. Athlete's legs bend at the knee mid-air.\n2. Body tucks slightly as it rises.\n3. Arms adjust for optimal position."}
+{"class": "LongJump", "k": 7, "try": 0, "raw": "1. Athlete's body reaches peak height, arms fully extended.\n2. Legs remain straight, feet slightly off the ground.\n3. Body tucks slightly, preparing for descent."}
+{"class": "LongJump", "k": 8, "try": 0, "raw": "1. Athlete's legs start bending at the knee.\n2. Body rotates slightly for landing.\n3. Legs continue bending, preparing for touchdown."}
+{"class": "LongJump", "k": 9, "try": 0, "raw": "1. Athlete's body lowers, knees bending.\n2. Arms swing forward, preparing for landing.\n3. Feet touch the sandpit first, absorbing impact."}
+{"class": "LongJump", "k": 10, "try": 0, "raw": "1. Athlete's legs absorb impact, bending knees.\n2. Arms flare out for balance.\n3. Body settles into the sand."}
+{"class": "PoleVault", "k": 1, "try": 0, "raw": "1. Athlete plants pole firmly in ground.\n2. Athlete leans forward, arms swing.\n3. Athlete runs with pole planted."}
+{"class": "PoleVault", "k": 2, "try": 0, "raw": "1. Athlete tightens grip on pole.\n2. Legs push forward powerfully.\n3. Pole bends significantly under pressure."}
+{"class": "PoleVault", "k": 3, "try": 0, "raw": "1. Pole bends sharply, body lifts off ground.\n2. Legs remain straight, supporting upward motion.\n3. Body arches, reaching peak height."}
+{"class": "PoleVault", "k": 4, "try": 0, "raw": "1. Athlete's torso arches upward, lifting body.\n2. Pole straightens, supporting athlete's weight.\n3. Feet lift off ground, leaving contact with pole."}
+{"class": "PoleVault", "k": 5, "try": 0, "raw": "1. Athlete's torso twists mid-air, legs bent, pole angled upward.\n2. Torso twists further, pole bends slightly more.\n3. Legs extend slightly, pole angles higher."}
+{"class": "PoleVault", "k": 6, "try": 0, "raw": "1. Athlete's torso twists mid-air, legs bent, pole angled upward.\n2. Pole extends fully, athlete's body reaches peak height, arms extended.\n3. Athlete's legs kick upward, body rotates, pole begins to bend again."}
+{"class": "PoleVault", "k": 7, "try": 0, "raw": "1. Athlete's legs kick upward, extending.\n2. Body rotates mid-air, twisting.\n3. Pole begins to bend again, bending."}
+{"class": "PoleVault", "k": 8, "try": 0, "raw": "1. Pole bends sharply, athlete's body descends.\n2. Legs trail behind, body twists mid-fall.\n3. Pole angled downward, feet near mat."}
+{"class": "PoleVault", "k": 9, "try": 0, "raw": "1. Athlete's torso twists mid-fall, pole angled downward.\n2. Feet near mat as descent continues.\n3. Pole angled downward, nearing mat contact."}
+{"class": "PoleVault", "k": 10, "try": 0, "raw": "1. Athlete's feet touch mat first, landing softly.\n2. Body tucks inward, minimizing impact.\n3. Pole remains flat, absorbing final momentum."}
+{"class": "Shotput", "k": 1, "try": 0, "raw": "1. Athlete holds shotput close to chest.\n2. Athlete faces throwing direction.\n3. Athlete maintains bent posture."}
+{"class": "Shotput", "k": 2, "try": 0, "raw": "1. Right arm moves back, shoulder rotates.\n2. Body starts to twist, coiling motion begins.\n3. Athlete prepares for powerful throw, focusing energy."}
+{"class": "Shotput", "k": 3, "try": 0, "raw": "1. Left leg moves forward, stepping.\n2. Right leg bends, absorbing force.\n3. Hips rotate, initiating momentum."}
+{"class": "Shotput", "k": 4, "try": 0, "raw": "1. Shotput lifted upward, arm extended overhead.\n2. Body twists mid-motion, generating power.\n3. Athlete's torso rotates, focusing energy."}
+{"class": "Shotput", "k": 5, "try": 0, "raw": "1. Right arm extends forward, elbow locked.\n2. Shot put released from hand.\n3. Body leans into throw, torso rotates."}
+{"class": "Shotput", "k": 6, "try": 0, "raw": "1. Torso twists fully, generating power.\n2. Left arm extends for balance.\n3. Body leans forward, completing throw."}
+{"class": "Shotput", "k": 7, "try": 0, "raw": "1. Shotput exits hand, arc visible.\n2. Trailing behind athlete's body.\n3. Body rotates, momentum transfers."}
+{"class": "Shotput", "k": 8, "try": 0, "raw": "1. Right arm swings forward, completing arc.\n2. Elbow bends slightly, maintaining control.\n3. Body continues rotation, stabilizing posture."}
+{"class": "Shotput", "k": 9, "try": 0, "raw": "1. Left arm swings across body.\n2. Stabilizes posture after release.\n3. Head faces forward."}
+{"class": "Shotput", "k": 10, "try": 0, "raw": "1. Athlete's body rotates, balancing on bent legs.\n2. Arms lower slightly, maintaining balance.\n3. Shotput is no longer visible, landing softly."}
+{"class": "SoccerPenalty", "k": 1, "try": 0, "raw": "1. Player positions feet shoulder-width apart.\n2. Knees bend slightly, ball centered.\n3. Player holds stance, ready to strike."}
+{"class": "SoccerPenalty", "k": 2, "try": 0, "raw": "1. Player swings right leg back.\n2. Left leg remains planted firmly.\n3. Body leans forward slightly."}
+{"class": "SoccerPenalty", "k": 3, "try": 0, "raw": "1. The player's right foot begins to lift, knee bending.\n2. The foot rises higher, preparing to strike.\n3. The instep is aligned for the ball."}
+{"class": "SoccerPenalty", "k": 4, "try": 0, "raw": "1. Right foot lifts, knee bends, preparing strike.\n2. Foot positions above ball, ankle locks.\n3. Body coils, ready for impact."}
+{"class": "SoccerPenalty", "k": 5, "try": 0, "raw": "1. The player\u2019s right foot lifts, knee bent, preparing to strike.\n2. The foot angles upward, striking the ball with force.\n3. The ball compresses under the foot's impact."}
+{"class": "SoccerPenalty", "k": 6, "try": 0, "raw": "1. The player\u2019s right leg extends forward, foot angled upward.\n2. The player\u2019s body leans into the strike, arms slightly out for balance.\n3. The player\u2019s right foot lowers slightly, body upright, eyes tracking the ball\u2019s flight."}
+{"class": "SoccerPenalty", "k": 7, "try": 0, "raw": "1. The player\u2019s left foot remains stationary.\n2. The right foot continues its extension.\n3. The body rotates slightly toward the goal."}
+{"class": "SoccerPenalty", "k": 8, "try": 0, "raw": "1. The player\u2019s right foot lowers slightly.\n2. The player\u2019s body becomes upright.\n3. The player\u2019s eyes track the ball\u2019s flight."}
+{"class": "SoccerPenalty", "k": 9, "try": 0, "raw": "1. Ball rises, trajectory curves toward goal.\n2. Ball nears net, flapping netting visible.\n3. Ball enters goal, netting flaps visibly."}
+{"class": "SoccerPenalty", "k": 10, "try": 0, "raw": "1. Ball enters the goal, netting flaps visibly.\n2. Ball crosses the goal line completely.\n3. No player in frame, focus on the ball."}
+{"class": "TennisSwing", "k": 1, "try": 0, "raw": "1. Player holds racket loosely behind body.\n2. Grip faces upward, ready for swing.\n3. Racket positioned behind the body."}
+{"class": "TennisSwing", "k": 2, "try": 0, "raw": "1. The player's arm starts to extend forward.\n2. The racket head moves toward the ball.\n3. The forward arc begins to form."}
+{"class": "TennisSwing", "k": 3, "try": 0, "raw": "1. The racket head moves forward, accelerating.\n2. The player's elbow bends slightly.\n3. The body leans into the motion."}
+{"class": "TennisSwing", "k": 4, "try": 0, "raw": "1. The player's arm fully extends, reaching maximum forward position.\n2. The racket head reaches its peak forward position.\n3. The body twists slightly for added power."}
+{"class": "TennisSwing", "k": 5, "try": 0, "raw": "1. Racket head slows down near ball.\n2. Wrist begins to snap back.\n3. Body leans further into swing."}
+{"class": "TennisSwing", "k": 6, "try": 0, "raw": "1. Wrist snaps backward, rotating racket face.\n2. Racket face positions for ball contact.\n3. Body maintains balance during follow-through."}
+{"class": "TennisSwing", "k": 7, "try": 0, "raw": "1. Racket head strikes ball, creating blur.\n2. Ball compresses against strings visibly.\n3. Racket follows through, arm extended."}
+{"class": "TennisSwing", "k": 8, "try": 0, "raw": "1. The racket head moves diagonally across the body.\n2. The arm extends further, following the racket's path.\n3. The body rotates fully, completing the swing."}
+{"class": "TennisSwing", "k": 9, "try": 0, "raw": "1. The player\u2019s body twists completely.\n2. The racket trails behind the body.\n3. The arm extends fully."}
+{"class": "TennisSwing", "k": 10, "try": 0, "raw": "1. Racket remains extended above shoulder.\n2. Arm relaxes after impact.\n3. Body balances after motion."}
+{"class": "ThrowDiscus", "k": 1, "try": 0, "raw": "1. Athlete holds discus in right hand, ready.\n2. Feet remain shoulder-width apart, stable stance.\n3. Body coiled slightly, preparing for rotation."}
+{"class": "ThrowDiscus", "k": 2, "try": 0, "raw": "1. Athlete rotates left foot, initiating turn.\n2. Body maintains balance, discus stays close.\n3. Controlled movement starts, foot turns."}
+{"class": "ThrowDiscus", "k": 3, "try": 0, "raw": "1. Right arm pulls discus back.\n2. Torso twists as arm extends.\n3. Body leans into rotational turn."}
+{"class": "ThrowDiscus", "k": 4, "try": 0, "raw": "1. Athlete completes the rotational turn, discus now at hip level.\n2. Arm swings forward in a smooth arc.\n3. Body leans over, preparing for release."}
+{"class": "ThrowDiscus", "k": 5, "try": 0, "raw": "1. Right leg drives forward, pushing off ground.\n2. Left leg extends behind, balancing body.\n3. Body leans over, preparing for release."}
+{"class": "ThrowDiscus", "k": 6, "try": 0, "raw": "1. Arm swings upward, discus moves horizontally.\n2. Body twists at hips, maintaining balance.\n3. Arm fully extends, releasing discus."}
+{"class": "ThrowDiscus", "k": 7, "try": 0, "raw": "1. Arm fully extended, discus held high.\n2. Body fully rotated, eyes tracking discus.\n3. Follow-through position maintained."}
+{"class": "ThrowDiscus", "k": 8, "try": 0, "raw": "1. Arm extends sharply, releasing discus.\n2. Body twists, following through.\n3. Eyes track discus's flight."}
+{"class": "ThrowDiscus", "k": 9, "try": 0, "raw": "1. Discus soars horizontally, trajectory visible.\n2. Body maintains follow-through, arms extended.\n3. Gaze tracks discus's flight path."}
+{"class": "ThrowDiscus", "k": 10, "try": 0, "raw": "1. Discus flies through the air, trajectory visible.\n2. Body remains in follow-through, arms extended.\n3. Legs slightly bent, gaze follows discus."}
+{"class": "VolleyballSpiking", "k": 1, "try": 0, "raw": "1. The player extends their arms upward.\n2. The player leaps off the ground.\n3. The player's arms reach toward the volleyball."}
+{"class": "VolleyballSpiking", "k": 2, "try": 0, "raw": "1. The player\u2019s fingers extend to reach the ball.\n2. The fingers wrap around the ball\u2019s surface.\n3. The fingers grip the ball firmly."}
+{"class": "VolleyballSpiking", "k": 3, "try": 0, "raw": "1. The player\u2019s torso twists slightly.\n2. The player\u2019s arm begins to extend upward.\n3. The player\u2019s shoulder starts to rotate."}
+{"class": "VolleyballSpiking", "k": 4, "try": 0, "raw": "1. The player\u2019s forearm starts to extend downward.\n2. The player\u2019s hand begins to swing forward.\n3. The player\u2019s wrist locks into position."}
+{"class": "VolleyballSpiking", "k": 5, "try": 0, "raw": "1. The player\u2019s elbow begins to bend.\n2. The forearm starts to accelerate.\n3. The hand approaches the ball."}
+{"class": "VolleyballSpiking", "k": 6, "try": 0, "raw": "1. The player\u2019s hand approaches the ball, fingers extended.\n2. The wrist locks, preparing for impact.\n3. The forearm accelerates, striking the ball sharply."}
+{"class": "VolleyballSpiking", "k": 7, "try": 0, "raw": "1. The player\u2019s hand locks wrist, striking the ball.\n2. The player\u2019s arm extends fully, guiding the ball.\n3. The player\u2019s fingers remain extended, stabilizing the ball\u2019s flight."}
+{"class": "VolleyballSpiking", "k": 8, "try": 0, "raw": "1. The player\u2019s body continues upward, legs bent.\n2. Knees slightly lifted after the strike.\n3. The player\u2019s arm and hand remain extended."}
+{"class": "VolleyballSpiking", "k": 9, "try": 0, "raw": "1. The player\u2019s arm guides the ball\u2019s path.\n2. The hand maintains control post-impact.\n3. The fingers extend to stabilize direction."}
+{"class": "VolleyballSpiking", "k": 10, "try": 0, "raw": "1. Player lands softly on feet.\n2. Knees bend slightly.\n3. Ball arcs away."}

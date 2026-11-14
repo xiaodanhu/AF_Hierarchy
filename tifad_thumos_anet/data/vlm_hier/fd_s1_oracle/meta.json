@@ -1,0 +1,762 @@
+{
+ "classes": [
+  {
+   "id": "c00",
+   "code": "101b",
+   "name": "forward dive, 0.5 somersaults, pike position",
+   "group": "forward",
+   "held_out": false,
+   "members": [
+    "forward takeoff",
+    "0.5 somersault pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c01",
+   "code": "103b",
+   "name": "forward dive, 1.5 somersaults, pike position",
+   "group": "forward",
+   "held_out": false,
+   "members": [
+    "forward takeoff",
+    "1.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c02",
+   "code": "105b",
+   "name": "forward dive, 2.5 somersaults, pike position",
+   "group": "forward",
+   "held_out": false,
+   "members": [
+    "forward takeoff",
+    "2.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c03",
+   "code": "107b",
+   "name": "forward dive, 3.5 somersaults, pike position",
+   "group": "forward",
+   "held_out": true,
+   "members": [
+    "forward takeoff",
+    "3.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c04",
+   "code": "107c",
+   "name": "forward dive, 3.5 somersaults, tuck position",
+   "group": "forward",
+   "held_out": true,
+   "members": [
+    "forward takeoff",
+    "3.5 somersaults tuck",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c05",
+   "code": "109b",
+   "name": "forward dive, 4.5 somersaults, pike position",
+   "group": "forward",
+   "held_out": false,
+   "members": [
+    "forward takeoff",
+    "4.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c06",
+   "code": "109c",
+   "name": "forward dive, 4.5 somersaults, tuck position",
+   "group": "forward",
+   "held_out": true,
+   "members": [
+    "forward takeoff",
+    "4.5 somersaults tuck",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c07",
+   "code": "201a",
+   "name": "back dive, 0.5 somersaults, straight position",
+   "group": "backward",
+   "held_out": false,
+   "members": [
+    "back takeoff",
+    "0.5 somersault pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c08",
+   "code": "201b",
+   "name": "back dive, 0.5 somersaults, pike position",
+   "group": "backward",
+   "held_out": false,
+   "members": [
+    "back takeoff",
+    "0.5 somersault pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c09",
+   "code": "201c",
+   "name": "back dive, 0.5 somersaults, tuck position",
+   "group": "backward",
+   "held_out": false,
+   "members": [
+    "back takeoff",
+    "0.5 somersault pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c10",
+   "code": "205b",
+   "name": "back dive, 2.5 somersaults, pike position",
+   "group": "backward",
+   "held_out": true,
+   "members": [
+    "back takeoff",
+    "2.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c11",
+   "code": "205c",
+   "name": "back dive, 2.5 somersaults, tuck position",
+   "group": "backward",
+   "held_out": false,
+   "members": [
+    "back takeoff",
+    "2.5 somersaults tuck",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c12",
+   "code": "207b",
+   "name": "back dive, 3.5 somersaults, pike position",
+   "group": "backward",
+   "held_out": true,
+   "members": [
+    "back takeoff",
+    "3.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c13",
+   "code": "207c",
+   "name": "back dive, 3.5 somersaults, tuck position",
+   "group": "backward",
+   "held_out": false,
+   "members": [
+    "back takeoff",
+    "3.5 somersaults tuck",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c14",
+   "code": "301b",
+   "name": "reverse dive, 0.5 somersaults, pike position",
+   "group": "reverse",
+   "held_out": false,
+   "members": [
+    "reverse takeoff",
+    "0.5 somersault pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c15",
+   "code": "303c",
+   "name": "reverse dive, 1.5 somersaults, tuck position",
+   "group": "reverse",
+   "held_out": false,
+   "members": [
+    "reverse takeoff",
+    "1.5 somersaults tuck",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c16",
+   "code": "305b",
+   "name": "reverse dive, 2.5 somersaults, pike position",
+   "group": "reverse",
+   "held_out": false,
+   "members": [
+    "reverse takeoff",
+    "2.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c17",
+   "code": "305c",
+   "name": "reverse dive, 2.5 somersaults, tuck position",
+   "group": "reverse",
+   "held_out": true,
+   "members": [
+    "reverse takeoff",
+    "2.5 somersaults tuck",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c18",
+   "code": "307c",
+   "name": "reverse dive, 3.5 somersaults, tuck position",
+   "group": "reverse",
+   "held_out": false,
+   "members": [
+    "reverse takeoff",
+    "3.5 somersaults tuck",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c19",
+   "code": "401b",
+   "name": "inward dive, 0.5 somersaults, pike position",
+   "group": "inward",
+   "held_out": true,
+   "members": [
+    "inward takeoff",
+    "0.5 somersault pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c20",
+   "code": "403b",
+   "name": "inward dive, 1.5 somersaults, pike position",
+   "group": "inward",
+   "held_out": true,
+   "members": [
+    "inward takeoff",
+    "1.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c21",
+   "code": "405b",
+   "name": "inward dive, 2.5 somersaults, pike position",
+   "group": "inward",
+   "held_out": false,
+   "members": [
+    "inward takeoff",
+    "2.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c22",
+   "code": "405c",
+   "name": "inward dive, 2.5 somersaults, tuck position",
+   "group": "inward",
+   "held_out": false,
+   "members": [
+    "inward takeoff",
+    "2.5 somersaults tuck",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c23",
+   "code": "407b",
+   "name": "inward dive, 3.5 somersaults, pike position",
+   "group": "inward",
+   "held_out": false,
+   "members": [
+    "inward takeoff",
+    "3.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c24",
+   "code": "407c",
+   "name": "inward dive, 3.5 somersaults, tuck position",
+   "group": "inward",
+   "held_out": false,
+   "members": [
+    "inward takeoff",
+    "3.5 somersaults tuck",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c25",
+   "code": "409c",
+   "name": "inward dive, 4.5 somersaults, tuck position",
+   "group": "inward",
+   "held_out": false,
+   "members": [
+    "inward takeoff",
+    "4.5 somersaults tuck",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c26",
+   "code": "5132d",
+   "name": "forward twisting dive, 1.5 somersaults, 1 twist, free position",
+   "group": "twisting",
+   "held_out": false,
+   "members": [
+    "forward takeoff",
+    "1.5 somersaults pike",
+    "1 twist",
+    "1.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c27",
+   "code": "5152b",
+   "name": "forward twisting dive, 2.5 somersaults, 1 twist, pike position",
+   "group": "twisting",
+   "held_out": true,
+   "members": [
+    "forward takeoff",
+    "2.5 somersaults pike",
+    "1 twist",
+    "2.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c28",
+   "code": "5154b",
+   "name": "forward twisting dive, 2.5 somersaults, 2 twists, pike position",
+   "group": "twisting",
+   "held_out": false,
+   "members": [
+    "forward takeoff",
+    "2.5 somersaults pike",
+    "2 twists",
+    "2.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c29",
+   "code": "5156b",
+   "name": "forward twisting dive, 2.5 somersaults, 3 twists, pike position",
+   "group": "twisting",
+   "held_out": true,
+   "members": [
+    "forward takeoff",
+    "2.5 somersaults pike",
+    "3 twists",
+    "2.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c30",
+   "code": "5172b",
+   "name": "forward twisting dive, 3.5 somersaults, 1 twist, pike position",
+   "group": "twisting",
+   "held_out": false,
+   "members": [
+    "forward takeoff",
+    "3.5 somersaults pike",
+    "1 twist",
+    "3.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c31",
+   "code": "5231d",
+   "name": "back twisting dive, 1.5 somersaults, 0.5 twists, free position",
+   "group": "twisting",
+   "held_out": false,
+   "members": [
+    "back takeoff",
+    "0.5 twist",
+    "1.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c32",
+   "code": "5233d",
+   "name": "back twisting dive, 1.5 somersaults, 1.5 twists, free position",
+   "group": "twisting",
+   "held_out": false,
+   "members": [
+    "back takeoff",
+    "1.5 twists",
+    "1.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c33",
+   "code": "5235d",
+   "name": "back twisting dive, 1.5 somersaults, 2.5 twists, free position",
+   "group": "twisting",
+   "held_out": false,
+   "members": [
+    "back takeoff",
+    "2.5 twists",
+    "1.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c34",
+   "code": "5237d",
+   "name": "back twisting dive, 1.5 somersaults, 3.5 twists, free position",
+   "group": "twisting",
+   "held_out": false,
+   "members": [
+    "back takeoff",
+    "3.5 twists",
+    "1.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c35",
+   "code": "5251b",
+   "name": "back twisting dive, 2.5 somersaults, 0.5 twists, pike position",
+   "group": "twisting",
+   "held_out": false,
+   "members": [
+    "back takeoff",
+    "0.5 twist",
+    "2.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c36",
+   "code": "5253b",
+   "name": "back twisting dive, 2.5 somersaults, 1.5 twists, pike position",
+   "group": "twisting",
+   "held_out": true,
+   "members": [
+    "back takeoff",
+    "1.5 twists",
+    "2.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c37",
+   "code": "5255b",
+   "name": "back twisting dive, 2.5 somersaults, 2.5 twists, pike position",
+   "group": "twisting",
+   "held_out": false,
+   "members": [
+    "back takeoff",
+    "2.5 twists",
+    "2.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c38",
+   "code": "5331d",
+   "name": "reverse twisting dive, 1.5 somersaults, 0.5 twists, free position",
+   "group": "twisting",
+   "held_out": false,
+   "members": [
+    "reverse takeoff",
+    "0.5 twist",
+    "1.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c39",
+   "code": "5335d",
+   "name": "reverse twisting dive, 1.5 somersaults, 2.5 twists, free position",
+   "group": "twisting",
+   "held_out": false,
+   "members": [
+    "reverse takeoff",
+    "2.5 twists",
+    "1.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c40",
+   "code": "5337d",
+   "name": "reverse twisting dive, 1.5 somersaults, 3.5 twists, free position",
+   "group": "twisting",
+   "held_out": false,
+   "members": [
+    "reverse takeoff",
+    "3.5 twists",
+    "1.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c41",
+   "code": "5353b",
+   "name": "reverse twisting dive, 2.5 somersaults, 1.5 twists, pike position",
+   "group": "twisting",
+   "held_out": false,
+   "members": [
+    "reverse takeoff",
+    "1.5 twists",
+    "2.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c42",
+   "code": "5355b",
+   "name": "reverse twisting dive, 2.5 somersaults, 2.5 twists, pike position",
+   "group": "twisting",
+   "held_out": false,
+   "members": [
+    "reverse takeoff",
+    "2.5 twists",
+    "2.5 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c43",
+   "code": "612b",
+   "name": "armstand forward dive, 1 somersault, pike position",
+   "group": "armstand",
+   "held_out": false,
+   "members": [
+    "armstand forward takeoff",
+    "1 somersault pike",
+    "3.5 twists"
+   ]
+  },
+  {
+   "id": "c44",
+   "code": "6142d",
+   "name": "armstand forward dive, 2 somersaults, 1 twist, free position",
+   "group": "armstand",
+   "held_out": false,
+   "members": [
+    "armstand forward takeoff",
+    "1 twist",
+    "2 somersaults pike",
+    "3.5 twists"
+   ]
+  },
+  {
+   "id": "c45",
+   "code": "614b",
+   "name": "armstand forward dive, 2 somersaults, pike position",
+   "group": "armstand",
+   "held_out": false,
+   "members": [
+    "armstand forward takeoff",
+    "2 somersaults pike",
+    "3.5 twists"
+   ]
+  },
+  {
+   "id": "c46",
+   "code": "6241b",
+   "name": "armstand back dive, 2 somersaults, 0.5 twists, pike position",
+   "group": "armstand",
+   "held_out": false,
+   "members": [
+    "armstand back takeoff",
+    "0.5 twist",
+    "2 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c47",
+   "code": "6243d",
+   "name": "armstand back dive, 2 somersaults, 1.5 twists, free position",
+   "group": "armstand",
+   "held_out": true,
+   "members": [
+    "armstand back takeoff",
+    "1.5 twists",
+    "2 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c48",
+   "code": "6245d",
+   "name": "armstand back dive, 2 somersaults, 2.5 twists, free position",
+   "group": "armstand",
+   "held_out": true,
+   "members": [
+    "armstand back takeoff",
+    "2.5 twists",
+    "2 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c49",
+   "code": "626b",
+   "name": "armstand back dive, 3 somersaults, pike position",
+   "group": "armstand",
+   "held_out": false,
+   "members": [
+    "armstand back takeoff",
+    "3 somersaults pike",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c50",
+   "code": "626c",
+   "name": "armstand back dive, 3 somersaults, tuck position",
+   "group": "armstand",
+   "held_out": false,
+   "members": [
+    "armstand back takeoff",
+    "3 somersaults tuck",
+    "entry into the water"
+   ]
+  },
+  {
+   "id": "c51",
+   "code": "636c",
+   "name": "armstand reverse dive, 3 somersaults, tuck position",
+   "group": "armstand",
+   "held_out": false,
+   "members": [
+    "armstand reverse takeoff",
+    "3 somersaults tuck",
+    "entry into the water"
+   ]
+  }
+ ],
+ "sub_actions": [
+  "0.5 somersault pike",
+  "0.5 twist",
+  "1 somersault pike",
+  "1 twist",
+  "1.5 somersaults pike",
+  "1.5 somersaults tuck",
+  "1.5 twists",
+  "2 somersaults pike",
+  "2 twists",
+  "2.5 somersaults pike",
+  "2.5 somersaults tuck",
+  "2.5 twists",
+  "3 somersaults pike",
+  "3 somersaults tuck",
+  "3 twists",
+  "3.5 somersaults pike",
+  "3.5 somersaults tuck",
+  "3.5 twists",
+  "4.5 somersaults pike",
+  "4.5 somersaults tuck",
+  "armstand back takeoff",
+  "armstand forward takeoff",
+  "armstand reverse takeoff",
+  "back takeoff",
+  "entry into the water",
+  "forward takeoff",
+  "inward takeoff",
+  "reverse takeoff"
+ ],
+ "sub_roots": {
+  "forward takeoff": "a video of the diving sub-action forward takeoff, a takeoff phase",
+  "back takeoff": "a video of the diving sub-action back takeoff, a takeoff phase",
+  "reverse takeoff": "a video of the diving sub-action reverse takeoff, a takeoff phase",
+  "inward takeoff": "a video of the diving sub-action inward takeoff, a takeoff phase",
+  "armstand forward takeoff": "a video of the diving sub-action armstand forward takeoff, a takeoff phase",
+  "armstand back takeoff": "a video of the diving sub-action armstand back takeoff, a takeoff phase",
+  "armstand reverse takeoff": "a video of the diving sub-action armstand reverse takeoff, a takeoff phase",
+  "1 somersault pike": "a video of the diving sub-action 1 somersault pike, a somersault pike phase",
+  "1.5 somersaults pike": "a video of the diving sub-action 1.5 somersaults pike, a somersault pike phase",
+  "2 somersaults pike": "a video of the diving sub-action 2 somersaults pike, a somersault pike phase",
+  "2.5 somersaults pike": "a video of the diving sub-action 2.5 somersaults pike, a somersault pike phase",
+  "3 somersaults pike": "a video of the diving sub-action 3 somersaults pike, a somersault pike phase",
+  "3.5 somersaults pike": "a video of the diving sub-action 3.5 somersaults pike, a somersault pike phase",
+  "4.5 somersaults pike": "a video of the diving sub-action 4.5 somersaults pike, a somersault pike phase",
+  "1.5 somersaults tuck": "a video of the diving sub-action 1.5 somersaults tuck, a somersault tuck phase",
+  "2.5 somersaults tuck": "a video of the diving sub-action 2.5 somersaults tuck, a somersault tuck phase",
+  "3 somersaults tuck": "a video of the diving sub-action 3 somersaults tuck, a somersault tuck phase",
+  "3.5 somersaults tuck": "a video of the diving sub-action 3.5 somersaults tuck, a somersault tuck phase",
+  "4.5 somersaults tuck": "a video of the diving sub-action 4.5 somersaults tuck, a somersault tuck phase",
+  "0.5 twist": "a video of the diving sub-action 0.5 twist, a twist phase",
+  "1 twist": "a video of the diving sub-action 1 twist, a twist phase",
+  "1.5 twists": "a video of the diving sub-action 1.5 twists, a twist phase",
+  "2 twists": "a video of the diving sub-action 2 twists, a twist phase",
+  "2.5 twists": "a video of the diving sub-action 2.5 twists, a twist phase",
+  "3 twists": "a video of the diving sub-action 3 twists, a twist phase",
+  "3.5 twists": "a video of the diving sub-action 3.5 twists, a twist phase",
+  "entry into the water": "a video of the diving sub-action entry into the water, a entry phase",
+  "0.5 somersault pike": "a video of the diving sub-action 0.5 somersault pike, a entry phase"
+ },
+ "groups": [
+  "armstand",
+  "backward",
+  "forward",
+  "inward",
+  "reverse",
+  "twisting"
+ ],
+ "held_out": [
+  "c03",
+  "c04",
+  "c06",
+  "c10",
+  "c12",
+  "c17",
+  "c19",
+  "c20",
+  "c27",
+  "c29",
+  "c36",
+  "c47",
+  "c48"
+ ],
+ "win_len": 10.24,
+ "fps": 4.0,
+ "sub_source": "annot",
+ "stats": {
+  "train": {
+   "windows": 2251,
+   "instances": 2251,
+   "held_out_masked_in_train": 1023,
+   "clips_without_frames": 0,
+   "frame_time_offset_s": {
+    "mean": 0.04271030003152734,
+    "p99": 0.08
+   }
+  },
+  "test": {
+   "windows": 749,
+   "instances": 749,
+   "held_out_masked_in_train": 0,
+   "clips_without_frames": 0,
+   "frame_time_offset_s": {
+    "mean": 0.04372018107079962,
+    "p99": 0.08013462617196891
+   }
+  }
+ }
+}

@@ -1,0 +1,730 @@
+{
+ "c00": {
+  "fractions": [
+   0.4,
+   0.3,
+   0.3
+  ],
+  "steps": [
+   "forward takeoff",
+   "0.5 somersault pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c01": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "forward takeoff",
+   "1.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c02": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "forward takeoff",
+   "2.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c03": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "forward takeoff",
+   "3.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c04": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "forward takeoff",
+   "3.5 somersaults tuck",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c05": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "forward takeoff",
+   "4.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c06": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "forward takeoff",
+   "4.5 somersaults tuck",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c07": {
+  "fractions": [
+   0.4,
+   0.3,
+   0.3
+  ],
+  "steps": [
+   "back takeoff",
+   "0.5 somersault pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c08": {
+  "fractions": [
+   0.4,
+   0.3,
+   0.3
+  ],
+  "steps": [
+   "back takeoff",
+   "0.5 somersault pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c09": {
+  "fractions": [
+   0.4,
+   0.3,
+   0.3
+  ],
+  "steps": [
+   "back takeoff",
+   "0.5 somersault pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c10": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "back takeoff",
+   "2.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c11": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "back takeoff",
+   "2.5 somersaults tuck",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c12": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "back takeoff",
+   "3.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c13": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "back takeoff",
+   "3.5 somersaults tuck",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c14": {
+  "fractions": [
+   0.4,
+   0.3,
+   0.3
+  ],
+  "steps": [
+   "reverse takeoff",
+   "0.5 somersault pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c15": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "reverse takeoff",
+   "1.5 somersaults tuck",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c16": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "reverse takeoff",
+   "2.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c17": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "reverse takeoff",
+   "2.5 somersaults tuck",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c18": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "reverse takeoff",
+   "3.5 somersaults tuck",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c19": {
+  "fractions": [
+   0.4,
+   0.3,
+   0.3
+  ],
+  "steps": [
+   "inward takeoff",
+   "0.5 somersault pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c20": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "inward takeoff",
+   "1.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c21": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "inward takeoff",
+   "2.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c22": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "inward takeoff",
+   "2.5 somersaults tuck",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c23": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "inward takeoff",
+   "3.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c24": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "inward takeoff",
+   "3.5 somersaults tuck",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c25": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "inward takeoff",
+   "4.5 somersaults tuck",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c26": {
+  "fractions": [
+   0.1,
+   0.3,
+   0.1,
+   0.2,
+   0.3
+  ],
+  "steps": [
+   "forward takeoff",
+   "1.5 somersaults pike",
+   "1 twist",
+   "1.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c27": {
+  "fractions": [
+   0.1,
+   0.3,
+   0.1,
+   0.3,
+   0.2
+  ],
+  "steps": [
+   "forward takeoff",
+   "2.5 somersaults pike",
+   "1 twist",
+   "2.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c28": {
+  "fractions": [
+   0.1,
+   0.3,
+   0.2,
+   0.2,
+   0.2
+  ],
+  "steps": [
+   "forward takeoff",
+   "2.5 somersaults pike",
+   "2 twists",
+   "2.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c29": {
+  "fractions": [
+   0.1,
+   0.3,
+   0.2,
+   0.2,
+   0.2
+  ],
+  "steps": [
+   "forward takeoff",
+   "2.5 somersaults pike",
+   "3 twists",
+   "2.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c30": {
+  "fractions": [
+   0.1,
+   0.3,
+   0.1,
+   0.3,
+   0.2
+  ],
+  "steps": [
+   "forward takeoff",
+   "3.5 somersaults pike",
+   "1 twist",
+   "3.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c31": {
+  "fractions": [
+   0.1,
+   0.2,
+   0.6,
+   0.1
+  ],
+  "steps": [
+   "back takeoff",
+   "0.5 twist",
+   "1.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c32": {
+  "fractions": [
+   0.1,
+   0.2,
+   0.4,
+   0.3
+  ],
+  "steps": [
+   "back takeoff",
+   "1.5 twists",
+   "1.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c33": {
+  "fractions": [
+   0.1,
+   0.3,
+   0.4,
+   0.2
+  ],
+  "steps": [
+   "back takeoff",
+   "2.5 twists",
+   "1.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c34": {
+  "fractions": [
+   0.1,
+   0.3,
+   0.4,
+   0.2
+  ],
+  "steps": [
+   "back takeoff",
+   "3.5 twists",
+   "1.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c35": {
+  "fractions": [
+   0.1,
+   0.2,
+   0.6,
+   0.1
+  ],
+  "steps": [
+   "back takeoff",
+   "0.5 twist",
+   "2.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c36": {
+  "fractions": [
+   0.1,
+   0.2,
+   0.6,
+   0.1
+  ],
+  "steps": [
+   "back takeoff",
+   "1.5 twists",
+   "2.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c37": {
+  "fractions": [
+   0.1,
+   0.3,
+   0.5,
+   0.1
+  ],
+  "steps": [
+   "back takeoff",
+   "2.5 twists",
+   "2.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c38": {
+  "fractions": [
+   0.1,
+   0.2,
+   0.6,
+   0.1
+  ],
+  "steps": [
+   "reverse takeoff",
+   "0.5 twist",
+   "1.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c39": {
+  "fractions": [
+   0.1,
+   0.3,
+   0.5,
+   0.1
+  ],
+  "steps": [
+   "reverse takeoff",
+   "2.5 twists",
+   "1.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c40": {
+  "fractions": [
+   0.1,
+   0.3,
+   0.4,
+   0.2
+  ],
+  "steps": [
+   "reverse takeoff",
+   "3.5 twists",
+   "1.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c41": {
+  "fractions": [
+   0.1,
+   0.2,
+   0.6,
+   0.1
+  ],
+  "steps": [
+   "reverse takeoff",
+   "1.5 twists",
+   "2.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c42": {
+  "fractions": [
+   0.1,
+   0.3,
+   0.5,
+   0.1
+  ],
+  "steps": [
+   "reverse takeoff",
+   "2.5 twists",
+   "2.5 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c43": {
+  "fractions": [
+   0.4,
+   0.3,
+   0.3
+  ],
+  "steps": [
+   "armstand forward takeoff",
+   "1 somersault pike",
+   "3.5 twists"
+  ],
+  "src": "llm"
+ },
+ "c44": {
+  "fractions": [
+   0.1,
+   0.1,
+   0.6,
+   0.2
+  ],
+  "steps": [
+   "armstand forward takeoff",
+   "1 twist",
+   "2 somersaults pike",
+   "3.5 twists"
+  ],
+  "src": "llm"
+ },
+ "c45": {
+  "fractions": [
+   0.1,
+   0.4,
+   0.5
+  ],
+  "steps": [
+   "armstand forward takeoff",
+   "2 somersaults pike",
+   "3.5 twists"
+  ],
+  "src": "llm"
+ },
+ "c46": {
+  "fractions": [
+   0.1,
+   0.2,
+   0.6,
+   0.1
+  ],
+  "steps": [
+   "armstand back takeoff",
+   "0.5 twist",
+   "2 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c47": {
+  "fractions": [
+   0.1,
+   0.2,
+   0.4,
+   0.3
+  ],
+  "steps": [
+   "armstand back takeoff",
+   "1.5 twists",
+   "2 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c48": {
+  "fractions": [
+   0.1,
+   0.2,
+   0.4,
+   0.3
+  ],
+  "steps": [
+   "armstand back takeoff",
+   "2.5 twists",
+   "2 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c49": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "armstand back takeoff",
+   "3 somersaults pike",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c50": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "armstand back takeoff",
+   "3 somersaults tuck",
+   "entry into the water"
+  ],
+  "src": "llm"
+ },
+ "c51": {
+  "fractions": [
+   0.1,
+   0.8,
+   0.1
+  ],
+  "steps": [
+   "armstand reverse takeoff",
+   "3 somersaults tuck",
+   "entry into the water"
+  ],
+  "src": "llm"
+ }
+}

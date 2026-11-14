@@ -1,0 +1,122 @@
+{
+  "BaseballPitch": {
+    "start": "hold the baseball and position themselves on the pitcher's mound",
+    "middle": "wind up, bringing their arm back for the pitch",
+    "end": "release the ball towards home plate",
+    "glob": "throw a baseball towards home plate from the pitcher's mound, using a combination of arm strength and technique to deliver the ball accurately and with sufficient speed for the batter to hit it"
+  },
+  "BasketballDunk": {
+    "start": "run towards the basket",
+    "middle": "jump and leap towards the hoop",
+    "end": "slam the ball through the hoop",
+    "glob": "jump high into the air and use their arms to propel themselves upwards, then extend their body towards the basketball hoop, grab the ball with one or both hands, and forcefully slam it through the net"
+  },
+  "Billiards": {
+    "start": "position themselves and the billiard cue stick near the cue ball",
+    "middle": "strike the cue ball with the cue stick, aiming for the desired target ball",
+    "end": "observe the outcome of the shot, adjusting their stance or strategy as needed",
+    "glob": "position themselves at the table, take aim at the cue ball, strike it with the cue stick, and then follow through to control the direction of the cue ball and the subsequent movement of the other balls on the table"
+  },
+  "CleanAndJerk": {
+    "start": "grip the barbell and lift it off the ground",
+    "middle": "drive the barbell upwards using their legs and hips while keeping their back straight",
+    "end": "catch the barbell overhead with fully extended arms and locked elbows",
+    "glob": "begin by lifting the barbell from the floor using an overhand grip and a wide stance, then drive it up to their chest while keeping their back straight and core engaged"
+  },
+  "CliffDiving": {
+    "start": "position themselves at the edge of the cliff, preparing for the dive",
+    "middle": "leap off the cliff, performing a series of flips and twists in mid-air",
+    "end": "enter the water with a splash, completing the dive",
+    "glob": "jump from a high cliff into the water below, often with a significant drop, demonstrating a combination of courage and skill"
+  },
+  "CricketBowling": {
+    "start": "hold the cricket ball and position themselves in the bowling crease",
+    "middle": "run up towards the pitch, swinging the arm back to build momentum for the delivery",
+    "end": "release the ball towards the batsman, aiming for the wicket",
+    "glob": "stand on one leg and swing their arm back, then bring it forward quickly to throw the ball towards the batsman"
+  },
+  "CricketShot": {
+    "start": "hold the bat and position themselves at the crease",
+    "middle": "swing the bat to hit the ball",
+    "end": "follow through with the swing and complete the shot",
+    "glob": "hold the cricket bat with both hands, position themselves in a ready stance, and swing the bat to hit the ball"
+  },
+  "Diving": {
+    "start": "prepare and position themselves at the edge or surface of the water",
+    "middle": "jump or dive off the starting point, propelling themselves into the air",
+    "end": "enter the water, creating a splash upon impact",
+    "glob": "jump from a platform or springboard into the water, extending their body and limbs to create a streamlined shape for optimal entry, and then enter the water with minimal splash"
+  },
+  "FrisbeeCatch": {
+    "start": "throw the Frisbee towards themselves",
+    "middle": "extend their arms and position them to catch the Frisbee",
+    "end": "successfully catch the Frisbee with their hands",
+    "glob": "throw the Frisbee towards themselves and then extend their arms to catch it as it approaches"
+  },
+  "GolfSwing": {
+    "start": "take a stance and grip the club",
+    "middle": "swing the club back and rotate their body",
+    "end": "release the club and follow through with the swing",
+    "glob": "start by taking a stance with their feet shoulder-width apart and knees slightly bent, then they would swing the club back over their shoulder, keeping their body turned towards the target"
+  },
+  "HammerThrow": {
+    "start": "hold the hammer and rotate their body to build momentum",
+    "middle": "swing the hammer back over their head, rotating their body further to increase speed",
+    "end": "release the hammer and follow through with their motion, completing the throw",
+    "glob": "begin by holding the hammer throw ball with both hands, then swing it back over their head and around their body, building momentum"
+  },
+  "HighJump": {
+    "start": "begin by running up to the bar, gaining momentum",
+    "middle": "leap over the bar, clearing it with their body",
+    "end": "land safely on the mat below, completing the jump",
+    "glob": "run up to the bar, leap over it, and land on the mat"
+  },
+  "JavelinThrow": {
+    "start": "hold the javelin and prepare for the throw",
+    "middle": "run up to the throwing line and swing the javelin back",
+    "end": "release the javelin and follow through with their motion",
+    "glob": "begin by running up to the throwing area, then they would plant their right foot and swing their left arm back over their head, building momentum"
+  },
+  "LongJump": {
+    "start": "begin by running up to the takeoff point",
+    "middle": "jump off the ground and extend their body forward",
+    "end": "land on the sand pit or mat",
+    "glob": "run up to the takeoff board, jump over it, and land on their feet after clearing the bar"
+  },
+  "PoleVault": {
+    "start": "begin by running up to the pole vault pit, gaining momentum",
+    "middle": "plant the pole into the ground and use it to launch themselves upwards, clearing the bar",
+    "end": "land safely on the mat after clearing the bar",
+    "glob": "run up to the pole vault pit, plant their pole into the box at the end of the runway, and use the pole to launch themselves over the bar"
+  },
+  "Shotput": {
+    "start": "hold the shotput firmly and position themselves in a ready stance",
+    "middle": "swing their arm back and rotate their body to build momentum",
+    "end": "release the shotput with a powerful throw, following through with their motion",
+    "glob": "stand with feet shoulder-width apart, hold the shotput in both hands, and then swing their arms back, rotating their body to build momentum"
+  },
+  "SoccerPenalty": {
+    "start": "position themselves at the penalty spot and take a few steps back to prepare for the kick",
+    "middle": "run towards the ball and strike it with their foot, aiming for the goal",
+    "end": "follow through with their kick and watch the ball's trajectory towards the goalpost",
+    "glob": "stand at the penalty spot, take a few steps back, and then kick the ball into the goal"
+  },
+  "TennisSwing": {
+    "start": "hold the racket and position themselves for the swing",
+    "middle": "initiate the swing, rotating their body and arm to generate power",
+    "end": "follow through with the swing, releasing the racket and completing the motion",
+    "glob": "start by holding the tennis racket with both hands, positioning it behind their head, and then swing forward with their body rotating to generate power"
+  },
+  "ThrowDiscus": {
+    "start": "hold the discus securely and position themselves for the throw",
+    "middle": "rotate their body and swing the discus back, building momentum",
+    "end": "release the discus with a powerful throw, following through with their motion",
+    "glob": "first hold the discus with both hands at shoulder height, then rotate their body to build momentum, and finally throw the discus forward with an explosive motion, using their entire body for power"
+  },
+  "VolleyballSpiking": {
+    "start": "position themselves and prepare for the spike",
+    "middle": "jump and make contact with the ball",
+    "end": "follow through with the spike, aiming to send the ball over the net",
+    "glob": "approach the net, jump, and strike the volleyball with their dominant hand, aiming for the opposing team's court"
+  }
+}

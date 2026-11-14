@@ -145,6 +145,10 @@ def _update_config(config):
     config["model"]["input_dim"] = config["dataset"]["input_dim"]
     config["model"]["num_classes"] = config["dataset"]["num_classes"]
     config["model"]["max_seq_len"] = config["dataset"]["max_seq_len"]
+    # Cascaded-hierarchy ZSL: phrase/activity arity is a dataset property;
+    # propagate it into the model section (dataset section is authoritative).
+    config["model"]["num_phrases"] = config["dataset"].get("num_phrases", 14)
+    config["model"]["num_activities"] = config["dataset"].get("num_activities", 4)
     config["model"]["train_cfg"] = config["train_cfg"]
     config["model"]["test_cfg"] = config["test_cfg"]
     return config

@@ -19,6 +19,16 @@ import math
 
 # torch imports
 import torch
+# FG3_RESERVE_GB=<n>: claim n GB through the CUDA caching allocator as early
+# as possible (freed to the cache, not to the driver) so a co-scheduled GPU
+# dispatcher cannot fill the card between our launch and the first real
+# allocation (single-GPU frozen stages that share GPUs with other jobs).
+if float(os.environ.get('FG3_RESERVE_GB', '0') or 0) > 0:
+    torch.cuda.set_device(int(os.environ.get('LOCAL_RANK', '0') or 0))
+    _blk = torch.empty(int(float(os.environ['FG3_RESERVE_GB']) * (1 << 30)),
+                       dtype=torch.uint8, device='cuda')
+    del _blk
+    print(f"[reserve] {os.environ['FG3_RESERVE_GB']} GB held in the CUDA caching allocator", flush=True)
 import torch.nn as nn
 import torch.utils.data
 # for visualization
@@ -47,17 +57,20 @@ def main(args):
     torch.cuda.set_device(args.local_rank)
     device = torch.device("cuda", args.local_rank)
     deepspeed.init_distributed()
-    
-    with open("configs/deepspeed_config.json", 'r') as f:
-        ds_config = json.load(f)
 
     """1. setup parameters / folders"""
     # parse args
     args.start_epoch = 0
     if os.path.isfile(args.config):
-        cfg = load_config(args.config)
+        cfg_for_dscfg = load_config(args.config)
     else:
         raise ValueError("Config file does not exist.")
+    ds_config_path = cfg_for_dscfg.get('deepspeed_config_path', 'configs/deepspeed_config.json')
+    with open(ds_config_path, 'r') as f:
+        ds_config = json.load(f)
+    print(f"[deepspeed] using config: {ds_config_path}")
+
+    cfg = cfg_for_dscfg
 
     # prep for output folder (based on time stamp)
     if not os.path.exists(cfg['output_folder']) and args.local_rank == 0:
@@ -81,12 +94,30 @@ def main(args):
     cfg['loader']['num_workers'] *= len(cfg['devices'])
 
     """2. create dataset / dataloader"""
+    # Phase 2D ZSL: load held-out class ids from the attribute table when the model
+    # uses the auxiliary attribute head. The training dataset filters them out;
+    # validation keeps all classes (we'll report seen vs held-out mAP separately).
+    # Load held-out class ids whenever the attribute table is provided (used by
+    # any Phase 2D ZSL variant: aux-attribute, CLIP-text, or parent-conditional v4).
+    if cfg['model'].get('aux_attribute_table_path'):
+        import json as _json
+        _attr_path = cfg['model'].get('aux_attribute_table_path', '')
+        if _attr_path:
+            with open(_attr_path) as _f:
+                _ad = _json.load(_f)
+            _held = [int(aid[1:]) for aid in _ad.get('held_out_classes', [])]
+            cfg['dataset']['held_out_class_ids'] = _held
+            print(f"[ZSL] held-out class ids ({len(_held)}): {_held}")
+
     train_dataset = make_dataset(
         cfg['dataset_name'], True, cfg['train_split'], cfg['model']['backbone_type'], cfg['round'], **cfg['dataset']
     )
     # update cfg based on dataset attributes (fix to epic-kitchens)
     train_db_vars = train_dataset.get_attributes()
     cfg['model']['train_cfg']['head_empty_cls'] = train_db_vars['empty_label_ids']
+    # held_out_mode (keep | background | exclude) is a dataset key; the model
+    # needs it too (exclude masks held-out spans out of every loss, meta_archs)
+    cfg['model']['train_cfg']['held_out_mode'] = str(cfg['dataset'].get('held_out_mode', 'keep'))
 
     # data loaders
     train_sampler = DistributedSampler(train_dataset, shuffle=True)
@@ -97,6 +128,13 @@ def main(args):
     val_dataset = make_dataset(
         cfg['dataset_name'], False, cfg['val_split'], cfg['model']['backbone_type'], cfg['round'], **cfg['dataset']
     )
+    # ---- frozen-encoder stages: cached CLIP-encoder features per window ----
+    # (scripts/cache_fg3_clip_feats.py). Both datasets serve (D, T) features
+    # instead of frames; the backbone skips its encoder (backbones.py) and
+    # fills the padded timesteps with the cached padding-frame output.
+    if args.feature_cache:
+        train_dataset.set_feature_cache(args.feature_cache)
+        val_dataset.set_feature_cache(args.feature_cache)
     # Distributed validation: split test data across GPUs for faster inference
     val_sampler = DistributedSampler(val_dataset, shuffle=False)
     val_loader = make_data_loader_distributed(val_dataset, val_sampler, False, None, 1, cfg['loader']['num_workers'] // 2)
@@ -105,6 +143,38 @@ def main(args):
     # model
     cfg['model']['active_learning_method'] = cfg['active_learning_method']
     model = make_meta_arch(cfg['model_name'], **cfg['model'])
+    if args.feature_cache:
+        _pad = torch.load(os.path.join(args.feature_cache, 'pad_feat.pt'), map_location='cpu')
+        model.backbone.register_buffer('cached_pad_feat', _pad, persistent=False)
+        print(f"[feature_cache] padding-frame feature registered: {tuple(_pad.shape)} {_pad.dtype}")
+
+    # ---- second-stage training (APA phase-level attention) ----
+    # --init_from: a DeepSpeed checkpoint dir (e.g. .../vit_best_model) or a
+    # .pt file; its module weights initialise this model (strict=False so
+    # newly added modules such as text_pathway.phase_attn stay at their
+    # zero-init). --freeze_except: comma-separated substrings; only parameters
+    # whose name contains one of them are trained. Together they reproduce
+    # the THUMOS/ActivityNet recipe: train the detector + action-level
+    # attention first, then learn only the phase-level attention on top.
+    if args.init_from:
+        src = args.init_from
+        if os.path.isdir(src):
+            src = os.path.join(src, 'mp_rank_00_model_states.pt')
+        sd = torch.load(src, map_location='cpu')
+        sd = sd.get('module', sd)
+        missing, unexpected = model.load_state_dict(sd, strict=False)
+        print(f"[init_from] loaded {src}: {len(sd)} tensors; "
+              f"missing={sorted(missing)}; unexpected={sorted(unexpected)}")
+    if args.freeze_except:
+        keep = [k.strip() for k in args.freeze_except.split(',') if k.strip()]
+        n_train = 0
+        for n, p in model.named_parameters():
+            p.requires_grad = any(k in n for k in keep)
+            n_train += int(p.requires_grad)
+        trainable = [n for n, p in model.named_parameters() if p.requires_grad]
+        assert n_train > 0, f"--freeze_except {keep} matched no parameters"
+        print(f"[freeze_except] {n_train} trainable tensors: {trainable}")
+
     # not ideal for multi GPU training, ok for now
     # model = nn.DataParallel(model, device_ids=cfg['devices'])
     parameters = filter(lambda p: p.requires_grad, model.parameters())
@@ -120,7 +190,7 @@ def main(args):
         model_parameters=parameters,
         optimizer=optimizer,
         lr_scheduler=scheduler,
-        config="configs/deepspeed_config.json"
+        config=ds_config_path
     )
 
     # enable model EMA
@@ -166,6 +236,24 @@ def main(args):
     )
     best_mAP = 0.0
     best_epoch = 0
+    # ---- --eval_only: one evaluation of the initialised model, no training
+    # (byte-inert / init-equality checks of frozen stages) ----
+    if args.eval_only:
+        val_db_vars = val_dataset.get_attributes()
+        # A6_EVAL_SAVE_PRED=1 dumps the video-level predictions of this
+        # eval-only run to output/<dataset>/pred_<ts>_video_level.json (default: unchanged, no dump)
+        _save_pred = os.environ.get('A6_EVAL_SAVE_PRED', '0') == '1'
+        eval_results = valid_one_epoch_slide_dual_eval(
+            val_loader, model_engine, val_dataset, ANETdetection,
+            val_db_vars['tiou_thresholds'], -1, output_file=str(ts),
+            print_freq=args.print_freq, if_save_data=_save_pred, best_map=(-1.0 if _save_pred else 1e9),
+            local_rank=args.local_rank)
+        if _save_pred and args.local_rank == 0:
+            print(f'[eval_only] predictions dumped with prefix pred_{ts}', flush=True)
+        if args.local_rank == 0:
+            print(f"[eval_only] {eval_results}")
+            logger.log(f"[eval_only] {eval_results}")
+        return
     for epoch in range(args.start_epoch, max_epochs):
         # train for one epoch
         train_one_epoch(
@@ -188,6 +276,13 @@ def main(args):
             ((args.ckpt_freq > 0) and ((epoch + 1) % args.ckpt_freq == 0))
         ):
             print("Saving model at epoch: ", epoch + 1)
+            # Release PyTorch's cached-but-unused GPU memory so the NCCL barrier
+            # inside save_checkpoint (which gathers sharded ZeRO-2 optimizer
+            # state across ranks) has room for its working buffers. Without
+            # this, training peak (27+ GB on 40 GB GPUs) leaves too little free
+            # for the gather → CUDA OOM in NCCL.
+            gc.collect()
+            torch.cuda.empty_cache()
             client_sd = {}
             client_sd['epoch'] = epoch
             model_engine.save_checkpoint(ckpt_folder, tag='epoch_{:03d}'.format(epoch + 1), client_state=client_sd)
@@ -218,7 +313,7 @@ def main(args):
             val_db_vars = val_dataset.get_attributes()
 
             # Use dual evaluation (window + video level) for finegym_slide
-            if cfg['dataset_name'] in ('finegym_slide', 'finediving_slide', 'thumos14_slide'):
+            if cfg['dataset_name'] in ('finegym_slide', 'finediving_slide', 'finediving_dive_slide', 'thumos14_slide', 'thumos14_raw', 'activitynet_raw'):
                 eval_results = valid_one_epoch_slide_dual_eval(
                     val_loader,
                     model_engine,
@@ -232,8 +327,18 @@ def main(args):
                     best_map=best_mAP,
                     local_rank=args.local_rank
                 )
-                # Use video-level mAP for model selection (clip-level aggregation)
-                mAP = eval_results.get('video_mAP', 0.0) if isinstance(eval_results, dict) else eval_results
+                # Use video-level mAP for model selection (clip-level aggregation);
+                # --select_metric video_held_mAP selects by the held-out-class
+                # (unseen) video-level mAP instead
+                if isinstance(eval_results, dict):
+                    mAP = eval_results.get(args.select_metric, 0.0)
+                    if args.local_rank == 0:
+                        print(f"[select] epoch {epoch}: {args.select_metric}={mAP:.4f} "
+                              f"(video_mAP={eval_results.get('video_mAP', 0.0):.4f}, "
+                              f"seen={eval_results.get('video_seen_mAP', 0.0):.4f}, "
+                              f"held={eval_results.get('video_held_mAP', 0.0):.4f})")
+                else:
+                    mAP = eval_results
             else:
                 # Standard evaluation for other datasets
                 det_eval = ANETdetection(
@@ -305,11 +410,21 @@ if __name__ == '__main__':
     # the arg parser
     parser = argparse.ArgumentParser(
       description='Train a point-based transformer for action localization')
-    parser.add_argument('--config', metavar='DIR', default='./configs/thumos14_i3d.yaml', help='path to a config file')
+    parser.add_argument('--config', metavar='DIR', default='./configs/finediving_i3d.yaml', help='path to a config file')
     parser.add_argument('-p', '--print-freq', default=5, type=int, help='print frequency (default: 10 iterations)')
     parser.add_argument('-c', '--ckpt-freq', default=5, type=int, help='checkpoint frequency (default: every 5 epochs)')
     parser.add_argument('--output', default='deepspeed', type=str, help='name of exp folder (default: none)')
-    parser.add_argument('--resume', default='', type=str, metavar='PATH', help='path to a checkpoint (default: none)')
+    parser.add_argument('--resume', default='', type=str, metavar='PATH', help='path to a DeepSpeed checkpoint tag (default: none)')
+    parser.add_argument('--init_from', default='', type=str, metavar='PATH',
+                        help='initialise weights from a DeepSpeed checkpoint dir or .pt (strict=False); for second-stage training')
+    parser.add_argument('--freeze_except', default='', type=str,
+                        help='comma-separated substrings; only parameters whose names contain one are trained')
+    parser.add_argument('--feature_cache', default='', type=str, metavar='DIR',
+                        help='directory of cached CLIP-encoder features per window (frozen-encoder stages)')
+    parser.add_argument('--select_metric', default='video_mAP', type=str,
+                        help='eval_results key used for best-model selection (e.g. video_held_mAP)')
+    parser.add_argument('--eval_only', action='store_true',
+                        help='evaluate the (init_from-)initialised model once and exit')
     parser.add_argument("--local_rank", default=-1, type=int, help="local_rank for distributed training on gpus")
     args = parser.parse_args()
     print(args.local_rank)

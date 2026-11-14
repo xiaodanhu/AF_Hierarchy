@@ -1,0 +1,121 @@
+{
+ "phrases": 39,
+ "n_attr": 26,
+ "splits": {
+  "s0_75": {
+   "dead_phrases": [],
+   "uncovered": []
+  },
+  "s0_50": {
+   "dead_phrases": [
+    "grooming_hands_legs",
+    "floor_install",
+    "interior_clean",
+    "animal_ride",
+    "water_board"
+   ],
+   "uncovered": []
+  },
+  "s1_75": {
+   "dead_phrases": [],
+   "uncovered": []
+  },
+  "s1_50": {
+   "dead_phrases": [
+    "music_wind"
+   ],
+   "uncovered": []
+  },
+  "s2_75": {
+   "dead_phrases": [],
+   "uncovered": []
+  },
+  "s2_50": {
+   "dead_phrases": [
+    "music_string_keys",
+    "run_walk"
+   ],
+   "uncovered": []
+  },
+  "s3_75": {
+   "dead_phrases": [],
+   "uncovered": []
+  },
+  "s3_50": {
+   "dead_phrases": [
+    "grooming_hands_legs",
+    "grooming_by_others",
+    "floor_install",
+    "racquet_wall"
+   ],
+   "uncovered": []
+  },
+  "s4_75": {
+   "dead_phrases": [],
+   "uncovered": []
+  },
+  "s4_50": {
+   "dead_phrases": [
+    "music_percussion",
+    "run_walk"
+   ],
+   "uncovered": []
+  },
+  "s5_75": {
+   "dead_phrases": [],
+   "uncovered": []
+  },
+  "s5_50": {
+   "dead_phrases": [
+    "music_wind",
+    "throw_field",
+    "animal_ride",
+    "water_swim_dive"
+   ],
+   "uncovered": []
+  },
+  "s6_75": {
+   "dead_phrases": [],
+   "uncovered": []
+  },
+  "s6_50": {
+   "dead_phrases": [
+    "grooming_face_mouth",
+    "music_wind",
+    "racquet_wall",
+    "animal_ride"
+   ],
+   "uncovered": []
+  },
+  "s7_75": {
+   "dead_phrases": [],
+   "uncovered": []
+  },
+  "s7_50": {
+   "dead_phrases": [],
+   "uncovered": []
+  },
+  "s8_75": {
+   "dead_phrases": [],
+   "uncovered": []
+  },
+  "s8_50": {
+   "dead_phrases": [
+    "grooming_hair",
+    "snow_slide"
+   ],
+   "uncovered": []
+  },
+  "s9_75": {
+   "dead_phrases": [],
+   "uncovered": []
+  },
+  "s9_50": {
+   "dead_phrases": [
+    "water_swim_dive"
+   ],
+   "uncovered": []
+  }
+ },
+ "mean_heldout_sibling_density_75": 1.14
+}

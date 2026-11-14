@@ -1,0 +1,22 @@
+{
+  "BaseballPitch": "ball throw",
+  "BasketballDunk": "court jump strike",
+  "Billiards": "implement strike",
+  "CleanAndJerk": "clean and jerk",
+  "CliffDiving": "aquatic dive",
+  "CricketBowling": "ball throw",
+  "CricketShot": "implement strike",
+  "Diving": "aquatic dive",
+  "FrisbeeCatch": "frisbee catch",
+  "GolfSwing": "implement strike",
+  "HammerThrow": "field throw",
+  "HighJump": "jump field",
+  "JavelinThrow": "field throw",
+  "LongJump": "jump field",
+  "PoleVault": "jump field",
+  "Shotput": "field throw",
+  "SoccerPenalty": "soccer penalty",
+  "TennisSwing": "implement strike",
+  "ThrowDiscus": "field throw",
+  "VolleyballSpiking": "court jump strike"
+}

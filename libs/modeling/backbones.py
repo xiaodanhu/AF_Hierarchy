@@ -12,8 +12,10 @@ import numpy as np
 
 
 class CLIPEncoder(nn.Module):
-    def __init__(self, pretrained=True, num_frames=16, out_dim=768, image_size=224):
+    def __init__(self, pretrained=True, num_frames=16, out_dim=768, image_size=224,
+                 use_grad_checkpoint=False, clip_forward_chunk=0):
         super(CLIPEncoder, self).__init__()
+        self.clip_forward_chunk = int(clip_forward_chunk or 0)
 
         self.config = CLIPVisionConfig(image_size = image_size)
         # self.clip_image_encoder = CLIPModel.from_pretrained("openai/clip-vit-base-patch32",
@@ -31,38 +33,108 @@ class CLIPEncoder(nn.Module):
             # else:
                 # param.requires_grad = False
 
+        # Enable gradient checkpointing on the CLIP transformer (HF API).
+        # Trades ~30-40% recompute for large activation-memory savings, which
+        # is essential when CLIP processes many frames (batch * window_length).
+        self.use_grad_checkpoint = use_grad_checkpoint
+        if use_grad_checkpoint:
+            # HF requires use_cache=False with checkpointing
+            try:
+                self.clip_image_encoder.gradient_checkpointing_enable(
+                    gradient_checkpointing_kwargs={"use_reentrant": False}
+                )
+            except TypeError:
+                # transformers < 4.35 has no gradient_checkpointing_kwargs and
+                # its old API checkpoints with REENTRANT torch checkpointing.
+                # Reentrant + clip_forward_chunk > 0 runs the SAME CLIP layers
+                # in multiple checkpoint segments per step; each segment's
+                # nested backward fires the per-param grad hook, so DeepSpeed
+                # ZeRO-2 reduces the same param twice and asserts ("The
+                # parameter N has already been reduced"). Force the
+                # non-reentrant implementation as the default: safe globally
+                # because every other checkpoint call in this repo passes
+                # use_reentrant explicitly (which still wins over the default).
+                import functools
+                import torch.utils.checkpoint as _ckpt_mod
+                if not getattr(_ckpt_mod.checkpoint,
+                               '_fg_nonreentrant_default', False):
+                    _orig_ckpt = _ckpt_mod.checkpoint
+
+                    @functools.wraps(_orig_ckpt)
+                    def _ckpt_nonreentrant(function, *args,
+                                           use_reentrant=False, **kwargs):
+                        return _orig_ckpt(function, *args,
+                                          use_reentrant=use_reentrant,
+                                          **kwargs)
+
+                    _ckpt_nonreentrant._fg_nonreentrant_default = True
+                    _ckpt_mod.checkpoint = _ckpt_nonreentrant
+                self.clip_image_encoder.gradient_checkpointing_enable()
+            if hasattr(self.clip_image_encoder.config, "use_cache"):
+                self.clip_image_encoder.config.use_cache = False
+
         # Linear projection (if needed)
         if self.clip_image_encoder.config.hidden_size != out_dim:
             self.projection = nn.Linear(self.clip_image_encoder.config.hidden_size, out_dim)
         else:
             self.projection = nn.Identity()
 
-    def _encode_frames(self, pixel_values):
-        """Encode a batch of frames through CLIP. Separated for gradient checkpointing."""
-        last_hidden_state = self.clip_image_encoder(pixel_values=pixel_values).last_hidden_state
-        return last_hidden_state.mean(dim=1)
+    def build_teacher(self):
+        """[local] frozen CLIP teacher (vision tower + visual_projection of openai/clip-vit-base-patch32) for
+        CLIP-anchoring distillation: per-frame CLIP-aligned 512-d embeddings, no grad, eval mode."""
+        if getattr(self, 'teacher_vision', None) is not None:
+            return
+        from transformers import CLIPModel
+        m = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
+        self.teacher_vision = m.vision_model.eval()
+        self.teacher_proj = m.visual_projection.eval()
+        for p_ in list(self.teacher_vision.parameters()) + list(self.teacher_proj.parameters()):
+            p_.requires_grad = False
+        dev = next(self.clip_image_encoder.parameters()).device
+        self.teacher_vision.to(dev); self.teacher_proj.to(dev)
+        self._teacher_emb = None
+        print(f"[local] CLIP teacher built (frozen ViT-B/32 + visual_projection) on {dev}", flush=True)
+
+    def _teacher_forward(self, x):
+        """x: (n, 3, H, W) -> (n, 512) L2-normalized CLIP image embeddings (no grad)."""
+        n = x.shape[0]
+        chunk = self.clip_forward_chunk if self.clip_forward_chunk > 0 else 64
+        outs = []
+        with torch.no_grad():
+            for i in range(0, n, chunk):
+                po = self.teacher_vision(pixel_values=x[i:i + chunk]).pooler_output
+                outs.append(F.normalize(self.teacher_proj(po).float(), dim=-1))
+        return torch.cat(outs, dim=0)
 
     def forward(self, x):
         # Input shape: (batch_size, num_frames, channels, height, width)
         b, t, c, h, w = x.size()
 
-        # Pass through CLIP in chunks to avoid OOM
-        # Process frames in chunks, using gradient checkpointing for each chunk
-        x = x.contiguous().view(-1, c, h, w)  # (b*t, c, h, w)
-        chunk_size = 64  # Process 64 frames at a time
-        all_features = []
-        with torch.no_grad():
-            for i in range(0, x.shape[0], chunk_size):
-                chunk = x[i:i+chunk_size]
-                feat = self._encode_frames(chunk)
-                all_features.append(feat)
-        last_hidden_state = torch.cat(all_features, dim=0)
+        # Merge batch and temporal dimensions -> (b*t, c, h, w)
+        x = x.contiguous().view(-1, c, h, w)
+        n = x.shape[0]
 
-        # Extract features for each frame
-        last_hidden_state = last_hidden_state.view(b, t, -1)  # Shape: (batch_size, num_frames, embd_dim)
+        # Optionally chunk the per-frame CLIP forward to cap peak activation memory.
+        # Each HF-CLIP layer allocates working buffers proportional to n_frames * n_patches * mlp_dim,
+        # so processing (e.g.) 768 frames at once can be ~12x more expensive than 64 at a time.
+        # Gradient checkpointing only saves stored-between-layers activations, not within-layer working memory,
+        # hence chunking is still needed on top of it for large effective batches.
+        chunk = self.clip_forward_chunk if self.clip_forward_chunk > 0 else n
+        if chunk < n:
+            outs = []
+            for i in range(0, n, chunk):
+                hs = self.clip_image_encoder(pixel_values=x[i:i + chunk]).last_hidden_state.mean(dim=1)
+                outs.append(hs)
+            last_hidden_state = torch.cat(outs, dim=0)
+        else:
+            last_hidden_state = self.clip_image_encoder(pixel_values=x).last_hidden_state.mean(dim=1)
 
-        frame_features = self.projection(last_hidden_state) # Project features to match decoder input dimension
-        return frame_features.permute(0,2,1)
+        if getattr(self, 'teacher_vision', None) is not None:
+            self._teacher_emb = self._teacher_forward(x)             # (n, 512), same frame order as x
+        # Reshape back to (batch, num_frames, hidden), project, and return as (batch, hidden, T).
+        last_hidden_state = last_hidden_state.view(b, t, -1)
+        frame_features = self.projection(last_hidden_state)
+        return frame_features.permute(0, 2, 1)
 
 @register_backbone("ActionFormerWithCLIP")
 class ActionFormerWithCLIP(nn.Module):
@@ -82,12 +154,18 @@ class ActionFormerWithCLIP(nn.Module):
         path_pdrop = 0.0,          # droput rate for drop path
         use_abs_pe = False,        # use absolute position embedding
         use_rel_pe = False,        # use relative position embedding
-        pretrained=True
+        pretrained=True,
+        use_grad_checkpoint=False, # enable gradient checkpointing on CLIP
+        clip_forward_chunk=0,      # if >0, run CLIP on chunks of this many frames
     ):
         super(ActionFormerWithCLIP, self).__init__()
 
         # CLIP Encoder
-        self.encoder = CLIPEncoder(pretrained=pretrained, num_frames=max_seq_len, out_dim=input_dim, image_size=224)
+        self.encoder = CLIPEncoder(
+            pretrained=pretrained, num_frames=max_seq_len, out_dim=input_dim,
+            image_size=224, use_grad_checkpoint=use_grad_checkpoint,
+            clip_forward_chunk=clip_forward_chunk,
+        )
 
         # Decoder Initialization using make_backbone
         self.backbone = make_backbone(
@@ -111,8 +189,52 @@ class ActionFormerWithCLIP(nn.Module):
         )
 
     def forward(self, x, mask):
-        # Extract features using CLIP encoder
-        features = self.encoder(x)  # Shape: (batch_size, num_frames, embd_dim)
+        if x.dim() == 3:
+            # Pre-computed (cached) encoder output: (B, input_dim, T) with
+            # the padded timesteps to be filled by `cached_pad_feat`, the
+            # encoder's output for an all-zero (padding) frame, so the
+            # first embedding conv sees exactly what it sees on frames
+            # (frame path pads with zero images, not zero features).
+            # Set by the feature-cache loader (train_shard.py); the frame
+            # path below is untouched.
+            features = x
+            self._teacher_emb_bt = None   # cached-feature path: no pixels, no teacher
+            pad = getattr(self, 'cached_pad_feat', None)
+            if pad is not None:
+                m = mask.to(torch.bool)
+                features = torch.where(
+                    m, features, pad.to(features.dtype).view(1, -1, 1))
+        else:
+            # Frame path. Pixels may be shorter than the mask (preprocessing pads pixels only to the
+            # batch's longest window); positions >= x.shape[1] are padding. Encode the valid frames plus
+            # ONE copy of the constant padding frame and broadcast its feature: values and gradients are
+            # identical to encoding every padded frame (scripts/verify_clip_pad_skip.py), 1/9 of the work.
+            valid = mask.reshape(mask.shape[0], -1).bool()          # (B, T_mask)
+            B, T = valid.shape
+            Tx = x.shape[1]
+            valid_x = valid[:, :Tx]
+            self._teacher_emb_bt = None
+            if Tx == T and bool(valid.all()):
+                features = self.encoder(x)  # Shape: (batch_size, embd_dim, num_frames)
+                if getattr(self.encoder, '_teacher_emb', None) is not None:
+                    self._teacher_emb_bt = self.encoder._teacher_emb.view(B, T, -1)
+            else:
+                assert not bool(valid[:, Tx:].any()), "mask marks frames that were never provided"
+                x_valid = x[valid_x]                                  # (N, 3, H, W)
+                if bool((~valid_x).any()):
+                    pad_frame = x[:, :Tx][~valid_x][:1]
+                else:
+                    pad_frame = x.new_zeros((1,) + tuple(x.shape[2:]))  # == preprocessing padding_val 0.0
+                enc = self.encoder(torch.cat([x_valid, pad_frame], 0).unsqueeze(0))  # (1, C, N+1)
+                enc = enc.squeeze(0).transpose(0, 1)                  # (N+1, C)
+                feat_bt = enc[-1].unsqueeze(0).expand(B * T, enc.shape[1]).clone()
+                feat_bt[valid.reshape(-1)] = enc[:-1]
+                features = feat_bt.reshape(B, T, -1).permute(0, 2, 1) # (B, C, T_mask)
+                if getattr(self.encoder, '_teacher_emb', None) is not None:
+                    te = self.encoder._teacher_emb                     # (N+1, 512)
+                    te_bt = te[-1].unsqueeze(0).expand(B * T, te.shape[1]).clone()
+                    te_bt[valid.reshape(-1)] = te[:-1]
+                    self._teacher_emb_bt = te_bt.reshape(B, T, -1)     # (B, T_mask, 512)
 
         # Pass features to the decoder (backbone)
         output = self.backbone(features, mask)
@@ -254,8 +376,11 @@ class ConvTransformerBackbone(nn.Module):
         # inference: re-interpolate position embeddings for over-length sequences
         if self.use_abs_pe and (not self.training):
             if T >= self.max_len:
+                # interpolate lacks a BFloat16 CUDA kernel in torch < 2.1; compute in
+                # float32 then cast back to the working dtype
                 pe = F.interpolate(
-                    self.pos_embd, T, mode='linear', align_corners=False)
+                    self.pos_embd.to(torch.float32), T, mode='linear', align_corners=False
+                ).to(x.dtype)
             else:
                 pe = self.pos_embd
             # add pe to x

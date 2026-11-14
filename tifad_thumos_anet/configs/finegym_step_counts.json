@@ -1,0 +1,3106 @@
+{
+ "(VT) round-off, flic-flac with 0.5 turn on, stretched salto forward with 0.5 turn off": {
+  "counts": [
+   6,
+   8,
+   4
+  ],
+  "mean": 6,
+  "lists": [
+   [
+    "Begin with a running approach towards the vaulting table.",
+    "Execute a round-off, pushing off the floor with both feet.",
+    "Transition into a flic-flac, rotating 0.5 turn while airborne.",
+    "Land smoothly on the vaulting table, maintaining balance.",
+    "Execute a stretched salto forward, extending legs fully.",
+    "Complete the salto with another 0.5 turn, landing back on the floor."
+   ],
+   [
+    "Runner approaches the vault, hands gripping the sides.",
+    "Round-off begins with a jump onto the vault.",
+    "Arms extend upward, preparing for the flic-flac.",
+    "Flic-flac executed with a half-turn, arms crossing over head.",
+    "Body continues rotating as arms reach forward for the salto.",
+    "Salto forward performed, legs straightened in mid-air.",
+    "Half-turn completed during the salto, arms still extended forward.",
+    "Landing phase starts as feet touch down on the mat."
+   ],
+   [
+    "Perform a round-off, hands reaching towards floor for balance.",
+    "Execute a flic-flac with 0.5 turn, twisting mid-air.",
+    "Land and stretch legs out in a forward salto.",
+    "Complete the salto with a 0.5 turn off, landing back on feet."
+   ]
+  ]
+ },
+ "(VT) round-off, flic-flac on, stretched salto backward with 2 turn off": {
+  "counts": [
+   6,
+   5,
+   4
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "The gymnast runs up the mat, gaining momentum.",
+    "The gymnast performs a round-off, sliding onto the vaulting table.",
+    "The gymnast leaps onto the vaulting table, executing a flic-flac.",
+    "The gymnast stretches out, performing a salto backward.",
+    "The gymnast completes two full turns in the air during the salto.",
+    "The gymnast lands smoothly on the mat after the salto."
+   ],
+   [
+    "Runner approaches the vault, hands reach for the edge.",
+    "Body performs a flic-flac, mid-air, legs extended forward.",
+    "Vaulting body lands on the mat, then stretches.",
+    "Backward salto executed, body flips over once.",
+    "Second rotation completes as body lands onto the mat."
+   ],
+   [
+    "Perform a round-off, hands reaching forward, feet sliding.",
+    "Execute a flic-flac on the vaulting table, arms extended upwards.",
+    "Launch into a stretched salto backward, legs straight, head back.",
+    "Complete two turns in the air, body twisted, arms outstretched."
+   ]
+  ]
+ },
+ "(VT) round-off, flic-flac on, stretched salto backward with 1 turn off": {
+  "counts": [
+   7,
+   5,
+   4
+  ],
+  "mean": 5.333333333333333,
+  "lists": [
+   [
+    "The gymnast runs towards the vaulting table.",
+    "The gymnast performs a round-off, pushing off the floor.",
+    "The gymnast leaps onto the vaulting table, executing a flic-flac.",
+    "The gymnast lands on the vaulting table, maintaining balance.",
+    "The gymnast stretches out, preparing for the backward salto.",
+    "The gymnast performs a backward salto, rotating once in the air.",
+    "The gymnast lands on the mat, completing the round-off, flic-flac on, stretched salto backward with 1 turn off."
+   ],
+   [
+    "Runner approaches the vault, hands reach for the edge.",
+    "Body performs a flic-flac, mid-air, legs extended forward.",
+    "Transition into a stretched salto backward, feet pointing upwards.",
+    "Body rotates one full turn while in the air.",
+    "Landing on the mat, arms extend for balance and recovery."
+   ],
+   [
+    "Perform a round-off, hands reaching forward, feet sliding.",
+    "Execute a flic-flac on the vaulting table, arms extended upwards.",
+    "Launch into a stretched salto backward, legs extended straight.",
+    "Complete the salto with a 180-degree turn, landing firmly."
+   ]
+  ]
+ },
+ "(VT) round-off, flic-flac on, stretched salto backward with 1.5 turn off": {
+  "counts": [
+   6,
+   5,
+   4
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "The gymnast runs up the mat, gaining momentum.",
+    "The gymnast performs a round-off, sliding onto the vaulting table.",
+    "The gymnast leaps onto the vaulting table, executing a flic-flac.",
+    "The gymnast stretches out, preparing for the backward salto.",
+    "The gymnast performs a backward salto, rotating 1.5 times in the air.",
+    "The gymnast lands smoothly on the mat after the salto."
+   ],
+   [
+    "Runner approaches the vault, hands reach for the edge.",
+    "Body performs a flic-flac, mid-air, legs extended forward.",
+    "Transition into a stretched salto backward, feet pointing back.",
+    "Body rotates 1.5 times in mid-air, arms outstretched.",
+    "Landing on the mat, arms and legs recover."
+   ],
+   [
+    "Perform a round-off, hands reaching forward, feet sliding.",
+    "Execute a flic-flac on the vaulting table, arms extended upward.",
+    "Launch into a stretched salto backward, legs straight, head back.",
+    "Complete the salto, landing on both feet, arms lowering."
+   ]
+  ]
+ },
+ "(VT) round-off, flic-flac on, stretched salto backward with 2.5 turn off": {
+  "counts": [
+   10,
+   12,
+   4
+  ],
+  "mean": 8.666666666666666,
+  "lists": [
+   [
+    "The gymnast runs towards the vaulting table.",
+    "The gymnast performs a round-off, pushing off the floor.",
+    "The gymnast leaps onto the vaulting table, gaining momentum.",
+    "The gymnast executes a flic-flac, rotating in the air.",
+    "The gymnast lands on the vaulting table, maintaining balance.",
+    "The gymnast stretches out, preparing for the backward salto.",
+    "The gymnast performs a backward salto, tucking knees.",
+    "The gymnast completes the salto, landing on the mat.",
+    "The gymnast rotates 2.5 times in the air during the salto.",
+    "The gymnast lands on the mat, completing the round-off, flic-flac, and salto sequence."
+   ],
+   [
+    "Runner approaches the vault, hands gripping the sides.",
+    "Round-off begins with a jump onto the vault.",
+    "Arms extend forward, preparing for the flic-flac.",
+    "Flic-flac executed with a quick flip over the vault.",
+    "Body arches over the vault's surface during the flic-flac.",
+    "Transition to a stretched salto backward with legs extended.",
+    "Landing starts with a single leg before the second foot touches.",
+    "Full extension of the body during the backward salto.",
+    "Arms are fully extended above the head for balance.",
+    "Body rotates 2.5 times through the air.",
+    "Final landing on both feet after the salto backward.",
+    "Body returns to a stable standing position on the mat."
+   ],
+   [
+    "Perform a round-off, hands reaching forward, feet sliding.",
+    "Execute a flic-flac on the vaulting table, arms extended upward.",
+    "Launch into a stretched salto backward, legs extended straight.",
+    "Complete the salto with a 2.5 turn off, rotating through the air."
+   ]
+  ]
+ },
+ "(VT) round-off, flic-flac on, stretched salto backward off": {
+  "counts": [
+   7,
+   6,
+   5
+  ],
+  "mean": 6,
+  "lists": [
+   [
+    "Begin with a running approach towards the vault.",
+    "Execute a round-off, pushing off the floor with both hands.",
+    "Land smoothly after the round-off, preparing for the next movement.",
+    "Perform a flic-flac, rotating the body mid-air.",
+    "Land on the vaulting table, maintaining balance.",
+    "Execute a stretched salto backward, extending legs and body.",
+    "Land on the mat behind the vault, completing the sequence."
+   ],
+   [
+    "Runner approaches the vault, hands gripping the sides.",
+    "One foot plants firmly on the springboard, the other lifts.",
+    "Body arches forward with a round-off, transitioning into a flic-flac.",
+    "Arms extend upward, body twists mid-air, preparing for the salto.",
+    "Legs straighten out, body extends horizontally before beginning descent.",
+    "Hands reach down towards the mat, guiding the landing smoothly."
+   ],
+   [
+    "Perform a round-off, hands gripping the starting point.",
+    "Execute a flic-flac on the vaulting table, body arching upwards.",
+    "Land smoothly onto the vaulting table, maintaining balance.",
+    "Execute a stretched salto backward, legs fully extended, feet pointed.",
+    "Land softly on the floor, arms extended for stability."
+   ]
+  ]
+ },
+ "(FX) switch leap with 0.5 turn": {
+  "counts": [
+   4,
+   5,
+   6
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "The gymnast begins by running towards the mat.",
+    "The gymnast leaps onto the mat with extended arms.",
+    "The gymnast performs a half-turn while airborne.",
+    "The gymnast lands back on the mat with a controlled landing."
+   ],
+   [
+    "Runner approaches the switch leap position on the mat.",
+    "Athlete leaps into the air with both legs extended.",
+    "Body rotates half a turn in mid-air while arms extend for balance.",
+    "Feet switch positions in the air, landing back-to-back.",
+    "Athlete lands softly on the mat, completing the switch leap."
+   ],
+   [
+    "The gymnast begins by crouching low to the mat.",
+    "They explosively extend their legs upward in a powerful jump.",
+    "The gymnast twists their torso 0.5 turn mid-air.",
+    "Arms are raised above the head, aiding balance and rotation.",
+    "Upon landing, they absorb impact with bent knees and straight arms.",
+    "They quickly regain balance and prepare for the next move."
+   ]
+  ]
+ },
+ "(FX) switch leap with 1 turn": {
+  "counts": [
+   4,
+   5,
+   3
+  ],
+  "mean": 4,
+  "lists": [
+   [
+    "The gymnast runs up to the mat, preparing for the leap.",
+    "The gymnast leaps onto the mat with both feet, extending arms for balance.",
+    "The gymnast performs a half-turn in mid-air while maintaining control.",
+    "The gymnast lands back on the mat, absorbing the impact with bent knees."
+   ],
+   [
+    "Runner takes initial stride, foot lands flat on mat.",
+    "Body rotates, arms extend upward for balance.",
+    "Leap occurs, both legs fully extended.",
+    "Body twists mid-air, one leg swings over.",
+    "Land is made, body stabilizes after rotation."
+   ],
+   [
+    "Runner takes off, leaps horizontally.",
+    "Leaper rotates one full turn in mid-air.",
+    "Leaper lands, feet first, on the mat."
+   ]
+  ]
+ },
+ "(FX) split leap with 1 turn": {
+  "counts": [
+   3,
+   4,
+   4
+  ],
+  "mean": 3.6666666666666665,
+  "lists": [
+   [
+    "Gymnast leaps into a split position on the mat.",
+    "Gymnast performs a 180-degree turn while maintaining the split.",
+    "Gymnast lands back on both feet after completing the turn."
+   ],
+   [
+    "Runner takes initial position, legs extended, preparing to spring.",
+    "Runner leaps, splitting into a split position mid-air.",
+    "Runner's arms extend for balance as they rotate through one full turn.",
+    "Runner begins to land, transitioning from split to a controlled landing."
+   ],
+   [
+    "The gymnast begins in a split position, feet apart.",
+    "One leg extends upward while the other remains grounded.",
+    "The extended leg performs a turn in mid-air.",
+    "The gymnast lands back onto both feet, regaining balance."
+   ]
+  ]
+ },
+ "(FX) split leap with 1.5 turn or more": {
+  "counts": [
+   4,
+   6,
+   5
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "The gymnast runs up to the mat, gaining momentum.",
+    "The gymnast leaps into the air, splitting their legs wide apart.",
+    "The gymnast rotates 1.5 times while airborne, maintaining control.",
+    "The gymnast lands smoothly on the mat, completing the split leap."
+   ],
+   [
+    "Runner takes initial position, legs extended, preparing to spring.",
+    "Runner leaps, extending arms forward for balance, legs separating.",
+    "Runner transitions into split position, reaching one hand towards the ground.",
+    "Runner begins to rotate, arms sweeping outwards for stability during turn.",
+    "Runner completes half a turn, body aligning back to starting split position.",
+    "Runner lands gracefully, bringing hands together, completing the sequence."
+   ],
+   [
+    "The gymnast begins in a split position, feet apart.",
+    "The gymnast jumps off the floor with both legs extended.",
+    "The gymnast twists in mid-air, completing 1.5 turns.",
+    "The gymnast lands on both feet, maintaining balance.",
+    "The gymnast then transitions to a forward roll, landing smoothly."
+   ]
+  ]
+ },
+ "(FX) switch leap (leap forward with leg change to cross split)": {
+  "counts": [
+   4,
+   5,
+   6
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "The gymnast crouches low, preparing for the leap.",
+    "The gymnast leaps forward, extending one leg high.",
+    "The gymnast changes leg position mid-air, preparing for the split.",
+    "The gymnast lands smoothly on the mat, completing the switch leap."
+   ],
+   [
+    "The gymnast leaps forward, extending legs in unison.",
+    "Right leg crosses over left leg mid-air, legs split.",
+    "Arms reach forward for balance and momentum control.",
+    "Body rotates slightly as legs continue to separate.",
+    "Landing on both feet, body balances, arms adjust position."
+   ],
+   [
+    "The gymnast begins in a ready position, feet apart.",
+    "She leaps forward, extending her arms upward.",
+    "As she leaps, she brings one leg forward and the other backward.",
+    "Her legs cross at mid-air during the leap.",
+    "Upon landing, her body maintains balance with bent knees.",
+    "She lands softly on the mat, completing the switch leap."
+   ]
+  ]
+ },
+ "(FX) split jump with 1 turn": {
+  "counts": [
+   3,
+   7,
+   3
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "The gymnast runs up, leaps into the air, splitting their legs wide.",
+    "The gymnast rotates once in mid-air while maintaining the split position.",
+    "The gymnast lands back on both feet, completing the split jump with one turn."
+   ],
+   [
+    "Runner takes initial stride, leaps into air with bent legs.",
+    "Body rotates through mid-air, arms extended for balance.",
+    "Split position achieved in flight, legs separated widely.",
+    "Arms continue to stabilize during rotation phase.",
+    "Body begins to straighten, preparing for landing.",
+    "Feet make contact with mat, bending knees to absorb impact.",
+    "Arms reach down towards feet for final landing position."
+   ],
+   [
+    "Runner takes off, splits legs mid-air, feet apart.",
+    "Body twists 360 degrees while airborne, arms extend.",
+    "Feet rejoin as body lands back on mat, landing softly."
+   ]
+  ]
+ },
+ "(FX) split jump (leg separation 180 degree parallel to the floor)": {
+  "counts": [
+   6,
+   5,
+   6
+  ],
+  "mean": 5.666666666666667,
+  "lists": [
+   [
+    "The gymnast begins with a crouched position on the mat.",
+    "She extends her legs outwards in a wide split.",
+    "Her arms are raised above her head for balance.",
+    "She jumps off the mat, maintaining the split position.",
+    "Mid-air, she briefly straightens her legs.",
+    "She lands back on the mat, maintaining the split position."
+   ],
+   [
+    "The gymnast leaps onto the mat with one leg extended straight out.",
+    "The other leg extends into the air, forming a 180-degree angle with the first leg.",
+    "Both legs remain parallel to the floor throughout the jump.",
+    "The gymnast lands softly on the mat with both legs extended.",
+    "The gymnast maintains the 180-degree leg separation until the jump concludes."
+   ],
+   [
+    "The gymnast begins with a crouched position on the mat.",
+    "The gymnast leaps off the ground, extending one leg forward sharply.",
+    "The other leg is quickly extended backward, forming a straight line with the first leg.",
+    "The body is aligned horizontally, parallel to the floor.",
+    "Both legs maintain the 180-degree angle separation throughout the jump.",
+    "The gymnast lands softly back on both feet on the mat."
+   ]
+  ]
+ },
+ "(FX) johnson with additional 0.5 turn": {
+  "counts": [
+   4,
+   6,
+   5
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "Johnson leap begins with a powerful jump off the floor.",
+    "Body twists mid-air, completing a full rotation.",
+    "Additional 0.5 turn adds complexity to the rotation.",
+    "Landing is executed with controlled foot placement on the mat."
+   ],
+   [
+    "Runner approaches the mat, crouching low.",
+    "Leap begins, legs extended forward.",
+    "Arms swing back, aiding momentum.",
+    "Body rotates mid-air, 0.5 turn visible.",
+    "Landing phase starts, arms reach out for balance.",
+    "Body stabilizes on mat, hands flat for support."
+   ],
+   [
+    "John starts from a standing position, arms extended forward.",
+    "He leaps into the air with a strong jump, bending his knees.",
+    "John's body twists mid-air, performing a half-turn.",
+    "His arms are positioned to help stabilize during the twist.",
+    "John lands smoothly on the mat, completing the Johnson with an additional 0.5 turn."
+   ]
+  ]
+ },
+ "(FX) straddle pike or side split jump with 1 turn": {
+  "counts": [
+   5,
+   4,
+   4
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "The gymnast begins by straddling the mat, legs wide apart.",
+    "She then lowers her body into a pike position, bending at the hips.",
+    "Next, she extends her arms overhead, preparing for the jump.",
+    "She leaps off the mat, rotating 180 degrees in mid-air.",
+    "Finally, she lands back on the mat, completing the straddle pike or side split jump with 1 turn."
+   ],
+   [
+    "Begin with a deep straddle split position on the mat.",
+    "Transition into a pike position, legs straight up.",
+    "Execute a full turn while in the air, body twisting.",
+    "Land back on both feet on the mat, completing the jump."
+   ],
+   [
+    "The gymnast begins in a straddle position on the mat.",
+    "They execute a pike, bending at the hips while straightening the legs.",
+    "The gymnast leaps off the ground, rotating their body once mid-air.",
+    "They land back on the mat in the original straddle position."
+   ]
+  ]
+ },
+ "(FX) switch leap to ring position": {
+  "counts": [
+   4,
+   6,
+   4
+  ],
+  "mean": 4.666666666666667,
+  "lists": [
+   [
+    "The gymnast leaps off the floor with bent knees.",
+    "The gymnast extends her legs upward in a split position.",
+    "The gymnast transitions into a handstand on the mat.",
+    "The gymnast lowers herself back to the mat, landing softly."
+   ],
+   [
+    "The gymnast leaps onto the mat with extended arms.",
+    "The gymnast tucks their legs into a compact position mid-air.",
+    "The gymnast extends their legs horizontally while keeping their body aligned.",
+    "The gymnast tucks their head and pulls their knees up towards their chest.",
+    "The gymnast releases their legs back to an extended horizontal position.",
+    "The gymnast lands softly on the mat with arms raised for balance."
+   ],
+   [
+    "The gymnast begins with a running start, propelling forward.",
+    "The gymnast leaps high off the ground, arms extended upward.",
+    "The gymnast rotates mid-air, twisting their body to align with the ring position.",
+    "The gymnast lands softly on the mat, maintaining balance and poise."
+   ]
+  ]
+ },
+ "(FX) stag jump": {
+  "counts": [
+   5,
+   4,
+   5
+  ],
+  "mean": 4.666666666666667,
+  "lists": [
+   [
+    "The gymnast runs up with bent knees, arms extended forward.",
+    "The gymnast leaps into the air, extending legs straight out horizontally.",
+    "The gymnast tucks the head and bends the knees mid-air for a compact form.",
+    "The gymnast extends the legs again, preparing for landing.",
+    "The gymnast lands softly on the mat, absorbing impact with bent knees."
+   ],
+   [
+    "The gymnast leaps onto the mat with extended arms.",
+    "The gymnast tucks their head down in mid-air.",
+    "The gymnast straightens out their legs while maintaining balance.",
+    "The gymnast lands softly on both feet, completing the stag jump."
+   ],
+   [
+    "The gymnast begins with a deep squat, preparing to launch.",
+    "The gymnast extends her arms forward, initiating the takeoff.",
+    "The gymnast leaps into the air, rotating forward as she goes.",
+    "The gymnast performs a full twist in mid-air, aligning her body.",
+    "The gymnast lands gracefully on the mat, maintaining control throughout."
+   ]
+  ]
+ },
+ "(FX) 2 turn with free leg held upward in 180 split position throughout turn": {
+  "counts": [
+   6,
+   3,
+   4
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "Gymnast begins in a 180 split position on the mat.",
+    "Free leg is held upward while the other leg remains extended.",
+    "Body rotates 180 degrees around the axis formed by the extended leg.",
+    "Core engages to maintain balance during the turn.",
+    "Arms may assist in maintaining balance and control.",
+    "Turn completes as the gymnast returns to the starting split position."
+   ],
+   [
+    "Gymnast extends free leg upward, balancing on one leg.",
+    "Gymnast rotates body 180 degrees while maintaining split position.",
+    "Gymnast returns to starting position with free leg held upward."
+   ],
+   [
+    "Gymnast begins standing, one leg extended upwards.",
+    "Body rotates around one leg while the other leg remains held up.",
+    "The body completes a 180-degree rotation with the extended leg.",
+    "The gymnast lands on both feet after completing the turn."
+   ]
+  ]
+ },
+ "(FX) 2 turn in tuck stand on one leg, free leg straight throughout turn": {
+  "counts": [
+   5,
+   8,
+   5
+  ],
+  "mean": 6,
+  "lists": [
+   [
+    "Begin in a tuck position with legs together and arms extended.",
+    "Lift one leg off the ground while keeping the other leg straight.",
+    "Rotate the body around the standing leg, maintaining the straight leg.",
+    "Continue rotating until the desired number of turns is completed.",
+    "Land back in a controlled manner onto both feet."
+   ],
+   [
+    "Begin standing with legs together, arms extended for balance.",
+    "Bend knee slightly while keeping torso upright.",
+    "Extend one leg forward, tucking the other close to the body.",
+    "Maintain tuck position, ensuring the extended leg remains straight.",
+    "Rotate the body in a controlled manner using the bent knee.",
+    "Continue rotating until reaching the desired number of turns.",
+    "Straighten the extended leg, keeping the tucked leg in place.",
+    "Lower the body back to the ground in a controlled manner."
+   ],
+   [
+    "Begin in a tuck position with legs drawn up.",
+    "Place one foot on the ground, keeping the other leg straight.",
+    "Rotate the body in a circle on the floor.",
+    "Maintain a straight posture with the free leg extended.",
+    "Complete the turn, ending in a stable position."
+   ]
+  ]
+ },
+ "(FX) 3 turn on one leg, free leg optional below horizontal": {
+  "counts": [
+   4,
+   4,
+   6
+  ],
+  "mean": 4.666666666666667,
+  "lists": [
+   [
+    "Begin with a standing position on one leg.",
+    "Extend the free leg horizontally while maintaining balance.",
+    "Rotate the body around the fixed leg three times.",
+    "Land back on the starting leg with the free leg optional below horizontal."
+   ],
+   [
+    "Begin with a stable position on one leg, free leg extended below horizontal.",
+    "Execute a circular turn on the stationary leg.",
+    "Maintain balance while turning, free leg adjusting for stability.",
+    "Complete the turn, preparing to bring the free leg back to a standing position."
+   ],
+   [
+    "Begin with feet together, legs straight, and arms extended.",
+    "Swing free leg below horizontal while rotating torso.",
+    "Transfer weight onto one leg, bending knee slightly.",
+    "Extend free leg upward and slightly outward, maintaining balance.",
+    "Rotate hips and torso to complete the 3-turn motion.",
+    "Land softly, arms positioned for stability, free leg relaxed."
+   ]
+  ]
+ },
+ "(FX) 2 turn on one leg, free leg optional below horizontal": {
+  "counts": [
+   5,
+   5,
+   5
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "Begin with feet together, body upright.",
+    "Extend one leg upward, keeping balance.",
+    "Rotate body around the extended leg.",
+    "Maintain balance while rotating.",
+    "Land back on both feet, completing the turn."
+   ],
+   [
+    "Begin with a stable position on one leg, free leg extended below horizontal.",
+    "Shift weight onto the extended leg, lifting the free leg slightly.",
+    "Rotate the upper body while keeping the extended leg steady.",
+    "Maintain balance by shifting weight back to the initial leg after rotation.",
+    "Land smoothly back in the starting position, ready to repeat if needed."
+   ],
+   [
+    "Begin in a standing position with one leg extended forward.",
+    "Bend the other knee, placing the free leg below horizontal.",
+    "Rotate the body, focusing on the extended leg.",
+    "Maintain balance and control throughout the rotation.",
+    "Land softly on the floor, completing the turn."
+   ]
+  ]
+ },
+ "(FX) 1 turn on one leg, free leg optional below horizontal": {
+  "counts": [
+   4,
+   5,
+   5
+  ],
+  "mean": 4.666666666666667,
+  "lists": [
+   [
+    "Begin with one leg extended upward, free leg relaxed.",
+    "Rotate the upper body around the extended leg.",
+    "Maintain balance on the extended leg throughout the rotation.",
+    "Complete the turn, landing back on both feet."
+   ],
+   [
+    "Begin with a stable stance, one leg extended upward.",
+    "Extend the free leg downward, keeping it optional below horizontal.",
+    "Execute a full rotation around the vertical axis using the supporting leg.",
+    "Maintain balance throughout the turn, ensuring a smooth transition.",
+    "Land softly back on the floor exercise mat upon completion of the turn."
+   ],
+   [
+    "Begin in a standing position with one leg extended forward.",
+    "Bend the other knee, placing the free leg below horizontal.",
+    "Rotate the body around the extended leg using the core muscles.",
+    "Maintain balance while turning, keeping the free leg close to the floor.",
+    "Complete the turn by straightening both legs and landing in a balanced stance."
+   ]
+  ]
+ },
+ "(FX) 2 turn or more with heel of free leg forward at horizontal throughout turn": {
+  "counts": [
+   5,
+   5,
+   7
+  ],
+  "mean": 5.666666666666667,
+  "lists": [
+   [
+    "The gymnast positions one leg on the floor, balancing on the other.",
+    "The gymnast extends the free leg horizontally, keeping it straight.",
+    "The gymnast rotates the body around the fixed leg, maintaining balance.",
+    "The gymnast continues the rotation, ensuring the free leg remains horizontal.",
+    "The gymnast completes the turn, returning to the starting position."
+   ],
+   [
+    "Begin standing on one leg, with the other leg extended straight out horizontally.",
+    "Twist torso and hips in a circular motion while maintaining balance on the supporting leg.",
+    "Extend free leg horizontally, keeping heel lifted and aligned with the supporting leg.",
+    "Maintain horizontal position of free leg while completing multiple turns around the body.",
+    "Slowly bring free leg back towards the supporting leg, ending in a balanced stance."
+   ],
+   [
+    "The gymnast begins by positioning their body upright on the mat.",
+    "They extend one leg forward with the heel pointing straight ahead.",
+    "The gymnast initiates a turn while keeping the extended leg horizontal.",
+    "Throughout the turn, the gymnast maintains balance on the supporting leg.",
+    "The turn continues smoothly as the gymnast completes the required rotations.",
+    "Upon finishing the turns, the gymnast returns the extended leg to the starting position.",
+    "The gymnast lands softly on both feet, completing the exercise."
+   ]
+  ]
+ },
+ "(FX) 1 turn with heel of free leg forward at horizontal throughout turn": {
+  "counts": [
+   6,
+   4,
+   7
+  ],
+  "mean": 5.666666666666667,
+  "lists": [
+   [
+    "The gymnast positions one leg straight out horizontally.",
+    "The other leg remains bent, supporting the body.",
+    "The torso rotates around the straight leg.",
+    "The arms extend outward for balance during rotation.",
+    "The free leg's heel is kept forward throughout the turn.",
+    "The turn completes as the body returns to an upright position."
+   ],
+   [
+    "Begin standing on one leg with the other extended horizontally behind.",
+    "Maintain balance while turning in place, keeping the free leg horizontal.",
+    "Continue the turn while focusing on extending the free leg forward.",
+    "Complete the turn by bringing the free leg back down to the starting position."
+   ],
+   [
+    "The gymnast begins standing, weight evenly distributed.",
+    "One foot lifts, placing the heel on the floor.",
+    "The body leans slightly towards the lifted leg.",
+    "The opposite arm extends outwards for balance.",
+    "The body rotates around the lifted leg, keeping the heel grounded.",
+    "The arms move rhythmically, maintaining balance during the rotation.",
+    "The rotation continues until the gymnast completes the turn."
+   ]
+  ]
+ },
+ "(FX) arabian double salto tucked": {
+  "counts": [
+   4,
+   4,
+   4
+  ],
+  "mean": 4,
+  "lists": [
+   [
+    "The gymnast runs up with bent knees, arms extended forward.",
+    "The gymnast leaps into the air, tucking their head and legs tightly.",
+    "The gymnast performs two flips in the air, maintaining a tucked position.",
+    "The gymnast lands on the mat, extending their arms for balance."
+   ],
+   [
+    "The gymnast leaps onto the mat with extended arms.",
+    "She rotates her body mid-air, tucking her legs.",
+    "Her hands reach down towards her feet during the tuck.",
+    "She extends her arms again upon landing, absorbing impact."
+   ],
+   [
+    "The gymnast begins with a running start, propelling off the mat.",
+    "She extends her arms and legs into a split leap.",
+    "Her body tucks as she rotates mid-air, maintaining a tight form.",
+    "She lands on both feet, completing the double salto tucked."
+   ]
+  ]
+ },
+ "(FX) salto forward tucked": {
+  "counts": [
+   5,
+   8,
+   5
+  ],
+  "mean": 6,
+  "lists": [
+   [
+    "The gymnast runs up with bent knees, arms extended forward.",
+    "The gymnast leaps into the air, tucking their head and legs tightly.",
+    "The gymnast rotates in the air, maintaining a tucked position.",
+    "The gymnast extends their body, straightening their legs and arms.",
+    "The gymnast lands softly on the mat, absorbing impact with bent knees."
+   ],
+   [
+    "Runner takes initial stride, legs extended forward.",
+    "Body bends at hips, arms reach upward for momentum.",
+    "Arms swing forward, leg drive propels takeoff.",
+    "Body tucks in tight, knees draw up to chest.",
+    "Arms cross over, body aligns with tuck position.",
+    "Legs extend outwards, forming straight line above.",
+    "Body rotates slightly, preparing for landing.",
+    "Arms swing back, aiding in landing posture."
+   ],
+   [
+    "The gymnast begins with a running start, propelling forward.",
+    "The gymnast extends arms outwards, preparing for takeoff.",
+    "The gymnast leaps into the air, rotating forward.",
+    "The gymnast tucks their legs into a compact position mid-air.",
+    "The gymnast completes the rotation and lands on the mat."
+   ]
+  ]
+ },
+ "(FX) aerial walkover forward": {
+  "counts": [
+   4,
+   6,
+   5
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "The gymnast runs up the mat with extended arms.",
+    "The gymnast leaps into the air, tucking their body.",
+    "The gymnast performs a forward somersault in mid-air.",
+    "The gymnast lands on the mat with bent knees and arms extended."
+   ],
+   [
+    "The gymnast extends her legs straight above her head.",
+    "She rotates her body forward in an arc.",
+    "Her arms swing upward in a fluid motion.",
+    "She transitions into a pike position with knees bent.",
+    "The gymnast then extends her legs forward in a straight line.",
+    "She lands softly on the mat, maintaining balance."
+   ],
+   [
+    "The gymnast begins with a running start down the mat.",
+    "Leaping into the air, arms extend forward for balance.",
+    "The body rotates in the air, legs straight out in front.",
+    "The gymnast tucks the legs under, preparing for landing.",
+    "Landing on both feet, arms remain extended for stability."
+   ]
+  ]
+ },
+ "(FX) salto forward stretched with 2 twist": {
+  "counts": [
+   4,
+   5,
+   5
+  ],
+  "mean": 4.666666666666667,
+  "lists": [
+   [
+    "The gymnast runs up the mat, gaining momentum.",
+    "The gymnast leaps into the air, extending their body horizontally.",
+    "The gymnast performs two twists in mid-air, rotating their body.",
+    "The gymnast lands back on the mat, maintaining balance and control."
+   ],
+   [
+    "Runner takes initial stride, legs extended forward.",
+    "Body bends at hips, arms reach overhead.",
+    "Runner leaps into the air, rotating twice.",
+    "Land on feet, arms extending upwards.",
+    "Body twists mid-air, arms crossing over head."
+   ],
+   [
+    "The gymnast begins in a crouched position on the mat.",
+    "The gymnast leaps off the ground with arms extended forward.",
+    "The gymnast completes one full twist in mid-air while maintaining arm extension.",
+    "The gymnast rotates a second time, extending legs to perform a split.",
+    "The gymnast lands back on the mat, arms slightly bent for balance."
+   ]
+  ]
+ },
+ "(FX) salto forward stretched with 1 twist": {
+  "counts": [
+   4,
+   5,
+   4
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "The gymnast runs up the mat, gaining momentum.",
+    "The gymnast leaps into the air, extending their body horizontally.",
+    "The gymnast twists their body once mid-air while maintaining balance.",
+    "The gymnast lands back on the mat, completing the salto forward stretched with 1 twist."
+   ],
+   [
+    "The gymnast extends her legs forward, preparing to launch.",
+    "She plants both hands on the mat simultaneously, generating momentum.",
+    "The gymnast rotates her body mid-air, twisting once.",
+    "Her arms reach out to stabilize her body during the twist.",
+    "The gymnast lands softly on the mat, completing the salto forward stretched with 1 twist."
+   ],
+   [
+    "The gymnast begins in a crouched position on the mat.",
+    "The gymnast leaps off the ground with arms extended forward.",
+    "The gymnast completes a full twist in mid-air while maintaining arm extension.",
+    "The gymnast lands back on the mat, arms extended for balance."
+   ]
+  ]
+ },
+ "(FX) salto forward stretched with 1.5 twist": {
+  "counts": [
+   4,
+   5,
+   3
+  ],
+  "mean": 4,
+  "lists": [
+   [
+    "The gymnast runs up the mat, gaining momentum.",
+    "The gymnast leaps into the air, extending their body horizontally.",
+    "The gymnast twists their body 1.5 times while airborne.",
+    "The gymnast lands back on the mat, completing the salto forward stretched with 1.5 twist."
+   ],
+   [
+    "Runner takes initial stride, legs extended forward.",
+    "Body bends at hips, arms reach overhead.",
+    "Runner leaps into the air, rotating 1.5 times.",
+    "Legs extend straight in front, arms continue rotating overhead.",
+    "Runner lands on mat, body absorbing impact with bent knees."
+   ],
+   [
+    "Runner takes off, arms extended forward, legs straight.",
+    "Body twists 1.5 times mid-air, hands near feet.",
+    "Landing occurs with bent knees and arms still outstretched."
+   ]
+  ]
+ },
+ "(FX) salto forward stretched, feet land together": {
+  "counts": [
+   6,
+   9,
+   4
+  ],
+  "mean": 6.333333333333333,
+  "lists": [
+   [
+    "The gymnast runs up with bent knees, arms extended forward.",
+    "The gymnast leaps into the air, extending legs fully.",
+    "The gymnast's body twists slightly mid-air for balance.",
+    "The gymnast's hands reach out to touch the mat.",
+    "The gymnast's legs straighten as they approach the mat.",
+    "The gymnast lands on the mat with both feet touching simultaneously."
+   ],
+   [
+    "The gymnast leaps forward with arms extended, high off the ground.",
+    "The legs are straight and fully extended during the leap.",
+    "As the gymnast reaches peak height, the body twists slightly for balance.",
+    "The arms begin to flex and lower towards the mat.",
+    "The body starts to arch upwards, preparing for landing.",
+    "The legs bend at the knees, absorbing the impact.",
+    "The arms fully extend again for additional stability upon landing.",
+    "The feet make contact with the mat, landing together smoothly.",
+    "The body absorbs the final shock as the gymnast lands softly on the mat."
+   ],
+   [
+    "The gymnast begins with a running start, arms extended.",
+    "The gymnast jumps high, body arched in mid-air.",
+    "The gymnast extends legs forward, feet parallel and touching.",
+    "The gymnast lands gracefully on the mat, feet together, arms slightly bent."
+   ]
+  ]
+ },
+ "(FX) double salto backward stretched": {
+  "counts": [
+   6,
+   5,
+   6
+  ],
+  "mean": 5.666666666666667,
+  "lists": [
+   [
+    "The gymnast runs up with extended arms and legs.",
+    "The gymnast leaps into the air, bending knees and arching back.",
+    "The gymnast extends arms and legs fully in mid-air, body arched.",
+    "The gymnast tucks the body, bringing knees towards chest.",
+    "The gymnast straightens out, extending arms and legs again.",
+    "The gymnast lands on the mat, absorbing impact with bent knees."
+   ],
+   [
+    "The gymnast leaps forward with both legs extended.",
+    "She then performs a backward somersault.",
+    "Upon landing, she extends her arms for balance.",
+    "She transitions into a split position on the mat.",
+    "Finally, she lands back on both feet."
+   ],
+   [
+    "The gymnast begins with a running start towards the mat.",
+    "The gymnast leaps high, arms extended forward.",
+    "Mid-air, the gymnast bends knees and tucks head back.",
+    "The gymnast completes a full somersault, landing on back.",
+    "The gymnast then extends legs straight and arms outstretched.",
+    "The gymnast maintains balance and posture, completing the move."
+   ]
+  ]
+ },
+ "(FX) salto backward stretched with 3 twist": {
+  "counts": [
+   4,
+   5,
+   5
+  ],
+  "mean": 4.666666666666667,
+  "lists": [
+   [
+    "The gymnast runs up the mat, gaining momentum.",
+    "The gymnast leaps backward, extending their body mid-air.",
+    "The gymnast twists three times in the air, maintaining a stretched position.",
+    "The gymnast lands on the mat, absorbing the impact with bent knees."
+   ],
+   [
+    "The gymnast extends her legs backward, preparing to launch.",
+    "She plants both hands on the mat, initiating the upward rotation.",
+    "As she arches her back, she begins the first twist.",
+    "She continues the upward momentum, completing the second twist.",
+    "In mid-air, she finishes the third twist before landing softly on the mat."
+   ],
+   [
+    "The gymnast begins in a standing position, feet shoulder-width apart.",
+    "The gymnast bends knees and leans back, preparing for the backward motion.",
+    "The gymnast leaps backward, landing on the mat.",
+    "The gymnast rotates three times in mid-air, using the momentum from the backward leap.",
+    "The gymnast lands on the mat, completing the salto backward stretched with 3 twist."
+   ]
+  ]
+ },
+ "(FX) salto backward stretched with 2 twist": {
+  "counts": [
+   4,
+   5,
+   6
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "The gymnast runs up the mat, gaining momentum.",
+    "The gymnast leaps backward, extending their body mid-air.",
+    "The gymnast twists their body twice while airborne.",
+    "The gymnast lands on the mat, completing the backward stretched salto with two twists."
+   ],
+   [
+    "The gymnast extends her legs backward, preparing to launch.",
+    "She plants both hands on the mat, initiating the upward movement.",
+    "As she arches her back, she begins the first twist motion.",
+    "Her body continues to rise, completing the initial backward salto.",
+    "The second twist begins as she descends toward the mat."
+   ],
+   [
+    "The gymnast begins in a standing position, feet shoulder-width apart.",
+    "The gymnast bends knees and leans back, preparing for the backward motion.",
+    "The gymnast leaps backward, extending legs fully behind.",
+    "During the backward motion, the gymnast performs two rotations in the air.",
+    "Upon landing, the gymnast straightens the body, absorbing impact with arms.",
+    "The gymnast stabilizes after the landing, completing the action."
+   ]
+  ]
+ },
+ "(FX) salto backward stretched with 2.5 twist": {
+  "counts": [
+   4,
+   7,
+   8
+  ],
+  "mean": 6.333333333333333,
+  "lists": [
+   [
+    "The gymnast runs up the mat, gaining momentum.",
+    "The gymnast leaps backward, extending their body mid-air.",
+    "The gymnast twists 2.5 times while in the air, maintaining a stretched position.",
+    "The gymnast lands smoothly on the mat, completing the salto backward stretched with 2.5 twist."
+   ],
+   [
+    "Runner takes initial stride, preparing for backward jump.",
+    "Body extends forward, arms reach out for momentum.",
+    "Arms swing upward, preparing for the twist rotation.",
+    "Body twists 2.5 times, maintaining extension and control.",
+    "Legs extend fully, body arches over in mid-air.",
+    "Landing phase begins, legs bend to absorb impact.",
+    "Body rotates slightly to land on feet, maintaining balance."
+   ],
+   [
+    "The gymnast begins in a standing position, feet shoulder-width apart.",
+    "The gymnast bends knees and leans back, preparing for the backward motion.",
+    "The gymnast leaps backward, extending legs fully behind.",
+    "During the backward motion, the gymnast performs a half-twist in the air.",
+    "After completing the half-twist, the gymnast continues the backward motion.",
+    "The gymnast completes the backward stretch, landing on both feet.",
+    "The gymnast extends arms upward and outwards upon landing.",
+    "The gymnast then brings arms down to sides while maintaining balance."
+   ]
+  ]
+ },
+ "(FX) salto backward stretched with 1.5 twist": {
+  "counts": [
+   4,
+   8,
+   5
+  ],
+  "mean": 5.666666666666667,
+  "lists": [
+   [
+    "The gymnast runs up, gaining momentum.",
+    "The gymnast leaps backward, extending their body mid-air.",
+    "The gymnast twists 1.5 times while airborne, maintaining body extension.",
+    "The gymnast lands on the mat, absorbing impact with bent knees."
+   ],
+   [
+    "Runner takes initial stride, preparing for backward jump.",
+    "Body extends forward, arms reach upward for momentum.",
+    "Arms swing downward, legs bend at knees as runner leaps backward.",
+    "Runner tucks body tightly, preparing to execute 1.5 twist.",
+    "Runner rotates through 90 degrees in the air, extending legs fully.",
+    "Runner begins to uncurl, preparing to land on one foot.",
+    "Runner lands on one foot, shifting weight to the other leg.",
+    "Runner balances on both feet, completing the backward stretch."
+   ],
+   [
+    "The gymnast begins in a standing position, feet shoulder-width apart.",
+    "The gymnast bends knees and leans back, preparing for the backward motion.",
+    "The gymnast leaps backward, extending legs fully behind.",
+    "During the backward motion, the gymnast twists 1.5 times in mid-air.",
+    "Upon landing, the gymnast stabilizes the landing, maintaining balance."
+   ]
+  ]
+ },
+ "(FX) double salto backward tucked with 2 twist": {
+  "counts": [
+   7,
+   7,
+   6
+  ],
+  "mean": 6.666666666666667,
+  "lists": [
+   [
+    "The gymnast runs up the mat, gaining momentum.",
+    "The gymnast leaps into the air, performing a backward somersault.",
+    "The gymnast tucks their body tightly during the somersault.",
+    "The gymnast completes the somersault, landing on the mat.",
+    "The gymnast immediately begins to rotate their body in the air.",
+    "The gymnast completes two full twists while airborne.",
+    "The gymnast lands back on the mat, maintaining balance."
+   ],
+   [
+    "Runner takes initial position, hands on hips.",
+    "Runner leaps into the air, legs straight.",
+    "Runner tucks legs under, arching back.",
+    "Runner extends arms for balance, tucking head.",
+    "Runner twists in mid-air, completing first rotation.",
+    "Runner tucks again, completing second rotation.",
+    "Runner lands feet-first on the mat, knees bent."
+   ],
+   [
+    "The gymnast begins in a standing position, facing away from the mat.",
+    "She extends her arms back, preparing for the takeoff.",
+    "She leaps into the air, performing a backward tuck.",
+    "Mid-air, she executes a 180-degree twist in the air.",
+    "She tucks her body again before landing softly on the mat.",
+    "She then lands on both feet, maintaining balance."
+   ]
+  ]
+ },
+ "(FX) double salto backward tucked with 1 twist": {
+  "counts": [
+   5,
+   4,
+   4
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "The gymnast runs up, leaps, and tucks their body into a compact position.",
+    "They perform two backward flips, maintaining a tucked position throughout.",
+    "After the second flip, they land smoothly on the mat, continuing to tuck their body.",
+    "The gymnast then twists their body once while still tucked, completing the twist.",
+    "Finally, they straighten out, landing on their feet with a controlled posture."
+   ],
+   [
+    "Runner takes initial stride, leaps into air with bent knees.",
+    "Body rotates backward, tucking legs tightly.",
+    "Arms extend upward for balance, twisting mid-air.",
+    "Land feet together, body straightening, completing the tuck."
+   ],
+   [
+    "The gymnast begins in a standing position, arms extended.",
+    "She leaps into the air with a forward motion.",
+    "Mid-air, she tucks her body and twists once before rotating backward.",
+    "She lands smoothly on the mat, maintaining a tucked position."
+   ]
+  ]
+ },
+ "(FX) double salto backward tucked": {
+  "counts": [
+   5,
+   6,
+   7
+  ],
+  "mean": 6,
+  "lists": [
+   [
+    "The gymnast runs up with extended arms and legs.",
+    "The gymnast leaps into the air, tucking their head and knees.",
+    "The gymnast performs two backward flips in the air.",
+    "The gymnast tucks their head and knees again before landing.",
+    "The gymnast extends their arms and legs upon landing."
+   ],
+   [
+    "The gymnast runs forward with arms extended.",
+    "She leaps into the air, bending her knees.",
+    "She performs a backward somersault in mid-air.",
+    "Her legs tuck in tight as she rotates.",
+    "She extends her body to land on her feet.",
+    "She lands softly on the mat, completing the double salto backward tucked."
+   ],
+   [
+    "The gymnast begins with a running start, propelling forward.",
+    "The gymnast extends arms outwards, preparing for the takeoff.",
+    "The gymnast leaps off the ground, executing a backward somersault.",
+    "The gymnast tucks their knees, protecting the head during the somersault.",
+    "The gymnast extends their body, straightening out at the peak of the somersault.",
+    "The gymnast enters a tucked position, completing the backward somersault.",
+    "The gymnast lands softly on the floor exercise mat, maintaining balance."
+   ]
+  ]
+ },
+ "(FX) double salto backward piked with 1 twist": {
+  "counts": [
+   5,
+   5,
+   4
+  ],
+  "mean": 4.666666666666667,
+  "lists": [
+   [
+    "The gymnast runs up, leaps, and extends her legs backward.",
+    "She tucks her body into a pike position mid-air.",
+    "She performs a 180-degree twist while maintaining the pike.",
+    "Her arms extend outward for balance during the twist.",
+    "She lands on the mat, extending her legs forward."
+   ],
+   [
+    "Runner takes initial stride, leaps into backward salto.",
+    "Body rotates 360 degrees while in air, maintaining pike position.",
+    "Landing on feet, knees bend for shock absorption.",
+    "Arms extend for balance, transitioning to a controlled fall.",
+    "Body rolls over, transitioning to a seated position on the mat."
+   ],
+   [
+    "The gymnast begins in a standing position, feet together.",
+    "She leaps into the air with bent knees, extending them mid-air.",
+    "She twists her body 180 degrees while extending her legs forward.",
+    "She lands on both feet, maintaining balance, knees slightly bent."
+   ]
+  ]
+ },
+ "(FX) double salto backward piked": {
+  "counts": [
+   4,
+   7,
+   4
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "The gymnast runs forward with extended arms and legs.",
+    "The gymnast leaps into the air, tucking their body tightly.",
+    "The gymnast performs a backward somersault, landing on their feet.",
+    "The gymnast lands on the mat, extending their arms for balance."
+   ],
+   [
+    "Runner takes initial position, hands on hips.",
+    "Runner leaps into the air with bent knees.",
+    "Runner extends legs fully upward, arching back.",
+    "Runner begins descent, bending legs in mid-air.",
+    "Runner tucks body, forming a pike position.",
+    "Runner lands feet first, hands reaching forward.",
+    "Runner straightens legs, lifting hips off the mat."
+   ],
+   [
+    "The gymnast begins with a running start, propelling forward.",
+    "The gymnast leaps high, arching the back in preparation.",
+    "The gymnast completes a backward somersault, landing on the mat.",
+    "The gymnast then rises, performing a split, extending legs upward."
+   ]
+  ]
+ },
+ "(BB) sissone (leg separation 180 degree on the diagonal to the floor, take off two feet, land on one foot)": {
+  "counts": [
+   7,
+   8,
+   7
+  ],
+  "mean": 7.333333333333333,
+  "lists": [
+   [
+    "Gymnast approaches the balance beam with extended arms.",
+    "Gymnast leaps onto the balance beam, bending knees slightly.",
+    "Gymnast extends one leg diagonally downward while the other leg is lifted.",
+    "Both feet leave the beam simultaneously, maintaining balance.",
+    "Gymnast rotates in mid-air, separating legs by 180 degrees.",
+    "One leg lands first on the beam, followed by the other.",
+    "Gymnast stabilizes on the beam, landing securely on one foot."
+   ],
+   [
+    "The gymnast extends her legs diagonally, preparing for takeoff.",
+    "Both feet are lifted simultaneously off the beam.",
+    "She separates her legs 180 degrees while airborne.",
+    "One leg extends towards the floor, creating a diagonal position.",
+    "Both feet are released as she reaches peak height.",
+    "She begins to rotate forward, preparing for landing.",
+    "She shifts weight onto one foot, initiating the landing.",
+    "The other leg tucks inward as she lands on the single foot."
+   ],
+   [
+    "The gymnast approaches the balance beam with a focused run.",
+    "The gymnast jumps onto the balance beam with both feet.",
+    "The gymnast extends one leg out diagonally towards the floor.",
+    "The gymnast lifts the other leg off the beam, maintaining balance.",
+    "The gymnast extends both arms for balance while airborne.",
+    "The gymnast rotates the extended leg towards the floor.",
+    "The gymnast lands smoothly on one foot on the balance beam."
+   ]
+  ]
+ },
+ "(BB) split jump with 0.5 turn in side position": {
+  "counts": [
+   4,
+   3,
+   6
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "Gymnast approaches the balance beam with extended legs.",
+    "Gymnast leaps onto the beam, splitting her legs wide apart.",
+    "Gymnast rotates 0.5 turn sideways while maintaining balance on the beam.",
+    "Gymnast lands back on the beam with both feet together, completing the jump."
+   ],
+   [
+    "Gymnast leaps onto balance beam, splits into a split jump.",
+    "Gymnast executes a half turn during the split jump.",
+    "Gymnast lands back on balance beam, maintaining balance."
+   ],
+   [
+    "Gymnast approaches balance beam.",
+    "Leaps onto beam with bent knees.",
+    "Body splits into two halves mid-air.",
+    "Turns 0.5 revolution horizontally.",
+    "Landings back on both feet on beam.",
+    "Balances momentarily before dismounting."
+   ]
+  ]
+ },
+ "(BB) split jump": {
+  "counts": [
+   5,
+   6,
+   7
+  ],
+  "mean": 6,
+  "lists": [
+   [
+    "Gymnast approaches the balance beam with a run-up.",
+    "The gymnast leaps onto the beam, extending legs into a split position.",
+    "Arms are extended for balance as the gymnast maintains the split.",
+    "The gymnast's body rotates slightly mid-air for control during the jump.",
+    "Landing on the beam, the gymnast brings legs together smoothly."
+   ],
+   [
+    "The gymnast leaps onto the balance beam with one leg extended forward.",
+    "The gymnast extends both legs horizontally, maintaining balance on the beam.",
+    "The gymnast transitions into a split position, spreading legs wide apart.",
+    "The gymnast maintains a controlled split position while balancing on the beam.",
+    "The gymnast slowly lowers one leg towards the beam's surface.",
+    "The gymnast lands back onto the beam with both feet, completing the split jump."
+   ],
+   [
+    "The gymnast begins with a controlled run-up along the balance beam.",
+    "As they approach, they jump with one leg extended forward.",
+    "The other leg bends at the knee, splitting their body into two parts.",
+    "The arms are outstretched for balance, helping to maintain equilibrium.",
+    "Both legs extend fully, splitting into a wide stance mid-air.",
+    "The gymnast's center of gravity is maintained by adjusting arm positions.",
+    "They land gracefully on both feet, completing the split jump."
+   ]
+  ]
+ },
+ "(BB) straddle pike jump or side split jump": {
+  "counts": [
+   5,
+   6,
+   5
+  ],
+  "mean": 5.333333333333333,
+  "lists": [
+   [
+    "The gymnast approaches the balance beam with a run-up.",
+    "She leaps onto the beam, extending her legs into a straddle position.",
+    "Her arms reach forward for balance as she maintains the straddle position.",
+    "She then transitions into a pike, bending her legs while keeping them straight.",
+    "The gymnast lands smoothly back on the beam after completing the pike."
+   ],
+   [
+    "The gymnast extends her legs wide, preparing to launch.",
+    "She lifts her hips high, forming a straddle position.",
+    "The gymnast bends forward, reaching toward her feet.",
+    "Her arms extend upward for balance as she reaches peak height.",
+    "She descends, landing smoothly with bent knees.",
+    "She transitions to a stable stance on the beam."
+   ],
+   [
+    "The gymnast begins with a straddle position on the balance beam.",
+    "The gymnast bends at the hips to lower the body.",
+    "The gymnast extends her arms overhead for balance.",
+    "The gymnast jumps, pushing off the beam with both legs.",
+    "The gymnast lands in a straddle position, completing the jump."
+   ]
+  ]
+ },
+ "(BB) split ring jump (ring jump with front leg horizontal to the floor)": {
+  "counts": [
+   7,
+   5,
+   4
+  ],
+  "mean": 5.333333333333333,
+  "lists": [
+   [
+    "The gymnast leaps onto the balance beam with both legs extended.",
+    "The gymnast's front leg extends horizontally towards the floor.",
+    "The gymnast's back leg bends to maintain balance.",
+    "The gymnast's arms extend outward for stability.",
+    "The gymnast's body rotates slightly to align with the beam.",
+    "The gymnast's front leg returns to a vertical position.",
+    "The gymnast's back leg straightens, completing the split ring jump."
+   ],
+   [
+    "The gymnast leaps onto the balance beam with both legs straight.",
+    "The gymnast tucks their head, bringing their torso closer to their knees.",
+    "The gymnast extends one leg horizontally towards the floor while maintaining balance.",
+    "The gymnast extends the other leg vertically, forming a split position.",
+    "The gymnast holds the split position briefly before beginning to land on the beam."
+   ],
+   [
+    "The gymnast begins by crouching low on the balance beam.",
+    "The gymnast leaps off the beam, extending one leg horizontally.",
+    "The gymnast rotates the body mid-air, maintaining balance.",
+    "The gymnast lands on both feet, regaining stability on the beam."
+   ]
+  ]
+ },
+ "(BB) switch leap with 0.5 turn": {
+  "counts": [
+   4,
+   3,
+   4
+  ],
+  "mean": 3.6666666666666665,
+  "lists": [
+   [
+    "Gymnast approaches the balance beam with a run-up.",
+    "Leaps onto the beam with a strong, controlled push-off.",
+    "Body twists mid-air, completing half a turn before landing.",
+    "Land feet firmly on the beam, maintaining balance and posture."
+   ],
+   [
+    "Gymnast leaps onto balance beam with extended arms.",
+    "Body rotates 0.5 turn while mid-air, maintaining balance.",
+    "Landing gracefully back on balance beam with controlled descent."
+   ],
+   [
+    "Gymnast approaches balance beam.",
+    "Leaps onto beam with one foot.",
+    "Body rotates 0.5 turn in mid-air.",
+    "Landings gracefully on balance beam with both feet."
+   ]
+  ]
+ },
+ "(BB) switch leap (leap forward with leg change)": {
+  "counts": [
+   4,
+   4,
+   4
+  ],
+  "mean": 4,
+  "lists": [
+   [
+    "The gymnast leaps forward, extending both legs.",
+    "The gymnast lands on the balance beam, shifting weight.",
+    "The gymnast transitions to a single leg stance, balancing.",
+    "The gymnast changes leg position, preparing for the next movement."
+   ],
+   [
+    "The gymnast leaps forward onto the balance beam.",
+    "One leg changes position mid-air during the leap.",
+    "Both legs land simultaneously on the beam.",
+    "The gymnast maintains balance with slight adjustments after landing."
+   ],
+   [
+    "The gymnast begins by crouching low on the balance beam.",
+    "She jumps forward with one leg extended and the other bent.",
+    "Mid-air, she switches the position of her legs, preparing for landing.",
+    "She lands on the beam, maintaining balance with her arms extended."
+   ]
+  ]
+ },
+ "(BB) split leap forward": {
+  "counts": [
+   8,
+   4,
+   7
+  ],
+  "mean": 6.333333333333333,
+  "lists": [
+   [
+    "Gymnast approaches the balance beam with extended legs.",
+    "Gymnast leaps onto the beam, bending knees slightly.",
+    "Gymnast extends one leg forward while keeping the other bent.",
+    "Gymnast maintains balance on the beam with arms outstretched.",
+    "Gymnast transitions to a split position, splitting legs wide apart.",
+    "Gymnast holds the split position, demonstrating balance and control.",
+    "Gymnast slowly lowers one leg back to the beam, maintaining balance.",
+    "Gymnast lands smoothly on the beam, completing the split leap forward."
+   ],
+   [
+    "The gymnast extends her legs into a split position on the balance beam.",
+    "She shifts her weight onto one leg while lifting the other leg high.",
+    "She brings her arms into a supporting position for balance.",
+    "She jumps forward off the beam with both feet, landing gracefully."
+   ],
+   [
+    "The gymnast begins with a controlled run-up along the balance beam.",
+    "As they approach, they jump with one leg extended forward.",
+    "The other leg bends at the knee, splitting into a wide stance.",
+    "The body twists slightly mid-air, maintaining balance.",
+    "The arms extend outward for stability during the split leap forward.",
+    "The feet land smoothly, both legs extended, maintaining the split position.",
+    "The gymnast quickly transitions into a balanced pose on the beam."
+   ]
+  ]
+ },
+ "(BB) johnson (leap forward with leg change and 0.25 turn to side split or straddle pike position)": {
+  "counts": [
+   4,
+   3,
+   5
+  ],
+  "mean": 4,
+  "lists": [
+   [
+    "Johnson leaps forward, extending legs into a split.",
+    "Body rotates 0.25 turn while maintaining split position.",
+    "Arms extend for balance during rotation.",
+    "Transition into straddle pike position on beam."
+   ],
+   [
+    "Johnson leaps forward, extends legs into a split.",
+    "Johnson rotates 0.25 turn while maintaining the split.",
+    "Johnson transitions into a straddle pike position, arms extended."
+   ],
+   [
+    "Johnson leaps forward, extending legs outward.",
+    "Feet clear ground, arms outstretched for balance.",
+    "Body rotates 0.25 turn mid-air.",
+    "Legs change position, splitting or pike into side or straddle.",
+    "Landing on balance beam, maintaining equilibrium."
+   ]
+  ]
+ },
+ "(BB) switch leap to ring position": {
+  "counts": [
+   5,
+   4,
+   5
+  ],
+  "mean": 4.666666666666667,
+  "lists": [
+   [
+    "Gymnast leaps from balance beam onto air.",
+    "Body twists mid-air, preparing for landing.",
+    "Arms extend forward for balance during twist.",
+    "Landing on ring, feet plant firmly.",
+    "Body stabilizes, arms adjust for balance."
+   ],
+   [
+    "Gymnast leaps onto balance beam with extended arms.",
+    "Body rotates mid-air, tucking legs in for efficiency.",
+    "Landing on balance beam with bent knees, maintaining balance.",
+    "Arms extend again, preparing for the switch to ring position."
+   ],
+   [
+    "Gymnast leaps off balance beam, extending arms.",
+    "Body twists mid-air, legs splitting.",
+    "Landing onto the rings, holding onto them with both hands.",
+    "Transitioning from handstand to forward roll on rings.",
+    "Dismounting from rings, landing back onto balance beam."
+   ]
+  ]
+ },
+ "(BB) sheep jump (jump with upper back arch and head release with feet to head height/closed Ring)": {
+  "counts": [
+   6,
+   7,
+   6
+  ],
+  "mean": 6.333333333333333,
+  "lists": [
+   [
+    "The gymnast begins by approaching the balance beam with a focused posture.",
+    "She leaps onto the beam, extending her arms for balance.",
+    "Her body arches upward, reaching peak height at the apex of the jump.",
+    "She releases her head, allowing it to drop below her feet.",
+    "Her legs extend fully, reaching head height, forming a closed ring.",
+    "She lands smoothly on the beam, maintaining control and balance."
+   ],
+   [
+    "The gymnast extends her legs straight, preparing to jump.",
+    "She lifts her arms above her head in preparation for the arch.",
+    "She begins to arch her back, lifting her head upwards.",
+    "Her hands come together in front of her face, closing into a ring.",
+    "Her feet leave the beam, aligning themselves with her head height.",
+    "She completes the arch, maintaining the ring shape with her arms.",
+    "Her legs straighten out, forming the final pose of the jump."
+   ],
+   [
+    "The gymnast begins in a crouched position on the balance beam.",
+    "She extends her arms upward, preparing for the jump.",
+    "She leaps off the beam, arching her back and lifting her head high.",
+    "Her legs straighten out as she soars through the air.",
+    "She tucks her knees up towards her chest during the jump.",
+    "She extends her body in a closed ring, reaching her feet towards her head."
+   ]
+  ]
+ },
+ "(BB) wolf hop or jump (hip angle at 45, knees together)": {
+  "counts": [
+   7,
+   5,
+   5
+  ],
+  "mean": 5.666666666666667,
+  "lists": [
+   [
+    "The gymnast stands on the balance beam with feet shoulder-width apart.",
+    "She bends her knees slightly, preparing for the jump.",
+    "She lifts her arms for balance and momentum.",
+    "She jumps off the beam, extending her legs forward.",
+    "Her hips angle at approximately 45 degrees during the jump.",
+    "She keeps her knees together throughout the jump.",
+    "She lands back on the balance beam, maintaining balance."
+   ],
+   [
+    "The gymnast extends her legs straight, preparing to jump.",
+    "She lifts both legs simultaneously, maintaining a 45-degree hip angle.",
+    "Her knees stay close together during the jump.",
+    "She uses her arms to stabilize her body mid-air.",
+    "Upon landing, she lands softly with bent knees to absorb impact."
+   ],
+   [
+    "The gymnast begins with a balanced stance on the beam.",
+    "She leaps forward, extending her arms for balance.",
+    "Her hips rise high, forming a 45-degree angle with the ground.",
+    "Knees remain together during the jump, maintaining stability.",
+    "Landing smoothly on the beam after completing the jump."
+   ]
+  ]
+ },
+ "(BB) 1 turn with heel of free leg forward at horizontal throughout turn": {
+  "counts": [
+   5,
+   5,
+   4
+  ],
+  "mean": 4.666666666666667,
+  "lists": [
+   [
+    "The gymnast raises her free leg, keeping it horizontal.",
+    "She shifts her weight onto the supporting leg.",
+    "She turns her upper body around the supporting leg.",
+    "She maintains the horizontal position of her free leg during the turn.",
+    "She completes the turn, returning to the starting position."
+   ],
+   [
+    "The gymnast extends her free leg forward, keeping it horizontal.",
+    "She maintains balance on one leg while rotating.",
+    "Her arms support her body's rotation on the beam.",
+    "She keeps her weight centered over the beam.",
+    "She completes the turn, landing back on both feet."
+   ],
+   [
+    "The gymnast shifts her weight onto one leg while keeping the other leg extended forward.",
+    "She maintains the extended leg's heel level with the beam, ensuring balance.",
+    "She rotates her body around the extended leg, keeping the heel steady.",
+    "The gymnast completes the rotation with the extended leg still level with the beam."
+   ]
+  ]
+ },
+ "(BB) 2 turn on one leg, free leg optional below horizontal": {
+  "counts": [
+   6,
+   4,
+   5
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "Gymnast raises one leg, balancing on the other.",
+    "Free leg extends below horizontal, maintaining balance.",
+    "Core engages, stabilizing the body during rotation.",
+    "Arms adjust for balance, supporting the turn.",
+    "Leg that was raised lowers back to beam surface.",
+    "Free leg repositions above the beam, completing the turn."
+   ],
+   [
+    "The gymnast raises her non-supporting leg to a position below horizontal while balancing on one leg.",
+    "The gymnast maintains her balance on the beam with her supporting leg while the other leg remains in a controlled position.",
+    "The gymnast completes the turn by bringing her non-supporting leg up to a position parallel to the beam.",
+    "The gymnast lowers her non-supporting leg back to a position below horizontal while maintaining her balance on the beam."
+   ],
+   [
+    "The gymnast shifts her weight onto one leg while maintaining balance.",
+    "The free leg extends slightly below horizontal, aiding stability.",
+    "The core muscles engage to support the turn.",
+    "The extended leg swings forward briefly.",
+    "The gymnast completes the turn, landing back in balance on both legs."
+   ]
+  ]
+ },
+ "(BB) 1 turn on one leg, free leg optional below horizontal": {
+  "counts": [
+   5,
+   5,
+   4
+  ],
+  "mean": 4.666666666666667,
+  "lists": [
+   [
+    "The gymnast raises one leg, balancing on the other.",
+    "The free leg extends below horizontal, maintaining balance.",
+    "The gymnast rotates the upper body around the raised leg.",
+    "The free leg adjusts position to support the turn.",
+    "The gymnast completes the turn, landing back on both legs."
+   ],
+   [
+    "The gymnast extends her free leg below horizontal.",
+    "She shifts her weight onto the leg supporting the turn.",
+    "She rotates her upper body in a controlled manner.",
+    "She maintains balance with her arms extended.",
+    "She completes the turn, positioning herself back on both legs."
+   ],
+   [
+    "The gymnast shifts her weight onto one leg while maintaining balance.",
+    "The free leg extends slightly below horizontal to assist stability.",
+    "The gymnast rotates her body using the supporting leg as the pivot point.",
+    "She completes the turn, ensuring both legs return to a balanced position."
+   ]
+  ]
+ },
+ "(BB) 2 turn in tuck stand on one leg, free leg optional": {
+  "counts": [
+   5,
+   4,
+   5
+  ],
+  "mean": 4.666666666666667,
+  "lists": [
+   [
+    "Gymnast approaches balance beam with arms extended for balance.",
+    "Gymnast jumps onto beam, landing in a tuck position.",
+    "Gymnast lifts one leg off the beam, maintaining balance.",
+    "Gymnast performs a turn, keeping the free leg optional.",
+    "Gymnast lands back on the beam, returning to a stable stance."
+   ],
+   [
+    "Begin with a stable tuck stand on one leg on the balance beam.",
+    "Shift weight onto the free leg, lifting it slightly off the beam.",
+    "Execute a turn while keeping the free leg slightly raised.",
+    "Land back in a stable tuck stand on one leg, maintaining balance."
+   ],
+   [
+    "The gymnast begins with a controlled tuck position on the balance beam.",
+    "She extends her free leg upward while keeping the other leg bent.",
+    "She rotates her torso around the beam axis, maintaining balance.",
+    "Her arms are positioned for stability during the turn.",
+    "She completes the rotation onto one leg, landing steadily."
+   ]
+  ]
+ },
+ "(BB) salto backward tucked with 1 twist": {
+  "counts": [
+   5,
+   5,
+   3
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "The gymnast leaps backward from the balance beam.",
+    "The gymnast tucks their body tightly during the backward motion.",
+    "The gymnast performs a single twist in mid-air while tucked.",
+    "The gymnast extends their arms and legs to prepare for landing.",
+    "The gymnast lands smoothly back on the balance beam."
+   ],
+   [
+    "The gymnast leaps onto the balance beam with a strong, bent-knee jump.",
+    "The gymnast extends legs upward in a tucked position for the backward tuck.",
+    "The gymnast performs a single twist in the air, rotating body.",
+    "The gymnast tucks the body again as they descend toward the beam.",
+    "The gymnast lands smoothly on the balance beam after completing the salto backward tucked with 1 twist."
+   ],
+   [
+    "The gymnast leaps off the beam, tucking her knees and bending her arms.",
+    "She rotates 360 degrees in the air while maintaining a tucked position.",
+    "Upon landing, she straightens her legs and extends her arms for balance."
+   ]
+  ]
+ },
+ "(BB) salto backward tucked v1": {
+  "counts": [
+   5,
+   4,
+   4
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "The gymnast leaps off the beam with extended arms and legs.",
+    "She tucks her body tightly, minimizing air resistance.",
+    "Mid-air, she rotates backward, maintaining a compact form.",
+    "Her hands reach out to grab the beam, preparing for landing.",
+    "She extends her body, straightening her limbs upon landing."
+   ],
+   [
+    "The gymnast leaps onto the balance beam with a strong, bent-knee jump.",
+    "The gymnast extends legs upward in preparation for the backward tuck.",
+    "The gymnast performs a backward somersault, tucking knees tightly to chest.",
+    "The gymnast lands smoothly on the balance beam with a straightened stance."
+   ],
+   [
+    "The gymnast leaps off the beam with extended arms.",
+    "Body twists in mid-air for backward tuck position.",
+    "Hands reach down towards the beam to guide landing.",
+    "Landing on the beam with tucked knees and extended arms."
+   ]
+  ]
+ },
+ "(BB) salto backward stretched-step out (feet land successively)": {
+  "counts": [
+   3,
+   4,
+   5
+  ],
+  "mean": 4,
+  "lists": [
+   [
+    "The gymnast leaps backward, extending her arms and legs.",
+    "She rotates mid-air, maintaining a straight body position.",
+    "Her feet separate, landing successively on the balance beam."
+   ],
+   [
+    "The gymnast leaps backward with arms extended, initiating the salto.",
+    "The gymnast's legs stretch forward, body twisting upward.",
+    "The gymnast rotates mid-air, arms and legs forming an elongated shape.",
+    "The gymnast's feet separate, one landing before the other on the beam."
+   ],
+   [
+    "The gymnast leaps backward, extending arms and legs.",
+    "Body twists mid-air, maintaining balance.",
+    "Landing starts with one foot, followed by the other.",
+    "Both feet touch the balance beam simultaneously.",
+    "Posture adjusts for stability and recovery."
+   ]
+  ]
+ },
+ "(BB) salto backward stretched with legs together": {
+  "counts": [
+   5,
+   7,
+   6
+  ],
+  "mean": 6,
+  "lists": [
+   [
+    "The gymnast leaps backward onto the balance beam.",
+    "She extends her arms and legs simultaneously for balance.",
+    "Her body stretches horizontally above the beam.",
+    "She tucks her legs together mid-air for precision.",
+    "She lands smoothly back on the beam with her legs together."
+   ],
+   [
+    "The gymnast leaps onto the balance beam with extended arms and bent knees.",
+    "The gymnast then fully extends their legs while maintaining balance on the beam.",
+    "The gymnast's body stretches horizontally, arms extended, preparing for the backward movement.",
+    "The gymnast begins the backward motion by bending their knees slightly.",
+    "The gymnast's body shifts backward, arms still extended for stability.",
+    "The gymnast's legs remain together during the backward movement.",
+    "The gymnast completes the backward stretch, landing back on the beam with straightened legs."
+   ],
+   [
+    "The gymnast leaps off the beam, extending her arms forward and bending her knees.",
+    "She rotates backward in mid-air, keeping her legs together.",
+    "Her body twists as she extends her legs upward, reaching for the air.",
+    "She tucks her head, bringing her feet closer together.",
+    "She separates her legs, straightening them out as she approaches the landing.",
+    "She lands smoothly on the beam, maintaining balance with extended arms."
+   ]
+  ]
+ },
+ "(BB) salto sideward tucked, take off from one leg to side stand": {
+  "counts": [
+   3,
+   4,
+   6
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "The gymnast leaps sideways with a tucked position.",
+    "She takes off from one leg onto the balance beam.",
+    "She transitions into a side stand on the beam."
+   ],
+   [
+    "The gymnast leaps onto the balance beam with one leg extended.",
+    "The gymnast tucks their body mid-air, forming a compact ball.",
+    "The gymnast extends both legs simultaneously, creating an open position.",
+    "The gymnast lands on one leg, transitioning into a side stand position."
+   ],
+   [
+    "The gymnast leaps sideways, tucking their knees.",
+    "They extend their arms for balance.",
+    "The gymnast shifts weight onto one leg.",
+    "The other leg lifts off the beam, preparing for a spin.",
+    "The gymnast performs a complete rotation in mid-air.",
+    "They land smoothly onto the beam, maintaining stability."
+   ]
+  ]
+ },
+ "(BB) free aerial cartwheel landing in cross position": {
+  "counts": [
+   5,
+   5,
+   6
+  ],
+  "mean": 5.333333333333333,
+  "lists": [
+   [
+    "The gymnast leaps off the balance beam with extended arms and legs.",
+    "She rotates in mid-air, tucking her body tightly.",
+    "Her hands reach out to grab the beam's edge for support.",
+    "She extends her body, straightening her limbs.",
+    "She lands on the beam, maintaining balance in a cross position."
+   ],
+   [
+    "The gymnast leaps from the balance beam with arms extended.",
+    "She rotates through the air, performing a cartwheel.",
+    "Her legs spread wide apart as she completes the cartwheel rotation.",
+    "She begins her descent towards the beam, adjusting her body.",
+    "She lands smoothly on the beam with both hands and feet, crossing them."
+   ],
+   [
+    "The gymnast begins with a running start down the balance beam.",
+    "She launches into an aerial cartwheel, rotating through the air.",
+    "Mid-air, she executes the cross position, aligning her arms and legs.",
+    "She transitions into a tucked position, preparing for the landing.",
+    "As she nears the beam, she extends her arms for balance control.",
+    "She lands softly on the beam, maintaining her balance and poise."
+   ]
+  ]
+ },
+ "(BB) salto forward tucked to cross stand": {
+  "counts": [
+   5,
+   4,
+   4
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "The gymnast leaps forward with bent knees, arms extended.",
+    "The gymnast tucks their body tightly, legs drawn close.",
+    "The gymnast rotates mid-air, maintaining a tucked position.",
+    "The gymnast extends their body, preparing to land.",
+    "The gymnast lands on the balance beam, transitioning to a cross stand."
+   ],
+   [
+    "The gymnast leaps forward with arms extended, tucking knees to chest mid-air.",
+    "The gymnast extends legs out straight, forming a tucked position.",
+    "The gymnast releases the tuck, extending legs upward before arching back.",
+    "The gymnast lands on the balance beam with a bent-knee cross-stance."
+   ],
+   [
+    "The gymnast leaps off the beam, tucking her knees and arms to form a compact ball.",
+    "She extends her body horizontally above the beam, maintaining a tucked position.",
+    "The gymnast rotates her body around the horizontal axis to align with the beam's width.",
+    "Her legs straighten out to prepare for landing, positioning her to cross onto the beam's other side."
+   ]
+  ]
+ },
+ "(BB) free aerial walkover forward, landing on one or both feet": {
+  "counts": [
+   5,
+   4,
+   6
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "The gymnast leaps off the balance beam with extended arms and legs.",
+    "She rotates her body in mid-air, aligning her body for the forward motion.",
+    "Her body tucks slightly as she approaches the landing area.",
+    "She extends her arms and legs again, preparing for the landing.",
+    "She lands on one or both feet, absorbing the impact with bent knees."
+   ],
+   [
+    "The gymnast leaps from the balance beam with arms extended.",
+    "She rotates through the air, performing a series of acrobatic flips.",
+    "Her body straightens as she approaches the landing point.",
+    "She lands on one or both feet, maintaining balance on the beam."
+   ],
+   [
+    "The gymnast begins with a running start down the balance beam.",
+    "She leaps into the air with extended arms and legs.",
+    "She performs a full rotation during her aerial flight.",
+    "Her body straightens out mid-air for optimal form.",
+    "She prepares to land by bending knees slightly.",
+    "She touches down on the balance beam, either single or double legged."
+   ]
+  ]
+ },
+ "(BB) jump backward, flic-flac take-off with 0.5 twist through handstand to walkover forward, also with support on one arm": {
+  "counts": [
+   5,
+   6,
+   5
+  ],
+  "mean": 5.333333333333333,
+  "lists": [
+   [
+    "The gymnast jumps backward off the balance beam.",
+    "She performs a flic-flac take-off with a half-twist.",
+    "She transitions into a handstand while twisting.",
+    "She maintains the handstand with one arm supporting her.",
+    "She executes a walkover forward from the handstand."
+   ],
+   [
+    "The gymnast jumps backward onto the balance beam.",
+    "They perform a flic-flac take-off.",
+    "The gymnast executes a 0.5 twist during the handstand.",
+    "They transition smoothly through the handstand.",
+    "The gymnast walks over forward on the beam.",
+    "They maintain support on one arm during the walkover."
+   ],
+   [
+    "The gymnast begins by jumping backward on the balance beam.",
+    "She then executes a flic-flac take-off, rotating with a half-twist.",
+    "Mid-air, she transitions into a handstand while supporting herself.",
+    "After the handstand, she smoothly performs a walkover forward.",
+    "Throughout the movement, she maintains balance with support on one arm."
+   ]
+  ]
+ },
+ "(BB) flic-flac to land on both feet": {
+  "counts": [
+   5,
+   5,
+   7
+  ],
+  "mean": 5.666666666666667,
+  "lists": [
+   [
+    "The gymnast jumps off the beam, extending her arms for balance.",
+    "She tucks her legs up, preparing for the flip.",
+    "Mid-air, she performs a flic-flac, rotating her body.",
+    "Her hands reach out to support herself during the flip.",
+    "She lands on both feet, maintaining her balance on the beam."
+   ],
+   [
+    "The gymnast leaps onto the balance beam with one foot.",
+    "She extends her arms for balance while mid-air.",
+    "Her body twists as she transitions from one foot to the other.",
+    "Both feet make contact with the beam simultaneously.",
+    "She maintains her balance and lands firmly on both feet."
+   ],
+   [
+    "The gymnast performs a series of quick, precise jumps.",
+    "Both hands reach out to grab the balance beam's edge firmly.",
+    "The body twists and rotates mid-air in a controlled, fluid motion.",
+    "Arms extend outward to maintain balance during the flip.",
+    "The body tucks tightly as the gymnast executes the flic-flac maneuver.",
+    "Landing occurs with a soft, simultaneous contact on both feet.",
+    "The gymnast stands upright, completing the acrobatic skill."
+   ]
+  ]
+ },
+ "(BB) flic-flac with step-out, also with support on one arm": {
+  "counts": [
+   4,
+   5,
+   6
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "Gymnast approaches balance beam, extends leg.",
+    "Balances on one arm, lifts other leg high.",
+    "Body rotates, arm supports weight, leg swings.",
+    "Land on beam, transitions to next movement."
+   ],
+   [
+    "The gymnast extends her legs into a horizontal position while supporting herself on one arm.",
+    "She then brings one leg up in a controlled motion, preparing for a step-out.",
+    "The gymnast shifts her weight onto the extended leg, using the other arm for balance.",
+    "She executes a controlled step-out with the raised leg, maintaining balance on the single arm support.",
+    "She lands smoothly on both feet, transitioning back to a balanced stance on the beam."
+   ],
+   [
+    "Gymnast begins standing on balance beam, arms extended.",
+    "One arm extends outward for balance.",
+    "Opposite leg lifts off beam, maintaining momentum.",
+    "Leg extends fully, forming a vertical position.",
+    "Body rotates around vertical leg, transitioning to horizontal.",
+    "Opposite leg lowers towards beam, preparing for landing."
+   ]
+  ]
+ },
+ "(BB) round-off": {
+  "counts": [
+   5,
+   13,
+   6
+  ],
+  "mean": 8,
+  "lists": [
+   [
+    "The gymnast runs up the balance beam.",
+    "The gymnast leaps onto the beam with extended arms.",
+    "The gymnast bends knees, preparing for landing.",
+    "The gymnast lands on hands, maintaining balance.",
+    "The gymnast transitions to a handstand position."
+   ],
+   [
+    "Runner approaches the balance beam.",
+    "Gymnast jumps onto the beam with a forward leap.",
+    "Arms extend upwards for balance.",
+    "Body rotates slightly for alignment.",
+    "One hand finds support on the beam's edge.",
+    "Other arm extends backward for stability.",
+    "Body bends forward to prepare for round-off.",
+    "Feet leave the beam for a backward flip.",
+    "Body arches over in the air.",
+    "Arms reach toward the feet during the flip.",
+    "Feet re-grasp the beam as the body lands.",
+    "Body straightens up for final position.",
+    "Arms lower back down to sides for completion."
+   ],
+   [
+    "The gymnast approaches the balance beam, preparing for takeoff.",
+    "The gymnast leaps onto the balance beam, extending one leg forward.",
+    "The gymnast brings the other leg up, placing both hands on the beam for support.",
+    "The gymnast transitions into a series of handstands, maintaining balance with arms extended.",
+    "The gymnast gradually lowers their body while still supporting themselves with hands.",
+    "The gymnast lands smoothly back on the balance beam, completing the round-off."
+   ]
+  ]
+ },
+ "(BB) double salto backward tucked": {
+  "counts": [
+   6,
+   6,
+   7
+  ],
+  "mean": 6.333333333333333,
+  "lists": [
+   [
+    "The gymnast leaps off the balance beam with both feet.",
+    "She extends her arms forward for balance during the jump.",
+    "Mid-air, she tucks her knees towards her chest.",
+    "Her body rotates backward as she tucks.",
+    "She straightens her legs and extends them backward.",
+    "She lands softly on the mat behind the balance beam."
+   ],
+   [
+    "The gymnast leaps onto the balance beam with both feet.",
+    "She extends her arms upward for balance.",
+    "She tucks her head down before leaving the beam.",
+    "She performs two backflips in mid-air.",
+    "Her legs straighten out after the second flip.",
+    "She tucks her body again as she lands on the mat."
+   ],
+   [
+    "The gymnast leaps off the beam with both feet.",
+    "She tucks her head and bends her knees mid-air.",
+    "Her arms are extended upward to help control the rotation.",
+    "She completes one full rotation in the air.",
+    "She tucks again, bringing her knees to her chest.",
+    "She extends her legs straight out behind her.",
+    "She lands softly on her feet on the beam's end."
+   ]
+  ]
+ },
+ "(BB) salto backward tucked v2": {
+  "counts": [
+   4,
+   5,
+   6
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "Gymnast leaps backward with arms extended, legs straight.",
+    "Body tucks tightly, arms and legs close together.",
+    "Feet plant firmly on the balance beam, body straightens.",
+    "Arms extend forward, balancing on the beam."
+   ],
+   [
+    "The gymnast leaps onto the balance beam with a strong, bent-knee jump.",
+    "The gymnast extends legs upward in preparation for the backward tuck.",
+    "The gymnast tucks their body tightly, arms around knees, for a compact shape.",
+    "The gymnast rotates backward through the air, keeping body rigid.",
+    "The gymnast lands smoothly on the balance beam with feet together, arms extended."
+   ],
+   [
+    "The gymnast begins with a forward run-up along the balance beam.",
+    "The gymnast leaps off the beam, extending her arms overhead.",
+    "She tucks her head and knees, forming a compact ball.",
+    "Her body rotates backward in a controlled somersault.",
+    "Upon landing, she extends her legs straight out in front.",
+    "She lands firmly on both feet, maintaining balance on the beam."
+   ]
+  ]
+ },
+ "(BB) double salto backward piked": {
+  "counts": [
+   8,
+   4,
+   5
+  ],
+  "mean": 5.666666666666667,
+  "lists": [
+   [
+    "Gymnast leaps onto balance beam with bent knees.",
+    "Arms extend forward for balance as legs straighten.",
+    "Body rotates backward, arms continue to support.",
+    "Legs tuck under, forming a pike position.",
+    "Feet leave beam, body continues backward rotation.",
+    "Arms reach down, supporting body during dismount.",
+    "Body extends fully backward, arms maintain control.",
+    "Feet land softly on the ground, arms relax."
+   ],
+   [
+    "The gymnast leaps onto the balance beam with both feet.",
+    "She extends her legs upward, forming a pike position.",
+    "The gymnast rotates her body backward while maintaining the pike.",
+    "She lands gracefully on the balance beam after completing the backward rotation."
+   ],
+   [
+    "The gymnast leaps off the beam with both feet.",
+    "She extends her arms upward for balance.",
+    "She tucks her legs in a pike position mid-air.",
+    "She extends her body fully while airborne.",
+    "She lands back on the beam, maintaining her balance."
+   ]
+  ]
+ },
+ "(BB) salto backward stretched with 2 twist": {
+  "counts": [
+   4,
+   3,
+   3
+  ],
+  "mean": 3.3333333333333335,
+  "lists": [
+   [
+    "Gymnast leaps backward, extending legs fully.",
+    "Arms reach out for balance, twisting mid-air.",
+    "Body rotates twice, maintaining control.",
+    "Landing on balance beam, feet plant firmly."
+   ],
+   [
+    "The gymnast leaps backward onto the balance beam.",
+    "She stretches her body horizontally across the beam.",
+    "She performs two twists in the air before landing back on the beam."
+   ],
+   [
+    "The gymnast leaps backward, extending their body mid-air.",
+    "Arms are outstretched, body twists twice during descent.",
+    "Landing is executed with both feet firmly on the balance beam."
+   ]
+  ]
+ },
+ "(BB) salto backward stretched with 2.5 twist": {
+  "counts": [
+   4,
+   5,
+   7
+  ],
+  "mean": 5.333333333333333,
+  "lists": [
+   [
+    "The gymnast leaps backward, extending her body mid-air.",
+    "She twists 2.5 times while maintaining her extended position.",
+    "Her arms reach out to the sides for balance during the twist.",
+    "She lands on the balance beam with her feet together, maintaining balance."
+   ],
+   [
+    "The gymnast leaps backward onto the balance beam.",
+    "She extends her arms and legs in a stretched position.",
+    "She performs a 2.5 twist rotation in mid-air.",
+    "Her body tucks slightly before the dismount.",
+    "She lands smoothly on the balance beam after the twist."
+   ],
+   [
+    "The gymnast begins by preparing on the balance beam.",
+    "She leaps off the beam with her arms stretched forward.",
+    "Mid-air, she initiates the twist, rotating two and a half times.",
+    "Her legs are bent at the knees, aiding in the rotation.",
+    "Upon completing the twist, she extends her body horizontally.",
+    "The gymnast's feet leave the beam, showcasing the dismount.",
+    "She lands smoothly on the floor with her arms slightly bent."
+   ]
+  ]
+ },
+ "(UB) pike sole circle backward with 1 turn to handstand": {
+  "counts": [
+   5,
+   4,
+   4
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "The gymnast begins by gripping the uneven bars with both hands.",
+    "She extends her legs upward, forming a straight line with her body.",
+    "She performs a circular swing on the bars, rotating backward.",
+    "Midway through the swing, she executes a 180-degree turn.",
+    "As the turn completes, she transitions into a handstand position."
+   ],
+   [
+    "The gymnast performs a pike on the uneven bar.",
+    "She executes a circle swing backward on the bar.",
+    "She completes the circle swing with a turn.",
+    "She transitions into a handstand on the bar."
+   ],
+   [
+    "The gymnast performs a pike position on the uneven bar.",
+    "She circles backward on the bar with controlled arm movements.",
+    "She executes a turn, bringing her body toward the handstand position.",
+    "The gymnast transitions smoothly into a handstand on the bar."
+   ]
+  ]
+ },
+ "(UB) pike sole circle backward with 0.5 turn to handstand": {
+  "counts": [
+   7,
+   4,
+   3
+  ],
+  "mean": 4.666666666666667,
+  "lists": [
+   [
+    "Gymnast holds onto uneven bars, body straight, preparing for pike.",
+    "Gymnast extends legs upward, initiating pike movement.",
+    "Gymnast swings legs back, transitioning into circle motion.",
+    "Gymnast completes circle swing, maintaining control on bars.",
+    "Gymnast turns 0.5 rotation while continuing circle swing.",
+    "Gymnast approaches handstand position, arms extended forward.",
+    "Gymnast transitions into handstand, balancing on hands and feet."
+   ],
+   [
+    "The gymnast performs a pike on the uneven bar.",
+    "She executes a circle swing backward on the bar.",
+    "She completes half a turn while swinging.",
+    "She transitions smoothly into a handstand position."
+   ],
+   [
+    "The gymnast performs a pike position on the uneven bar.",
+    "She circles backward on the bar with controlled rotation.",
+    "After completing the 0.5 turn, she transitions into a handstand."
+   ]
+  ]
+ },
+ "(UB) pike sole circle backward to handstand": {
+  "counts": [
+   4,
+   3,
+   4
+  ],
+  "mean": 3.6666666666666665,
+  "lists": [
+   [
+    "The gymnast swings forward on the uneven bar, initiating the pike sole circle.",
+    "She extends her legs upward, maintaining control while rotating backward.",
+    "Her body transitions into a horizontal position, preparing for the handstand.",
+    "She straightens her arms, shifting her weight onto her hands to complete the handstand."
+   ],
+   [
+    "The gymnast extends her legs straight out in a pike position.",
+    "She rotates her body backward in a circular motion.",
+    "Her arms swing back as she transitions into a handstand."
+   ],
+   [
+    "The gymnast performs a pike position on the uneven bar.",
+    "She circles backward with her body arched on the bar.",
+    "Transitioning smoothly, she brings her legs towards her chest.",
+    "Her arms extend forward as she rotates into a handstand."
+   ]
+  ]
+ },
+ "(UB) giant circle backward with 1 turn to handstand": {
+  "counts": [
+   5,
+   5,
+   3
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "The gymnast swings on the uneven bar, initiating a backward circular motion.",
+    "She gains momentum, rotating backward while maintaining contact with the bar.",
+    "Approaching the end of the circle, she prepares for the transition to handstand.",
+    "As she completes the circle, she extends her body to prepare for the handstand.",
+    "She shifts her weight onto her hands, transitioning smoothly into a handstand position."
+   ],
+   [
+    "The gymnast grasps the uneven bar with both hands.",
+    "She swings back on the bar, performing a giant circle.",
+    "As she completes the circle, she extends her legs behind her.",
+    "Midway through the circle, she turns once to prepare for handstand.",
+    "Upon reaching the peak of the circle, she transitions smoothly into a handstand position."
+   ],
+   [
+    "The gymnast swings back on the uneven bars, performing a giant circle.",
+    "She approaches the first turn, rotating her body with controlled momentum.",
+    "The gymnast executes the final turn, transitioning into a handstand position."
+   ]
+  ]
+ },
+ "(UB) giant circle backward with 0.5 turn to handstand": {
+  "counts": [
+   3,
+   4,
+   6
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "The gymnast swings on the uneven bar, initiating a backward circular motion.",
+    "She performs a half-turn while maintaining momentum on the bar.",
+    "As she completes the half-turn, she transitions into a handstand position."
+   ],
+   [
+    "The gymnast grasps the uneven bar with both hands.",
+    "She swings her legs upward, performing a circle motion.",
+    "As she circles, she turns 0.5 of a turn in the air.",
+    "She extends her body to transition into a handstand position."
+   ],
+   [
+    "The gymnast swings back on the uneven bars, rotating her body into a circular motion.",
+    "Her legs extend outward, maintaining balance while the bars support her weight.",
+    "She continues the backward swing, gradually increasing speed towards the handstand.",
+    "At the peak of her swing, she initiates a half-turn, preparing for the handstand.",
+    "Her arms extend fully upward, transitioning into the handstand position on the bars.",
+    "She maintains the handstand, demonstrating control and stability on the uneven bars."
+   ]
+  ]
+ },
+ "(UB) giant circle backward": {
+  "counts": [
+   5,
+   7,
+   4
+  ],
+  "mean": 5.333333333333333,
+  "lists": [
+   [
+    "The gymnast swings forward on the uneven bar.",
+    "She extends her arms and legs to maintain momentum.",
+    "She rotates backward, crossing her legs over the bar.",
+    "Her body arches as she completes the backward circle.",
+    "She lands gracefully on the mat below."
+   ],
+   [
+    "The gymnast grasps the uneven bars with both hands.",
+    "She lifts her legs upward, extending them horizontally.",
+    "Her body arches forward as she rotates on the bars.",
+    "Her arms swing outward, creating a wide circle.",
+    "She tucks her head down, lowering her torso toward the bars.",
+    "Her legs bend inward, crossing over each other.",
+    "She releases her grip, swinging back to a standing position."
+   ],
+   [
+    "The gymnast swings her legs outward, grabbing the uneven bar with her hands.",
+    "Her body rotates backward in a circular motion around the bar.",
+    "Her arms extend fully behind her, keeping momentum as she swings back.",
+    "She transitions into a tucked position, drawing her knees up to her chest."
+   ]
+  ]
+ },
+ "(UB) giant circle forward with 1 turn on one arm before handstand phase": {
+  "counts": [
+   3,
+   3,
+   3
+  ],
+  "mean": 3,
+  "lists": [
+   [
+    "Gymnast swings forward on uneven bars, initiating giant circle.",
+    "One arm turns once while the other supports the body.",
+    "Transition begins towards handstand position on the bars."
+   ],
+   [
+    "Gymnast swings forward on uneven bars with a circular motion.",
+    "Gymnast completes one turn on one arm while still swinging.",
+    "Gymnast transitions into a handstand phase on the bars."
+   ],
+   [
+    "Gymnast swings across uneven bars, initiating giant circle.",
+    "One arm turns sharply while continuing the circular motion on the bar.",
+    "Transition begins towards handstand position as legs straighten."
+   ]
+  ]
+ },
+ "(UB) giant circle forward with 0.5 turn to handstand": {
+  "counts": [
+   3,
+   5,
+   4
+  ],
+  "mean": 4,
+  "lists": [
+   [
+    "Gymnast swings on uneven bars, initiating a giant circle forward.",
+    "Athlete performs a 0.5 turn while maintaining momentum on the bars.",
+    "Gymnast transitions smoothly into a handstand position on the bars."
+   ],
+   [
+    "The gymnast swings forward on the uneven bars.",
+    "She completes a half-turn while maintaining momentum.",
+    "She extends her body horizontally for a handstand position.",
+    "Her legs tuck in towards her chest during the handstand.",
+    "She extends her arms for balance and control in the handstand."
+   ],
+   [
+    "Gymnast swings across uneven bars, initiating giant circle.",
+    "Body rotates 0.5 turn while maintaining grip on bars.",
+    "Transition begins towards handstand position.",
+    "Arms extend fully, legs straighten, body aligns for handstand."
+   ]
+  ]
+ },
+ "(UB) giant circle forward": {
+  "counts": [
+   6,
+   7,
+   7
+  ],
+  "mean": 6.666666666666667,
+  "lists": [
+   [
+    "Gymnast grabs the uneven bar with both hands.",
+    "She swings her body in a circular motion around the bar.",
+    "Her legs extend outward, forming a straight line.",
+    "She maintains balance while rotating her body forward.",
+    "Her arms continue to support her weight during the swing.",
+    "She completes the circle and transitions back to the bar."
+   ],
+   [
+    "The gymnast grasps the uneven bar with both hands.",
+    "She lifts her legs upward, extending them horizontally.",
+    "Her body forms a straight line with arms reaching toward the ceiling.",
+    "She swings her body around the bar in a complete circle motion.",
+    "Her arms maintain a strong grip on the bar throughout the swing.",
+    "Upon completing the circle, she releases the bar with one hand.",
+    "She extends her body forward in preparation for landing."
+   ],
+   [
+    "The gymnast swings her legs forward, grabbing the higher bar with her arms.",
+    "Her body rotates clockwise, maintaining tension in both bars.",
+    "She extends her legs out to the side, forming a straight line with her body.",
+    "Her arms pull her closer to the higher bar, preparing for the next rotation.",
+    "She releases her grip, allowing herself to spin further around the bar.",
+    "She regains her hold, completing the rotation before releasing again.",
+    "She extends her legs back out, preparing for the landing on the mat below."
+   ]
+  ]
+ },
+ "(UB) clear hip circle backward to handstand": {
+  "counts": [
+   3,
+   4,
+   5
+  ],
+  "mean": 4,
+  "lists": [
+   [
+    "The gymnast swings her legs forward, initiating the clear hip circle.",
+    "She continues the circle, bringing her body around behind her.",
+    "As she completes the circle, she transitions into a handstand position."
+   ],
+   [
+    "The gymnast swings her legs around the bar to initiate the circle.",
+    "She rotates her hips backward in a controlled arc.",
+    "Her arms extend for balance as she continues the circular motion.",
+    "She transitions from the circle to a handstand position on the bar."
+   ],
+   [
+    "The gymnast swings her legs forward, preparing to clear the hip circle.",
+    "She extends her arms backward, guiding her body through the circle motion.",
+    "Her hands find the bar, initiating the backward swing.",
+    "She pulls herself up, rotating her body to face the opposite direction.",
+    "She transitions smoothly into a handstand position on the bar."
+   ]
+  ]
+ },
+ "(UB) clear pike circle backward with 1 turn to handstand": {
+  "counts": [
+   4,
+   4,
+   4
+  ],
+  "mean": 4,
+  "lists": [
+   [
+    "The gymnast swings backward on the uneven bar, performing a clear pike.",
+    "She continues her backward swing, maintaining a controlled circular motion.",
+    "As she completes the circle, she executes a turn, transitioning smoothly.",
+    "The gymnast then extends her arms upward, preparing for the handstand."
+   ],
+   [
+    "The gymnast grasps the uneven bar with both hands.",
+    "She performs a backward swing, extending her legs into a pike position.",
+    "Mid-swing, she initiates a turn, rotating her body.",
+    "As she completes the turn, she transitions into a handstand on the bar."
+   ],
+   [
+    "The gymnast begins with a clear pike position on the uneven bar.",
+    "She initiates a backward circle swing, rotating along the bar.",
+    "During the circle, she executes one full turn around her axis.",
+    "At the apex of the circle, she transitions into a handstand position."
+   ]
+  ]
+ },
+ "(UB) clear pike circle backward with 0.5 turn to handstand": {
+  "counts": [
+   5,
+   4,
+   3
+  ],
+  "mean": 4,
+  "lists": [
+   [
+    "Gymnast swings on uneven bar, initiating backward circle.",
+    "Body arches into clear pike position during backward swing.",
+    "Arms extend fully, preparing for handstand transition.",
+    "Body rotates 0.5 turn, aligning for handstand completion.",
+    "Hands reach for bar, transitioning into handstand position."
+   ],
+   [
+    "The gymnast grasps the uneven bar with both hands.",
+    "She performs a backward swing, extending her legs into a pike position.",
+    "Mid-swing, she initiates a 0.5 turn, rotating her body counterclockwise.",
+    "Upon completing the half-turn, she transitions into a handstand, gripping the bar."
+   ],
+   [
+    "The gymnast begins with a clear pike on the uneven bars.",
+    "She then initiates a backward circle on the bars.",
+    "As she completes half a turn, she transitions into a handstand."
+   ]
+  ]
+ },
+ "(UB) clear pike circle backward to handstand": {
+  "counts": [
+   4,
+   7,
+   6
+  ],
+  "mean": 5.666666666666667,
+  "lists": [
+   [
+    "The gymnast swings forward on the uneven bar.",
+    "She performs a clear pike, bending her legs while extending her arms.",
+    "She circles backward, rotating her body around the bar.",
+    "She transitions smoothly into a handstand position."
+   ],
+   [
+    "The gymnast grasps the uneven bar with both hands.",
+    "She performs a clear pike, bending her legs and torso upward.",
+    "She transitions into a circle swing, swinging her legs in a circular motion.",
+    "The gymnast continues the circle swing, maintaining momentum.",
+    "She shifts her body to prepare for a backward movement.",
+    "She executes a backward swing, rotating her body around the bar.",
+    "She reaches the desired height and transitions smoothly into a handstand."
+   ],
+   [
+    "The gymnast begins with a clear pike on the uneven bars.",
+    "She transitions into a circle swing motion on the bars.",
+    "The gymnast performs a backward movement along the bars.",
+    "She reaches a position where her hands meet at shoulder level above her head.",
+    "The gymnast extends her legs forward, aligning them horizontally.",
+    "She shifts her weight onto her hands, elevating her legs into a handstand position."
+   ]
+  ]
+ },
+ "(UB) stalder backward with 1 turn to handstand": {
+  "counts": [
+   5,
+   5,
+   4
+  ],
+  "mean": 4.666666666666667,
+  "lists": [
+   [
+    "The gymnast swings forward on the uneven bar.",
+    "She extends her arms and legs to prepare for the turn.",
+    "She performs a 180-degree turn in mid-air.",
+    "She transitions into a handstand position on the bar.",
+    "She maintains balance in the handstand while completing the swing."
+   ],
+   [
+    "The gymnast swings forward on the uneven bars.",
+    "She gathers momentum before releasing her arms.",
+    "Her legs extend outwards as she transitions.",
+    "She performs a turn on the bars.",
+    "She begins the descent towards a handstand position."
+   ],
+   [
+    "The gymnast swings back on the first bar, preparing for the handstand.",
+    "The gymnast executes a 360-degree turn while maintaining grip on the second bar.",
+    "The gymnast transitions into a handstand position on the second bar, legs straight.",
+    "The gymnast lowers herself to complete the movement, landing smoothly on the first bar."
+   ]
+  ]
+ },
+ "(UB) stalder backward to handstand": {
+  "counts": [
+   5,
+   4,
+   4
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "The gymnast swings forward on the uneven bar.",
+    "She extends her arms and legs to prepare for the backflip.",
+    "She performs a backflip, rotating her body in mid-air.",
+    "She lands on the bar with her hands, transitioning into a handstand.",
+    "She maintains the handstand, balancing on the bar's edge."
+   ],
+   [
+    "The gymnast swings forward on the bar with her legs extended.",
+    "She tucks her head down, preparing to perform the backward movement.",
+    "Her body rotates backward while she maintains contact with the bar.",
+    "Her hands reach out to grasp the bar behind her, transitioning into a handstand position."
+   ],
+   [
+    "The gymnast swings forward, gripping the uneven bar.",
+    "She extends her legs backward while rotating.",
+    "She transitions into a handstand position, balancing on her hands.",
+    "She maintains the handstand, shifting her weight to complete the stunt."
+   ]
+  ]
+ },
+ "(UB) counter straddle over high bar to hang": {
+  "counts": [
+   7,
+   6,
+   5
+  ],
+  "mean": 6,
+  "lists": [
+   [
+    "The gymnast approaches the uneven bars with a strong, controlled swing.",
+    "She grabs the high bar with both hands, initiating the counter straddle.",
+    "Her legs extend outward, forming a straddle position above the high bar.",
+    "She releases her grip on the high bar, allowing herself to fall.",
+    "Mid-air, she regrasps the high bar with one hand while extending her other arm for balance.",
+    "Her body twists slightly to align with the bar's direction.",
+    "She hangs upside down, maintaining control and stability."
+   ],
+   [
+    "The gymnast approaches the uneven bars, gripping them with both hands.",
+    "She performs a counter straddle, lifting her legs over the high bar.",
+    "With momentum, she releases her grip on the low bar.",
+    "In mid-air, she extends her arms for balance and control.",
+    "She regrasps the high bar, transitioning into a hanging position.",
+    "She adjusts her grip to maintain stability while hanging."
+   ],
+   [
+    "The gymnast performs a counter straddle over the high bar.",
+    "The gymnast releases her grip on the low bar.",
+    "She performs a regrasp flight towards the high bar.",
+    "The gymnast regrasps the high bar with both hands.",
+    "She assumes a hanging position on the high bar."
+   ]
+  ]
+ },
+ "(UB) counter piked over high bar to hang": {
+  "counts": [
+   8,
+   8,
+   5
+  ],
+  "mean": 7,
+  "lists": [
+   [
+    "The gymnast approaches the uneven bars with a strong swing.",
+    "She grabs the high bar with her right hand, lifting off the low bar.",
+    "She extends her left arm forward, preparing for the counterpike.",
+    "She performs a counterpike, rotating her body over the high bar.",
+    "Her legs tuck under her body during the counterpike.",
+    "She releases the high bar, extending her arms upward.",
+    "She regrasps the low bar with both hands, hanging upside down.",
+    "She maintains a controlled position, readying for the next move."
+   ],
+   [
+    "The gymnast approaches the uneven bars, gripping them with both hands.",
+    "She swings her legs upward in preparation for the counterpike.",
+    "With a strong push, she launches herself over the high bar.",
+    "Her body tucks as she passes over the bar, ensuring proper clearance.",
+    "She releases her hands from the bars during the counterpike.",
+    "Her legs continue to swing forward, preparing for the regrasp.",
+    "The gymnast's body extends outward before she regrasps the uneven bars.",
+    "She pulls herself up, using the momentum from the counterpike for additional height."
+   ],
+   [
+    "The gymnast performs a counterpike, lifting her legs above her head with bent knees.",
+    "She releases her hands from the bar, extending them upward.",
+    "She transitions into a flight phase, maintaining her extended position mid-air.",
+    "Reaching the peak of her flight, she grasps another bar with both hands.",
+    "She brings her body back down, completing the counter piked over high bar to hang maneuver."
+   ]
+  ]
+ },
+ "(UB) (swing backward or front support) salto forward straddled to hang on high bar": {
+  "counts": [
+   6,
+   6,
+   5
+  ],
+  "mean": 5.666666666666667,
+  "lists": [
+   [
+    "The gymnast swings backward on the uneven bars.",
+    "She transitions into a front support position.",
+    "She performs a salto forward straddle.",
+    "She releases from the bars during the salto.",
+    "She regrasps the high bar with both hands.",
+    "She hangs securely on the high bar after the release and regrasp."
+   ],
+   [
+    "The gymnast swings backward on the uneven bars.",
+    "She transitions to a front support position.",
+    "She performs a forward salto while straddling the bars.",
+    "She releases the bars during her flight.",
+    "She regrips the high bar after completing her flight.",
+    "She hangs securely on the high bar after landing."
+   ],
+   [
+    "The gymnast swings backward, gaining momentum.",
+    "She transitions into a front support position.",
+    "The gymnast leaps forward with her legs straddled.",
+    "She rotates through the air, preparing for the high bar.",
+    "She successfully grabs the high bar, hanging upside down."
+   ]
+  ]
+ },
+ "(UB) (swing backward) salto forward piked to hang on high bar": {
+  "counts": [
+   4,
+   5,
+   5
+  ],
+  "mean": 4.666666666666667,
+  "lists": [
+   [
+    "The gymnast swings backward on the uneven bars.",
+    "She performs a salto forward, piked in mid-air.",
+    "She regrasps the high bar with her hands.",
+    "She hangs on the high bar, maintaining a pike position."
+   ],
+   [
+    "The gymnast swings backward on the uneven bars.",
+    "She transitions into a forward somersault.",
+    "She lands piked with her hands raised.",
+    "She extends her legs and reaches for the high bar.",
+    "She successfully grabs the high bar and hangs."
+   ],
+   [
+    "The gymnast swings backward on the uneven bars.",
+    "She leaps forward, extending her legs.",
+    "She tucks her body into a pike position mid-air.",
+    "She regrasps the higher bar with her hands.",
+    "She hangs momentarily, maintaining her grip."
+   ]
+  ]
+ },
+ "(UB) (swing forward or hip circle backward) salto backward with 0.5 turn piked to hang on high bar": {
+  "counts": [
+   5,
+   5,
+   5
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "The gymnast swings forward on the uneven bars.",
+    "She performs a hip circle backward on the bars.",
+    "She executes a salto backward, piked, in mid-air.",
+    "She completes a 0.5 turn while piked during her flight.",
+    "She lands on the high bar, hanging securely."
+   ],
+   [
+    "The gymnast swings forward on the uneven bars.",
+    "She transitions into a hip circle backward motion.",
+    "She performs a salto backward with a 0.5 turn.",
+    "Her body is piked during the salto for added height.",
+    "She hangs on the high bar after landing."
+   ],
+   [
+    "Perform swing forward on uneven bars.",
+    "Execute hip circle backward on uneven bars.",
+    "Transition to salto backward, launching upward.",
+    "Complete 0.5 turn while piked during flight.",
+    "Hang on high bar after regrasp, maintaining pike position."
+   ]
+  ]
+ },
+ "(UB) transition flight from high bar to low bar": {
+  "counts": [
+   8,
+   5,
+   5
+  ],
+  "mean": 6,
+  "lists": [
+   [
+    "The gymnast swings from the high bar, extending her arms forward.",
+    "She begins to rotate her body, preparing for the transition.",
+    "Her legs swing upward, aligning with the low bar.",
+    "She extends her body horizontally, maintaining balance.",
+    "She reaches out with her hands towards the low bar.",
+    "She grabs the low bar, transitioning her weight onto it.",
+    "She pulls herself up, straightening her body.",
+    "She completes the transition, now on the low bar."
+   ],
+   [
+    "The gymnast leaps from the high bar with extended arms and legs.",
+    "Mid-air, the gymnast tucks their body to decrease air resistance.",
+    "Approaching the low bar, the gymnast extends again, preparing to grab.",
+    "The gymnast grabs the low bar with a strong pull-up motion.",
+    "The gymnast maintains a strong grip while adjusting their position on the bar."
+   ],
+   [
+    "The gymnast begins with a strong jump from the high bar.",
+    "The gymnast extends her body mid-air, arms outstretched.",
+    "She tucks her body tightly before rotating forward.",
+    "The gymnast transitions into a spin around the low bar.",
+    "Her body aligns with the low bar as she prepares to land."
+   ]
+  ]
+ },
+ "(UB) transition flight from low bar to high bar": {
+  "counts": [
+   5,
+   5,
+   3
+  ],
+  "mean": 4.333333333333333,
+  "lists": [
+   [
+    "The gymnast swings from the low bar, extending her arms forward.",
+    "She transitions mid-air, rotating her body to align with the high bar.",
+    "Her legs extend outward, preparing to grab the high bar.",
+    "She grabs the high bar with both hands, pulling herself up.",
+    "She straightens her body, balancing on the high bar."
+   ],
+   [
+    "The gymnast extends her legs and arms, propelling herself upward.",
+    "She rotates her body mid-air, aligning with the high bar.",
+    "Her hands grip the high bar firmly, transitioning her weight.",
+    "She tucks her head and pulls her knees up towards her chest.",
+    "She straightens out, extending her legs to complete the transition."
+   ],
+   [
+    "The gymnast swings from the low bar, extending her body and reaching for the high bar.",
+    "She transfers her weight onto the high bar, maintaining balance with her legs spread wide.",
+    "She pulls herself up, rotating her body to face the high bar as she prepares to dismount."
+   ]
+  ]
+ },
+ "(UB) (swing forward) double salto backward tucked with 1 turn": {
+  "counts": [
+   5,
+   5,
+   5
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "The gymnast swings forward on the uneven bars.",
+    "She approaches the dismount point with momentum.",
+    "She performs a double salto backward, tucking her body tightly.",
+    "Mid-air, she completes one full turn before landing.",
+    "She lands securely on the mat below, finishing the routine."
+   ],
+   [
+    "The gymnast swings forward on the uneven bars.",
+    "She builds momentum while gripping the bars tightly.",
+    "She releases from the bars, executing a double backflip.",
+    "She tucks her body tightly during the flip.",
+    "She lands smoothly on the mat after completing the turn."
+   ],
+   [
+    "The gymnast swings forward on the uneven bars.",
+    "She approaches the bar with momentum.",
+    "She jumps off the bar with her legs extended.",
+    "She tucks her body upon landing.",
+    "She performs one full rotation before landing on the mat."
+   ]
+  ]
+ },
+ "(UB) (swing backward) double salto forward tucked": {
+  "counts": [
+   4,
+   4,
+   4
+  ],
+  "mean": 4,
+  "lists": [
+   [
+    "The gymnast swings backward on the uneven bars.",
+    "She gains momentum for the double salto forward.",
+    "She tucks her body tightly during the salto.",
+    "She lands securely on the mat below."
+   ],
+   [
+    "The gymnast swings backward on the uneven bars.",
+    "She transitions smoothly into a double somersault in mid-air.",
+    "Her body tucks tightly as she completes the double somersault.",
+    "She dismounts from the uneven bars with a tucked landing."
+   ],
+   [
+    "The gymnast swings backward on the uneven bars with extended arms and legs.",
+    "Transitioning to a controlled fall, she prepares for the double salto.",
+    "Mid-air, she performs two simultaneous flips while gripping the bars.",
+    "Upon landing, she tucks her knees to complete the dismount."
+   ]
+  ]
+ },
+ "(UB) (swing forward) double salto backward stretched": {
+  "counts": [
+   5,
+   6,
+   4
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "The gymnast swings forward on the uneven bars.",
+    "She reaches peak height, preparing for the dismount.",
+    "She extends her legs backward in mid-air.",
+    "Her arms stretch out for balance during the dismount.",
+    "She lands smoothly on the mat after the backward stretch."
+   ],
+   [
+    "The gymnast swings forward on the uneven bars.",
+    "She builds momentum with a series of powerful swings.",
+    "She reaches the peak of her swing for maximum height.",
+    "She leaps off the bars with extended arms for the dismount.",
+    "She tucks her knees towards her chest mid-air for the double salto.",
+    "She straightens out her body for the backward stretch at the end."
+   ],
+   [
+    "The gymnast swings forward on the uneven bars with extended arms and legs.",
+    "Transitioning to a controlled rotation while maintaining bar contact.",
+    "Executing a double somersault in mid-air, limbs straight.",
+    "Landing gracefully on the mat, arms raised, completing the dismount."
+   ]
+  ]
+ },
+ "_summary": {
+  "classes": 99,
+  "per_class_mean": {
+   "mean": 5.057239057239057,
+   "sd": 0.9617142429867853,
+   "min": 3,
+   "max": 8.666666666666666
+  },
+  "all_samples": {
+   "mean": 5.057239057239057,
+   "sd": 1.4118628428283608
+  },
+  "K": {
+   "mean": 5,
+   "mean+sd": 6,
+   "mean+2sd": 7
+  }
+ }
+}

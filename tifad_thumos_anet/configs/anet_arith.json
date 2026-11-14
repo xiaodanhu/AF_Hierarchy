@@ -1,0 +1,1402 @@
+{
+ "Applying sunscreen": {
+  "full": "a video of an everyday activity: applying sunscreen, a kind of grooming face mouth, with fine hand manipulation and with repetitive cycles",
+  "parent": "a video of an everyday activity: applying sunscreen, a kind of grooming face mouth",
+  "clause_sents": [
+   "a video of an everyday activity: applying sunscreen, a kind of grooming face mouth, with fine hand manipulation and with repetitive cycles"
+  ]
+ },
+ "Archery": {
+  "full": "a video of an everyday activity: archery, a kind of precision target, on an outdoor range, with an object held in the hands and with repetitive cycles",
+  "parent": "a video of an everyday activity: archery, a kind of precision target",
+  "clause_sents": [
+   "a video of an everyday activity: archery, a kind of precision target, on an outdoor range, with an object held in the hands and with repetitive cycles"
+  ]
+ },
+ "Arm wrestling": {
+  "full": "a video of an everyday activity: arm wrestling, a kind of grappling rodeo, between two people, with the upper body and with straining held poses",
+  "parent": "a video of an everyday activity: arm wrestling, a kind of grappling rodeo",
+  "clause_sents": [
+   "a video of an everyday activity: arm wrestling, a kind of grappling rodeo, between two people, with the upper body and with straining held poses"
+  ]
+ },
+ "Assembling bicycle": {
+  "full": "a video of an everyday activity: assembling bicycle, a kind of tool craft repair, in a home setting, with fine hand manipulation and with an object held in the hands",
+  "parent": "a video of an everyday activity: assembling bicycle, a kind of tool craft repair",
+  "clause_sents": [
+   "a video of an everyday activity: assembling bicycle, a kind of tool craft repair, in a home setting, with fine hand manipulation and with an object held in the hands"
+  ]
+ },
+ "BMX": {
+  "full": "a video of an everyday activity: bmx, a kind of wheels ride, in an urban outdoor setting, on a ridden bike and with an aerial phase",
+  "parent": "a video of an everyday activity: bmx, a kind of wheels ride",
+  "clause_sents": [
+   "a video of an everyday activity: bmx, a kind of wheels ride, in an urban outdoor setting, on a ridden bike and with an aerial phase"
+  ]
+ },
+ "Baking cookies": {
+  "full": "a video of an everyday activity: baking cookies, a kind of food prep, in a home kitchen, using handheld utensils and with repetitive cycles",
+  "parent": "a video of an everyday activity: baking cookies, a kind of food prep",
+  "clause_sents": [
+   "a video of an everyday activity: baking cookies, a kind of food prep, in a home kitchen, using handheld utensils and with repetitive cycles"
+  ]
+ },
+ "Ballet": {
+  "full": "a video of an everyday activity: ballet, a kind of dance perform, on a stage or studio floor, with sweeping flowing motion and with an aerial phase",
+  "parent": "a video of an everyday activity: ballet, a kind of dance perform",
+  "clause_sents": [
+   "a video of an everyday activity: ballet, a kind of dance perform, on a stage or studio floor, with sweeping flowing motion and with an aerial phase"
+  ]
+ },
+ "Bathing dog": {
+  "full": "a video of an everyday activity: bathing dog, a kind of animal care, in a home setting, between a person and an animal, with repetitive cycles",
+  "parent": "a video of an everyday activity: bathing dog, a kind of animal care",
+  "clause_sents": [
+   "a video of an everyday activity: bathing dog, a kind of animal care, in a home setting, between a person and an animal, with repetitive cycles"
+  ]
+ },
+ "Baton twirling": {
+  "full": "a video of an everyday activity: baton twirling, a kind of gymnastics, with a slender implement held in the hands, with sweeping circular motion and with aerial tosses",
+  "parent": "a video of an everyday activity: baton twirling, a kind of gymnastics",
+  "clause_sents": [
+   "a video of an everyday activity: baton twirling, a kind of gymnastics, with a slender implement held in the hands, with sweeping circular motion and with aerial tosses"
+  ]
+ },
+ "Beach soccer": {
+  "full": "a video of an everyday activity: beach soccer, a kind of ball team, on an outdoor sand field, with the lower body and with striking motion",
+  "parent": "a video of an everyday activity: beach soccer, a kind of ball team",
+  "clause_sents": [
+   "a video of an everyday activity: beach soccer, a kind of ball team, on an outdoor sand field, with the lower body and with striking motion"
+  ]
+ },
+ "Beer pong": {
+  "full": "a video of an everyday activity: beer pong, a kind of precision target, in a home setting, with a small thrown projectile and with repetitive cycles",
+  "parent": "a video of an everyday activity: beer pong, a kind of precision target",
+  "clause_sents": [
+   "a video of an everyday activity: beer pong, a kind of precision target, in a home setting, with a small thrown projectile and with repetitive cycles"
+  ]
+ },
+ "Belly dance": {
+  "full": "a video of an everyday activity: belly dance, a kind of dance perform, performed solo, with sweeping circular motion and with repetitive cycles",
+  "parent": "a video of an everyday activity: belly dance, a kind of dance perform",
+  "clause_sents": [
+   "a video of an everyday activity: belly dance, a kind of dance perform, performed solo, with sweeping circular motion and with repetitive cycles"
+  ]
+ },
+ "Blow-drying hair": {
+  "full": "a video of an everyday activity: blow-drying hair, a kind of grooming hair, with a handheld tool, with sweeping motion and with repetitive cycles",
+  "parent": "a video of an everyday activity: blow-drying hair, a kind of grooming hair",
+  "clause_sents": [
+   "a video of an everyday activity: blow-drying hair, a kind of grooming hair, with a handheld tool, with sweeping motion and with repetitive cycles"
+  ]
+ },
+ "Blowing leaves": {
+  "full": "a video of an everyday activity: blowing leaves, a kind of yard garden, in an outdoor setting, with a handheld tool and moving across the ground",
+  "parent": "a video of an everyday activity: blowing leaves, a kind of yard garden",
+  "clause_sents": [
+   "a video of an everyday activity: blowing leaves, a kind of yard garden, in an outdoor setting, with a handheld tool and moving across the ground"
+  ]
+ },
+ "Braiding hair": {
+  "full": "a video of an everyday activity: braiding hair, a kind of grooming hair, in a home setting, with fine hand manipulation and with repetitive cycles",
+  "parent": "a video of an everyday activity: braiding hair, a kind of grooming hair",
+  "clause_sents": [
+   "a video of an everyday activity: braiding hair, a kind of grooming hair, in a home setting, with fine hand manipulation and with repetitive cycles"
+  ]
+ },
+ "Breakdancing": {
+  "full": "a video of an everyday activity: breakdancing, a kind of dance perform, in an urban setting, with sweeping circular motion and with an aerial phase",
+  "parent": "a video of an everyday activity: breakdancing, a kind of dance perform",
+  "clause_sents": [
+   "a video of an everyday activity: breakdancing, a kind of dance perform, in an urban setting, with sweeping circular motion and with an aerial phase"
+  ]
+ },
+ "Brushing hair": {
+  "full": "a video of an everyday activity: brushing hair, a kind of grooming hair, with a handheld tool, with fine hand manipulation and with repetitive cycles",
+  "parent": "a video of an everyday activity: brushing hair, a kind of grooming hair",
+  "clause_sents": [
+   "a video of an everyday activity: brushing hair, a kind of grooming hair, with a handheld tool, with fine hand manipulation and with repetitive cycles"
+  ]
+ },
+ "Brushing teeth": {
+  "full": "a video of an everyday activity: brushing teeth, a kind of grooming face mouth, in a home setting, with a handheld tool and with repetitive cycles",
+  "parent": "a video of an everyday activity: brushing teeth, a kind of grooming face mouth",
+  "clause_sents": [
+   "a video of an everyday activity: brushing teeth, a kind of grooming face mouth, in a home setting, with a handheld tool and with repetitive cycles"
+  ]
+ },
+ "Building sandcastles": {
+  "full": "a video of an everyday activity: building sandcastles, a kind of playground, in or near water, with handheld tools and with fine hand manipulation",
+  "parent": "a video of an everyday activity: building sandcastles, a kind of playground",
+  "clause_sents": [
+   "a video of an everyday activity: building sandcastles, a kind of playground, in or near water, with handheld tools and with fine hand manipulation"
+  ]
+ },
+ "Bullfighting": {
+  "full": "a video of an everyday activity: bullfighting, a kind of grappling rodeo, in an outdoor arena, between two opponents, with charging and striking motion",
+  "parent": "a video of an everyday activity: bullfighting, a kind of grappling rodeo",
+  "clause_sents": [
+   "a video of an everyday activity: bullfighting, a kind of grappling rodeo, in an outdoor arena, between two opponents, with charging and striking motion"
+  ]
+ },
+ "Bungee jumping": {
+  "full": "a video of an everyday activity: bungee jumping, a kind of jump field, in an outdoor setting, performed solo and with a long aerial phase",
+  "parent": "a video of an everyday activity: bungee jumping, a kind of jump field",
+  "clause_sents": [
+   "a video of an everyday activity: bungee jumping, a kind of jump field, in an outdoor setting, performed solo and with a long aerial phase"
+  ]
+ },
+ "Calf roping": {
+  "full": "a video of an everyday activity: calf roping, a kind of grappling rodeo, in an outdoor arena, with a rope held in the hands and with throwing motion",
+  "parent": "a video of an everyday activity: calf roping, a kind of grappling rodeo",
+  "clause_sents": [
+   "a video of an everyday activity: calf roping, a kind of grappling rodeo, in an outdoor arena, with a rope held in the hands and with throwing motion"
+  ]
+ },
+ "Camel ride": {
+  "full": "a video of an everyday activity: camel ride, a kind of animal ride, in an outdoor setting, on a ridden animal and with repetitive swaying cycles",
+  "parent": "a video of an everyday activity: camel ride, a kind of animal ride",
+  "clause_sents": [
+   "a video of an everyday activity: camel ride, a kind of animal ride, in an outdoor setting, on a ridden animal and with repetitive swaying cycles"
+  ]
+ },
+ "Canoeing": {
+  "full": "a video of an everyday activity: canoeing, a kind of water paddle, in or near water, between two people, with sweeping paddle strokes",
+  "parent": "a video of an everyday activity: canoeing, a kind of water paddle",
+  "clause_sents": [
+   "a video of an everyday activity: canoeing, a kind of water paddle, in or near water, between two people, with sweeping paddle strokes"
+  ]
+ },
+ "Capoeira": {
+  "full": "a video of an everyday activity: capoeira, a kind of martial striking, between two people, with sweeping circular motion and with an aerial phase",
+  "parent": "a video of an everyday activity: capoeira, a kind of martial striking",
+  "clause_sents": [
+   "a video of an everyday activity: capoeira, a kind of martial striking, between two people, with sweeping circular motion and with an aerial phase"
+  ]
+ },
+ "Carving jack-o-lanterns": {
+  "full": "a video of an everyday activity: carving jack-o-lanterns, a kind of surface finishing, in a home setting, with a handheld tool and with fine hand manipulation",
+  "parent": "a video of an everyday activity: carving jack-o-lanterns, a kind of surface finishing",
+  "clause_sents": [
+   "a video of an everyday activity: carving jack-o-lanterns, a kind of surface finishing, in a home setting, with a handheld tool and with fine hand manipulation"
+  ]
+ },
+ "Changing car wheel": {
+  "full": "a video of an everyday activity: changing car wheel, a kind of tool craft repair, in an urban outdoor setting, with handheld tools and with fine hand manipulation",
+  "parent": "a video of an everyday activity: changing car wheel, a kind of tool craft repair",
+  "clause_sents": [
+   "a video of an everyday activity: changing car wheel, a kind of tool craft repair, in an urban outdoor setting, with handheld tools and with fine hand manipulation"
+  ]
+ },
+ "Cheerleading": {
+  "full": "a video of an everyday activity: cheerleading, a kind of dance perform, in a gym or on a stage, in a group and with an aerial phase",
+  "parent": "a video of an everyday activity: cheerleading, a kind of dance perform",
+  "clause_sents": [
+   "a video of an everyday activity: cheerleading, a kind of dance perform, in a gym or on a stage, in a group and with an aerial phase"
+  ]
+ },
+ "Chopping wood": {
+  "full": "a video of an everyday activity: chopping wood, a kind of exterior repair, in an outdoor setting, with a striking swing and with repetitive cycles",
+  "parent": "a video of an everyday activity: chopping wood, a kind of exterior repair",
+  "clause_sents": [
+   "a video of an everyday activity: chopping wood, a kind of exterior repair, in an outdoor setting, with a striking swing and with repetitive cycles"
+  ]
+ },
+ "Clean and jerk": {
+  "full": "a video of an everyday activity: clean and jerk, a kind of gym equipment, in a gym, with a heavy barbell held in the hands and with held poses",
+  "parent": "a video of an everyday activity: clean and jerk, a kind of gym equipment",
+  "clause_sents": [
+   "a video of an everyday activity: clean and jerk, a kind of gym equipment, in a gym, with a heavy barbell held in the hands and with held poses"
+  ]
+ },
+ "Cleaning shoes": {
+  "full": "a video of an everyday activity: cleaning shoes, a kind of dressing textile, in a home setting, with a handheld tool and with repetitive strokes",
+  "parent": "a video of an everyday activity: cleaning shoes, a kind of dressing textile",
+  "clause_sents": [
+   "a video of an everyday activity: cleaning shoes, a kind of dressing textile, in a home setting, with a handheld tool and with repetitive strokes"
+  ]
+ },
+ "Cleaning sink": {
+  "full": "a video of an everyday activity: cleaning sink, a kind of interior clean, in a home setting, with a handheld tool and with repetitive cycles",
+  "parent": "a video of an everyday activity: cleaning sink, a kind of interior clean",
+  "clause_sents": [
+   "a video of an everyday activity: cleaning sink, a kind of interior clean, in a home setting, with a handheld tool and with repetitive cycles"
+  ]
+ },
+ "Cleaning windows": {
+  "full": "a video of an everyday activity: cleaning windows, a kind of interior clean, in a home setting, with sweeping strokes and with repetitive cycles",
+  "parent": "a video of an everyday activity: cleaning windows, a kind of interior clean",
+  "clause_sents": [
+   "a video of an everyday activity: cleaning windows, a kind of interior clean, in a home setting, with sweeping strokes and with repetitive cycles"
+  ]
+ },
+ "Clipping cat claws": {
+  "full": "a video of an everyday activity: clipping cat claws, a kind of animal care, in a home setting, between a person and an animal, with fine hand manipulation",
+  "parent": "a video of an everyday activity: clipping cat claws, a kind of animal care",
+  "clause_sents": [
+   "a video of an everyday activity: clipping cat claws, a kind of animal care, in a home setting, between a person and an animal, with fine hand manipulation"
+  ]
+ },
+ "Cricket": {
+  "full": "a video of an everyday activity: cricket, a kind of bat stick team, on an outdoor field, in a group, with throwing and striking motion",
+  "parent": "a video of an everyday activity: cricket, a kind of bat stick team",
+  "clause_sents": [
+   "a video of an everyday activity: cricket, a kind of bat stick team, on an outdoor field, in a group, with throwing and striking motion"
+  ]
+ },
+ "Croquet": {
+  "full": "a video of an everyday activity: croquet, a kind of bat stick team, on an outdoor lawn, with a long implement held in the hands and with striking motion",
+  "parent": "a video of an everyday activity: croquet, a kind of bat stick team",
+  "clause_sents": [
+   "a video of an everyday activity: croquet, a kind of bat stick team, on an outdoor lawn, with a long implement held in the hands and with striking motion"
+  ]
+ },
+ "Cumbia": {
+  "full": "a video of an everyday activity: cumbia, a kind of dance perform, in a group, with sweeping circular motion and with repetitive cycles",
+  "parent": "a video of an everyday activity: cumbia, a kind of dance perform",
+  "clause_sents": [
+   "a video of an everyday activity: cumbia, a kind of dance perform, in a group, with sweeping circular motion and with repetitive cycles"
+  ]
+ },
+ "Curling": {
+  "full": "a video of an everyday activity: curling, a kind of precision target, on ice, with a thrown stone and with repetitive cycles",
+  "parent": "a video of an everyday activity: curling, a kind of precision target",
+  "clause_sents": [
+   "a video of an everyday activity: curling, a kind of precision target, on ice, with a thrown stone and with repetitive cycles"
+  ]
+ },
+ "Cutting the grass": {
+  "full": "a video of an everyday activity: cutting the grass, a kind of yard garden, in an outdoor setting, with sweeping motion and with repetitive cycles",
+  "parent": "a video of an everyday activity: cutting the grass, a kind of yard garden",
+  "clause_sents": [
+   "a video of an everyday activity: cutting the grass, a kind of yard garden, in an outdoor setting, with sweeping motion and with repetitive cycles"
+  ]
+ },
+ "Decorating the Christmas tree": {
+  "full": "a video of an everyday activity: decorating the Christmas tree, a kind of surface finishing, in a home setting, in a group and with fine hand manipulation",
+  "parent": "a video of an everyday activity: decorating the Christmas tree, a kind of surface finishing",
+  "clause_sents": [
+   "a video of an everyday activity: decorating the Christmas tree, a kind of surface finishing, in a home setting, in a group and with fine hand manipulation"
+  ]
+ },
+ "Disc dog": {
+  "full": "a video of an everyday activity: disc dog, a kind of animal care, on an outdoor field, with a thrown disc and with an aerial phase",
+  "parent": "a video of an everyday activity: disc dog, a kind of animal care",
+  "clause_sents": [
+   "a video of an everyday activity: disc dog, a kind of animal care, on an outdoor field, with a thrown disc and with an aerial phase"
+  ]
+ },
+ "Discus throw": {
+  "full": "a video of an everyday activity: discus throw, a kind of throw field, on an outdoor field, with sweeping circular motion and with an object held in the hand",
+  "parent": "a video of an everyday activity: discus throw, a kind of throw field",
+  "clause_sents": [
+   "a video of an everyday activity: discus throw, a kind of throw field, on an outdoor field, with sweeping circular motion and with an object held in the hand"
+  ]
+ },
+ "Dodgeball": {
+  "full": "a video of an everyday activity: dodgeball, a kind of ball team, in a gym, in a group, with throwing and striking motion",
+  "parent": "a video of an everyday activity: dodgeball, a kind of ball team",
+  "clause_sents": [
+   "a video of an everyday activity: dodgeball, a kind of ball team, in a gym, in a group, with throwing and striking motion"
+  ]
+ },
+ "Doing a powerbomb": {
+  "full": "a video of an everyday activity: doing a powerbomb, a kind of grappling rodeo, in a ring or gym, between two people, with an aerial phase",
+  "parent": "a video of an everyday activity: doing a powerbomb, a kind of grappling rodeo",
+  "clause_sents": [
+   "a video of an everyday activity: doing a powerbomb, a kind of grappling rodeo, in a ring or gym, between two people, with an aerial phase"
+  ]
+ },
+ "Doing crunches": {
+  "full": "a video of an everyday activity: doing crunches, a kind of fitness floor, performed solo, with held poses and with repetitive cycles",
+  "parent": "a video of an everyday activity: doing crunches, a kind of fitness floor",
+  "clause_sents": [
+   "a video of an everyday activity: doing crunches, a kind of fitness floor, performed solo, with held poses and with repetitive cycles"
+  ]
+ },
+ "Doing fencing": {
+  "full": "a video of an everyday activity: doing fencing, a kind of martial striking, in a gym, between two people, with a long blade held in the hand",
+  "parent": "a video of an everyday activity: doing fencing, a kind of martial striking",
+  "clause_sents": [
+   "a video of an everyday activity: doing fencing, a kind of martial striking, in a gym, between two people, with a long blade held in the hand"
+  ]
+ },
+ "Doing karate": {
+  "full": "a video of an everyday activity: doing karate, a kind of martial striking, in a gym, performed solo and with repetitive striking cycles",
+  "parent": "a video of an everyday activity: doing karate, a kind of martial striking",
+  "clause_sents": [
+   "a video of an everyday activity: doing karate, a kind of martial striking, in a gym, performed solo and with repetitive striking cycles"
+  ]
+ },
+ "Doing kickboxing": {
+  "full": "a video of an everyday activity: doing kickboxing, a kind of martial striking, in a gym, between two people, with repetitive striking cycles",
+  "parent": "a video of an everyday activity: doing kickboxing, a kind of martial striking",
+  "clause_sents": [
+   "a video of an everyday activity: doing kickboxing, a kind of martial striking, in a gym, between two people, with repetitive striking cycles"
+  ]
+ },
+ "Doing motocross": {
+  "full": "a video of an everyday activity: doing motocross, a kind of wheels ride, on an outdoor dirt course, on a ridden bike and with an aerial phase",
+  "parent": "a video of an everyday activity: doing motocross, a kind of wheels ride",
+  "clause_sents": [
+   "a video of an everyday activity: doing motocross, a kind of wheels ride, on an outdoor dirt course, on a ridden bike and with an aerial phase"
+  ]
+ },
+ "Doing nails": {
+  "full": "a video of an everyday activity: doing nails, a kind of grooming hands legs, in a home setting, with a handheld tool and with fine hand manipulation",
+  "parent": "a video of an everyday activity: doing nails, a kind of grooming hands legs",
+  "clause_sents": [
+   "a video of an everyday activity: doing nails, a kind of grooming hands legs, in a home setting, with a handheld tool and with fine hand manipulation"
+  ]
+ },
+ "Doing step aerobics": {
+  "full": "a video of an everyday activity: doing step aerobics, a kind of fitness floor, in a gym setting, with a group of people and with repetitive cyclic motion",
+  "parent": "a video of an everyday activity: doing step aerobics, a kind of fitness floor",
+  "clause_sents": [
+   "a video of an everyday activity: doing step aerobics, a kind of fitness floor, in a gym setting, with a group of people and with repetitive cyclic motion"
+  ]
+ },
+ "Drinking beer": {
+  "full": "a video of an everyday activity: drinking beer, a kind of eat drink smoke, in a home setting, with a group of people and with an object held in the hand",
+  "parent": "a video of an everyday activity: drinking beer, a kind of eat drink smoke",
+  "clause_sents": [
+   "a video of an everyday activity: drinking beer, a kind of eat drink smoke, in a home setting, with a group of people and with an object held in the hand"
+  ]
+ },
+ "Drinking coffee": {
+  "full": "a video of an everyday activity: drinking coffee, a kind of eat drink smoke, in a home setting, with one person and with an object held in the hand",
+  "parent": "a video of an everyday activity: drinking coffee, a kind of eat drink smoke",
+  "clause_sents": [
+   "a video of an everyday activity: drinking coffee, a kind of eat drink smoke, in a home setting, with one person and with an object held in the hand"
+  ]
+ },
+ "Drum corps": {
+  "full": "a video of an everyday activity: drum corps, a kind of music percussion, in an urban outdoor setting, with a group of people and with continuous forward motion",
+  "parent": "a video of an everyday activity: drum corps, a kind of music percussion",
+  "clause_sents": [
+   "a video of an everyday activity: drum corps, a kind of music percussion, in an urban outdoor setting, with a group of people and with continuous forward motion"
+  ]
+ },
+ "Elliptical trainer": {
+  "full": "a video of an everyday activity: elliptical trainer, a kind of gym equipment, in a gym setting, with repetitive cyclic motion and with whole-body movement",
+  "parent": "a video of an everyday activity: elliptical trainer, a kind of gym equipment",
+  "clause_sents": [
+   "a video of an everyday activity: elliptical trainer, a kind of gym equipment, in a gym setting, with repetitive cyclic motion and with whole-body movement"
+  ]
+ },
+ "Fixing bicycle": {
+  "full": "a video of an everyday activity: fixing bicycle, a kind of tool craft repair, in an urban outdoor setting, with fine hand manipulation and using a handheld tool",
+  "parent": "a video of an everyday activity: fixing bicycle, a kind of tool craft repair",
+  "clause_sents": [
+   "a video of an everyday activity: fixing bicycle, a kind of tool craft repair, in an urban outdoor setting, with fine hand manipulation and using a handheld tool"
+  ]
+ },
+ "Fixing the roof": {
+  "full": "a video of an everyday activity: fixing the roof, a kind of exterior repair, in an urban outdoor setting, using a handheld tool and with repetitive cyclic motion",
+  "parent": "a video of an everyday activity: fixing the roof, a kind of exterior repair",
+  "clause_sents": [
+   "a video of an everyday activity: fixing the roof, a kind of exterior repair, in an urban outdoor setting, using a handheld tool and with repetitive cyclic motion"
+  ]
+ },
+ "Fun sliding down": {
+  "full": "a video of an everyday activity: fun sliding down, a kind of run walk, in an urban outdoor setting, with one person and with continuous forward motion",
+  "parent": "a video of an everyday activity: fun sliding down, a kind of run walk",
+  "clause_sents": [
+   "a video of an everyday activity: fun sliding down, a kind of run walk, in an urban outdoor setting, with one person and with continuous forward motion"
+  ]
+ },
+ "Futsal": {
+  "full": "a video of an everyday activity: futsal, a kind of ball team, in a gym setting, with a group of people and using a ball",
+  "parent": "a video of an everyday activity: futsal, a kind of ball team",
+  "clause_sents": [
+   "a video of an everyday activity: futsal, a kind of ball team, in a gym setting, with a group of people and using a ball"
+  ]
+ },
+ "Gargling mouthwash": {
+  "full": "a video of an everyday activity: gargling mouthwash, a kind of grooming face mouth, in a home setting, with one person and with repetitive cyclic motion",
+  "parent": "a video of an everyday activity: gargling mouthwash, a kind of grooming face mouth",
+  "clause_sents": [
+   "a video of an everyday activity: gargling mouthwash, a kind of grooming face mouth, in a home setting, with one person and with repetitive cyclic motion"
+  ]
+ },
+ "Getting a haircut": {
+  "full": "a video of an everyday activity: getting a haircut, a kind of grooming by others, with two people, using a handheld tool and with repetitive cyclic motion",
+  "parent": "a video of an everyday activity: getting a haircut, a kind of grooming by others",
+  "clause_sents": [
+   "a video of an everyday activity: getting a haircut, a kind of grooming by others, with two people, using a handheld tool and with repetitive cyclic motion"
+  ]
+ },
+ "Getting a piercing": {
+  "full": "a video of an everyday activity: getting a piercing, a kind of grooming by others, with two people, with fine hand manipulation and using a handheld tool",
+  "parent": "a video of an everyday activity: getting a piercing, a kind of grooming by others",
+  "clause_sents": [
+   "a video of an everyday activity: getting a piercing, a kind of grooming by others, with two people, with fine hand manipulation and using a handheld tool"
+  ]
+ },
+ "Getting a tattoo": {
+  "full": "a video of an everyday activity: getting a tattoo, a kind of grooming by others, with two people, with fine hand manipulation and with repetitive cyclic motion",
+  "parent": "a video of an everyday activity: getting a tattoo, a kind of grooming by others",
+  "clause_sents": [
+   "a video of an everyday activity: getting a tattoo, a kind of grooming by others, with two people, with fine hand manipulation and with repetitive cyclic motion"
+  ]
+ },
+ "Grooming dog": {
+  "full": "a video of an everyday activity: grooming dog, a kind of animal care, using a handheld tool, with fine hand manipulation and with repetitive cyclic motion",
+  "parent": "a video of an everyday activity: grooming dog, a kind of animal care",
+  "clause_sents": [
+   "a video of an everyday activity: grooming dog, a kind of animal care, using a handheld tool, with fine hand manipulation and with repetitive cyclic motion"
+  ]
+ },
+ "Grooming horse": {
+  "full": "a video of an everyday activity: grooming horse, a kind of animal care, on an outdoor field, using a handheld tool and with repetitive cyclic motion",
+  "parent": "a video of an everyday activity: grooming horse, a kind of animal care",
+  "clause_sents": [
+   "a video of an everyday activity: grooming horse, a kind of animal care, on an outdoor field, using a handheld tool and with repetitive cyclic motion"
+  ]
+ },
+ "Hammer throw": {
+  "full": "a video of an everyday activity: hammer throw, a kind of throw field, on an outdoor field, with a swinging rotational motion and with an object held in the hands",
+  "parent": "a video of an everyday activity: hammer throw, a kind of throw field",
+  "clause_sents": [
+   "a video of an everyday activity: hammer throw, a kind of throw field, on an outdoor field, with a swinging rotational motion and with an object held in the hands"
+  ]
+ },
+ "Hand car wash": {
+  "full": "a video of an everyday activity: hand car wash, a kind of tool craft repair, in an urban outdoor setting, with repetitive cyclic motion and with an object held in the hands",
+  "parent": "a video of an everyday activity: hand car wash, a kind of tool craft repair",
+  "clause_sents": [
+   "a video of an everyday activity: hand car wash, a kind of tool craft repair, in an urban outdoor setting, with repetitive cyclic motion and with an object held in the hands"
+  ]
+ },
+ "Hand washing clothes": {
+  "full": "a video of an everyday activity: hand washing clothes, a kind of dressing textile, in a home setting, with repetitive cyclic motion and with fine hand manipulation",
+  "parent": "a video of an everyday activity: hand washing clothes, a kind of dressing textile",
+  "clause_sents": [
+   "a video of an everyday activity: hand washing clothes, a kind of dressing textile, in a home setting, with repetitive cyclic motion and with fine hand manipulation"
+  ]
+ },
+ "Hanging wallpaper": {
+  "full": "a video of an everyday activity: hanging wallpaper, a kind of surface finishing, in a home setting, with fine hand manipulation and using a handheld tool",
+  "parent": "a video of an everyday activity: hanging wallpaper, a kind of surface finishing",
+  "clause_sents": [
+   "a video of an everyday activity: hanging wallpaper, a kind of surface finishing, in a home setting, with fine hand manipulation and using a handheld tool"
+  ]
+ },
+ "Having an ice cream": {
+  "full": "a video of an everyday activity: having an ice cream, a kind of eat drink smoke, in an urban outdoor setting, with one person and with an object held in the hand",
+  "parent": "a video of an everyday activity: having an ice cream, a kind of eat drink smoke",
+  "clause_sents": [
+   "a video of an everyday activity: having an ice cream, a kind of eat drink smoke, in an urban outdoor setting, with one person and with an object held in the hand"
+  ]
+ },
+ "High jump": {
+  "full": "a video of an everyday activity: high jump, a kind of jump field, on an outdoor field, with the body airborne and with a swinging rotational motion",
+  "parent": "a video of an everyday activity: high jump, a kind of jump field",
+  "clause_sents": [
+   "a video of an everyday activity: high jump, a kind of jump field, on an outdoor field, with the body airborne and with a swinging rotational motion"
+  ]
+ },
+ "Hitting a pinata": {
+  "full": "a video of an everyday activity: hitting a pinata, a kind of precision target, in an urban outdoor setting, with a group of people and with a striking motion",
+  "parent": "a video of an everyday activity: hitting a pinata, a kind of precision target",
+  "clause_sents": [
+   "a video of an everyday activity: hitting a pinata, a kind of precision target, in an urban outdoor setting, with a group of people and with a striking motion"
+  ]
+ },
+ "Hopscotch": {
+  "full": "a video of an everyday activity: hopscotch, a kind of run walk, in an urban outdoor setting, with repetitive cyclic motion and with the body airborne",
+  "parent": "a video of an everyday activity: hopscotch, a kind of run walk",
+  "clause_sents": [
+   "a video of an everyday activity: hopscotch, a kind of run walk, in an urban outdoor setting, with repetitive cyclic motion and with the body airborne"
+  ]
+ },
+ "Horseback riding": {
+  "full": "a video of an everyday activity: horseback riding, a kind of animal ride, on an outdoor field, with continuous forward motion and with repetitive cyclic motion",
+  "parent": "a video of an everyday activity: horseback riding, a kind of animal ride",
+  "clause_sents": [
+   "a video of an everyday activity: horseback riding, a kind of animal ride, on an outdoor field, with continuous forward motion and with repetitive cyclic motion"
+  ]
+ },
+ "Hula hoop": {
+  "full": "a video of an everyday activity: hula hoop, a kind of gymnastics, in a gym setting, with repetitive cyclic motion and with a swinging rotational motion",
+  "parent": "a video of an everyday activity: hula hoop, a kind of gymnastics",
+  "clause_sents": [
+   "a video of an everyday activity: hula hoop, a kind of gymnastics, in a gym setting, with repetitive cyclic motion and with a swinging rotational motion"
+  ]
+ },
+ "Hurling": {
+  "full": "a video of an everyday activity: hurling, a kind of bat stick team, on an outdoor field, with a group of people and using a long-handled implement",
+  "parent": "a video of an everyday activity: hurling, a kind of bat stick team",
+  "clause_sents": [
+   "a video of an everyday activity: hurling, a kind of bat stick team, on an outdoor field, with a group of people and using a long-handled implement"
+  ]
+ },
+ "Ice fishing": {
+  "full": "a video of an everyday activity: ice fishing, a kind of snow slide, on frozen ice, with one person and with fine hand manipulation",
+  "parent": "a video of an everyday activity: ice fishing, a kind of snow slide",
+  "clause_sents": [
+   "a video of an everyday activity: ice fishing, a kind of snow slide, on frozen ice, with one person and with fine hand manipulation"
+  ]
+ },
+ "Installing carpet": {
+  "full": "a video of an everyday activity: installing carpet, a kind of floor install, in a home setting, with repetitive cyclic motion and using a handheld tool",
+  "parent": "a video of an everyday activity: installing carpet, a kind of floor install",
+  "clause_sents": [
+   "a video of an everyday activity: installing carpet, a kind of floor install, in a home setting, with repetitive cyclic motion and using a handheld tool"
+  ]
+ },
+ "Ironing clothes": {
+  "full": "a video of an everyday activity: ironing clothes, a kind of dressing textile, in a home setting, with repetitive cyclic motion and using a handheld tool",
+  "parent": "a video of an everyday activity: ironing clothes, a kind of dressing textile",
+  "clause_sents": [
+   "a video of an everyday activity: ironing clothes, a kind of dressing textile, in a home setting, with repetitive cyclic motion and using a handheld tool"
+  ]
+ },
+ "Javelin throw": {
+  "full": "a video of an everyday activity: javelin throw, a kind of throw field, on an outdoor field, with a throwing motion and with an object held in the hand",
+  "parent": "a video of an everyday activity: javelin throw, a kind of throw field",
+  "clause_sents": [
+   "a video of an everyday activity: javelin throw, a kind of throw field, on an outdoor field, with a throwing motion and with an object held in the hand"
+  ]
+ },
+ "Kayaking": {
+  "full": "a video of an everyday activity: kayaking, a kind of water paddle, on open water, with repetitive cyclic motion and with an object held in the hands",
+  "parent": "a video of an everyday activity: kayaking, a kind of water paddle",
+  "clause_sents": [
+   "a video of an everyday activity: kayaking, a kind of water paddle, on open water, with repetitive cyclic motion and with an object held in the hands"
+  ]
+ },
+ "Kite flying": {
+  "full": "a video of an everyday activity: kite flying, a kind of tabletop games, on an outdoor field, with one person and with an object held in the hands",
+  "parent": "a video of an everyday activity: kite flying, a kind of tabletop games",
+  "clause_sents": [
+   "a video of an everyday activity: kite flying, a kind of tabletop games, on an outdoor field, with one person and with an object held in the hands"
+  ]
+ },
+ "Kneeling": {
+  "full": "a video of an everyday activity: kneeling, a kind of fitness floor, in a gym setting, with one person and with a held pose",
+  "parent": "a video of an everyday activity: kneeling, a kind of fitness floor",
+  "clause_sents": [
+   "a video of an everyday activity: kneeling, a kind of fitness floor, in a gym setting, with one person and with a held pose"
+  ]
+ },
+ "Knitting": {
+  "full": "a video of an everyday activity: knitting, a kind of dressing textile, in a home setting, with fine hand manipulation and with repetitive cyclic motion",
+  "parent": "a video of an everyday activity: knitting, a kind of dressing textile",
+  "clause_sents": [
+   "a video of an everyday activity: knitting, a kind of dressing textile, in a home setting, with fine hand manipulation and with repetitive cyclic motion"
+  ]
+ },
+ "Laying tile": {
+  "full": "a video of an everyday activity: laying tile, a kind of floor install, in a home setting, with fine hand manipulation and using a handheld tool",
+  "parent": "a video of an everyday activity: laying tile, a kind of floor install",
+  "clause_sents": [
+   "a video of an everyday activity: laying tile, a kind of floor install, in a home setting, with fine hand manipulation and using a handheld tool"
+  ]
+ },
+ "Layup drill in basketball": {
+  "full": "a video of an everyday activity: layup drill in basketball, a kind of ball team, in a gym setting, with a group of people and with repetitive cyclic motion",
+  "parent": "a video of an everyday activity: layup drill in basketball, a kind of ball team",
+  "clause_sents": [
+   "a video of an everyday activity: layup drill in basketball, a kind of ball team, in a gym setting, with a group of people and with repetitive cyclic motion"
+  ]
+ },
+ "Long jump": {
+  "full": "a video of an everyday activity: long jump, a kind of jump field, on an outdoor field, with the body airborne and with continuous forward motion",
+  "parent": "a video of an everyday activity: long jump, a kind of jump field",
+  "clause_sents": [
+   "a video of an everyday activity: long jump, a kind of jump field, on an outdoor field, with the body airborne and with continuous forward motion"
+  ]
+ },
+ "Longboarding": {
+  "full": "a video of an everyday activity: longboarding, a kind of wheels ride, in an urban outdoor setting, with one person and with continuous forward motion",
+  "parent": "a video of an everyday activity: longboarding, a kind of wheels ride",
+  "clause_sents": [
+   "a video of an everyday activity: longboarding, a kind of wheels ride, in an urban outdoor setting, with one person and with continuous forward motion"
+  ]
+ },
+ "Making a cake": {
+  "full": "a video of an everyday activity: making a cake, a kind of food prep, in a home setting, with an object held in the hands and using a handheld tool",
+  "parent": "a video of an everyday activity: making a cake, a kind of food prep",
+  "clause_sents": [
+   "a video of an everyday activity: making a cake, a kind of food prep, in a home setting, with an object held in the hands and using a handheld tool"
+  ]
+ },
+ "Making a lemonade": {
+  "full": "a video of an everyday activity: making a lemonade, a kind of food prep, in a home setting, with one person and using a handheld tool",
+  "parent": "a video of an everyday activity: making a lemonade, a kind of food prep",
+  "clause_sents": [
+   "a video of an everyday activity: making a lemonade, a kind of food prep, in a home setting, with one person and using a handheld tool"
+  ]
+ },
+ "Making a sandwich": {
+  "full": "a video of an everyday activity: making a sandwich, a kind of food prep, in a home setting, with fine hand manipulation and using a handheld tool",
+  "parent": "a video of an everyday activity: making a sandwich, a kind of food prep",
+  "clause_sents": [
+   "a video of an everyday activity: making a sandwich, a kind of food prep, in a home setting, with fine hand manipulation and using a handheld tool"
+  ]
+ },
+ "Making an omelette": {
+  "full": "a video of an everyday activity: making an omelette, a kind of food prep, in a home setting, with repetitive cyclic motion and using a handheld tool",
+  "parent": "a video of an everyday activity: making an omelette, a kind of food prep",
+  "clause_sents": [
+   "a video of an everyday activity: making an omelette, a kind of food prep, in a home setting, with repetitive cyclic motion and using a handheld tool"
+  ]
+ },
+ "Mixing drinks": {
+  "full": "a video of an everyday activity: mixing drinks, a kind of food prep, in a home setting, with one person and with an object held in the hands",
+  "parent": "a video of an everyday activity: mixing drinks, a kind of food prep",
+  "clause_sents": [
+   "a video of an everyday activity: mixing drinks, a kind of food prep, in a home setting, with one person and with an object held in the hands"
+  ]
+ },
+ "Mooping floor": {
+  "full": "a video of an everyday activity: mopping floor, a kind of interior clean, in a home setting, with repetitive cyclic motion and using a long-handled implement",
+  "parent": "a video of an everyday activity: mopping floor, a kind of interior clean",
+  "clause_sents": [
+   "a video of an everyday activity: mopping floor, a kind of interior clean, in a home setting, with repetitive cyclic motion and using a long-handled implement"
+  ]
+ },
+ "Mowing the lawn": {
+  "full": "a video of an everyday activity: mowing the lawn, a kind of yard garden, on an outdoor field, with continuous forward motion and with repetitive cyclic motion",
+  "parent": "a video of an everyday activity: mowing the lawn, a kind of yard garden",
+  "clause_sents": [
+   "a video of an everyday activity: mowing the lawn, a kind of yard garden, on an outdoor field, with continuous forward motion and with repetitive cyclic motion"
+  ]
+ },
+ "Paintball": {
+  "full": "a video of an everyday activity: paintball, a kind of precision target, on an outdoor field, with a group of people and with an object held in the hands",
+  "parent": "a video of an everyday activity: paintball, a kind of precision target",
+  "clause_sents": [
+   "a video of an everyday activity: paintball, a kind of precision target, on an outdoor field, with a group of people and with an object held in the hands"
+  ]
+ },
+ "Painting": {
+  "full": "a video of an everyday activity: painting, a kind of surface finishing, in a home setting, with repetitive cyclic motion and using a handheld tool",
+  "parent": "a video of an everyday activity: painting, a kind of surface finishing",
+  "clause_sents": [
+   "a video of an everyday activity: painting, a kind of surface finishing, in a home setting, with repetitive cyclic motion and using a handheld tool"
+  ]
+ },
+ "Painting fence": {
+  "full": "a video of an everyday activity: painting fence, a kind of exterior repair, in an urban outdoor setting, with repetitive cyclic motion and using a handheld tool",
+  "parent": "a video of an everyday activity: painting fence, a kind of exterior repair",
+  "clause_sents": [
+   "a video of an everyday activity: painting fence, a kind of exterior repair, in an urban outdoor setting, with repetitive cyclic motion and using a handheld tool"
+  ]
+ },
+ "Painting furniture": {
+  "full": "a video of an everyday activity: painting furniture, a kind of surface finishing, in a home setting, with repetitive cyclic motion and using a handheld tool",
+  "parent": "a video of an everyday activity: painting furniture, a kind of surface finishing",
+  "clause_sents": [
+   "a video of an everyday activity: painting furniture, a kind of surface finishing, in a home setting, with repetitive cyclic motion and using a handheld tool"
+  ]
+ },
+ "Peeling potatoes": {
+  "full": "a video of an everyday activity: peeling potatoes, a kind of food prep, in a home setting, with fine hand manipulation and with repetitive cyclic motion",
+  "parent": "a video of an everyday activity: peeling potatoes, a kind of food prep",
+  "clause_sents": [
+   "a video of an everyday activity: peeling potatoes, a kind of food prep, in a home setting, with fine hand manipulation and with repetitive cyclic motion"
+  ]
+ },
+ "Ping-pong": {
+  "full": "a video of an everyday activity: ping-pong, a kind of racquet over net, with a small racket held in hand and with rapid repetitive strokes between two players",
+  "parent": "a video of an everyday activity: ping-pong, a kind of racquet over net",
+  "clause_sents": [
+   "a video of an everyday activity: ping-pong, a kind of racquet over net, with a small racket held in hand and with rapid repetitive strokes between two players"
+  ]
+ },
+ "Plastering": {
+  "full": "a video of an everyday activity: plastering, a kind of surface finishing, using a handheld tool indoors and with repetitive fine hand work",
+  "parent": "a video of an everyday activity: plastering, a kind of surface finishing",
+  "clause_sents": [
+   "a video of an everyday activity: plastering, a kind of surface finishing, using a handheld tool indoors and with repetitive fine hand work"
+  ]
+ },
+ "Plataform diving": {
+  "full": "a video of an everyday activity: platform diving, a kind of water swim dive, with poised whole-body balance and with an airborne phase over water",
+  "parent": "a video of an everyday activity: platform diving, a kind of water swim dive",
+  "clause_sents": [
+   "a video of an everyday activity: platform diving, a kind of water swim dive, with poised whole-body balance and with an airborne phase over water"
+  ]
+ },
+ "Playing accordion": {
+  "full": "a video of an everyday activity: playing accordion, a kind of music string keys, with an instrument held against the body and with flowing repetitive bellows motion",
+  "parent": "a video of an everyday activity: playing accordion, a kind of music string keys",
+  "clause_sents": [
+   "a video of an everyday activity: playing accordion, a kind of music string keys, with an instrument held against the body and with flowing repetitive bellows motion"
+  ]
+ },
+ "Playing badminton": {
+  "full": "a video of an everyday activity: playing badminton, a kind of racquet over net, on an indoor court and with repetitive rallies between two players",
+  "parent": "a video of an everyday activity: playing badminton, a kind of racquet over net",
+  "clause_sents": [
+   "a video of an everyday activity: playing badminton, a kind of racquet over net, on an indoor court and with repetitive rallies between two players"
+  ]
+ },
+ "Playing bagpipes": {
+  "full": "a video of an everyday activity: playing bagpipes, a kind of music wind, in an outdoor setting and with an instrument held against the body",
+  "parent": "a video of an everyday activity: playing bagpipes, a kind of music wind",
+  "clause_sents": [
+   "a video of an everyday activity: playing bagpipes, a kind of music wind, in an outdoor setting and with an instrument held against the body"
+  ]
+ },
+ "Playing beach volleyball": {
+  "full": "a video of an everyday activity: playing beach volleyball, a kind of ball team, on an outdoor sand court and with airborne leaps in a team group",
+  "parent": "a video of an everyday activity: playing beach volleyball, a kind of ball team",
+  "clause_sents": [
+   "a video of an everyday activity: playing beach volleyball, a kind of ball team, on an outdoor sand court and with airborne leaps in a team group"
+  ]
+ },
+ "Playing blackjack": {
+  "full": "a video of an everyday activity: playing blackjack, a kind of tabletop games, with fine handling of cards and chips in a seated group",
+  "parent": "a video of an everyday activity: playing blackjack, a kind of tabletop games",
+  "clause_sents": [
+   "a video of an everyday activity: playing blackjack, a kind of tabletop games, with fine handling of cards and chips in a seated group"
+  ]
+ },
+ "Playing congas": {
+  "full": "a video of an everyday activity: playing congas, a kind of music percussion, with repetitive upper-body striking performed solo",
+  "parent": "a video of an everyday activity: playing congas, a kind of music percussion",
+  "clause_sents": [
+   "a video of an everyday activity: playing congas, a kind of music percussion, with repetitive upper-body striking performed solo"
+  ]
+ },
+ "Playing drums": {
+  "full": "a video of an everyday activity: playing drums, a kind of music percussion, with sticks held in hand and with repetitive upper-body striking",
+  "parent": "a video of an everyday activity: playing drums, a kind of music percussion",
+  "clause_sents": [
+   "a video of an everyday activity: playing drums, a kind of music percussion, with sticks held in hand and with repetitive upper-body striking"
+  ]
+ },
+ "Playing field hockey": {
+  "full": "a video of an everyday activity: playing field hockey, a kind of bat stick team, on an outdoor field and with a stick held in hand in a team group",
+  "parent": "a video of an everyday activity: playing field hockey, a kind of bat stick team",
+  "clause_sents": [
+   "a video of an everyday activity: playing field hockey, a kind of bat stick team, on an outdoor field and with a stick held in hand in a team group"
+  ]
+ },
+ "Playing flauta": {
+  "full": "a video of an everyday activity: playing the flute, a kind of music wind, with an instrument held in hand and with repetitive fine finger motion",
+  "parent": "a video of an everyday activity: playing the flute, a kind of music wind",
+  "clause_sents": [
+   "a video of an everyday activity: playing the flute, a kind of music wind, with an instrument held in hand and with repetitive fine finger motion"
+  ]
+ },
+ "Playing guitarra": {
+  "full": "a video of an everyday activity: playing the guitar, a kind of music string keys, with an instrument held against the body and with fine repetitive finger work",
+  "parent": "a video of an everyday activity: playing the guitar, a kind of music string keys",
+  "clause_sents": [
+   "a video of an everyday activity: playing the guitar, a kind of music string keys, with an instrument held against the body and with fine repetitive finger work"
+  ]
+ },
+ "Playing harmonica": {
+  "full": "a video of an everyday activity: playing harmonica, a kind of music wind, in a home setting and with an instrument held at the mouth",
+  "parent": "a video of an everyday activity: playing harmonica, a kind of music wind",
+  "clause_sents": [
+   "a video of an everyday activity: playing harmonica, a kind of music wind, in a home setting and with an instrument held at the mouth"
+  ]
+ },
+ "Playing ice hockey": {
+  "full": "a video of an everyday activity: playing ice hockey, a kind of bat stick team, on ice and with a stick held in hand in a team group",
+  "parent": "a video of an everyday activity: playing ice hockey, a kind of bat stick team",
+  "clause_sents": [
+   "a video of an everyday activity: playing ice hockey, a kind of bat stick team, on ice and with a stick held in hand in a team group"
+  ]
+ },
+ "Playing kickball": {
+  "full": "a video of an everyday activity: playing kickball, a kind of ball team, on an outdoor field and with whole-body kicking and running in a group",
+  "parent": "a video of an everyday activity: playing kickball, a kind of ball team",
+  "clause_sents": [
+   "a video of an everyday activity: playing kickball, a kind of ball team, on an outdoor field and with whole-body kicking and running in a group"
+  ]
+ },
+ "Playing lacrosse": {
+  "full": "a video of an everyday activity: playing lacrosse, a kind of bat stick team, on an outdoor field and with continuous running while carrying a netted stick",
+  "parent": "a video of an everyday activity: playing lacrosse, a kind of bat stick team",
+  "clause_sents": [
+   "a video of an everyday activity: playing lacrosse, a kind of bat stick team, on an outdoor field and with continuous running while carrying a netted stick"
+  ]
+ },
+ "Playing piano": {
+  "full": "a video of an everyday activity: playing piano, a kind of music string keys, with repetitive fine finger motion performed solo",
+  "parent": "a video of an everyday activity: playing piano, a kind of music string keys",
+  "clause_sents": [
+   "a video of an everyday activity: playing piano, a kind of music string keys, with repetitive fine finger motion performed solo"
+  ]
+ },
+ "Playing polo": {
+  "full": "a video of an everyday activity: playing polo, a kind of bat stick team, on an outdoor field and on horseback with a mallet held in hand",
+  "parent": "a video of an everyday activity: playing polo, a kind of bat stick team",
+  "clause_sents": [
+   "a video of an everyday activity: playing polo, a kind of bat stick team, on an outdoor field and on horseback with a mallet held in hand"
+  ]
+ },
+ "Playing pool": {
+  "full": "a video of an everyday activity: playing pool, a kind of precision target, indoors and with a cue held in hand between two players",
+  "parent": "a video of an everyday activity: playing pool, a kind of precision target",
+  "clause_sents": [
+   "a video of an everyday activity: playing pool, a kind of precision target, indoors and with a cue held in hand between two players"
+  ]
+ },
+ "Playing racquetball": {
+  "full": "a video of an everyday activity: playing racquetball, a kind of racquet wall, on an enclosed indoor court and with repetitive swings of a held racket",
+  "parent": "a video of an everyday activity: playing racquetball, a kind of racquet wall",
+  "clause_sents": [
+   "a video of an everyday activity: playing racquetball, a kind of racquet wall, on an enclosed indoor court and with repetitive swings of a held racket"
+  ]
+ },
+ "Playing rubik cube": {
+  "full": "a video of an everyday activity: playing rubik\u2019s cube, a kind of tabletop games, with fine repetitive finger manipulation of a held object",
+  "parent": "a video of an everyday activity: playing rubik\u2019s cube, a kind of tabletop games",
+  "clause_sents": [
+   "a video of an everyday activity: playing rubik\u2019s cube, a kind of tabletop games, with fine repetitive finger manipulation of a held object"
+  ]
+ },
+ "Playing saxophone": {
+  "full": "a video of an everyday activity: playing saxophone, a kind of music wind, with an instrument held on a strap and with repetitive fine finger motion",
+  "parent": "a video of an everyday activity: playing saxophone, a kind of music wind",
+  "clause_sents": [
+   "a video of an everyday activity: playing saxophone, a kind of music wind, with an instrument held on a strap and with repetitive fine finger motion"
+  ]
+ },
+ "Playing squash": {
+  "full": "a video of an everyday activity: playing squash, a kind of racquet wall, on an enclosed indoor court and with repetitive swings between two players",
+  "parent": "a video of an everyday activity: playing squash, a kind of racquet wall",
+  "clause_sents": [
+   "a video of an everyday activity: playing squash, a kind of racquet wall, on an enclosed indoor court and with repetitive swings between two players"
+  ]
+ },
+ "Playing ten pins": {
+  "full": "a video of an everyday activity: ten-pin bowling, a kind of precision target, indoors and with repetitive one-armed swings of a held ball",
+  "parent": "a video of an everyday activity: ten-pin bowling, a kind of precision target",
+  "clause_sents": [
+   "a video of an everyday activity: ten-pin bowling, a kind of precision target, indoors and with repetitive one-armed swings of a held ball"
+  ]
+ },
+ "Playing violin": {
+  "full": "a video of an everyday activity: playing violin, a kind of music string keys, with an instrument held at the shoulder and with flowing repetitive bowing",
+  "parent": "a video of an everyday activity: playing violin, a kind of music string keys",
+  "clause_sents": [
+   "a video of an everyday activity: playing violin, a kind of music string keys, with an instrument held at the shoulder and with flowing repetitive bowing"
+  ]
+ },
+ "Playing water polo": {
+  "full": "a video of an everyday activity: playing water polo, a kind of ball team, in the water and with one-handed throws in a team group",
+  "parent": "a video of an everyday activity: playing water polo, a kind of ball team",
+  "clause_sents": [
+   "a video of an everyday activity: playing water polo, a kind of ball team, in the water and with one-handed throws in a team group"
+  ]
+ },
+ "Pole vault": {
+  "full": "a video of an everyday activity: pole vault, a kind of jump field, with a long pole held in hand and with an airborne phase",
+  "parent": "a video of an everyday activity: pole vault, a kind of jump field",
+  "clause_sents": [
+   "a video of an everyday activity: pole vault, a kind of jump field, with a long pole held in hand and with an airborne phase"
+  ]
+ },
+ "Polishing forniture": {
+  "full": "a video of an everyday activity: polishing furniture, a kind of interior clean, in a home setting and with repetitive circular motion of a held cloth",
+  "parent": "a video of an everyday activity: polishing furniture, a kind of interior clean",
+  "clause_sents": [
+   "a video of an everyday activity: polishing furniture, a kind of interior clean, in a home setting and with repetitive circular motion of a held cloth"
+  ]
+ },
+ "Polishing shoes": {
+  "full": "a video of an everyday activity: polishing shoes, a kind of dressing textile, in a home setting and with repetitive swinging strokes of a held brush",
+  "parent": "a video of an everyday activity: polishing shoes, a kind of dressing textile",
+  "clause_sents": [
+   "a video of an everyday activity: polishing shoes, a kind of dressing textile, in a home setting and with repetitive swinging strokes of a held brush"
+  ]
+ },
+ "Powerbocking": {
+  "full": "a video of an everyday activity: powerbocking, a kind of wheels ride, in an outdoor urban setting and with springing airborne leg motion",
+  "parent": "a video of an everyday activity: powerbocking, a kind of wheels ride",
+  "clause_sents": [
+   "a video of an everyday activity: powerbocking, a kind of wheels ride, in an outdoor urban setting and with springing airborne leg motion"
+  ]
+ },
+ "Preparing pasta": {
+  "full": "a video of an everyday activity: preparing pasta, a kind of food prep, in a home kitchen and with repetitive stirring using handheld utensils",
+  "parent": "a video of an everyday activity: preparing pasta, a kind of food prep",
+  "clause_sents": [
+   "a video of an everyday activity: preparing pasta, a kind of food prep, in a home kitchen and with repetitive stirring using handheld utensils"
+  ]
+ },
+ "Preparing salad": {
+  "full": "a video of an everyday activity: preparing salad, a kind of food prep, in a home kitchen and with flowing hand motions using handheld utensils",
+  "parent": "a video of an everyday activity: preparing salad, a kind of food prep",
+  "clause_sents": [
+   "a video of an everyday activity: preparing salad, a kind of food prep, in a home kitchen and with flowing hand motions using handheld utensils"
+  ]
+ },
+ "Putting in contact lenses": {
+  "full": "a video of an everyday activity: putting in contact lenses, a kind of grooming face mouth, in a home setting and with delicate fine finger motion performed solo",
+  "parent": "a video of an everyday activity: putting in contact lenses, a kind of grooming face mouth",
+  "clause_sents": [
+   "a video of an everyday activity: putting in contact lenses, a kind of grooming face mouth, in a home setting and with delicate fine finger motion performed solo"
+  ]
+ },
+ "Putting on makeup": {
+  "full": "a video of an everyday activity: putting on makeup, a kind of grooming face mouth, in a home setting and with fine hand motion using held applicators",
+  "parent": "a video of an everyday activity: putting on makeup, a kind of grooming face mouth",
+  "clause_sents": [
+   "a video of an everyday activity: putting on makeup, a kind of grooming face mouth, in a home setting and with fine hand motion using held applicators"
+  ]
+ },
+ "Putting on shoes": {
+  "full": "a video of an everyday activity: putting on shoes, a kind of dressing textile, in a home setting and with fine hand motion around the feet",
+  "parent": "a video of an everyday activity: putting on shoes, a kind of dressing textile",
+  "clause_sents": [
+   "a video of an everyday activity: putting on shoes, a kind of dressing textile, in a home setting and with fine hand motion around the feet"
+  ]
+ },
+ "Rafting": {
+  "full": "a video of an everyday activity: rafting, a kind of water paddle, on moving water and with repetitive paddling in a group holding paddles",
+  "parent": "a video of an everyday activity: rafting, a kind of water paddle",
+  "clause_sents": [
+   "a video of an everyday activity: rafting, a kind of water paddle, on moving water and with repetitive paddling in a group holding paddles"
+  ]
+ },
+ "Raking leaves": {
+  "full": "a video of an everyday activity: raking leaves, a kind of yard garden, in an outdoor yard and with repetitive swinging strokes of a held rake",
+  "parent": "a video of an everyday activity: raking leaves, a kind of yard garden",
+  "clause_sents": [
+   "a video of an everyday activity: raking leaves, a kind of yard garden, in an outdoor yard and with repetitive swinging strokes of a held rake"
+  ]
+ },
+ "Removing curlers": {
+  "full": "a video of an everyday activity: removing curlers, a kind of grooming hair, in a home setting and with fine finger motion on held rollers",
+  "parent": "a video of an everyday activity: removing curlers, a kind of grooming hair",
+  "clause_sents": [
+   "a video of an everyday activity: removing curlers, a kind of grooming hair, in a home setting and with fine finger motion on held rollers"
+  ]
+ },
+ "Removing ice from car": {
+  "full": "a video of an everyday activity: removing ice from car, a kind of tool craft repair, in a snowy setting and with repetitive scraping strokes of a held tool",
+  "parent": "a video of an everyday activity: removing ice from car, a kind of tool craft repair",
+  "clause_sents": [
+   "a video of an everyday activity: removing ice from car, a kind of tool craft repair, in a snowy setting and with repetitive scraping strokes of a held tool"
+  ]
+ },
+ "Riding bumper cars": {
+  "full": "a video of an everyday activity: riding bumper cars, a kind of playground, in an amusement setting and riding a small vehicle in a group",
+  "parent": "a video of an everyday activity: riding bumper cars, a kind of playground",
+  "clause_sents": [
+   "a video of an everyday activity: riding bumper cars, a kind of playground, in an amusement setting and riding a small vehicle in a group"
+  ]
+ },
+ "River tubing": {
+  "full": "a video of an everyday activity: river tubing, a kind of water paddle, on moving water and with balanced riding on a floating tube in a group",
+  "parent": "a video of an everyday activity: river tubing, a kind of water paddle",
+  "clause_sents": [
+   "a video of an everyday activity: river tubing, a kind of water paddle, on moving water and with balanced riding on a floating tube in a group"
+  ]
+ },
+ "Rock climbing": {
+  "full": "a video of an everyday activity: rock climbing, a kind of playground, on an outdoor rock face and with whole-body climbing while gripping holds",
+  "parent": "a video of an everyday activity: rock climbing, a kind of playground",
+  "clause_sents": [
+   "a video of an everyday activity: rock climbing, a kind of playground, on an outdoor rock face and with whole-body climbing while gripping holds"
+  ]
+ },
+ "Rock-paper-scissors": {
+  "full": "a video of an everyday activity: rock-paper-scissors, a kind of tabletop games, with repetitive fine hand gestures between two people",
+  "parent": "a video of an everyday activity: rock-paper-scissors, a kind of tabletop games",
+  "clause_sents": [
+   "a video of an everyday activity: rock-paper-scissors, a kind of tabletop games, with repetitive fine hand gestures between two people"
+  ]
+ },
+ "Rollerblading": {
+  "full": "a video of an everyday activity: rollerblading, a kind of wheels ride, in an outdoor urban setting and with repetitive skating strides on wheels",
+  "parent": "a video of an everyday activity: rollerblading, a kind of wheels ride",
+  "clause_sents": [
+   "a video of an everyday activity: rollerblading, a kind of wheels ride, in an outdoor urban setting and with repetitive skating strides on wheels"
+  ]
+ },
+ "Roof shingle removal": {
+  "full": "a video of an everyday activity: roof shingle removal, a kind of exterior repair, in an outdoor setting and with repetitive prying strokes of a held tool",
+  "parent": "a video of an everyday activity: roof shingle removal, a kind of exterior repair",
+  "clause_sents": [
+   "a video of an everyday activity: roof shingle removal, a kind of exterior repair, in an outdoor setting and with repetitive prying strokes of a held tool"
+  ]
+ },
+ "Rope skipping": {
+  "full": "a video of an everyday activity: rope skipping, a kind of fitness floor, with a rope held in hand and with repetitive airborne jumps",
+  "parent": "a video of an everyday activity: rope skipping, a kind of fitness floor",
+  "clause_sents": [
+   "a video of an everyday activity: rope skipping, a kind of fitness floor, with a rope held in hand and with repetitive airborne jumps"
+  ]
+ },
+ "Running a marathon": {
+  "full": "a video of an everyday activity: running a marathon, a kind of run walk, in an outdoor urban setting and with repetitive running strides in a group",
+  "parent": "a video of an everyday activity: running a marathon, a kind of run walk",
+  "clause_sents": [
+   "a video of an everyday activity: running a marathon, a kind of run walk, in an outdoor urban setting and with repetitive running strides in a group"
+  ]
+ },
+ "Sailing": {
+  "full": "a video of an everyday activity: sailing, a kind of water paddle, on the water and with fine handling of lines aboard a boat in a group",
+  "parent": "a video of an everyday activity: sailing, a kind of water paddle",
+  "clause_sents": [
+   "a video of an everyday activity: sailing, a kind of water paddle, on the water and with fine handling of lines aboard a boat in a group"
+  ]
+ },
+ "Scuba diving": {
+  "full": "a video of an everyday activity: scuba diving, a kind of water swim dive, in the water and with repetitive fin kicks using worn equipment",
+  "parent": "a video of an everyday activity: scuba diving, a kind of water swim dive",
+  "clause_sents": [
+   "a video of an everyday activity: scuba diving, a kind of water swim dive, in the water and with repetitive fin kicks using worn equipment"
+  ]
+ },
+ "Sharpening knives": {
+  "full": "a video of an everyday activity: sharpening knives, a kind of tool craft repair, indoors at home, with a handheld tool and with a repetitive cyclic motion",
+  "parent": "a video of an everyday activity: sharpening knives, a kind of tool craft repair",
+  "clause_sents": [
+   "a video of an everyday activity: sharpening knives, a kind of tool craft repair, indoors at home, with a handheld tool and with a repetitive cyclic motion"
+  ]
+ },
+ "Shaving": {
+  "full": "a video of an everyday activity: shaving, a kind of grooming face mouth, indoors at home, with a handheld razor and with a repetitive cyclic motion",
+  "parent": "a video of an everyday activity: shaving, a kind of grooming face mouth",
+  "clause_sents": [
+   "a video of an everyday activity: shaving, a kind of grooming face mouth, indoors at home, with a handheld razor and with a repetitive cyclic motion"
+  ]
+ },
+ "Shaving legs": {
+  "full": "a video of an everyday activity: shaving legs, a kind of grooming hands legs, indoors at home, with a handheld razor and with fine repeated strokes",
+  "parent": "a video of an everyday activity: shaving legs, a kind of grooming hands legs",
+  "clause_sents": [
+   "a video of an everyday activity: shaving legs, a kind of grooming hands legs, indoors at home, with a handheld razor and with fine repeated strokes"
+  ]
+ },
+ "Shot put": {
+  "full": "a video of an everyday activity: shot put, a kind of throw field, on an outdoor field, with a heavy metal ball held at the neck and with a whole-body pushing strike",
+  "parent": "a video of an everyday activity: shot put, a kind of throw field",
+  "clause_sents": [
+   "a video of an everyday activity: shot put, a kind of throw field, on an outdoor field, with a heavy metal ball held at the neck and with a whole-body pushing strike"
+  ]
+ },
+ "Shoveling snow": {
+  "full": "a video of an everyday activity: shoveling snow, a kind of exterior repair, on snow-covered ground, with a handheld shovel and with a repetitive cyclic motion",
+  "parent": "a video of an everyday activity: shoveling snow, a kind of exterior repair",
+  "clause_sents": [
+   "a video of an everyday activity: shoveling snow, a kind of exterior repair, on snow-covered ground, with a handheld shovel and with a repetitive cyclic motion"
+  ]
+ },
+ "Shuffleboard": {
+  "full": "a video of an everyday activity: shuffleboard, a kind of precision target, indoors on a long court, with a long-handled cue and with a repeated pushing delivery",
+  "parent": "a video of an everyday activity: shuffleboard, a kind of precision target",
+  "clause_sents": [
+   "a video of an everyday activity: shuffleboard, a kind of precision target, indoors on a long court, with a long-handled cue and with a repeated pushing delivery"
+  ]
+ },
+ "Skateboarding": {
+  "full": "a video of an everyday activity: skateboarding, a kind of wheels ride, in an outdoor urban setting, riding a wheeled board and with an airborne phase",
+  "parent": "a video of an everyday activity: skateboarding, a kind of wheels ride",
+  "clause_sents": [
+   "a video of an everyday activity: skateboarding, a kind of wheels ride, in an outdoor urban setting, riding a wheeled board and with an airborne phase"
+  ]
+ },
+ "Skiing": {
+  "full": "a video of an everyday activity: skiing, a kind of snow slide, on snow-covered slopes, riding a pair of skis and with poles held in the hands",
+  "parent": "a video of an everyday activity: skiing, a kind of snow slide",
+  "clause_sents": [
+   "a video of an everyday activity: skiing, a kind of snow slide, on snow-covered slopes, riding a pair of skis and with poles held in the hands"
+  ]
+ },
+ "Slacklining": {
+  "full": "a video of an everyday activity: slacklining, a kind of playground, outdoors on open ground, with no equipment held and with whole-body balancing",
+  "parent": "a video of an everyday activity: slacklining, a kind of playground",
+  "clause_sents": [
+   "a video of an everyday activity: slacklining, a kind of playground, outdoors on open ground, with no equipment held and with whole-body balancing"
+  ]
+ },
+ "Smoking a cigarette": {
+  "full": "a video of an everyday activity: smoking a cigarette, a kind of eat drink smoke, in an outdoor urban setting, with a small item held to the mouth and with repeated puffs",
+  "parent": "a video of an everyday activity: smoking a cigarette, a kind of eat drink smoke",
+  "clause_sents": [
+   "a video of an everyday activity: smoking a cigarette, a kind of eat drink smoke, in an outdoor urban setting, with a small item held to the mouth and with repeated puffs"
+  ]
+ },
+ "Smoking hookah": {
+  "full": "a video of an everyday activity: smoking hookah, a kind of eat drink smoke, indoors in a lounge, in a group and with a shared hose held by hand",
+  "parent": "a video of an everyday activity: smoking hookah, a kind of eat drink smoke",
+  "clause_sents": [
+   "a video of an everyday activity: smoking hookah, a kind of eat drink smoke, indoors in a lounge, in a group and with a shared hose held by hand"
+  ]
+ },
+ "Snatch": {
+  "full": "a video of an everyday activity: snatch, a kind of gym equipment, in a gym, with a barbell held overhead and with a whole-body balancing catch",
+  "parent": "a video of an everyday activity: snatch, a kind of gym equipment",
+  "clause_sents": [
+   "a video of an everyday activity: snatch, a kind of gym equipment, in a gym, with a barbell held overhead and with a whole-body balancing catch"
+  ]
+ },
+ "Snow tubing": {
+  "full": "a video of an everyday activity: snow tubing, a kind of snow slide, on snow-covered lanes, riding an inflatable tube and with a gliding descent",
+  "parent": "a video of an everyday activity: snow tubing, a kind of snow slide",
+  "clause_sents": [
+   "a video of an everyday activity: snow tubing, a kind of snow slide, on snow-covered lanes, riding an inflatable tube and with a gliding descent"
+  ]
+ },
+ "Snowboarding": {
+  "full": "a video of an everyday activity: snowboarding, a kind of snow slide, on snow-covered slopes, riding a single board and with an airborne phase",
+  "parent": "a video of an everyday activity: snowboarding, a kind of snow slide",
+  "clause_sents": [
+   "a video of an everyday activity: snowboarding, a kind of snow slide, on snow-covered slopes, riding a single board and with an airborne phase"
+  ]
+ },
+ "Spinning": {
+  "full": "a video of an everyday activity: spinning, a kind of gym equipment, in a gym studio, riding stationary bikes in a group and with continuous cyclic pedaling",
+  "parent": "a video of an everyday activity: spinning, a kind of gym equipment",
+  "clause_sents": [
+   "a video of an everyday activity: spinning, a kind of gym equipment, in a gym studio, riding stationary bikes in a group and with continuous cyclic pedaling"
+  ]
+ },
+ "Spread mulch": {
+  "full": "a video of an everyday activity: spread mulch, a kind of yard garden, outdoors in a garden, with a handheld tool and with repeated scattering motions",
+  "parent": "a video of an everyday activity: spread mulch, a kind of yard garden",
+  "clause_sents": [
+   "a video of an everyday activity: spread mulch, a kind of yard garden, outdoors in a garden, with a handheld tool and with repeated scattering motions"
+  ]
+ },
+ "Springboard diving": {
+  "full": "a video of an everyday activity: springboard diving, a kind of water swim dive, at a swimming pool, with an airborne somersault and with a whole-body rotation",
+  "parent": "a video of an everyday activity: springboard diving, a kind of water swim dive",
+  "clause_sents": [
+   "a video of an everyday activity: springboard diving, a kind of water swim dive, at a swimming pool, with an airborne somersault and with a whole-body rotation"
+  ]
+ },
+ "Starting a campfire": {
+  "full": "a video of an everyday activity: starting a campfire, a kind of exterior repair, outdoors on open ground, in a small group and with objects handled by hand",
+  "parent": "a video of an everyday activity: starting a campfire, a kind of exterior repair",
+  "clause_sents": [
+   "a video of an everyday activity: starting a campfire, a kind of exterior repair, outdoors on open ground, in a small group and with objects handled by hand"
+  ]
+ },
+ "Sumo": {
+  "full": "a video of an everyday activity: sumo, a kind of grappling rodeo, indoors on a raised ring, between a pair of opponents and with whole-body balance",
+  "parent": "a video of an everyday activity: sumo, a kind of grappling rodeo",
+  "clause_sents": [
+   "a video of an everyday activity: sumo, a kind of grappling rodeo, indoors on a raised ring, between a pair of opponents and with whole-body balance"
+  ]
+ },
+ "Surfing": {
+  "full": "a video of an everyday activity: surfing, a kind of water board, on open water, riding a board and with whole-body balancing",
+  "parent": "a video of an everyday activity: surfing, a kind of water board",
+  "clause_sents": [
+   "a video of an everyday activity: surfing, a kind of water board, on open water, riding a board and with whole-body balancing"
+  ]
+ },
+ "Swimming": {
+  "full": "a video of an everyday activity: swimming, a kind of water swim dive, in the water, with whole-body locomotion and with a repetitive cyclic stroke",
+  "parent": "a video of an everyday activity: swimming, a kind of water swim dive",
+  "clause_sents": [
+   "a video of an everyday activity: swimming, a kind of water swim dive, in the water, with whole-body locomotion and with a repetitive cyclic stroke"
+  ]
+ },
+ "Swinging at the playground": {
+  "full": "a video of an everyday activity: swinging at the playground, a kind of playground, in an outdoor urban setting, with a swinging motion and with chains held in the hands",
+  "parent": "a video of an everyday activity: swinging at the playground, a kind of playground",
+  "clause_sents": [
+   "a video of an everyday activity: swinging at the playground, a kind of playground, in an outdoor urban setting, with a swinging motion and with chains held in the hands"
+  ]
+ },
+ "Table soccer": {
+  "full": "a video of an everyday activity: table soccer, a kind of tabletop games, indoors at home, between a pair of players and with fine hand manipulation of rods",
+  "parent": "a video of an everyday activity: table soccer, a kind of tabletop games",
+  "clause_sents": [
+   "a video of an everyday activity: table soccer, a kind of tabletop games, indoors at home, between a pair of players and with fine hand manipulation of rods"
+  ]
+ },
+ "Tai chi": {
+  "full": "a video of an everyday activity: tai chi, a kind of martial striking, outdoors on open ground, in a group and with slow repetitive whole-body poses",
+  "parent": "a video of an everyday activity: tai chi, a kind of martial striking",
+  "clause_sents": [
+   "a video of an everyday activity: tai chi, a kind of martial striking, outdoors on open ground, in a group and with slow repetitive whole-body poses"
+  ]
+ },
+ "Tango": {
+  "full": "a video of an everyday activity: tango, a kind of dance perform, indoors on a stage floor, with a partner and with a flowing rotational motion",
+  "parent": "a video of an everyday activity: tango, a kind of dance perform",
+  "clause_sents": [
+   "a video of an everyday activity: tango, a kind of dance perform, indoors on a stage floor, with a partner and with a flowing rotational motion"
+  ]
+ },
+ "Tennis serve with ball bouncing": {
+  "full": "a video of an everyday activity: tennis serve with ball bouncing, a kind of racquet over net, on an outdoor court, with a racquet held in the hand and with a whole-body striking motion",
+  "parent": "a video of an everyday activity: tennis serve with ball bouncing, a kind of racquet over net",
+  "clause_sents": [
+   "a video of an everyday activity: tennis serve with ball bouncing, a kind of racquet over net, on an outdoor court, with a racquet held in the hand and with a whole-body striking motion"
+  ]
+ },
+ "Throwing darts": {
+  "full": "a video of an everyday activity: throwing darts, a kind of precision target, indoors at home, with small projectiles held in the hand and with a repeated throwing motion",
+  "parent": "a video of an everyday activity: throwing darts, a kind of precision target",
+  "clause_sents": [
+   "a video of an everyday activity: throwing darts, a kind of precision target, indoors at home, with small projectiles held in the hand and with a repeated throwing motion"
+  ]
+ },
+ "Trimming branches or hedges": {
+  "full": "a video of an everyday activity: trimming branches or hedges, a kind of yard garden, outdoors in a garden, with handheld cutting tools and with repeated fine cuts",
+  "parent": "a video of an everyday activity: trimming branches or hedges, a kind of yard garden",
+  "clause_sents": [
+   "a video of an everyday activity: trimming branches or hedges, a kind of yard garden, outdoors in a garden, with handheld cutting tools and with repeated fine cuts"
+  ]
+ },
+ "Triple jump": {
+  "full": "a video of an everyday activity: triple jump, a kind of jump field, on an outdoor field, with no equipment and with repeated airborne bounds",
+  "parent": "a video of an everyday activity: triple jump, a kind of jump field",
+  "clause_sents": [
+   "a video of an everyday activity: triple jump, a kind of jump field, on an outdoor field, with no equipment and with repeated airborne bounds"
+  ]
+ },
+ "Tug of war": {
+  "full": "a video of an everyday activity: tug of war, a kind of playground, on an outdoor field, in two groups and with a rope held by all hands",
+  "parent": "a video of an everyday activity: tug of war, a kind of playground",
+  "clause_sents": [
+   "a video of an everyday activity: tug of war, a kind of playground, on an outdoor field, in two groups and with a rope held by all hands"
+  ]
+ },
+ "Tumbling": {
+  "full": "a video of an everyday activity: tumbling, a kind of gymnastics, in a gym, with airborne flips and with whole-body rotation",
+  "parent": "a video of an everyday activity: tumbling, a kind of gymnastics",
+  "clause_sents": [
+   "a video of an everyday activity: tumbling, a kind of gymnastics, in a gym, with airborne flips and with whole-body rotation"
+  ]
+ },
+ "Using parallel bars": {
+  "full": "a video of an everyday activity: using parallel bars, a kind of gymnastics, in a gym, with the bars gripped in the hands and with whole-body balance above the rails",
+  "parent": "a video of an everyday activity: using parallel bars, a kind of gymnastics",
+  "clause_sents": [
+   "a video of an everyday activity: using parallel bars, a kind of gymnastics, in a gym, with the bars gripped in the hands and with whole-body balance above the rails"
+  ]
+ },
+ "Using the balance beam": {
+  "full": "a video of an everyday activity: using the balance beam, a kind of gymnastics, in a gym, with whole-body balance and with an airborne dismount",
+  "parent": "a video of an everyday activity: using the balance beam, a kind of gymnastics",
+  "clause_sents": [
+   "a video of an everyday activity: using the balance beam, a kind of gymnastics, in a gym, with whole-body balance and with an airborne dismount"
+  ]
+ },
+ "Using the monkey bar": {
+  "full": "a video of an everyday activity: using the monkey bar, a kind of playground, in an outdoor urban setting, with the rungs gripped overhead and with a repeated swinging motion",
+  "parent": "a video of an everyday activity: using the monkey bar, a kind of playground",
+  "clause_sents": [
+   "a video of an everyday activity: using the monkey bar, a kind of playground, in an outdoor urban setting, with the rungs gripped overhead and with a repeated swinging motion"
+  ]
+ },
+ "Using the pommel horse": {
+  "full": "a video of an everyday activity: using the pommel horse, a kind of gymnastics, in a gym, with the pommels gripped in the hands and with repeated circular leg swings",
+  "parent": "a video of an everyday activity: using the pommel horse, a kind of gymnastics",
+  "clause_sents": [
+   "a video of an everyday activity: using the pommel horse, a kind of gymnastics, in a gym, with the pommels gripped in the hands and with repeated circular leg swings"
+  ]
+ },
+ "Using the rowing machine": {
+  "full": "a video of an everyday activity: using the rowing machine, a kind of gym equipment, in a gym, with a handle held in both hands and with a repetitive cyclic stroke",
+  "parent": "a video of an everyday activity: using the rowing machine, a kind of gym equipment",
+  "clause_sents": [
+   "a video of an everyday activity: using the rowing machine, a kind of gym equipment, in a gym, with a handle held in both hands and with a repetitive cyclic stroke"
+  ]
+ },
+ "Using uneven bars": {
+  "full": "a video of an everyday activity: using uneven bars, a kind of gymnastics, in a gym, with the bars gripped in the hands and with airborne swings and releases",
+  "parent": "a video of an everyday activity: using uneven bars, a kind of gymnastics",
+  "clause_sents": [
+   "a video of an everyday activity: using uneven bars, a kind of gymnastics, in a gym, with the bars gripped in the hands and with airborne swings and releases"
+  ]
+ },
+ "Vacuuming floor": {
+  "full": "a video of an everyday activity: vacuuming floor, a kind of interior clean, indoors at home, with a long-handled machine and with repeated back-and-forth strokes",
+  "parent": "a video of an everyday activity: vacuuming floor, a kind of interior clean",
+  "clause_sents": [
+   "a video of an everyday activity: vacuuming floor, a kind of interior clean, indoors at home, with a long-handled machine and with repeated back-and-forth strokes"
+  ]
+ },
+ "Volleyball": {
+  "full": "a video of an everyday activity: volleyball, a kind of ball team, in an indoor gym, in a group and with airborne jumps to strike the ball",
+  "parent": "a video of an everyday activity: volleyball, a kind of ball team",
+  "clause_sents": [
+   "a video of an everyday activity: volleyball, a kind of ball team, in an indoor gym, in a group and with airborne jumps to strike the ball"
+  ]
+ },
+ "Wakeboarding": {
+  "full": "a video of an everyday activity: wakeboarding, a kind of water board, on open water, riding a towed board with a handle held and with an airborne phase",
+  "parent": "a video of an everyday activity: wakeboarding, a kind of water board",
+  "clause_sents": [
+   "a video of an everyday activity: wakeboarding, a kind of water board, on open water, riding a towed board with a handle held and with an airborne phase"
+  ]
+ },
+ "Walking the dog": {
+  "full": "a video of an everyday activity: walking the dog, a kind of animal care, in an outdoor urban setting, as a pair with an animal and with steady walking locomotion",
+  "parent": "a video of an everyday activity: walking the dog, a kind of animal care",
+  "clause_sents": [
+   "a video of an everyday activity: walking the dog, a kind of animal care, in an outdoor urban setting, as a pair with an animal and with steady walking locomotion"
+  ]
+ },
+ "Washing dishes": {
+  "full": "a video of an everyday activity: washing dishes, a kind of food prep, indoors at home, with utensils handled in the hands and with a repetitive scrubbing motion",
+  "parent": "a video of an everyday activity: washing dishes, a kind of food prep",
+  "clause_sents": [
+   "a video of an everyday activity: washing dishes, a kind of food prep, indoors at home, with utensils handled in the hands and with a repetitive scrubbing motion"
+  ]
+ },
+ "Washing face": {
+  "full": "a video of an everyday activity: washing face, a kind of grooming face mouth, indoors at home, with no equipment and with repeated hand motions over the face",
+  "parent": "a video of an everyday activity: washing face, a kind of grooming face mouth",
+  "clause_sents": [
+   "a video of an everyday activity: washing face, a kind of grooming face mouth, indoors at home, with no equipment and with repeated hand motions over the face"
+  ]
+ },
+ "Washing hands": {
+  "full": "a video of an everyday activity: washing hands, a kind of grooming hands legs, indoors at home, with no equipment and with a repetitive rubbing motion",
+  "parent": "a video of an everyday activity: washing hands, a kind of grooming hands legs",
+  "clause_sents": [
+   "a video of an everyday activity: washing hands, a kind of grooming hands legs, indoors at home, with no equipment and with a repetitive rubbing motion"
+  ]
+ },
+ "Waterskiing": {
+  "full": "a video of an everyday activity: waterskiing, a kind of water board, on open water, riding skis behind a boat and with a handle held in the hands",
+  "parent": "a video of an everyday activity: waterskiing, a kind of water board",
+  "clause_sents": [
+   "a video of an everyday activity: waterskiing, a kind of water board, on open water, riding skis behind a boat and with a handle held in the hands"
+  ]
+ },
+ "Waxing skis": {
+  "full": "a video of an everyday activity: waxing skis, a kind of tool craft repair, indoors at a workbench, with handheld tools and with repeated smoothing strokes",
+  "parent": "a video of an everyday activity: waxing skis, a kind of tool craft repair",
+  "clause_sents": [
+   "a video of an everyday activity: waxing skis, a kind of tool craft repair, indoors at a workbench, with handheld tools and with repeated smoothing strokes"
+  ]
+ },
+ "Welding": {
+  "full": "a video of an everyday activity: welding, a kind of tool craft repair, indoors at a workbench, with a handheld torch and with fine hand control",
+  "parent": "a video of an everyday activity: welding, a kind of tool craft repair",
+  "clause_sents": [
+   "a video of an everyday activity: welding, a kind of tool craft repair, indoors at a workbench, with a handheld torch and with fine hand control"
+  ]
+ },
+ "Windsurfing": {
+  "full": "a video of an everyday activity: windsurfing, a kind of water board, on open water, riding a board with a sail and with whole-body balancing",
+  "parent": "a video of an everyday activity: windsurfing, a kind of water board",
+  "clause_sents": [
+   "a video of an everyday activity: windsurfing, a kind of water board, on open water, riding a board with a sail and with whole-body balancing"
+  ]
+ },
+ "Wrapping presents": {
+  "full": "a video of an everyday activity: wrapping presents, a kind of surface finishing, indoors at home, with handheld tools and with fine hand manipulation",
+  "parent": "a video of an everyday activity: wrapping presents, a kind of surface finishing",
+  "clause_sents": [
+   "a video of an everyday activity: wrapping presents, a kind of surface finishing, indoors at home, with handheld tools and with fine hand manipulation"
+  ]
+ },
+ "Zumba": {
+  "full": "a video of an everyday activity: zumba, a kind of dance perform, in a gym studio, in a group and with continuous rhythmic whole-body motion",
+  "parent": "a video of an everyday activity: zumba, a kind of dance perform",
+  "clause_sents": [
+   "a video of an everyday activity: zumba, a kind of dance perform, in a gym studio, in a group and with continuous rhythmic whole-body motion"
+  ]
+ }
+}

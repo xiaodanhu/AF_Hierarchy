@@ -1,0 +1,148 @@
+{
+ "BaseballPitch": [
+  "motion_throw_release",
+  "impl_ball",
+  "force_overhead",
+  "env_grass_pitch",
+  "rotational_windup"
+ ],
+ "BasketballDunk": [
+  "motion_jump_launch",
+  "impl_ball",
+  "force_downward",
+  "env_court",
+  "has_runup",
+  "aerial_phase"
+ ],
+ "Billiards": [
+  "motion_strike",
+  "impl_striking_tool",
+  "force_horizontal",
+  "env_table"
+ ],
+ "CleanAndJerk": [
+  "motion_lift",
+  "impl_barbell",
+  "force_upward",
+  "env_court",
+  "two_handed"
+ ],
+ "CliffDiving": [
+  "motion_jump_launch",
+  "impl_none",
+  "force_downward",
+  "env_aquatic_natural",
+  "aerial_phase"
+ ],
+ "CricketBowling": [
+  "motion_throw_release",
+  "impl_ball",
+  "force_overhead",
+  "env_grass_pitch",
+  "has_runup"
+ ],
+ "CricketShot": [
+  "motion_strike",
+  "impl_striking_tool",
+  "force_horizontal",
+  "env_grass_pitch",
+  "two_handed"
+ ],
+ "Diving": [
+  "motion_jump_launch",
+  "impl_none",
+  "force_downward",
+  "env_aquatic_pool",
+  "aerial_phase"
+ ],
+ "FrisbeeCatch": [
+  "motion_catch",
+  "impl_none",
+  "force_horizontal",
+  "env_grass_pitch",
+  "has_runup"
+ ],
+ "GolfSwing": [
+  "motion_strike",
+  "impl_striking_tool",
+  "force_horizontal",
+  "env_grass_pitch",
+  "rotational_windup",
+  "two_handed"
+ ],
+ "HammerThrow": [
+  "motion_throw_release",
+  "impl_field_implement",
+  "force_horizontal",
+  "env_track_field",
+  "rotational_windup",
+  "two_handed"
+ ],
+ "HighJump": [
+  "motion_jump_launch",
+  "impl_none",
+  "force_upward",
+  "env_track_field",
+  "has_runup",
+  "aerial_phase"
+ ],
+ "JavelinThrow": [
+  "motion_throw_release",
+  "impl_field_implement",
+  "force_overhead",
+  "env_track_field",
+  "has_runup"
+ ],
+ "LongJump": [
+  "motion_jump_launch",
+  "impl_none",
+  "force_horizontal",
+  "env_track_field",
+  "has_runup",
+  "aerial_phase"
+ ],
+ "PoleVault": [
+  "motion_jump_launch",
+  "impl_pole",
+  "force_upward",
+  "env_track_field",
+  "has_runup",
+  "aerial_phase",
+  "two_handed"
+ ],
+ "Shotput": [
+  "motion_throw_release",
+  "impl_field_implement",
+  "force_overhead",
+  "env_track_field",
+  "rotational_windup"
+ ],
+ "SoccerPenalty": [
+  "motion_kick",
+  "impl_ball",
+  "force_horizontal",
+  "env_grass_pitch",
+  "has_runup"
+ ],
+ "TennisSwing": [
+  "motion_strike",
+  "impl_striking_tool",
+  "force_horizontal",
+  "env_court"
+ ],
+ "ThrowDiscus": [
+  "motion_throw_release",
+  "impl_field_implement",
+  "force_horizontal",
+  "env_track_field",
+  "rotational_windup"
+ ],
+ "VolleyballSpiking": [
+  "motion_strike",
+  "impl_none",
+  "force_downward",
+  "env_court",
+  "has_runup",
+  "aerial_phase"
+ ]
+}

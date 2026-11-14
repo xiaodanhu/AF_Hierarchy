@@ -1,0 +1,1042 @@
+{
+ "BaseballPitch": [
+  [
+   "Pitcher holds ball with both hands.",
+   "Pitcher bends knees slightly.",
+   "Pitcher coils body for motion."
+  ],
+  [
+   "Pitcher swings arm back, extending other arm forward.",
+   "Pitcher's hips start rotating, transferring energy.",
+   "Pitcher's front leg begins to drive forward."
+  ],
+  [
+   "Pitcher's hips rotate forward.",
+   "Torso leans into the pitch.",
+   "Throwing arm continues backswing."
+  ],
+  [
+   "The front leg drives forward, extending.",
+   "The back leg extends, supporting.",
+   "The torso leans into the pitch, following."
+  ],
+  [
+   "The pitcher’s arm extends forward, ball leaving hand.",
+   "Body follows through, arm fully extended.",
+   "Ball visible mid-air, approaching home plate."
+  ],
+  [
+   "Arm fully extends, ball leaves hand.",
+   "Body leans over mound, torso follows through.",
+   "Legs slightly off-balance, eyes track ball."
+  ],
+  [
+   "The pitcher’s arm fully extends, ball in mid-air.",
+   "Ball’s trajectory becomes visible, arc forming.",
+   "Ball approaches the strike zone, motion fading."
+  ],
+  [
+   "The pitcher's torso leans further down.",
+   "The pitcher's arms lower slightly.",
+   "The pitcher's legs straighten out."
+  ],
+  [
+   "The pitcher’s hand holds the ball steady.",
+   "The arm remains extended, following the ball’s path.",
+   "The ball fades, approaching the strike zone."
+  ],
+  [
+   "The pitcher’s arm lowers, hand relaxing.",
+   "Body settles into a relaxed stance.",
+   "Eyes track the ball’s landing."
+  ]
+ ],
+ "BasketballDunk": [
+  [
+   "Player raises arms above head.",
+   "Player leaps off ground.",
+   "Player extends arms toward hoop."
+  ],
+  [
+   "Player's legs bend, knees tucked.",
+   "Ball held high near the rim.",
+   "Player's body rotates slightly."
+  ],
+  [
+   "Player's arms extend downward.",
+   "Ball arcs toward the rim.",
+   "Body rotates slightly."
+  ],
+  [
+   "Player's arm extends, reaching for ball.",
+   "Hand grabs ball, fingers wrap around.",
+   "Ball begins descent toward hoop."
+  ],
+  [
+   "Player's legs straighten, aligning with descent.",
+   "Ball nears rim, player's body follows trajectory.",
+   "Legs continue extending, stabilizing descent."
+  ],
+  [
+   "Player's hand reaches out, fingers spread wide.",
+   "Ball is caught between fingers, firm grip established.",
+   "Ball nears rim, hand maintains control, fingers spread."
+  ],
+  [
+   "Player's body swings downward, arms extended.",
+   "Feet trail behind, ball nears rim.",
+   "Hand grips ball firmly, fingers spread."
+  ],
+  [
+   "The player’s hand and ball enter the hoop.",
+   "The ball hangs in the net.",
+   "The player’s body descends."
+  ],
+  [
+   "The player's body remains suspended above the court.",
+   "Legs extend downward, nearing the ground.",
+   "Ball hangs in the net, securely through the hoop."
+  ],
+  [
+   "Player's body descends, arms extended.",
+   "Ball hangs in the net.",
+   "Player's body continues falling."
+  ]
+ ],
+ "Billiards": [
+  [
+   "Player leans forward, focusing on the white ball.",
+   "Right hand holds the cue stick steady.",
+   "Eyes aim at the target ball on the table."
+  ],
+  [
+   "Player's left hand grasps cue stick firmly.",
+   "Fingers curl around cue stick's butt.",
+   "Eyes lock onto target ball."
+  ],
+  [
+   "The cue stick tip aligns with the white ball.",
+   "The cue stick is angled slightly upward.",
+   "The cue stick is poised for impact."
+  ],
+  [
+   "Player's shoulders align with cue stick.",
+   "Cue tip touches the white ball.",
+   "Player's body shifts subtly."
+  ],
+  [
+   "The cue stick's tip contacts the ball.",
+   "The cue stick arcs forward smoothly.",
+   "The ball rolls across the table surface."
+  ],
+  [
+   "The ball rolls straight across the table.",
+   "A faint trail of motion blur appears.",
+   "The ball approaches the next target."
+  ],
+  [
+   "Player’s eyes follow ball’s movement.",
+   "Body remains bent, cue stick steady.",
+   "Gaze fixed on ball’s approach."
+  ],
+  [
+   "Ball enters pocket with a bounce.",
+   "Cue stick remains in player's hands.",
+   "Player's body straightens slightly."
+  ],
+  [
+   "Player’s body straightens slightly.",
+   "Cue stick lowers to table.",
+   "Gaze fixed on next ball."
+  ],
+  [
+   "Player’s hands lower, cue stick rests.",
+   "Body straightens, gaze shifts.",
+   "Hands relax, cue stick stays."
+  ]
+ ],
+ "CleanAndJerk": [
+  [
+   "Athlete stands upright, feet shoulder-width apart.",
+   "Barbell rests on shoulders, arms extended.",
+   "Body remains still, no movement detected."
+  ],
+  [
+   "Athlete bends at hips, lowering barbell slightly.",
+   "Knees dip, maintaining straight back.",
+   "Body weight shifts, keeping back straight."
+  ],
+  [
+   "Athlete extends hips, lifting barbell.",
+   "Knees extend, supporting lift.",
+   "Arms remain straight, stabilizing lift."
+  ],
+  [
+   "Athlete extends hips and knees, lifting barbell.",
+   "Elbows pull barbell upward, body leans forward.",
+   "Barbell moves vertically toward chest, controlled motion."
+  ],
+  [
+   "Athlete bends elbows, lifting barbell upward.",
+   "Barbell moves upward, reaching chest level.",
+   "Athlete maintains controlled motion throughout."
+  ],
+  [
+   "Athlete extends arms fully, barbell held at chest.",
+   "Body remains upright, shoulders slightly hunched.",
+   "Feet remain planted, barbell suspended vertically."
+  ],
+  [
+   "Athlete extends arms fully, lifting barbell overhead.",
+   "Body remains straight throughout the lift.",
+   "Shoulders and hips align perfectly in final position."
+  ],
+  [
+   "Barbell moves downward, arms bent, body leans back.",
+   "Body leans further back, barbell continues descent.",
+   "Arms extend slightly, barbell near chest level."
+  ],
+  [
+   "Athlete extends arms fully, barbell held overhead.",
+   "Body upright, shoulders and hips aligned.",
+   "Feet planted, barbell suspended vertically."
+  ],
+  [
+   "Barbell held overhead, arms fully extended.",
+   "Body stable, feet planted firmly.",
+   "Barbell suspended vertically."
+  ]
+ ],
+ "CliffDiving": [
+  [
+   "Diver stands on cliff edge, arms outstretched.",
+   "Diver faces churning water below.",
+   "Diver prepares for leap, body poised."
+  ],
+  [
+   "The diver leaps forward, body arching backward.",
+   "Arms trail behind as they descend.",
+   "The diver begins to fall."
+  ],
+  [
+   "The diver tucks their knees to their chest.",
+   "Their body rotates slightly mid-air.",
+   "The diver continues falling."
+  ],
+  [
+   "The diver extends their legs straight.",
+   "Arms reach upward.",
+   "Forming a streamlined silhouette."
+  ],
+  [
+   "The diver's body compresses, head first.",
+   "The diver's legs extend, pushing against the water.",
+   "The diver's arms reach up, breaking the surface."
+  ],
+  [
+   "The diver's body sinks deeper, limbs tightly curled.",
+   "Water swirls around the diver's limbs, creating a vortex.",
+   "The diver's head and shoulders emerge, breaking the surface tension."
+  ],
+  [
+   "Head emerges above water first.",
+   "Shoulders follow, breaking the surface.",
+   "Torso rises next, completing resurfacing."
+  ],
+  [
+   "Diver's arms flail briefly for balance adjustment.",
+   "Diver's arms straighten into a horizontal position.",
+   "Diver's body stabilizes, floating calmly."
+  ],
+  [
+   "The diver’s head breaks the surface first.",
+   "Shoulders rise, followed by the torso.",
+   "The diver floats calmly, arms slightly bent."
+  ],
+  [
+   "The diver glides, legs trailing behind.",
+   "Ripples spread outward as the diver moves.",
+   "The diver approaches the shore calmly."
+  ]
+ ],
+ "CricketBowling": [
+  [
+   "Bowler stands with feet shoulder-width apart.",
+   "Knees slightly bent, ball held in front.",
+   "Body maintains ready position."
+  ],
+  [
+   "The bowler shifts weight forward, lifting the ball.",
+   "The non-throwing hand supports the ball at shoulder height.",
+   "The bowler’s arm extends upward, holding the ball."
+  ],
+  [
+   "The bowler’s arm starts to bend at the elbow.",
+   "The ball is drawn back behind the body.",
+   "The arm rotates backward, aligning with the body."
+  ],
+  [
+   "The bowler's front leg extends, knee straightening.",
+   "The back leg pushes off the ground.",
+   "Momentum is generated for the throw."
+  ],
+  [
+   "The bowler’s arm extends forward, elbow high.",
+   "The ball is released from the hand.",
+   "The bowler’s body leans into the follow-through."
+  ],
+  [
+   "The bowler's torso leans forward.",
+   "The bowler's arm extends fully forward.",
+   "The bowler's trailing arm swings across the body."
+  ],
+  [
+   "The bowler’s head tilts slightly.",
+   "Eyes focus on the ball.",
+   "The bowler’s gaze follows the ball’s path."
+  ],
+  [
+   "Ball arcs toward batsman, visible mid-air.",
+   "Bowler's body follows through, arm extended.",
+   "Head turns slightly, eyes track ball's path."
+  ],
+  [
+   "The bowler’s arm extends fully upward.",
+   "The hand points directly at the batsman.",
+   "The bowler’s body remains in motion."
+  ],
+  [
+   "The bowler’s body relaxes, settling into balance.",
+   "Feet remain planted firmly on the ground.",
+   "Arms return to a relaxed position."
+  ]
+ ],
+ "CricketShot": [
+  [
+   "Bat positioned horizontally on grass.",
+   "Hands gripping bat firmly.",
+   "Wicket standing upright nearby."
+  ],
+  [
+   "The batsman's feet remain stationary, firmly planted.",
+   "Knees bend slightly, preparing for the swing.",
+   "Body leans forward, focusing on the approaching ball."
+  ],
+  [
+   "The ball approaches, bowler's hand releases.",
+   "Batsman's hands grip bat firmly.",
+   "Bat swings back in wide arc."
+  ],
+  [
+   "The bat swings back, arms extended, bat angled upward.",
+   "The bat reaches maximum backswing position, bat angled upward.",
+   "The bat is poised to strike, bat angled upward."
+  ],
+  [
+   "The ball collides with the bat's surface.",
+   "The bat's face blurs due to impact speed.",
+   "The bat lifts slightly upon contact."
+  ],
+  [
+   "Bat's edge moves through the air, bat angled downward.",
+   "Batsman's body rotates slightly, following through.",
+   "Bat rests near ground after impact."
+  ],
+  [
+   "Bat’s edge continues upward motion.",
+   "Arms remain fully extended.",
+   "Bat’s motion slows down."
+  ],
+  [
+   "The bat’s edge moves through the air.",
+   "The batsman’s arms are fully extended.",
+   "The bat points toward the ground."
+  ],
+  [
+   "The batsman's body rotates fully.",
+   "Arms trail behind.",
+   "Bat rests near the ground."
+  ],
+  [
+   "The bat rests on the grass.",
+   "Hands remain extended, fingers curled.",
+   "Ball flies off into the distance."
+  ]
+ ],
+ "Diving": [
+  [
+   "Diver stands on diving board, arms outstretched.",
+   "Body remains upright, poised for jump.",
+   "Eyes focus on target, ready for leap."
+  ],
+  [
+   "Diver leaps forward, extending legs.",
+   "Arms swing back, preparing descent.",
+   "Body begins to descend, tucking in."
+  ],
+  [
+   "The diver bends their knees, tucking them inward.",
+   "Arms draw close to the torso, forming a compact shape.",
+   "The body rotates slightly, aligning for optimal entry."
+  ],
+  [
+   "The diver's head tucks beneath their shoulders.",
+   "The body rotates slightly.",
+   "The diver descends toward the water."
+  ],
+  [
+   "The diver’s legs straighten and extend downward.",
+   "Arms trail behind the body in a controlled arc.",
+   "Body maintains streamlined position."
+  ],
+  [
+   "The diver’s body extends horizontally.",
+   "Arms slightly extend forward.",
+   "Head aligns with the spine."
+  ],
+  [
+   "The diver's feet approach the water surface.",
+   "The diver's body remains straight and horizontal.",
+   "The diver prepares for water entry."
+  ],
+  [
+   "The diver’s feet touch the water surface.",
+   "Arms flare outward slightly.",
+   "Body sinks vertically into the water."
+  ],
+  [
+   "Diver's arms flare outward slightly.",
+   "Body continues to sink vertically.",
+   "Diver's body submerges completely."
+  ],
+  [
+   "The diver’s body sinks vertically into the water.",
+   "Arms and legs align in a streamlined form.",
+   "The diver’s body disappears beneath the surface."
+  ]
+ ],
+ "FrisbeeCatch": [
+  [
+   "The frisbee soars through the air, illuminated by sunlight.",
+   "The frisbee descends, its curve visible against the sky.",
+   "The frisbee approaches, its flight path curving slightly."
+  ],
+  [
+   "Catcher raises arms, fingers spread wide.",
+   "Fingers align, ready to catch frisbee.",
+   "Body leans forward, anticipating disc's arrival."
+  ],
+  [
+   "The frisbee descends, its path curving slightly.",
+   "The catcher’s body tilts forward, aligning with the disc.",
+   "The frisbee approaches closer, nearing the catcher’s fingertips."
+  ],
+  [
+   "The catcher's torso twists, aligning shoulders and hips.",
+   "The torso continues rotating, focusing on the frisbee.",
+   "The body completes the rotation, ready to catch the frisbee."
+  ],
+  [
+   "The frisbee’s edge catches light as it approaches.",
+   "The catcher’s fingertips extend outward.",
+   "The catcher’s fingers curl inward to grip the frisbee."
+  ],
+  [
+   "Catcher’s fingers extend, reaching for frisbee.",
+   "Fingers curl inward, gripping disc’s edge.",
+   "Disc contacts fingertips, fingers lock around rim."
+  ],
+  [
+   "Fingers close tightly around frisbee's edge.",
+   "Catcher's body starts to descend.",
+   "Grip remains firm as descent continues."
+  ],
+  [
+   "Catcher's arms pull inward.",
+   "Shoulders hug the torso.",
+   "Body rotates to stabilize."
+  ],
+  [
+   "The catcher's knees begin to bend.",
+   "The body starts to lower.",
+   "The legs continue to flex downward."
+  ],
+  [
+   "The disc is gripped firmly by the catcher's fingers.",
+   "The catcher's body begins to descend softly.",
+   "The catcher's legs bend slightly, stabilizing the landing."
+  ]
+ ],
+ "GolfSwing": [
+  [
+   "Golfer positions feet shoulder-width apart.",
+   "Golfer holds club with both hands.",
+   "Golfer faces target on green grass pitch."
+  ],
+  [
+   "The golfer rotates the torso, lifting the club.",
+   "The club moves over the left shoulder.",
+   "The golfer's arms extend backward."
+  ],
+  [
+   "The golfer raises the club over the left shoulder.",
+   "The arms extend backward, forming an arc.",
+   "The club head reaches its highest point."
+  ],
+  [
+   "The golfer twists the body slightly.",
+   "The right arm extends backward.",
+   "The club shaft aligns with the shoulder line."
+  ],
+  [
+   "The golfer’s left arm bends inward.",
+   "The club head nears the hip.",
+   "The golfer prepares for the downswing."
+  ],
+  [
+   "The golfer's right arm starts swinging forward.",
+   "The club head descends toward the ball.",
+   "The golfer's body rotates forward."
+  ],
+  [
+   "Club head descends toward the ball.",
+   "Golfer's arms and torso rotate forward.",
+   "Eyes track the ball's flight."
+  ],
+  [
+   "Club head descends past the golfer's body.",
+   "Golfer's torso rotates forward.",
+   "Eyes track the ball's trajectory."
+  ],
+  [
+   "The golfer’s left arm extends forward.",
+   "The club head trails behind.",
+   "The golfer’s body rotates fully."
+  ],
+  [
+   "The golfer’s arms and body remain extended.",
+   "The club head rests on the ground.",
+   "Feet stay slightly apart."
+  ]
+ ],
+ "HammerThrow": [
+  [
+   "Athlete holds hammer horizontally, both hands gripping.",
+   "Feet positioned shoulder-width apart.",
+   "Body coiled slightly forward."
+  ],
+  [
+   "Athlete extends arms, swinging hammer in wide arc.",
+   "Hammer moves in circular path above the head.",
+   "Arms maintain extended position throughout swing."
+  ],
+  [
+   "Hammer descends, arms sweeping back.",
+   "Body rotates, hips and shoulders twist.",
+   "Arms continue sweeping, maintaining control."
+  ],
+  [
+   "Athlete's torso twists sharply.",
+   "Arms extend fully, holding hammer.",
+   "Body leans forward, momentum builds."
+  ],
+  [
+   "Hammer descends, nearing ground level.",
+   "Body leans forward, shifting weight.",
+   "Feet pivot slightly, supporting motion."
+  ],
+  [
+   "Athlete's right leg extends forward.",
+   "Left leg pivots, transferring weight.",
+   "Hammer swings horizontally, body twists."
+  ],
+  [
+   "Hammer swings upward, reaching peak height.",
+   "Body twists, arms fully extended.",
+   "Athlete releases hammer, hands snap."
+  ],
+  [
+   "Athlete snaps right hand, releasing hammer.",
+   "Left hand lets go, hammer propelled.",
+   "Hammer flies forward, straight trajectory."
+  ],
+  [
+   "Hammer flies forward, blurring.",
+   "Athlete's body stays still.",
+   "Eyes follow the hammer's flight."
+  ],
+  [
+   "Hammer lands on the ground, spinning.",
+   "Athlete watches the impact point.",
+   "Body remains stationary, arms lowered."
+  ]
+ ],
+ "HighJump": [
+  [
+   "The athlete sprints down the track.",
+   "The athlete approaches the high jump bar.",
+   "The athlete focuses on the bar ahead."
+  ],
+  [
+   "The athlete extends arms forward.",
+   "The body arches over the bar.",
+   "The legs begin to rise."
+  ],
+  [
+   "The athlete's knees bend, absorbing initial impact.",
+   "The athlete's torso twists, aligning with the bar.",
+   "The athlete's body rises, clearing the bar."
+  ],
+  [
+   "Feet lift above the bar.",
+   "Knees bend upward.",
+   "Body arches backward."
+  ],
+  [
+   "The athlete's knees lift higher.",
+   "The athlete's hips rise, aligning with knees.",
+   "The athlete's body extends fully upward."
+  ],
+  [
+   "The athlete's torso tucks slightly.",
+   "Arms pull back as they pass the bar.",
+   "Body continues to rotate mid-air."
+  ],
+  [
+   "The athlete's torso twists, aligning with the bar.",
+   "Head and shoulders lift, clearing the bar.",
+   "Arms pull back, aiding the rotation."
+  ],
+  [
+   "The athlete's legs swing downward, knees bending.",
+   "The athlete's feet lower closer to the mat.",
+   "The athlete's body begins to straighten as it lands."
+  ],
+  [
+   "The athlete's torso tucks inward, reducing height.",
+   "The athlete's legs swing downward, nearing the mat.",
+   "The athlete's body lands softly on the mat."
+  ],
+  [
+   "The athlete's body lowers into a tucked position.",
+   "Arms spread wide upon landing.",
+   "Legs bend, absorbing impact."
+  ]
+ ],
+ "JavelinThrow": [
+  [
+   "Athlete holds javelin with both hands.",
+   "Feet remain shoulder-width apart.",
+   "Body faces throwing direction."
+  ],
+  [
+   "Athlete pivots on the spot, turning head.",
+   "Body rotates, lifting left leg slightly.",
+   "Javelin is raised, held by both hands."
+  ],
+  [
+   "Athlete extends throwing arm backward.",
+   "Javelin held high above head.",
+   "Body leans into the motion."
+  ],
+  [
+   "Athlete extends throwing arm backward.",
+   "Javelin held high above head.",
+   "Arm swings forward in powerful arc."
+  ],
+  [
+   "Athlete's hips rotate, driving the javelin upward.",
+   "Shoulders twist, adding power to the throw.",
+   "Javelin accelerates, leaving the hand."
+  ],
+  [
+   "Hand releases javelin with sharp snap.",
+   "Wrist snaps, following through.",
+   "Javelin soars through the air."
+  ],
+  [
+   "Javelin ascends, leaving a trail of blur.",
+   "Athlete's arm continues its follow-through.",
+   "Body remains coiled, eyes focused on javelin."
+  ],
+  [
+   "Athlete’s arm remains extended, hand relaxed.",
+   "Body slightly bends at waist.",
+   "Eyes track javelin’s flight path."
+  ],
+  [
+   "Athlete's torso starts to slow, body coiling.",
+   "Feet remain planted firmly on ground.",
+   "Body momentum continues to unwind."
+  ],
+  [
+   "Javelin lands on the field, creating a small impact point.",
+   "Athlete's body remains still, eyes tracking the javelin's flight.",
+   "Legs and torso begin to decelerate, feet planted firmly."
+  ]
+ ],
+ "LongJump": [
+  [
+   "Athlete positions feet shoulder-width apart.",
+   "Arms are slightly bent, hands near hips.",
+   "Athlete faces forward, eyes focused ahead."
+  ],
+  [
+   "Athlete starts running, legs moving forward.",
+   "Arms pump rhythmically, aiding momentum.",
+   "Speed increases as athlete approaches takeoff."
+  ],
+  [
+   "Athlete runs faster, legs driving forward.",
+   "Body leans forward, arms swing rhythmically.",
+   "Knees bend, maintaining balance and speed."
+  ],
+  [
+   "Athlete plants foot firmly on takeoff board.",
+   "Legs push off with maximum force.",
+   "Body rises into the air, gaining momentum."
+  ],
+  [
+   "Athlete's legs extend forward, pushing off the ground.",
+   "Arms reach back, maintaining balance during ascent.",
+   "Head remains upright, guiding the athlete's trajectory."
+  ],
+  [
+   "Athlete's legs bend at the knee mid-air.",
+   "Body tucks slightly as it rises.",
+   "Arms adjust for optimal position."
+  ],
+  [
+   "Athlete's body reaches peak height, arms fully extended.",
+   "Legs remain straight, feet slightly off the ground.",
+   "Body tucks slightly, preparing for descent."
+  ],
+  [
+   "Athlete's legs start bending at the knee.",
+   "Body rotates slightly for landing.",
+   "Legs continue bending, preparing for touchdown."
+  ],
+  [
+   "Athlete's body lowers, knees bending.",
+   "Arms swing forward, preparing for landing.",
+   "Feet touch the sandpit first, absorbing impact."
+  ],
+  [
+   "Athlete's legs absorb impact, bending knees.",
+   "Arms flare out for balance.",
+   "Body settles into the sand."
+  ]
+ ],
+ "PoleVault": [
+  [
+   "Athlete plants pole firmly in ground.",
+   "Athlete leans forward, arms swing.",
+   "Athlete runs with pole planted."
+  ],
+  [
+   "Athlete tightens grip on pole.",
+   "Legs push forward powerfully.",
+   "Pole bends significantly under pressure."
+  ],
+  [
+   "Pole bends sharply, body lifts off ground.",
+   "Legs remain straight, supporting upward motion.",
+   "Body arches, reaching peak height."
+  ],
+  [
+   "Athlete's torso arches upward, lifting body.",
+   "Pole straightens, supporting athlete's weight.",
+   "Feet lift off ground, leaving contact with pole."
+  ],
+  [
+   "Athlete's torso twists mid-air, legs bent, pole angled upward.",
+   "Torso twists further, pole bends slightly more.",
+   "Legs extend slightly, pole angles higher."
+  ],
+  [
+   "Athlete's torso twists mid-air, legs bent, pole angled upward.",
+   "Pole extends fully, athlete's body reaches peak height, arms extended.",
+   "Athlete's legs kick upward, body rotates, pole begins to bend again."
+  ],
+  [
+   "Athlete's legs kick upward, extending.",
+   "Body rotates mid-air, twisting.",
+   "Pole begins to bend again, bending."
+  ],
+  [
+   "Pole bends sharply, athlete's body descends.",
+   "Legs trail behind, body twists mid-fall.",
+   "Pole angled downward, feet near mat."
+  ],
+  [
+   "Athlete's torso twists mid-fall, pole angled downward.",
+   "Feet near mat as descent continues.",
+   "Pole angled downward, nearing mat contact."
+  ],
+  [
+   "Athlete's feet touch mat first, landing softly.",
+   "Body tucks inward, minimizing impact.",
+   "Pole remains flat, absorbing final momentum."
+  ]
+ ],
+ "Shotput": [
+  [
+   "Athlete holds shotput close to chest.",
+   "Athlete faces throwing direction.",
+   "Athlete maintains bent posture."
+  ],
+  [
+   "Right arm moves back, shoulder rotates.",
+   "Body starts to twist, coiling motion begins.",
+   "Athlete prepares for powerful throw, focusing energy."
+  ],
+  [
+   "Left leg moves forward, stepping.",
+   "Right leg bends, absorbing force.",
+   "Hips rotate, initiating momentum."
+  ],
+  [
+   "Shotput lifted upward, arm extended overhead.",
+   "Body twists mid-motion, generating power.",
+   "Athlete's torso rotates, focusing energy."
+  ],
+  [
+   "Right arm extends forward, elbow locked.",
+   "Shot put released from hand.",
+   "Body leans into throw, torso rotates."
+  ],
+  [
+   "Torso twists fully, generating power.",
+   "Left arm extends for balance.",
+   "Body leans forward, completing throw."
+  ],
+  [
+   "Shotput exits hand, arc visible.",
+   "Trailing behind athlete's body.",
+   "Body rotates, momentum transfers."
+  ],
+  [
+   "Right arm swings forward, completing arc.",
+   "Elbow bends slightly, maintaining control.",
+   "Body continues rotation, stabilizing posture."
+  ],
+  [
+   "Left arm swings across body.",
+   "Stabilizes posture after release.",
+   "Head faces forward."
+  ],
+  [
+   "Athlete's body rotates, balancing on bent legs.",
+   "Arms lower slightly, maintaining balance.",
+   "Shotput is no longer visible, landing softly."
+  ]
+ ],
+ "SoccerPenalty": [
+  [
+   "Player positions feet shoulder-width apart.",
+   "Knees bend slightly, ball centered.",
+   "Player holds stance, ready to strike."
+  ],
+  [
+   "Player swings right leg back.",
+   "Left leg remains planted firmly.",
+   "Body leans forward slightly."
+  ],
+  [
+   "The player's right foot begins to lift, knee bending.",
+   "The foot rises higher, preparing to strike.",
+   "The instep is aligned for the ball."
+  ],
+  [
+   "Right foot lifts, knee bends, preparing strike.",
+   "Foot positions above ball, ankle locks.",
+   "Body coils, ready for impact."
+  ],
+  [
+   "The player’s right foot lifts, knee bent, preparing to strike.",
+   "The foot angles upward, striking the ball with force.",
+   "The ball compresses under the foot's impact."
+  ],
+  [
+   "The player’s right leg extends forward, foot angled upward.",
+   "The player’s body leans into the strike, arms slightly out for balance.",
+   "The player’s right foot lowers slightly, body upright, eyes tracking the ball’s flight."
+  ],
+  [
+   "The player’s left foot remains stationary.",
+   "The right foot continues its extension.",
+   "The body rotates slightly toward the goal."
+  ],
+  [
+   "The player’s right foot lowers slightly.",
+   "The player’s body becomes upright.",
+   "The player’s eyes track the ball’s flight."
+  ],
+  [
+   "Ball rises, trajectory curves toward goal.",
+   "Ball nears net, flapping netting visible.",
+   "Ball enters goal, netting flaps visibly."
+  ],
+  [
+   "Ball enters the goal, netting flaps visibly.",
+   "Ball crosses the goal line completely.",
+   "No player in frame, focus on the ball."
+  ]
+ ],
+ "TennisSwing": [
+  [
+   "Player holds racket loosely behind body.",
+   "Grip faces upward, ready for swing.",
+   "Racket positioned behind the body."
+  ],
+  [
+   "The player's arm starts to extend forward.",
+   "The racket head moves toward the ball.",
+   "The forward arc begins to form."
+  ],
+  [
+   "The racket head moves forward, accelerating.",
+   "The player's elbow bends slightly.",
+   "The body leans into the motion."
+  ],
+  [
+   "The player's arm fully extends, reaching maximum forward position.",
+   "The racket head reaches its peak forward position.",
+   "The body twists slightly for added power."
+  ],
+  [
+   "Racket head slows down near ball.",
+   "Wrist begins to snap back.",
+   "Body leans further into swing."
+  ],
+  [
+   "Wrist snaps backward, rotating racket face.",
+   "Racket face positions for ball contact.",
+   "Body maintains balance during follow-through."
+  ],
+  [
+   "Racket head strikes ball, creating blur.",
+   "Ball compresses against strings visibly.",
+   "Racket follows through, arm extended."
+  ],
+  [
+   "The racket head moves diagonally across the body.",
+   "The arm extends further, following the racket's path.",
+   "The body rotates fully, completing the swing."
+  ],
+  [
+   "The player’s body twists completely.",
+   "The racket trails behind the body.",
+   "The arm extends fully."
+  ],
+  [
+   "Racket remains extended above shoulder.",
+   "Arm relaxes after impact.",
+   "Body balances after motion."
+  ]
+ ],
+ "ThrowDiscus": [
+  [
+   "Athlete holds discus in right hand, ready.",
+   "Feet remain shoulder-width apart, stable stance.",
+   "Body coiled slightly, preparing for rotation."
+  ],
+  [
+   "Athlete rotates left foot, initiating turn.",
+   "Body maintains balance, discus stays close.",
+   "Controlled movement starts, foot turns."
+  ],
+  [
+   "Right arm pulls discus back.",
+   "Torso twists as arm extends.",
+   "Body leans into rotational turn."
+  ],
+  [
+   "Athlete completes the rotational turn, discus now at hip level.",
+   "Arm swings forward in a smooth arc.",
+   "Body leans over, preparing for release."
+  ],
+  [
+   "Right leg drives forward, pushing off ground.",
+   "Left leg extends behind, balancing body.",
+   "Body leans over, preparing for release."
+  ],
+  [
+   "Arm swings upward, discus moves horizontally.",
+   "Body twists at hips, maintaining balance.",
+   "Arm fully extends, releasing discus."
+  ],
+  [
+   "Arm fully extended, discus held high.",
+   "Body fully rotated, eyes tracking discus.",
+   "Follow-through position maintained."
+  ],
+  [
+   "Arm extends sharply, releasing discus.",
+   "Body twists, following through.",
+   "Eyes track discus's flight."
+  ],
+  [
+   "Discus soars horizontally, trajectory visible.",
+   "Body maintains follow-through, arms extended.",
+   "Gaze tracks discus's flight path."
+  ],
+  [
+   "Discus flies through the air, trajectory visible.",
+   "Body remains in follow-through, arms extended.",
+   "Legs slightly bent, gaze follows discus."
+  ]
+ ],
+ "VolleyballSpiking": [
+  [
+   "The player extends their arms upward.",
+   "The player leaps off the ground.",
+   "The player's arms reach toward the volleyball."
+  ],
+  [
+   "The player’s fingers extend to reach the ball.",
+   "The fingers wrap around the ball’s surface.",
+   "The fingers grip the ball firmly."
+  ],
+  [
+   "The player’s torso twists slightly.",
+   "The player’s arm begins to extend upward.",
+   "The player’s shoulder starts to rotate."
+  ],
+  [
+   "The player’s forearm starts to extend downward.",
+   "The player’s hand begins to swing forward.",
+   "The player’s wrist locks into position."
+  ],
+  [
+   "The player’s elbow begins to bend.",
+   "The forearm starts to accelerate.",
+   "The hand approaches the ball."
+  ],
+  [
+   "The player’s hand approaches the ball, fingers extended.",
+   "The wrist locks, preparing for impact.",
+   "The forearm accelerates, striking the ball sharply."
+  ],
+  [
+   "The player’s hand locks wrist, striking the ball.",
+   "The player’s arm extends fully, guiding the ball.",
+   "The player’s fingers remain extended, stabilizing the ball’s flight."
+  ],
+  [
+   "The player’s body continues upward, legs bent.",
+   "Knees slightly lifted after the strike.",
+   "The player’s arm and hand remain extended."
+  ],
+  [
+   "The player’s arm guides the ball’s path.",
+   "The hand maintains control post-impact.",
+   "The fingers extend to stabilize direction."
+  ],
+  [
+   "Player lands softly on feet.",
+   "Knees bend slightly.",
+   "Ball arcs away."
+  ]
+ ]
+}

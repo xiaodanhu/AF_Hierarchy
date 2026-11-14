@@ -1,0 +1,14 @@
+set: 0; vault
+set: 1; FX_leap_jump_hop
+set: 2; FX_turns
+set: 3; FX_front_salto
+set: 4; FX_back_salto
+set: 5; BB_leap_jump_hop
+set: 6; BB_turns
+set: 7; BB_flight_salto
+set: 8; BB_flight_handspring
+set: 9; BB_dismounts
+set: 10; UB_circles
+set: 11; UB_fligh_same_bar
+set: 12; UB_transition_flight
+set: 13; UB_dismounts

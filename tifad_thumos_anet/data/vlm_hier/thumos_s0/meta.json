@@ -1,0 +1,49 @@
+{
+ "split": 0,
+ "seen": [
+  "BasketballDunk",
+  "Billiards",
+  "CleanAndJerk",
+  "CliffDiving",
+  "CricketBowling",
+  "CricketShot",
+  "Diving",
+  "FrisbeeCatch",
+  "GolfSwing",
+  "HighJump",
+  "JavelinThrow",
+  "LongJump",
+  "Shotput",
+  "TennisSwing",
+  "VolleyballSpiking"
+ ],
+ "unseen": [
+  "BaseballPitch",
+  "HammerThrow",
+  "PoleVault",
+  "SoccerPenalty",
+  "ThrowDiscus"
+ ],
+ "stats": {
+  "train": {
+   "windows": 1040,
+   "positive": 949,
+   "instances": 5219,
+   "videos_missing_frames": 0
+  },
+  "test": {
+   "windows": 1108,
+   "positive": 0,
+   "instances": 0,
+   "videos_missing_frames": 0
+  }
+ },
+ "args": {
+  "n": 0,
+  "out": "data/vlm_hier/thumos_s0",
+  "win": 64,
+  "train_stride": 32,
+  "test_stride": 48,
+  "neg_ratio": 1.0
+ }
+}

@@ -1,0 +1,142 @@
+# ActivityNet-1.3 ZSL — split 0, 75/25 protocol (50 unseen classes, seed-42 split #0).
+# Base recipe = thumos14_i3d_zsl (I3D features, convTransformer) adapted to ANet:
+# features are uniform in TIME (one row / 0.64 s = 16 frames @ virtual 25 fps), so
+# sample_stride=feat_native_stride=16 makes one model token = one feature row.
+# window_length=256 tokens = 163.8 s (covers 95% of instances completely);
+# complete_only=False keeps clipped partials of the ultra-long tail.
+# ZSL machinery = FineGym v17: cascaded phrase hierarchy (27 taxonomy-derived
+# phrase groups) + 8 attribute specialists (ANet slots via specialist_specs:
+# motion 15-way / object 128-way / posture 5-way / environment 10-way /
+# social 3-way / 3 binaries) + raw log-prob composition for held-out scoring.
+# Protocol follows OVFormer (arXiv 2406.15556): 10 random splits per ratio,
+# segments present unlabeled) - state this caveat in comparisons. 4-GPU deepspeed.
+dataset_name: activitynet_raw
+train_split: ['train']
+val_split: ['test']
+round: 1000
+active_learning_method: uniform
+devices: ['cuda:0', 'cuda:1', 'cuda:2', 'cuda:3']
+dataset: {
+  train_json_file: /data3/xiaodan8/Activitynet/annotation/activitynet_train_label.txt,
+  val_json_file: /data3/xiaodan8/Activitynet/annotation/activitynet_test_label.txt,
+  num_classes: 200,
+  num_frames: 16,
+  trunc_thresh: 0.5,
+  crop_ratio: [0.9, 1.0],
+  max_seq_len: 288,
+  window_length: 256,
+  window_stride: 128,
+  sample_stride: 16,
+  use_raw_video: True,
+  load_jpg: False,
+  complete_only: False,
+  feat_folder: /data3/xiaodan8/Activitynet/I3D,
+  feat_file_ext: .npy,
+  feat_native_stride: 16,
+  feat_stride: 16,
+  force_upsampling: False,
+  input_dim: 2048,
+  num_phrases: 27,
+  num_activities: 1,
+  # phrase GT derivation (action -> 27 taxonomy-derived phrase groups)
+  verbalizer_path: configs/anet_zsl/anet_verbalizer.json,
+}
+model: {
+  backbone_type: convTransformer,
+  backbone_arch: [2, 2, 4],
+  input_dim: 2048,
+  regression_range: [[0, 4], [4, 8], [8, 16], [16, 32], [32, 10000]],
+  fpn_type: identity,
+  max_buffer_len_factor: 6.0,
+  n_mha_win_size: 19,
+  num_classes: 200,
+  num_phrases: 27,
+  num_activities: 1,
+  # ---- cascaded hierarchy (phrase only; no activity level) ----
+  use_cascaded_hierarchy: True,
+  cascade_phrase_levels: [0, 1, 2, 3],
+  cascade_activity_levels: [],
+  cascade_gradient_stop: False,
+  verbalizer_path_for_embedding: configs/anet_zsl/anet_verbalizer.json,
+  # ---- attribute specialists (ANet semantics via specialist_specs) ----
+  use_aux_attribute_head: False,
+  aux_attribute_table_path: configs/anet_zsl/anet_attrs_split0_75.json,
+  use_clip_text_head: False,
+  use_contrastive_attrs: False,
+  use_rotation_regression_head: False,
+  use_body_shape_head: True,          # slot = environment (10-way)
+  use_direction_head: True,           # slot = body posture (5-way)
+  use_multiplicity_head: True,        # slot = social setting (3-way)
+  use_named_element_head: True,       # slot = primary object (128-way)
+  use_motion_category_head: True,     # slot = dominant motion (15-way)
+  use_leg_configuration_head: True,   # slot = repetitive_cyclic (binary)
+  use_inverted_phase_head: True,      # slot = uses_water_liquid (binary)
+  use_hands_on_apparatus_head: True,  # slot = handheld_implement (binary)
+  specialist_head_n_head: 8,
+  specialist_head_mha_win_size: 33,
+  specialist_head_num_layers: 2,
+  use_sibling_softmax: True,
+  phrase_head_num_layers_override: 5,
+  use_raw_log_prob: True,
+  use_attr_axis_contrast: True,
+  attr_axis_contrast_margin: 1.0,
+}
+opt: {
+  # multiplied by len(devices) in train_shard -> 5.0e-4 total on 4 GPUs
+  # (sqrt-scaled from the 3.0e-4 @ eff-batch-32 recipe for eff batch 96)
+  learning_rate: 1.25e-04,
+  epochs: 15,
+  weight_decay: 0.05,
+}
+loader: {
+  # per-GPU loader batch (this is the REAL micro-batch; the deepspeed json
+  # value is kept equal for bookkeeping). 32 x 256 tokens ~ 12.7 GB / 16 GB GPU.
+  batch_size: 32,
+  # multiplied by len(devices) in train_shard
+  num_workers: 2,
+}
+train_cfg: {
+  init_loss_norm: 100,
+  clip_grad_l2norm: 1.0,
+  cls_prior_prob: 0.01,
+  center_sample: radius,
+  center_sample_radius: 1.5,
+  lambda_phrase_cls: 0.5,
+  lambda_phrase_reg: 0.5,
+  lambda_activity_cls: 0.0,
+  lambda_activity_reg: 0.0,
+  lambda_structural_consistency: 0.25,
+  consistency_warmup_epochs: 2,
+  consistency_ramp_epochs: 1,
+  lambda_aux_attr: 0.0,
+  lambda_clip: 0.0,
+  lambda_contr: 0.0,
+  lambda_body_shape: 0.5,
+  lambda_direction: 0.5,
+  lambda_multiplicity: 0.5,
+  lambda_named_element: 0.5,
+  lambda_motion_category: 0.5,
+  lambda_leg_configuration: 0.5,
+  lambda_inverted_phase: 0.5,
+  lambda_hands_on_apparatus: 0.5,
+  lambda_attr_axis_contrast: 0.5,
+  held_out_body_shape_alpha: 0.1,
+  held_out_direction_alpha: 0.1,
+  held_out_multiplicity_alpha: 0.1,
+  held_out_named_element_alpha: 0.1,
+  held_out_motion_category_alpha: 0.1,
+  held_out_leg_configuration_alpha: 0.1,
+  held_out_inverted_phase_alpha: 0.1,
+  held_out_hands_on_apparatus_alpha: 0.1,
+  revert_num_pos_v4_style: True,
+}
+test_cfg: {
+  voting_thresh: 0.7,
+  pre_nms_topk: 2000,
+  max_seg_num: 100,
+  min_score: 0.001,
+  multiclass_nms: True,
+  duration_thresh: 0.05,
+}
+output_folder: ./ckpt/
+deepspeed_config_path: configs/deepspeed_config_bf16_anet.json

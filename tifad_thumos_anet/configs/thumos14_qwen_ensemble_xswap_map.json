@@ -1,0 +1,22 @@
+{
+ "BaseballPitch": "Diving",
+ "BasketballDunk": "HammerThrow",
+ "Billiards": "ThrowDiscus",
+ "CleanAndJerk": "PoleVault",
+ "CliffDiving": "LongJump",
+ "CricketBowling": "Billiards",
+ "CricketShot": "CricketBowling",
+ "Diving": "JavelinThrow",
+ "FrisbeeCatch": "VolleyballSpiking",
+ "GolfSwing": "HighJump",
+ "HammerThrow": "CliffDiving",
+ "HighJump": "SoccerPenalty",
+ "JavelinThrow": "GolfSwing",
+ "LongJump": "TennisSwing",
+ "PoleVault": "FrisbeeCatch",
+ "Shotput": "BaseballPitch",
+ "SoccerPenalty": "BasketballDunk",
+ "TennisSwing": "CricketShot",
+ "ThrowDiscus": "Shotput",
+ "VolleyballSpiking": "CleanAndJerk"
+}

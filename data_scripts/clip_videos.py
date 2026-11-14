@@ -11,10 +11,10 @@ import re
 from pathlib import Path
 
 # Paths
-VIDEO_RAW_DIR = Path("/taiga/illinois/eng/ece/n-ahuja/xiaodan/dataset/FineGym/video")
-OUTPUT_DIR = Path("/taiga/illinois/eng/ece/n-ahuja/xiaodan/dataset/FineGym/finegym_qwen/videos_Dec16")
-TRAIN_ANNOTATION = Path("/taiga/illinois/eng/ece/n-ahuja/xiaodan/dataset/FineGym/finegym_qwen/annotation/Dec16/gym99_train_label.txt")
-VAL_ANNOTATION = Path("/taiga/illinois/eng/ece/n-ahuja/xiaodan/dataset/FineGym/finegym_qwen/annotation/Dec16/gym99_val_label.txt")
+VIDEO_RAW_DIR = Path("/path/to/FineGym/video")
+OUTPUT_DIR = Path("/path/to/FineGym/finegym_qwen/videos_Dec16")
+TRAIN_ANNOTATION = Path("/path/to/FineGym/finegym_qwen/annotation/Dec16/gym99_train_label.txt")
+VAL_ANNOTATION = Path("/path/to/FineGym/finegym_qwen/annotation/Dec16/gym99_val_label.txt")
 
 # Create output directory if it doesn't exist
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

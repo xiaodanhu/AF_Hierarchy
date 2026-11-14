@@ -1,0 +1,288 @@
+{
+  "101b": [
+    "Forward",
+    "0.5 Som.Pike",
+    "Entry"
+  ],
+  "103b": [
+    "Forward",
+    "1.5 Soms.Pike",
+    "Entry"
+  ],
+  "105b": [
+    "Forward",
+    "2.5 Soms.Pike",
+    "Entry"
+  ],
+  "107b": [
+    "Forward",
+    "3.5 Soms.Pike",
+    "Entry"
+  ],
+  "107c": [
+    "Forward",
+    "3.5 Soms.Tuck",
+    "Entry"
+  ],
+  "109b": [
+    "Forward",
+    "4.5 Soms.Pike",
+    "Entry"
+  ],
+  "109c": [
+    "Forward",
+    "4.5 Soms.Tuck",
+    "Entry"
+  ],
+  "201a": [
+    "Back",
+    "0.5 Som.Pike",
+    "Entry"
+  ],
+  "201b": [
+    "Back",
+    "0.5 Som.Pike",
+    "Entry"
+  ],
+  "201c": [
+    "Back",
+    "0.5 Som.Pike",
+    "Entry"
+  ],
+  "205b": [
+    "Back",
+    "2.5 Soms.Pike",
+    "Entry"
+  ],
+  "205c": [
+    "Back",
+    "2.5 Soms.Tuck",
+    "Entry"
+  ],
+  "207b": [
+    "Back",
+    "3.5 Soms.Pike",
+    "Entry"
+  ],
+  "207c": [
+    "Back",
+    "3.5 Soms.Tuck",
+    "Entry"
+  ],
+  "301b": [
+    "Reverse",
+    "0.5 Som.Pike",
+    "Entry"
+  ],
+  "303c": [
+    "Reverse",
+    "1.5 Soms.Tuck",
+    "Entry"
+  ],
+  "305b": [
+    "Reverse",
+    "2.5 Soms.Pike",
+    "Entry"
+  ],
+  "305c": [
+    "Reverse",
+    "2.5 Soms.Tuck",
+    "Entry"
+  ],
+  "307c": [
+    "Reverse",
+    "3.5 Soms.Tuck",
+    "Entry"
+  ],
+  "401b": [
+    "Inward",
+    "0.5 Som.Pike",
+    "Entry"
+  ],
+  "403b": [
+    "Inward",
+    "1.5 Soms.Pike",
+    "Entry"
+  ],
+  "405b": [
+    "Inward",
+    "2.5 Soms.Pike",
+    "Entry"
+  ],
+  "405c": [
+    "Inward",
+    "2.5 Soms.Tuck",
+    "Entry"
+  ],
+  "407b": [
+    "Inward",
+    "3.5 Soms.Pike",
+    "Entry"
+  ],
+  "407c": [
+    "Inward",
+    "3.5 Soms.Tuck",
+    "Entry"
+  ],
+  "409c": [
+    "Inward",
+    "4.5 Soms.Tuck",
+    "Entry"
+  ],
+  "5132d": [
+    "Forward",
+    "1.5 Soms.Pike",
+    "1 Twist",
+    "1.5 Soms.Pike",
+    "Entry"
+  ],
+  "5152b": [
+    "Forward",
+    "2.5 Soms.Pike",
+    "1 Twist",
+    "2.5 Soms.Pike",
+    "Entry"
+  ],
+  "5154b": [
+    "Forward",
+    "2.5 Soms.Pike",
+    "2 Twists",
+    "2.5 Soms.Pike",
+    "Entry"
+  ],
+  "5156b": [
+    "Forward",
+    "2.5 Soms.Pike",
+    "3 Twists",
+    "2.5 Soms.Pike",
+    "Entry"
+  ],
+  "5172b": [
+    "Forward",
+    "3.5 Soms.Pike",
+    "1 Twist",
+    "3.5 Soms.Pike",
+    "Entry"
+  ],
+  "5231d": [
+    "Back",
+    "0.5 Twist",
+    "1.5 Soms.Pike",
+    "Entry"
+  ],
+  "5233d": [
+    "Back",
+    "1.5 Twists",
+    "1.5 Soms.Pike",
+    "Entry"
+  ],
+  "5235d": [
+    "Back",
+    "2.5 Twists",
+    "1.5 Soms.Pike",
+    "Entry"
+  ],
+  "5237d": [
+    "Back",
+    "3.5 Twists",
+    "1.5 Soms.Pike",
+    "Entry"
+  ],
+  "5251b": [
+    "Back",
+    "0.5 Twist",
+    "2.5 Soms.Pike",
+    "Entry"
+  ],
+  "5253b": [
+    "Back",
+    "1.5 Twists",
+    "2.5 Soms.Pike",
+    "Entry"
+  ],
+  "5255b": [
+    "Back",
+    "2.5 Twists",
+    "2.5 Soms.Pike",
+    "Entry"
+  ],
+  "5331d": [
+    "Reverse",
+    "0.5 Twist",
+    "1.5 Soms.Pike",
+    "Entry"
+  ],
+  "5335d": [
+    "Reverse",
+    "2.5 Twists",
+    "1.5 Soms.Pike",
+    "Entry"
+  ],
+  "5337d": [
+    "Reverse",
+    "3.5 Twists",
+    "1.5 Soms.Pike",
+    "Entry"
+  ],
+  "5353b": [
+    "Reverse",
+    "1.5 Twists",
+    "2.5 Soms.Pike",
+    "Entry"
+  ],
+  "5355b": [
+    "Reverse",
+    "2.5 Twists",
+    "2.5 Soms.Pike",
+    "Entry"
+  ],
+  "612b": [
+    "Arm.Forward",
+    "1 Som.Pike",
+    "3.5 Twists"
+  ],
+  "6142d": [
+    "Arm.Forward",
+    "1 Twist",
+    "2 Soms.Pike",
+    "3.5 Twists"
+  ],
+  "614b": [
+    "Arm.Forward",
+    "2 Soms.Pike",
+    "3.5 Twists"
+  ],
+  "6241b": [
+    "Arm.Back",
+    "0.5 Twist",
+    "2 Soms.Pike",
+    "Entry"
+  ],
+  "6243d": [
+    "Arm.Back",
+    "1.5 Twists",
+    "2 Soms.Pike",
+    "Entry"
+  ],
+  "6245d": [
+    "Arm.Back",
+    "2.5 Twists",
+    "2 Soms.Pike",
+    "Entry"
+  ],
+  "626b": [
+    "Arm.Back",
+    "3 Soms.Pike",
+    "Entry"
+  ],
+  "626c": [
+    "Arm.Back",
+    "3 Soms.Tuck",
+    "Entry"
+  ],
+  "636c": [
+    "Arm.Reverse",
+    "3 Soms.Tuck",
+    "Entry"
+  ]
+}

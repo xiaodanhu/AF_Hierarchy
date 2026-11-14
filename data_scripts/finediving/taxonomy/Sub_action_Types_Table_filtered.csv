@@ -1,0 +1,30 @@
+id,sub_action_type,new_id
+1,Forward,0
+2,Back,1
+3,Reverse,2
+4,Inward,3
+5,Arm.Forward,4
+6,Arm.Back,5
+7,Arm.Reverse,6
+12,1 Som.Pike,7
+13,1.5 Soms.Pike,8
+14,2 Soms.Pike,9
+15,2.5 Soms.Pike,10
+16,3 Soms.Pike,11
+17,3.5 Soms.Pike,12
+19,4.5 Soms.Pike,13
+21,1.5 Soms.Tuck,14
+22,2 Soms.Tuck,15
+23,2.5 Soms.Tuck,16
+24,3 Soms.Tuck,17
+25,3.5 Soms.Tuck,18
+27,4.5 Soms.Tuck,19
+29,0.5 Twist,20
+30,1 Twist,21
+31,1.5 Twists,22
+32,2 Twists,23
+33,2.5 Twists,24
+34,3 Twists,25
+35,3.5 Twists,26
+36,Entry,27
+37,0.5 Som.Pike,28

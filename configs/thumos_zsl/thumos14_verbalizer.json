@@ -1,0 +1,176 @@
+{
+ "dataset": "thumos14",
+ "activities": {
+  "a0": {
+   "id": "a0",
+   "name": "Sports (SP)",
+   "short": "SP"
+  }
+ },
+ "phrases": {
+  "p00": {
+   "id": "p00",
+   "name": "field_throw",
+   "activity": "a0",
+   "set": 0
+  },
+  "p01": {
+   "id": "p01",
+   "name": "jump_field",
+   "activity": "a0",
+   "set": 1
+  },
+  "p02": {
+   "id": "p02",
+   "name": "aquatic_dive",
+   "activity": "a0",
+   "set": 2
+  },
+  "p03": {
+   "id": "p03",
+   "name": "implement_strike",
+   "activity": "a0",
+   "set": 3
+  },
+  "p04": {
+   "id": "p04",
+   "name": "ball_throw",
+   "activity": "a0",
+   "set": 4
+  },
+  "p05": {
+   "id": "p05",
+   "name": "court_jump_strike",
+   "activity": "a0",
+   "set": 5
+  },
+  "p06": {
+   "id": "p06",
+   "name": "other",
+   "activity": "a0",
+   "set": 6
+  }
+ },
+ "actions": {
+  "c00": {
+   "id": "c00",
+   "name": "BaseballPitch",
+   "phrase": "p04",
+   "activity": "SP"
+  },
+  "c01": {
+   "id": "c01",
+   "name": "BasketballDunk",
+   "phrase": "p05",
+   "activity": "SP"
+  },
+  "c02": {
+   "id": "c02",
+   "name": "Billiards",
+   "phrase": "p03",
+   "activity": "SP"
+  },
+  "c03": {
+   "id": "c03",
+   "name": "CleanAndJerk",
+   "phrase": "p06",
+   "activity": "SP"
+  },
+  "c04": {
+   "id": "c04",
+   "name": "CliffDiving",
+   "phrase": "p02",
+   "activity": "SP"
+  },
+  "c05": {
+   "id": "c05",
+   "name": "CricketBowling",
+   "phrase": "p04",
+   "activity": "SP"
+  },
+  "c06": {
+   "id": "c06",
+   "name": "CricketShot",
+   "phrase": "p03",
+   "activity": "SP"
+  },
+  "c07": {
+   "id": "c07",
+   "name": "Diving",
+   "phrase": "p02",
+   "activity": "SP"
+  },
+  "c08": {
+   "id": "c08",
+   "name": "FrisbeeCatch",
+   "phrase": "p06",
+   "activity": "SP"
+  },
+  "c09": {
+   "id": "c09",
+   "name": "GolfSwing",
+   "phrase": "p03",
+   "activity": "SP"
+  },
+  "c10": {
+   "id": "c10",
+   "name": "HammerThrow",
+   "phrase": "p00",
+   "activity": "SP"
+  },
+  "c11": {
+   "id": "c11",
+   "name": "HighJump",
+   "phrase": "p01",
+   "activity": "SP"
+  },
+  "c12": {
+   "id": "c12",
+   "name": "JavelinThrow",
+   "phrase": "p00",
+   "activity": "SP"
+  },
+  "c13": {
+   "id": "c13",
+   "name": "LongJump",
+   "phrase": "p01",
+   "activity": "SP"
+  },
+  "c14": {
+   "id": "c14",
+   "name": "PoleVault",
+   "phrase": "p01",
+   "activity": "SP"
+  },
+  "c15": {
+   "id": "c15",
+   "name": "Shotput",
+   "phrase": "p00",
+   "activity": "SP"
+  },
+  "c16": {
+   "id": "c16",
+   "name": "SoccerPenalty",
+   "phrase": "p06",
+   "activity": "SP"
+  },
+  "c17": {
+   "id": "c17",
+   "name": "TennisSwing",
+   "phrase": "p03",
+   "activity": "SP"
+  },
+  "c18": {
+   "id": "c18",
+   "name": "ThrowDiscus",
+   "phrase": "p00",
+   "activity": "SP"
+  },
+  "c19": {
+   "id": "c19",
+   "name": "VolleyballSpiking",
+   "phrase": "p05",
+   "activity": "SP"
+  }
+ }
+}

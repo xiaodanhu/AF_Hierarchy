@@ -1,0 +1,324 @@
+{
+  "dataset": "finegym",
+  "activities": {
+    "a0": {
+      "id": "a0",
+      "name": "Vault (VT)",
+      "short": "VT"
+    },
+    "a1": {
+      "id": "a1",
+      "name": "Floor Exercise (FX)",
+      "short": "FX"
+    },
+    "a2": {
+      "id": "a2",
+      "name": "Balance Beam (BB)",
+      "short": "BB"
+    },
+    "a3": {
+      "id": "a3",
+      "name": "Uneven Bars (UB)",
+      "short": "UB"
+    }
+  },
+  "phrases": {
+    "p00": {
+      "id": "p00",
+      "name": "vault",
+      "activity": "a0",
+      "set": 0
+    },
+    "p01": {
+      "id": "p01",
+      "name": "FX_leap_jump_hop",
+      "activity": "a1",
+      "set": 1
+    },
+    "p02": {
+      "id": "p02",
+      "name": "FX_turns",
+      "activity": "a1",
+      "set": 2
+    },
+    "p03": {
+      "id": "p03",
+      "name": "FX_front_salto",
+      "activity": "a1",
+      "set": 3
+    },
+    "p04": {
+      "id": "p04",
+      "name": "FX_back_salto",
+      "activity": "a1",
+      "set": 4
+    },
+    "p05": {
+      "id": "p05",
+      "name": "BB_leap_jump_hop",
+      "activity": "a2",
+      "set": 5
+    },
+    "p06": {
+      "id": "p06",
+      "name": "BB_turns",
+      "activity": "a2",
+      "set": 6
+    },
+    "p07": {
+      "id": "p07",
+      "name": "BB_flight_salto",
+      "activity": "a2",
+      "set": 7
+    },
+    "p08": {
+      "id": "p08",
+      "name": "BB_flight_handspring",
+      "activity": "a2",
+      "set": 8
+    },
+    "p09": {
+      "id": "p09",
+      "name": "BB_dismounts",
+      "activity": "a2",
+      "set": 9
+    },
+    "p10": {
+      "id": "p10",
+      "name": "UB_circles",
+      "activity": "a3",
+      "set": 10
+    },
+    "p11": {
+      "id": "p11",
+      "name": "UB_flight_same_bar",
+      "activity": "a3",
+      "set": 11
+    },
+    "p12": {
+      "id": "p12",
+      "name": "UB_transition_flight",
+      "activity": "a3",
+      "set": 12
+    },
+    "p13": {
+      "id": "p13",
+      "name": "UB_dismounts",
+      "activity": "a3",
+      "set": 13
+    }
+  },
+  "actions": {
+    "c00": {
+      "id": "c00",
+      "name": "vault",
+      "phrase": "p00",
+      "activity": "VT",
+      "members": [
+        "c00",
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05"
+      ]
+    },
+    "c01": {
+      "id": "c01",
+      "name": "leap, jump or hop",
+      "phrase": "p01",
+      "activity": "FX",
+      "members": [
+        "c06",
+        "c07",
+        "c08",
+        "c09",
+        "c10",
+        "c11",
+        "c12",
+        "c13",
+        "c14",
+        "c15",
+        "c16"
+      ]
+    },
+    "c02": {
+      "id": "c02",
+      "name": "turn",
+      "phrase": "p02",
+      "activity": "FX",
+      "members": [
+        "c17",
+        "c18",
+        "c19",
+        "c20",
+        "c21",
+        "c22",
+        "c23"
+      ]
+    },
+    "c03": {
+      "id": "c03",
+      "name": "salto forward",
+      "phrase": "p03",
+      "activity": "FX",
+      "members": [
+        "c24",
+        "c25",
+        "c26",
+        "c27",
+        "c28",
+        "c29",
+        "c30"
+      ]
+    },
+    "c04": {
+      "id": "c04",
+      "name": "salto backward",
+      "phrase": "p04",
+      "activity": "FX",
+      "members": [
+        "c31",
+        "c32",
+        "c33",
+        "c34",
+        "c35",
+        "c36",
+        "c37",
+        "c38",
+        "c39",
+        "c40"
+      ]
+    },
+    "c05": {
+      "id": "c05",
+      "name": "leap, jump or hop",
+      "phrase": "p05",
+      "activity": "BB",
+      "members": [
+        "c41",
+        "c42",
+        "c43",
+        "c44",
+        "c45",
+        "c46",
+        "c47",
+        "c48",
+        "c49",
+        "c50",
+        "c51",
+        "c52"
+      ]
+    },
+    "c06": {
+      "id": "c06",
+      "name": "turn",
+      "phrase": "p06",
+      "activity": "BB",
+      "members": [
+        "c53",
+        "c54",
+        "c55",
+        "c56"
+      ]
+    },
+    "c07": {
+      "id": "c07",
+      "name": "flight salto",
+      "phrase": "p07",
+      "activity": "BB",
+      "members": [
+        "c57",
+        "c58",
+        "c59",
+        "c60",
+        "c61",
+        "c62",
+        "c63",
+        "c64"
+      ]
+    },
+    "c08": {
+      "id": "c08",
+      "name": "flight handspring",
+      "phrase": "p08",
+      "activity": "BB",
+      "members": [
+        "c65",
+        "c66",
+        "c67",
+        "c68"
+      ]
+    },
+    "c09": {
+      "id": "c09",
+      "name": "dismount",
+      "phrase": "p09",
+      "activity": "BB",
+      "members": [
+        "c69",
+        "c70",
+        "c71",
+        "c72",
+        "c73"
+      ]
+    },
+    "c10": {
+      "id": "c10",
+      "name": "circle",
+      "phrase": "p10",
+      "activity": "UB",
+      "members": [
+        "c74",
+        "c75",
+        "c76",
+        "c77",
+        "c78",
+        "c79",
+        "c80",
+        "c81",
+        "c82",
+        "c83",
+        "c84",
+        "c85",
+        "c86",
+        "c87",
+        "c88"
+      ]
+    },
+    "c11": {
+      "id": "c11",
+      "name": "flight on the same bar",
+      "phrase": "p11",
+      "activity": "UB",
+      "members": [
+        "c89",
+        "c90",
+        "c91",
+        "c92",
+        "c93"
+      ]
+    },
+    "c12": {
+      "id": "c12",
+      "name": "transition flight",
+      "phrase": "p12",
+      "activity": "UB",
+      "members": [
+        "c94",
+        "c95"
+      ]
+    },
+    "c13": {
+      "id": "c13",
+      "name": "dismount",
+      "phrase": "p13",
+      "activity": "UB",
+      "members": [
+        "c96",
+        "c97",
+        "c98"
+      ]
+    }
+  }
+}

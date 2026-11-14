@@ -1,0 +1,3140 @@
+{
+ "(FWD) forward dive, 0.5 somersaults, pike position": {
+  "counts": [
+   6,
+   5,
+   5,
+   5,
+   5
+  ],
+  "mean": 5.2,
+  "lists": [
+   [
+    "Diver approaches the springboard with extended arms.",
+    "Diver leaps onto the springboard with bent knees.",
+    "Diver extends legs upward, preparing for the dive.",
+    "Diver rotates backward through the air, completing half a somersault.",
+    "Diver tucks their body into a pike position mid-air.",
+    "Diver straightens out, aligning body for entry into water."
+   ],
+   [
+    "The diver begins by running towards the springboard with arms extended forward.",
+    "The diver leaps onto the springboard, bending knees to gain momentum.",
+    "The diver's body extends horizontally above the water surface after leaving the springboard.",
+    "The diver performs 0.5 somersaults in mid-air, tucking legs and extending arms.",
+    "The diver's body straightens out into a pike position just before entering the water."
+   ],
+   [
+    "The diver extends arms overhead, legs straight, preparing to jump.",
+    "The diver jumps off the springboard with a strong push-off.",
+    "The diver begins to rotate backward in the air, body compacted.",
+    "The diver completes half a somersault, tucking the head close to knees.",
+    "The diver straightens up, extending arms outwards, preparing to enter water."
+   ],
+   [
+    "The diver runs up, gaining speed on the springboard.",
+    "The diver leaps off the springboard with arms extended forward.",
+    "The diver rotates through the air, executing 0.5 somersaults.",
+    "The diver tucks the body into a compact pike position mid-air.",
+    "The diver straightens legs and extends arms upon entering the water."
+   ],
+   [
+    "Diver approaches springboard, extending arms, bending knees.",
+    "Diver leaps off springboard, arms above head, legs straight.",
+    "Diver rotates forward, half-somersault in mid-air, tucking legs.",
+    "Diver extends legs into pike position, arms still extended overhead.",
+    "Diver enters water with arms and legs extended, completing dive."
+   ]
+  ]
+ },
+ "(FWD) forward dive, 1.5 somersaults, pike position": {
+  "counts": [
+   5,
+   8,
+   8,
+   5,
+   6
+  ],
+  "mean": 6.4,
+  "lists": [
+   [
+    "The diver runs up the springboard with extended arms.",
+    "The diver leaps off the springboard, extending legs forward.",
+    "The diver performs a half-somersault in mid-air, tucking knees.",
+    "The diver extends legs again, preparing for the pike position.",
+    "The diver enters the water in a pike position, arms extended."
+   ],
+   [
+    "The diver runs up on the springboard with extended arms.",
+    "The diver leaps off the springboard, extending legs upward.",
+    "The diver begins the first somersault, twisting torso.",
+    "The diver completes the first somersault, preparing for second.",
+    "The diver starts the second somersault, continuing to twist torso.",
+    "The diver finishes the second somersault, aligning for entry.",
+    "The diver enters the water with arms drawn inward, legs extended.",
+    "The diver's body forms a pike position upon impact with the water surface."
+   ],
+   [
+    "The diver extends arms overhead, legs straight, preparing to jump.",
+    "The diver jumps off the springboard with a strong push-off.",
+    "The diver tucks their head towards their knees, initiating the first somersault.",
+    "The diver straightens legs, extending them horizontally for the second somersault.",
+    "The diver tucks again, bringing knees towards chest mid-air.",
+    "The diver straightens legs once more, completing the somersaults.",
+    "The diver extends arms upwards, preparing to enter water.",
+    "The diver enters water with a controlled splash, maintaining a pike position."
+   ],
+   [
+    "The diver leaps off the springboard with extended legs.",
+    "The diver extends arms outwards as they descend towards the water.",
+    "The diver rotates through 1.5 somersaults in mid-air.",
+    "The diver tucks their body into a pike position before entry.",
+    "The diver's body straightens as they enter the water."
+   ],
+   [
+    "Diver approaches springboard, extending arms, bending knees.",
+    "Leap off springboard, tucking legs under.",
+    "In air, perform first somersault, extending arms overhead.",
+    "Continue second somersault, tucking legs closely.",
+    "Reach peak of dive, body straightening, arms above head.",
+    "Enter water with pike position, legs extended upwards."
+   ]
+  ]
+ },
+ "(FWD) forward dive, 2.5 somersaults, pike position": {
+  "counts": [
+   5,
+   9,
+   7,
+   6,
+   5
+  ],
+  "mean": 6.4,
+  "lists": [
+   [
+    "The diver runs up the springboard with extended arms.",
+    "The diver leaps off the springboard, extending legs forward.",
+    "The diver performs a 2.5 somersaults in mid-air, tucking tightly.",
+    "The diver extends legs upward, entering a pike position.",
+    "The diver enters the water with a streamlined body posture."
+   ],
+   [
+    "Stand on springboard with hands extended.",
+    "Run towards springboard and jump off.",
+    "Extend arms forward, legs straight, begin descent.",
+    "Tuck knees in towards chest, initiate first somersault.",
+    "Straighten legs out again, extend arms back.",
+    "Tuck knees in once more, start second somersault.",
+    "Straighten legs out, extend arms forward, third somersault.",
+    "Extend arms back, tuck legs in, initiate final somersault.",
+    "Straighten arms and legs, enter pike position at water's surface."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver extends arms and legs in preparation for takeoff.",
+    "Diver leaps off the springboard with a powerful push.",
+    "Diver begins rotation in the air, initiating the first somersault.",
+    "Diver continues rotating through the air, completing the second somersault.",
+    "Diver begins to tuck, transitioning into a pike position mid-air.",
+    "Diver straightens legs while tucking, preparing to enter water."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with arms extended forward.",
+    "The diver performs the first somersault in a tucked position.",
+    "The diver extends their legs while maintaining control during the second somersault.",
+    "The diver tucks again for the third somersault, preparing for the final position.",
+    "The diver extends their legs into a pike position upon entering the water."
+   ],
+   [
+    "Diver approaches the springboard with a steady run.",
+    "Diver leaps off the springboard, extending arms forward.",
+    "Diver initiates first somersault, tucking knees close to chest.",
+    "Diver extends legs outward during second somersault.",
+    "Diver enters pike position upon landing, bending knees sharply."
+   ]
+  ]
+ },
+ "(FWD) forward dive, 3.5 somersaults, pike position": {
+  "counts": [
+   4,
+   7,
+   6,
+   7,
+   10
+  ],
+  "mean": 6.8,
+  "lists": [
+   [
+    "The diver runs up the springboard with extended arms.",
+    "The diver leaps off the springboard, extending legs forward.",
+    "The diver performs a series of three-and-a-half somersaults in mid-air.",
+    "The diver tucks their body into a pike position before entering the water."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends arms forward, body tucks tightly.",
+    "Diver performs three full somersaults in mid-air.",
+    "Diver completes half a somersault before landing.",
+    "Diver's legs straighten as they approach the water.",
+    "Diver enters the water in a pike position."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver leaps off the springboard with a forward motion.",
+    "Diver performs a 3.5 somersault in mid-air.",
+    "Diver extends arms, legs, and back during somersault.",
+    "Diver tucks into a pike position before entry.",
+    "Diver enters the water with a streamlined body position."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with arms extended forward.",
+    "The diver tucks into a compact ball in mid-air.",
+    "The diver performs three-and-a-half somersaults, rotating quickly.",
+    "The diver straightens into a pike position at the peak of the dive.",
+    "The diver aligns body for the entry into the water.",
+    "The diver enters the water, creating ripples on the surface."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to maintain balance during ascent.",
+    "Diver's body begins to rotate forward over the springboard.",
+    "Diver completes first somersault, tucking tightly.",
+    "Diver continues to rotate, preparing for second somersault.",
+    "Diver maintains alignment for third somersault, arms slightly extended.",
+    "Diver initiates fourth somersault, body tight in pike position.",
+    "Diver transitions from fourth somersault to fifth, maintaining speed.",
+    "Diver enters water with controlled entry, arms and legs together."
+   ]
+  ]
+ },
+ "(FWD) forward dive, 3.5 somersaults, tuck position": {
+  "counts": [
+   12,
+   7,
+   8,
+   5,
+   7
+  ],
+  "mean": 7.8,
+  "lists": [
+   [
+    "Diver approaches the springboard with a running start.",
+    "Diver leaps onto the springboard, extending arms forward.",
+    "Diver's body arches upward, preparing for the first somersault.",
+    "Diver completes the first somersault, tucking tightly.",
+    "Diver extends arms again, preparing for the second somersault.",
+    "Diver completes the second somersault, maintaining tuck position.",
+    "Diver extends arms once more, preparing for the third somersault.",
+    "Diver completes the third somersault, tucking tightly.",
+    "Diver extends arms again, preparing for the fourth somersault.",
+    "Diver completes the fourth somersault, maintaining tuck position.",
+    "Diver extends arms for the final time, preparing for entry.",
+    "Diver tucks tightly, entering the water with a splash."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends arms forward, body straightens out.",
+    "Diver rotates backward through the air in a series of 3.5 somersaults.",
+    "Diver tucks their head and knees, bringing arms close to body.",
+    "Diver extends legs outward and downward upon entering water.",
+    "Diver's body becomes horizontal as they enter the water smoothly."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver extends arms and legs in preparation for takeoff.",
+    "Diver leaps off the springboard with a powerful jump.",
+    "Diver begins rotation in the air, tucking body tightly.",
+    "Diver completes 3.5 somersaults while maintaining tucked position.",
+    "Diver extends legs at the peak of the rotation.",
+    "Diver tucks again to prepare for water entry.",
+    "Diver enters the water with controlled and graceful splash."
+   ],
+   [
+    "Swimmer approaches the springboard, body straight, preparing for takeoff.",
+    "Swimmer jumps off the springboard, extending arms forward.",
+    "Swimmer tucks knees towards chest, reducing rotational speed.",
+    "Swimmer performs three full somersaults while tucked.",
+    "Swimmer extends legs outwards, preparing to enter water with minimal splash."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to gain height and speed.",
+    "Diver rotates backward through the air in a tucked position.",
+    "Diver completes 3.5 somersaults during the dive.",
+    "Diver tucks tightly, minimizing exposure to the water.",
+    "Diver enters the water with a splash, arms extended forward."
+   ]
+  ]
+ },
+ "(FWD) forward dive, 4.5 somersaults, pike position": {
+  "counts": [
+   11,
+   10,
+   9,
+   11,
+   9
+  ],
+  "mean": 10,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard, gaining momentum.",
+    "Diver extends arms and legs, preparing for the dive.",
+    "Diver enters the water, creating a splash.",
+    "Diver begins the first somersault, tucking the body.",
+    "Diver continues the second somersault, maintaining tuck position.",
+    "Diver initiates the third somersault, still tucked.",
+    "Diver starts the fourth somersault, keeping the tuck.",
+    "Diver begins the fifth somersault, maintaining the tuck.",
+    "Diver completes the fifth somersault, transitioning to a pike position.",
+    "Diver extends arms and legs, entering the water in a pike position."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends arms forward, body tucks tightly.",
+    "Diver performs first somersault in mid-air, body fully extended.",
+    "Diver extends arms further forward for second somersault.",
+    "Diver tucks body for third somersault, legs straight.",
+    "Diver extends arms for fourth somersault, body straight.",
+    "Diver tucks body for fifth somersault, legs together.",
+    "Diver extends arms for sixth somersault, body straight.",
+    "Diver enters water in pike position, arms above head."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver leaps, extending arms overhead for balance.",
+    "Diver extends legs, initiating the first somersault.",
+    "Diver tucks legs, completing the first two somersaults.",
+    "Diver continues rolling, executing third through fourth somersaults.",
+    "Diver uncurls legs, preparing for fifth somersault.",
+    "Diver completes the fifth somersault, tucking tightly.",
+    "Diver straightens legs, aligning for a pike position.",
+    "Diver enters water with arms extended for streamline."
+   ],
+   [
+    "Swimmer approaches the springboard, body straight, preparing for takeoff.",
+    "Swimmer jumps off the springboard, extending arms forward.",
+    "Swimmer tucks knees towards chest, initiating first somersault.",
+    "Swimmer continues rolling, second somersault completed in mid-air.",
+    "Swimmer tucks again, preparing for third somersault.",
+    "Swimmer performs third somersault, maintaining tucked position.",
+    "Swimmer extends body, fourth somersault completed, preparing for fifth.",
+    "Swimmer tucks once more, initiating final somersault.",
+    "Swimmer completes fifth somersault, body extended in pike position.",
+    "Swimmer begins to extend legs, preparing for water entry.",
+    "Swimmer enters water with legs fully extended, body forming a pike."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to maintain balance during ascent.",
+    "Diver's body begins to rotate in a forward direction.",
+    "Diver completes 4 full somersaults in the air.",
+    "Diver performs an additional half-somersault before entering pike position.",
+    "Diver's arms reach towards their feet to initiate pike.",
+    "Diver's legs tuck tightly to the chest, forming a pike shape.",
+    "Diver enters the water in the pike position, completing the dive."
+   ]
+  ]
+ },
+ "(FWD) forward dive, 4.5 somersaults, tuck position": {
+  "counts": [
+   15,
+   5,
+   10,
+   5,
+   8
+  ],
+  "mean": 8.6,
+  "lists": [
+   [
+    "The diver runs up the springboard with extended arms.",
+    "The diver leaps off the springboard, extending legs forward.",
+    "The diver begins the first somersault, tucking the body tightly.",
+    "The diver completes the first somersault, maintaining tuck position.",
+    "The diver initiates the second somersault, continuing the tuck position.",
+    "The diver finishes the second somersault, still tucked.",
+    "The diver starts the third somersault, keeping the tuck position.",
+    "The diver completes the third somersault, maintaining the tuck.",
+    "The diver begins the fourth somersault, tucking the body.",
+    "The diver finishes the fourth somersault, still tucked.",
+    "The diver initiates the fifth somersault, tucking the body.",
+    "The diver completes the fifth somersault, maintaining the tuck.",
+    "The diver begins the sixth somersault, tucking the body.",
+    "The diver finishes the sixth somersault, still tucked.",
+    "The diver enters the water, extending arms and legs."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends arms and legs in a tuck position.",
+    "Diver performs 4.5 somersaults while tucked tightly.",
+    "Diver straightens legs upon landing on water surface."
+   ],
+   [
+    "Diver approaches the springboard or platform with a steady run.",
+    "Diver leaps into the air, extending legs straight ahead.",
+    "Diver begins the first somersault, tucking the body tightly.",
+    "Diver continues the second somersault, maintaining tight tuck position.",
+    "Diver initiates third somersault, extending legs slightly for balance.",
+    "Diver completes fourth somersault, tucking the body again.",
+    "Diver starts fifth somersault, continuing to tuck tightly.",
+    "Diver begins final somersault, preparing for entry into water.",
+    "Diver extends legs fully, tucking tightly during the last somersault.",
+    "Diver enters water, completing the dive in a tuck position."
+   ],
+   [
+    "The diver begins with a running start towards the springboard.",
+    "The diver leaps onto the springboard with extended arms and legs.",
+    "The diver's body rotates in the air, executing a series of somersaults.",
+    "The diver tucks their head towards their knees mid-air.",
+    "The diver straightens out, preparing for entry into the water."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, extending legs upward.",
+    "Diver's hands reach out and grasp the edge of the springboard.",
+    "Diver begins to rotate forward in a tucked position.",
+    "Diver completes 4 full somersaults in the air.",
+    "Diver performs an additional half-somersault before entering the water.",
+    "Diver tucks their body tightly to minimize water resistance upon impact.",
+    "Diver enters the water with a controlled splash, completing the dive."
+   ]
+  ]
+ },
+ "(BCK) back dive, 0.5 somersaults, straight position": {
+  "counts": [
+   8,
+   6,
+   7,
+   5,
+   8
+  ],
+  "mean": 6.8,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver's body arches backward as they leave the springboard.",
+    "Diver's legs extend upward, initiating the first half-somersault.",
+    "Diver's body rotates, completing the half-somersault in mid-air.",
+    "Diver's arms reach forward, aligning with their body for a straight position.",
+    "Diver's legs straighten out, maintaining a streamlined posture.",
+    "Diver enters the water with a controlled splash, completing the dive."
+   ],
+   [
+    "Diver stands at the edge, preparing for the dive.",
+    "Diver takes a running start towards the springboard.",
+    "Diver jumps onto the springboard with extended arms.",
+    "Diver begins the first half-somersault while maintaining straight posture.",
+    "Diver completes the first half-somersault, maintaining body alignment.",
+    "Diver enters the water with a streamlined entry, minimizing splash."
+   ],
+   [
+    "Diver approaches the springboard, feet on the board.",
+    "Diver jumps off the springboard with extended legs.",
+    "Diver begins the first somersault in the air, arms tucked tightly.",
+    "Diver continues the somersault, rotating head back.",
+    "Diver begins to extend legs and straighten arms mid-air.",
+    "Diver completes the somersault and enters a straight position.",
+    "Diver enters the water with arms and legs fully extended."
+   ],
+   [
+    "The diver begins with a running start towards the springboard.",
+    "The diver leaps onto the springboard with extended arms and legs.",
+    "The diver's body rotates backward in a fluid motion.",
+    "The diver completes half a somersault in mid-air with a straight body alignment.",
+    "The diver reorients their body for entry into the water, arms and legs extended."
+   ],
+   [
+    "Diver stands on springboard with bent knees.",
+    "Diver leans forward, arms extended above head.",
+    "Diver bends ankles, preparing for takeoff.",
+    "Diver leaps off springboard with arms outstretched.",
+    "Diver rotates backward in air, legs straight.",
+    "Diver tucks chin towards chest during somersault.",
+    "Diver extends arms and legs, maintaining straight position.",
+    "Diver enters water with minimal splash."
+   ]
+  ]
+ },
+ "(BCK) back dive, 0.5 somersaults, pike position": {
+  "counts": [
+   7,
+   7,
+   5,
+   6,
+   8
+  ],
+  "mean": 6.6,
+  "lists": [
+   [
+    "Diver approaches the springboard with extended arms.",
+    "Diver leaps onto the springboard, bending knees.",
+    "Diver extends legs upward, preparing for the dive.",
+    "Diver begins backward rotation, tucking head.",
+    "Diver completes half somersault, maintaining pike position.",
+    "Diver straightens legs, extending body forward.",
+    "Diver enters water with a splash, completing the dive."
+   ],
+   [
+    "Diver stands at the edge, preparing for the dive.",
+    "Diver takes a running start towards the springboard.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver begins the first half-somersault while maintaining a pike position.",
+    "Diver tucks the head and extends the legs during the somersault.",
+    "Diver completes the half-somersault, aligning body for the entry.",
+    "Diver enters the water with a controlled splash."
+   ],
+   [
+    "Diver approaches the springboard or platform with a steady run.",
+    "Diver leaps into the air, extending legs straight behind.",
+    "Diver begins the first half-somersault, rotating forward with closed arms.",
+    "Diver tucks into a pike position, knees close to chest.",
+    "Diver straightens legs upon entering the water, completing the dive."
+   ],
+   [
+    "The diver begins with a running start towards the springboard.",
+    "The diver leaps onto the springboard with extended arms and legs.",
+    "The diver's body rotates backward in a fluid motion.",
+    "The diver performs half a somersault while keeping the pike position.",
+    "The diver tucks their knees to their chest mid-air.",
+    "The diver straightens out their body upon entering the water."
+   ],
+   [
+    "Diver stands on the springboard, preparing to dive.",
+    "Diver extends arms behind head, initiating backward motion.",
+    "Diver bends knees, lowering body to a pike position.",
+    "Diver's body begins to rotate backward over the springboard.",
+    "Diver completes 0.5 somersaults during the dive.",
+    "Diver's legs straighten out, forming a pike position mid-air.",
+    "Diver extends arms forward, completing the dive.",
+    "Diver enters the water with a splash, maintaining a pike position."
+   ]
+  ]
+ },
+ "(BCK) back dive, 0.5 somersaults, tuck position": {
+  "counts": [
+   7,
+   9,
+   6,
+   4,
+   8
+  ],
+  "mean": 6.8,
+  "lists": [
+   [
+    "Diver approaches the springboard with extended arms.",
+    "Diver leaps onto the springboard with bent knees.",
+    "Diver's body arches backward, preparing for the dive.",
+    "Diver extends legs upward, initiating the first half-somersault.",
+    "Diver tucks the head and knees, maintaining a compact position.",
+    "Diver completes the half-somersault, aligning body for entry.",
+    "Diver extends arms forward, preparing for water entry."
+   ],
+   [
+    "Diver stands at the edge of the springboard, arms extended above head.",
+    "Diver runs forward with bent knees, gaining momentum.",
+    "Diver leaps off the springboard, arms and legs extended.",
+    "Diver extends body horizontally over the water, initiating the tuck position.",
+    "Diver tucks legs up towards chest, maintaining control over body.",
+    "Diver completes half a somersault while tucked, preparing to un-tuck.",
+    "Diver begins to untuck, extending legs outwards.",
+    "Diver continues to extend body, preparing to enter the water.",
+    "Diver enters the water with a splash, arms outstretched."
+   ],
+   [
+    "Diver approaches the springboard or platform with a steady run.",
+    "Diver leaps into the air, extending legs straight behind.",
+    "Diver begins the first half-somersault, tucking knees towards chest.",
+    "Diver completes the half-somersault, body fully tucked.",
+    "Diver straightens legs and arms mid-air during descent.",
+    "Diver enters water with controlled entry, minimizing splash."
+   ],
+   [
+    "The diver begins with a running start towards the springboard.",
+    "The diver leaps onto the springboard with extended arms and legs.",
+    "The diver's body tucks in tightly as they perform a half-somersault.",
+    "The diver extends their body again as they enter the water."
+   ],
+   [
+    "Diver stands on the springboard, preparing to dive.",
+    "Diver extends arms behind head, legs straight.",
+    "Diver leaps off the springboard with powerful jump.",
+    "Diver begins downward motion, body arching forward.",
+    "Diver tucks knees towards chest, arms wrapping around legs.",
+    "Diver completes 0.5 somersault in air, tucked position maintained.",
+    "Diver straightens out body, preparing for water entry.",
+    "Diver enters water, creating splash upon impact."
+   ]
+  ]
+ },
+ "(BCK) back dive, 2.5 somersaults, pike position": {
+  "counts": [
+   5,
+   8,
+   7,
+   6,
+   7
+  ],
+  "mean": 6.6,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver's body arches backward as they leave the springboard.",
+    "Diver performs a 2.5 somersault in mid-air, tucking legs tightly.",
+    "Diver extends legs into a pike position upon entry into the water."
+   ],
+   [
+    "Diver stands at the edge, preparing for takeoff.",
+    "Diver jumps off the springboard with extended arms.",
+    "Diver rotates backward, tucking their legs into the chest.",
+    "Diver completes the first 720-degree somersault.",
+    "Diver extends legs out, entering the second somersault.",
+    "Diver brings legs back to the chest, initiating the third somersault.",
+    "Diver extends legs out again, completing the final somersault.",
+    "Diver enters the water, maintaining a pike position."
+   ],
+   [
+    "Diver approaches the springboard, feet on the board.",
+    "Diver jumps off the springboard with extended legs.",
+    "Diver begins first somersault, tucking knees.",
+    "Diver extends legs mid-air, preparing for second somersault.",
+    "Diver tucks again, completing second somersault.",
+    "Diver straightens legs before entering pike position.",
+    "Diver tucks head, body forms a straight line."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with arms extended forward.",
+    "The diver tucks their head and bends knees tightly.",
+    "The diver rotates backward through the air with legs straight and arms tucked close.",
+    "The diver begins to unroll, extending arms and legs for balance.",
+    "The diver straightens out fully in the pike position before entering the water."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms backward for balance, initiating backward rotation.",
+    "Diver performs first somersault in mid-air, tucking body tightly.",
+    "Diver transitions to second somersault, arms extended behind head.",
+    "Diver begins to straighten legs, preparing for entry into pike position.",
+    "Diver tucks legs under body, entering pike position before landing."
+   ]
+  ]
+ },
+ "(BCK) back dive, 2.5 somersaults, tuck position": {
+  "counts": [
+   10,
+   8,
+   6,
+   5,
+   7
+  ],
+  "mean": 7.2,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver's body arches backward, preparing for the first somersault.",
+    "Diver completes the first somersault, tucking the head and knees.",
+    "Diver extends arms forward, preparing for the second somersault.",
+    "Diver completes the second somersault, tucking the head and knees again.",
+    "Diver extends arms forward, preparing for the third somersault.",
+    "Diver completes the third somersault, tucking the head and knees once more.",
+    "Diver extends arms forward, preparing for the entry into the water.",
+    "Diver enters the water with a streamlined body position."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends arms forward, body straightens out.",
+    "Diver begins first somersault, tucking knees to chest.",
+    "Diver continues second somersault, maintaining tucked position.",
+    "Diver prepares for third somersault, arms extended forward.",
+    "Diver completes all three somersaults in a tuck position.",
+    "Diver straightens legs upon entry into the water."
+   ],
+   [
+    "Diver approaches the springboard, feet extended.",
+    "Diver leaps, arms raised above head, body straight.",
+    "Diver rotates backward, tucking legs tightly.",
+    "Diver completes two full somersaults, hands near ears.",
+    "Diver extends arms, body straightens out.",
+    "Diver enters water, creating a splash."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with arms extended forward.",
+    "The diver tucks their head and body tight, legs drawn up close.",
+    "The diver rotates backward, completing two-and-a-half somersaults.",
+    "The diver extends their body outstretched upon entry into the water."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending knees for takeoff.",
+    "Diver extends arms and legs to gain height and speed.",
+    "Diver's body begins to rotate backward over the springboard.",
+    "Diver tucks head and legs tightly, forming a compact ball.",
+    "Diver completes 2.5 somersaults in the air, maintaining tucked position.",
+    "Diver extends limbs to prepare for water entry upon landing."
+   ]
+  ]
+ },
+ "(BCK) back dive, 3.5 somersaults, pike position": {
+  "counts": [
+   7,
+   8,
+   12,
+   8,
+   6
+  ],
+  "mean": 8.2,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver's body arches backward as they leave the springboard.",
+    "Diver performs a series of three-and-a-half somersaults in mid-air.",
+    "Diver tucks their legs tightly against their chest during the somersaults.",
+    "Diver extends their legs forward at the peak of the somersaults.",
+    "Diver enters the water with a pike position, knees bent and body straight."
+   ],
+   [
+    "Diver stands at the edge of the springboard, arms extended above head.",
+    "Diver runs forward along the springboard, gaining momentum.",
+    "Diver takes off from the springboard with a powerful jump.",
+    "Diver begins first somersault in the air, tucking the body tightly.",
+    "Diver completes first somersault and initiates second somersault.",
+    "Diver tucks again for the third somersault, maintaining speed.",
+    "Diver extends legs for the fourth somersault, preparing for entry.",
+    "Diver enters water in a pike position, legs drawn up close to chest."
+   ],
+   [
+    "Diver approaches the springboard, feet on the board.",
+    "Diver jumps off the springboard with extended legs.",
+    "Diver begins first somersault, tucking knees.",
+    "Diver rotates through second somersault, maintaining tuck.",
+    "Diver initiates third somersault, beginning to straighten legs.",
+    "Diver completes third somersault, transitioning into fourth.",
+    "Diver starts fifth somersault, fully extending body.",
+    "Diver reaches top of fifth somersault, preparing to enter pike.",
+    "Diver enters pike position, arms tucked tightly to chest.",
+    "Diver begins descent towards water, maintaining pike.",
+    "Diver's legs begin to straighten as they approach the water surface.",
+    "Diver enters the water with fully extended legs, creating splash."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with arms extended forward.",
+    "The diver begins the first somersault in a tucked position.",
+    "The diver transitions into a pike position during the second somersault.",
+    "The diver executes the third somersault while maintaining a pike.",
+    "The diver begins the fourth somersault, still in the pike position.",
+    "The diver completes the fifth somersault, finishing in a tucked position.",
+    "The diver enters the water with their legs bent, creating a splash."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms backward for balance, initiating backward rotation.",
+    "Diver performs three full somersaults while maintaining backward rotation.",
+    "Diver enters pike position, tucking knees close to chest mid-air.",
+    "Diver straightens legs upon entry into the water, completing the dive."
+   ]
+  ]
+ },
+ "(BCK) back dive, 3.5 somersaults, tuck position": {
+  "counts": [
+   14,
+   10,
+   8,
+   8,
+   9
+  ],
+  "mean": 9.8,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver's body arches backward, initiating the first somersault.",
+    "Diver tucks their head and knees, preparing for the second somersault.",
+    "Diver completes the second somersault, maintaining tucked position.",
+    "Diver extends their body, preparing for the third somersault.",
+    "Diver tucks again, completing the third somersault.",
+    "Diver extends once more, preparing for the fourth somersault.",
+    "Diver tucks, completing the fourth somersault.",
+    "Diver extends, preparing for the fifth somersault.",
+    "Diver tucks, completing the fifth somersault.",
+    "Diver extends, preparing for the final tuck.",
+    "Diver tucks, completing the final somersault.",
+    "Diver enters the water with a tuck position."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends arms forward, body straightens out.",
+    "Diver begins first somersault, tucking knees to chest.",
+    "Diver continues second somersault, maintaining tucked position.",
+    "Diver initiates third somersault, arms extended for balance.",
+    "Diver executes fourth somersault, keeping body compact.",
+    "Diver starts fifth somersault, focusing on final positioning.",
+    "Diver exits the water, maintaining tucked position throughout.",
+    "Diver lands on their feet, completing the dive."
+   ],
+   [
+    "Diver approaches the springboard or platform with a steady run.",
+    "Diver leaps into the air, extending legs straight upward.",
+    "Diver begins the first somersault, tucking the body tightly.",
+    "Diver continues the second somersault, maintaining tight tuck position.",
+    "Diver initiates third somersault, extending legs slightly for balance.",
+    "Diver completes fourth somersault, tucking the body again.",
+    "Diver starts fifth somersault, preparing to extend for landing.",
+    "Diver lands smoothly on the water surface, extending arms for stability."
+   ],
+   [
+    "The diver approaches the springboard, running towards it.",
+    "The diver leaps off the springboard with extended arms and legs.",
+    "The diver initiates the first somersault, tucking their body tightly.",
+    "The diver continues the second somersault while maintaining the tucked position.",
+    "The diver begins the third somersault, still in the tucked position.",
+    "The diver starts the fourth somersault, keeping the body tight.",
+    "The diver finishes the fifth somersault in the tucked position.",
+    "The diver enters the water with their body still tucked, creating a splash."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending knees for takeoff.",
+    "Diver extends arms and legs to gain height and speed.",
+    "Diver's body begins to rotate backward over the springboard.",
+    "Diver tucks head and legs tightly, forming a compact shape.",
+    "Diver completes 3.5 somersaults in the air, maintaining tucked position.",
+    "Diver extends arms and legs mid-air during the somersaults.",
+    "Diver aligns body for the entry into the water.",
+    "Diver enters the water with minimal splash, completing the dive."
+   ]
+  ]
+ },
+ "(REV) reverse dive, 0.5 somersaults, pike position": {
+  "counts": [
+   7,
+   4,
+   6,
+   5,
+   6
+  ],
+  "mean": 5.6,
+  "lists": [
+   [
+    "The diver approaches the springboard with a run-up.",
+    "The diver leaps onto the springboard with extended arms.",
+    "The diver's body arches backward as they take off.",
+    "The diver performs a half-somersault in mid-air.",
+    "The diver tucks their legs tightly against their chest.",
+    "The diver extends their body into a pike position upon entry.",
+    "The diver enters the water with a splash."
+   ],
+   [
+    "Stand on springboard with hands extended.",
+    "Jump backward, tucking knees to chest.",
+    "Execute half somersault in mid-air.",
+    "Straighten legs, forming pike position."
+   ],
+   [
+    "Diver approaches the springboard, feet on the board.",
+    "Diver jumps off the springboard with extended legs.",
+    "Diver begins the first somersault in the air, arms tucked close.",
+    "Diver enters the second somersault, head down, knees bent.",
+    "Diver straightens legs, transitioning into a pike position.",
+    "Diver's hands reach towards the water, preparing for entry."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with arms extended forward.",
+    "The diver tucks their body into a tight pike position.",
+    "The diver performs half a somersault in mid-air.",
+    "The diver extends their body out of the pike upon landing on the water."
+   ],
+   [
+    "Athlete approaches the diving board with forward momentum.",
+    "Athlete leaps onto the springboard, extending legs upward.",
+    "Athlete begins the reverse dive, bending knees.",
+    "Athlete performs a 0.5 somersault in mid-air, tucking body tightly.",
+    "Athlete extends legs back into a pike position before entry.",
+    "Athlete enters the water with arms and legs extended."
+   ]
+  ]
+ },
+ "(REV) reverse dive, 1.5 somersaults, tuck position": {
+  "counts": [
+   6,
+   7,
+   5,
+   7,
+   7
+  ],
+  "mean": 6.4,
+  "lists": [
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps onto the springboard with extended arms and legs.",
+    "The diver's body arches backward as they leave the springboard.",
+    "The diver begins the first somersault, tucking their knees to their chest.",
+    "The diver continues the second somersault, maintaining the tucked position.",
+    "The diver extends their body, preparing for entry into the water."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends legs forward at the take-off point.",
+    "Diver rotates backward through the air.",
+    "Diver tucks the head and knees into the chest.",
+    "Diver completes the 1.5 somersaults in mid-air.",
+    "Diver straightens legs to enter the water."
+   ],
+   [
+    "The diver approaches the springboard with extended arms.",
+    "The diver leaps onto the springboard with a forward push-off.",
+    "The diver begins the first somersault in the air, tucking tightly.",
+    "The diver continues the second somersault, maintaining a tight tuck.",
+    "The diver straightens their body, preparing for landing on the water."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with arms extended forward.",
+    "The diver begins the first somersault in a tucked position.",
+    "The diver completes the first somersault and prepares for the second somersault.",
+    "The diver executes the second somersault while maintaining the tucked position.",
+    "The diver begins the tuck position before entering the water.",
+    "The diver enters the water in a tucked position, completing the dive."
+   ],
+   [
+    "Athlete approaches the diving board with forward momentum.",
+    "Athlete leaps onto the springboard, extending legs upward.",
+    "Athlete begins the first half of the 1.5 somersault, twisting torso.",
+    "Athlete tucks knees to chest mid-air, preparing for the second half of the somersault.",
+    "Athlete continues the second half of the 1.5 somersault, rotating head back.",
+    "Athlete extends arms and legs fully, aligning body for water entry.",
+    "Athlete enters water in a streamlined position, creating a splash."
+   ]
+  ]
+ },
+ "(REV) reverse dive, 2.5 somersaults, pike position": {
+  "counts": [
+   5,
+   7,
+   8,
+   5,
+   4
+  ],
+  "mean": 5.8,
+  "lists": [
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps onto the springboard with extended arms.",
+    "The diver's body arches backward as they take off from the springboard.",
+    "The diver performs a 2.5 somersault in mid-air, tucking their legs tightly.",
+    "The diver extends their legs into a pike position upon entry into the water."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends legs forward at the take-off point.",
+    "Diver rotates backward through the air in a reverse dive.",
+    "Diver completes 2.5 somersaults in mid-air.",
+    "Diver tucks body tightly into a pike position before entry.",
+    "Diver enters water with arms extended forward."
+   ],
+   [
+    "Diver approaches the springboard or platform with a steady run.",
+    "Diver leaps onto the springboard or platform with forceful takeoff.",
+    "Diver begins the first somersault, tucking the head tightly towards the knees.",
+    "Diver completes the first somersault, transitioning into the second somersault.",
+    "Diver performs the second somersault, maintaining a tucked position.",
+    "Diver transitions into a pike position, bending at the hips.",
+    "Diver extends arms and legs simultaneously, maintaining balance in the air.",
+    "Diver lands smoothly on the water, creating ripples upon impact."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with one hand.",
+    "The diver rotates backward through the air, performing two full somersaults.",
+    "The diver tucks their legs and head, forming a pike position.",
+    "The diver lands on the water surface with a splash, completing the dive."
+   ],
+   [
+    "Athlete approaches the diving board with forward momentum.",
+    "Athlete leaps onto the springboard, bending legs for takeoff.",
+    "Athlete extends arms and body to gain height for dive.",
+    "Athlete enters the water in a pike position, legs bent and close to chest."
+   ]
+  ]
+ },
+ "(REV) reverse dive, 2.5 somersaults, tuck position": {
+  "counts": [
+   10,
+   6,
+   6,
+   10,
+   6
+  ],
+  "mean": 7.6,
+  "lists": [
+   [
+    "The diver runs up the springboard with extended arms.",
+    "The diver leaps off the springboard, extending legs forward.",
+    "The diver begins the first somersault, tucking the body tightly.",
+    "The diver completes the first somersault, maintaining the tuck position.",
+    "The diver initiates the second somersault, continuing the tuck position.",
+    "The diver finishes the second somersault, still in the tuck position.",
+    "The diver begins the third somersault, maintaining the tuck position.",
+    "The diver completes the third somersault, still in the tuck position.",
+    "The diver extends the legs outwards, preparing for entry.",
+    "The diver enters the water, creating a splash."
+   ],
+   [
+    "Diver stands at the edge, preparing for takeoff.",
+    "Diver jumps off the springboard with extended arms.",
+    "In mid-air, diver tucks their legs towards the chest.",
+    "Diver completes the 2.5 somersaults in the air.",
+    "Diver extends their legs and arms to prepare for entry.",
+    "Diver enters the water with a streamlined position."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver extends arms forward, preparing for takeoff.",
+    "Diver jumps off the springboard with legs extended.",
+    "Diver begins to rotate backward, tucking the head and body.",
+    "Diver performs two-and-a-half somersaults in mid-air, arms crossed.",
+    "Diver extends legs, straightening them out before entering the water."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with arms extended forward.",
+    "The diver begins the first somersault in a tucked position.",
+    "The diver completes half a somersault and prepares for the second somersault.",
+    "The diver executes the second somersault while maintaining the tucked position.",
+    "The diver prepares for the final somersault by straightening the legs.",
+    "The diver completes the final somersault, still in the tucked position.",
+    "The diver tucks their head close to their knees at the end of the final somersault.",
+    "The diver straightens out after completing all somersaults.",
+    "The diver enters the water with an arched back, completing the reverse dive."
+   ],
+   [
+    "Athlete approaches the diving board with forward momentum.",
+    "Athlete leaps onto the springboard, extending legs upward.",
+    "Athlete begins the first half of the 2.5 somersault, twisting mid-air.",
+    "Athlete tucks knees towards chest, preparing for the next half of the somersault.",
+    "Athlete continues the second half of the somersault, extending limbs again.",
+    "Athlete straightens body, preparing for re-entry into water."
+   ]
+  ]
+ },
+ "(REV) reverse dive, 3.5 somersaults, tuck position": {
+  "counts": [
+   15,
+   6,
+   8,
+   14,
+   13
+  ],
+  "mean": 11.2,
+  "lists": [
+   [
+    "The diver runs up the springboard with extended arms.",
+    "The diver leaps off the springboard, extending legs forward.",
+    "The diver begins the first somersault, tucking the head and knees.",
+    "The diver completes the first somersault, extending arms and legs.",
+    "The diver begins the second somersault, tucking the head and knees again.",
+    "The diver completes the second somersault, extending arms and legs.",
+    "The diver begins the third somersault, tucking the head and knees once more.",
+    "The diver completes the third somersault, extending arms and legs.",
+    "The diver begins the fourth somersault, tucking the head and knees for the final time.",
+    "The diver completes the fourth somersault, extending arms and legs.",
+    "The diver enters the fifth somersault, tucking the head and knees.",
+    "The diver exits the fifth somersault, extending arms and legs.",
+    "The diver tucks the body into a compact ball.",
+    "The diver extends arms and legs, preparing for entry.",
+    "The diver enters the water with a splash, completing the reverse dive."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends legs forward at the take-off point.",
+    "Diver rotates backward through the air in a reverse dive.",
+    "Diver completes 3.5 somersaults in a tuck position.",
+    "Diver enters the water with arms extended forward."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver extends arms forward, preparing for takeoff.",
+    "Diver jumps off the springboard with legs extended.",
+    "Diver begins to rotate backward, tucking knees into chest.",
+    "Diver performs three full somersaults during rotation.",
+    "Diver continues rotating, executing half a somersault.",
+    "Diver straightens legs, preparing for entry.",
+    "Diver enters water, completing the dive."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with arms extended forward.",
+    "The diver begins the first somersault in a tucked position.",
+    "The diver completes half a somersault and prepares for the next.",
+    "The diver continues the second somersault in a tucked position.",
+    "The diver completes another half a somersault, preparing for the final.",
+    "The diver finishes the third somersault in a tucked position.",
+    "The diver begins the fourth somersault in a tucked position.",
+    "The diver completes the fourth somersault and begins the fifth.",
+    "The diver finishes the fifth somersault in a tucked position.",
+    "The diver enters the tuck position, ready to unroll.",
+    "The diver begins to unroll, extending limbs.",
+    "The diver approaches the water surface, preparing for entry.",
+    "The diver enters the water with minimal splash, completing the dive."
+   ],
+   [
+    "Athlete approaches the diving board with forward momentum.",
+    "Athlete leaps onto the springboard, bending legs for takeoff.",
+    "Athlete extends arms and body to perform initial somersault.",
+    "Athlete tucks head towards knees mid-air during the second somersault.",
+    "Athlete straightens out, aligning body for third somersault.",
+    "Athlete completes fourth somersault, maintaining tuck position.",
+    "Athlete begins to uncurl, preparing for fifth somersault.",
+    "Athlete tucks again, starting the final somersault.",
+    "Athlete exits the tuck position, continuing the somersault.",
+    "Athlete completes the 3.5 somersaults, entering a tucked position.",
+    "Athlete begins to extend from the tucked position.",
+    "Athlete straightens arms and legs, preparing for entry.",
+    "Athlete enters the water, completing the reverse dive."
+   ]
+  ]
+ },
+ "(INW) inward dive, 0.5 somersaults, pike position": {
+  "counts": [
+   6,
+   6,
+   6,
+   6,
+   6
+  ],
+  "mean": 6,
+  "lists": [
+   [
+    "The diver approaches the springboard with a steady run.",
+    "The diver leaps onto the springboard with extended arms.",
+    "The diver's body arches backward as they gain momentum.",
+    "The diver performs a half-somersault in mid-air, tucking their legs.",
+    "The diver extends their body into a pike position upon landing.",
+    "The diver lands smoothly on the water surface, creating a splash."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends arms forward, body straightens out.",
+    "Diver rotates backward 0.5 somersaults mid-air.",
+    "Diver tucks into a pike position just before landing.",
+    "Diver lands smoothly on the water surface, body straight."
+   ],
+   [
+    "Diver approaches the springboard or platform with a steady run.",
+    "Diver leaps onto the springboard or platform with forceful takeoff.",
+    "Diver begins the inward dive, tucking knees close to chest.",
+    "Diver rotates 0.5 somersaults during descent.",
+    "Diver straightens legs in preparation for pike position.",
+    "Diver extends body into a pike position upon entry into the water."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with arms extended forward.",
+    "The diver tucks their legs upward, forming a ball.",
+    "The diver performs a half somersault in mid-air, rotating around the vertical axis.",
+    "The diver extends their body, transitioning into a pike position upon entry.",
+    "The diver enters the water with arms extended backward and legs together."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to gain height and speed.",
+    "Diver performs a half somersault in mid-air, tucking knees tightly.",
+    "Diver straightens legs and extends arms into a pike position.",
+    "Diver enters water with a streamlined, compact form."
+   ]
+  ]
+ },
+ "(INW) inward dive, 1.5 somersaults, pike position": {
+  "counts": [
+   12,
+   7,
+   5,
+   5,
+   8
+  ],
+  "mean": 7.4,
+  "lists": [
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps onto the springboard, extending arms forward.",
+    "The diver's body arches upward, preparing for the first somersault.",
+    "The diver completes the first somersault, tucking the body tightly.",
+    "The diver extends again, preparing for the second somersault.",
+    "The diver completes the second somersault, tucking the body tightly once more.",
+    "The diver straightens out, transitioning into a pike position.",
+    "The diver's legs extend upwards, forming a pike shape.",
+    "The diver's arms reach towards the feet, maintaining the pike position.",
+    "The diver's body rotates slightly, aligning for the landing.",
+    "The diver's body straightens, preparing for impact on the water.",
+    "The diver enters the water, creating a splash upon landing."
+   ],
+   [
+    "Stand on springboard with hands extended.",
+    "Jump off springboard onto diving board.",
+    "Extend legs forward, body aligning with diving board.",
+    "Tuck legs upward, initiating first somersault.",
+    "Continue tucking legs for second somersault.",
+    "Straighten legs into pike position at end of dive.",
+    "Land with arms outstretched for balance."
+   ],
+   [
+    "Start from a standing position on the springboard.",
+    "Execute an inward dive from the springboard.",
+    "Rotate one and a half times during the dive.",
+    "Reach the peak of the dive with legs straightened.",
+    "Bend the knees into a pike position before entering the water."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with one hand.",
+    "The diver rotates in the air, performing 1.5 somersaults.",
+    "The diver tucks their body into a pike position.",
+    "The diver extends their body out of the water, preparing for entry."
+   ],
+   [
+    "Athlete approaches the springboard with forward momentum.",
+    "Athlete leaps onto the springboard, bending legs for takeoff.",
+    "Athlete extends arms and body to gain height and speed.",
+    "Athlete rotates backward in the air, executing one full somersault.",
+    "Athlete continues rotating, performing half a somersault before landing.",
+    "Athlete tucks head to protect face during landing.",
+    "Athlete straightens legs and extends arms at the end of the dive.",
+    "Athlete lands on platform with a controlled and steady posture."
+   ]
+  ]
+ },
+ "(INW) inward dive, 2.5 somersaults, pike position": {
+  "counts": [
+   5,
+   7,
+   7,
+   5,
+   7
+  ],
+  "mean": 6.2,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver's body arches backward as they take off from the springboard.",
+    "Diver performs a 2.5 somersaults in mid-air, tucking their legs.",
+    "Diver extends their legs into a pike position upon entry into the water."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends legs upward at the peak of the jump.",
+    "Diver begins the first somersault while extending arms forward.",
+    "Diver tucks the body into a pike position during the second somersault.",
+    "Diver extends arms outward to complete the third somersault.",
+    "Diver enters the water in a pike position, creating minimal splash."
+   ],
+   [
+    "Diver approaches the springboard or platform with a steady run.",
+    "Diver leaps into the air from the springboard or platform.",
+    "Diver begins to execute the first somersault while airborne.",
+    "Diver continues the second somersault during the dive.",
+    "Diver begins the pike position at the start of the third somersault.",
+    "Diver completes the final somersault into the water.",
+    "Diver enters the water in a pike position, maintaining control."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with one hand.",
+    "The diver rotates in the air, performing two and a half somersaults.",
+    "The diver tucks their body into a pike position.",
+    "The diver extends their limbs outwards upon landing."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to gain height and speed.",
+    "Diver rotates backward through the air in a 2.5 somersault.",
+    "Diver tucks tightly, forming a pike position mid-air.",
+    "Diver straightens legs and extends arms during entry.",
+    "Diver enters the water with minimal splash, completing the dive."
+   ]
+  ]
+ },
+ "(INW) inward dive, 2.5 somersaults, tuck position": {
+  "counts": [
+   10,
+   7,
+   10,
+   6,
+   8
+  ],
+  "mean": 8.2,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver's body arches backward as they leave the springboard.",
+    "Diver begins the first somersault, tucking their knees.",
+    "Diver completes the first somersault, maintaining tucked position.",
+    "Diver initiates the second somersault, extending legs.",
+    "Diver completes the second somersault, tucking again.",
+    "Diver initiates the third somersault, extending legs once more.",
+    "Diver completes the third somersault, tucking before entry.",
+    "Diver enters the water with a streamlined body position."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends legs upward at the peak of the jump.",
+    "Diver begins to tuck the body, bringing knees toward chest.",
+    "Diver rotates 2.5 times while tucked, facing downward.",
+    "Diver straightens legs and arms, preparing for entry.",
+    "Diver enters water with arms extended forward."
+   ],
+   [
+    "Diver approaches the springboard or platform with a steady run.",
+    "Diver leaps into the air from the springboard or platform.",
+    "Diver begins to execute the first somersault while airborne.",
+    "Diver tucks the body tightly during the somersault phase.",
+    "Diver completes the first somersault before entering the second.",
+    "Diver continues the second somersault, maintaining a tucked position.",
+    "Diver exits the second somersault, preparing to enter the final phase.",
+    "Diver begins to extend the body to prepare for the tuck position.",
+    "Diver tucks the body again to complete the tuck position.",
+    "Diver enters the water with a controlled entry, ensuring minimal splash."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with arms extended forward.",
+    "The diver tucks their head and body tight, minimizing air resistance.",
+    "The diver rotates through the air, performing two and a half somersaults.",
+    "The diver extends their body and arms outstretched just before entry.",
+    "The diver enters the water with minimal splash, completing the dive."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to gain height and speed.",
+    "Diver rotates backward in the air, tucking knees tightly.",
+    "Diver continues rotating, extending legs for stability.",
+    "Diver begins un-tucking, preparing for the water entry.",
+    "Diver straightens arms and legs, preparing for impact.",
+    "Diver enters the water at a controlled angle, minimizing splash."
+   ]
+  ]
+ },
+ "(INW) inward dive, 3.5 somersaults, pike position": {
+  "counts": [
+   7,
+   7,
+   8,
+   5,
+   8
+  ],
+  "mean": 7,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver's body arches backward as they leave the springboard.",
+    "Diver performs a series of three-and-a-half somersaults in mid-air.",
+    "Diver tucks their legs tightly against their chest during the somersaults.",
+    "Diver extends their body into a pike position at the peak of the dive.",
+    "Diver enters the water with a streamlined body position."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends legs forward at the take-off point.",
+    "Diver rotates backward through the air in a series of 3.5 somersaults.",
+    "Diver tucks their legs tightly against their chest during the somersaults.",
+    "Diver straightens their legs into a pike position at the end of the somersaults.",
+    "Diver enters the water headfirst after completing the somersaults."
+   ],
+   [
+    "Diver approaches the springboard or platform with a steady run.",
+    "Diver leaps into the air from the springboard or platform.",
+    "Diver begins to execute the first somersault after leaving the springboard.",
+    "Diver continues the second somersault in mid-air, maintaining balance.",
+    "Diver completes the third somersault, preparing for the fourth.",
+    "Diver initiates the final somersault, aligning body for the pike position.",
+    "Diver transitions into a pike position, arms extended forward.",
+    "Diver enters the water with a controlled entry, minimizing splash."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with arms extended forward.",
+    "The diver tucks their head and bends knees tightly.",
+    "The diver rotates backward through the air with legs tucked close.",
+    "The diver extends their legs into a pike position near the end of the rotation."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to maintain balance during ascent.",
+    "Diver's body begins to rotate in a controlled, spiraling motion.",
+    "Diver performs three full somersaults during the dive.",
+    "Diver's legs tuck tightly into the chest, maintaining a pike position.",
+    "Diver continues rotating, completing an additional half-somersault.",
+    "Diver enters the water in a streamlined position, arms extended forward."
+   ]
+  ]
+ },
+ "(INW) inward dive, 3.5 somersaults, tuck position": {
+  "counts": [
+   9,
+   5,
+   10,
+   15,
+   8
+  ],
+  "mean": 9.4,
+  "lists": [
+   [
+    "Diver approaches the springboard with extended arms and legs.",
+    "Diver leaps onto the springboard, bending knees for takeoff.",
+    "Diver extends arms forward, tucking head and body tightly.",
+    "Diver performs first somersault, rotating through the air.",
+    "Diver continues second somersault, maintaining tucked position.",
+    "Diver completes third somersault, preparing for final tuck.",
+    "Diver executes fourth somersault, aligning body for entry.",
+    "Diver tucks fifth somersault, preparing for water entry.",
+    "Diver enters water, arms and legs extended for smooth landing."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends arms forward, body tucks tightly.",
+    "Diver rotates backward through three and a half somersaults.",
+    "Diver enters water with arms extended for streamline."
+   ],
+   [
+    "Diver approaches the springboard or platform with a steady run.",
+    "Diver leaps into the air from the springboard or platform.",
+    "Diver begins to execute the first somersault in a tucked position.",
+    "Diver completes the second somersault in a tucked position.",
+    "Diver performs the third somersault in a tucked position.",
+    "Diver executes the fourth somersault in a tucked position.",
+    "Diver finishes the final somersault in a tucked position.",
+    "Diver tucks their knees to their chest at the end of the somersaults.",
+    "Diver extends their arms upwards to complete the tuck position.",
+    "Diver enters the water with a controlled entry, maintaining balance."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with one hand.",
+    "The diver extends their body horizontally after leaving the springboard.",
+    "The diver begins the first somersault, tucking their legs tightly.",
+    "The diver completes the first somersault and begins the second somersault.",
+    "The diver continues the second somersault, tucking their legs.",
+    "The diver completes the second somersault and begins the third somersault.",
+    "The diver continues the third somersault, tucking their legs.",
+    "The diver completes the third somersault and begins the fourth somersault.",
+    "The diver continues the fourth somersault, tucking their legs.",
+    "The diver completes the fourth somersault and begins the fifth somersault.",
+    "The diver continues the fifth somersault, tucking their legs.",
+    "The diver completes the fifth somersault, extending their body.",
+    "The diver tucks their legs again before entering the water.",
+    "The diver enters the water, completing the inward dive."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to gain height and speed.",
+    "Diver rotates backward in the air, tucking knees tightly.",
+    "Diver continues rotating, extending legs for stability.",
+    "Diver begins un-tucking, preparing for the water entry.",
+    "Diver straightens arms and legs, preparing for impact.",
+    "Diver enters the water at a controlled angle, minimizing splash."
+   ]
+  ]
+ },
+ "(INW) inward dive, 4.5 somersaults, tuck position": {
+  "counts": [
+   12,
+   6,
+   8,
+   15,
+   9
+  ],
+  "mean": 10,
+  "lists": [
+   [
+    "Diver approaches the springboard with extended arms and legs.",
+    "Diver leaps off the springboard, extending forward.",
+    "Diver begins first somersault, tucking knees to chest.",
+    "Diver continues second somersault, maintaining tucked position.",
+    "Diver initiates third somersault, keeping body compact.",
+    "Diver completes fourth somersault, preparing for final tuck.",
+    "Diver executes fifth somersault, tucking tightly.",
+    "Diver enters sixth somersault, maintaining tucked form.",
+    "Diver exits final somersault, preparing for entry.",
+    "Diver tucks into a compact ball, readying for water entry.",
+    "Diver dives headfirst towards the water surface.",
+    "Diver enters the water, creating a splash upon impact."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends arms forward, body tucks tightly.",
+    "Diver rotates backward through the air in a series of 4.5 somersaults.",
+    "Diver tucks again, head down, knees drawn close to chest.",
+    "Diver straightens legs and extends arms to enter the water."
+   ],
+   [
+    "Diver approaches the springboard or platform with a steady run.",
+    "Diver leaps into the air, extending legs straight upward.",
+    "Diver begins the first somersault, twisting torso and arms.",
+    "Diver tucks the body tightly, minimizing exposed surface area.",
+    "Diver completes half of the somersaults, maintaining tucked position.",
+    "Diver continues the remaining somersaults, ensuring precise rotation.",
+    "Diver extends legs fully on the final approach to the water.",
+    "Diver enters the water, creating a small splash upon impact."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with one hand.",
+    "The diver extends their body horizontally after leaving the springboard.",
+    "The diver begins the first somersault, tucking their legs tightly.",
+    "The diver completes the first somersault and begins the second somersault.",
+    "The diver continues the second somersault, maintaining a tucked position.",
+    "The diver starts the third somersault, still in a tucked position.",
+    "The diver completes the third somersault and begins the fourth somersault.",
+    "The diver continues the fourth somersault, keeping the tucked position.",
+    "The diver starts the fifth somersault, maintaining the tucked posture.",
+    "The diver completes the fifth somersault and begins the final somersault.",
+    "The diver finishes the final somersault, still in a tucked position.",
+    "The diver extends their arms and legs outward just before landing.",
+    "The diver touches the water with their hands and feet simultaneously.",
+    "The diver enters the water in a tucked position, creating a splash."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to gain height and speed.",
+    "Diver rotates backward in the air, tucking knees tightly.",
+    "Diver continues rotating, extending legs fully.",
+    "Diver completes four full somersaults in the air.",
+    "Diver tucks again, bringing knees close to chest.",
+    "Diver straightens out, preparing for entry.",
+    "Diver enters water headfirst with a splash."
+   ]
+  ]
+ },
+ "(TWI) forward twisting dive, 1.5 somersaults, 1 twist, free position": {
+  "counts": [
+   6,
+   5,
+   7,
+   6,
+   13
+  ],
+  "mean": 7.4,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver's body arches backward as they take off.",
+    "Diver performs a 1.5 somersaults in mid-air.",
+    "Diver twists their body once during the dive.",
+    "Diver enters the water in a free position after completing the dive."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends arms and legs in preparation for twisting dive.",
+    "Diver performs 1.5 somersaults while twisting.",
+    "Diver lands on the water surface with controlled entry."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver leaps, extending arms overhead for balance.",
+    "Diver twists in mid-air, preparing for first somersault.",
+    "Diver completes the first 0.5 somersaults, adjusting twist.",
+    "Diver begins second somersault, maintaining proper form.",
+    "Diver finishes the remaining 0.5 somersaults, continuing twist.",
+    "Diver executes final twist, transitioning into a free position."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with one hand raised.",
+    "The diver performs the first half-somersault in mid-air.",
+    "The diver twists their body while maintaining control during the somersault.",
+    "The diver completes the second half-somersault and begins to twist.",
+    "The diver maintains the twisting motion as they enter the water."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, extending legs upward.",
+    "Diver's hands reach out and grasp the edge of the springboard for balance.",
+    "Diver begins rotation in mid-air, arms outstretched for stability.",
+    "Diver performs first somersault, tucking knees tightly to chest.",
+    "Diver extends arms and legs during second somersault.",
+    "Diver initiates twist motion, twisting torso while maintaining somersaults.",
+    "Diver completes first somersault, arms and legs fully extended.",
+    "Diver initiates second somersault, twisting further.",
+    "Diver completes second somersault, arms and legs reaching toward toes.",
+    "Diver maintains twisted position through final somersault.",
+    "Diver aligns body for free position entry after final somersault.",
+    "Diver enters water smoothly, transitioning from dive to free position."
+   ]
+  ]
+ },
+ "(TWI) forward twisting dive, 2.5 somersaults, 1 twist, pike position": {
+  "counts": [
+   8,
+   13,
+   7,
+   6,
+   9
+  ],
+  "mean": 8.6,
+  "lists": [
+   [
+    "The diver approaches the springboard with a run-up.",
+    "The diver leaps onto the springboard with extended arms.",
+    "The diver's body arches backward as they take off.",
+    "The diver performs two and a half somersaults in mid-air.",
+    "The diver twists their body once during the somersaults.",
+    "The diver's legs bend into a pike position at the end of the somersaults.",
+    "The diver tucks their head and body tightly together.",
+    "The diver enters the water with a splash."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends legs upward at takeoff.",
+    "Diver begins first somersault in the air.",
+    "Diver twists body 90 degrees during the somersault.",
+    "Diver continues second somersault in the air.",
+    "Diver twists body 90 degrees during the somersault.",
+    "Diver enters third somersault in the air.",
+    "Diver twists body 90 degrees during the somersault.",
+    "Diver extends legs upward in a pike position.",
+    "Diver tucks chin to chest in preparation.",
+    "Diver rotates through final twist.",
+    "Diver enters the water with extended arms."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver leaps, extending arms overhead for balance.",
+    "Diver twists in mid-air, preparing for first somersault.",
+    "Diver completes the first 1.5 somersaults, adjusting body rotation.",
+    "Diver twists once more, initiating second somersault.",
+    "Diver completes the remaining 0.5 somersaults, aligning for entry.",
+    "Diver tucks legs, transitioning into pike position upon landing."
+   ],
+   [
+    "The diver approaches the springboard, running at full speed.",
+    "The diver leaps onto the springboard with extended arms and legs.",
+    "The diver's body rotates, executing a forward twisting motion.",
+    "The diver completes 2.5 somersaults while twisting.",
+    "The diver executes a final twist before entering the water.",
+    "The diver's body compresses into a pike position upon entry."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to gain height for dive.",
+    "Diver twists body mid-air before entering a forward twisting motion.",
+    "Diver performs 2.5 somersaults during the dive, rotating body.",
+    "Diver twists once more, aligning body for final somersault.",
+    "Diver pikes at the end of the somersaults, tucking knees to chest.",
+    "Diver extends arms upward, completing the pike position mid-air.",
+    "Diver begins to uncurl, preparing for entry into the water."
+   ]
+  ]
+ },
+ "(TWI) forward twisting dive, 2.5 somersaults, 2 twists, pike position": {
+  "counts": [
+   7,
+   9,
+   9,
+   7,
+   7
+  ],
+  "mean": 7.8,
+  "lists": [
+   [
+    "The diver approaches the springboard with a run-up.",
+    "The diver leaps onto the springboard with extended arms.",
+    "The diver's body arches backward as they take off.",
+    "The diver performs a 2.5 somersaults in mid-air.",
+    "The diver twists their body twice during the somersault.",
+    "The diver's legs bend into a pike position at the peak of the dive.",
+    "The diver extends their body to enter the water."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends legs upward at takeoff.",
+    "Diver begins to twist while ascending.",
+    "Diver performs the first 0.5 somersault during ascent.",
+    "Diver completes the first somersault and begins second twist.",
+    "Diver executes second 0.5 somersault during second twist.",
+    "Diver finishes the final 0.5 somersault, aligning for entry.",
+    "Diver enters the water in a pike position, tucking legs tightly."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver leaps, extending arms overhead for balance.",
+    "Diver twists in mid-air, preparing for first somersault.",
+    "Diver completes the first 1.5 somersaults, adjusting twist.",
+    "Diver begins second somersault, maintaining pike position.",
+    "Diver executes final 0.5 somersault, preparing for entry.",
+    "Diver twists once more, completing the two twists.",
+    "Diver straightens legs, transitioning to pike position.",
+    "Diver enters water with controlled splash, minimizing disruption."
+   ],
+   [
+    "The diver approaches the springboard, running towards it with extended arms.",
+    "The diver leaps off the springboard, extending their body horizontally.",
+    "The diver performs a forward twist, rotating their torso mid-air.",
+    "The diver initiates a 2.5 somersault, bending their knees and tucking their body.",
+    "During the somersault, the diver executes two additional twists, maintaining tight form.",
+    "The diver straightens out just before landing, positioning their legs forward.",
+    "The diver's hands reach for the water simultaneously upon entry, creating a splash."
+   ],
+   [
+    "Athlete leaps off the springboard with arms extended.",
+    "Body tucks tightly in a pike position during descent.",
+    "Athlete initiates first somersault with legs tucked and head down.",
+    "Second somersault begins with continued tucked position.",
+    "Body twists twice in mid-air during the dives.",
+    "Athlete straightens legs at top of final somersault.",
+    "Body extends forward as diver enters water."
+   ]
+  ]
+ },
+ "(TWI) forward twisting dive, 2.5 somersaults, 3 twists, pike position": {
+  "counts": [
+   8,
+   6,
+   12,
+   8,
+   6
+  ],
+  "mean": 8,
+  "lists": [
+   [
+    "The diver approaches the springboard with a run-up.",
+    "The diver leaps onto the springboard with extended arms.",
+    "The diver's body arches backward as they take off.",
+    "The diver performs a 2.5 somersault in mid-air.",
+    "The diver twists their body three times during the somersault.",
+    "The diver tucks their legs tightly against their chest.",
+    "The diver extends their body into a pike position upon entry.",
+    "The diver enters the water with a splash."
+   ],
+   [
+    "Stand on springboard with hands extended.",
+    "Leap off springboard into forward twist.",
+    "Execute 2.5 somersaults in mid-air.",
+    "Complete 3 twists during somersaults.",
+    "Reach peak height with arms extended.",
+    "Begin descent into water with pike position."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver leaps, extending arms overhead for balance.",
+    "Diver twists in mid-air, preparing for first somersault.",
+    "Diver completes the first somersault, transitioning into second twist.",
+    "Diver initiates second somersault, maintaining control and balance.",
+    "Diver twists during the second somersault, entering third twist.",
+    "Diver completes third twist, preparing for final somersault.",
+    "Diver begins final somersault, maintaining proper body alignment.",
+    "Diver enters pike position at the top of the final somersault.",
+    "Diver tucks legs, initiating descent towards the water.",
+    "Diver extends arms outwards, guiding descent and preparation.",
+    "Diver enters water with controlled entry, completing the dive."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with one hand raised.",
+    "The diver performs the first somersault in mid-air.",
+    "The diver enters the second somersault with extended legs.",
+    "The diver begins the third somersault while twisting in the air.",
+    "The diver completes the third twist and aligns body for the pike position.",
+    "The diver tucks legs tightly to chest in the pike position.",
+    "The diver extends legs outwards in preparation for landing."
+   ],
+   [
+    "Athlete approaches the diving board with forward momentum.",
+    "Board supports athlete's takeoff for upward propulsion.",
+    "Athlete extends arms overhead before entering first somersault.",
+    "Body tucks for optimal rotation during the second somersault.",
+    "Legs extend in pike position to complete third somersault.",
+    "Athlete rotates through final twist in preparation for landing."
+   ]
+  ]
+ },
+ "(TWI) forward twisting dive, 3.5 somersaults, 1 twist, pike position": {
+  "counts": [
+   8,
+   7,
+   15,
+   5,
+   6
+  ],
+  "mean": 8.2,
+  "lists": [
+   [
+    "The diver approaches the springboard with a run-up.",
+    "The diver leaps onto the springboard with extended arms.",
+    "The diver's body arches backward as they take off.",
+    "The diver performs three and a half somersaults in mid-air.",
+    "The diver twists their body once during the somersaults.",
+    "The diver's legs bend into a pike position at the end of the somersaults.",
+    "The diver tucks their head close to their knees before straightening out.",
+    "The diver enters the water with a splash, completing the dive."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends arms forward, initiating forward twisting motion.",
+    "Diver performs three-and-a-half somersaults, rotating continuously.",
+    "Diver twists once during the dive, adjusting body rotation.",
+    "Diver lifts legs into a pike position at the end of the dive.",
+    "Diver enters water with a splash, completing the dive."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver leaps, extending arms overhead for balance.",
+    "Diver twists in mid-air, preparing for first somersault.",
+    "Diver completes the first somersault, tucking tightly.",
+    "Diver continues the second somersault, maintaining twist.",
+    "Diver begins the third somersault, executing the twist.",
+    "Diver finishes the third somersault, starting to untwist.",
+    "Diver performs the fourth somersault, still twisting slightly.",
+    "Diver starts the fifth somersault, twisting less now.",
+    "Diver exits the fifth somersault, beginning to uncurl.",
+    "Diver twists once more before beginning the final somersault.",
+    "Diver completes the final somersault, preparing for landing.",
+    "Diver extends legs upward, entering the pike position.",
+    "Diver lands smoothly on the water surface with bent knees.",
+    "Diver surfaces, completing the dive successfully."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with one arm extended forward.",
+    "The diver performs three and a half somersaults in the air.",
+    "The diver twists once during the descent.",
+    "The diver enters the water in a pike position, knees drawn close to the chest."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to gain height for dive.",
+    "Diver enters the water, maintaining forward twist and somersaults.",
+    "Diver completes 3.5 somersaults, twisting once.",
+    "Diver transitions into a pike position, tucking knees to chest."
+   ]
+  ]
+ },
+ "(TWI) back twisting dive, 1.5 somersaults, 0.5 twists, free position": {
+  "counts": [
+   9,
+   10,
+   10,
+   5,
+   8
+  ],
+  "mean": 8.4,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver's body arches backward as they take off.",
+    "Diver performs a 1.5 somersault in mid-air.",
+    "Diver's legs tuck tightly during the somersault.",
+    "Diver extends their body to perform a half twist.",
+    "Diver's arms reach out for balance during the twist.",
+    "Diver's body straightens as they approach the water.",
+    "Diver enters the water with a controlled splash."
+   ],
+   [
+    "Diver stands at the edge of the springboard, preparing for takeoff.",
+    "Diver runs forward with bent knees, gaining momentum.",
+    "Diver leaps off the springboard, arms extended for balance.",
+    "Diver extends legs straight behind, initiating a back twist.",
+    "Diver performs a full rotation, starting the first somersault.",
+    "Diver tucks knees close, completing the first somersault.",
+    "Diver separates legs slightly, beginning the second somersault.",
+    "Diver twists torso to initiate half a twist.",
+    "Diver extends legs again, finishing the twisting motion.",
+    "Diver lands smoothly on the water's surface in a free position."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver extends arms and legs in preparation for takeoff.",
+    "Diver leaps off the springboard with a powerful jump.",
+    "Diver begins rotation in the air, initiating the first somersault.",
+    "Diver continues the somersault, maintaining control and balance.",
+    "Diver initiates twisting motion, adding half a twist to the dive.",
+    "Diver completes the first somersault, transitioning into the second.",
+    "Diver performs the second somersault, focusing on precision.",
+    "Diver enters the final twisting phase, adding the remaining half twist.",
+    "Diver aligns body for the entry, preparing for the water."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with one hand.",
+    "The diver rotates backward through the air, performing 1.5 somersaults.",
+    "The diver twists their body 0.5 times during the descent.",
+    "The diver extends their body into a free position upon entry into the water."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to gain height for dive.",
+    "Diver rotates backward, initiating the first somersault.",
+    "Diver tucks head and body to execute the second somersault.",
+    "Diver begins to untuck, preparing for the twisting motion.",
+    "Diver twists body while rotating, maintaining control.",
+    "Diver extends limbs for balance before entry into water."
+   ]
+  ]
+ },
+ "(TWI) back twisting dive, 1.5 somersaults, 1.5 twists, free position": {
+  "counts": [
+   7,
+   11,
+   12,
+   6,
+   9
+  ],
+  "mean": 9,
+  "lists": [
+   [
+    "The diver approaches the springboard with a run-up.",
+    "The diver leaps onto the springboard with extended arms.",
+    "The diver's body arches backward as they take off.",
+    "The diver performs a 1.5 somersault in mid-air.",
+    "The diver twists their body 1.5 times during the somersault.",
+    "The diver extends their limbs in a free position upon entry.",
+    "The diver enters the water with a controlled splash."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends legs upward at the peak of the jump.",
+    "Diver begins the first 1.5 somersaults with arms extended.",
+    "Diver initiates the first twist, rotating on the horizontal axis.",
+    "Diver completes the first 1.5 somersaults before initiating the second.",
+    "Diver executes the second twist, continuing rotation on the horizontal axis.",
+    "Diver completes the second 1.5 somersaults.",
+    "Diver begins to extend limbs, transitioning into the free position.",
+    "Diver assumes a streamlined body position during descent.",
+    "Diver enters the water with arms extended forward and legs together."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver extends arms and legs in preparation for takeoff.",
+    "Diver leaps off the springboard with a powerful jump.",
+    "Diver begins rotation in the air, initiating the first somersault.",
+    "Diver continues the somersault, maintaining control and balance.",
+    "Diver initiates twisting motion, adding half a twist before the first somersault ends.",
+    "Diver completes the first somersault and starts the second one.",
+    "Diver continues the second somersault while adding the remaining half twist.",
+    "Diver enters the third phase of twisting motion, completing the final twist.",
+    "Diver begins descent towards the water, adjusting body position.",
+    "Diver extends limbs fully, preparing for entry.",
+    "Diver enters the water, creating a splash."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with one arm extended forward.",
+    "The diver executes a 1.5 somersault in mid-air while twisting.",
+    "The diver's body aligns with the dive board after the somersault.",
+    "The diver's arms and legs extend in a free position upon entry.",
+    "The diver completes the 1.5 twists before entering the water."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, generating upward force.",
+    "Diver's hands leave the springboard, initiating the twisting dive.",
+    "Diver's body begins the first 1.5 somersaults in mid-air.",
+    "Diver's legs bend and extend, preparing for the twists.",
+    "Diver completes the first 1.5 twists while still airborne.",
+    "Diver's arms adjust position to guide the entry.",
+    "Diver's body aligns for a clean exit from the dive.",
+    "Diver enters the water in the specified free position."
+   ]
+  ]
+ },
+ "(TWI) back twisting dive, 1.5 somersaults, 2.5 twists, free position": {
+  "counts": [
+   13,
+   10,
+   8,
+   6,
+   15
+  ],
+  "mean": 10.4,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard, gaining initial momentum.",
+    "Diver extends arms and legs, preparing for the dive.",
+    "Diver rotates backward, initiating the first somersault.",
+    "Diver tucks tightly, completing the first somersault.",
+    "Diver begins the second somersault, extending slightly.",
+    "Diver twists horizontally, adding the first twist.",
+    "Diver continues the second somersault, maintaining tuck position.",
+    "Diver completes the second somersault, preparing for the final twist.",
+    "Diver executes the final twist, rotating horizontally.",
+    "Diver extends arms and legs, entering the free position.",
+    "Diver maintains balance in the air during the free position.",
+    "Diver enters the water with a controlled splash, completing the dive."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends arms forward, body tucks tightly.",
+    "Diver performs first 0.5 somersault, rotating clockwise.",
+    "Diver extends legs upward during the somersault.",
+    "Diver begins second half-somersault, rotating counterclockwise.",
+    "Diver extends arms outward during the second somersault.",
+    "Diver begins to twist, extending left leg outwards.",
+    "Diver continues twisting motion, extending right leg outwards.",
+    "Diver finishes twisting, transitioning into free position."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver extends arms forward, initiating the dive.",
+    "Diver's body bends at the hips, preparing for the somersault.",
+    "Diver completes the first 1.5 somersaults in mid-air.",
+    "Diver's legs tuck tightly, executing the twists.",
+    "Diver's arms extend again, stabilizing the position.",
+    "Diver's body straightens out, preparing for landing.",
+    "Diver lands on the water surface with a splash, completing the dive."
+   ],
+   [
+    "The diver approaches the springboard, running towards it with extended arms.",
+    "The diver leaps off the springboard, extending their body horizontally mid-air.",
+    "The diver performs a 1.5 somersaults in a tucked position, body compacted.",
+    "The diver extends into a free position during the descent.",
+    "The diver twists 2.5 times while in the air, adjusting body rotation.",
+    "The diver lands smoothly on the water surface, creating minimal splash."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, generating upward force.",
+    "Diver's hands leave the springboard, initiating a backward dive.",
+    "Diver's body begins to rotate horizontally in the air.",
+    "Diver's legs extend and then tuck during the first somersault.",
+    "Diver's arms are pulled close to the chest, reducing air resistance.",
+    "Diver continues to rotate horizontally, completing the first somersault.",
+    "Diver extends arms outwards again, preparing for the second somersault.",
+    "Diver's body rotates further, completing the second somersault.",
+    "Diver's legs uncurl, straightening as they prepare for twists.",
+    "Diver's torso twists, rotating the body multiple times.",
+    "Diver's limbs adjust to maintain balance during the twists.",
+    "Diver's body positions itself in a free form, readying for entry.",
+    "Diver's legs and arms move to create a streamlined entry position.",
+    "Diver enters the water with minimal splash, ending the dive."
+   ]
+  ]
+ },
+ "(TWI) back twisting dive, 1.5 somersaults, 3.5 twists, free position": {
+  "counts": [
+   14,
+   9,
+   13,
+   7,
+   11
+  ],
+  "mean": 10.8,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard, gaining initial momentum.",
+    "Diver extends arms and legs, preparing for the dive.",
+    "Diver rotates backward, initiating the first somersault.",
+    "Diver tucks tightly, completing the first somersault.",
+    "Diver extends again, starting the second somersault.",
+    "Diver tucks once more, completing the second somersault.",
+    "Diver begins to untuck, transitioning into the twisting motion.",
+    "Diver twists continuously, executing the required number of twists.",
+    "Diver maintains a free position throughout the twisting phase.",
+    "Diver continues to twist, nearing the end of the twisting sequence.",
+    "Diver begins to straighten out, preparing for the final somersault.",
+    "Diver completes the final somersault, aligning for entry.",
+    "Diver enters the water, completing the dive with a splash."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends arms and legs in preparation for twisting dive.",
+    "Diver performs initial somersault as body rotates backward.",
+    "Diver maintains streamline position during somersault.",
+    "Diver continues twisting motion, performing three full body rotations.",
+    "Diver begins free position, adjusting body orientation.",
+    "Diver completes final somersault before entering water.",
+    "Diver enters water with a splash, completing the dive."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver extends arms and legs in preparation for takeoff.",
+    "Diver leaps off the springboard with a powerful push.",
+    "Diver begins rotation in the air, initiating the first somersault.",
+    "Diver continues the somersault, maintaining control and balance.",
+    "Diver initiates twisting motion, adding complexity to the dive.",
+    "Diver completes the first somersault, preparing for the second.",
+    "Diver begins second somersault, maintaining fluidity in motion.",
+    "Diver starts the twisting phase, adding three full twists.",
+    "Diver continues the twisting motion through the third twist.",
+    "Diver initiates the fourth twist, nearing completion of the dives.",
+    "Diver begins descent towards the water surface, preparing for entry.",
+    "Diver enters the water, completing the dive with a splash."
+   ],
+   [
+    "The diver approaches the springboard, running towards it with extended arms.",
+    "The diver jumps off the springboard, extending their body horizontally.",
+    "The diver performs a half somersault in the air, tucking their legs.",
+    "The diver extends their body again, preparing for another twist.",
+    "The diver performs a full twist, rotating their body in mid-air.",
+    "The diver continues to twist, completing three more rotations.",
+    "The diver extends their limbs, preparing for entry into the water."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to gain height and speed.",
+    "Diver rotates backward, initiating a 1.5 somersault.",
+    "Diver continues rotating, adding 3.5 additional twists.",
+    "Diver's body aligns vertically for the somersault completion.",
+    "Diver extends limbs for stability during the twist phase.",
+    "Diver begins to straighten legs, preparing for entry.",
+    "Diver's body transitions from twisted to free position mid-air.",
+    "Diver's head points toward the water for entry.",
+    "Diver enters the water, creating a splash upon impact."
+   ]
+  ]
+ },
+ "(TWI) back twisting dive, 2.5 somersaults, 0.5 twists, pike position": {
+  "counts": [
+   10,
+   8,
+   10,
+   10,
+   11
+  ],
+  "mean": 9.8,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard, gaining initial momentum.",
+    "Diver extends arms forward, preparing for takeoff.",
+    "Diver's body arches backward, initiating the first somersault.",
+    "Diver tucks legs tightly, maintaining a pike position during the somersault.",
+    "Diver's body rotates through the air, completing the 2.5 somersaults.",
+    "Diver extends arms outward, preparing for entry.",
+    "Diver's body twists slightly, adding the 0.5 twists.",
+    "Diver's legs straighten, transitioning into a streamlined position.",
+    "Diver enters the water with a splash, completing the dive."
+   ],
+   [
+    "Diver stands at the edge of the springboard, preparing.",
+    "Diver runs forward along the springboard, gaining speed.",
+    "Diver leaps off the springboard with extended legs.",
+    "Diver executes a 2.5 somersaults in the air.",
+    "Diver performs 0.5 twists during the somersaults.",
+    "Diver extends arms and legs, entering a pike position mid-air.",
+    "Diver tucks legs, preparing for water entry.",
+    "Diver enters the water, completing the dive."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver leaps, extending arms overhead for balance.",
+    "Diver extends legs, initiating the first somersault.",
+    "Diver twists body mid-air, preparing for the second somersault.",
+    "Diver completes the second somersault, aligning for third somersault.",
+    "Diver begins third somersault, twisting 0.5 times.",
+    "Diver enters pike position, tucking knees close to chest.",
+    "Diver extends arms forward, preparing for landing.",
+    "Diver lands on springboard with a controlled entry.",
+    "Diver transitions smoothly off the board onto the water."
+   ],
+   [
+    "The diver approaches the springboard, running towards it with extended arms.",
+    "The diver jumps off the springboard, bending knees slightly for takeoff.",
+    "The diver extends forward, initiating the first somersault while keeping legs together.",
+    "The diver completes the first somersault, tucking head close to feet.",
+    "The diver begins second somersault, keeping body compact and streamlined.",
+    "The diver extends legs during the second somersault, preparing for final twist.",
+    "The diver performs half a twist, extending arms and body to complete rotation.",
+    "The diver enters pike position, bending knees and tucking head towards chest.",
+    "The diver straightens out, extending arms and legs, preparing for water entry.",
+    "The diver enters the water, creating a splash as they complete the dive."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, generating upward force.",
+    "Diver's hands leave the springboard, initiating the twisting dive.",
+    "Diver's body begins the first 2.5 somersaults in mid-air.",
+    "Diver tucks their legs into a pike position.",
+    "Diver completes the first somersault, maintaining tuck position.",
+    "Diver continues the second 2.5 somersaults, legs extended.",
+    "Diver performs the final 0.5 twists, body aligning vertically.",
+    "Diver's arms begin to extend as they approach the water.",
+    "Diver's body transitions into a streamlined position.",
+    "Diver enters the water with minimal splash, completing the dive."
+   ]
+  ]
+ },
+ "(TWI) back twisting dive, 2.5 somersaults, 1.5 twists, pike position": {
+  "counts": [
+   15,
+   10,
+   11,
+   9,
+   10
+  ],
+  "mean": 11,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard, gaining initial momentum.",
+    "Diver extends arms forward, preparing for takeoff.",
+    "Diver's body arches backward, initiating the first somersault.",
+    "Diver tucks legs tightly, forming a pike position mid-air.",
+    "Diver completes the first somersault, extending arms upward.",
+    "Diver begins second somersault, maintaining tucked position.",
+    "Diver extends arms outward, preparing for third somersault.",
+    "Diver completes second somersault, tucking legs again.",
+    "Diver initiates third somersault, arms extended forward.",
+    "Diver begins twisting motion, rotating body clockwise.",
+    "Diver completes third somersault, continuing twisting motion.",
+    "Diver extends arms outward, preparing for entry.",
+    "Diver tucks legs, entering water in a pike position.",
+    "Diver's body straightens upon impact, completing the dive."
+   ],
+   [
+    "Diver stands at the edge of the springboard, preparing.",
+    "Diver runs forward along the springboard, gaining speed.",
+    "Diver leaps off the springboard with extended legs.",
+    "Diver executes a series of 2.5 somersaults mid-air.",
+    "Diver begins the twisting motion after the first somersault.",
+    "Diver completes the second somersault during the twisting.",
+    "Diver continues twisting, completing the third somersault.",
+    "Diver starts the pike position by bending knees and hips.",
+    "Diver tucks head close to knees in a compact pike position.",
+    "Diver maintains the pike position while descending towards the water."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver extends arms forward, preparing for takeoff.",
+    "Diver jumps off the springboard with legs straight.",
+    "Diver begins to rotate backward, initiating the somersault.",
+    "Diver's body tucks, forming a pike position mid-air.",
+    "Diver's arms reach behind head during the somersaults.",
+    "Diver extends legs after completing the 2.5 somersaults.",
+    "Diver's body twists as instructed by the 1.5 twists.",
+    "Diver's hands reach toward feet, completing the pike position.",
+    "Diver's body straightens, aligning for landing.",
+    "Diver touches down on the water surface with controlled entry."
+   ],
+   [
+    "The diver approaches the springboard, running towards it with extended arms.",
+    "The diver leaps off the springboard, extending their body horizontally mid-air.",
+    "The diver performs 2.5 somersaults while maintaining a tucked position.",
+    "The diver initiates a twisting motion during the somersaults, rotating their body 1.5 times.",
+    "The diver transitions into a pike position, legs drawn close to the chest.",
+    "The diver continues the twisting motion through the final somersaults.",
+    "The diver completes the 2.5 somersaults and 1.5 twists, landing in a tucked position.",
+    "The diver extends their body, transitioning from the tucked position to a straight dive.",
+    "The diver enters the water with a splash, finishing the dive in a pike position."
+   ],
+   [
+    "Diver stands on springboard with arms extended upward.",
+    "Diver leaps off springboard, bending knees for takeoff.",
+    "Diver executes first somersault, tucking body tightly.",
+    "Diver transitions to second somersault, arms extended.",
+    "Diver begins twisting motion during descent.",
+    "Diver initiates third somersault, tucking again.",
+    "Diver starts twisting while descending, arms outstretched.",
+    "Diver completes final somersault, body fully tucked.",
+    "Diver begins twisting, head facing down, arms near ears.",
+    "Diver enters water, maintaining pike position, legs together."
+   ]
+  ]
+ },
+ "(TWI) back twisting dive, 2.5 somersaults, 2.5 twists, pike position": {
+  "counts": [
+   7,
+   7,
+   7,
+   7,
+   14
+  ],
+  "mean": 8.4,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver's body arches backward as they take off.",
+    "Diver performs a 2.5 somersaults in mid-air.",
+    "Diver twists their body 2.5 times during the somersault.",
+    "Diver's legs bend into a pike position at the peak of the dive.",
+    "Diver enters the water with a splash, completing the dive."
+   ],
+   [
+    "Diver stands at the edge of the springboard, preparing.",
+    "Diver runs forward along the springboard, gaining momentum.",
+    "Diver leaps off the springboard with extended legs.",
+    "Diver executes a 2.5 somersaults in the air.",
+    "Diver twists 2.5 times during the somersault.",
+    "Diver tucks into a compact position before unfolding.",
+    "Diver transitions into a pike position upon entry into the water."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver extends arms forward, initiating the dive.",
+    "Diver's body tucks tightly, forming a compact pike position.",
+    "Diver rotates backward, executing 2.5 somersaults in mid-air.",
+    "Diver's legs extend outward, transitioning into a twist.",
+    "Diver completes 2.5 twists while airborne.",
+    "Diver repositions arms and legs for final approach toward the water."
+   ],
+   [
+    "The diver approaches the springboard with a run-up.",
+    "The diver leaps onto the springboard with one foot.",
+    "The diver performs a back twisting motion, bending knees.",
+    "The diver executes a 2.5 somersaults in the air.",
+    "The diver begins to twist, extending arms and legs.",
+    "The diver continues to twist while aligning body in a pike position.",
+    "The diver enters the water with a streamlined body shape."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, generating upward force.",
+    "Diver's hands leave the springboard, initiating the twisting dive.",
+    "Diver's body begins the first 2.5 somersaults in mid-air.",
+    "Diver's legs bend, preparing for the pike position.",
+    "Diver completes the first 2.5 somersaults, preparing for the second.",
+    "Diver's body extends again, initiating the second 2.5 somersaults.",
+    "Diver's legs tuck inward, maintaining the pike position during the second somersaults.",
+    "Diver's arms extend, assisting in the twisting motion.",
+    "Diver's body continues the second 2.5 somersaults, nearing completion.",
+    "Diver's body straightens out, transitioning from the pike position.",
+    "Diver's hands reach down towards their feet, preparing for landing.",
+    "Diver's legs extend fully, completing the dive.",
+    "Diver lands smoothly on the water surface, finishing the dive."
+   ]
+  ]
+ },
+ "(TWI) reverse twisting dive, 1.5 somersaults, 0.5 twists, free position": {
+  "counts": [
+   8,
+   8,
+   10,
+   6,
+   8
+  ],
+  "mean": 8,
+  "lists": [
+   [
+    "Diver approaches the springboard with a forward run.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver's body arches backward as they leave the springboard.",
+    "Diver performs a 1.5 somersault in mid-air, tucking tightly.",
+    "Diver extends their body, preparing for the twist.",
+    "Diver completes the 0.5 twist in the air, maintaining balance.",
+    "Diver's legs extend forward, aligning with the dive's direction.",
+    "Diver enters the water with a streamlined body position."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends legs upward at the peak of the jump.",
+    "Diver begins the first 0.5 twist, rotating left or right.",
+    "Diver enters the air with arms extended overhead.",
+    "Diver starts the first 1.5 somersaults, rotating head to look down.",
+    "Diver continues the second 0.5 twist, completing the rotation.",
+    "Diver enters the water, arms and legs fully extended."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver extends arms and legs in preparation for takeoff.",
+    "Diver leaps off the springboard with a powerful jump.",
+    "Diver begins rotation in the air, initiating the first somersault.",
+    "Diver continues the somersault, maintaining control and balance.",
+    "Diver initiates twisting motion, adding half a twist to the dive.",
+    "Diver completes the first somersault, transitioning into the second somersault.",
+    "Diver continues the second somersault, executing the remaining twists.",
+    "Diver enters a free position during the final somersault.",
+    "Diver exits the water smoothly, completing the reverse twisting dive."
+   ],
+   [
+    "The diver approaches the springboard, running towards it with extended arms.",
+    "The diver leaps off the springboard, extending their body horizontally mid-air.",
+    "The diver performs a 1.5 somersaults in a tucked position, body compacted.",
+    "The diver begins to untuck, transitioning into a free position with limbs spread.",
+    "The diver executes 0.5 twists, rotating their body mid-air.",
+    "The diver enters the water in a streamlined position, arms and legs together."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to gain height and speed.",
+    "Diver performs the first somersault in mid-air, twisting.",
+    "Diver enters second somersault, continuing the twisting motion.",
+    "Diver begins free-position rotation after completing somersaults.",
+    "Diver completes half twist during free-position phase.",
+    "Diver enters water with controlled entry posture."
+   ]
+  ]
+ },
+ "(TWI) reverse twisting dive, 1.5 somersaults, 2.5 twists, free position": {
+  "counts": [
+   7,
+   8,
+   11,
+   8,
+   9
+  ],
+  "mean": 8.6,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver performs a reverse twisting motion off the springboard.",
+    "Diver executes 1.5 somersaults in mid-air.",
+    "Diver begins to twist 2.5 times during the somersaults.",
+    "Diver transitions into a free position after completing the twists.",
+    "Diver enters the water with a controlled entry."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends arms forward, body tucks tightly.",
+    "Diver performs first 0.5 somersault, twists slightly.",
+    "Diver extends legs upward during second half-somersault.",
+    "Diver twists continuously during somersault completion.",
+    "Diver enters free position upon landing.",
+    "Diver maintains balance, recovering posture after dive."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver extends arms and legs in preparation for takeoff.",
+    "Diver leaps off the springboard with a powerful jump.",
+    "Diver begins rotation in the air, initiating the first somersault.",
+    "Diver continues rotation through the air, completing the second somersault.",
+    "Diver initiates twisting motion, executing the first twist.",
+    "Diver completes the first twist and begins the second twist.",
+    "Diver continues to rotate, executing the third twist.",
+    "Diver adjusts body position to maintain control during the rotation.",
+    "Diver begins descent towards the water, preparing for landing.",
+    "Diver enters the water with a streamlined body position."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with one hand raised.",
+    "The diver performs a reverse twist, extending their arms for balance.",
+    "The diver completes half a somersault while keeping legs together.",
+    "The diver begins to twist, bending knees to maintain control.",
+    "The diver completes another half a somersault while twisting.",
+    "The diver extends legs fully for the final twist.",
+    "The diver enters a free position, arms outstretched, ready to land."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, generating upward force.",
+    "Diver's body arches backward during takeoff, initiating the dive.",
+    "Diver performs a full rotation in mid-air, executing the first somersault.",
+    "Diver tucks their legs tightly to execute the second somersault.",
+    "Diver extends arms and legs, maintaining balance before twisting.",
+    "Diver twists two and a half times while keeping a stable body position.",
+    "Diver releases from the twisting motion, transitioning into a free position.",
+    "Diver enters the water with controlled splash, completing the dive."
+   ]
+  ]
+ },
+ "(TWI) reverse twisting dive, 1.5 somersaults, 3.5 twists, free position": {
+  "counts": [
+   9,
+   11,
+   8,
+   8,
+   8
+  ],
+  "mean": 8.8,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver's body arches backward as they leave the springboard.",
+    "Diver begins the first somersault, tucking their legs.",
+    "Diver extends their body mid-air for the second somersault.",
+    "Diver initiates the twisting motion, rotating three times.",
+    "Diver continues to twist, adding an additional half twist.",
+    "Diver's body aligns into a free position during descent.",
+    "Diver enters the water with a controlled splash."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends legs upward at the peak of the jump.",
+    "Diver begins to rotate backward while keeping body aligned.",
+    "Diver completes first somersault in mid-air.",
+    "Diver starts twisting after completing the first somersault.",
+    "Diver performs a half-somersault during the twisting motion.",
+    "Diver continues twisting through the second half-somersault.",
+    "Diver twists through three full turns in the air.",
+    "Diver begins to straighten legs and arms for the final entry.",
+    "Diver enters the water with a controlled and streamlined body position."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver leaps, extending arms forward for balance.",
+    "Diver performs first somersault, tucking legs close.",
+    "Diver initiates twisting motion, rotating torso.",
+    "Diver extends arms back, preparing for second somersault.",
+    "Diver completes second somersault, maintaining position.",
+    "Diver begins final twisting rotation, extending limbs.",
+    "Diver enters water with controlled splash, free position."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with one hand raised.",
+    "The diver performs a reverse twist, extending their arms for balance.",
+    "The diver completes half a somersault while keeping legs together.",
+    "The diver begins to twist, bending knees to maintain control.",
+    "The diver completes three and a half twists in the air, adjusting leg position.",
+    "The diver straightens out just before entering the water.",
+    "The diver enters the water with a splash, absorbing impact with hands and feet."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, generating upward force.",
+    "Diver's hands leave the springboard, initiating a backward dive.",
+    "Diver's body begins to rotate in a reverse direction.",
+    "Diver completes 1.5 somersaults while twisting.",
+    "Diver's limbs extend fully during the free position phase.",
+    "Diver maintains balance and control throughout the dive.",
+    "Diver enters water smoothly upon landing."
+   ]
+  ]
+ },
+ "(TWI) reverse twisting dive, 2.5 somersaults, 1.5 twists, pike position": {
+  "counts": [
+   8,
+   7,
+   9,
+   8,
+   10
+  ],
+  "mean": 8.4,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard with extended arms.",
+    "Diver's body arches backward, initiating the first somersault.",
+    "Diver completes the first somersault, preparing for the second.",
+    "Diver's body twists during the second somersault.",
+    "Diver's legs tuck tightly, forming a pike position.",
+    "Diver extends arms forward, completing the final somersault.",
+    "Diver's body straightens out, preparing for entry into water."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends legs forward, body tucks into a pike position.",
+    "Diver rotates backward through the air, initiating 2.5 somersaults.",
+    "Diver twists 1.5 times during the somersaults.",
+    "Diver extends arms overhead, completing the dive.",
+    "Diver enters water, creating a splash."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver extends forward, preparing for takeoff.",
+    "Diver leaps off the springboard, arms extended backward.",
+    "Diver begins to rotate, tucking into a compact shape.",
+    "Diver performs first somersault, maintaining tight form.",
+    "Diver continues rotating, executing second somersault.",
+    "Diver extends legs, transitioning into a pike position.",
+    "Diver completes final twist, aligning with the water's surface.",
+    "Diver enters the water, maintaining streamlined posture."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with one hand raised.",
+    "The diver performs a 2.5 somersault in mid-air, tucking the body tightly.",
+    "The diver extends their body into a pike position during the somersault.",
+    "The diver begins to twist, rotating 1.5 times while maintaining the pike position.",
+    "The diver's arms reach towards the feet as they complete the twist.",
+    "The diver's legs extend upwards, reaching for the feet as they approach entry.",
+    "The diver enters the water with their body fully extended, creating a splash."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to gain height and speed.",
+    "Diver rotates backward through the air, executing first somersault.",
+    "Diver twists once during the dive, preparing for second somersault.",
+    "Diver completes the second somersault, aligning body for final twist.",
+    "Diver begins twisting motion, combining both twists into a single movement.",
+    "Diver tucks body tightly into a pike position for precision.",
+    "Diver continues twisting, completing the final half-twist.",
+    "Diver straightens out at the last moment, entering water headfirst."
+   ]
+  ]
+ },
+ "(TWI) reverse twisting dive, 2.5 somersaults, 2.5 twists, pike position": {
+  "counts": [
+   11,
+   10,
+   15,
+   6,
+   9
+  ],
+  "mean": 10.2,
+  "lists": [
+   [
+    "Diver approaches the springboard with a run-up.",
+    "Diver leaps onto the springboard, gaining initial momentum.",
+    "Diver extends arms forward, preparing for takeoff.",
+    "Diver's body arches backward, initiating the first somersault.",
+    "Diver twists once, preparing for the second somersault.",
+    "Diver completes the second somersault, continuing the twisting motion.",
+    "Diver twists again, preparing for the third twist.",
+    "Diver completes the third twist, aligning for the final somersault.",
+    "Diver begins the fourth somersault, maintaining pike position.",
+    "Diver twists once more, completing the fourth twist.",
+    "Diver enters the water with a pike position, minimizing splash."
+   ],
+   [
+    "Diver approaches the springboard or platform.",
+    "Diver jumps onto the springboard with both feet.",
+    "Diver extends legs upward at the peak of the jump.",
+    "Diver begins the first 2.5 somersaults while rotating backward.",
+    "Diver initiates the first twist, facing downward.",
+    "Diver maintains the pike position throughout the dive.",
+    "Diver executes the second 2.5 somersaults while rotating backward.",
+    "Diver initiates the second twist, facing downward.",
+    "Diver completes the pike position before entering water.",
+    "Diver enters the water, creating ripples and splashes."
+   ],
+   [
+    "Diver approaches the springboard, gaining momentum.",
+    "Diver extends forward, preparing for takeoff.",
+    "Diver leaps off the springboard, arms extended backward.",
+    "Diver begins to rotate, initiating the first 1.25 somersaults.",
+    "Diver's legs tuck, initiating a pike position during rotation.",
+    "Diver completes the first 1.25 somersaults, maintaining a pike.",
+    "Diver continues rotating, preparing for second half of somersaults.",
+    "Diver's arms extend forward, guiding the second 1.25 somersaults.",
+    "Diver's legs extend outward, completing the second 1.25 somersaults.",
+    "Diver's body straightens as the somersaults near completion.",
+    "Diver's arms reach behind, initiating the twisting motion.",
+    "Diver's legs twist, incorporating 2.5 twists into the dive.",
+    "Diver's body rotates continuously, combining somersaults with twists.",
+    "Diver's arms extend forward again, guiding the final twists.",
+    "Diver's body straightens completely, finishing in a pike position."
+   ],
+   [
+    "The diver approaches the springboard with a running start.",
+    "The diver leaps off the springboard with one hand raised.",
+    "The diver performs the first 2.5 somersaults while rotating backward.",
+    "The diver twists 2.5 times while continuing to rotate backward.",
+    "The diver extends their legs into a pike position just before entry.",
+    "The diver enters the water with arms extended for balance and control."
+   ],
+   [
+    "Diver approaches the springboard with forward momentum.",
+    "Diver leaps onto the springboard, bending legs for takeoff.",
+    "Diver extends arms and body to gain height for dive.",
+    "Diver enters the water, maintaining balance during entry.",
+    "Diver begins somersault, rotating backward through the air.",
+    "Diver executes first twist, rotating on the horizontal axis.",
+    "Diver continues somersault, completing second half-turn.",
+    "Diver performs second twist, rotating on the vertical axis.",
+    "Diver enters the water, transitioning into a pike position."
+   ]
+  ]
+ },
+ "(ARM) armstand forward dive, 1 somersault, pike position": {
+  "counts": [
+   5,
+   5,
+   3,
+   4,
+   4
+  ],
+  "mean": 4.2,
+  "lists": [
+   [
+    "The diver assumes an armstand position on the springboard.",
+    "The diver extends their arms forward, preparing for the dive.",
+    "The diver leaps off the springboard, initiating the forward dive.",
+    "The diver performs a 1 somersault in mid-air.",
+    "The diver enters a pike position upon landing in the water."
+   ],
+   [
+    "Diver performs armstand on springboard or platform.",
+    "Diver extends legs forward into armstand forward dive.",
+    "Diver completes 1 somersault in mid-air.",
+    "Diver begins to straighten legs during descent.",
+    "Diver bends knees into pike position upon landing."
+   ],
+   [
+    "Diver transitions from armstand to forward dive.",
+    "Diver performs a complete somersault in mid-air.",
+    "Diver enters pike position upon landing on the water's surface."
+   ],
+   [
+    "The diver begins with a handstand on the springboard.",
+    "The diver transitions into a forward dive off the springboard.",
+    "After completing the forward dive, the diver performs one somersault in the air.",
+    "Upon landing, the diver assumes a pike position in mid-air."
+   ],
+   [
+    "Diver assumes armstand position on springboard.",
+    "Diver initiates forward dive, extending legs.",
+    "Diver performs one somersault mid-air.",
+    "Diver enters pike position before landing."
+   ]
+  ]
+ },
+ "(ARM) armstand forward dive, 2 somersaults, 1 twist, free position": {
+  "counts": [
+   5,
+   5,
+   4,
+   5,
+   6
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "Diver assumes an armstand position on the springboard.",
+    "Diver initiates a forward dive from the armstand position.",
+    "Diver performs two somersaults in mid-air during the dive.",
+    "Diver executes a single twist while in the air after the somersaults.",
+    "Diver enters a free position upon landing or completing the dive."
+   ],
+   [
+    "Diver performs an armstand on a springboard or platform.",
+    "Diver dives forward into the water.",
+    "Diver executes two somersaults underwater.",
+    "Diver completes one twist in the air.",
+    "Diver enters a free position upon landing or resurfacing."
+   ],
+   [
+    "Diver transitions from armstand to forward dive.",
+    "Diver executes two somersaults in mid-air.",
+    "Diver performs one twist during descent.",
+    "Diver enters free position upon landing."
+   ],
+   [
+    "The diver performs an armstand on the springboard.",
+    "The diver begins a forward dive off the springboard.",
+    "The diver executes two somersaults in mid-air.",
+    "The diver performs one twist during the dive.",
+    "The diver lands in a free position after completing the somersaults and twist."
+   ],
+   [
+    "Diver assumes armstand position on springboard.",
+    "Diver initiates forward dive, extending legs upward.",
+    "Diver completes first somersault in air, tucked position.",
+    "Diver executes second somersault in air, extended position.",
+    "Diver begins twist motion in free position, rotating.",
+    "Diver lands in free position on water surface."
+   ]
+  ]
+ },
+ "(ARM) armstand forward dive, 2 somersaults, pike position": {
+  "counts": [
+   4,
+   4,
+   4,
+   4,
+   8
+  ],
+  "mean": 4.8,
+  "lists": [
+   [
+    "The diver assumes an armstand position on the springboard.",
+    "The diver extends forward, initiating the dive.",
+    "The diver performs two somersaults in mid-air.",
+    "The diver tucks into a pike position before entry."
+   ],
+   [
+    "Diver performs an armstand on a springboard or platform.",
+    "Diver dives forward into the water.",
+    "Diver executes two somersaults during the dive.",
+    "Diver enters the water in a pike position."
+   ],
+   [
+    "Diver transitions from armstand to forward dive.",
+    "Diver executes first somersault in the air.",
+    "Diver completes second somersault while still airborne.",
+    "Diver enters pike position upon landing."
+   ],
+   [
+    "The diver performs an armstand on the springboard.",
+    "The diver begins a forward dive off the springboard.",
+    "The diver executes two somersaults in mid-air.",
+    "The diver enters a pike position before landing."
+   ],
+   [
+    "Diver stands vertically on arms with legs straight.",
+    "Diver leans forward, extending legs out horizontally.",
+    "Diver initiates forward dive motion, bending knees slightly.",
+    "Diver performs first somersault, rotating in a circular arc.",
+    "Diver extends legs straight again after first somersault.",
+    "Diver begins second somersault, completing the rotation.",
+    "Diver approaches pike position, tucking knees close to chest.",
+    "Diver extends legs forward into final pike position."
+   ]
+  ]
+ },
+ "(ARM) armstand back dive, 2 somersaults, 0.5 twists, pike position": {
+  "counts": [
+   5,
+   5,
+   5,
+   5,
+   8
+  ],
+  "mean": 5.6,
+  "lists": [
+   [
+    "The diver assumes an armstand position on the springboard.",
+    "The diver initiates a back dive, extending their body.",
+    "The diver performs two somersaults in mid-air, rotating their body.",
+    "The diver executes half a twist during the descent.",
+    "The diver's legs bend into a pike position upon landing."
+   ],
+   [
+    "Diver stands on the springboard or platform in an armstand position.",
+    "Diver leaps into the air, executing an armstand back dive.",
+    "In mid-air, diver performs two somersaults.",
+    "Diver completes 0.5 twists before entering the water.",
+    "Diver's body forms a pike position upon landing."
+   ],
+   [
+    "Diver transitions from armstand to initiate the dive, body straight.",
+    "Diver performs first somersault while maintaining armstand.",
+    "Diver begins second somersault in armstand position.",
+    "Diver executes 0.5 twists during descent toward the water.",
+    "Diver assumes pike position upon entry, knees bent, head down."
+   ],
+   [
+    "The diver performs an armstand, balancing on their arms above the springboard.",
+    "The diver executes a back dive, extending their body in preparation for somersaults.",
+    "Two somersaults follow, with the diver rotating backward through the air.",
+    "The diver performs half a twist, adjusting their rotation mid-air for precision.",
+    "As the dive concludes, the diver enters a pike position, tucking their knees towards their chest."
+   ],
+   [
+    "Diver stands vertically on springboard, arms extended behind.",
+    "Diver extends legs straight out, preparing for dive.",
+    "Diver leans backward into an armstand, balancing on hands.",
+    "Diver initiates backward dive from armstand, entering water.",
+    "Diver performs first somersault during descent, twisting slightly.",
+    "Diver completes first somersault, continuing descent with second.",
+    "Diver performs half-twist between somersaults, maintaining balance.",
+    "Diver enters water, legs bent at knees in pike position."
+   ]
+  ]
+ },
+ "(ARM) armstand back dive, 2 somersaults, 1.5 twists, free position": {
+  "counts": [
+   5,
+   5,
+   5,
+   6,
+   8
+  ],
+  "mean": 5.8,
+  "lists": [
+   [
+    "The diver assumes an armstand position on the springboard.",
+    "The diver initiates a back dive, extending their body.",
+    "The diver performs two somersaults in mid-air, rotating.",
+    "The diver executes 1.5 twists during the descent.",
+    "The diver enters a free position upon landing, maintaining balance."
+   ],
+   [
+    "Diver performs an armstand on a springboard or platform.",
+    "Diver begins ascending into the air with a backward motion.",
+    "Diver executes two full somersaults while in the air.",
+    "Diver rotates 1.5 twists during descent.",
+    "Diver enters a free position upon landing in water."
+   ],
+   [
+    "Diver stands on hands in a handstand.",
+    "Diver extends legs upward, initiating the dive.",
+    "Diver performs two somersaults in the air.",
+    "Diver twists half a rotation during descent.",
+    "Diver enters water with arms extended in a free position."
+   ],
+   [
+    "The diver performs an armstand on the springboard.",
+    "The diver begins a back dive off the springboard.",
+    "The diver executes two somersaults in the air.",
+    "The diver performs one and a half twists while airborne.",
+    "The diver transitions into a free position mid-air.",
+    "The diver lands with controlled body movement in the water."
+   ],
+   [
+    "Diver stands vertically on springboard, arms extended behind.",
+    "Diver extends legs straight out, initiating backward dive.",
+    "Diver performs first somersault, tucking body tightly.",
+    "Diver extends body, transitioning to second somersault.",
+    "Diver untucks after second somersault, initiating twisting motion.",
+    "Diver twists 1.5 times, arms and legs moving fluidly.",
+    "Diver aligns body, preparing for entry into water.",
+    "Diver enters water, arms and legs moving in free position."
+   ]
+  ]
+ },
+ "(ARM) armstand back dive, 2 somersaults, 2.5 twists, free position": {
+  "counts": [
+   6,
+   5,
+   5,
+   5,
+   10
+  ],
+  "mean": 6.2,
+  "lists": [
+   [
+    "Diver assumes armstand position on springboard.",
+    "Diver initiates backward dive from armstand.",
+    "Diver performs first somersault in mid-air.",
+    "Diver continues second somersault while rotating.",
+    "Diver executes 2.5 twists during descent.",
+    "Diver enters water in free position after twists."
+   ],
+   [
+    "Diver performs an armstand on a springboard or platform.",
+    "The diver begins the back dive into the water.",
+    "The diver executes two full somersaults in the air.",
+    "The diver completes two and a half twists during the descent.",
+    "The diver enters the water in a free position after the somersaults and twists."
+   ],
+   [
+    "Diver transitions from armstand to initiate the dive, body straight.",
+    "Diver performs first somersault while maintaining armstand.",
+    "Diver begins second somersault in armstand position.",
+    "Diver executes 2.5 twists during descent towards water.",
+    "Diver enters free position upon impact with water, arms extended."
+   ],
+   [
+    "The diver performs an armstand on the springboard.",
+    "The diver begins a back dive off the springboard.",
+    "The diver executes two somersaults in mid-air.",
+    "The diver performs 2.5 twists while airborne.",
+    "The diver transitions into a free position after the dives."
+   ],
+   [
+    "Diver stands vertically on springboard, arms extended.",
+    "Diver leaps backward, transitioning into a tucked position.",
+    "In free fall, diver initiates first somersault, rotating counterclockwise.",
+    "After completing the first somersault, diver begins second somersault, continuing counterclockwise.",
+    "As somersaults conclude, diver transitions into a tucked position, then extends legs.",
+    "Diver executes first half twist, rotating clockwise.",
+    "Diver performs second half twist, rotating counterclockwise.",
+    "Diver extends arms upward, then transitions into free position mid-air.",
+    "Diver begins descent towards water surface, maintaining controlled body position.",
+    "Diver enters water with streamlined body, creating minimal splash."
+   ]
+  ]
+ },
+ "(ARM) armstand back dive, 3 somersaults, pike position": {
+  "counts": [
+   6,
+   6,
+   6,
+   4,
+   7
+  ],
+  "mean": 5.8,
+  "lists": [
+   [
+    "The diver assumes an armstand position on the springboard.",
+    "The diver initiates the back dive, extending their body.",
+    "The diver performs the first somersault, tucking their knees.",
+    "The diver completes the second somersault, maintaining a tucked position.",
+    "The diver executes the third somersault, still tucked.",
+    "The diver transitions into a pike position upon landing."
+   ],
+   [
+    "Stand on springboard with hands extended.",
+    "Jump backward into armstand position.",
+    "Tuck head and tuck legs into a pike position.",
+    "Execute three somersaults while maintaining armstand.",
+    "Straighten legs out into a horizontal position.",
+    "Land in water with arms extended overhead."
+   ],
+   [
+    "Diver approaches the springboard or platform with a steady stance.",
+    "Diver raises arms overhead, transitioning into an armstand position on the springboard.",
+    "Diver initiates a backward dive from the armstand position.",
+    "Diver performs three somersaults in the air, maintaining a tucked position.",
+    "Diver extends legs upward at the peak of the somersaults, entering a pike position.",
+    "Diver enters water with a controlled entry, completing the dive."
+   ],
+   [
+    "The diver performs an armstand on the springboard.",
+    "The diver begins a back dive off the springboard.",
+    "The diver executes three consecutive somersaults in the air.",
+    "The diver enters a pike position, tucking their legs tightly towards their chest."
+   ],
+   [
+    "Diver stands vertically on hands with legs extended upward.",
+    "Diver begins backward rotation while maintaining straight body alignment.",
+    "Diver executes first somersault, maintaining a straight body position.",
+    "Diver continues backward rotation for second somersault, keeping body aligned.",
+    "Diver performs third somersault, still maintaining body straightness.",
+    "Diver transitions from somersaults into a pike position, bending knees.",
+    "Diver lands on feet, completing the dive with a pike landing posture."
+   ]
+  ]
+ },
+ "(ARM) armstand back dive, 3 somersaults, tuck position": {
+  "counts": [
+   6,
+   7,
+   7,
+   8,
+   5
+  ],
+  "mean": 6.6,
+  "lists": [
+   [
+    "The diver assumes an armstand position on the springboard.",
+    "The diver initiates the back dive, extending their body.",
+    "The diver performs the first somersault, tucking their body.",
+    "The diver completes the second somersault, maintaining the tuck position.",
+    "The diver executes the third somersault, still tucked.",
+    "The diver lands in the water after completing all three somersaults."
+   ],
+   [
+    "Stand on springboard with hands extended.",
+    "Leap backward into air from springboard.",
+    "Execute initial tuck position in mid-air.",
+    "Perform first somersault in tuck position.",
+    "Execute second somersault in tuck position.",
+    "Complete third somersault in tuck position.",
+    "Straighten body and extend arms for landing."
+   ],
+   [
+    "Diver approaches the springboard or platform with a steady stance.",
+    "Diver raises arms overhead, transitioning into an armstand position on the springboard.",
+    "Diver initiates backward movement, preparing for the dive.",
+    "Diver begins the first somersault in the air, tucking the body.",
+    "Diver continues the second somersault, maintaining the tucked position.",
+    "Diver completes the third somersault, still in the tucked position.",
+    "Diver extends arms and legs, straightening out before entry into the water."
+   ],
+   [
+    "The diver performs an armstand on the springboard.",
+    "The diver begins a back dive off the springboard.",
+    "The diver initiates the first somersault in a tucked position.",
+    "The diver completes the first somersault and prepares for the second somersault.",
+    "The diver executes the second somersault while maintaining the tucked position.",
+    "The diver transitions into the third somersault.",
+    "The diver finishes the third somersault in the tucked position.",
+    "The diver enters the water with a controlled splash."
+   ],
+   [
+    "Diver stands with arms extended upwards, preparing to dive.",
+    "Diver extends legs behind, preparing for a back dive.",
+    "Diver initiates backward movement, launching off the springboard or platform.",
+    "Diver performs three consecutive somersaults in the air, tucking the body tightly.",
+    "Diver straightens out, aligning body for water entry after completing somersaults."
+   ]
+  ]
+ },
+ "(ARM) armstand reverse dive, 3 somersaults, tuck position": {
+  "counts": [
+   6,
+   4,
+   6,
+   4,
+   7
+  ],
+  "mean": 5.4,
+  "lists": [
+   [
+    "The diver assumes an armstand position on the springboard.",
+    "The diver initiates a reverse dive, extending their body.",
+    "The diver performs the first somersault, tucking their body.",
+    "The diver completes the second somersault, maintaining a tucked position.",
+    "The diver executes the third somersault, still tucked.",
+    "The diver lands in a tucked position after the third somersault."
+   ],
+   [
+    "Diver performs an armstand on a springboard or platform.",
+    "Diver begins a reverse dive into the water.",
+    "Diver executes three somersaults in the air.",
+    "Diver tucks their body during the final moments before entering the water."
+   ],
+   [
+    "Diver approaches the springboard or platform with a steady stance.",
+    "Diver raises arms into a handstand position on the springboard.",
+    "Diver begins a series of three somersaults in the air, tucked tightly.",
+    "Diver extends arms and legs simultaneously at the peak of the somersaults.",
+    "Diver tucks into a compact position mid-air before entry.",
+    "Diver enters the water with a controlled splash after completing the tuck position."
+   ],
+   [
+    "The diver performs an armstand, balancing on their arms above the springboard.",
+    "The diver begins the reverse dive, extending their body backward.",
+    "The diver completes three somersaults while tucking their knees to their chest.",
+    "The diver extends again for the final tuck position before entering the water."
+   ],
+   [
+    "Diver stands vertically on springboard, arms extended.",
+    "Diver leaps off springboard, initiating backward somersault.",
+    "Diver executes first somersault, tucking knees.",
+    "Diver continues second somersault, maintaining tucked position.",
+    "Diver completes third somersault, tucking tightly.",
+    "Diver extends body, preparing for water entry.",
+    "Diver enters water with controlled splash, arms reaching forward."
+   ]
+  ]
+ },
+ "_summary": {
+  "classes": 52,
+  "per_class_mean": {
+   "mean": 7.6,
+   "sd": 1.7231456030268508,
+   "min": 4.2,
+   "max": 11.2
+  },
+  "all_samples": {
+   "mean": 7.6,
+   "sd": 2.6035478752005963
+  },
+  "K": {
+   "mean": 8,
+   "mean+sd": 9,
+   "mean+2sd": 11
+  }
+ }
+}

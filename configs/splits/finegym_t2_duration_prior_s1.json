@@ -1,0 +1,161 @@
+{
+ "meta": {
+  "labels": "/data3/xiaodan8/FineGym/annotation/Dec16/gym99_train_label.txt",
+  "attr_table": "configs/splits/finegym_phrase_attribute_table_s1.json",
+  "sigma_floor": 0.1,
+  "num_seen": 10,
+  "num_held_out": 4,
+  "held_out": [
+   2,
+   3,
+   5,
+   10
+  ],
+  "note": "log-normal duration prior in SECONDS; held-out = Jaccard-weighted moment-matched seen mixture (no held-out train durations used)",
+  "level": "phrase",
+  "verbalizer": "configs/finegym_zsl_verbalizer.json",
+  "instance_rule": "contiguous runs of same-phrase actions inside an activity (FineGymSlideDataset._derive_hierarchy_gt)"
+ },
+ "classes": {
+  "0": {
+   "mu": 1.9540670204687243,
+   "sigma": 0.14566343337555232,
+   "n": 1156,
+   "kind": "seen"
+  },
+  "1": {
+   "mu": 0.6319703043328578,
+   "sigma": 0.9100567382398481,
+   "n": 1319,
+   "kind": "seen"
+  },
+  "2": {
+   "mu": 0.7291851092734294,
+   "sigma": 0.8147965131764661,
+   "n": 0,
+   "kind": "held_out",
+   "top_seen_weights": [
+    [
+     6,
+     0.2855
+    ],
+    [
+     4,
+     0.139
+    ],
+    [
+     1,
+     0.1333
+    ]
+   ]
+  },
+  "3": {
+   "mu": 0.829053604028025,
+   "sigma": 0.831705608464157,
+   "n": 0,
+   "kind": "held_out",
+   "top_seen_weights": [
+    [
+     4,
+     0.1859
+    ],
+    [
+     9,
+     0.1394
+    ],
+    [
+     7,
+     0.1328
+    ]
+   ]
+  },
+  "4": {
+   "mu": 0.8472387690517043,
+   "sigma": 0.9376665202181793,
+   "n": 1792,
+   "kind": "seen"
+  },
+  "5": {
+   "mu": 0.5988205024196952,
+   "sigma": 0.8334756659948502,
+   "n": 0,
+   "kind": "held_out",
+   "top_seen_weights": [
+    [
+     1,
+     0.3205
+    ],
+    [
+     8,
+     0.1498
+    ],
+    [
+     11,
+     0.1192
+    ]
+   ]
+  },
+  "6": {
+   "mu": 0.3145797730831483,
+   "sigma": 0.47317143489677593,
+   "n": 820,
+   "kind": "seen"
+  },
+  "7": {
+   "mu": 0.6806661990842103,
+   "sigma": 1.0683584277495923,
+   "n": 2277,
+   "kind": "seen"
+  },
+  "8": {
+   "mu": -0.021695339456264427,
+   "sigma": 0.4759121048607563,
+   "n": 1833,
+   "kind": "seen"
+  },
+  "9": {
+   "mu": 0.8118032563276938,
+   "sigma": 0.20275254228443723,
+   "n": 669,
+   "kind": "seen"
+  },
+  "10": {
+   "mu": 0.7331214798632135,
+   "sigma": 0.8188742570998327,
+   "n": 0,
+   "kind": "held_out",
+   "top_seen_weights": [
+    [
+     11,
+     0.1788
+    ],
+    [
+     13,
+     0.127
+    ],
+    [
+     8,
+     0.127
+    ]
+   ]
+  },
+  "11": {
+   "mu": 0.4510940431507499,
+   "sigma": 0.4575820206471647,
+   "n": 1123,
+   "kind": "seen"
+  },
+  "12": {
+   "mu": 0.6608591987828698,
+   "sigma": 0.8607361852990197,
+   "n": 1733,
+   "kind": "seen"
+  },
+  "13": {
+   "mu": 0.9893280575532778,
+   "sigma": 0.20085234788535059,
+   "n": 715,
+   "kind": "seen"
+  }
+ }
+}

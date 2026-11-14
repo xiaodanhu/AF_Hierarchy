@@ -1,0 +1,1376 @@
+{
+ "dataset": "activitynet",
+ "activities": {
+  "a0": {
+   "id": "a0",
+   "name": "Activities (AC)",
+   "short": "AC"
+  }
+ },
+ "phrases": {
+  "p00": {
+   "id": "p00",
+   "name": "water_boarding_boating",
+   "activity": "a0",
+   "set": 0
+  },
+  "p01": {
+   "id": "p01",
+   "name": "swim_dive",
+   "activity": "a0",
+   "set": 1
+  },
+  "p02": {
+   "id": "p02",
+   "name": "snow_ice_sports",
+   "activity": "a0",
+   "set": 2
+  },
+  "p03": {
+   "id": "p03",
+   "name": "wheel_board_riding",
+   "activity": "a0",
+   "set": 3
+  },
+  "p04": {
+   "id": "p04",
+   "name": "animal_riding_rodeo",
+   "activity": "a0",
+   "set": 4
+  },
+  "p05": {
+   "id": "p05",
+   "name": "athletics_field",
+   "activity": "a0",
+   "set": 5
+  },
+  "p06": {
+   "id": "p06",
+   "name": "gymnastics_apparatus",
+   "activity": "a0",
+   "set": 6
+  },
+  "p07": {
+   "id": "p07",
+   "name": "adventure_climb_swing",
+   "activity": "a0",
+   "set": 7
+  },
+  "p08": {
+   "id": "p08",
+   "name": "team_ball_sports",
+   "activity": "a0",
+   "set": 8
+  },
+  "p09": {
+   "id": "p09",
+   "name": "racquet_sports",
+   "activity": "a0",
+   "set": 9
+  },
+  "p10": {
+   "id": "p10",
+   "name": "target_precision_games",
+   "activity": "a0",
+   "set": 10
+  },
+  "p11": {
+   "id": "p11",
+   "name": "combat_strength_sports",
+   "activity": "a0",
+   "set": 11
+  },
+  "p12": {
+   "id": "p12",
+   "name": "weight_gym_workout",
+   "activity": "a0",
+   "set": 12
+  },
+  "p13": {
+   "id": "p13",
+   "name": "dance_performance",
+   "activity": "a0",
+   "set": 13
+  },
+  "p14": {
+   "id": "p14",
+   "name": "music_instruments",
+   "activity": "a0",
+   "set": 14
+  },
+  "p15": {
+   "id": "p15",
+   "name": "hair_head_grooming",
+   "activity": "a0",
+   "set": 15
+  },
+  "p16": {
+   "id": "p16",
+   "name": "face_body_care",
+   "activity": "a0",
+   "set": 16
+  },
+  "p17": {
+   "id": "p17",
+   "name": "food_drink_prep",
+   "activity": "a0",
+   "set": 17
+  },
+  "p18": {
+   "id": "p18",
+   "name": "eat_drink_smoke",
+   "activity": "a0",
+   "set": 18
+  },
+  "p19": {
+   "id": "p19",
+   "name": "interior_cleaning",
+   "activity": "a0",
+   "set": 19
+  },
+  "p20": {
+   "id": "p20",
+   "name": "laundry_textile_craft",
+   "activity": "a0",
+   "set": 20
+  },
+  "p21": {
+   "id": "p21",
+   "name": "surface_finish_repair",
+   "activity": "a0",
+   "set": 21
+  },
+  "p22": {
+   "id": "p22",
+   "name": "workshop_tool_craft",
+   "activity": "a0",
+   "set": 22
+  },
+  "p23": {
+   "id": "p23",
+   "name": "garden_yard_chores",
+   "activity": "a0",
+   "set": 23
+  },
+  "p24": {
+   "id": "p24",
+   "name": "vehicle_maintenance",
+   "activity": "a0",
+   "set": 24
+  },
+  "p25": {
+   "id": "p25",
+   "name": "animal_care",
+   "activity": "a0",
+   "set": 25
+  },
+  "p26": {
+   "id": "p26",
+   "name": "leisure_games_misc",
+   "activity": "a0",
+   "set": 26
+  }
+ },
+ "actions": {
+  "c000": {
+   "id": "c000",
+   "name": "Applying sunscreen",
+   "phrase": "p16",
+   "activity": "AC"
+  },
+  "c001": {
+   "id": "c001",
+   "name": "Archery",
+   "phrase": "p10",
+   "activity": "AC"
+  },
+  "c002": {
+   "id": "c002",
+   "name": "Arm wrestling",
+   "phrase": "p11",
+   "activity": "AC"
+  },
+  "c003": {
+   "id": "c003",
+   "name": "Assembling bicycle",
+   "phrase": "p24",
+   "activity": "AC"
+  },
+  "c004": {
+   "id": "c004",
+   "name": "BMX",
+   "phrase": "p03",
+   "activity": "AC"
+  },
+  "c005": {
+   "id": "c005",
+   "name": "Baking cookies",
+   "phrase": "p17",
+   "activity": "AC"
+  },
+  "c006": {
+   "id": "c006",
+   "name": "Ballet",
+   "phrase": "p13",
+   "activity": "AC"
+  },
+  "c007": {
+   "id": "c007",
+   "name": "Bathing dog",
+   "phrase": "p25",
+   "activity": "AC"
+  },
+  "c008": {
+   "id": "c008",
+   "name": "Baton twirling",
+   "phrase": "p13",
+   "activity": "AC"
+  },
+  "c009": {
+   "id": "c009",
+   "name": "Beach soccer",
+   "phrase": "p08",
+   "activity": "AC"
+  },
+  "c010": {
+   "id": "c010",
+   "name": "Beer pong",
+   "phrase": "p10",
+   "activity": "AC"
+  },
+  "c011": {
+   "id": "c011",
+   "name": "Belly dance",
+   "phrase": "p13",
+   "activity": "AC"
+  },
+  "c012": {
+   "id": "c012",
+   "name": "Blow-drying hair",
+   "phrase": "p15",
+   "activity": "AC"
+  },
+  "c013": {
+   "id": "c013",
+   "name": "Blowing leaves",
+   "phrase": "p23",
+   "activity": "AC"
+  },
+  "c014": {
+   "id": "c014",
+   "name": "Braiding hair",
+   "phrase": "p15",
+   "activity": "AC"
+  },
+  "c015": {
+   "id": "c015",
+   "name": "Breakdancing",
+   "phrase": "p13",
+   "activity": "AC"
+  },
+  "c016": {
+   "id": "c016",
+   "name": "Brushing hair",
+   "phrase": "p15",
+   "activity": "AC"
+  },
+  "c017": {
+   "id": "c017",
+   "name": "Brushing teeth",
+   "phrase": "p16",
+   "activity": "AC"
+  },
+  "c018": {
+   "id": "c018",
+   "name": "Building sandcastles",
+   "phrase": "p26",
+   "activity": "AC"
+  },
+  "c019": {
+   "id": "c019",
+   "name": "Bullfighting",
+   "phrase": "p04",
+   "activity": "AC"
+  },
+  "c020": {
+   "id": "c020",
+   "name": "Bungee jumping",
+   "phrase": "p07",
+   "activity": "AC"
+  },
+  "c021": {
+   "id": "c021",
+   "name": "Calf roping",
+   "phrase": "p04",
+   "activity": "AC"
+  },
+  "c022": {
+   "id": "c022",
+   "name": "Camel ride",
+   "phrase": "p04",
+   "activity": "AC"
+  },
+  "c023": {
+   "id": "c023",
+   "name": "Canoeing",
+   "phrase": "p00",
+   "activity": "AC"
+  },
+  "c024": {
+   "id": "c024",
+   "name": "Capoeira",
+   "phrase": "p11",
+   "activity": "AC"
+  },
+  "c025": {
+   "id": "c025",
+   "name": "Carving jack-o-lanterns",
+   "phrase": "p22",
+   "activity": "AC"
+  },
+  "c026": {
+   "id": "c026",
+   "name": "Changing car wheel",
+   "phrase": "p24",
+   "activity": "AC"
+  },
+  "c027": {
+   "id": "c027",
+   "name": "Cheerleading",
+   "phrase": "p13",
+   "activity": "AC"
+  },
+  "c028": {
+   "id": "c028",
+   "name": "Chopping wood",
+   "phrase": "p22",
+   "activity": "AC"
+  },
+  "c029": {
+   "id": "c029",
+   "name": "Clean and jerk",
+   "phrase": "p12",
+   "activity": "AC"
+  },
+  "c030": {
+   "id": "c030",
+   "name": "Cleaning shoes",
+   "phrase": "p19",
+   "activity": "AC"
+  },
+  "c031": {
+   "id": "c031",
+   "name": "Cleaning sink",
+   "phrase": "p19",
+   "activity": "AC"
+  },
+  "c032": {
+   "id": "c032",
+   "name": "Cleaning windows",
+   "phrase": "p19",
+   "activity": "AC"
+  },
+  "c033": {
+   "id": "c033",
+   "name": "Clipping cat claws",
+   "phrase": "p25",
+   "activity": "AC"
+  },
+  "c034": {
+   "id": "c034",
+   "name": "Cricket",
+   "phrase": "p08",
+   "activity": "AC"
+  },
+  "c035": {
+   "id": "c035",
+   "name": "Croquet",
+   "phrase": "p10",
+   "activity": "AC"
+  },
+  "c036": {
+   "id": "c036",
+   "name": "Cumbia",
+   "phrase": "p13",
+   "activity": "AC"
+  },
+  "c037": {
+   "id": "c037",
+   "name": "Curling",
+   "phrase": "p02",
+   "activity": "AC"
+  },
+  "c038": {
+   "id": "c038",
+   "name": "Cutting the grass",
+   "phrase": "p23",
+   "activity": "AC"
+  },
+  "c039": {
+   "id": "c039",
+   "name": "Decorating the Christmas tree",
+   "phrase": "p22",
+   "activity": "AC"
+  },
+  "c040": {
+   "id": "c040",
+   "name": "Disc dog",
+   "phrase": "p25",
+   "activity": "AC"
+  },
+  "c041": {
+   "id": "c041",
+   "name": "Discus throw",
+   "phrase": "p05",
+   "activity": "AC"
+  },
+  "c042": {
+   "id": "c042",
+   "name": "Dodgeball",
+   "phrase": "p08",
+   "activity": "AC"
+  },
+  "c043": {
+   "id": "c043",
+   "name": "Doing a powerbomb",
+   "phrase": "p11",
+   "activity": "AC"
+  },
+  "c044": {
+   "id": "c044",
+   "name": "Doing crunches",
+   "phrase": "p12",
+   "activity": "AC"
+  },
+  "c045": {
+   "id": "c045",
+   "name": "Doing fencing",
+   "phrase": "p11",
+   "activity": "AC"
+  },
+  "c046": {
+   "id": "c046",
+   "name": "Doing karate",
+   "phrase": "p11",
+   "activity": "AC"
+  },
+  "c047": {
+   "id": "c047",
+   "name": "Doing kickboxing",
+   "phrase": "p11",
+   "activity": "AC"
+  },
+  "c048": {
+   "id": "c048",
+   "name": "Doing motocross",
+   "phrase": "p03",
+   "activity": "AC"
+  },
+  "c049": {
+   "id": "c049",
+   "name": "Doing nails",
+   "phrase": "p16",
+   "activity": "AC"
+  },
+  "c050": {
+   "id": "c050",
+   "name": "Doing step aerobics",
+   "phrase": "p12",
+   "activity": "AC"
+  },
+  "c051": {
+   "id": "c051",
+   "name": "Drinking beer",
+   "phrase": "p18",
+   "activity": "AC"
+  },
+  "c052": {
+   "id": "c052",
+   "name": "Drinking coffee",
+   "phrase": "p18",
+   "activity": "AC"
+  },
+  "c053": {
+   "id": "c053",
+   "name": "Drum corps",
+   "phrase": "p14",
+   "activity": "AC"
+  },
+  "c054": {
+   "id": "c054",
+   "name": "Elliptical trainer",
+   "phrase": "p12",
+   "activity": "AC"
+  },
+  "c055": {
+   "id": "c055",
+   "name": "Fixing bicycle",
+   "phrase": "p24",
+   "activity": "AC"
+  },
+  "c056": {
+   "id": "c056",
+   "name": "Fixing the roof",
+   "phrase": "p21",
+   "activity": "AC"
+  },
+  "c057": {
+   "id": "c057",
+   "name": "Fun sliding down",
+   "phrase": "p07",
+   "activity": "AC"
+  },
+  "c058": {
+   "id": "c058",
+   "name": "Futsal",
+   "phrase": "p08",
+   "activity": "AC"
+  },
+  "c059": {
+   "id": "c059",
+   "name": "Gargling mouthwash",
+   "phrase": "p16",
+   "activity": "AC"
+  },
+  "c060": {
+   "id": "c060",
+   "name": "Getting a haircut",
+   "phrase": "p15",
+   "activity": "AC"
+  },
+  "c061": {
+   "id": "c061",
+   "name": "Getting a piercing",
+   "phrase": "p16",
+   "activity": "AC"
+  },
+  "c062": {
+   "id": "c062",
+   "name": "Getting a tattoo",
+   "phrase": "p16",
+   "activity": "AC"
+  },
+  "c063": {
+   "id": "c063",
+   "name": "Grooming dog",
+   "phrase": "p25",
+   "activity": "AC"
+  },
+  "c064": {
+   "id": "c064",
+   "name": "Grooming horse",
+   "phrase": "p25",
+   "activity": "AC"
+  },
+  "c065": {
+   "id": "c065",
+   "name": "Hammer throw",
+   "phrase": "p05",
+   "activity": "AC"
+  },
+  "c066": {
+   "id": "c066",
+   "name": "Hand car wash",
+   "phrase": "p24",
+   "activity": "AC"
+  },
+  "c067": {
+   "id": "c067",
+   "name": "Hand washing clothes",
+   "phrase": "p20",
+   "activity": "AC"
+  },
+  "c068": {
+   "id": "c068",
+   "name": "Hanging wallpaper",
+   "phrase": "p21",
+   "activity": "AC"
+  },
+  "c069": {
+   "id": "c069",
+   "name": "Having an ice cream",
+   "phrase": "p18",
+   "activity": "AC"
+  },
+  "c070": {
+   "id": "c070",
+   "name": "High jump",
+   "phrase": "p05",
+   "activity": "AC"
+  },
+  "c071": {
+   "id": "c071",
+   "name": "Hitting a pinata",
+   "phrase": "p10",
+   "activity": "AC"
+  },
+  "c072": {
+   "id": "c072",
+   "name": "Hopscotch",
+   "phrase": "p26",
+   "activity": "AC"
+  },
+  "c073": {
+   "id": "c073",
+   "name": "Horseback riding",
+   "phrase": "p04",
+   "activity": "AC"
+  },
+  "c074": {
+   "id": "c074",
+   "name": "Hula hoop",
+   "phrase": "p26",
+   "activity": "AC"
+  },
+  "c075": {
+   "id": "c075",
+   "name": "Hurling",
+   "phrase": "p08",
+   "activity": "AC"
+  },
+  "c076": {
+   "id": "c076",
+   "name": "Ice fishing",
+   "phrase": "p02",
+   "activity": "AC"
+  },
+  "c077": {
+   "id": "c077",
+   "name": "Installing carpet",
+   "phrase": "p21",
+   "activity": "AC"
+  },
+  "c078": {
+   "id": "c078",
+   "name": "Ironing clothes",
+   "phrase": "p20",
+   "activity": "AC"
+  },
+  "c079": {
+   "id": "c079",
+   "name": "Javelin throw",
+   "phrase": "p05",
+   "activity": "AC"
+  },
+  "c080": {
+   "id": "c080",
+   "name": "Kayaking",
+   "phrase": "p00",
+   "activity": "AC"
+  },
+  "c081": {
+   "id": "c081",
+   "name": "Kite flying",
+   "phrase": "p26",
+   "activity": "AC"
+  },
+  "c082": {
+   "id": "c082",
+   "name": "Kneeling",
+   "phrase": "p12",
+   "activity": "AC"
+  },
+  "c083": {
+   "id": "c083",
+   "name": "Knitting",
+   "phrase": "p20",
+   "activity": "AC"
+  },
+  "c084": {
+   "id": "c084",
+   "name": "Laying tile",
+   "phrase": "p21",
+   "activity": "AC"
+  },
+  "c085": {
+   "id": "c085",
+   "name": "Layup drill in basketball",
+   "phrase": "p08",
+   "activity": "AC"
+  },
+  "c086": {
+   "id": "c086",
+   "name": "Long jump",
+   "phrase": "p05",
+   "activity": "AC"
+  },
+  "c087": {
+   "id": "c087",
+   "name": "Longboarding",
+   "phrase": "p03",
+   "activity": "AC"
+  },
+  "c088": {
+   "id": "c088",
+   "name": "Making a cake",
+   "phrase": "p17",
+   "activity": "AC"
+  },
+  "c089": {
+   "id": "c089",
+   "name": "Making a lemonade",
+   "phrase": "p17",
+   "activity": "AC"
+  },
+  "c090": {
+   "id": "c090",
+   "name": "Making a sandwich",
+   "phrase": "p17",
+   "activity": "AC"
+  },
+  "c091": {
+   "id": "c091",
+   "name": "Making an omelette",
+   "phrase": "p17",
+   "activity": "AC"
+  },
+  "c092": {
+   "id": "c092",
+   "name": "Mixing drinks",
+   "phrase": "p17",
+   "activity": "AC"
+  },
+  "c093": {
+   "id": "c093",
+   "name": "Mooping floor",
+   "phrase": "p19",
+   "activity": "AC"
+  },
+  "c094": {
+   "id": "c094",
+   "name": "Mowing the lawn",
+   "phrase": "p23",
+   "activity": "AC"
+  },
+  "c095": {
+   "id": "c095",
+   "name": "Paintball",
+   "phrase": "p10",
+   "activity": "AC"
+  },
+  "c096": {
+   "id": "c096",
+   "name": "Painting",
+   "phrase": "p21",
+   "activity": "AC"
+  },
+  "c097": {
+   "id": "c097",
+   "name": "Painting fence",
+   "phrase": "p21",
+   "activity": "AC"
+  },
+  "c098": {
+   "id": "c098",
+   "name": "Painting furniture",
+   "phrase": "p21",
+   "activity": "AC"
+  },
+  "c099": {
+   "id": "c099",
+   "name": "Peeling potatoes",
+   "phrase": "p17",
+   "activity": "AC"
+  },
+  "c100": {
+   "id": "c100",
+   "name": "Ping-pong",
+   "phrase": "p09",
+   "activity": "AC"
+  },
+  "c101": {
+   "id": "c101",
+   "name": "Plastering",
+   "phrase": "p21",
+   "activity": "AC"
+  },
+  "c102": {
+   "id": "c102",
+   "name": "Plataform diving",
+   "phrase": "p01",
+   "activity": "AC"
+  },
+  "c103": {
+   "id": "c103",
+   "name": "Playing accordion",
+   "phrase": "p14",
+   "activity": "AC"
+  },
+  "c104": {
+   "id": "c104",
+   "name": "Playing badminton",
+   "phrase": "p09",
+   "activity": "AC"
+  },
+  "c105": {
+   "id": "c105",
+   "name": "Playing bagpipes",
+   "phrase": "p14",
+   "activity": "AC"
+  },
+  "c106": {
+   "id": "c106",
+   "name": "Playing beach volleyball",
+   "phrase": "p08",
+   "activity": "AC"
+  },
+  "c107": {
+   "id": "c107",
+   "name": "Playing blackjack",
+   "phrase": "p26",
+   "activity": "AC"
+  },
+  "c108": {
+   "id": "c108",
+   "name": "Playing congas",
+   "phrase": "p14",
+   "activity": "AC"
+  },
+  "c109": {
+   "id": "c109",
+   "name": "Playing drums",
+   "phrase": "p14",
+   "activity": "AC"
+  },
+  "c110": {
+   "id": "c110",
+   "name": "Playing field hockey",
+   "phrase": "p08",
+   "activity": "AC"
+  },
+  "c111": {
+   "id": "c111",
+   "name": "Playing flauta",
+   "phrase": "p14",
+   "activity": "AC"
+  },
+  "c112": {
+   "id": "c112",
+   "name": "Playing guitarra",
+   "phrase": "p14",
+   "activity": "AC"
+  },
+  "c113": {
+   "id": "c113",
+   "name": "Playing harmonica",
+   "phrase": "p14",
+   "activity": "AC"
+  },
+  "c114": {
+   "id": "c114",
+   "name": "Playing ice hockey",
+   "phrase": "p02",
+   "activity": "AC"
+  },
+  "c115": {
+   "id": "c115",
+   "name": "Playing kickball",
+   "phrase": "p08",
+   "activity": "AC"
+  },
+  "c116": {
+   "id": "c116",
+   "name": "Playing lacrosse",
+   "phrase": "p08",
+   "activity": "AC"
+  },
+  "c117": {
+   "id": "c117",
+   "name": "Playing piano",
+   "phrase": "p14",
+   "activity": "AC"
+  },
+  "c118": {
+   "id": "c118",
+   "name": "Playing polo",
+   "phrase": "p04",
+   "activity": "AC"
+  },
+  "c119": {
+   "id": "c119",
+   "name": "Playing pool",
+   "phrase": "p10",
+   "activity": "AC"
+  },
+  "c120": {
+   "id": "c120",
+   "name": "Playing racquetball",
+   "phrase": "p09",
+   "activity": "AC"
+  },
+  "c121": {
+   "id": "c121",
+   "name": "Playing rubik cube",
+   "phrase": "p26",
+   "activity": "AC"
+  },
+  "c122": {
+   "id": "c122",
+   "name": "Playing saxophone",
+   "phrase": "p14",
+   "activity": "AC"
+  },
+  "c123": {
+   "id": "c123",
+   "name": "Playing squash",
+   "phrase": "p09",
+   "activity": "AC"
+  },
+  "c124": {
+   "id": "c124",
+   "name": "Playing ten pins",
+   "phrase": "p10",
+   "activity": "AC"
+  },
+  "c125": {
+   "id": "c125",
+   "name": "Playing violin",
+   "phrase": "p14",
+   "activity": "AC"
+  },
+  "c126": {
+   "id": "c126",
+   "name": "Playing water polo",
+   "phrase": "p01",
+   "activity": "AC"
+  },
+  "c127": {
+   "id": "c127",
+   "name": "Pole vault",
+   "phrase": "p05",
+   "activity": "AC"
+  },
+  "c128": {
+   "id": "c128",
+   "name": "Polishing forniture",
+   "phrase": "p19",
+   "activity": "AC"
+  },
+  "c129": {
+   "id": "c129",
+   "name": "Polishing shoes",
+   "phrase": "p19",
+   "activity": "AC"
+  },
+  "c130": {
+   "id": "c130",
+   "name": "Powerbocking",
+   "phrase": "p03",
+   "activity": "AC"
+  },
+  "c131": {
+   "id": "c131",
+   "name": "Preparing pasta",
+   "phrase": "p17",
+   "activity": "AC"
+  },
+  "c132": {
+   "id": "c132",
+   "name": "Preparing salad",
+   "phrase": "p17",
+   "activity": "AC"
+  },
+  "c133": {
+   "id": "c133",
+   "name": "Putting in contact lenses",
+   "phrase": "p16",
+   "activity": "AC"
+  },
+  "c134": {
+   "id": "c134",
+   "name": "Putting on makeup",
+   "phrase": "p16",
+   "activity": "AC"
+  },
+  "c135": {
+   "id": "c135",
+   "name": "Putting on shoes",
+   "phrase": "p16",
+   "activity": "AC"
+  },
+  "c136": {
+   "id": "c136",
+   "name": "Rafting",
+   "phrase": "p00",
+   "activity": "AC"
+  },
+  "c137": {
+   "id": "c137",
+   "name": "Raking leaves",
+   "phrase": "p23",
+   "activity": "AC"
+  },
+  "c138": {
+   "id": "c138",
+   "name": "Removing curlers",
+   "phrase": "p15",
+   "activity": "AC"
+  },
+  "c139": {
+   "id": "c139",
+   "name": "Removing ice from car",
+   "phrase": "p24",
+   "activity": "AC"
+  },
+  "c140": {
+   "id": "c140",
+   "name": "Riding bumper cars",
+   "phrase": "p03",
+   "activity": "AC"
+  },
+  "c141": {
+   "id": "c141",
+   "name": "River tubing",
+   "phrase": "p00",
+   "activity": "AC"
+  },
+  "c142": {
+   "id": "c142",
+   "name": "Rock climbing",
+   "phrase": "p07",
+   "activity": "AC"
+  },
+  "c143": {
+   "id": "c143",
+   "name": "Rock-paper-scissors",
+   "phrase": "p26",
+   "activity": "AC"
+  },
+  "c144": {
+   "id": "c144",
+   "name": "Rollerblading",
+   "phrase": "p03",
+   "activity": "AC"
+  },
+  "c145": {
+   "id": "c145",
+   "name": "Roof shingle removal",
+   "phrase": "p21",
+   "activity": "AC"
+  },
+  "c146": {
+   "id": "c146",
+   "name": "Rope skipping",
+   "phrase": "p12",
+   "activity": "AC"
+  },
+  "c147": {
+   "id": "c147",
+   "name": "Running a marathon",
+   "phrase": "p05",
+   "activity": "AC"
+  },
+  "c148": {
+   "id": "c148",
+   "name": "Sailing",
+   "phrase": "p00",
+   "activity": "AC"
+  },
+  "c149": {
+   "id": "c149",
+   "name": "Scuba diving",
+   "phrase": "p01",
+   "activity": "AC"
+  },
+  "c150": {
+   "id": "c150",
+   "name": "Sharpening knives",
+   "phrase": "p22",
+   "activity": "AC"
+  },
+  "c151": {
+   "id": "c151",
+   "name": "Shaving",
+   "phrase": "p15",
+   "activity": "AC"
+  },
+  "c152": {
+   "id": "c152",
+   "name": "Shaving legs",
+   "phrase": "p16",
+   "activity": "AC"
+  },
+  "c153": {
+   "id": "c153",
+   "name": "Shot put",
+   "phrase": "p05",
+   "activity": "AC"
+  },
+  "c154": {
+   "id": "c154",
+   "name": "Shoveling snow",
+   "phrase": "p23",
+   "activity": "AC"
+  },
+  "c155": {
+   "id": "c155",
+   "name": "Shuffleboard",
+   "phrase": "p10",
+   "activity": "AC"
+  },
+  "c156": {
+   "id": "c156",
+   "name": "Skateboarding",
+   "phrase": "p03",
+   "activity": "AC"
+  },
+  "c157": {
+   "id": "c157",
+   "name": "Skiing",
+   "phrase": "p02",
+   "activity": "AC"
+  },
+  "c158": {
+   "id": "c158",
+   "name": "Slacklining",
+   "phrase": "p07",
+   "activity": "AC"
+  },
+  "c159": {
+   "id": "c159",
+   "name": "Smoking a cigarette",
+   "phrase": "p18",
+   "activity": "AC"
+  },
+  "c160": {
+   "id": "c160",
+   "name": "Smoking hookah",
+   "phrase": "p18",
+   "activity": "AC"
+  },
+  "c161": {
+   "id": "c161",
+   "name": "Snatch",
+   "phrase": "p12",
+   "activity": "AC"
+  },
+  "c162": {
+   "id": "c162",
+   "name": "Snow tubing",
+   "phrase": "p02",
+   "activity": "AC"
+  },
+  "c163": {
+   "id": "c163",
+   "name": "Snowboarding",
+   "phrase": "p02",
+   "activity": "AC"
+  },
+  "c164": {
+   "id": "c164",
+   "name": "Spinning",
+   "phrase": "p12",
+   "activity": "AC"
+  },
+  "c165": {
+   "id": "c165",
+   "name": "Spread mulch",
+   "phrase": "p23",
+   "activity": "AC"
+  },
+  "c166": {
+   "id": "c166",
+   "name": "Springboard diving",
+   "phrase": "p01",
+   "activity": "AC"
+  },
+  "c167": {
+   "id": "c167",
+   "name": "Starting a campfire",
+   "phrase": "p23",
+   "activity": "AC"
+  },
+  "c168": {
+   "id": "c168",
+   "name": "Sumo",
+   "phrase": "p11",
+   "activity": "AC"
+  },
+  "c169": {
+   "id": "c169",
+   "name": "Surfing",
+   "phrase": "p00",
+   "activity": "AC"
+  },
+  "c170": {
+   "id": "c170",
+   "name": "Swimming",
+   "phrase": "p01",
+   "activity": "AC"
+  },
+  "c171": {
+   "id": "c171",
+   "name": "Swinging at the playground",
+   "phrase": "p07",
+   "activity": "AC"
+  },
+  "c172": {
+   "id": "c172",
+   "name": "Table soccer",
+   "phrase": "p10",
+   "activity": "AC"
+  },
+  "c173": {
+   "id": "c173",
+   "name": "Tai chi",
+   "phrase": "p11",
+   "activity": "AC"
+  },
+  "c174": {
+   "id": "c174",
+   "name": "Tango",
+   "phrase": "p13",
+   "activity": "AC"
+  },
+  "c175": {
+   "id": "c175",
+   "name": "Tennis serve with ball bouncing",
+   "phrase": "p09",
+   "activity": "AC"
+  },
+  "c176": {
+   "id": "c176",
+   "name": "Throwing darts",
+   "phrase": "p10",
+   "activity": "AC"
+  },
+  "c177": {
+   "id": "c177",
+   "name": "Trimming branches or hedges",
+   "phrase": "p23",
+   "activity": "AC"
+  },
+  "c178": {
+   "id": "c178",
+   "name": "Triple jump",
+   "phrase": "p05",
+   "activity": "AC"
+  },
+  "c179": {
+   "id": "c179",
+   "name": "Tug of war",
+   "phrase": "p11",
+   "activity": "AC"
+  },
+  "c180": {
+   "id": "c180",
+   "name": "Tumbling",
+   "phrase": "p06",
+   "activity": "AC"
+  },
+  "c181": {
+   "id": "c181",
+   "name": "Using parallel bars",
+   "phrase": "p06",
+   "activity": "AC"
+  },
+  "c182": {
+   "id": "c182",
+   "name": "Using the balance beam",
+   "phrase": "p06",
+   "activity": "AC"
+  },
+  "c183": {
+   "id": "c183",
+   "name": "Using the monkey bar",
+   "phrase": "p07",
+   "activity": "AC"
+  },
+  "c184": {
+   "id": "c184",
+   "name": "Using the pommel horse",
+   "phrase": "p06",
+   "activity": "AC"
+  },
+  "c185": {
+   "id": "c185",
+   "name": "Using the rowing machine",
+   "phrase": "p12",
+   "activity": "AC"
+  },
+  "c186": {
+   "id": "c186",
+   "name": "Using uneven bars",
+   "phrase": "p06",
+   "activity": "AC"
+  },
+  "c187": {
+   "id": "c187",
+   "name": "Vacuuming floor",
+   "phrase": "p19",
+   "activity": "AC"
+  },
+  "c188": {
+   "id": "c188",
+   "name": "Volleyball",
+   "phrase": "p08",
+   "activity": "AC"
+  },
+  "c189": {
+   "id": "c189",
+   "name": "Wakeboarding",
+   "phrase": "p00",
+   "activity": "AC"
+  },
+  "c190": {
+   "id": "c190",
+   "name": "Walking the dog",
+   "phrase": "p25",
+   "activity": "AC"
+  },
+  "c191": {
+   "id": "c191",
+   "name": "Washing dishes",
+   "phrase": "p19",
+   "activity": "AC"
+  },
+  "c192": {
+   "id": "c192",
+   "name": "Washing face",
+   "phrase": "p16",
+   "activity": "AC"
+  },
+  "c193": {
+   "id": "c193",
+   "name": "Washing hands",
+   "phrase": "p16",
+   "activity": "AC"
+  },
+  "c194": {
+   "id": "c194",
+   "name": "Waterskiing",
+   "phrase": "p00",
+   "activity": "AC"
+  },
+  "c195": {
+   "id": "c195",
+   "name": "Waxing skis",
+   "phrase": "p22",
+   "activity": "AC"
+  },
+  "c196": {
+   "id": "c196",
+   "name": "Welding",
+   "phrase": "p22",
+   "activity": "AC"
+  },
+  "c197": {
+   "id": "c197",
+   "name": "Windsurfing",
+   "phrase": "p00",
+   "activity": "AC"
+  },
+  "c198": {
+   "id": "c198",
+   "name": "Wrapping presents",
+   "phrase": "p20",
+   "activity": "AC"
+  },
+  "c199": {
+   "id": "c199",
+   "name": "Zumba",
+   "phrase": "p13",
+   "activity": "AC"
+  }
+ }
+}

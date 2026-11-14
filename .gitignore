@@ -1,9 +1,10 @@
 ckpt/
-__pycache__/
-
-backup/
 output/
 wandb/
+logs/
 log.txt
-**/taxonomy/
-unzip_videos.py
+__pycache__/
+*.pyc
+cache_text_emb/
+/data/
+tifad_thumos_anet/data/phase_pseudo/

@@ -1,0 +1,255 @@
+{
+ "dataset": "finediving_sub",
+ "activities": {
+  "a0": {
+   "id": "a0",
+   "name": "takeoff",
+   "short": "TKO"
+  },
+  "a1": {
+   "id": "a1",
+   "name": "somersault pike",
+   "short": "SOMP"
+  },
+  "a2": {
+   "id": "a2",
+   "name": "somersault tuck",
+   "short": "SOMT"
+  },
+  "a3": {
+   "id": "a3",
+   "name": "twist",
+   "short": "TWST"
+  },
+  "a4": {
+   "id": "a4",
+   "name": "entry",
+   "short": "ENT"
+  }
+ },
+ "phrases": {
+  "p00": {
+   "id": "p00",
+   "name": "takeoff",
+   "activity": "a0"
+  },
+  "p01": {
+   "id": "p01",
+   "name": "somersault_pike",
+   "activity": "a1"
+  },
+  "p02": {
+   "id": "p02",
+   "name": "somersault_tuck",
+   "activity": "a2"
+  },
+  "p03": {
+   "id": "p03",
+   "name": "twist",
+   "activity": "a3"
+  },
+  "p04": {
+   "id": "p04",
+   "name": "entry",
+   "activity": "a4"
+  }
+ },
+ "actions": {
+  "c00": {
+   "id": "c00",
+   "name": "forward takeoff",
+   "raw_id": "c00",
+   "phrase": "p00",
+   "activity": "TKO"
+  },
+  "c01": {
+   "id": "c01",
+   "name": "back takeoff",
+   "raw_id": "c01",
+   "phrase": "p00",
+   "activity": "TKO"
+  },
+  "c02": {
+   "id": "c02",
+   "name": "reverse takeoff",
+   "raw_id": "c02",
+   "phrase": "p00",
+   "activity": "TKO"
+  },
+  "c03": {
+   "id": "c03",
+   "name": "inward takeoff",
+   "raw_id": "c03",
+   "phrase": "p00",
+   "activity": "TKO"
+  },
+  "c04": {
+   "id": "c04",
+   "name": "armstand forward takeoff",
+   "raw_id": "c04",
+   "phrase": "p00",
+   "activity": "TKO"
+  },
+  "c05": {
+   "id": "c05",
+   "name": "armstand back takeoff",
+   "raw_id": "c05",
+   "phrase": "p00",
+   "activity": "TKO"
+  },
+  "c06": {
+   "id": "c06",
+   "name": "armstand reverse takeoff",
+   "raw_id": "c06",
+   "phrase": "p00",
+   "activity": "TKO"
+  },
+  "c07": {
+   "id": "c07",
+   "name": "1 somersault pike",
+   "raw_id": "c07",
+   "phrase": "p01",
+   "activity": "SOMP"
+  },
+  "c08": {
+   "id": "c08",
+   "name": "1.5 somersaults pike",
+   "raw_id": "c08",
+   "phrase": "p01",
+   "activity": "SOMP"
+  },
+  "c09": {
+   "id": "c09",
+   "name": "2 somersaults pike",
+   "raw_id": "c09",
+   "phrase": "p01",
+   "activity": "SOMP"
+  },
+  "c10": {
+   "id": "c10",
+   "name": "2.5 somersaults pike",
+   "raw_id": "c10",
+   "phrase": "p01",
+   "activity": "SOMP"
+  },
+  "c11": {
+   "id": "c11",
+   "name": "3 somersaults pike",
+   "raw_id": "c11",
+   "phrase": "p01",
+   "activity": "SOMP"
+  },
+  "c12": {
+   "id": "c12",
+   "name": "3.5 somersaults pike",
+   "raw_id": "c12",
+   "phrase": "p01",
+   "activity": "SOMP"
+  },
+  "c13": {
+   "id": "c13",
+   "name": "4.5 somersaults pike",
+   "raw_id": "c13",
+   "phrase": "p01",
+   "activity": "SOMP"
+  },
+  "c14": {
+   "id": "c14",
+   "name": "1.5 somersaults tuck",
+   "raw_id": "c14",
+   "phrase": "p02",
+   "activity": "SOMT"
+  },
+  "c15": {
+   "id": "c15",
+   "name": "2.5 somersaults tuck",
+   "raw_id": "c16",
+   "phrase": "p02",
+   "activity": "SOMT"
+  },
+  "c16": {
+   "id": "c16",
+   "name": "3 somersaults tuck",
+   "raw_id": "c17",
+   "phrase": "p02",
+   "activity": "SOMT"
+  },
+  "c17": {
+   "id": "c17",
+   "name": "3.5 somersaults tuck",
+   "raw_id": "c18",
+   "phrase": "p02",
+   "activity": "SOMT"
+  },
+  "c18": {
+   "id": "c18",
+   "name": "4.5 somersaults tuck",
+   "raw_id": "c19",
+   "phrase": "p02",
+   "activity": "SOMT"
+  },
+  "c19": {
+   "id": "c19",
+   "name": "0.5 twist",
+   "raw_id": "c20",
+   "phrase": "p03",
+   "activity": "TWST"
+  },
+  "c20": {
+   "id": "c20",
+   "name": "1 twist",
+   "raw_id": "c21",
+   "phrase": "p03",
+   "activity": "TWST"
+  },
+  "c21": {
+   "id": "c21",
+   "name": "1.5 twists",
+   "raw_id": "c22",
+   "phrase": "p03",
+   "activity": "TWST"
+  },
+  "c22": {
+   "id": "c22",
+   "name": "2 twists",
+   "raw_id": "c23",
+   "phrase": "p03",
+   "activity": "TWST"
+  },
+  "c23": {
+   "id": "c23",
+   "name": "2.5 twists",
+   "raw_id": "c24",
+   "phrase": "p03",
+   "activity": "TWST"
+  },
+  "c24": {
+   "id": "c24",
+   "name": "3 twists",
+   "raw_id": "c25",
+   "phrase": "p03",
+   "activity": "TWST"
+  },
+  "c25": {
+   "id": "c25",
+   "name": "3.5 twists",
+   "raw_id": "c26",
+   "phrase": "p03",
+   "activity": "TWST"
+  },
+  "c26": {
+   "id": "c26",
+   "name": "entry into the water",
+   "raw_id": "c27",
+   "phrase": "p04",
+   "activity": "ENT"
+  },
+  "c27": {
+   "id": "c27",
+   "name": "0.5 somersault pike",
+   "raw_id": "c28",
+   "phrase": "p04",
+   "activity": "ENT"
+  }
+ }
+}

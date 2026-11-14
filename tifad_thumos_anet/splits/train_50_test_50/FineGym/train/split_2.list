@@ -1,0 +1,50 @@
+Glabel:   1; (VT) round-off, flic-flac with 0.5 turn on, stretched salto forward with 0.5 turn off
+Glabel:  19; (VT) round-off, flic-flac on, stretched salto backward with 2 turn off
+Glabel:  20; (VT) round-off, flic-flac on, stretched salto backward with 1 turn off
+Glabel:  21; (VT) round-off, flic-flac on, stretched salto backward with 1.5 turn off
+Glabel:  24; (VT) round-off, flic-flac on, stretched salto backward off
+Glabel:  67; (FX) switch leap with 0.5 turn
+Glabel:  74; (FX) switch leap (leap forward with leg change to cross split)
+Glabel:  77; (FX) split jump with 1 turn
+Glabel:  81; (FX) split jump (leg separation 180 degree parallel to the floor)
+Glabel:  83; (FX) johnson with additional 0.5 turn
+Glabel:  88; (FX) straddle pike or side split jump with 1 turn
+Glabel: 104; (FX) stag jump
+Glabel: 137; (FX) 2 turn in tuck stand on one leg, free leg straight throughout turn
+Glabel: 146; (FX) 3 turn on one leg, free leg optional below horizontal
+Glabel: 148; (FX) 1 turn on one leg, free leg optional below horizontal
+Glabel: 150; (FX) 1 turn with heel of free leg forward at horizontal throughout turn
+Glabel: 156; (FX) arabian double salto tucked
+Glabel: 163; (FX) salto forward tucked
+Glabel: 169; (FX) aerial walkover forward
+Glabel: 171; (FX) salto forward stretched with 2 twist
+Glabel: 172; (FX) salto forward stretched with 1 twist
+Glabel: 174; (FX) salto forward stretched with 1.5 twist
+Glabel: 177; (FX) salto forward stretched, feet land together
+Glabel: 182; (FX) salto backward stretched with 3 twist
+Glabel: 188; (FX) salto backward stretched with 1.5 twist
+Glabel: 191; (FX) double salto backward tucked with 2 twist
+Glabel: 219; (BB) straddle pike jump or side split jump
+Glabel: 230; (BB) split leap forward
+Glabel: 268; (BB) 1 turn with heel of free leg forward at horizontal throughout turn
+Glabel: 270; (BB) 2 turn on one leg, free leg optional below horizontal
+Glabel: 272; (BB) 1 turn on one leg, free leg optional below horizontal
+Glabel: 279; (BB) 2 turn in tuck stand on one leg, free leg optional
+Glabel: 297; (BB) salto backward stretched with legs together
+Glabel: 300; (BB) salto sideward tucked, take off from one leg to side stand
+Glabel: 306; (BB) free aerial cartwheel landing in cross position
+Glabel: 331; (BB) jump backward, flic-flac take-off with 0.5 twist through handstand to walkover forward, also with support on one arm
+Glabel: 370; (BB) salto backward stretched with 2.5 twist
+Glabel: 398; (UB) pike sole circle backward with 1 turn to handstand
+Glabel: 400; (UB) pike sole circle backward to handstand
+Glabel: 411; (UB) giant circle backward with 1 turn to handstand
+Glabel: 413; (UB) giant circle backward with 0.5 turn to handstand
+Glabel: 425; (UB) clear hip circle backward to handstand
+Glabel: 433; (UB) clear pike circle backward to handstand
+Glabel: 443; (UB) stalder backward to handstand
+Glabel: 456; (UB) counter piked over high bar to hang
+Glabel: 462; (UB) (swing backward or front support) salto forward straddled to hang on high bar
+Glabel: 466; (UB) (swing forward or hip circle backward) salto backward with 0.5 turn piked to hang on high bar
+Glabel: 471; (UB) transition flight from high bar to low bar
+Glabel: 481; (UB) (swing forward) double salto backward tucked with 1 turn
+Glabel: 516; (UB) (swing forward) double salto backward stretched

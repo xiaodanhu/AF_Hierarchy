@@ -1,0 +1,82 @@
+{
+  "BaseballPitch": {
+    "phases": "In the start phase, the person would hold the baseball and position themselves on the pitcher's mound. In the middle phase, the person would wind up, bringing their arm back for the pitch. In the end phase, the person would release the ball towards home plate.",
+    "glob": "The person would throw a baseball towards home plate from the pitcher's mound, using a combination of arm strength and technique to deliver the ball accurately and with sufficient speed for the batter to hit it."
+  },
+  "BasketballDunk": {
+    "phases": "In the start phase, the person would run towards the basket. In the middle phase, the person would jump and leap towards the hoop. In the end phase, the person would slam the ball through the hoop.",
+    "glob": "The person would jump high into the air and use their arms to propel themselves upwards, then extend their body towards the basketball hoop, grab the ball with one or both hands, and forcefully slam it through the net."
+  },
+  "Billiards": {
+    "phases": "In the start phase, the person would position themselves and the billiard cue stick near the cue ball. In the middle phase, the person would strike the cue ball with the cue stick, aiming for the desired target ball. In the end phase, the person would observe the outcome of the shot, adjusting their stance or strategy as needed.",
+    "glob": "The person would position themselves at the table, take aim at the cue ball, strike it with the cue stick, and then follow through to control the direction of the cue ball and the subsequent movement of the other balls on the table."
+  },
+  "CleanAndJerk": {
+    "phases": "In the start phase, the person would grip the barbell and lift it off the ground. In the middle phase, the person would drive the barbell upwards using their legs and hips while keeping their back straight. In the end phase, the person would catch the barbell overhead with fully extended arms and locked elbows.",
+    "glob": "The person would begin by lifting the barbell from the floor using an overhand grip and a wide stance, then drive it up to their chest while keeping their back straight and core engaged. Next, they would explosively press the barbell overhead, extending their arms fully and locking out their elbows. Finally, they would lower the barbell back down to the starting position, repeating the movement for the desired number of repetitions."
+  },
+  "CliffDiving": {
+    "phases": "In the start phase, the person would position themselves at the edge of the cliff, preparing for the dive. In the middle phase, the person would leap off the cliff, performing a series of flips and twists in mid-air. In the end phase, the person would enter the water with a splash, completing the dive.",
+    "glob": "The person would jump from a high cliff into the water below, often with a significant drop, demonstrating a combination of courage and skill."
+  },
+  "CricketBowling": {
+    "phases": "In the start phase, the person would hold the cricket ball and position themselves in the bowling crease. In the middle phase, the person would run up towards the pitch, swinging the arm back to build momentum for the delivery. In the end phase, the person would release the ball towards the batsman, aiming for the wicket.",
+    "glob": "The person would stand on one leg and swing their arm back, then bring it forward quickly to throw the ball towards the batsman."
+  },
+  "CricketShot": {
+    "phases": "In the start phase, the person would hold the bat and position themselves at the crease. In the middle phase, the person would swing the bat to hit the ball. In the end phase, the person would follow through with the swing and complete the shot.",
+    "glob": "The person would hold the cricket bat with both hands, position themselves in a ready stance, and swing the bat to hit the ball."
+  },
+  "Diving": {
+    "phases": "In the start phase, the person would prepare and position themselves at the edge or surface of the water. In the middle phase, the person would jump or dive off the starting point, propelling themselves into the air. In the end phase, the person would enter the water, creating a splash upon impact.",
+    "glob": "The person would jump from a platform or springboard into the water, extending their body and limbs to create a streamlined shape for optimal entry, and then enter the water with minimal splash."
+  },
+  "FrisbeeCatch": {
+    "phases": "In the start phase, the person would throw the Frisbee towards themselves. In the middle phase, the person would extend their arms and position them to catch the Frisbee. In the end phase, the person would successfully catch the Frisbee with their hands.",
+    "glob": "The person would throw the Frisbee towards themselves and then extend their arms to catch it as it approaches."
+  },
+  "GolfSwing": {
+    "phases": "In the start phase, the person would take a stance and grip the club. In the middle phase, the person would swing the club back and rotate their body. In the end phase, the person would release the club and follow through with the swing.",
+    "glob": "The person would start by taking a stance with their feet shoulder-width apart and knees slightly bent, then they would swing the club back over their shoulder, keeping their body turned towards the target. As they swing forward, they would rotate their hips and shoulders, transferring weight from their back foot to their front foot, and follow through with the club to complete the swing."
+  },
+  "HammerThrow": {
+    "phases": "In the start phase, the person would hold the hammer and rotate their body to build momentum. In the middle phase, the person would swing the hammer back over their head, rotating their body further to increase speed. In the end phase, the person would release the hammer and follow through with their motion, completing the throw.",
+    "glob": "The person would begin by holding the hammer throw ball with both hands, then swing it back over their head and around their body, building momentum. After reaching maximum speed, they release the hammer throw ball at the optimal angle for distance."
+  },
+  "HighJump": {
+    "phases": "In the start phase, the person would begin by running up to the bar, gaining momentum. In the middle phase, the person would leap over the bar, clearing it with their body. In the end phase, the person would land safely on the mat below, completing the jump.",
+    "glob": "The person would run up to the bar, leap over it, and land on the mat."
+  },
+  "JavelinThrow": {
+    "phases": "In the start phase, the person would hold the javelin and prepare for the throw. In the middle phase, the person would run up to the throwing line and swing the javelin back. In the end phase, the person would release the javelin and follow through with their motion.",
+    "glob": "The person would begin by running up to the throwing area, then they would plant their right foot and swing their left arm back over their head, building momentum. Next, they would release the javelin from their left hand, following through with their arm as it extends forward, while their body continues to rotate. Finally, they would land on their right foot and complete the throw."
+  },
+  "LongJump": {
+    "phases": "In the start phase, the person would begin by running up to the takeoff point. In the middle phase, the person would jump off the ground and extend their body forward. In the end phase, the person would land on the sand pit or mat.",
+    "glob": "The person would run up to the takeoff board, jump over it, and land on their feet after clearing the bar."
+  },
+  "PoleVault": {
+    "phases": "In the start phase, the person would begin by running up to the pole vault pit, gaining momentum. In the middle phase, the person would plant the pole into the ground and use it to launch themselves upwards, clearing the bar. In the end phase, the person would land safely on the mat after clearing the bar.",
+    "glob": "The person would run up to the pole vault pit, plant their pole into the box at the end of the runway, and use the pole to launch themselves over the bar."
+  },
+  "Shotput": {
+    "phases": "In the start phase, the person would hold the shotput firmly and position themselves in a ready stance. In the middle phase, the person would swing their arm back and rotate their body to build momentum. In the end phase, the person would release the shotput with a powerful throw, following through with their motion.",
+    "glob": "The person would stand with feet shoulder-width apart, hold the shotput in both hands, and then swing their arms back, rotating their body to build momentum. After a few steps, they would release the shotput forward with a powerful throw, using the momentum from their body rotation to propel the shotput as far as possible."
+  },
+  "SoccerPenalty": {
+    "phases": "In the start phase, the person would position themselves at the penalty spot and take a few steps back to prepare for the kick. In the middle phase, the person would run towards the ball and strike it with their foot, aiming for the goal. In the end phase, the person would follow through with their kick and watch the ball's trajectory towards the goalpost.",
+    "glob": "The person would stand at the penalty spot, take a few steps back, and then kick the ball into the goal."
+  },
+  "TennisSwing": {
+    "phases": "In the start phase, the person would hold the racket and position themselves for the swing. In the middle phase, the person would initiate the swing, rotating their body and arm to generate power. In the end phase, the person would follow through with the swing, releasing the racket and completing the motion.",
+    "glob": "The person would start by holding the tennis racket with both hands, positioning it behind their head, and then swing forward with their body rotating to generate power. After making contact with the ball, they would follow through with the swing, ending with the racket pointing towards the target area."
+  },
+  "ThrowDiscus": {
+    "phases": "In the start phase, the person would hold the discus securely and position themselves for the throw. In the middle phase, the person would rotate their body and swing the discus back, building momentum. In the end phase, the person would release the discus with a powerful throw, following through with their motion.",
+    "glob": "The person would first hold the discus with both hands at shoulder height, then rotate their body to build momentum, and finally throw the discus forward with an explosive motion, using their entire body for power."
+  },
+  "VolleyballSpiking": {
+    "phases": "In the start phase, the person would position themselves and prepare for the spike. In the middle phase, the person would jump and make contact with the ball. In the end phase, the person would follow through with the spike, aiming to send the ball over the net.",
+    "glob": "The person would approach the net, jump, and strike the volleyball with their dominant hand, aiming for the opposing team's court."
+  }
+}

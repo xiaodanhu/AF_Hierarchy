@@ -1,0 +1,122 @@
+{
+  "BaseballPitch": {
+    "start": "The pitcher stands coiled on the mound gripping the ball with both hands, then begins a rotational wind-up, hips rotating forward as the throwing arm swings back.",
+    "middle": "The pitcher's front leg drives forward as the arm accelerates and fully extends, releasing the ball, which arcs through the air toward home plate.",
+    "end": "The pitcher completes the follow-through with torso angled downward, then lowers the arm and settles into a relaxed stance, eyes tracking the ball into the strike zone.",
+    "global": "In a baseball pitch, the pitcher winds up rotationally on the mound and hurls the ball toward home plate with a full-body follow-through."
+  },
+  "BasketballDunk": {
+    "start": "A player leaps from the court with arms extended toward the hoop, body fully airborne and knees tucked as the arms swing the ball toward the rim.",
+    "middle": "The airborne player grips the ball firmly with fingers spread and drives it downward, body descending with legs straightening as the ball reaches the rim's edge.",
+    "end": "The player's hand pushes the ball through the hoop into the net, then the body descends toward the court with arms still extended overhead.",
+    "global": "A basketball dunk shows a player leaping high above the court and slamming the ball down through the hoop while fully airborne."
+  },
+  "Billiards": {
+    "start": "A player leans over the green felt table in a bent posture, steadying the cue stick with both hands and aiming its tip just above the white ball.",
+    "middle": "The cue tip strikes the ball with a smooth forward stroke, sending the white ball rolling straight across the table while the player holds the bent stance.",
+    "end": "The ball drops into the pocket as the player straightens up, lowering the cue stick and relaxing the hands while eyeing the next ball.",
+    "global": "A billiards player bends over the felt table and strokes a cue stick, sending the white ball rolling across the surface into a pocket."
+  },
+  "CleanAndJerk": {
+    "start": "The athlete stands over the barbell, dips at the hips and knees with a straight back, and lifts the bar from the ground by extending the legs.",
+    "middle": "The athlete pulls the barbell vertically to chest level with bending elbows, then extends the arms as the bar settles at the chest in an upright stance.",
+    "end": "The athlete drives the barbell overhead with arms fully extended, dips slightly and re-extends, then holds the bar locked out overhead with feet firmly planted.",
+    "global": "In a clean and jerk, a weightlifter hoists a barbell from the ground to the chest and then drives it overhead to a locked, stable hold."
+  },
+  "CliffDiving": {
+    "start": "A diver stands at the edge of a steep cliff above churning water, then leaps outward and tucks the knees to the chest while rotating in midair.",
+    "middle": "The diver extends the legs into a streamlined vertical line and plunges into the water with a sharp splash, the body submerging beneath swirling foam.",
+    "end": "The diver resurfaces head first, straightens into a horizontal float, and glides calmly toward shore as ripples spread across the water.",
+    "global": "Cliff diving shows a diver leaping from a high rock face, rotating in midair, and plunging vertically into natural open water below."
+  },
+  "CricketBowling": {
+    "start": "The bowler stands in a ready stance holding the ball, shifts weight forward, and rotates the arm backward to draw the ball behind the body.",
+    "middle": "The bowler's front leg extends as the arm swings forward in a powerful high arc, releasing the ball while the body leans into the follow-through.",
+    "end": "The ball arcs through the air toward the batsman while the bowler finishes in a high follow-through and settles into a balanced stance with arms relaxed.",
+    "global": "In cricket bowling, the bowler charges forward and whips a straight arm overhead to hurl the ball down the pitch toward the batsman."
+  },
+  "CricketShot": {
+    "start": "The batsman stands on the grass pitch beside the wicket, knees bent and eyes on the ball, drawing the bat back in a wide two-handed arc.",
+    "middle": "From a full backswing the bat sweeps forward and strikes the ball with a blur of motion, arms extending as the body rotates through the shot.",
+    "end": "The bat slows through the follow-through toward the ground, the batsman's body fully rotated with arms trailing as the struck ball flies away.",
+    "global": "A cricket shot shows a batsman on a grass pitch swinging the bat with both hands to strike the incoming ball away from the wicket."
+  },
+  "Diving": {
+    "start": "A diver stands poised at the edge of the pool, leaps from the board, and tucks into a streamlined position with knees bent and head lowered.",
+    "middle": "The diver rotates in midair, straightens the legs, and aligns the arms and head with the spine, holding a straight line just above the water surface.",
+    "end": "The diver breaks the surface with a smooth splash, arms flaring slightly as the body sinks vertically, leaving a small circular ripple on the water.",
+    "global": "In diving, an athlete springs from a board at a swimming pool, rotates through a tucked midair position, and enters the water in a streamlined vertical line."
+  },
+  "FrisbeeCatch": {
+    "start": "A frisbee glides through the air toward the catcher, who extends both arms upward with fingers splayed and tilts the body to meet the curving disc.",
+    "middle": "The catcher's torso rotates to align with the disc's flight as the extended fingers close around the glinting rim, gripping it firmly in midair.",
+    "end": "The catcher pulls the disc inward toward the chest, bends the knees while descending, and lands softly with the frisbee held securely in the grip.",
+    "global": "A frisbee catch shows a leaping player extending both arms to snatch a flying disc from the air and landing with it gripped firmly."
+  },
+  "GolfSwing": {
+    "start": "The golfer stands over the ball on grass gripping the club with both hands and rotates into a slow backswing, raising the club head high overhead.",
+    "middle": "From the top of the backswing the golfer drives the club head down and through the ball, arms and torso rotating forward in one synchronized motion.",
+    "end": "The golfer's arms sweep into a full follow-through with the body rotated toward the target, holding the finish while the eyes track the ball's flight.",
+    "global": "A golf swing shows a golfer on a grass course coiling into a rotational backswing and whipping the club through the ball toward a distant target."
+  },
+  "HammerThrow": {
+    "start": "The athlete grips the hammer handle with both hands and swings it in wide circular arcs overhead, hips and shoulders rotating with the building momentum.",
+    "middle": "The athlete pivots on the feet through fast rotations, body twisting as the hammer sweeps in a low horizontal plane and rises toward peak height.",
+    "end": "The athlete releases the hammer with a sharp snap of both hands, and it soars in a long arc before landing downfield as the thrower watches.",
+    "global": "In the hammer throw, an athlete whirls a wired ball in accelerating circles with both hands and releases it to fly far across the field."
+  },
+  "HighJump": {
+    "start": "The athlete sprints along the track toward the raised horizontal bar and leaps upward, arms driving as the body begins to arch over it.",
+    "middle": "The athlete's body forms an inverted arch above the bar, hips rising and legs extending as the torso rotates to clear the crossbar.",
+    "end": "The athlete's legs swing down after clearing the bar and the body drops onto the cushioned mat, landing on the back and lying still.",
+    "global": "In the high jump, an athlete runs up to a horizontal bar and arches backward over it before landing safely on a padded mat."
+  },
+  "JavelinThrow": {
+    "start": "The athlete holds the javelin high while facing the runway, pivoting and drawing the throwing arm backward as the body leans into the approach.",
+    "middle": "The athlete's hips and shoulders twist sharply as the arm whips the javelin forward in a powerful overhead arc, releasing it with a snapping wrist.",
+    "end": "The javelin sails through the air trailing a slight blur while the athlete decelerates in follow-through, watching it descend into the distant field.",
+    "global": "In the javelin throw, an athlete strides forward and hurls a long spear overhead, sending it arcing far down the open field."
+  },
+  "LongJump": {
+    "start": "The athlete starts from a standing position and sprints down the runway, arms pumping and body leaning forward with rapidly increasing speed.",
+    "middle": "The athlete plants a foot on the takeoff board and launches into the air, legs extending then tucking as the body sails forward at peak height.",
+    "end": "The athlete rotates slightly and swings the legs forward, landing feet first in the sandpit with bending knees and flaring arms absorbing the impact.",
+    "global": "In the long jump, an athlete sprints down a runway, springs from the takeoff board, and flies horizontally through the air into a sandpit landing."
+  },
+  "PoleVault": {
+    "start": "The athlete sprints forward and plants the pole in the ground, gripping it tightly as it bends sharply under the driving force of the run.",
+    "middle": "The recoiling pole lifts the athlete vertically as the body arches and twists upward, legs kicking skyward until the vaulter reaches peak height with arms extended.",
+    "end": "The athlete twists and rotates during the descent, falling feet first toward the mat and landing in a tuck as the pole drops flat to the ground.",
+    "global": "In the pole vault, an athlete sprints down the runway with a long pole, plants it, and rides its recoil upward to clear a great height."
+  },
+  "Shotput": {
+    "start": "The athlete crouches in a bent posture with the shot tucked against the chest, coiling the body as the legs and hips shift to build rotation.",
+    "middle": "The athlete uncoils explosively, torso rotating as the arm punches forward and releases the shot, which arcs away while the free arm extends for balance.",
+    "end": "The athlete's arm follows through as the body completes its rotation, the free arm swinging across to stabilize a bent, balanced final stance.",
+    "global": "In the shot put, an athlete coils low in a bent posture and explosively rotates upward, pushing the heavy metal ball outward into a soaring arc."
+  },
+  "SoccerPenalty": {
+    "start": "The player stands over the ball at the penalty spot with knees slightly bent, then swings the kicking leg back while the eyes stay fixed on the ball.",
+    "middle": "The player's foot drives forward and strikes the ball with the instep, compressing it visibly as the leg follows through and the body leans into the kick.",
+    "end": "The player finishes upright watching the ball arc and curve toward the goal, where it crosses the line and ripples the flapping net.",
+    "global": "A soccer penalty shows a lone player striding up to the penalty spot and driving the ball with one powerful kick into the goal net."
+  },
+  "TennisSwing": {
+    "start": "The player holds the racket behind the body, then extends the arm forward so the racket head begins accelerating through the air toward the incoming ball.",
+    "middle": "The player's wrist snaps to square the racket face, which meets the ball in a blur of contact as it compresses against the strings.",
+    "end": "The racket sweeps diagonally across the body toward the opposite shoulder as the player rotates fully, finishing balanced with the arm relaxed after impact.",
+    "global": "A tennis swing shows a player on the court whipping the racket through a full arc to strike the ball cleanly off the strings."
+  },
+  "ThrowDiscus": {
+    "start": "The athlete stands coiled with the discus in one hand, then pivots into a controlled turn, arm drawn back with the discus held close to the body.",
+    "middle": "The athlete drives through the rotation with knees bent, swinging the discus in a wide horizontal arc until the arm reaches maximum extension at shoulder height.",
+    "end": "The discus snaps free from the hand and sails in a flat horizontal arc while the athlete holds the follow-through, eyes tracking its long flight.",
+    "global": "In the discus throw, an athlete spins across the circle and slings the flat disc from an outstretched arm into a long horizontal flight."
+  },
+  "VolleyballSpiking": {
+    "start": "The player leaps from the court with arms extended toward the ball hovering above the net, body rising as the striking arm swings up to load.",
+    "middle": "The player's elbow bends sharply and the forearm accelerates, the open hand smashing the ball with a sharp downward strike above the net.",
+    "end": "The player's arm follows through with wrist locked as the ball rockets downward, and the player lands softly on both feet with knees bent.",
+    "global": "Volleyball spiking shows a player leaping high at the net and smashing the ball down into the opposing court with one explosive arm swing."
+  }
+}

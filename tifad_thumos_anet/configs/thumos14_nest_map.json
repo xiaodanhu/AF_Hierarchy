@@ -1,0 +1,42 @@
+{
+ "parent_sentences": [
+  "a video of aquatic dive actions",
+  "a video of ball throw actions",
+  "a video of court jump strike actions",
+  "a video of field throw actions",
+  "a video of implement strike actions",
+  "a video of jump field actions",
+  "a video of other actions"
+ ],
+ "parent_names": [
+  "aquatic_dive",
+  "ball_throw",
+  "court_jump_strike",
+  "field_throw",
+  "implement_strike",
+  "jump_field",
+  "other"
+ ],
+ "child_parent": {
+  "BaseballPitch": 1,
+  "BasketballDunk": 2,
+  "Billiards": 4,
+  "CleanAndJerk": 6,
+  "CliffDiving": 0,
+  "CricketBowling": 1,
+  "CricketShot": 4,
+  "Diving": 0,
+  "FrisbeeCatch": 6,
+  "GolfSwing": 4,
+  "HammerThrow": 3,
+  "HighJump": 5,
+  "JavelinThrow": 3,
+  "LongJump": 5,
+  "PoleVault": 5,
+  "Shotput": 3,
+  "SoccerPenalty": 6,
+  "TennisSwing": 4,
+  "ThrowDiscus": 3,
+  "VolleyballSpiking": 2
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "dataset": "finediving",
+ "phrases": {
+  "p00": {
+   "id": "p00",
+   "name": "takeoff"
+  },
+  "p01": {
+   "id": "p01",
+   "name": "somersault_pike"
+  },
+  "p02": {
+   "id": "p02",
+   "name": "somersault_tuck"
+  },
+  "p03": {
+   "id": "p03",
+   "name": "twist"
+  },
+  "p04": {
+   "id": "p04",
+   "name": "entry"
+  }
+ },
+ "actions": {
+  "c00": {
+   "id": "c00",
+   "name": "Forward",
+   "phrase": "p00"
+  },
+  "c01": {
+   "id": "c01",
+   "name": "Back",
+   "phrase": "p00"
+  },
+  "c02": {
+   "id": "c02",
+   "name": "Reverse",
+   "phrase": "p00"
+  },
+  "c03": {
+   "id": "c03",
+   "name": "Inward",
+   "phrase": "p00"
+  },
+  "c04": {
+   "id": "c04",
+   "name": "Arm.Forward",
+   "phrase": "p00"
+  },
+  "c05": {
+   "id": "c05",
+   "name": "Arm.Back",
+   "phrase": "p00"
+  },
+  "c06": {
+   "id": "c06",
+   "name": "Arm.Reverse",
+   "phrase": "p00"
+  },
+  "c07": {
+   "id": "c07",
+   "name": "1 Som.Pike",
+   "phrase": "p01"
+  },
+  "c08": {
+   "id": "c08",
+   "name": "1.5 Soms.Pike",
+   "phrase": "p01"
+  },
+  "c09": {
+   "id": "c09",
+   "name": "2 Soms.Pike",
+   "phrase": "p01"
+  },
+  "c10": {
+   "id": "c10",
+   "name": "2.5 Soms.Pike",
+   "phrase": "p01"
+  },
+  "c11": {
+   "id": "c11",
+   "name": "3 Soms.Pike",
+   "phrase": "p01"
+  },
+  "c12": {
+   "id": "c12",
+   "name": "3.5 Soms.Pike",
+   "phrase": "p01"
+  },
+  "c13": {
+   "id": "c13",
+   "name": "4.5 Soms.Pike",
+   "phrase": "p01"
+  },
+  "c14": {
+   "id": "c14",
+   "name": "1.5 Soms.Tuck",
+   "phrase": "p02"
+  },
+  "c16": {
+   "id": "c16",
+   "name": "2.5 Soms.Tuck",
+   "phrase": "p02"
+  },
+  "c17": {
+   "id": "c17",
+   "name": "3 Soms.Tuck",
+   "phrase": "p02"
+  },
+  "c18": {
+   "id": "c18",
+   "name": "3.5 Soms.Tuck",
+   "phrase": "p02"
+  },
+  "c19": {
+   "id": "c19",
+   "name": "4.5 Soms.Tuck",
+   "phrase": "p02"
+  },
+  "c20": {
+   "id": "c20",
+   "name": "0.5 Twist",
+   "phrase": "p03"
+  },
+  "c21": {
+   "id": "c21",
+   "name": "1 Twist",
+   "phrase": "p03"
+  },
+  "c22": {
+   "id": "c22",
+   "name": "1.5 Twists",
+   "phrase": "p03"
+  },
+  "c23": {
+   "id": "c23",
+   "name": "2 Twists",
+   "phrase": "p03"
+  },
+  "c24": {
+   "id": "c24",
+   "name": "2.5 Twists",
+   "phrase": "p03"
+  },
+  "c25": {
+   "id": "c25",
+   "name": "3 Twists",
+   "phrase": "p03"
+  },
+  "c26": {
+   "id": "c26",
+   "name": "3.5 Twists",
+   "phrase": "p03"
+  },
+  "c27": {
+   "id": "c27",
+   "name": "Entry",
+   "phrase": "p04"
+  },
+  "c28": {
+   "id": "c28",
+   "name": "0.5 Som.Pike",
+   "phrase": "p04"
+  }
+ }
+}

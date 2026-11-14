@@ -1,0 +1,1693 @@
+{
+ "Applying sunscreen": [
+  "indoor_home",
+  "tool_utensil",
+  "whole_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Archery": [
+  "outdoor_field",
+  "stick_racket_club",
+  "upper_body",
+  "throw_strike",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Arm wrestling": [
+  "indoor_home",
+  "none",
+  "upper_body",
+  "pose_balance",
+  "pair"
+ ],
+ "Assembling bicycle": [
+  "indoor_home",
+  "vehicle_board_animal",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "object_held"
+ ],
+ "BMX": [
+  "outdoor_urban",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "airborne",
+  "object_held"
+ ],
+ "Baking cookies": [
+  "indoor_home",
+  "tool_utensil",
+  "whole_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Ballet": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "rotate_swing_flow",
+  "group",
+  "repetitive_cyclic",
+  "airborne"
+ ],
+ "Bathing dog": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "pair",
+  "repetitive_cyclic"
+ ],
+ "Baton twirling": [
+  "indoor_gym_stage",
+  "stick_racket_club",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "airborne",
+  "object_held"
+ ],
+ "Beach soccer": [
+  "outdoor_field",
+  "ball_projectile",
+  "lower_body",
+  "throw_strike",
+  "group"
+ ],
+ "Beer pong": [
+  "indoor_home",
+  "ball_projectile",
+  "upper_body",
+  "throw_strike",
+  "group",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Belly dance": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Blow-drying hair": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Blowing leaves": [
+  "outdoor_field",
+  "tool_utensil",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Braiding hair": [
+  "indoor_home",
+  "none",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Breakdancing": [
+  "outdoor_urban",
+  "none",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "airborne"
+ ],
+ "Brushing hair": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Brushing teeth": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Building sandcastles": [
+  "water",
+  "tool_utensil",
+  "whole_body",
+  "manipulate_fine",
+  "group",
+  "object_held"
+ ],
+ "Bullfighting": [
+  "outdoor_field",
+  "none",
+  "whole_body",
+  "throw_strike",
+  "pair"
+ ],
+ "Bungee jumping": [
+  "outdoor_urban",
+  "none",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "airborne"
+ ],
+ "Calf roping": [
+  "outdoor_field",
+  "tool_utensil",
+  "whole_body",
+  "throw_strike",
+  "pair",
+  "object_held"
+ ],
+ "Camel ride": [
+  "outdoor_field",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "group",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Canoeing": [
+  "water",
+  "vehicle_board_animal",
+  "upper_body",
+  "rotate_swing_flow",
+  "pair",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Capoeira": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "rotate_swing_flow",
+  "pair",
+  "repetitive_cyclic",
+  "airborne"
+ ],
+ "Carving jack-o-lanterns": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Changing car wheel": [
+  "outdoor_urban",
+  "tool_utensil",
+  "whole_body",
+  "manipulate_fine",
+  "solo",
+  "object_held"
+ ],
+ "Cheerleading": [
+  "indoor_gym_stage",
+  "instrument_toy",
+  "whole_body",
+  "rotate_swing_flow",
+  "group",
+  "repetitive_cyclic",
+  "airborne",
+  "object_held"
+ ],
+ "Chopping wood": [
+  "outdoor_field",
+  "tool_utensil",
+  "whole_body",
+  "throw_strike",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Clean and jerk": [
+  "indoor_gym_stage",
+  "tool_utensil",
+  "whole_body",
+  "pose_balance",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Cleaning shoes": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "throw_strike",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Cleaning sink": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Cleaning windows": [
+  "indoor_home",
+  "tool_utensil",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Clipping cat claws": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "pair",
+  "object_held"
+ ],
+ "Cricket": [
+  "outdoor_field",
+  "stick_racket_club",
+  "whole_body",
+  "throw_strike",
+  "group",
+  "repetitive_cyclic",
+  "airborne",
+  "object_held"
+ ],
+ "Croquet": [
+  "outdoor_field",
+  "stick_racket_club",
+  "upper_body",
+  "throw_strike",
+  "group",
+  "object_held"
+ ],
+ "Cumbia": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "rotate_swing_flow",
+  "group",
+  "repetitive_cyclic"
+ ],
+ "Curling": [
+  "snow_ice",
+  "ball_projectile",
+  "whole_body",
+  "throw_strike",
+  "group",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Cutting the grass": [
+  "outdoor_field",
+  "stick_racket_club",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Decorating the Christmas tree": [
+  "indoor_home",
+  "none",
+  "upper_body",
+  "manipulate_fine",
+  "group",
+  "object_held"
+ ],
+ "Disc dog": [
+  "outdoor_field",
+  "ball_projectile",
+  "whole_body",
+  "throw_strike",
+  "pair",
+  "repetitive_cyclic",
+  "airborne"
+ ],
+ "Discus throw": [
+  "outdoor_field",
+  "ball_projectile",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "object_held"
+ ],
+ "Dodgeball": [
+  "indoor_gym_stage",
+  "ball_projectile",
+  "whole_body",
+  "throw_strike",
+  "group"
+ ],
+ "Doing a powerbomb": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "throw_strike",
+  "pair",
+  "airborne"
+ ],
+ "Doing crunches": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "pose_balance",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Doing fencing": [
+  "indoor_gym_stage",
+  "stick_racket_club",
+  "whole_body",
+  "throw_strike",
+  "pair",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Doing karate": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "throw_strike",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Doing kickboxing": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "throw_strike",
+  "pair",
+  "repetitive_cyclic"
+ ],
+ "Doing motocross": [
+  "outdoor_field",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "airborne",
+  "object_held"
+ ],
+ "Doing nails": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Doing step aerobics": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "locomotion",
+  "group",
+  "repetitive_cyclic"
+ ],
+ "Drinking beer": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "group",
+  "object_held"
+ ],
+ "Drinking coffee": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "object_held"
+ ],
+ "Drum corps": [
+  "outdoor_urban",
+  "instrument_toy",
+  "whole_body",
+  "locomotion",
+  "group",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Elliptical trainer": [
+  "indoor_gym_stage",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Fixing bicycle": [
+  "outdoor_urban",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "object_held"
+ ],
+ "Fixing the roof": [
+  "outdoor_urban",
+  "tool_utensil",
+  "whole_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Fun sliding down": [
+  "outdoor_urban",
+  "none",
+  "whole_body",
+  "locomotion",
+  "solo"
+ ],
+ "Futsal": [
+  "indoor_gym_stage",
+  "ball_projectile",
+  "lower_body",
+  "throw_strike",
+  "group"
+ ],
+ "Gargling mouthwash": [
+  "indoor_home",
+  "none",
+  "upper_body",
+  "pose_balance",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Getting a haircut": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "rotate_swing_flow",
+  "pair",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Getting a piercing": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "pair",
+  "object_held"
+ ],
+ "Getting a tattoo": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "pair",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Grooming dog": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "pair",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Grooming horse": [
+  "outdoor_field",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "pair",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Hammer throw": [
+  "outdoor_field",
+  "stick_racket_club",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "object_held"
+ ],
+ "Hand car wash": [
+  "outdoor_urban",
+  "tool_utensil",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Hand washing clothes": [
+  "indoor_home",
+  "none",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Hanging wallpaper": [
+  "indoor_home",
+  "tool_utensil",
+  "whole_body",
+  "manipulate_fine",
+  "solo",
+  "object_held"
+ ],
+ "Having an ice cream": [
+  "outdoor_urban",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "object_held"
+ ],
+ "High jump": [
+  "outdoor_field",
+  "none",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "airborne"
+ ],
+ "Hitting a pinata": [
+  "outdoor_urban",
+  "stick_racket_club",
+  "whole_body",
+  "throw_strike",
+  "group",
+  "object_held"
+ ],
+ "Hopscotch": [
+  "outdoor_urban",
+  "none",
+  "lower_body",
+  "locomotion",
+  "solo",
+  "repetitive_cyclic",
+  "airborne"
+ ],
+ "Horseback riding": [
+  "outdoor_field",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Hula hoop": [
+  "indoor_gym_stage",
+  "instrument_toy",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Hurling": [
+  "outdoor_field",
+  "stick_racket_club",
+  "whole_body",
+  "throw_strike",
+  "group",
+  "airborne",
+  "object_held"
+ ],
+ "Ice fishing": [
+  "snow_ice",
+  "stick_racket_club",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "object_held"
+ ],
+ "Installing carpet": [
+  "indoor_home",
+  "tool_utensil",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Ironing clothes": [
+  "indoor_home",
+  "tool_utensil",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Javelin throw": [
+  "outdoor_field",
+  "stick_racket_club",
+  "whole_body",
+  "throw_strike",
+  "solo",
+  "object_held"
+ ],
+ "Kayaking": [
+  "water",
+  "vehicle_board_animal",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Kite flying": [
+  "outdoor_field",
+  "instrument_toy",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "object_held"
+ ],
+ "Kneeling": [
+  "indoor_gym_stage",
+  "none",
+  "lower_body",
+  "pose_balance",
+  "solo"
+ ],
+ "Knitting": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Laying tile": [
+  "indoor_home",
+  "tool_utensil",
+  "whole_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Layup drill in basketball": [
+  "indoor_gym_stage",
+  "ball_projectile",
+  "whole_body",
+  "throw_strike",
+  "group",
+  "repetitive_cyclic",
+  "airborne",
+  "object_held"
+ ],
+ "Long jump": [
+  "outdoor_field",
+  "none",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "airborne"
+ ],
+ "Longboarding": [
+  "outdoor_urban",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "solo"
+ ],
+ "Making a cake": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Making a lemonade": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "object_held"
+ ],
+ "Making a sandwich": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "object_held"
+ ],
+ "Making an omelette": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "throw_strike",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Mixing drinks": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "throw_strike",
+  "solo",
+  "object_held"
+ ],
+ "Mooping floor": [
+  "indoor_home",
+  "stick_racket_club",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Mowing the lawn": [
+  "outdoor_field",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Paintball": [
+  "outdoor_field",
+  "stick_racket_club",
+  "whole_body",
+  "throw_strike",
+  "group",
+  "object_held"
+ ],
+ "Painting": [
+  "indoor_home",
+  "tool_utensil",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Painting fence": [
+  "outdoor_urban",
+  "tool_utensil",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Painting furniture": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Peeling potatoes": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Ping-pong": [
+  "indoor_home",
+  "stick_racket_club",
+  "upper_body",
+  "throw_strike",
+  "pair",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Plastering": [
+  "indoor_home",
+  "tool_utensil",
+  "whole_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Plataform diving": [
+  "water",
+  "none",
+  "whole_body",
+  "pose_balance",
+  "solo",
+  "airborne"
+ ],
+ "Playing accordion": [
+  "indoor_gym_stage",
+  "instrument_toy",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Playing badminton": [
+  "indoor_gym_stage",
+  "stick_racket_club",
+  "whole_body",
+  "throw_strike",
+  "pair",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Playing bagpipes": [
+  "outdoor_urban",
+  "instrument_toy",
+  "whole_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Playing beach volleyball": [
+  "outdoor_field",
+  "ball_projectile",
+  "whole_body",
+  "throw_strike",
+  "group",
+  "airborne"
+ ],
+ "Playing blackjack": [
+  "indoor_gym_stage",
+  "instrument_toy",
+  "upper_body",
+  "manipulate_fine",
+  "group",
+  "object_held"
+ ],
+ "Playing congas": [
+  "indoor_gym_stage",
+  "instrument_toy",
+  "upper_body",
+  "throw_strike",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Playing drums": [
+  "indoor_gym_stage",
+  "instrument_toy",
+  "upper_body",
+  "throw_strike",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Playing field hockey": [
+  "outdoor_field",
+  "stick_racket_club",
+  "whole_body",
+  "throw_strike",
+  "group",
+  "object_held"
+ ],
+ "Playing flauta": [
+  "indoor_gym_stage",
+  "instrument_toy",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Playing guitarra": [
+  "indoor_gym_stage",
+  "instrument_toy",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Playing harmonica": [
+  "indoor_home",
+  "instrument_toy",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Playing ice hockey": [
+  "snow_ice",
+  "stick_racket_club",
+  "whole_body",
+  "throw_strike",
+  "group",
+  "object_held"
+ ],
+ "Playing kickball": [
+  "outdoor_field",
+  "ball_projectile",
+  "whole_body",
+  "throw_strike",
+  "group"
+ ],
+ "Playing lacrosse": [
+  "outdoor_field",
+  "stick_racket_club",
+  "whole_body",
+  "locomotion",
+  "group",
+  "object_held"
+ ],
+ "Playing piano": [
+  "indoor_gym_stage",
+  "instrument_toy",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Playing polo": [
+  "outdoor_field",
+  "vehicle_board_animal",
+  "whole_body",
+  "throw_strike",
+  "group",
+  "object_held"
+ ],
+ "Playing pool": [
+  "indoor_home",
+  "stick_racket_club",
+  "upper_body",
+  "throw_strike",
+  "pair",
+  "object_held"
+ ],
+ "Playing racquetball": [
+  "indoor_gym_stage",
+  "stick_racket_club",
+  "whole_body",
+  "throw_strike",
+  "group",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Playing rubik cube": [
+  "indoor_home",
+  "instrument_toy",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Playing saxophone": [
+  "indoor_gym_stage",
+  "instrument_toy",
+  "whole_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Playing squash": [
+  "indoor_gym_stage",
+  "stick_racket_club",
+  "whole_body",
+  "throw_strike",
+  "pair",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Playing ten pins": [
+  "indoor_gym_stage",
+  "ball_projectile",
+  "upper_body",
+  "throw_strike",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Playing violin": [
+  "indoor_gym_stage",
+  "instrument_toy",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Playing water polo": [
+  "water",
+  "ball_projectile",
+  "whole_body",
+  "throw_strike",
+  "group"
+ ],
+ "Pole vault": [
+  "outdoor_field",
+  "stick_racket_club",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "airborne",
+  "object_held"
+ ],
+ "Polishing forniture": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Polishing shoes": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Powerbocking": [
+  "outdoor_urban",
+  "vehicle_board_animal",
+  "lower_body",
+  "locomotion",
+  "solo",
+  "airborne"
+ ],
+ "Preparing pasta": [
+  "indoor_home",
+  "tool_utensil",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Preparing salad": [
+  "indoor_home",
+  "tool_utensil",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "object_held"
+ ],
+ "Putting in contact lenses": [
+  "indoor_home",
+  "none",
+  "upper_body",
+  "manipulate_fine",
+  "solo"
+ ],
+ "Putting on makeup": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "object_held"
+ ],
+ "Putting on shoes": [
+  "indoor_home",
+  "none",
+  "lower_body",
+  "manipulate_fine",
+  "solo",
+  "object_held"
+ ],
+ "Rafting": [
+  "water",
+  "vehicle_board_animal",
+  "whole_body",
+  "rotate_swing_flow",
+  "group",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Raking leaves": [
+  "outdoor_field",
+  "stick_racket_club",
+  "whole_body",
+  "throw_strike",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Removing curlers": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "object_held"
+ ],
+ "Removing ice from car": [
+  "snow_ice",
+  "tool_utensil",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Riding bumper cars": [
+  "outdoor_urban",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "group",
+  "object_held"
+ ],
+ "River tubing": [
+  "water",
+  "vehicle_board_animal",
+  "whole_body",
+  "pose_balance",
+  "group"
+ ],
+ "Rock climbing": [
+  "outdoor_field",
+  "none",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "object_held"
+ ],
+ "Rock-paper-scissors": [
+  "indoor_home",
+  "none",
+  "upper_body",
+  "manipulate_fine",
+  "pair",
+  "repetitive_cyclic"
+ ],
+ "Rollerblading": [
+  "outdoor_urban",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Roof shingle removal": [
+  "outdoor_urban",
+  "tool_utensil",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Rope skipping": [
+  "indoor_gym_stage",
+  "tool_utensil",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "repetitive_cyclic",
+  "airborne",
+  "object_held"
+ ],
+ "Running a marathon": [
+  "outdoor_urban",
+  "none",
+  "whole_body",
+  "locomotion",
+  "group",
+  "repetitive_cyclic"
+ ],
+ "Sailing": [
+  "water",
+  "vehicle_board_animal",
+  "whole_body",
+  "manipulate_fine",
+  "group",
+  "object_held"
+ ],
+ "Scuba diving": [
+  "water",
+  "tool_utensil",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Sharpening knives": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Shaving": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Shaving legs": [
+  "indoor_home",
+  "tool_utensil",
+  "lower_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Shot put": [
+  "outdoor_field",
+  "ball_projectile",
+  "whole_body",
+  "throw_strike",
+  "solo",
+  "object_held"
+ ],
+ "Shoveling snow": [
+  "snow_ice",
+  "tool_utensil",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Shuffleboard": [
+  "indoor_gym_stage",
+  "stick_racket_club",
+  "upper_body",
+  "throw_strike",
+  "pair",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Skateboarding": [
+  "outdoor_urban",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "airborne"
+ ],
+ "Skiing": [
+  "snow_ice",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "object_held"
+ ],
+ "Slacklining": [
+  "outdoor_field",
+  "none",
+  "whole_body",
+  "pose_balance",
+  "solo"
+ ],
+ "Smoking a cigarette": [
+  "outdoor_urban",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Smoking hookah": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "group",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Snatch": [
+  "indoor_gym_stage",
+  "tool_utensil",
+  "whole_body",
+  "pose_balance",
+  "solo",
+  "object_held"
+ ],
+ "Snow tubing": [
+  "snow_ice",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "solo"
+ ],
+ "Snowboarding": [
+  "snow_ice",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "airborne"
+ ],
+ "Spinning": [
+  "indoor_gym_stage",
+  "vehicle_board_animal",
+  "lower_body",
+  "locomotion",
+  "group",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Spread mulch": [
+  "outdoor_field",
+  "tool_utensil",
+  "whole_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Springboard diving": [
+  "water",
+  "none",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "airborne"
+ ],
+ "Starting a campfire": [
+  "outdoor_field",
+  "tool_utensil",
+  "whole_body",
+  "manipulate_fine",
+  "group",
+  "object_held"
+ ],
+ "Sumo": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "pose_balance",
+  "pair"
+ ],
+ "Surfing": [
+  "water",
+  "vehicle_board_animal",
+  "whole_body",
+  "pose_balance",
+  "solo"
+ ],
+ "Swimming": [
+  "water",
+  "none",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Swinging at the playground": [
+  "outdoor_urban",
+  "none",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Table soccer": [
+  "indoor_home",
+  "instrument_toy",
+  "upper_body",
+  "manipulate_fine",
+  "pair",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Tai chi": [
+  "outdoor_field",
+  "none",
+  "whole_body",
+  "pose_balance",
+  "group",
+  "repetitive_cyclic"
+ ],
+ "Tango": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "rotate_swing_flow",
+  "pair",
+  "repetitive_cyclic"
+ ],
+ "Tennis serve with ball bouncing": [
+  "outdoor_field",
+  "stick_racket_club",
+  "whole_body",
+  "throw_strike",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Throwing darts": [
+  "indoor_home",
+  "ball_projectile",
+  "upper_body",
+  "throw_strike",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Trimming branches or hedges": [
+  "outdoor_field",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Triple jump": [
+  "outdoor_field",
+  "none",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "repetitive_cyclic",
+  "airborne"
+ ],
+ "Tug of war": [
+  "outdoor_field",
+  "tool_utensil",
+  "whole_body",
+  "pose_balance",
+  "group",
+  "object_held"
+ ],
+ "Tumbling": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "airborne"
+ ],
+ "Using parallel bars": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "pose_balance",
+  "solo",
+  "airborne",
+  "object_held"
+ ],
+ "Using the balance beam": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "pose_balance",
+  "solo",
+  "airborne"
+ ],
+ "Using the monkey bar": [
+  "outdoor_urban",
+  "none",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "airborne",
+  "object_held"
+ ],
+ "Using the pommel horse": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Using the rowing machine": [
+  "indoor_gym_stage",
+  "vehicle_board_animal",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Using uneven bars": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "rotate_swing_flow",
+  "solo",
+  "airborne",
+  "object_held"
+ ],
+ "Vacuuming floor": [
+  "indoor_home",
+  "stick_racket_club",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Volleyball": [
+  "indoor_gym_stage",
+  "ball_projectile",
+  "whole_body",
+  "throw_strike",
+  "group",
+  "airborne"
+ ],
+ "Wakeboarding": [
+  "water",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "airborne",
+  "object_held"
+ ],
+ "Walking the dog": [
+  "outdoor_urban",
+  "none",
+  "whole_body",
+  "locomotion",
+  "pair",
+  "repetitive_cyclic"
+ ],
+ "Washing dishes": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Washing face": [
+  "indoor_home",
+  "none",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Washing hands": [
+  "indoor_home",
+  "none",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic"
+ ],
+ "Waterskiing": [
+  "water",
+  "vehicle_board_animal",
+  "whole_body",
+  "locomotion",
+  "solo",
+  "object_held"
+ ],
+ "Waxing skis": [
+  "indoor_home",
+  "vehicle_board_animal",
+  "upper_body",
+  "rotate_swing_flow",
+  "solo",
+  "repetitive_cyclic",
+  "object_held"
+ ],
+ "Welding": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "object_held"
+ ],
+ "Windsurfing": [
+  "water",
+  "vehicle_board_animal",
+  "whole_body",
+  "pose_balance",
+  "solo",
+  "object_held"
+ ],
+ "Wrapping presents": [
+  "indoor_home",
+  "tool_utensil",
+  "upper_body",
+  "manipulate_fine",
+  "solo",
+  "object_held"
+ ],
+ "Zumba": [
+  "indoor_gym_stage",
+  "none",
+  "whole_body",
+  "locomotion",
+  "group",
+  "repetitive_cyclic"
+ ]
+}

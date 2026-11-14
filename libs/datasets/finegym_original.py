@@ -213,7 +213,6 @@ class FineGymOriginalDataset(Dataset):
     - Segment annotations with frame-level boundaries
     - Train/test split information
 
-    This dataset was used to achieve ~50% mAP.
     """
     def __init__(
         self,
@@ -260,7 +259,6 @@ class FineGymOriginalDataset(Dataset):
         # Video root for raw videos
         self.video_root = '/data3/xiaodan8/FineGym/video_raw'
 
-        # Fixed parameters for this dataset (matching original 50% mAP experiment)
         self.window_length = 32            # 32 sampled frames per window (fixed)
         self.sample_stride = sample_stride  # Original frames between samples (16)
         self.feat_stride = float(sample_stride)

@@ -21,7 +21,7 @@ def make_data_loader(dataset, is_training, generator, batch_size, num_workers):
         A simple dataloder builder
     """
     # Cap workers for video loading stability
-    safe_num_workers = min(num_workers, 2)
+    safe_num_workers = min(num_workers, 16)  # local: JPG/PNG path is process-safe; 2 starved the GPUs
     loader = torch.utils.data.DataLoader(
         dataset,
         batch_size=batch_size,
@@ -33,7 +33,7 @@ def make_data_loader(dataset, is_training, generator, batch_size, num_workers):
         generator=generator,
         persistent_workers=False,  # Restart workers to prevent memory leaks
         pin_memory=True,           # Faster CPU-GPU transfer
-        prefetch_factor=2 if safe_num_workers > 0 else None,
+        prefetch_factor=1 if safe_num_workers > 0 else None,  # local: halves in-flight batch RAM
         timeout=300,  # 5 minutes timeout per batch
     )
     return loader
@@ -43,7 +43,7 @@ def make_data_loader_distributed(dataset, sampler, is_training, generator, batch
         A simple dataloder builder
     """
     # With 4 GPUs x N workders = 4N parallel video decoders competing for resources.
-    safe_num_workers = min(num_workers, 2)  # Cap at 2 workers for video loading stability
+    safe_num_workers = min(num_workers, 16)  # local: JPG/PNG path is process-safe; 2 starved the GPUs  # Cap at 2 workers for video loading stability
     loader = torch.utils.data.DataLoader(
         dataset,
         batch_size=batch_size,
@@ -55,7 +55,7 @@ def make_data_loader_distributed(dataset, sampler, is_training, generator, batch
         generator=generator,
         persistent_workers=False,  # Restart workers to prevent memory leaks
         pin_memory=True,           # Faster CPU-GPU transfer
-        prefetch_factor=2 if safe_num_workers > 0 else None,
+        prefetch_factor=1 if safe_num_workers > 0 else None,  # local: halves in-flight batch RAM
         sampler=sampler,
         timeout=300,  # 5 minutes timeout per batch (some videos are slow)
     )

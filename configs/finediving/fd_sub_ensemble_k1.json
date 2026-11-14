@@ -1,0 +1,86 @@
+{
+ "(TKO) forward takeoff": [
+  "a video of the diving sub-action forward takeoff, a takeoff phase"
+ ],
+ "(TKO) back takeoff": [
+  "a video of the diving sub-action back takeoff, a takeoff phase"
+ ],
+ "(TKO) reverse takeoff": [
+  "a video of the diving sub-action reverse takeoff, a takeoff phase"
+ ],
+ "(TKO) inward takeoff": [
+  "a video of the diving sub-action inward takeoff, a takeoff phase"
+ ],
+ "(TKO) armstand forward takeoff": [
+  "a video of the diving sub-action armstand forward takeoff, a takeoff phase"
+ ],
+ "(TKO) armstand back takeoff": [
+  "a video of the diving sub-action armstand back takeoff, a takeoff phase"
+ ],
+ "(TKO) armstand reverse takeoff": [
+  "a video of the diving sub-action armstand reverse takeoff, a takeoff phase"
+ ],
+ "(SOMP) 1 somersault pike": [
+  "a video of the diving sub-action 1 somersault pike, a somersault pike phase"
+ ],
+ "(SOMP) 1.5 somersaults pike": [
+  "a video of the diving sub-action 1.5 somersaults pike, a somersault pike phase"
+ ],
+ "(SOMP) 2 somersaults pike": [
+  "a video of the diving sub-action 2 somersaults pike, a somersault pike phase"
+ ],
+ "(SOMP) 2.5 somersaults pike": [
+  "a video of the diving sub-action 2.5 somersaults pike, a somersault pike phase"
+ ],
+ "(SOMP) 3 somersaults pike": [
+  "a video of the diving sub-action 3 somersaults pike, a somersault pike phase"
+ ],
+ "(SOMP) 3.5 somersaults pike": [
+  "a video of the diving sub-action 3.5 somersaults pike, a somersault pike phase"
+ ],
+ "(SOMP) 4.5 somersaults pike": [
+  "a video of the diving sub-action 4.5 somersaults pike, a somersault pike phase"
+ ],
+ "(SOMT) 1.5 somersaults tuck": [
+  "a video of the diving sub-action 1.5 somersaults tuck, a somersault tuck phase"
+ ],
+ "(SOMT) 2.5 somersaults tuck": [
+  "a video of the diving sub-action 2.5 somersaults tuck, a somersault tuck phase"
+ ],
+ "(SOMT) 3 somersaults tuck": [
+  "a video of the diving sub-action 3 somersaults tuck, a somersault tuck phase"
+ ],
+ "(SOMT) 3.5 somersaults tuck": [
+  "a video of the diving sub-action 3.5 somersaults tuck, a somersault tuck phase"
+ ],
+ "(SOMT) 4.5 somersaults tuck": [
+  "a video of the diving sub-action 4.5 somersaults tuck, a somersault tuck phase"
+ ],
+ "(TWST) 0.5 twist": [
+  "a video of the diving sub-action 0.5 twist, a twist phase"
+ ],
+ "(TWST) 1 twist": [
+  "a video of the diving sub-action 1 twist, a twist phase"
+ ],
+ "(TWST) 1.5 twists": [
+  "a video of the diving sub-action 1.5 twists, a twist phase"
+ ],
+ "(TWST) 2 twists": [
+  "a video of the diving sub-action 2 twists, a twist phase"
+ ],
+ "(TWST) 2.5 twists": [
+  "a video of the diving sub-action 2.5 twists, a twist phase"
+ ],
+ "(TWST) 3 twists": [
+  "a video of the diving sub-action 3 twists, a twist phase"
+ ],
+ "(TWST) 3.5 twists": [
+  "a video of the diving sub-action 3.5 twists, a twist phase"
+ ],
+ "(ENT) entry into the water": [
+  "a video of the diving sub-action entry into the water, a entry phase"
+ ],
+ "(ENT) 0.5 somersault pike": [
+  "a video of the diving sub-action 0.5 somersault pike, a entry phase"
+ ]
+}

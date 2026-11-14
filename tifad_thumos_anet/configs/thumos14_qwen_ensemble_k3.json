@@ -1,0 +1,122 @@
+{
+ "BaseballPitch": [
+  "a video of a sports action: baseball pitch, a kind of ball throw, with a rotational wind-up",
+  "The pitcher winds up, rotating his body, preparing to throw.",
+  "The pitcher throws the ball, following through with his arm extended.",
+  "The pitcher returns to his starting position, completing the pitch."
+ ],
+ "BasketballDunk": [
+  "a video of a sports action: basketball dunk, a kind of court jump strike, with the body airborne and with an aerial phase",
+  "Player runs towards hoop, leaps, and extends arms to grasp rim.",
+  "Player's body is fully airborne, legs straight, arms gripping rim tightly.",
+  "Player's body descends, ball released, landing on ground below."
+ ],
+ "Billiards": [
+  "a video of a sports action: billiards, a kind of implement strike, in a bent posture",
+  "The player leans forward, gripping the cue stick with both hands, aiming at the cue ball.",
+  "The player strikes the cue ball with precision, following through with the cue stick.",
+  "The player returns to an upright position, observing the movement of the balls on the table."
+ ],
+ "CleanAndJerk": [
+  "a video of a sports action: clean and jerk, using rigid athletic equipment and with a vertical motion",
+  "The lifter bends down, gripping the barbell, lifting it to shoulder height.",
+  "The lifter stands up, keeping the barbell at shoulder height, preparing for the jerk.",
+  "The lifter throws the barbell overhead, then drops into a split squat."
+ ],
+ "CliffDiving": [
+  "a video of a sports action: cliff diving, a kind of aquatic dive, in natural water",
+  "The diver runs along the cliff's edge, arms outstretched for balance.",
+  "The diver leaps off the cliff, body twisting mid-air with legs extended.",
+  "The diver enters the water with a splash, arms and legs flailing to slow descent."
+ ],
+ "CricketBowling": [
+  "a video of a sports action: cricket bowling, a kind of ball throw",
+  "The bowler holds the cricket ball with both hands, preparing to throw.",
+  "The bowler swings the arm back, building momentum for the throw.",
+  "The bowler releases the ball with a snap of the wrist, following through with the arm."
+ ],
+ "CricketShot": [
+  "a video of a sports action: cricket shot, a kind of implement strike, on a grass pitch and with both hands",
+  "The batsman swings his bat forward, making contact with the ball mid-air.",
+  "The ball travels through the air, heading towards the wicket-keeper.",
+  "The batsman follows through with his swing, completing the shot."
+ ],
+ "Diving": [
+  "a video of a sports action: diving, a kind of aquatic dive, at a swimming pool",
+  "The diver extends arms forward, tucking knees, preparing for entry.",
+  "The diver's body compresses, head first, as they enter the water with a splash.",
+  "The diver's body rises, arms and legs extending, completing the dive."
+ ],
+ "FrisbeeCatch": [
+  "a video of a sports action: frisbee catch, with the body airborne and using a small projectile",
+  "Frisbee approaches, arms extend upward, fingers open wide.",
+  "Body leaps, torso twists, catching the frisbee mid-air.",
+  "Arms secure the frisbee, body lands, completing the catch."
+ ],
+ "GolfSwing": [
+  "a video of a sports action: golf swing, a kind of implement strike, on a grass pitch and with a rotational wind-up",
+  "The golfer holds the club back, rotating their shoulders and hips.",
+  "The golfer swings the club forward, extending their arms and rotating their torso.",
+  "The golfer follows through, completing the swing with a full rotation of the body."
+ ],
+ "HammerThrow": [
+  "a video of a sports action: hammer throw, a kind of field throw, with a horizontal motion and with both hands",
+  "The athlete holds the hammer with both hands, preparing for the throw.",
+  "The athlete swings the hammer back over their head in a circular motion.",
+  "The athlete releases the hammer, following through with the swing."
+ ],
+ "HighJump": [
+  "a video of a sports action: high jump, a kind of jump field, with no equipment and with a vertical motion",
+  "The athlete runs up, building momentum for the jump.",
+  "The runner leaps, clearing the bar with a powerful upward motion.",
+  "The jumper lands on the mat, completing the high jump successfully."
+ ],
+ "JavelinThrow": [
+  "a video of a sports action: javelin throw, a kind of field throw, with an overhead motion",
+  "The athlete holds the javelin above their head, preparing for the throw.",
+  "The athlete swings the javelin back over their shoulder, building momentum.",
+  "The athlete releases the javelin forward with a powerful throw, following through with their arm extended."
+ ],
+ "LongJump": [
+  "a video of a sports action: long jump, a kind of jump field, with no equipment and with a horizontal motion",
+  "The athlete runs up, gaining speed, preparing for takeoff.",
+  "The athlete leaps into the air, extending legs forward, aiming for maximum distance.",
+  "The athlete lands on the sandpit, maintaining balance after the jump."
+ ],
+ "PoleVault": [
+  "a video of a sports action: pole vault, a kind of jump field, using rigid athletic equipment and with a vertical motion",
+  "The athlete runs up, planting the pole firmly on the ground.",
+  "The pole bends under the athlete's weight, lifting them upwards.",
+  "The athlete clears the bar, landing safely on the mat below."
+ ],
+ "Shotput": [
+  "a video of a sports action: shotput, a kind of field throw, with an overhead motion and in a bent posture",
+  "The athlete holds the shot put in their right hand, preparing for the throw.",
+  "The athlete swings the shot put back over their head, bending at the waist.",
+  "The athlete releases the shot put forward with a powerful throw, extending their arm fully."
+ ],
+ "SoccerPenalty": [
+  "a video of a sports action: soccer penalty, swinging to strike and using a small projectile",
+  "The player runs up to the penalty spot, positioning themselves for the kick.",
+  "The player swings their leg back, aiming at the ball with precision.",
+  "The player strikes the ball powerfully, sending it towards the goal."
+ ],
+ "TennisSwing": [
+  "a video of a sports action: tennis swing, a kind of implement strike, on a court",
+  "The player holds the racket back, preparing to swing.",
+  "The player swings the racket forward with a powerful motion.",
+  "The player follows through, completing the swing with a follow-through movement."
+ ],
+ "ThrowDiscus": [
+  "a video of a sports action: throw discus, a kind of field throw, with a horizontal motion",
+  "The athlete holds the discus above their head, preparing for the throw.",
+  "The athlete swings the discus back over their shoulder, building momentum.",
+  "The athlete releases the discus with a powerful forward throw, following through with their arm."
+ ],
+ "VolleyballSpiking": [
+  "a video of a sports action: volleyball spiking, a kind of court jump strike, swinging to strike",
+  "The player runs towards the net, jumping high with extended arms.",
+  "The player swings the volleyball racket, making contact with the ball mid-air.",
+  "The player lands back on the ground after striking the ball, completing the spiking motion."
+ ]
+}

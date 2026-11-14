@@ -1,0 +1,695 @@
+{
+ "(VT) round-off, flic-flac with 0.5 turn on, stretched salto forward with 0.5 turn off": {
+  "full": "a video of a gymnastics element: round-off, flic-flac with 0.5 turn on, stretched salto forward with 0.5 turn off, a kind of round-off entry vault, on the vaulting table",
+  "parent": "a video of a gymnastics element: round-off entry vault on the vaulting table",
+  "clause_sents": [
+   "a video of a gymnastics element: round-off, flic-flac with 0.5 turn on, stretched salto forward with 0.5 turn off, a kind of round-off entry vault, on the vaulting table"
+  ]
+ },
+ "(VT) round-off, flic-flac on, stretched salto backward with 2 turn off": {
+  "full": "a video of a gymnastics element: round-off, flic-flac on, stretched salto backward with 2 turn off, a kind of round-off entry vault, on the vaulting table",
+  "parent": "a video of a gymnastics element: round-off entry vault on the vaulting table",
+  "clause_sents": [
+   "a video of a gymnastics element: round-off, flic-flac on, stretched salto backward with 2 turn off, a kind of round-off entry vault, on the vaulting table"
+  ]
+ },
+ "(VT) round-off, flic-flac on, stretched salto backward with 1 turn off": {
+  "full": "a video of a gymnastics element: round-off, flic-flac on, stretched salto backward with 1 turn off, a kind of round-off entry vault, on the vaulting table",
+  "parent": "a video of a gymnastics element: round-off entry vault on the vaulting table",
+  "clause_sents": [
+   "a video of a gymnastics element: round-off, flic-flac on, stretched salto backward with 1 turn off, a kind of round-off entry vault, on the vaulting table"
+  ]
+ },
+ "(VT) round-off, flic-flac on, stretched salto backward with 1.5 turn off": {
+  "full": "a video of a gymnastics element: round-off, flic-flac on, stretched salto backward with 1.5 turn off, a kind of round-off entry vault, on the vaulting table",
+  "parent": "a video of a gymnastics element: round-off entry vault on the vaulting table",
+  "clause_sents": [
+   "a video of a gymnastics element: round-off, flic-flac on, stretched salto backward with 1.5 turn off, a kind of round-off entry vault, on the vaulting table"
+  ]
+ },
+ "(VT) round-off, flic-flac on, stretched salto backward with 2.5 turn off": {
+  "full": "a video of a gymnastics element: round-off, flic-flac on, stretched salto backward with 2.5 turn off, a kind of round-off entry vault, on the vaulting table",
+  "parent": "a video of a gymnastics element: round-off entry vault on the vaulting table",
+  "clause_sents": [
+   "a video of a gymnastics element: round-off, flic-flac on, stretched salto backward with 2.5 turn off, a kind of round-off entry vault, on the vaulting table"
+  ]
+ },
+ "(VT) round-off, flic-flac on, stretched salto backward off": {
+  "full": "a video of a gymnastics element: round-off, flic-flac on, stretched salto backward off, a kind of round-off entry vault, on the vaulting table",
+  "parent": "a video of a gymnastics element: round-off entry vault on the vaulting table",
+  "clause_sents": [
+   "a video of a gymnastics element: round-off, flic-flac on, stretched salto backward off, a kind of round-off entry vault, on the vaulting table"
+  ]
+ },
+ "(FX) switch leap with 0.5 turn": {
+  "full": "a video of a gymnastics element: switch leap with 0.5 turn, a kind of floor exercise leap or jump, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise leap or jump on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: switch leap with 0.5 turn, a kind of floor exercise leap or jump, on the floor exercise mat"
+  ]
+ },
+ "(FX) switch leap with 1 turn": {
+  "full": "a video of a gymnastics element: switch leap with 1 turn, a kind of floor exercise leap or jump, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise leap or jump on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: switch leap with 1 turn, a kind of floor exercise leap or jump, on the floor exercise mat"
+  ]
+ },
+ "(FX) split leap with 1 turn": {
+  "full": "a video of a gymnastics element: split leap with 1 turn, a kind of floor exercise leap or jump, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise leap or jump on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: split leap with 1 turn, a kind of floor exercise leap or jump, on the floor exercise mat"
+  ]
+ },
+ "(FX) split leap with 1.5 turn or more": {
+  "full": "a video of a gymnastics element: split leap with 1.5 turn or more, a kind of floor exercise leap or jump, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise leap or jump on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: split leap with 1.5 turn or more, a kind of floor exercise leap or jump, on the floor exercise mat"
+  ]
+ },
+ "(FX) switch leap (leap forward with leg change to cross split)": {
+  "full": "a video of a gymnastics element: switch leap (leap forward with leg change to cross split), a kind of floor exercise leap or jump, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise leap or jump on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: switch leap (leap forward with leg change to cross split), a kind of floor exercise leap or jump, on the floor exercise mat"
+  ]
+ },
+ "(FX) split jump with 1 turn": {
+  "full": "a video of a gymnastics element: split jump with 1 turn, a kind of floor exercise leap or jump, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise leap or jump on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: split jump with 1 turn, a kind of floor exercise leap or jump, on the floor exercise mat"
+  ]
+ },
+ "(FX) split jump (leg separation 180 degree parallel to the floor)": {
+  "full": "a video of a gymnastics element: split jump (leg separation 180 degree parallel to the floor), a kind of floor exercise leap or jump, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise leap or jump on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: split jump (leg separation 180 degree parallel to the floor), a kind of floor exercise leap or jump, on the floor exercise mat"
+  ]
+ },
+ "(FX) johnson with additional 0.5 turn": {
+  "full": "a video of a gymnastics element: johnson with additional 0.5 turn, a kind of floor exercise leap or jump, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise leap or jump on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: johnson with additional 0.5 turn, a kind of floor exercise leap or jump, on the floor exercise mat"
+  ]
+ },
+ "(FX) straddle pike or side split jump with 1 turn": {
+  "full": "a video of a gymnastics element: straddle pike or side split jump with 1 turn, a kind of floor exercise leap or jump, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise leap or jump on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: straddle pike or side split jump with 1 turn, a kind of floor exercise leap or jump, on the floor exercise mat"
+  ]
+ },
+ "(FX) switch leap to ring position": {
+  "full": "a video of a gymnastics element: switch leap to ring position, a kind of floor exercise leap or jump, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise leap or jump on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: switch leap to ring position, a kind of floor exercise leap or jump, on the floor exercise mat"
+  ]
+ },
+ "(FX) stag jump": {
+  "full": "a video of a gymnastics element: stag jump, a kind of floor exercise leap or jump, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise leap or jump on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: stag jump, a kind of floor exercise leap or jump, on the floor exercise mat"
+  ]
+ },
+ "(FX) 2 turn with free leg held upward in 180 split position throughout turn": {
+  "full": "a video of a gymnastics element: 2 turn with free leg held upward in 180 split position throughout turn, a kind of floor exercise turn on one leg, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise turn on one leg on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: 2 turn with free leg held upward in 180 split position throughout turn, a kind of floor exercise turn on one leg, on the floor exercise mat"
+  ]
+ },
+ "(FX) 2 turn in tuck stand on one leg, free leg straight throughout turn": {
+  "full": "a video of a gymnastics element: 2 turn in tuck stand on one leg, free leg straight throughout turn, a kind of floor exercise turn on one leg, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise turn on one leg on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: 2 turn in tuck stand on one leg, free leg straight throughout turn, a kind of floor exercise turn on one leg, on the floor exercise mat"
+  ]
+ },
+ "(FX) 3 turn on one leg, free leg optional below horizontal": {
+  "full": "a video of a gymnastics element: 3 turn on one leg, free leg optional below horizontal, a kind of floor exercise turn on one leg, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise turn on one leg on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: 3 turn on one leg, free leg optional below horizontal, a kind of floor exercise turn on one leg, on the floor exercise mat"
+  ]
+ },
+ "(FX) 2 turn on one leg, free leg optional below horizontal": {
+  "full": "a video of a gymnastics element: 2 turn on one leg, free leg optional below horizontal, a kind of floor exercise turn on one leg, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise turn on one leg on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: 2 turn on one leg, free leg optional below horizontal, a kind of floor exercise turn on one leg, on the floor exercise mat"
+  ]
+ },
+ "(FX) 1 turn on one leg, free leg optional below horizontal": {
+  "full": "a video of a gymnastics element: 1 turn on one leg, free leg optional below horizontal, a kind of floor exercise turn on one leg, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise turn on one leg on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: 1 turn on one leg, free leg optional below horizontal, a kind of floor exercise turn on one leg, on the floor exercise mat"
+  ]
+ },
+ "(FX) 2 turn or more with heel of free leg forward at horizontal throughout turn": {
+  "full": "a video of a gymnastics element: 2 turn or more with heel of free leg forward at horizontal throughout turn, a kind of floor exercise turn on one leg, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise turn on one leg on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: 2 turn or more with heel of free leg forward at horizontal throughout turn, a kind of floor exercise turn on one leg, on the floor exercise mat"
+  ]
+ },
+ "(FX) 1 turn with heel of free leg forward at horizontal throughout turn": {
+  "full": "a video of a gymnastics element: 1 turn with heel of free leg forward at horizontal throughout turn, a kind of floor exercise turn on one leg, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise turn on one leg on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: 1 turn with heel of free leg forward at horizontal throughout turn, a kind of floor exercise turn on one leg, on the floor exercise mat"
+  ]
+ },
+ "(FX) arabian double salto tucked": {
+  "full": "a video of a gymnastics element: arabian double salto tucked, a kind of floor exercise forward salto or aerial, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise forward salto or aerial on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: arabian double salto tucked, a kind of floor exercise forward salto or aerial, on the floor exercise mat"
+  ]
+ },
+ "(FX) salto forward tucked": {
+  "full": "a video of a gymnastics element: salto forward tucked, a kind of floor exercise forward salto or aerial, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise forward salto or aerial on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: salto forward tucked, a kind of floor exercise forward salto or aerial, on the floor exercise mat"
+  ]
+ },
+ "(FX) aerial walkover forward": {
+  "full": "a video of a gymnastics element: aerial walkover forward, a kind of floor exercise forward salto or aerial, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise forward salto or aerial on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: aerial walkover forward, a kind of floor exercise forward salto or aerial, on the floor exercise mat"
+  ]
+ },
+ "(FX) salto forward stretched with 2 twist": {
+  "full": "a video of a gymnastics element: salto forward stretched with 2 twist, a kind of floor exercise forward salto or aerial, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise forward salto or aerial on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: salto forward stretched with 2 twist, a kind of floor exercise forward salto or aerial, on the floor exercise mat"
+  ]
+ },
+ "(FX) salto forward stretched with 1 twist": {
+  "full": "a video of a gymnastics element: salto forward stretched with 1 twist, a kind of floor exercise forward salto or aerial, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise forward salto or aerial on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: salto forward stretched with 1 twist, a kind of floor exercise forward salto or aerial, on the floor exercise mat"
+  ]
+ },
+ "(FX) salto forward stretched with 1.5 twist": {
+  "full": "a video of a gymnastics element: salto forward stretched with 1.5 twist, a kind of floor exercise forward salto or aerial, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise forward salto or aerial on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: salto forward stretched with 1.5 twist, a kind of floor exercise forward salto or aerial, on the floor exercise mat"
+  ]
+ },
+ "(FX) salto forward stretched, feet land together": {
+  "full": "a video of a gymnastics element: salto forward stretched, feet land together, a kind of floor exercise forward salto or aerial, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise forward salto or aerial on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: salto forward stretched, feet land together, a kind of floor exercise forward salto or aerial, on the floor exercise mat"
+  ]
+ },
+ "(FX) double salto backward stretched": {
+  "full": "a video of a gymnastics element: double salto backward stretched, a kind of floor exercise backward salto, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise backward salto on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: double salto backward stretched, a kind of floor exercise backward salto, on the floor exercise mat"
+  ]
+ },
+ "(FX) salto backward stretched with 3 twist": {
+  "full": "a video of a gymnastics element: salto backward stretched with 3 twist, a kind of floor exercise backward salto, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise backward salto on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: salto backward stretched with 3 twist, a kind of floor exercise backward salto, on the floor exercise mat"
+  ]
+ },
+ "(FX) salto backward stretched with 2 twist": {
+  "full": "a video of a gymnastics element: salto backward stretched with 2 twist, a kind of floor exercise backward salto, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise backward salto on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: salto backward stretched with 2 twist, a kind of floor exercise backward salto, on the floor exercise mat"
+  ]
+ },
+ "(FX) salto backward stretched with 2.5 twist": {
+  "full": "a video of a gymnastics element: salto backward stretched with 2.5 twist, a kind of floor exercise backward salto, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise backward salto on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: salto backward stretched with 2.5 twist, a kind of floor exercise backward salto, on the floor exercise mat"
+  ]
+ },
+ "(FX) salto backward stretched with 1.5 twist": {
+  "full": "a video of a gymnastics element: salto backward stretched with 1.5 twist, a kind of floor exercise backward salto, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise backward salto on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: salto backward stretched with 1.5 twist, a kind of floor exercise backward salto, on the floor exercise mat"
+  ]
+ },
+ "(FX) double salto backward tucked with 2 twist": {
+  "full": "a video of a gymnastics element: double salto backward tucked with 2 twist, a kind of floor exercise backward salto, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise backward salto on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: double salto backward tucked with 2 twist, a kind of floor exercise backward salto, on the floor exercise mat"
+  ]
+ },
+ "(FX) double salto backward tucked with 1 twist": {
+  "full": "a video of a gymnastics element: double salto backward tucked with 1 twist, a kind of floor exercise backward salto, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise backward salto on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: double salto backward tucked with 1 twist, a kind of floor exercise backward salto, on the floor exercise mat"
+  ]
+ },
+ "(FX) double salto backward tucked": {
+  "full": "a video of a gymnastics element: double salto backward tucked, a kind of floor exercise backward salto, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise backward salto on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: double salto backward tucked, a kind of floor exercise backward salto, on the floor exercise mat"
+  ]
+ },
+ "(FX) double salto backward piked with 1 twist": {
+  "full": "a video of a gymnastics element: double salto backward piked with 1 twist, a kind of floor exercise backward salto, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise backward salto on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: double salto backward piked with 1 twist, a kind of floor exercise backward salto, on the floor exercise mat"
+  ]
+ },
+ "(FX) double salto backward piked": {
+  "full": "a video of a gymnastics element: double salto backward piked, a kind of floor exercise backward salto, on the floor exercise mat",
+  "parent": "a video of a gymnastics element: floor exercise backward salto on the floor exercise mat",
+  "clause_sents": [
+   "a video of a gymnastics element: double salto backward piked, a kind of floor exercise backward salto, on the floor exercise mat"
+  ]
+ },
+ "(BB) sissone (leg separation 180 degree on the diagonal to the floor, take off two feet, land on one foot)": {
+  "full": "a video of a gymnastics element: sissone (leg separation 180 degree on the diagonal to the floor, take off two feet, land on one foot), a kind of balance beam leap or jump, on the balance beam",
+  "parent": "a video of a gymnastics element: balance beam leap or jump on the balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: sissone (leg separation 180 degree on the diagonal to the floor, take off two feet, land on one foot), a kind of balance beam leap or jump, on the balance beam"
+  ]
+ },
+ "(BB) split jump with 0.5 turn in side position": {
+  "full": "a video of a gymnastics element: split jump with 0.5 turn in side position, a kind of balance beam leap or jump, on the balance beam",
+  "parent": "a video of a gymnastics element: balance beam leap or jump on the balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: split jump with 0.5 turn in side position, a kind of balance beam leap or jump, on the balance beam"
+  ]
+ },
+ "(BB) split jump": {
+  "full": "a video of a gymnastics element: split jump, a kind of balance beam leap or jump, on the balance beam",
+  "parent": "a video of a gymnastics element: balance beam leap or jump on the balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: split jump, a kind of balance beam leap or jump, on the balance beam"
+  ]
+ },
+ "(BB) straddle pike jump or side split jump": {
+  "full": "a video of a gymnastics element: straddle pike jump or side split jump, a kind of balance beam leap or jump, on the balance beam",
+  "parent": "a video of a gymnastics element: balance beam leap or jump on the balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: straddle pike jump or side split jump, a kind of balance beam leap or jump, on the balance beam"
+  ]
+ },
+ "(BB) split ring jump (ring jump with front leg horizontal to the floor)": {
+  "full": "a video of a gymnastics element: split ring jump (ring jump with front leg horizontal to the floor), a kind of balance beam leap or jump, on the balance beam",
+  "parent": "a video of a gymnastics element: balance beam leap or jump on the balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: split ring jump (ring jump with front leg horizontal to the floor), a kind of balance beam leap or jump, on the balance beam"
+  ]
+ },
+ "(BB) switch leap with 0.5 turn": {
+  "full": "a video of a gymnastics element: switch leap with 0.5 turn, a kind of balance beam leap or jump, on the balance beam",
+  "parent": "a video of a gymnastics element: balance beam leap or jump on the balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: switch leap with 0.5 turn, a kind of balance beam leap or jump, on the balance beam"
+  ]
+ },
+ "(BB) switch leap (leap forward with leg change)": {
+  "full": "a video of a gymnastics element: switch leap (leap forward with leg change), a kind of balance beam leap or jump, on the balance beam",
+  "parent": "a video of a gymnastics element: balance beam leap or jump on the balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: switch leap (leap forward with leg change), a kind of balance beam leap or jump, on the balance beam"
+  ]
+ },
+ "(BB) split leap forward": {
+  "full": "a video of a gymnastics element: split leap forward, a kind of balance beam leap or jump, on the balance beam",
+  "parent": "a video of a gymnastics element: balance beam leap or jump on the balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: split leap forward, a kind of balance beam leap or jump, on the balance beam"
+  ]
+ },
+ "(BB) johnson (leap forward with leg change and 0.25 turn to side split or straddle pike position)": {
+  "full": "a video of a gymnastics element: johnson (leap forward with leg change and 0.25 turn to side split or straddle pike position), a kind of balance beam leap or jump, on the balance beam",
+  "parent": "a video of a gymnastics element: balance beam leap or jump on the balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: johnson (leap forward with leg change and 0.25 turn to side split or straddle pike position), a kind of balance beam leap or jump, on the balance beam"
+  ]
+ },
+ "(BB) switch leap to ring position": {
+  "full": "a video of a gymnastics element: balance beam switch leap to ring position, a kind of gymnastic leap or jump, on balance beam",
+  "parent": "a video of a gymnastics element: gymnastic leap or jump on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam switch leap to ring position, a kind of gymnastic leap or jump, on balance beam"
+  ]
+ },
+ "(BB) sheep jump (jump with upper back arch and head release with feet to head height/closed Ring)": {
+  "full": "a video of a gymnastics element: balance beam sheep jump (jump with upper back arch and head release with feet to head height/closed ring), a kind of gymnastic leap or jump, on balance beam",
+  "parent": "a video of a gymnastics element: gymnastic leap or jump on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam sheep jump (jump with upper back arch and head release with feet to head height/closed ring), a kind of gymnastic leap or jump, on balance beam"
+  ]
+ },
+ "(BB) wolf hop or jump (hip angle at 45, knees together)": {
+  "full": "a video of a gymnastics element: balance beam wolf hop or jump (hip angle at 45, knees together), a kind of gymnastic leap or jump, on balance beam",
+  "parent": "a video of a gymnastics element: gymnastic leap or jump on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam wolf hop or jump (hip angle at 45, knees together), a kind of gymnastic leap or jump, on balance beam"
+  ]
+ },
+ "(BB) 1 turn with heel of free leg forward at horizontal throughout turn": {
+  "full": "a video of a gymnastics element: balance beam 1 turn with heel of free leg forward at horizontal throughout turn, a kind of turn on one leg, on balance beam",
+  "parent": "a video of a gymnastics element: turn on one leg on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam 1 turn with heel of free leg forward at horizontal throughout turn, a kind of turn on one leg, on balance beam"
+  ]
+ },
+ "(BB) 2 turn on one leg, free leg optional below horizontal": {
+  "full": "a video of a gymnastics element: balance beam 2 turn on one leg, free leg optional below horizontal, a kind of turn on one leg, on balance beam",
+  "parent": "a video of a gymnastics element: turn on one leg on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam 2 turn on one leg, free leg optional below horizontal, a kind of turn on one leg, on balance beam"
+  ]
+ },
+ "(BB) 1 turn on one leg, free leg optional below horizontal": {
+  "full": "a video of a gymnastics element: balance beam 1 turn on one leg, free leg optional below horizontal, a kind of turn on one leg, on balance beam",
+  "parent": "a video of a gymnastics element: turn on one leg on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam 1 turn on one leg, free leg optional below horizontal, a kind of turn on one leg, on balance beam"
+  ]
+ },
+ "(BB) 2 turn in tuck stand on one leg, free leg optional": {
+  "full": "a video of a gymnastics element: balance beam 2 turn in tuck stand on one leg, free leg optional, a kind of turn on one leg, on balance beam",
+  "parent": "a video of a gymnastics element: turn on one leg on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam 2 turn in tuck stand on one leg, free leg optional, a kind of turn on one leg, on balance beam"
+  ]
+ },
+ "(BB) salto backward tucked with 1 twist": {
+  "full": "a video of a gymnastics element: balance beam salto backward tucked with 1 twist, a kind of acrobatic salto or aerial flight skill, on balance beam",
+  "parent": "a video of a gymnastics element: acrobatic salto or aerial flight skill on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam salto backward tucked with 1 twist, a kind of acrobatic salto or aerial flight skill, on balance beam"
+  ]
+ },
+ "(BB) salto backward tucked v1": {
+  "full": "a video of a gymnastics element: balance beam salto backward tucked v1, a kind of acrobatic salto or aerial flight skill, on balance beam",
+  "parent": "a video of a gymnastics element: acrobatic salto or aerial flight skill on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam salto backward tucked v1, a kind of acrobatic salto or aerial flight skill, on balance beam"
+  ]
+ },
+ "(BB) salto backward stretched-step out (feet land successively)": {
+  "full": "a video of a gymnastics element: balance beam salto backward stretched-step out (feet land successively), a kind of acrobatic salto or aerial flight skill, on balance beam",
+  "parent": "a video of a gymnastics element: acrobatic salto or aerial flight skill on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam salto backward stretched-step out (feet land successively), a kind of acrobatic salto or aerial flight skill, on balance beam"
+  ]
+ },
+ "(BB) salto backward stretched with legs together": {
+  "full": "a video of a gymnastics element: balance beam salto backward stretched with legs together, a kind of acrobatic salto or aerial flight skill, on balance beam",
+  "parent": "a video of a gymnastics element: acrobatic salto or aerial flight skill on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam salto backward stretched with legs together, a kind of acrobatic salto or aerial flight skill, on balance beam"
+  ]
+ },
+ "(BB) salto sideward tucked, take off from one leg to side stand": {
+  "full": "a video of a gymnastics element: balance beam salto sideward tucked, take off from one leg to side stand, a kind of acrobatic salto or aerial flight skill, on balance beam",
+  "parent": "a video of a gymnastics element: acrobatic salto or aerial flight skill on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam salto sideward tucked, take off from one leg to side stand, a kind of acrobatic salto or aerial flight skill, on balance beam"
+  ]
+ },
+ "(BB) free aerial cartwheel landing in cross position": {
+  "full": "a video of a gymnastics element: balance beam free aerial cartwheel landing in cross position, a kind of acrobatic salto or aerial flight skill, on balance beam",
+  "parent": "a video of a gymnastics element: acrobatic salto or aerial flight skill on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam free aerial cartwheel landing in cross position, a kind of acrobatic salto or aerial flight skill, on balance beam"
+  ]
+ },
+ "(BB) salto forward tucked to cross stand": {
+  "full": "a video of a gymnastics element: balance beam salto forward tucked to cross stand, a kind of acrobatic salto or aerial flight skill, on balance beam",
+  "parent": "a video of a gymnastics element: acrobatic salto or aerial flight skill on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam salto forward tucked to cross stand, a kind of acrobatic salto or aerial flight skill, on balance beam"
+  ]
+ },
+ "(BB) free aerial walkover forward, landing on one or both feet": {
+  "full": "a video of a gymnastics element: balance beam free aerial walkover forward, landing on one or both feet, a kind of acrobatic salto or aerial flight skill, on balance beam",
+  "parent": "a video of a gymnastics element: acrobatic salto or aerial flight skill on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam free aerial walkover forward, landing on one or both feet, a kind of acrobatic salto or aerial flight skill, on balance beam"
+  ]
+ },
+ "(BB) jump backward, flic-flac take-off with 0.5 twist through handstand to walkover forward, also with support on one arm": {
+  "full": "a video of a gymnastics element: balance beam jump backward, flic-flac take-off with 0.5 twist through handstand to walkover forward, also with support on one arm, a kind of acrobatic skill with hand support, on balance beam",
+  "parent": "a video of a gymnastics element: acrobatic skill with hand support on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam jump backward, flic-flac take-off with 0.5 twist through handstand to walkover forward, also with support on one arm, a kind of acrobatic skill with hand support, on balance beam"
+  ]
+ },
+ "(BB) flic-flac to land on both feet": {
+  "full": "a video of a gymnastics element: balance beam flic-flac to land on both feet, a kind of acrobatic skill with hand support, on balance beam",
+  "parent": "a video of a gymnastics element: acrobatic skill with hand support on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam flic-flac to land on both feet, a kind of acrobatic skill with hand support, on balance beam"
+  ]
+ },
+ "(BB) flic-flac with step-out, also with support on one arm": {
+  "full": "a video of a gymnastics element: balance beam flic-flac with step-out, also with support on one arm, a kind of acrobatic skill with hand support, on balance beam",
+  "parent": "a video of a gymnastics element: acrobatic skill with hand support on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam flic-flac with step-out, also with support on one arm, a kind of acrobatic skill with hand support, on balance beam"
+  ]
+ },
+ "(BB) round-off": {
+  "full": "a video of a gymnastics element: balance beam round-off, a kind of acrobatic skill with hand support, on balance beam",
+  "parent": "a video of a gymnastics element: acrobatic skill with hand support on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam round-off, a kind of acrobatic skill with hand support, on balance beam"
+  ]
+ },
+ "(BB) double salto backward tucked": {
+  "full": "a video of a gymnastics element: balance beam double salto backward tucked, a kind of salto dismount, on balance beam",
+  "parent": "a video of a gymnastics element: salto dismount on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam double salto backward tucked, a kind of salto dismount, on balance beam"
+  ]
+ },
+ "(BB) salto backward tucked v2": {
+  "full": "a video of a gymnastics element: balance beam salto backward tucked v2, a kind of salto dismount, on balance beam",
+  "parent": "a video of a gymnastics element: salto dismount on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam salto backward tucked v2, a kind of salto dismount, on balance beam"
+  ]
+ },
+ "(BB) double salto backward piked": {
+  "full": "a video of a gymnastics element: balance beam double salto backward piked, a kind of salto dismount, on balance beam",
+  "parent": "a video of a gymnastics element: salto dismount on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam double salto backward piked, a kind of salto dismount, on balance beam"
+  ]
+ },
+ "(BB) salto backward stretched with 2 twist": {
+  "full": "a video of a gymnastics element: balance beam salto backward stretched with 2 twist, a kind of salto dismount, on balance beam",
+  "parent": "a video of a gymnastics element: salto dismount on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam salto backward stretched with 2 twist, a kind of salto dismount, on balance beam"
+  ]
+ },
+ "(BB) salto backward stretched with 2.5 twist": {
+  "full": "a video of a gymnastics element: balance beam salto backward stretched with 2.5 twist, a kind of salto dismount, on balance beam",
+  "parent": "a video of a gymnastics element: salto dismount on balance beam",
+  "clause_sents": [
+   "a video of a gymnastics element: balance beam salto backward stretched with 2.5 twist, a kind of salto dismount, on balance beam"
+  ]
+ },
+ "(UB) pike sole circle backward with 1 turn to handstand": {
+  "full": "a video of a gymnastics element: uneven bars pike sole circle backward with 1 turn to handstand, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars pike sole circle backward with 1 turn to handstand, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) pike sole circle backward with 0.5 turn to handstand": {
+  "full": "a video of a gymnastics element: uneven bars pike sole circle backward with 0.5 turn to handstand, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars pike sole circle backward with 0.5 turn to handstand, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) pike sole circle backward to handstand": {
+  "full": "a video of a gymnastics element: uneven bars pike sole circle backward to handstand, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars pike sole circle backward to handstand, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) giant circle backward with 1 turn to handstand": {
+  "full": "a video of a gymnastics element: uneven bars giant circle backward with 1 turn to handstand, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars giant circle backward with 1 turn to handstand, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) giant circle backward with 0.5 turn to handstand": {
+  "full": "a video of a gymnastics element: uneven bars giant circle backward with 0.5 turn to handstand, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars giant circle backward with 0.5 turn to handstand, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) giant circle backward": {
+  "full": "a video of a gymnastics element: uneven bars giant circle backward, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars giant circle backward, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) giant circle forward with 1 turn on one arm before handstand phase": {
+  "full": "a video of a gymnastics element: uneven bars giant circle forward with 1 turn on one arm before handstand phase, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars giant circle forward with 1 turn on one arm before handstand phase, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) giant circle forward with 0.5 turn to handstand": {
+  "full": "a video of a gymnastics element: uneven bars giant circle forward with 0.5 turn to handstand, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars giant circle forward with 0.5 turn to handstand, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) giant circle forward": {
+  "full": "a video of a gymnastics element: uneven bars giant circle forward, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars giant circle forward, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) clear hip circle backward to handstand": {
+  "full": "a video of a gymnastics element: uneven bars clear hip circle backward to handstand, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars clear hip circle backward to handstand, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) clear pike circle backward with 1 turn to handstand": {
+  "full": "a video of a gymnastics element: uneven bars clear pike circle backward with 1 turn to handstand, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars clear pike circle backward with 1 turn to handstand, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) clear pike circle backward with 0.5 turn to handstand": {
+  "full": "a video of a gymnastics element: uneven bars clear pike circle backward with 0.5 turn to handstand, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars clear pike circle backward with 0.5 turn to handstand, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) clear pike circle backward to handstand": {
+  "full": "a video of a gymnastics element: uneven bars clear pike circle backward to handstand, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars clear pike circle backward to handstand, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) stalder backward with 1 turn to handstand": {
+  "full": "a video of a gymnastics element: uneven bars stalder backward with 1 turn to handstand, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars stalder backward with 1 turn to handstand, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) stalder backward to handstand": {
+  "full": "a video of a gymnastics element: uneven bars stalder backward to handstand, a kind of circle swing on the bar, on uneven bars",
+  "parent": "a video of a gymnastics element: circle swing on the bar on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars stalder backward to handstand, a kind of circle swing on the bar, on uneven bars"
+  ]
+ },
+ "(UB) counter straddle over high bar to hang": {
+  "full": "a video of a gymnastics element: uneven bars counter straddle over high bar to hang, a kind of release and regrasp flight element, on uneven bars",
+  "parent": "a video of a gymnastics element: release and regrasp flight element on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars counter straddle over high bar to hang, a kind of release and regrasp flight element, on uneven bars"
+  ]
+ },
+ "(UB) counter piked over high bar to hang": {
+  "full": "a video of a gymnastics element: uneven bars counter piked over high bar to hang, a kind of release and regrasp flight element, on uneven bars",
+  "parent": "a video of a gymnastics element: release and regrasp flight element on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars counter piked over high bar to hang, a kind of release and regrasp flight element, on uneven bars"
+  ]
+ },
+ "(UB) (swing backward or front support) salto forward straddled to hang on high bar": {
+  "full": "a video of a gymnastics element: uneven bars (swing backward or front support) salto forward straddled to hang on high bar, a kind of release and regrasp flight element, on uneven bars",
+  "parent": "a video of a gymnastics element: release and regrasp flight element on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars (swing backward or front support) salto forward straddled to hang on high bar, a kind of release and regrasp flight element, on uneven bars"
+  ]
+ },
+ "(UB) (swing backward) salto forward piked to hang on high bar": {
+  "full": "a video of a gymnastics element: uneven bars (swing backward) salto forward piked to hang on high bar, a kind of release and regrasp flight element, on uneven bars",
+  "parent": "a video of a gymnastics element: release and regrasp flight element on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars (swing backward) salto forward piked to hang on high bar, a kind of release and regrasp flight element, on uneven bars"
+  ]
+ },
+ "(UB) (swing forward or hip circle backward) salto backward with 0.5 turn piked to hang on high bar": {
+  "full": "a video of a gymnastics element: uneven bars (swing forward or hip circle backward) salto backward with 0.5 turn piked to hang on high bar, a kind of release and regrasp flight element, on uneven bars",
+  "parent": "a video of a gymnastics element: release and regrasp flight element on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars (swing forward or hip circle backward) salto backward with 0.5 turn piked to hang on high bar, a kind of release and regrasp flight element, on uneven bars"
+  ]
+ },
+ "(UB) transition flight from high bar to low bar": {
+  "full": "a video of a gymnastics element: uneven bars transition flight from high bar to low bar, a kind of flight transition between the bars, on uneven bars",
+  "parent": "a video of a gymnastics element: flight transition between the bars on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars transition flight from high bar to low bar, a kind of flight transition between the bars, on uneven bars"
+  ]
+ },
+ "(UB) transition flight from low bar to high bar": {
+  "full": "a video of a gymnastics element: uneven bars transition flight from low bar to high bar, a kind of flight transition between the bars, on uneven bars",
+  "parent": "a video of a gymnastics element: flight transition between the bars on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars transition flight from low bar to high bar, a kind of flight transition between the bars, on uneven bars"
+  ]
+ },
+ "(UB) (swing forward) double salto backward tucked with 1 turn": {
+  "full": "a video of a gymnastics element: uneven bars (swing forward) double salto backward tucked with 1 turn, a kind of salto dismount, on uneven bars",
+  "parent": "a video of a gymnastics element: salto dismount on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars (swing forward) double salto backward tucked with 1 turn, a kind of salto dismount, on uneven bars"
+  ]
+ },
+ "(UB) (swing backward) double salto forward tucked": {
+  "full": "a video of a gymnastics element: uneven bars (swing backward) double salto forward tucked, a kind of salto dismount, on uneven bars",
+  "parent": "a video of a gymnastics element: salto dismount on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars (swing backward) double salto forward tucked, a kind of salto dismount, on uneven bars"
+  ]
+ },
+ "(UB) (swing forward) double salto backward stretched": {
+  "full": "a video of a gymnastics element: uneven bars (swing forward) double salto backward stretched, a kind of salto dismount, on uneven bars",
+  "parent": "a video of a gymnastics element: salto dismount on uneven bars",
+  "clause_sents": [
+   "a video of a gymnastics element: uneven bars (swing forward) double salto backward stretched, a kind of salto dismount, on uneven bars"
+  ]
+ }
+}

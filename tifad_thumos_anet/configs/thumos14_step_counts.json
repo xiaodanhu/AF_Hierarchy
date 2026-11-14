@@ -1,0 +1,940 @@
+{
+ "BaseballPitch": {
+  "counts": [
+   4,
+   3,
+   5,
+   4,
+   3
+  ],
+  "mean": 3.8,
+  "lists": [
+   [
+    "Pitcher holds the baseball in hand, preparing for the throw.",
+    "Pitcher winds up, rotating the body for momentum.",
+    "Pitcher throws the ball towards home plate.",
+    "Ball travels through the air towards the batter."
+   ],
+   [
+    "Pitcher winds up, rotating body, preparing to throw.",
+    "Arm extends forward, ball released with rotational spin.",
+    "Follow-through motion completed, body returns to neutral stance."
+   ],
+   [
+    "The pitcher holds the baseball in their hand, preparing to throw.",
+    "The pitcher winds up, rotating their body to build momentum.",
+    "The pitcher releases the ball, following through with their arm movement.",
+    "The ball travels towards home plate, aimed at the catcher.",
+    "The pitcher returns to their starting position, readying themselves for the next pitch."
+   ],
+   [
+    "Pitcher winds up, rotating the body.",
+    "Pitcher throws the ball towards home plate.",
+    "Ball leaves the pitcher's hand.",
+    "Ball travels through the air towards the catcher."
+   ],
+   [
+    "Pitcher winds up with leg lift and arm rotation.",
+    "Ball is released from hand with wrist snap.",
+    "Follow-through motion completes the pitch."
+   ]
+  ]
+ },
+ "BasketballDunk": {
+  "counts": [
+   8,
+   8,
+   7,
+   5,
+   6
+  ],
+  "mean": 6.8,
+  "lists": [
+   [
+    "Player runs towards the basket, jumping.",
+    "Player leaps, extending arms towards the hoop.",
+    "Player grabs the rim with both hands, lifting body.",
+    "Player hangs on the rim, body suspended mid-air.",
+    "Player brings ball up, preparing to dunk.",
+    "Player releases ball, aiming for the hoop.",
+    "Ball soars through the air, approaching the rim.",
+    "Player's body descends, landing back on the ground."
+   ],
+   [
+    "Player runs up, leaps, holds basketball with both hands.",
+    "Player extends arms fully upward, ball in air above head.",
+    "Player bends knees slightly while airborne, maintaining balance.",
+    "Player's body extends upward, aligning with the basketball.",
+    "Player's arms fully extend, gripping basketball mid-air.",
+    "Player's legs straighten out, body becoming more vertical.",
+    "Player's body aligns with the basketball, preparing for impact.",
+    "Player's feet reach ground, completing the jump with the ball."
+   ],
+   [
+    "Player runs towards hoop, ball held firmly.",
+    "Player jumps, arm extends upward, ball released.",
+    "Ball soars through air, trajectory calculated.",
+    "Player's legs extend fully, body airborne.",
+    "Player's arms reach peak, fingers near rim.",
+    "Player dunks ball, completes motion smoothly.",
+    "Player lands on court, momentum controlled."
+   ],
+   [
+    "Player runs towards the basket with the ball.",
+    "Player leaps high, extending arms towards the hoop.",
+    "Player jumps and bends knees mid-air for optimal height.",
+    "Player fully extends body, reaching hand towards the rim.",
+    "Player dunks the ball through the hoop with a forceful slam."
+   ],
+   [
+    "Player runs up, jumping high.",
+    "Player leaps, extends arms toward hoop.",
+    "Player grabs ball with outstretched hand.",
+    "Player's body twists mid-air for optimal angle.",
+    "Player dunks ball through hoop with force.",
+    "Player lands smoothly on court surface."
+   ]
+  ]
+ },
+ "Billiards": {
+  "counts": [
+   5,
+   5,
+   7,
+   4,
+   5
+  ],
+  "mean": 5.2,
+  "lists": [
+   [
+    "The player positions the cue stick against the ball.",
+    "The player takes a stance, bending slightly at the knees.",
+    "The player swings the cue stick back with a smooth motion.",
+    "The player strikes the ball with precision using the cue stick.",
+    "The player follows through with the swing, releasing the cue stick."
+   ],
+   [
+    "The player leans forward, positioning the cue stick to hit the ball.",
+    "The player takes aim, focusing on the target ball and the cue ball.",
+    "The player strikes the cue ball with precision using the cue stick.",
+    "The player follows through, maintaining balance after the shot.",
+    "The player watches the balls move across the table, assessing the next play."
+   ],
+   [
+    "The player holds the cue stick with both hands, maintaining a bent posture.",
+    "The player aims at the target ball, focusing on the cue ball's position.",
+    "The player strikes the cue ball, making contact with the target ball.",
+    "The cue stick follows through, returning to the starting position after impact.",
+    "The player releases the cue stick, allowing it to fall naturally.",
+    "The cue ball moves across the table, striking the target ball.",
+    "The target ball rolls towards another ball, potentially setting up a shot."
+   ],
+   [
+    "The player positions themselves, taking a bent stance, focusing on the cue ball.",
+    "They extend their arm, gripping the cue stick with precision, preparing for impact.",
+    "The player strikes the cue ball with force, aiming at the desired target pocket.",
+    "Following the shot, the player maintains balance, observing the trajectory of the balls."
+   ],
+   [
+    "Player positions themselves near the table, adjusting their stance.",
+    "Player lifts the cue stick, aiming at the cue ball with precision.",
+    "Player strikes the cue ball, following through with the shot.",
+    "Player watches the cue ball's trajectory, anticipating the next move.",
+    "Player observes the billiard balls' response after the shot."
+   ]
+  ]
+ },
+ "CleanAndJerk": {
+  "counts": [
+   4,
+   4,
+   3,
+   4,
+   3
+  ],
+  "mean": 3.6,
+  "lists": [
+   [
+    "Athlete lifts barbell from floor to shoulder height.",
+    "Athlete holds barbell at shoulder height momentarily.",
+    "Athlete explosively lifts barbell overhead.",
+    "Athlete stabilizes barbell overhead while standing upright."
+   ],
+   [
+    "The lifter holds barbell at waist level.",
+    "Lifter raises barbell overhead in one smooth movement.",
+    "Lifter bends knees slightly before lifting barbell upward.",
+    "Lifter extends arms fully, locking elbows to lift barbell vertically."
+   ],
+   [
+    "The lifter holds the barbell at shoulder height.",
+    "The lifter lifts the barbell to overhead with a single movement.",
+    "The lifter locks out their arms fully overhead with the barbell."
+   ],
+   [
+    "Lifting weight bar overhead with straight arms.",
+    "Lowering weight bar to shoulders, bending elbows.",
+    "Pushing weight bar vertically upward while straightening arms.",
+    "Maintaining balance with body upright during lift."
+   ],
+   [
+    "Athlete lifts barbell from ground to shoulders.",
+    "Athlete lifts barbell vertically overhead in a single motion.",
+    "Athlete holds barbell overhead briefly before lowering it back down."
+   ]
+  ]
+ },
+ "CliffDiving": {
+  "counts": [
+   4,
+   5,
+   5,
+   6,
+   5
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "The diver runs up the cliff, gaining momentum.",
+    "The diver leaps off the cliff, extending their arms forward.",
+    "The diver tucks their body, reducing air resistance.",
+    "The diver enters the water with a splash, absorbing impact."
+   ],
+   [
+    "Runner approaches the cliff's edge with extended arms.",
+    "Runner leaps forward with a powerful push off the cliff.",
+    "Body tucks in a compact position mid-air.",
+    "Diver extends limbs to stabilize during descent.",
+    "Diver enters water with controlled splash."
+   ],
+   [
+    "Runner sprints along cliff edge towards jump point.",
+    "Diver leaps off cliff, arms extended for balance.",
+    "Body rotates mid-air, legs extended forward.",
+    "Diver enters water with a splash, arms flailing.",
+    "Diver emerges, swimming towards safety."
+   ],
+   [
+    "The diver leaps off the cliff edge with extended legs.",
+    "The diver extends arms outwards for balance during descent.",
+    "The diver's body twists mid-air to align for entry.",
+    "The diver enters the water with a splash, absorbing impact.",
+    "The diver emerges, adjusting posture and orientation in the air.",
+    "The diver lands back on the cliff, completing the cycle."
+   ],
+   [
+    "Diver approaches cliff edge, balancing on narrow ledge.",
+    "Diver jumps off cliff, extending arms and legs for balance.",
+    "Diver tucks head and knees, reducing wind resistance during fall.",
+    "Diver enters water with a splash, resurfacing quickly.",
+    "Diver swims to surface, adjusting breathing technique."
+   ]
+  ]
+ },
+ "CricketBowling": {
+  "counts": [
+   4,
+   5,
+   4,
+   4,
+   4
+  ],
+  "mean": 4.2,
+  "lists": [
+   [
+    "Bowler holds the cricket ball with both hands, preparing to throw.",
+    "Bowler takes a few steps back, swinging the arm forward.",
+    "Ball is released from the hand, following through with the arm movement.",
+    "Bowler follows through with the leg swing, completing the bowling action."
+   ],
+   [
+    "The bowler holds the cricket ball with both hands behind their head.",
+    "The bowler takes a few steps forward, shifting weight.",
+    "The bowler swings the arm with the ball forward in a smooth arc.",
+    "The bowler releases the ball towards the batsman at the wickets.",
+    "The bowler follows through with their arm movement after releasing the ball."
+   ],
+   [
+    "The bowler takes a few steps back and prepares to release the ball.",
+    "The bowler swings their arm forward, releasing the ball towards the batsman.",
+    "The bowler follows through with their arm movement, completing the bowling action.",
+    "The bowler's feet land firmly on the ground after the bowling motion."
+   ],
+   [
+    "Bowler positions the ball on the hand.",
+    "Bowler runs up with a smooth, continuous motion.",
+    "Bowler releases the ball at the optimal height.",
+    "Bowler follows through with the arm swing."
+   ],
+   [
+    "The bowler stands with feet shoulder-width apart, holding the cricket ball in hand.",
+    "The bowler rotates the body, swinging the arm back over the head.",
+    "The bowler releases the ball with the fingers pointing upwards, following through.",
+    "The bowler follows through with the arm movement, completing the bowling action."
+   ]
+  ]
+ },
+ "CricketShot": {
+  "counts": [
+   5,
+   5,
+   4,
+   6,
+   5
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "Bowler runs up and bowls the ball towards the batsman.",
+    "Batsman takes a stance, holding bat with both hands.",
+    "Batsman swings bat forward to make contact with the ball.",
+    "Ball makes contact with bat, sending it flying.",
+    "Batsman follows through with swing, watching the ball's trajectory."
+   ],
+   [
+    "The batsman holds the cricket bat with both hands behind his back.",
+    "He swings the bat forward in a smooth arc.",
+    "The bat makes contact with the ball mid-air.",
+    "The batsman follows through with the swing, bringing the bat down.",
+    "The bat completes its motion as the batsman releases the bat."
+   ],
+   [
+    "The batsman takes a stance, holding the bat.",
+    "He swings the bat back powerfully.",
+    "The ball makes contact with the bat mid-swing.",
+    "The batsman follows through, completing the shot."
+   ],
+   [
+    "Bowler runs up, delivers the ball.",
+    "Batsman takes the ball mid-air.",
+    "Batsman adjusts stance, focuses on the ball.",
+    "Batsman swings bat, making contact with the ball.",
+    "Batsman follows through, maintaining balance after impact.",
+    "Ball travels towards the wickets, visible in the background."
+   ],
+   [
+    "Bowler runs up and bowls the ball towards the batsman.",
+    "Batsman takes position, swings bat back, prepares to hit.",
+    "Ball approaches, batsman brings bat forward in a swinging motion.",
+    "Contact made between bat and ball, power transferred.",
+    "Bat follows through after hitting ball, eyes follow trajectory."
+   ]
+  ]
+ },
+ "Diving": {
+  "counts": [
+   5,
+   6,
+   5,
+   6,
+   6
+  ],
+  "mean": 5.6,
+  "lists": [
+   [
+    "Swimmer approaches the edge of the pool.",
+    "Swimmer extends arms forward, preparing for entry.",
+    "Swimmer dives headfirst into the water.",
+    "Swimmer's legs kick powerfully underwater.",
+    "Swimmer's body rotates smoothly through the water."
+   ],
+   [
+    "The diver runs up the pool deck, building momentum.",
+    "The diver leaps off the springboard with extended arms and legs.",
+    "The diver's body tucks into a compact shape mid-air.",
+    "The diver's hands reach out to grasp the water surface.",
+    "The diver's body straightens as they enter the water.",
+    "The diver's body rotates underwater to a horizontal position."
+   ],
+   [
+    "The diver enters the water, arms extended forward, legs bent and kicking.",
+    "The diver's body arches upward, hands reaching toward the surface, preparing to enter.",
+    "The diver's body tucks, arms and legs moving simultaneously, creating a compact shape.",
+    "The diver's head breaks the surface, water splashing around as they prepare for entry.",
+    "The diver dives, body straightening, arms and legs pushing downward through the water."
+   ],
+   [
+    "Swimmer leaps off diving board with bent knees, arms extended forward.",
+    "Body tucks as swimmer enters water, minimizing splash impact.",
+    "Arms and legs extend outwards in water, preparing for entry.",
+    "Head turns to look down, aligning body for deeper dive.",
+    "Body continues to sink, arms and legs moving in unison underwater.",
+    "Swimmer begins to surface, head emerges first, arms and legs resurface."
+   ],
+   [
+    "Swimmer approaches the edge of the pool, bending knees.",
+    "Swimmer extends arms forward, preparing for entry.",
+    "Swimmer jumps off the diving board with a powerful thrust.",
+    "Swimmer tucks head under, body twisting into a compact shape.",
+    "Swimmer dives into the water, creating a splash.",
+    "Swimmer surfaces, resuming normal breathing."
+   ]
+  ]
+ },
+ "FrisbeeCatch": {
+  "counts": [
+   4,
+   4,
+   4,
+   4,
+   6
+  ],
+  "mean": 4.4,
+  "lists": [
+   [
+    "Frisbee approaches player's outstretched hand.",
+    "Player leaps, extending arm fully to meet frisbee.",
+    "Player's fingers close around frisbee, gripping tightly.",
+    "Player's body begins to descend after catching frisbee."
+   ],
+   [
+    "The player runs towards the frisbee mid-air.",
+    "The player extends their arms upward to intercept the frisbee.",
+    "The player's hands close around the frisbee, catching it.",
+    "The player begins to bring their body back down to the ground while holding the frisbee."
+   ],
+   [
+    "The person runs towards the frisbee, extending their arm.",
+    "The person jumps, reaching out with an open hand to grab the frisbee.",
+    "The person catches the frisbee, bringing it close to their chest.",
+    "The person lands on two feet, holding the frisbee securely."
+   ],
+   [
+    "Frisbee thrown towards the player mid-air.",
+    "Player leaps upward with outstretched arms.",
+    "Hands close around the frisbee in the air.",
+    "Player brings the frisbee down towards their body."
+   ],
+   [
+    "Player runs towards the frisbee.",
+    "Arms extend to grab the frisbee mid-air.",
+    "Player's body shifts, preparing for landing.",
+    "Player catches the frisbee securely.",
+    "Player lands on one foot, maintaining balance.",
+    "Player begins to recover posture after landing."
+   ]
+  ]
+ },
+ "GolfSwing": {
+  "counts": [
+   4,
+   5,
+   6,
+   5,
+   6
+  ],
+  "mean": 5.2,
+  "lists": [
+   [
+    "The golfer holds the club back, preparing for the swing.",
+    "The golfer rotates their body, winding up the swing.",
+    "The golfer swings the club forward, making contact with the ball.",
+    "The golfer follows through, completing the swing motion."
+   ],
+   [
+    "The golfer holds the club with both hands, preparing for the swing.",
+    "The golfer swings the club back, rotating the body for power.",
+    "The golfer extends the arms fully, aiming at the ball.",
+    "The golfer releases the club, following through with the motion.",
+    "The golfer watches the trajectory of the golf ball after the swing."
+   ],
+   [
+    "Golfer holds club, preparing for swing.",
+    "Golfer winds up, rotating shoulders.",
+    "Clubhead swings back, storing energy.",
+    "Golfer swings forward, releasing club.",
+    "Clubhead strikes ball, sending it flying.",
+    "Golfer follows through, completing swing."
+   ],
+   [
+    "The golfer holds the club back, preparing for the swing.",
+    "The golfer winds up the club, rotating the torso and arms.",
+    "The golfer extends the arm, releasing the club towards the ball.",
+    "The golfer follows through after hitting the ball, completing the swing.",
+    "The golfer finishes with a relaxed stance, watching the trajectory of the ball."
+   ],
+   [
+    "Grip the golf club with both hands, positioning the ball.",
+    "Swing back, rotating the upper body and pulling back the club.",
+    "Transfer weight onto the back foot, bending knees slightly.",
+    "Rotate the lower body forward, extending arms.",
+    "Bring the club forward in a smooth arc, hitting the ball.",
+    "Follow through with the swing, completing the rotation of the body."
+   ]
+  ]
+ },
+ "HammerThrow": {
+  "counts": [
+   4,
+   5,
+   5,
+   4,
+   4
+  ],
+  "mean": 4.4,
+  "lists": [
+   [
+    "The athlete holds the hammer with both hands, preparing for the throw.",
+    "The athlete swings the hammer back over their head in a circular motion.",
+    "The athlete releases the hammer, letting it spin forward through the air.",
+    "The hammer continues spinning and traveling through the air after release."
+   ],
+   [
+    "The athlete begins by holding the hammer with both hands behind their neck.",
+    "The athlete rotates their shoulders, initiating the swinging motion of the hammer.",
+    "The athlete lifts the hammer high above their head, maintaining a strong grip.",
+    "The athlete pivots on one foot while starting the forward motion with the hammer.",
+    "The athlete extends their arm fully, releasing the hammer at a specific angle."
+   ],
+   [
+    "The athlete holds the hammer securely with both hands.",
+    "The hammer is swung back over the head.",
+    "The athlete pivots on the spot, building momentum.",
+    "The hammer is released with a strong forward spin motion.",
+    "The athlete follows through, watching the hammer's trajectory."
+   ],
+   [
+    "The athlete holds the hammer tightly with both hands, preparing to throw.",
+    "The athlete swings the hammer back, extending their arms and raising the hammer above their head.",
+    "The athlete rotates their body, bringing the hammer down in a smooth arc.",
+    "The athlete releases the hammer at full extension, following through with their motion."
+   ],
+   [
+    "The athlete holds the hammer, preparing to swing.",
+    "The athlete swings the hammer back over their head.",
+    "The athlete spins, building momentum for release.",
+    "The athlete releases the hammer forward with a powerful throw."
+   ]
+  ]
+ },
+ "HighJump": {
+  "counts": [
+   4,
+   4,
+   5,
+   7,
+   6
+  ],
+  "mean": 5.2,
+  "lists": [
+   [
+    "Runner sprints towards the high jump bar.",
+    "Athlete leaps, extending arms overhead.",
+    "Body arches backward, clearing the bar.",
+    "Legs extend forward, landing on the mat."
+   ],
+   [
+    "Runner sprints towards the high jump bar.",
+    "Athlete takes a flying leap over the bar.",
+    "Body clears the bar, arching forward.",
+    "Landing occurs with bent knees and arms extended."
+   ],
+   [
+    "Runner sprints, gaining momentum.",
+    "Athlete leaps into the air, raising legs.",
+    "Arms extend upward, propelling body higher.",
+    "Body rotates mid-air, clearing bar.",
+    "Athlete descends, landing on mat safely."
+   ],
+   [
+    "Runner begins sprint towards high jump bar.",
+    "High jump bar is raised to appropriate height.",
+    "Athlete leaps vertically over the bar.",
+    "Arms extend upwards for balance during jump.",
+    "Body twists mid-air to clear the bar effectively.",
+    "Landing is controlled to avoid injury on mat below.",
+    "Athlete rises slowly from mat after landing."
+   ],
+   [
+    "The runner sprints towards the high jump bar, building momentum.",
+    "The jumper leaps, extending arms upwards and legs bent at knees.",
+    "The arms are fully extended above the head, aiding the jump's momentum.",
+    "The legs are straightened out, propelling the body over the bar.",
+    "The body clears the bar, beginning descent towards the landing mat.",
+    "The jumper lands on both feet, absorbing impact with bent knees."
+   ]
+  ]
+ },
+ "JavelinThrow": {
+  "counts": [
+   5,
+   5,
+   4,
+   3,
+   4
+  ],
+  "mean": 4.2,
+  "lists": [
+   [
+    "The athlete holds the javelin above their head, preparing for the throw.",
+    "The athlete begins to rotate their body, building momentum for the throw.",
+    "The athlete extends their arm fully, releasing the javelin with a powerful throw.",
+    "The javelin soars through the air, following a parabolic trajectory.",
+    "The athlete follows through with their movement, completing the throw."
+   ],
+   [
+    "The athlete begins by holding the javelin with both hands, preparing to throw.",
+    "The athlete swings the javelin back over their head in a fluid motion.",
+    "The athlete releases the javelin, following through with the motion.",
+    "The javelin is propelled forward in an arc, leaving the athlete's hand.",
+    "The athlete completes the throw, moving away from the javelin's trajectory."
+   ],
+   [
+    "The athlete holds the javelin above their head with both hands.",
+    "The athlete begins to rotate their torso, building momentum.",
+    "The athlete extends their arm forward, releasing the javelin.",
+    "The athlete follows through with the motion, watching the javelin's trajectory."
+   ],
+   [
+    "The athlete holds the javelin over their head, preparing to throw.",
+    "The athlete swings the javelin back, building momentum.",
+    "The athlete releases the javelin, throwing it forward with full force."
+   ],
+   [
+    "The athlete holds the javelin above their head, preparing for the throw.",
+    "The athlete rotates their torso and swings the javelin backward.",
+    "The athlete extends their arm and releases the javelin with a powerful forward throw.",
+    "The javelin arcs through the air, following the trajectory of the throw."
+   ]
+  ]
+ },
+ "LongJump": {
+  "counts": [
+   5,
+   5,
+   4,
+   7,
+   5
+  ],
+  "mean": 5.2,
+  "lists": [
+   [
+    "The athlete begins by running at full speed down the track.",
+    "Approaching the takeoff board, the athlete leaps into the air.",
+    "In mid-air, the athlete extends their arms and legs for maximum distance.",
+    "Landing on the sand pit, the athlete's body absorbs the impact.",
+    "After landing, the athlete rises and walks away from the pit."
+   ],
+   [
+    "Runner sprints down the track towards the jump.",
+    "Athlete leaps with arms extended forward for balance.",
+    "Body arches backward in mid-air for maximum height.",
+    "Legs extend straight upward during peak of jump.",
+    "Landing occurs on both feet within the sand pit."
+   ],
+   [
+    "Runner sprints, gaining speed towards takeoff point.",
+    "Runner leaps, extending legs forward with arms pulling back.",
+    "Runner soars through air, body arched for maximum distance.",
+    "Runner lands on designated area, maintaining balance and control."
+   ],
+   [
+    "The athlete begins running, gaining speed on the track.",
+    "The runner takes a powerful leap, pushing off the ground.",
+    "The athlete's body arches upward, reaching peak height.",
+    "The runner's legs extend forward, propelling them into the air.",
+    "The body continues to rise, preparing for landing.",
+    "The jumper extends their arms outwards, aiding balance.",
+    "The feet touch down softly in the sand pit, ending the jump."
+   ],
+   [
+    "The runner accelerates down the track.",
+    "The athlete leaps off the takeoff board.",
+    "The jumper's body arches backward in mid-air.",
+    "The runner's feet land on the sandpit.",
+    "The jumper's arms extend forward upon landing."
+   ]
+  ]
+ },
+ "PoleVault": {
+  "counts": [
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "Athlete runs up the track, building momentum.",
+    "Athlete plants the pole in the box, transferring energy.",
+    "Athlete lifts off, bending the pole under their weight.",
+    "Athlete clears the bar, pole bending further upward.",
+    "Athlete lands on the mat, pole bending as they descend."
+   ],
+   [
+    "Runner sprints, gaining speed for pole vault.",
+    "Athlete plants the pole on the ground, absorbing initial impact.",
+    "Pole bends under pressure, lifting athlete upward.",
+    "Athlete extends body over the bar, clearing it successfully.",
+    "Athlete lands safely on the mat after clearing the bar."
+   ],
+   [
+    "Runner sprints, launching athlete.",
+    "Athlete grabs and plants pole, raising off ground.",
+    "Pole bends, propelling athlete upwards.",
+    "Athlete clears bar, arching backward mid-air.",
+    "Athlete lands on mat, completing the vault."
+   ],
+   [
+    "Pole vaulter holds the pole, crouches low.",
+    "Vaulter runs towards the bar, bending the pole.",
+    "Pole vaulter plants the pole, pushing upwards.",
+    "Vaulter leaps over the bar, pole bending downward.",
+    "Vaulter clears the bar, landing on padded mat."
+   ],
+   [
+    "Athlete holds the pole, running down the track.",
+    "Pole is planted firmly on the box.",
+    "Athlete begins to vault, lifting off the ground.",
+    "Pole bends, aiding the ascent over the bar.",
+    "Athlete clears the bar, landing safely beyond it."
+   ]
+  ]
+ },
+ "Shotput": {
+  "counts": [
+   5,
+   5,
+   5,
+   5,
+   3
+  ],
+  "mean": 4.6,
+  "lists": [
+   [
+    "The athlete holds the shot put firmly in both hands.",
+    "The athlete takes a deep breath and begins to bend at the knees.",
+    "The athlete swings the shot put back over their head.",
+    "The athlete releases the shot put with a powerful throw.",
+    "The athlete follows through with their arm extended forward."
+   ],
+   [
+    "The athlete holds the shotput firmly, preparing to throw.",
+    "The athlete raises the shotput above their head, bending at the knees.",
+    "The athlete rotates their shoulders, building momentum.",
+    "The athlete releases the shotput with a forceful throw.",
+    "The athlete follows through with their arm extended behind them."
+   ],
+   [
+    "The athlete holds the shot put firmly, preparing for the throw.",
+    "The athlete lifts the shot put above their head, bending at the knees.",
+    "The athlete rotates their shoulders, building momentum for the throw.",
+    "The athlete extends their arm, releasing the shot put with force.",
+    "The athlete follows through with their throw, straightening their arm."
+   ],
+   [
+    "The athlete holds the shotput near their neck, preparing to throw.",
+    "The athlete lowers the shotput, bending at the knees and hips.",
+    "The athlete rotates their torso, aligning their back to the direction of the throw.",
+    "The athlete extends their arm upwards, releasing the shotput in a powerful overhand motion.",
+    "The athlete lands in a crouched position, completing the throw."
+   ],
+   [
+    "The athlete holds the shotput firmly in both hands.",
+    "The athlete steps forward, bending at the knees and hips.",
+    "The athlete extends their arms overhead, throwing the shotput forward."
+   ]
+  ]
+ },
+ "SoccerPenalty": {
+  "counts": [
+   5,
+   5,
+   5,
+   4,
+   4
+  ],
+  "mean": 4.6,
+  "lists": [
+   [
+    "The player runs up to the penalty spot.",
+    "The player takes a few steps back.",
+    "The player swings the ball with their foot.",
+    "The player kicks the ball towards the goal.",
+    "The ball flies through the air towards the net."
+   ],
+   [
+    "The player runs up to the penalty spot with focus on the ball.",
+    "The player takes a few steps back, preparing for the kick.",
+    "The player swings their leg through, striking the ball.",
+    "The ball flies through the air towards the goal.",
+    "The goalkeeper dives in an attempt to save the ball."
+   ],
+   [
+    "The penalty taker steps up to the spot, positioning their feet.",
+    "The taker holds the ball with the foot at the ready position.",
+    "The taker swings the kicking leg forward, striking the ball with precision.",
+    "The ball is propelled through the air towards the goal.",
+    "The ball arcs over the defensive wall towards the net."
+   ],
+   [
+    "The player positions themselves, taking a few steps back.",
+    "The player swings their leg forward with the ball on the toe.",
+    "The player makes contact with the ball, sending it toward the goal.",
+    "The ball flies through the air, heading toward the goalpost."
+   ],
+   [
+    "The player takes a few steps back, preparing mentally.",
+    "The player swings the bat back over their shoulder with force.",
+    "The player swings forward, making contact with the ball.",
+    "The ball flies through the air after being struck."
+   ]
+  ]
+ },
+ "TennisSwing": {
+  "counts": [
+   5,
+   4,
+   5,
+   3,
+   5
+  ],
+  "mean": 4.4,
+  "lists": [
+   [
+    "The player holds the racket with both hands, preparing to swing.",
+    "The player swings the racket back, rotating the shoulders and hips.",
+    "The player extends the arm forward, focusing on the ball.",
+    "The player makes contact with the ball, transferring energy to the racket.",
+    "The player follows through, completing the swing with a follow-through motion."
+   ],
+   [
+    "The player begins with a backswing, rotating the torso and extending the arm with the racquet.",
+    "The player then moves forward, shifting weight onto the front foot.",
+    "The racquet is brought down, making contact with the ball at the peak of the swing.",
+    "Following contact, the player completes a follow-through, finishing with an extended arm and relaxed stance."
+   ],
+   [
+    "The tennis player holds the racket with both hands, preparing to swing.",
+    "The player turns their body towards the ball, focusing on the target.",
+    "The player swings the racket back, drawing energy from their shoulder and arm muscles.",
+    "The player brings the racket forward quickly, making contact with the ball.",
+    "The player follows through with the swing, releasing the tension in their body."
+   ],
+   [
+    "The player holds the racket with both hands, preparing to swing.",
+    "The player swings the racket back over their shoulder in a smooth arc.",
+    "The player follows through, extending the racket forward after making contact with the ball."
+   ],
+   [
+    "The player holds the racket behind their back, preparing for the swing.",
+    "The player turns their shoulders, generating power for the swing.",
+    "The player extends their arm forward, aiming for the ball.",
+    "The player swings the racket, making contact with the ball.",
+    "The player follows through, completing the swing motion."
+   ]
+  ]
+ },
+ "ThrowDiscus": {
+  "counts": [
+   4,
+   4,
+   6,
+   5,
+   4
+  ],
+  "mean": 4.6,
+  "lists": [
+   [
+    "The athlete holds the discus in their right hand, preparing for the throw.",
+    "The athlete swings the discus back over their head, rotating their torso.",
+    "The athlete releases the discus with a powerful forward motion, following through with their arm extended.",
+    "The discus flies through the air, spinning as it moves away from the athlete."
+   ],
+   [
+    "The athlete begins by holding the discus with both hands, preparing to throw.",
+    "The athlete swings the discus back, rotating the upper body for momentum.",
+    "The arm moves forward with the discus, releasing it at a specific angle.",
+    "The athlete follows through, watching the discus fly into the air."
+   ],
+   [
+    "The athlete holds the discus firmly, preparing for the throw.",
+    "The athlete begins to rotate his body, building momentum.",
+    "The athlete's arm swings back, pulling the discus backward.",
+    "The athlete's body continues to rotate, increasing the torque on the discus.",
+    "The athlete releases the discus, following through with the arm movement.",
+    "The discus flies through the air, completing the throw."
+   ],
+   [
+    "The athlete holds the discus securely in both hands.",
+    "The athlete takes a powerful step forward with their back foot.",
+    "The athlete swings the discus back, rotating their upper body.",
+    "The athlete reaches full extension, releasing the discus forward.",
+    "The athlete follows through with their swing, maintaining balance."
+   ],
+   [
+    "The athlete holds the discus in a stationary position, gripping it firmly.",
+    "The athlete rotates their torso and swings the discus backward.",
+    "The athlete extends their arm and releases the discus with a flick of their wrist.",
+    "The discus travels through the air in a parabolic arc towards the target area."
+   ]
+  ]
+ },
+ "VolleyballSpiking": {
+  "counts": [
+   5,
+   6,
+   4,
+   5,
+   5
+  ],
+  "mean": 5,
+  "lists": [
+   [
+    "The player positions themselves on the court, preparing to spike.",
+    "The player takes a few steps forward, building momentum.",
+    "The player leaps into the air, extending their arm to reach the ball.",
+    "The player swings their arm back, bringing the volleyball into contact with their hand.",
+    "The player follows through with the swing, completing the spike."
+   ],
+   [
+    "The player begins in a ready position, ball in hand near the net.",
+    "The player takes a running step forward, shifting weight.",
+    "The player leaps vertically, extending arm upward with the ball.",
+    "The player swings arm down, contacting the ball mid-air with the palm of the hand.",
+    "The player follows through with the swing, releasing the ball for power.",
+    "The player lands, returning to the ready position, preparing for the next serve."
+   ],
+   [
+    "The player positions themselves, ball held above head.",
+    "The player leaps into the air with extended arm.",
+    "The player swings the arm down, striking the volleyball.",
+    "The player follows through, completing the swing motion."
+   ],
+   [
+    "The player positions themselves, preparing to serve.",
+    "The ball is tossed into the air with an underhand motion.",
+    "The player leaps upward, extending their arm to hit the ball.",
+    "The arm swings forward, making contact with the ball at shoulder height.",
+    "The player's knee bends as they descend after the hit, landing back on the ground."
+   ],
+   [
+    "The player positions themselves near the net.",
+    "The player runs towards the ball.",
+    "The player leaps into the air.",
+    "The player swings their arm back.",
+    "The player hits the ball with the palm of their hand."
+   ]
+  ]
+ },
+ "_summary": {
+  "classes": 20,
+  "per_class_mean": {
+   "mean": 4.8,
+   "sd": 0.6782329983125267,
+   "min": 3.6,
+   "max": 6.8
+  },
+  "all_samples": {
+   "mean": 4.8,
+   "sd": 1.0099504938362078
+  },
+  "K": {
+   "mean": 5,
+   "mean+sd": 5,
+   "mean+2sd": 6
+  }
+ }
+}

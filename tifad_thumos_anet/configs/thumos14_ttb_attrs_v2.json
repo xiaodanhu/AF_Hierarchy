@@ -1,0 +1,174 @@
+{
+ "BaseballPitch": [
+  "motion_throw_release",
+  "impl_ball",
+  "force_overhead",
+  "env_grass_pitch",
+  "rotational_windup",
+  "arm_bent_snap_throw"
+ ],
+ "BasketballDunk": [
+  "motion_jump_launch",
+  "impl_ball",
+  "force_downward",
+  "env_court",
+  "has_runup",
+  "aerial_phase"
+ ],
+ "Billiards": [
+  "motion_strike",
+  "impl_striking_tool",
+  "force_horizontal",
+  "env_table",
+  "ball_stationary_at_contact",
+  "impl_cue_stick",
+  "indoor_table_surface"
+ ],
+ "CleanAndJerk": [
+  "motion_lift",
+  "impl_barbell",
+  "force_upward",
+  "env_court",
+  "two_handed"
+ ],
+ "CliffDiving": [
+  "motion_jump_launch",
+  "impl_none",
+  "force_downward",
+  "env_aquatic_natural",
+  "aerial_phase",
+  "from_natural_rock"
+ ],
+ "CricketBowling": [
+  "motion_throw_release",
+  "impl_ball",
+  "force_overhead",
+  "env_grass_pitch",
+  "has_runup",
+  "arm_straight_over_shoulder",
+  "runup_before_delivery"
+ ],
+ "CricketShot": [
+  "motion_strike",
+  "impl_striking_tool",
+  "force_horizontal",
+  "env_grass_pitch",
+  "two_handed",
+  "ball_moving_at_contact"
+ ],
+ "Diving": [
+  "motion_jump_launch",
+  "impl_none",
+  "force_downward",
+  "env_aquatic_pool",
+  "aerial_phase",
+  "from_board_or_platform"
+ ],
+ "FrisbeeCatch": [
+  "motion_catch",
+  "impl_none",
+  "force_horizontal",
+  "env_grass_pitch",
+  "has_runup",
+  "impl_flat_disc"
+ ],
+ "GolfSwing": [
+  "motion_strike",
+  "impl_striking_tool",
+  "force_horizontal",
+  "env_grass_pitch",
+  "rotational_windup",
+  "two_handed",
+  "ball_stationary_at_contact"
+ ],
+ "HammerThrow": [
+  "motion_throw_release",
+  "impl_field_implement",
+  "force_horizontal",
+  "env_track_field",
+  "rotational_windup",
+  "two_handed",
+  "impl_wire_handled_ball"
+ ],
+ "HighJump": [
+  "motion_jump_launch",
+  "impl_none",
+  "force_upward",
+  "env_track_field",
+  "has_runup",
+  "aerial_phase",
+  "runup_before_delivery",
+  "vertical_bar_clearance"
+ ],
+ "JavelinThrow": [
+  "motion_throw_release",
+  "impl_field_implement",
+  "force_overhead",
+  "env_track_field",
+  "has_runup",
+  "arm_bent_snap_throw",
+  "runup_before_delivery"
+ ],
+ "LongJump": [
+  "motion_jump_launch",
+  "impl_none",
+  "force_horizontal",
+  "env_track_field",
+  "has_runup",
+  "aerial_phase",
+  "runup_before_delivery",
+  "horizontal_sand_landing"
+ ],
+ "PoleVault": [
+  "motion_jump_launch",
+  "impl_pole",
+  "force_upward",
+  "env_track_field",
+  "has_runup",
+  "aerial_phase",
+  "two_handed",
+  "runup_before_delivery",
+  "vertical_bar_clearance"
+ ],
+ "Shotput": [
+  "motion_throw_release",
+  "impl_field_implement",
+  "force_overhead",
+  "env_track_field",
+  "rotational_windup"
+ ],
+ "SoccerPenalty": [
+  "motion_kick",
+  "impl_ball",
+  "force_horizontal",
+  "env_grass_pitch",
+  "has_runup",
+  "ball_stationary_at_contact"
+ ],
+ "TennisSwing": [
+  "motion_strike",
+  "impl_striking_tool",
+  "force_horizontal",
+  "env_court",
+  "ball_moving_at_contact",
+  "ball_over_net"
+ ],
+ "ThrowDiscus": [
+  "motion_throw_release",
+  "impl_field_implement",
+  "force_horizontal",
+  "env_track_field",
+  "rotational_windup",
+  "impl_flat_disc"
+ ],
+ "VolleyballSpiking": [
+  "motion_strike",
+  "impl_none",
+  "force_downward",
+  "env_court",
+  "has_runup",
+  "aerial_phase",
+  "ball_moving_at_contact",
+  "ball_over_net"
+ ]
+}
